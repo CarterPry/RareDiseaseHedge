@@ -43,6 +43,45 @@ Also recovered:
 
 ---
 
+## 0.1 SESSION 2 COMPLETE — final state (2026-08-06)
+
+**All research tracks in §5 and §9 are now closed.** 59 files, ~2.5 MB, in a private GitHub repo
+(`CarterPry/RareDiseaseHedge`) with continuous auto-push via `scripts/autosync.sh`.
+
+**Two findings that changed the strategy since §0 was written:**
+
+1. ***Sun Pharma Advanced Research Co. v. FDA* (D.D.C., 2025-12-02)** — a pre-1962 "deemed approved"
+   NDA is NOT "previously approved" under § 360ff(a)(4)(B)(i). FDA awarded the SEZABY voucher
+   2026-02-03 and did not appeal. Creates Funnel **A2** (1938–1962 grandfathered drugs). Narrow:
+   any modern 505(b)(1)/(b)(2)/ANDA history still bars. See README and `sources/22-…`.
+
+2. **The feasibility verdict** — Funnel A is ~7 globally actionable programs (range 2–15), not 6–10
+   per sponsor; A2 adds 0–3. Per-program success 3–5% generic vs 20–22% optimized. **6–10 simultaneous
+   programs is not viable at ~$180k; one optimized program is the correct strategy.** See README and
+   `sources/25`–`27`, each adversarially reviewed from two opposed directions.
+
+**Time-critical:** FDA CP 7346.832 (revised) takes effect **2026-08-10** — unannounced PAIs at non-US
+sites; WHO-GMP-only drops PAI pass to ~50–60% vs ~88% for an MRA-country manufacturer. And enrollment
+must start **now** (Aug 2026 conservative / Feb 2027 optimistic) to clear the 2029-09-30 sunset.
+
+**Recovery statistics for this session** — the dominant lesson:
+| Event | Agents | Outcome |
+|---|---|---|
+| Session 1 parents interrupted | 30 transcripts | 20 complete reports recovered that had never been written to disk |
+| Session 2 workflows hit API socket exhaustion | 27 agents | 15 had done 60–124 tool calls each; **all 15 recovered by mining transcripts** |
+
+**Operational lessons added to §7:**
+- Mine child transcripts BEFORE re-running anything — ~600 KB of finished research was sitting unread
+  after session 1, and 1,352 tool calls' worth after the session 2 failures.
+- Cap workflow concurrency at ~4 agents. ~18 concurrent agents caused Anthropic API socket exhaustion
+  (`FailedToOpenSocket` / `ConnectionRefused`) that killed 27 agents at once.
+- Instruct agents to **Write their file early and refine it**, not to hold output in context until the
+  end. The three agents that survived the socket failure were the ones that had already written.
+- On this harness, opus-tier subagents fail with `400 output_config.effort 'xhigh' … thinking is
+  disabled`. Pin `model: 'sonnet'` or enable thinking / lower effort via `/config`.
+
+---
+
 ## 1. What was asked
 
 Map every data source and *exact machine-access pathway* needed to build an automated screening and filing pipeline for a rare-disease drug repurposing company. Deliverable is the source map itself — topics and pathways laid out clearly enough to build from. The user is building the system; this is the reconnaissance layer.

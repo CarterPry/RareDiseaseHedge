@@ -79,6 +79,41 @@ The designation-by prong (A) and the separate approval-by prong (B) were struck 
 
 ---
 
+## 🔴 The verdict (2026-08-06) — read before planning
+
+Three feasibility analyses were run, each challenged by **two opposed reviewers** (one arguing too optimistic, one too pessimistic) and reconciled. Full detail in `sources/25`–`27` and `sources/00-CANDIDATE-DISCOVERY-METHOD.md`.
+
+**Funnel A is ~7 globally actionable programs, not 6–10 for one sponsor.**
+
+| Filter stage | Mid-case | Range |
+|---|---|---|
+| Distinct ex-US approved moieties, post-join | 700–1,800 (905 KEGG Japan-only is an empirical floor) | wide |
+| …with published rare pediatric evidence | 50 | 15–120 |
+| …qualifying under the § 360ff(a)(3) pediatric test | 15 | 5–35 |
+| …after FTO / orphan exclusivity / API / trial feasibility | **~7** | **2–15** |
+
+That is the *entire global inventory* meeting all conditions simultaneously — not a per-sponsor pipeline. The A2 (pre-1962 *Sun Pharma*) carve-out adds only **0–3** more, and rests on an unreviewed district-court holding, so treat it as opportunistic rather than foundational.
+
+**Per-program probability of reaching approval before the sunset: 3–5% generic → 20–22% optimized.** Four choices drive the difference:
+1. Pick a disease with a **pre-existing patient registry**
+2. Use an **MRA-country API manufacturer** (EU, UK, Canada, Japan, Australia, Israel, Switzerland)
+3. **RDEA-aligned design** with a pre-specified natural-history external control
+4. **File the IND directly**, skipping the pre-IND meeting (not required for a repurposed molecule with an established safety profile; saves 5–8 months)
+
+**Conclusion: 6–10 simultaneous programs is not viable on ~$180k. One program, with all four choices optimized, is the correct strategy.**
+
+### ⏰ Two time-critical items
+
+**1. FDA CP 7346.832 revision takes effect 2026-08-10.** FDA will conduct **unannounced** pre-approval inspections at non-US facilities. A **WHO-GMP-only site drops to ~50–60% PAI pass probability**; an MRA-country manufacturer rises to **~88%**. Your suppliers currently hold WHO certification, not FDA GMP — this is the second-largest lever on program success after disease selection, and the policy lands in days.
+
+**2. Enrollment must start essentially now.** 37 months remain to the 2029-09-30 sunset. Under priority review (6-month clock + 60-day filing), the NDA must be submitted by **~November 2028**, implying LPLV by Feb 2028 and **enrollment start between August 2026 (conservative) and February 2027 (optimistic)**. A program started from scratch today sits at the outer edge of the optimistic case, with no margin for slippage.
+
+### Recruitment reality
+
+Only **~4.7–14%** of a diagnosed population is realistically enrollable after six successive cuts (age, severity, standard-of-care exclusion, geography/travel, competing trials, parental consent). For a disease with 300 diagnosed US patients that is **14–42 patients** — so a 20-patient trial is feasible but tight, and running 6–10 such trials at once is not.
+
+---
+
 ## Files
 
 ### Core
