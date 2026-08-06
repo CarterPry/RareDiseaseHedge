@@ -27,7 +27,15 @@ Three further statutory gates, all verified: the application must rely on **clin
 
 **What survives.** Orphan designation and 7-year orphan exclusivity (§ 360bb / § 360cc) remain fully available on 505(b)(2) repurposing. And the "European Mucinex" pattern from the call — a drug approved in the EU or Japan that never entered the US because an incumbent owned the category — is *exactly* the shape that **does** qualify, because its active moiety has never been approved in the US. That leg of the thesis is intact and is now the whole PRV story.
 
-**Program window.** The RPD PRV program lapsed after 2024-12-20 and was reauthorized by the **Consolidated Appropriations Act, 2026 (Pub. L. 119-75 § 6604(a)), enacted 2026-02-03**. § 360ff(b)(5) now reads: *"The Secretary may not award any priority review vouchers under paragraph (1) after September 30, 2029."* There is **no longer a separate designation-by deadline** — the binding constraint is **NDA/BLA approval on or before 2029-09-30**.
+**Program window.** The RPD PRV program lapsed after 2024-12-20 and was reauthorized by the **Consolidated Appropriations Act, 2026 (Pub. L. 119-75 § 6604(a)), enacted 2026-02-03**. § 360ff(b)(5) now reads: *"The Secretary may not award any priority review vouchers under paragraph (1) after September 30, 2029."*
+
+**There is no separate designation deadline — and this is now confirmed at the amendment-note level, not inferred.** *(Re-verified 2026-08-05 against the US Code amendment notes after an external audit flagged it as unconfirmed.)* The prior regime did have two dates. The 2026 amendment did not *collapse* them; it **deleted the entire conditional clause**:
+
+> **2026** — Subsec. (b). Pub. L. 119–75, § 6604(a), substituted **"September 30, 2029."** for *"December 20, 2024, unless the rare pediatric disease product application— (A) is for a drug that, **not later than December 20, 2024, is designated** under subsection (d) as a drug for a rare pediatric disease; and (B) is, **not later than September 30, 2026, approved** under section 355(b)(1) of this title or section 351(a) of the Public Health Service Act."*
+
+The designation-by prong (A) and the separate approval-by prong (B) were struck together and replaced with a flat award deadline. **The single binding constraint is award — i.e. approval — on or before 2029-09-30.** Designation timing is unconstrained by statute; it is constrained only by the practical need to have designation in hand before approval, and by § 360ff(d)(2), which forces the RPD request to be filed simultaneously with an orphan or fast-track request.
+
+*Related, from the same amendment notes:* **Pub. L. 117-9 (2021)** is the amendment that replaced the old *"contains no active ingredient (including any ester or salt of the active ingredient)"* test in (a)(4)(A)–(B) with the current **active moiety** language. The moiety concept the whole eligibility analysis turns on is therefore a 2021 change, and pre-2021 commentary on § 360ff eligibility should not be relied on.
 
 **Design consequence.** The screening pipeline needs a hard `active_moiety_previously_approved_in_US` boolean that routes every candidate into one of two disjoint funnels:
 
