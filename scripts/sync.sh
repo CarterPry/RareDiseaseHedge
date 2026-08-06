@@ -16,5 +16,12 @@ git -c user.name="Carter Pry" -c user.email="carterpry@gmail.com" \
     commit -q -m "$MSG
 
 Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>"
-git push -q origin main
-echo "pushed: $(git log --oneline -1)"
+# Retry push - transient network failures previously left commits unpushed.
+for i in 1 2 3; do
+  if git push -q origin main 2>/dev/null; then
+    echo "pushed: $(git log --oneline -1)"; exit 0
+  fi
+  echo "push attempt $i failed, retrying..." >&2; sleep 5
+done
+echo "PUSH FAILED after 3 attempts - commit is local only: $(git log --oneline -1)" >&2
+exit 1
