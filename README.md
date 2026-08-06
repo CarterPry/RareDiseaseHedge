@@ -25,6 +25,41 @@ Both prongs must hold. So:
 
 Three further statutory gates, all verified: the application must rely on **clinical data from a pediatric population** (D); must **not seek an adult indication** in the original RPD application (E); must be deemed **eligible for priority review** (C).
 
+### ⚖️ MATERIAL CARVE-OUT — *Sun Pharma Advanced Research Co. v. FDA* (D.D.C., 2 Dec 2025)
+
+**Added 2026-08-06. This is the most important development since the original finding and it partially reopens the generic-repurposing route.**
+
+**SEZABY** (phenobarbital sodium injection, for neonatal seizures) was approved November 2022. FDA **denied** the RPD voucher, citing **NDA 000597** (phenobarbital + atropine, submitted 1939) as a previously-approved active moiety. Sun/SPARC sued. **The court granted summary judgment for Sun**, holding that a pre-1962 *"deemed approved"* NDA is **not** *"previously approved"* under § 360ff(a)(4)(B)(i).
+
+The court's reasoning — "approved" requires affirmative agency action:
+
+> …to *"sanction officially," "confirm authoritatively," or "accept as satisfactory."* NDA 000597 became effective through FDA **inaction** rather than positive approval, and was withdrawn for lack of efficacy in 1982. **"In no ordinary sense then was NDA 000597 ever 'approved.'"**
+
+The court further noted that Hatch-Waxman signalled any "previous approval" must have "successfully navigated" the modern approval process, and rejected a reading in which a drug "never able to show efficacy and ultimately pulled from the market" could block future pediatric treatments.
+
+**Outcome:** FDA awarded the voucher on **2026-02-03**. The 60-day appeal window from the 2025-12-02 ruling had by then expired, which strongly implies **FDA did not appeal** — though that should be confirmed on the docket.
+
+**What this changes — this is the business-relevant part:**
+
+> **Grandfathered 1938–1962 drugs may qualify for rare pediatric (or tropical) disease PRVs when repurposed.** That is a specific, enumerable class of decades-old molecules — precisely the class this company targets.
+
+So Funnel A is **larger than originally stated**. It now has two sub-populations:
+
+- **A1 — never approved in the US at all.** Approved abroad, filed as 505(b)(1). The original finding.
+- **A2 — US drugs whose *only* prior "approval" was a pre-1962 deemed-approved NDA.** Newly available per *Sun*.
+
+**Limits — do not over-read this:**
+- It is a **district court** decision (D.D.C.), persuasive but not binding elsewhere, and unreviewed on appeal.
+- The carve-out is **narrow**: it rescues only drugs whose *sole* prior approval was pre-1962 deemed-approved. **Any modern 505(b)(1), 505(b)(2) or ANDA approval still bars the voucher outright.** Most off-patent US generics have exactly that history and remain categorically excluded.
+- The application must still clear every other gate — 505(b)(1) filing, priority-review eligibility, pediatric clinical data, no adult indication.
+- Confirm with regulatory counsel before relying on it.
+
+**Secondary implication flagged by commentators:** the ruling also undercuts FDA's practice of searching approval records back to 1938 when determining **new chemical entity (NCE)** status — so NCE exclusivity determinations resting on pre-1962 records may be similarly vulnerable.
+
+**Precedent value for the whole thesis:** SEZABY is an ancient generic molecule, reformulated for a rare pediatric indication, that ultimately earned a transferable voucher. That is a near-exact instance of the model — and it shows both that the model can work *and* that FDA will fight it.
+
+---
+
 **What survives.** Orphan designation and 7-year orphan exclusivity (§ 360bb / § 360cc) remain fully available on 505(b)(2) repurposing. And the "European Mucinex" pattern from the call — a drug approved in the EU or Japan that never entered the US because an incumbent owned the category — is *exactly* the shape that **does** qualify, because its active moiety has never been approved in the US. That leg of the thesis is intact and is now the whole PRV story.
 
 **Program window.** The RPD PRV program lapsed after 2024-12-20 and was reauthorized by the **Consolidated Appropriations Act, 2026 (Pub. L. 119-75 § 6604(a)), enacted 2026-02-03**. § 360ff(b)(5) now reads: *"The Secretary may not award any priority review vouchers under paragraph (1) after September 30, 2029."*

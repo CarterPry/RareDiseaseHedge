@@ -177,7 +177,13 @@ reflecting FDA's framing at the time of the December 2023 decision.
 | Court outcome | Summary judgment for Sun/SPARC (December 2025) |
 | Court's ruling | NDA 000597 "became effective not by any positive agency action but by its inaction" and was thus never affirmatively "approved" as the statute requires; FDA's withholding of the PRV "was contrary to law" |
 | PRV awarded | Yes — February 3, 2026, following the court ruling |
-| PRV sale | Sold for **$195 million** (confirmed by prvwatch.com article) |
+| PRV sale | ⚠️ **DISPUTED — DO NOT RELY.** Recorded as "$195 million" citing prvwatch.com. But **$195M is independently documented as the price of a _different_ voucher**: Denali Therapeutics' AVLAYAH (tividenofusp alfa, Hunter syndrome) PRV — definitive agreement 2026-06-18, **closed 2026-07-27** — confirmed 2026-08-06 against Denali's own investor-relations release. Probable conflation. **The Sezaby/SPARC sale price is UNVERIFIED.** Settle it against SPARC disclosures — SPARC is listed in India, so check BSE/NSE filings, not SEC. Note SPARC announced a ~40% workforce reduction in a 2026 restructuring linked to the Sezaby PRV, implying a monetisation event did occur. |
+
+> **Correction applied 2026-08-06.** The court ruling itself is independently VERIFIED (see below);
+> only the sale price was conflated. Verified 2026-08-06 PRV sale prices, from primary company sources:
+> **Cyprium/Fortress $205M** (announced 2026-02-23; ZYCUBO approved 2026-01-12) · **Denali $195M**
+> (closed 2026-07-27) · **Rocket $180M** (KRESLADI). A secondary source claiming a "$90–110M typical
+> range" for 2025–26 was checked and is **contradicted** by all three primary disclosures — disregard it.
 
 **Primary sources VERIFIED:**
 
