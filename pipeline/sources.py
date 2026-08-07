@@ -90,12 +90,18 @@ def load_ema(raw: str):
         status = vals[3].strip()
         inn = vals[6].strip()
         active = vals[7].strip()
+        area = vals[8].strip() if len(vals) > 8 else ""            # Therapeutic area (MeSH)
+        atc = vals[11].strip() if len(vals) > 11 else ""           # ATC code (human)
+        indication = vals[15].strip() if len(vals) > 15 else ""    # Therapeutic indication
+        approved = vals[31].strip() if len(vals) > 31 else ""      # Marketing authorisation date
         orphan = vals[23].strip().lower() in ("yes", "true", "1")
         substance = active or inn
         if not substance or category.lower().startswith("veterinary"):
             continue
         out.append({"substance": substance, "source": "EMA",
-                    "status": status, "orphan": orphan, "raw": inn or active})
+                    "status": status, "orphan": orphan, "raw": inn or active,
+                    "area": area, "atc": atc, "indication": indication,
+                    "approved": approved})
     wb.close()
     return out
 

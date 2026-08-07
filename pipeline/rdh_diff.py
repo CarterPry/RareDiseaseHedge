@@ -93,10 +93,15 @@ def main():
             "subtype": idx.unii2type.get(cu, ""),
             "sources": set(), "orphan": False, "match_tier": tier,
             "in_us": in_us, "biologic": biologic, "examples": set(),
+            "area": "", "atc": "", "indication": "", "approved": "",
         })
         entry["sources"].add(rec["source"])
         entry["orphan"] = entry["orphan"] or rec["orphan"]
         entry["examples"].add(rec["substance"][:60])
+        # keep the first non-empty enrichment (EMA carries these)
+        for f in ("area", "atc", "indication", "approved"):
+            if not entry[f] and rec.get(f):
+                entry[f] = rec[f]
 
     # 5) Classify ----------------------------------------------------------
     # A genuine 505(b)(1) repurposing candidate is a named drug substance (has an
@@ -128,12 +133,14 @@ def main():
             w = csv.writer(fh)
             w.writerow(["unii", "preferred_name", "moiety_key", "is_INN", "is_USAN",
                         "substance_type", "foreign_sources", "n_sources",
-                        "orphan_flag", "match_tier", "example_source_names"])
+                        "orphan_flag", "therapeutic_area", "atc", "indication",
+                        "approved_abroad", "match_tier", "example_source_names"])
             for e in rows:
                 w.writerow([e["unii"], e["display"], e["moiety_key"],
                             "Y" if e["inn"] else "N", "Y" if e["usan"] else "N",
                             e["subtype"], "|".join(sorted(e["sources"])),
                             len(e["sources"]), "Y" if e["orphan"] else "N",
+                            e["area"], e["atc"], e["indication"], e["approved"],
                             e["match_tier"], " ; ".join(sorted(e["examples"])[:3])])
 
     csv_path = os.path.join(OUT, "funnelA_candidates.csv")
@@ -156,7 +163,9 @@ def main():
         return {"unii": e["unii"], "name": e["display"], "moiety": e["moiety_key"],
                 "inn": e["inn"], "usan": e["usan"], "type": e["subtype"],
                 "sources": sorted(e["sources"]), "orphan": e["orphan"],
-                "tier": e["match_tier"], "examples": sorted(e["examples"])[:3]}
+                "tier": e["match_tier"], "examples": sorted(e["examples"])[:3],
+                "area": e["area"], "atc": e["atc"], "indication": e["indication"],
+                "approved": e["approved"]}
     summary = {
         "generated": time.strftime("%Y-%m-%d"),
         "snapshot": "UNII 26 Feb 2026 · Drugs@FDA 4 Aug 2026 · Orange Book Jul 2026 · EMA 5 Aug 2026",

@@ -35,7 +35,11 @@
    "tier": "exact-moiety",
    "examples": [
     "Bardoxolone methyl"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "Treatment of chronic kidney disease",
+   "approved": ""
   },
   {
    "unii": "A3749M6582",
@@ -51,7 +55,11 @@
    "tier": "moiety-base",
    "examples": [
     "catequentinib dihydrochloride"
-   ]
+   ],
+   "area": "Sarcoma;Leiomyosarcoma",
+   "atc": "L01EX",
+   "indication": "Treatment of synovial sarcoma or leiomyosarcoma.",
+   "approved": ""
   },
   {
    "unii": "U194AS08HZ",
@@ -67,7 +75,11 @@
    "tier": "exact-moiety",
    "examples": [
     "edotreotide"
-   ]
+   ],
+   "area": "Neuroendocrine Tumors;Radionuclide Imaging",
+   "atc": "V09IX",
+   "indication": "This medicinal product is for diagnostic use only. After radiolabelling with gallium (68Ga) chloride solution, the solution of gallium (68Ga) edotreotide obtained is indicated for Positron Emission Tomography (PET) imaging of somatostatin receptor overexpression in adult patients with confirmed or suspected well-differentiated gastro-enteropancreatic neuroendocrine tumours (GEP-NET) for localizing primary tumours and their metastases.",
+   "approved": "08/12/2016"
   },
   {
    "unii": "5X0D9H16IU",
@@ -83,7 +95,11 @@
    "tier": "moiety-base",
    "examples": [
     "eprodisate disodium"
-   ]
+   ],
+   "area": "Amyloidosis",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "6JLQ8K35KK",
@@ -99,7 +115,11 @@
    "tier": "exact-moiety",
    "examples": [
     "govorestat"
-   ]
+   ],
+   "area": "Galactosemias",
+   "atc": "A16AX24",
+   "indication": "Treatment of adults and children aged 2 years and older with a confirmed diagnosis of classic galactosemia.",
+   "approved": ""
   },
   {
    "unii": "HB6PN45W4J",
@@ -115,7 +135,11 @@
    "tier": "exact-moiety",
    "examples": [
     "idebenone"
-   ]
+   ],
+   "area": "Optic Atrophy, Hereditary, Leber",
+   "atc": "N06BX13",
+   "indication": "Raxone is indicated for the treatment of visual impairment in adolescent and adult patients with Leber\u2019s Hereditary Optic Neuropathy (LHON).",
+   "approved": "08/09/2015"
   },
   {
    "unii": "58BH47BV6S",
@@ -131,7 +155,11 @@
    "tier": "exact-moiety",
    "examples": [
     "Infigratinib monophosphate"
-   ]
+   ],
+   "area": "Cholangiocarcinoma",
+   "atc": "L01E",
+   "indication": "Treatment of cholangiocarcinoma.",
+   "approved": ""
   },
   {
    "unii": "60UTO373KE",
@@ -147,7 +175,11 @@
    "tier": "exact-moiety",
    "examples": [
     "isavuconazole"
-   ]
+   ],
+   "area": "Aspergillosis",
+   "atc": "J02AC05",
+   "indication": "Powder for concentrate for solution for infusion: Cresemba is indicated in patients from 1 year of age and older for the treatment of  invasive aspergillosis mucormycosis in patients for whom amphotericin B is inappropriate (see sections 4.4 and 5.1)  Consideration should be given to official guidance on the appropriate use of antifungal agents. Hard capsules: Cresemba hard capsules are indicated in adults and in paediatric patients from 6 years of age for the treatment of  invasive aspergillosis mucormycosis in patients for whom amphotericin B is inappropriate (see sections 4.4 and 5.1)  Consideration should be given to official guidance on the appropriate use of antifungal agents. Cresemba 40 mg hard capsules are intended to be used for paediatric patients.",
+   "approved": "15/10/2015"
   },
   {
    "unii": "K824X25AYA",
@@ -164,7 +196,11 @@
    "examples": [
     "leriglitazone",
     "leriglitazone hydrochloride"
-   ]
+   ],
+   "area": "Adrenoleukodystrophy",
+   "atc": "A16AX23",
+   "indication": "Treatment of adrenoleukodystrophy.",
+   "approved": ""
   },
   {
    "unii": "M59NC4E26P",
@@ -181,7 +217,11 @@
    "examples": [
     "Masitinib mesilate",
     "masitinib"
-   ]
+   ],
+   "area": "Amyotrophic Lateral Sclerosis",
+   "atc": "L01EX06",
+   "indication": "In combination with riluzole for the treatment of adult patients with amyotrophic lateral sclerosis (ALS)",
+   "approved": ""
   },
   {
    "unii": "Y76ID234HW",
@@ -197,7 +237,11 @@
    "tier": "exact-moiety",
    "examples": [
     "plitidepsin"
-   ]
+   ],
+   "area": "Multiple Myeloma",
+   "atc": "L01",
+   "indication": "Treatment of multiple myeloma&nbsp;",
+   "approved": ""
   },
   {
    "unii": "HD4TW8S2VK",
@@ -213,7 +257,11 @@
    "tier": "moiety-base",
    "examples": [
     "pridopidine hydrochloride"
-   ]
+   ],
+   "area": "Huntington Disease",
+   "atc": "N07",
+   "indication": "Treatment of Huntington's disease&nbsp;",
+   "approved": ""
   },
   {
    "unii": "1578EUB98L",
@@ -229,7 +277,11 @@
    "tier": "moiety-base",
    "examples": [
     "resminostat mesilate"
-   ]
+   ],
+   "area": "Mycosis Fungoides;Sezary Syndrome",
+   "atc": "L01X",
+   "indication": "Treatment of patients with advanced stage mycosis fungoides (MF) and S\u00e9zary syndrome (SS)",
+   "approved": ""
   },
   {
    "unii": "H19C446XXB",
@@ -245,7 +297,11 @@
    "tier": "exact-moiety",
    "examples": [
     "rubitecan"
-   ]
+   ],
+   "area": "Pancreatic Neoplasms",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "29OQ9EU4R1",
@@ -261,7 +317,11 @@
    "tier": "exact-moiety",
    "examples": [
     "tiratricol"
-   ]
+   ],
+   "area": "Thyrotoxicosis;Heredodegenerative Disorders, Nervous System",
+   "atc": "H03AA04",
+   "indication": "Emcitate is indicated for the treatment of peripheral thyrotoxicosis in patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley Syndrome), from birth.",
+   "approved": "12/02/2025"
   },
   {
    "unii": "137R1N49AD",
@@ -277,7 +337,11 @@
    "tier": "exact-moiety",
    "examples": [
     "agomelatine"
-   ]
+   ],
+   "area": "Depressive Disorder, Major",
+   "atc": "N06AX22",
+   "indication": "Treatment of major depressive episodes in adults.",
+   "approved": "19/02/2009"
   },
   {
    "unii": "URQ2517572",
@@ -293,7 +357,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ALFACALCIDOL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "2U0X0JA2NB",
@@ -309,7 +377,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ALTRENOGEST"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "05W904P57F",
@@ -325,7 +397,11 @@
    "tier": "exact-moiety",
    "examples": [
     "AMYLMETACRESOL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "55F75LJQ0V",
@@ -341,7 +417,11 @@
    "tier": "moiety-base",
    "examples": [
     "anamorelin hydrochloride"
-   ]
+   ],
+   "area": "Cachexia;Anorexia;Carcinoma, Non-Small-Cell Lung",
+   "atc": "V03",
+   "indication": "Treatment of anorexia, cachexia or unintended weight loss in adult patients with non-small cell lung cancer (NSCLC)",
+   "approved": ""
   },
   {
    "unii": "K16AME9I3V",
@@ -357,7 +437,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ataluren"
-   ]
+   ],
+   "area": "Muscular Dystrophy, Duchenne",
+   "atc": "M09AX03",
+   "indication": "Translarna is indicated for the treatment of Duchenne muscular dystrophy resulting from a nonsense mutation in the dystrophin gene, in ambulatory patients aged 2 years and older. Efficacy has not been demonstrated in non-ambulatory patients. The presence of a nonsense mutation in the dystrophin gene should be determined by genetic testing.",
+   "approved": "31/07/2014"
   },
   {
    "unii": "RZ6I9WX68U",
@@ -373,7 +457,11 @@
    "tier": "moiety-base",
    "examples": [
     "Aumolertinib mesilate"
-   ]
+   ],
+   "area": "Carcinoma, Non-Small-Cell Lung",
+   "atc": "L01EB",
+   "indication": "Aumseqa as monotherapy is indicated for:- the first-line treatment of adult patients with advanced non-small cell lung cancer (NSCLC)whose tumours have EGFR exon 19 deletions or exon 21 (L858R) substitution mutations (forbiomarker-based patient selection, see section 4.2).- the treatment of adult patients with advanced EGFR T790M mutation-positive NSCLC (forbiomarker-based patient selection, see section 4.2)",
+   "approved": "12/02/2026"
   },
   {
    "unii": "XNM7LT65NP",
@@ -389,7 +477,11 @@
    "tier": "exact-moiety",
    "examples": [
     "aztreonam lysine"
-   ]
+   ],
+   "area": "Cystic Fibrosis;Respiratory Tract Infections",
+   "atc": "J01DF01",
+   "indication": "Cayston is indicated for the suppressive therapy of chronic pulmonary infections due to Pseudomonas aeruginosa in patients with cystic fibrosis (CF) aged 6 years and older. Consideration should be given to official guidance on the appropriate use of antibacterial agents.",
+   "approved": "21/09/2009"
   },
   {
    "unii": "PWZ1720CBH",
@@ -405,7 +497,11 @@
    "tier": "exact-moiety",
    "examples": [
     "BEMOTRIZINOL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "PA1123N395",
@@ -421,7 +517,11 @@
    "tier": "exact-moiety",
    "examples": [
     "BILASTINE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "8NT850T0YS",
@@ -437,7 +537,11 @@
    "tier": "exact-moiety",
    "examples": [
     "BISOCTRIZOLE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "1M49V1PBPL",
@@ -453,7 +557,11 @@
    "tier": "moiety-base",
    "examples": [
     "blarcamesine hydrochloride"
-   ]
+   ],
+   "area": "",
+   "atc": "N06D",
+   "indication": "Treatment of Alzheimer\u2019s disease and dementia.",
+   "approved": ""
   },
   {
    "unii": "X015L14V0O",
@@ -469,7 +577,11 @@
    "tier": "exact-moiety",
    "examples": [
     "BROMAZEPAM"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "568ET80C3D",
@@ -485,7 +597,11 @@
    "tier": "exact-moiety",
    "examples": [
     "CALCIUM D-PANTOTHENATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "JUP57A8EPZ",
@@ -501,7 +617,11 @@
    "tier": "exact-moiety",
    "examples": [
     "camizestrant"
-   ]
+   ],
+   "area": "Breast Neoplasms",
+   "atc": "L02BA05",
+   "indication": "Etcamah&nbsp;in combination with a CDK4/6 inhibitor (palbociclib, ribociclib, or abemaciclib) is indicated for the treatment of&nbsp;adult&nbsp;patients with ER-positive,&nbsp;HER2-negative,&nbsp;locally advanced or metastatic breast&nbsp;cancer upon detection of ESR1\u2011mutation and without disease progression during first-line endocrine therapy in combination with a CDK4/6 inhibitor (for biomarker based patient-selection, see section 4.2 and 5.1).",
+   "approved": "20/07/2026"
   },
   {
    "unii": "0MQ44VUN84",
@@ -517,7 +637,11 @@
    "tier": "moiety-base",
    "examples": [
     "CAPROMORELIN TARTRATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "P7725I9V3Z",
@@ -533,7 +657,11 @@
    "tier": "exact-moiety",
    "examples": [
     "carisbamate"
-   ]
+   ],
+   "area": "Epilepsy",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "3B03KPM27L",
@@ -549,7 +677,11 @@
    "tier": "exact-moiety",
    "examples": [
     "casopitant"
-   ]
+   ],
+   "area": "Vomiting;Postoperative Nausea and Vomiting;Cancer",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "68AYS9A614",
@@ -565,7 +697,11 @@
    "tier": "moiety-base",
    "examples": [
     "cediranib maleate"
-   ]
+   ],
+   "area": "Ovarian Neoplasms",
+   "atc": "L01XE32",
+   "indication": "Treatment of platinum sensitive relapsed (PSR) ovarian cancer",
+   "approved": ""
   },
   {
    "unii": "0F32U78V2Q",
@@ -581,7 +717,11 @@
    "tier": "exact-moiety",
    "examples": [
     "CHLOROXYLENOL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "45I14D8O27",
@@ -597,7 +737,11 @@
    "tier": "direct",
    "examples": [
     "CHOLINE CHLORIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "7560BB0BO3",
@@ -613,7 +757,11 @@
    "tier": "exact-moiety",
    "examples": [
     "CLOROPHENE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "K848JZ4886",
@@ -629,7 +777,11 @@
    "tier": "exact-moiety",
    "examples": [
     "cysteinum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "8OOT6M1PC7",
@@ -645,7 +797,11 @@
    "tier": "exact-moiety",
    "examples": [
     "Delamanid"
-   ]
+   ],
+   "area": "Tuberculosis, Multidrug-Resistant",
+   "atc": "J04AK06",
+   "indication": "Deltyba is indicated for use as part of an appropriate combination regimen for pulmonary multi-drug resistant tuberculosis (MDR-TB) in adults, adolescents, children and infants with a body weight of at least 10 kg when an effective treatment regimen cannot otherwise be composed for reasons of resistance or tolerability (see sections 4.2, 4.4 and 5.1). Consideration should be given to official guidance on the appropriate use of antibacterial agents.",
+   "approved": "27/04/2014"
   },
   {
    "unii": "VX29JB5XWV",
@@ -661,7 +817,11 @@
    "tier": "exact-moiety",
    "examples": [
     "DERACOXIB"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "R6D2UI4FLS",
@@ -677,7 +837,11 @@
    "tier": "moiety-base",
    "examples": [
     "enclomifene citrate"
-   ]
+   ],
+   "area": "Hypogonadism",
+   "atc": "G03X",
+   "indication": "Treatment of hypogonadotropic hypogonadism in men",
+   "approved": ""
   },
   {
    "unii": "3DX3XEK1BN",
@@ -693,7 +857,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ENROFLOXACIN"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "YKH834O4BH",
@@ -709,7 +877,11 @@
    "tier": "exact-moiety",
    "examples": [
     "adrenalinum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "1494Q15E7Z",
@@ -725,7 +897,11 @@
    "tier": "exact-moiety",
    "examples": [
     "faldaprevir"
-   ]
+   ],
+   "area": "Hepatitis C, Chronic",
+   "atc": "J05AE",
+   "indication": "Treatment of chronic genotype-1 hepatitis C virus (HCV) infection.",
+   "approved": ""
   },
   {
    "unii": "2CQ8Y0B8XQ",
@@ -741,7 +917,11 @@
    "tier": "moiety-base",
    "examples": [
     "filgotinib maleate"
-   ]
+   ],
+   "area": "Arthritis, Rheumatoid",
+   "atc": "L04AF04",
+   "indication": "Rheumatoid arthritis Jyseleca is indicated for the treatment of moderate to severe active rheumatoid arthritis in adult patients who have responded inadequately to, or who are intolerant to one or more disease modifying anti rheumatic drugs (DMARDs). Jyseleca may be used as monotherapy or in combination with methotrexate (MTX). Ulcerative colitis Jyseleca is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis who have had an inadequate response with, lost response to, or were intolerant to either conventional therapy or a biologic agent.",
+   "approved": "24/09/2020"
   },
   {
    "unii": "Y6V2W4S4WT",
@@ -757,7 +937,11 @@
    "tier": "exact-moiety",
    "examples": [
     "FIROCOXIB"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "WSH8393RM5",
@@ -773,7 +957,11 @@
    "tier": "exact-moiety",
    "examples": [
     "FLURALANER"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "6L8OF9XRDC",
@@ -789,7 +977,11 @@
    "tier": "exact-moiety",
    "examples": [
     "fosaprepitant"
-   ]
+   ],
+   "area": "Vomiting;Cancer",
+   "atc": "A04AD12",
+   "indication": "Prevention of nausea and vomiting associated with highly and moderately emetogenic cancer chemotherapy in adults and paediatric patients aged 6 months and older. Ivemend 150 mg is given as part of a combination therapy.",
+   "approved": "11/01/2008"
   },
   {
    "unii": "124X2V25W4",
@@ -805,7 +997,11 @@
    "tier": "exact-moiety",
    "examples": [
     "SALICYLIC ACID"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "6K6L7E3F1L",
@@ -821,7 +1017,11 @@
    "tier": "exact-moiety",
    "examples": [
     "gefapixant"
-   ]
+   ],
+   "area": "Cough",
+   "atc": "R05DB29",
+   "indication": "Lyfnua is indicated in adults for the treatment of refractory or unexplained chronic cough.",
+   "approved": "15/09/2023"
   },
   {
    "unii": "G4PX8C4HKV",
@@ -837,7 +1037,11 @@
    "tier": "exact-moiety",
    "examples": [
     "GLICLAZIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "PDC6A3C0OX",
@@ -853,7 +1057,11 @@
    "tier": "exact-moiety",
    "examples": [
     "GLYCERINE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "V06SV4M95S",
@@ -869,7 +1077,11 @@
    "tier": "exact-moiety",
    "examples": [
     "HOMOSALATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "UMD7G2653W",
@@ -885,7 +1097,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ibandronic acid"
-   ]
+   ],
+   "area": "Breast Neoplasms;Neoplasm Metastasis;Fractures, Bone",
+   "atc": "M05BA06",
+   "indication": "Ibandronic acid Sandoz is indicated for the prevention of skeletal events (pathological fractures, bone complications requiring radiotherapy or surgery) in patients with breast cancer and bone metastases.",
+   "approved": "26/07/2011"
   },
   {
    "unii": "0VUA21238F",
@@ -901,7 +1117,11 @@
    "tier": "exact-moiety",
    "examples": [
     "lapatinib"
-   ]
+   ],
+   "area": "Breast Neoplasms",
+   "atc": "L01EH01",
+   "indication": "Tyverb is indicated for the treatment of patients with breast cancer, whose tumours overexpress HER2 (ErbB2):  in combination with capecitabine for patients with advanced or metastatic disease with progression following prior therapy, which must have included anthracyclines and taxanes and therapy with trastuzumab in the metastatic setting; in combination with trastuzumab for patients with hormone-receptor-negative metastatic disease that has progressed on prior trastuzumab therapy or therapies in combination with chemotherapy; in combination with an aromatase inhibitor for post-menopausal women with hormone-receptor-positive metastatic disease, not currently intended for chemotherapy. The patients in the registration study had not previously been treated with trastuzumab or an aromatase inhibitor. No data are available on the efficacy of this combination relative to trastuzumab in combination with an aromatase inhibitor in this patient population.",
+   "approved": "10/06/2008"
   },
   {
    "unii": "4H914M0CSP",
@@ -917,7 +1137,11 @@
    "tier": "exact-moiety",
    "examples": [
     "laquinimod"
-   ]
+   ],
+   "area": "Multiple Sclerosis",
+   "atc": "N07",
+   "indication": "Treatment of multiple sclerosis",
+   "approved": ""
   },
   {
    "unii": "337G83N988",
@@ -933,7 +1157,11 @@
    "tier": "moiety-base",
    "examples": [
     "Lasofoxifene tartrate"
-   ]
+   ],
+   "area": "Osteoporosis, Postmenopausal",
+   "atc": "G03",
+   "indication": "Fablyn is indicated for the treatment of osteoporosis in postmenopausal women at increased risk of fracture. A significant reduction in the incidence of vertebral and non-vertebral fractures but not hip fractures has been demonstrated (see section 5.1). When determining the choice of Fablyn or other therapies, including oestrogens, for a postmenopausal woman, consideration should be given to menopausal symptoms, effects on uterine and breast tissues, and cardiovascular risks and benefits (see section 5.1).",
+   "approved": "24/02/2009"
   },
   {
    "unii": "5KN5Y9V01K",
@@ -949,7 +1177,11 @@
    "tier": "exact-moiety",
    "examples": [
     "levomepromazinum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "R3B637Y991",
@@ -965,7 +1197,11 @@
    "tier": "exact-moiety",
    "examples": [
     "levacetylmethadol"
-   ]
+   ],
+   "area": "Opioid-Related Disorders",
+   "atc": "N02AC",
+   "indication": "ORLAAM is indicated for the substitution maintenance treatment of opiate addiction in adults previously treated with methadone, as part of a comprehensive treatment plan including medical, social and psychological care. ORLAAM should be administered under the supervision of physicians with experience in addiction treatment and whenever practicable, in centres specialising in the treatment of drug addiction. ORLAAM is not intended for take home use.",
+   "approved": "01/07/1997"
   },
   {
    "unii": "7CDW97HUEX",
@@ -981,7 +1217,11 @@
    "tier": "moiety-base",
    "examples": [
     "linzagolix choline"
-   ]
+   ],
+   "area": "Leiomyoma",
+   "atc": "H01CC04",
+   "indication": "Yselty is indicated in adult women of reproductive age for:&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; treatment of moderate to severe symptoms of uterine fibroids,-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; symptomatic treatment of endometriosis in women with a history of previous medical or surgical treatment for their endometriosis (see section 5.1).",
+   "approved": "14/06/2022"
   },
   {
    "unii": "E0QN3D755O",
@@ -997,7 +1237,11 @@
    "tier": "exact-moiety",
    "examples": [
     "lisuride"
-   ]
+   ],
+   "area": "Restless Legs Syndrome",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "3412470A0V",
@@ -1013,7 +1257,11 @@
    "tier": "moiety-base",
    "examples": [
     "Melphalan flufenamide hydrochloride"
-   ]
+   ],
+   "area": "Multiple Myeloma",
+   "atc": "L01AA10",
+   "indication": "Pepaxti is indicated, in combination with dexamethasone, for the treatment of adult patients with multiple myeloma who have received at least three prior lines of therapies, whose disease is refractory to at least one proteasome inhibitor, one immunomodulatory agent, and one anti-CD38 monoclonal antibody, and who have demonstrated disease progression on or after the last therapy. For patients with a prior autologous stem cell transplantation, the time to progression should be at least 3 years from transplantation (see section 4.4).",
+   "approved": "17/08/2022"
   },
   {
    "unii": "53QOG569E0",
@@ -1029,7 +1277,11 @@
    "tier": "moiety-base",
    "examples": [
     "ORCIPRENALINE SULFATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "8NAP7826UB",
@@ -1045,7 +1297,11 @@
    "tier": "moiety-base",
    "examples": [
     "methylthioninium chloride"
-   ]
+   ],
+   "area": "Methemoglobinemia",
+   "atc": "V03AB17",
+   "indication": "Acute symptomatic treatment of medicinal and chemical products- induced methaemoglobinaemia. Methylthioninium chloride Proveblue is indicated in adults, children and adolescents (aged 0 to 17 years old).",
+   "approved": "06/05/2011"
   },
   {
    "unii": "A2I8C7HI9T",
@@ -1061,7 +1317,11 @@
    "tier": "exact-moiety",
    "examples": [
     "E 218"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "1LM890Q4FY",
@@ -1077,7 +1337,11 @@
    "tier": "exact-moiety",
    "examples": [
     "mifamurtide"
-   ]
+   ],
+   "area": "Osteosarcoma",
+   "atc": "L03AX15",
+   "indication": "Mepact is indicated in children, adolescents and young adults for the treatment of high-grade resectable non-metastatic osteosarcoma after macroscopically complete surgical resection. It is used in combination with postoperative multi-agent chemotherapy. Safety and efficacy have been assessed in studies of patients two to 30 years of age at initial diagnosis.",
+   "approved": "06/03/2009"
   },
   {
    "unii": "YA84KI1VEW",
@@ -1093,7 +1357,11 @@
    "tier": "exact-moiety",
    "examples": [
     "molnupiravir"
-   ]
+   ],
+   "area": "COVID-19 virus infection",
+   "atc": "J05A",
+   "indication": "Treatment of coronavirus disease 2019 (COVID-19).",
+   "approved": ""
   },
   {
    "unii": "V24GR4LI3I",
@@ -1109,7 +1377,11 @@
    "tier": "exact-moiety",
    "examples": [
     "naproxcinod"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "4X49Y0596W",
@@ -1125,7 +1397,11 @@
    "tier": "exact-moiety",
    "examples": [
     "OCTISALATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "2M19539ERK",
@@ -1141,7 +1417,11 @@
    "tier": "moiety-base",
    "examples": [
     "omecamtiv mecarbil dihydrochloride hydrate"
-   ]
+   ],
+   "area": "Heart Failure, Systolic",
+   "atc": "C01CX10",
+   "indication": "Treatment of adult patients with symptomatic chronic heart failure and reduced ejection fraction less than 30%",
+   "approved": ""
   },
   {
    "unii": "9TUW81Y3CE",
@@ -1158,7 +1438,11 @@
    "examples": [
     "parecoxib",
     "parecoxib sodium"
-   ]
+   ],
+   "area": "Pain, Postoperative",
+   "atc": "M01AH04",
+   "indication": "For the short-term treatment of postoperative pain in adults.",
+   "approved": "22/03/2002"
   },
   {
    "unii": "OS7097575K",
@@ -1174,7 +1458,11 @@
    "tier": "moiety-base",
    "examples": [
     "Parsaclisib hydrochloride"
-   ]
+   ],
+   "area": "",
+   "atc": "L01EM04",
+   "indication": "Treatment of marginal zone lymphoma",
+   "approved": ""
   },
   {
    "unii": "SSZ1S4I0US",
@@ -1190,7 +1478,11 @@
    "tier": "exact-moiety",
    "examples": [
     "benzathini benzylpenicillinum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "483AU1Y5CZ",
@@ -1206,7 +1498,11 @@
    "tier": "exact-moiety",
    "examples": [
     "dodecafluoropentane"
-   ]
+   ],
+   "area": "Echocardiography",
+   "atc": "V08DA",
+   "indication": "EchoGen is a transpulmonary echocardiographic contrast agent for use in patients with suspected or established cardiovascular disease to provide opacification of cardiac chambers, enhance left ventricular border delineation with resulting improvement in wall motion visualisation. EchoGen should only be used in patients where the study without contrast enhancement is inconclusive.",
+   "approved": "17/07/1998"
   },
   {
    "unii": "SE4TWR0K2C",
@@ -1222,7 +1518,11 @@
    "tier": "exact-moiety",
    "examples": [
     "perflubutane"
-   ]
+   ],
+   "area": "Ultrasonography",
+   "atc": "V08D",
+   "indication": "ultrasound imaging agent indicated for the detection of coronary artery disease (CAD)",
+   "approved": ""
   },
   {
    "unii": "YQE403BP4D",
@@ -1238,7 +1538,11 @@
    "tier": "exact-moiety",
    "examples": [
     "phenobarbitalum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "34AP3BBP9T",
@@ -1254,7 +1558,11 @@
    "tier": "exact-moiety",
    "examples": [
     "PIMOBENDAN"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "F5SXN2KNMR",
@@ -1270,7 +1578,11 @@
    "tier": "moiety-base",
    "examples": [
     "pixantrone dimaleate"
-   ]
+   ],
+   "area": "Lymphoma, Non-Hodgkin",
+   "atc": "L01DB11",
+   "indication": "Pixuvri is indicated as monotherapy for the treatment of adult patients with multiply relapsed or refractory aggressive non-Hodgkin B-cell lymphomas (NHL). The benefit of pixantrone treatment has not been established in patients when used as fifth-line or greater chemotherapy in patients who are refractory to last therapy.",
+   "approved": "10/05/2012"
   },
   {
    "unii": "468GE2241L",
@@ -1286,7 +1598,11 @@
    "tier": "moiety-base",
    "examples": [
     "PROPIVERINE HYDROCHLORIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "309G9J93TP",
@@ -1302,7 +1618,11 @@
    "tier": "moiety-base",
    "examples": [
     "RACTOPAMINE HYDROCHLORIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "TLM2976OFR",
@@ -1318,7 +1638,11 @@
    "tier": "exact-moiety",
    "examples": [
     "riboflavinum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "X3O30D9YMX",
@@ -1334,7 +1658,11 @@
    "tier": "exact-moiety",
    "examples": [
     "roxadustat"
-   ]
+   ],
+   "area": "Anemia;Kidney Failure, Chronic",
+   "atc": "B03XA05",
+   "indication": "Evrenzo is indicated for treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD).",
+   "approved": "18/08/2021"
   },
   {
    "unii": "YS90V3DTX0",
@@ -1350,7 +1678,11 @@
    "tier": "exact-moiety",
    "examples": [
     "safinamide methanesulfonate"
-   ]
+   ],
+   "area": "Parkinson Disease",
+   "atc": "N04B",
+   "indication": "Xadago is indicated for the treatment of adult patients with idiopathic Parkinson\u2019s disease (PD) as add-on therapy to a stable dose of Levodopa (L-dopa) alone or in combination with other PD medicinal products in mid-to late-stage fluctuating patients.",
+   "approved": "23/02/2015"
   },
   {
    "unii": "AJS8S3P31H",
@@ -1366,7 +1698,11 @@
    "tier": "exact-moiety",
    "examples": [
     "satavaptan"
-   ]
+   ],
+   "area": "Hyponatremia",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "8D7B37T28G",
@@ -1382,7 +1718,11 @@
    "tier": "exact-moiety",
    "examples": [
     "satraplatin"
-   ]
+   ],
+   "area": "Prostatic Neoplasms",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "6V9JH46E20",
@@ -1398,7 +1738,11 @@
    "tier": "moiety-base",
    "examples": [
     "sitaxentan sodium"
-   ]
+   ],
+   "area": "Hypertension, Pulmonary",
+   "atc": "C02KX03",
+   "indication": "Treatment of patients with pulmonary arterial hypertension (PAH) classified as WHO functional class III, to improve exercise capacity. Efficacy has been shown in primary pulmonary hypertension and in pulmonary hypertension associated with connective tissue disease.",
+   "approved": "10/08/2006"
   },
   {
    "unii": "9U1ETH79CK",
@@ -1414,7 +1758,11 @@
    "tier": "exact-moiety",
    "examples": [
     "solithromycin"
-   ]
+   ],
+   "area": "Tularemia;Pneumonia;Anthrax",
+   "atc": "J01FA",
+   "indication": "Treatment of bacterial infections",
+   "approved": ""
   },
   {
    "unii": "15XQ8043FN",
@@ -1430,7 +1778,11 @@
    "tier": "exact-moiety",
    "examples": [
     "SULFAGUANIDINE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "WS7LR3I1D6",
@@ -1446,7 +1798,11 @@
    "tier": "exact-moiety",
    "examples": [
     "sulphur hexafluoride"
-   ]
+   ],
+   "area": "Ultrasonography;Echocardiography",
+   "atc": "V08DA05",
+   "indication": "This medicinal product is for diagnostic use only. SonoVue is for use with ultrasound imaging to enhance the echogenicity of the blood, or of fluids in the urinary tract which results in an improved signal to noise ratio. SonoVue should only be used in patients where study without contrast enhancement is inconclusive. Echocardiography SonoVue is a transpulmonary echocardiographic contrast agent for use in adult patients with suspected or established cardiovascular disease to provide opacification of cardiac chambers and enhance left ventricular endocardial border delineation. Doppler of macrovasculature SonoVue increases the accuracy in detection or exclusion of abnormalities in cerebral arteries and extracranial carotid or peripheral arteries in adult patients by improving the Doppler signal to noise ratio. SonoVue increases the quality of the Doppler flow image and the duration of clinically useful signal enhancement in portal vein assessment in adult patients. Doppler of microvasculature SonoVue improves display of the vascularity of liver and breast lesions during Doppler sonography in adult patients leading to more specific lesion characterisation. Ultrasonography of excretory urinary tract SonoVue is indicated for use in ultrasonography of the excretory tract in paediatric patients from newborn to 18 years to detect vesicoureteral reflux. For the limitation in the interpretation of a negative urosonography.",
+   "approved": "26/03/2001"
   },
   {
    "unii": "B2K5L1L8S9",
@@ -1462,7 +1818,11 @@
    "tier": "exact-moiety",
    "examples": [
     "surufatinib"
-   ]
+   ],
+   "area": "Neuroendocrine Tumors",
+   "atc": "L01EX01",
+   "indication": "Treatment of progressive neuroendocrine tumours",
+   "approved": ""
   },
   {
    "unii": "MXD6KMG2ZP",
@@ -1478,7 +1838,11 @@
    "tier": "moiety-base",
    "examples": [
     "tegomil fumarate"
-   ]
+   ],
+   "area": "Multiple Sclerosis, Relapsing-Remitting",
+   "atc": "L04AX10",
+   "indication": "Riulvy is indicated for the treatment of adult and paediatric patients aged 13 years and older with relapsing remitting multiple sclerosis (RRMS).",
+   "approved": "28/07/2025"
   },
   {
    "unii": "FU21S769PF",
@@ -1494,7 +1858,11 @@
    "tier": "exact-moiety",
    "examples": [
     "temoporfin"
-   ]
+   ],
+   "area": "Head and Neck Neoplasms;Carcinoma, Squamous Cell",
+   "atc": "L01XD05",
+   "indication": "Foscan is indicated for the palliative treatment of patients with advanced head and neck squamous cell carcinoma failing prior therapies and unsuitable for radiotherapy, surgery or systemic chemotherapy.",
+   "approved": "24/10/2001"
   },
   {
    "unii": "Z1R9N0A399",
@@ -1510,7 +1878,11 @@
    "tier": "exact-moiety",
    "examples": [
     "TENOXICAM"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "X66NSO3N35",
@@ -1526,7 +1898,11 @@
    "tier": "exact-moiety",
    "examples": [
     "VITAMIN B1"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "E38WZ4U54R",
@@ -1542,7 +1918,11 @@
    "tier": "moiety-base",
    "examples": [
     "TIAMULIN FUMARATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "8CZ82ZYY9X",
@@ -1558,7 +1938,11 @@
    "tier": "exact-moiety",
    "examples": [
     "tolebrutinib"
-   ]
+   ],
+   "area": "Multiple Sclerosis, Chronic Progressive",
+   "atc": "L04AA62",
+   "indication": "Cenrifki is indicated for the treatment of adult patients with secondary progressive multiple sclerosis (SPMS) without relapses in the last 2 years.",
+   "approved": "19/06/2026"
   },
   {
    "unii": "06KB629TKV",
@@ -1574,7 +1958,11 @@
    "tier": "exact-moiety",
    "examples": [
     "TOLNAFTATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "QVZ3IAR3JS",
@@ -1590,7 +1978,11 @@
    "tier": "exact-moiety",
    "examples": [
     "TOLTRAZURIL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "BQ5F77DZS3",
@@ -1606,7 +1998,11 @@
    "tier": "exact-moiety",
    "examples": [
     "troriluzole"
-   ]
+   ],
+   "area": "Spinocerebellar Ataxias",
+   "atc": "N07XX",
+   "indication": "Treatment of adult patients with spinocerebellar ataxia genotype 3 (SCA3)",
+   "approved": ""
   },
   {
    "unii": "7G4J1ZD9UQ",
@@ -1622,7 +2018,11 @@
    "tier": "moiety-base",
    "examples": [
     "vernakalant hydrochloride"
-   ]
+   ],
+   "area": "Atrial Fibrillation",
+   "atc": "C01BG11",
+   "indication": "Rapid conversion of recent onset atrial fibrillation to sinus rhythm in adults:  for non-surgery patients: atrial fibrillation&nbsp;&lt;/= 7 days duration; for post-cardiac surgery patients: atrial fibrillation&nbsp;&lt;/= 3 days duration.",
+   "approved": "01/09/2010"
   },
   {
    "unii": "33MG53C7XW",
@@ -1638,7 +2038,11 @@
    "tier": "exact-moiety",
    "examples": [
     "vinflunine"
-   ]
+   ],
+   "area": "Carcinoma, Transitional Cell;Urologic Neoplasms",
+   "atc": "L01CA05",
+   "indication": "Javlor is indicated in monotherapy for the treatment of adult patients with advanced or metastatic transitional-cell carcinoma of the urothelial tract after failure of a prior platinum-containing regimen. Efficacy and safety of vinflunine have not been studied in patients with performance status ? 2.",
+   "approved": "21/09/2009"
   },
   {
    "unii": "K6A90IIZ19",
@@ -1654,7 +2058,11 @@
    "tier": "exact-moiety",
    "examples": [
     "vosaroxin"
-   ]
+   ],
+   "area": "Leukemia, Myeloid, Acute",
+   "atc": "L01",
+   "indication": "Treatment acute myeloid leukaemia",
+   "approved": ""
   },
   {
    "unii": "49HFB70472",
@@ -1670,7 +2078,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ximelagatran"
-   ]
+   ],
+   "area": "Atrial Fibrillation",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "WPY40FTH8K",
@@ -1686,7 +2098,11 @@
    "tier": "moiety-base",
    "examples": [
     "XYLOMETAZOLINE HYDROCHLORIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "03A5ORL08Q",
@@ -1702,7 +2118,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ZOPICLONE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   }
  ],
  "unnamed": [
@@ -1720,7 +2140,11 @@
    "tier": "exact-moiety",
    "examples": [
     "Etarfolatide"
-   ]
+   ],
+   "area": "Ovarian Neoplasms;Radionuclide Imaging",
+   "atc": "V09",
+   "indication": "Indicated for single photon emission computed tomography (SPECT) imaging",
+   "approved": ""
   },
   {
    "unii": "QZS4144IO0",
@@ -1736,7 +2160,11 @@
    "tier": "exact-moiety",
    "examples": [
     "gusperimus trihydrochloride"
-   ]
+   ],
+   "area": "Wegener Granulomatosis",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "99R86Y6V0M",
@@ -1752,7 +2180,11 @@
    "tier": "exact-moiety",
    "examples": [
     "oxodotreotide"
-   ]
+   ],
+   "area": "Radionuclide Imaging",
+   "atc": "V09IX15",
+   "indication": "Positron emission tomography (PET) for localization of somatostatin receptor positive neuroendocrine neoplasms (NENs).",
+   "approved": ""
   },
   {
    "unii": "R16CO5Y76E",
@@ -1770,7 +2202,11 @@
    "examples": [
     "ACETYLSALICYLIC ACID",
     "acidum acetylsalicylicum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "92019DWI1D",
@@ -1788,7 +2224,11 @@
    "examples": [
     "SUNITINIB",
     "sunitinib"
-   ]
+   ],
+   "area": "Gastrointestinal Stromal Tumors;Carcinoma, Renal Cell;Neuroendocrine Tumors",
+   "atc": "L01EX01",
+   "indication": "Gastrointestinal stromal tumour (GIST) Sunitinib Accord is indicated for the treatment of unresectable and/or metastatic malignant gastrointestinal stromal tumour (GIST) in adults after failure of imatinib treatment due to resistance or intolerance. Metastatic renal cell carcinoma (MRCC) Sunitinib Accord is indicated for the treatment of advanced/metastatic renal cell carcinoma (MRCC) in adults. Pancreatic neuroendocrine tumours (pNET) Sunitinib Accord is indicated for the treatment of unresectable or metastatic, well-differentiated pancreatic neuroendocrine tumours (pNET) with disease progression in adults.",
+   "approved": "11/02/2021"
   },
   {
    "unii": "3J50XA376E",
@@ -1806,7 +2246,11 @@
    "examples": [
     "THYMOL",
     "thymolum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "2S38I4XUYG",
@@ -1822,7 +2266,11 @@
    "tier": "exact-moiety",
    "examples": [
     "PROPYLENE GLYCOL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "D343Z75HT8",
@@ -1838,7 +2286,11 @@
    "tier": "exact-moiety",
    "examples": [
     "O-PHENYLPHENOL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "O18V5XYO0G",
@@ -1854,7 +2306,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ACETIC ACID"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "HXQ6A1N7R6",
@@ -1870,7 +2326,11 @@
    "tier": "moiety-base",
    "examples": [
     "AMPICILLIN (AMPICILLIN SODIUM)"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "R5Y8O51589",
@@ -1886,7 +2346,11 @@
    "tier": "moiety-base",
    "examples": [
     "anecortave acetate"
-   ]
+   ],
+   "area": "Wet Macular Degeneration",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "L11K75P92J",
@@ -1902,7 +2366,11 @@
    "tier": "exact-moiety",
    "examples": [
     "CALCIUM (CALCIUM PHOSPHATE (DIBASIC))"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "1VU15B70BP",
@@ -1918,7 +2386,11 @@
    "tier": "moiety-base",
    "examples": [
     "BENZETHONIUM CHLORIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "49K58SMZ7U",
@@ -1934,7 +2406,11 @@
    "tier": "moiety-base",
    "examples": [
     "BETAHISTINE HYDROCHLORIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "844ZJE6I55",
@@ -1950,7 +2426,11 @@
    "tier": "moiety-base",
    "examples": [
     "bosutinib (as monohydrate)"
-   ]
+   ],
+   "area": "Leukemia, Myeloid",
+   "atc": "L01EA04",
+   "indication": "Bosulif is indicated for the treatment of:\u2022 Adult and paediatric patients aged 6 years and older with newly-diagnosed (ND) chronic phase (CP) Philadelphia chromosome-positive chronic myelogenous leukaemia (Ph+ CML).\u2022 Adult and paediatric patients aged 6 years and older with CP Ph+ CML previously treated with one or more tyrosine kinase inhibitor(s) [TKI(s)] and for whom imatinib, nilotinib and dasatinib are not considered appropriate treatment options.\u2022 Adult patients with accelerated phase (AP), and blast phase (BP) Ph+ CML previously treated with one or more tyrosine kinase inhibitor(s) [TKI(s)] and for whom imatinib, nilotinib and dasatinib are not considered appropriate treatment options.",
+   "approved": "27/03/2013"
   },
   {
    "unii": "0GH9JX37C8",
@@ -1966,7 +2446,11 @@
    "tier": "exact-moiety",
    "examples": [
     "HYOSCINE BUTYLBROMIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "6915G2PQI0",
@@ -1982,7 +2466,11 @@
    "tier": "exact-moiety",
    "examples": [
     "CALCIUM BOROGLUCONATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "N20HL7Q941",
@@ -1998,7 +2486,11 @@
    "tier": "exact-moiety",
    "examples": [
     "dextrocamphora"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "213N3S8275",
@@ -2014,7 +2506,11 @@
    "tier": "exact-moiety",
    "examples": [
     "CAMPHOR"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "9B1J4V995Q",
@@ -2030,7 +2526,11 @@
    "tier": "exact-moiety",
    "examples": [
     "CARVACROL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "1P489GK6AR",
@@ -2046,7 +2546,11 @@
    "tier": "moiety-base",
    "examples": [
     "CETRIMONIUM BROMIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "25QX3JT22D",
@@ -2062,7 +2566,11 @@
    "tier": "moiety-base",
    "examples": [
     "CETYLPYRIDINIUM CHLORIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "418M5916WG",
@@ -2078,7 +2586,11 @@
    "tier": "moiety-base",
    "examples": [
     "CHLORAL HYDRATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "8061YMS4RM",
@@ -2094,7 +2606,11 @@
    "tier": "exact-moiety",
    "examples": [
     "CHLORINE DIOXIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "0R0008Q3JB",
@@ -2110,7 +2626,11 @@
    "tier": "exact-moiety",
    "examples": [
     "chromium"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "07D5053T1R",
@@ -2126,7 +2646,11 @@
    "tier": "moiety-base",
    "examples": [
     "COBALT SULFATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "SML2Y3J35T",
@@ -2142,7 +2666,11 @@
    "tier": "exact-moiety",
    "examples": [
     "colchicinum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "9J2IBN2H70",
@@ -2158,7 +2686,11 @@
    "tier": "exact-moiety",
    "examples": [
     "COPPER NAPHTHENATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "3IGV2Y2378",
@@ -2174,7 +2706,11 @@
    "tier": "moiety-base",
    "examples": [
     "copper (64Cu) chloride"
-   ]
+   ],
+   "area": "Radionuclide Imaging",
+   "atc": "Not yet assigned",
+   "indication": "Cuprymina is a radiopharmaceutical precursor. It is not intended for direct use in patients. This medicinal product must be used only for the radiolabelling of carrier molecules, which have been specifically developed and authorised for radiolabelling with this radionuclide.",
+   "approved": "23/08/2012"
   },
   {
    "unii": "4AKF24FA4C",
@@ -2190,7 +2726,11 @@
    "tier": "moiety-base",
    "examples": [
     "dapagliflozin propanediol monohydrate"
-   ]
+   ],
+   "area": "Diabetes Mellitus, Type 2;Heart Failure, Systolic;Heart Failure;Renal Insufficiency, Chronic",
+   "atc": "A10BK01",
+   "indication": "Type 2 diabetes mellitus Edistride is indicated in adults and children aged 10 years and above for the treatment of insufficiently controlled type 2 diabetes mellitus as an adjunct to diet and exercise  as monotherapy when metformin is considered inappropriate due to intolerance. in addition to other medicinal products for the treatment of type 2 diabetes.  For study results with respect to combination of therapies, effects on glycaemic control, cardiovascular and renal events, and the populations studied, see sections 4.4, 4.5 and 5.1. Heart failure Edistride is indicated in adults for the treatment of symptomatic chronic heart failure. Chronic kidney disease Edistride is indicated in adults for the treatment of chronic kidney disease.",
+   "approved": "09/11/2015"
   },
   {
    "unii": "41103DW4UG",
@@ -2206,7 +2746,11 @@
    "tier": "exact-moiety",
    "examples": [
     "depreotide trifluoroacetate"
-   ]
+   ],
+   "area": "Radionuclide Imaging",
+   "atc": "V09IA05",
+   "indication": "This medicinal product is for diagnostic use only.For scintigraphic imaging of suspected malignant tumours in the lung after initial detection, incombination with CT scan or chest X-ray, in patients with solitary pulmonary nodules.",
+   "approved": "29/11/2000"
   },
   {
    "unii": "1NKX3648J9",
@@ -2222,7 +2766,11 @@
    "tier": "exact-moiety",
    "examples": [
     "DICHLOROBENZYL ALCOHOL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "6TGQ35Z71K",
@@ -2238,7 +2786,11 @@
    "tier": "exact-moiety",
    "examples": [
     "DICLOFENAC DIETHYLAMINE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "0L0ZW34692",
@@ -2254,7 +2806,11 @@
    "tier": "moiety-base",
    "examples": [
     "DIDECYL DIMETHYL AMMONIUM CHLORIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "0X0RL40Y6H",
@@ -2270,7 +2826,11 @@
    "tier": "moiety-base",
    "examples": [
     "DIOCTYL DIMETHYL AMMONIUM CHLORIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "6429L0L52Y",
@@ -2286,7 +2846,11 @@
    "tier": "moiety-base",
    "examples": [
     "DIPYRONE MONOHYDRATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "6K7YS503HC",
@@ -2302,7 +2866,11 @@
    "tier": "moiety-base",
    "examples": [
     "DOCUSATE SODIUM"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "HC22845I1X",
@@ -2318,7 +2886,11 @@
    "tier": "exact-moiety",
    "examples": [
     "DROMETRIZOLE TRISILOXANE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "058078A0QS",
@@ -2334,7 +2906,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ENSULIZOLE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "MLU731K321",
@@ -2350,7 +2926,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ertugliflozin l-pyroglutamic acid"
-   ]
+   ],
+   "area": "Diabetes Mellitus, Type 2",
+   "atc": "A10BK04",
+   "indication": "Steglatro is indicated in adults aged 18 years and older with type 2 diabetes mellitus as an adjunct to diet and exercise to improve glycaemic control:  as monotherapy in patients for whom the use of metformin is considered inappropriate due to intolerance or contraindications. in addition to other medicinal products for the treatment of diabetes.",
+   "approved": "21/03/2018"
   },
   {
    "unii": "721M52NQ5L",
@@ -2366,7 +2946,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ETHYLENEDIAMINE DIHYDROIODIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "14255EXE39",
@@ -2382,7 +2966,11 @@
    "tier": "exact-moiety",
    "examples": [
     "E 214"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "1K09F3G675",
@@ -2398,7 +2986,11 @@
    "tier": "exact-moiety",
    "examples": [
     "iron oxide"
-   ]
+   ],
+   "area": "Magnetic Resonance Imaging",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "1HG84L3525",
@@ -2414,7 +3006,11 @@
    "tier": "exact-moiety",
    "examples": [
     "FORMALDEHYDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "RD9L8XE13L",
@@ -2430,7 +3026,11 @@
    "tier": "exact-moiety",
    "examples": [
     "\u5869\u5316\u30ac\u30ea\u30a6\u30e0\uff0868Ga\uff09"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "437ZKU48CF",
@@ -2446,7 +3046,11 @@
    "tier": "moiety-base",
    "examples": [
     "garenoxacin mesylate"
-   ]
+   ],
+   "area": "Surgical Wound Infection;Sinusitis;Skin Diseases, Infectious;Pneumonia;Soft Tissue Infections;Bronchitis, Chronic",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "M2GDW2QE6P",
@@ -2462,7 +3066,11 @@
    "tier": "exact-moiety",
    "examples": [
     "GLUTARAL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "0324G66D0E",
@@ -2478,7 +3086,11 @@
    "tier": "moiety-base",
    "examples": [
     "GLYCOL SALICYLATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "9AG41L3AOQ",
@@ -2494,7 +3106,11 @@
    "tier": "exact-moiety",
    "examples": [
     "gozetotide"
-   ]
+   ],
+   "area": "Radionuclide Imaging",
+   "atc": "V09I",
+   "indication": "This medicinal product is for diagnostic use only. Locametz, after radiolabelling with gallium 68, is indicated for the detection of prostate specific membrane antigen (PSMA) positive lesions with positron emission tomography (PET) in adults with prostate cancer (PCa) in the following clinical settings:  Primary staging of patients with high risk PCa prior to primary curative therapy, Suspected PCa recurrence in patients with increasing levels of serum prostate specific antigen (PSA) after primary curative therapy, Identification of patients with PSMA positive progressive metastatic castration resistant prostate cancer (mCRPC) for whom PSMA targeted therapy is indicated (see section 4.4).",
+   "approved": "09/12/2022"
   },
   {
    "unii": "Q71XPQ6R29",
@@ -2510,7 +3126,11 @@
    "tier": "exact-moiety",
    "examples": [
     "GUAIACOL CARBONATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "R9QTB5E82N",
@@ -2526,7 +3146,11 @@
    "tier": "exact-moiety",
    "examples": [
     "HEXYLRESORCINOL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "QTT17582CB",
@@ -2542,7 +3166,11 @@
    "tier": "exact-moiety",
    "examples": [
     "HYDROCHLORIC ACID"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "712K4CDC10",
@@ -2558,7 +3186,11 @@
    "tier": "exact-moiety",
    "examples": [
     "HYPOCHLOROUS ACID"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "9679TC07X4",
@@ -2575,7 +3207,11 @@
    "examples": [
     "IODINE",
     "IODINE (POTASSIUM IODIDE)"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "24H4NWX5CO",
@@ -2591,7 +3227,11 @@
    "tier": "exact-moiety",
    "examples": [
     "KAOLIN"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "435SSH7H89",
@@ -2607,7 +3247,11 @@
    "tier": "exact-moiety",
    "examples": [
     "\u30a8\u30c8\u30e9\u30b7\u30e2\u30c9 L-\u30a2\u30eb\u30ae\u30cb\u30f3"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "F9S9FFU82N",
@@ -2623,7 +3267,11 @@
    "tier": "exact-moiety",
    "examples": [
     "L-LACTIC ACID"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "04M8624OXV",
@@ -2639,7 +3287,11 @@
    "tier": "exact-moiety",
    "examples": [
     "lanthanum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "9FN79X2M3F",
@@ -2655,7 +3307,11 @@
    "tier": "direct",
    "examples": [
     "lithium"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "1U477369SN",
@@ -2671,7 +3327,11 @@
    "tier": "moiety-base",
    "examples": [
     "lutetium (177Lu) chloride"
-   ]
+   ],
+   "area": "Radionuclide Imaging",
+   "atc": "V10X",
+   "indication": "Theralugand is a radiopharmaceutical precursor, and it is not intended for direct use in patients. It is to be used only for the radiolabelling of carrier molecules that have been specifically developed and authorised for radiolabelling with lutetium (177Lu) chloride.",
+   "approved": "22/11/2024"
   },
   {
    "unii": "I38ZP9992A",
@@ -2687,7 +3347,11 @@
    "tier": "direct",
    "examples": [
     "magnesium"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "19364RWW06",
@@ -2703,7 +3367,11 @@
    "tier": "exact-moiety",
    "examples": [
     "MAROPITANT"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "JL5DK93RCL",
@@ -2719,7 +3387,11 @@
    "tier": "exact-moiety",
    "examples": [
     "melatonin"
-   ]
+   ],
+   "area": "Sleep Initiation and Maintenance Disorders;Autistic Disorder",
+   "atc": "N05CH01",
+   "indication": "Slenyto is indicated for:  treatment of insomnia in children and adolescents aged 2-18 years with Autism Spectrum Disorder (ASD), and / or neurogenetic disorders with aberrant diurnal melatonin secretion and /or nocturnal awakenings, where sleep hygiene measures have been insufficient. treatment of insomnia in children and adolescents aged 6-17 years with attention-deficit hyperactivity disorder (ADHD) where sleep hygiene measures have been insufficient.",
+   "approved": "20/09/2018"
   },
   {
    "unii": "81AH48963U",
@@ -2735,7 +3407,11 @@
    "tier": "exact-moiety",
    "examples": [
     "molybdenum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "6634O61GOI",
@@ -2751,7 +3427,11 @@
    "tier": "exact-moiety",
    "examples": [
     "molybdenum(99-Mo)"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "040ZB27861",
@@ -2767,7 +3447,11 @@
    "tier": "exact-moiety",
    "examples": [
     "POTASSIUM PEROXYMONOSULFATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "41TQ665R1X",
@@ -2783,7 +3467,11 @@
    "tier": "exact-moiety",
    "examples": [
     "morphinum"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "Q3NHK36BKL",
@@ -2799,7 +3487,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ALKYL DIMETHYL BENZYL AMMONIUM SACCHARINATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "E775ICF82G",
@@ -2815,7 +3507,11 @@
    "tier": "exact-moiety",
    "examples": [
     "1-13C-caprylic acid"
-   ]
+   ],
+   "area": "Gastric Emptying;Breath Tests",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "6NP9LYK846",
@@ -2831,7 +3527,11 @@
    "tier": "exact-moiety",
    "examples": [
     "P-TERT-PENTYLPHENOL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "UA8U0KJM72",
@@ -2847,7 +3547,11 @@
    "tier": "exact-moiety",
    "examples": [
     "PAMABROM"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "F4GSH45R4C",
@@ -2863,7 +3567,11 @@
    "tier": "exact-moiety",
    "examples": [
     "pemetrexed disodium hemipentahydrate"
-   ]
+   ],
+   "area": "Carcinoma, Non-Small-Cell Lung;Mesothelioma",
+   "atc": "L01BA04",
+   "indication": "Malignant pleural mesothelioma Pemetrexed Accord in combination with cisplatin is indicated for the treatment of chemotherapy na\u00efve patients with unresectable malignant pleural mesothelioma. Non-small cell lung cancer Pemetrexed Accord in combination with cisplatin is indicated for the first line treatment of patients with locally advanced or metastatic non-small cell lung cancer other than predominantly squamous cell histology. Pemetrexed Accord is indicated as monotherapy for the maintenance treatment of locally advanced or metastatic non-small cell lung cancer other than predominantly squamous cell histology in patients whose disease has not progressed immediately following platinum-based chemotherapy. Pemetrexed Accord is indicated as monotherapy for the second line treatment of patients with locally advanced or metastatic non-small cell lung cancer other than predominantly squamous cell histology.",
+   "approved": "18/01/2016"
   },
   {
    "unii": "9T47E4OM16",
@@ -2879,7 +3587,11 @@
    "tier": "exact-moiety",
    "examples": [
     "pemetrexed disodium heptahydrate"
-   ]
+   ],
+   "area": "Carcinoma, Non-Small-Cell Lung;Mesothelioma",
+   "atc": "L01BA04",
+   "indication": "Malignant pleural mesotheliomaPemetrexed Baxter in combination with cisplatin is indicated for the treatment of chemotherapy na\u00efve patients with unresectable malignant pleural mesothelioma. Non-small cell lung cancerPemetrexed Baxter in combination with cisplatin is indicated for the first line treatment of patients with locally advanced or metastatic non-small cell lung cancer other than predominantly squamous cell histology (see section 5.1). Pemetrexed Baxter is indicated as monotherapy for the maintenance treatment of locally advanced or metastatic non-small cell lung cancer other than predominantly squamous cell histology in patients whose disease has not progressed immediately following platinum-based chemotherapy (see section 5.1). Pemetrexed Baxter is indicated as monotherapy for the second line treatment of patients with locally advanced or metastatic non-small cell lung cancer other than predominantly squamous cell histology (see section 5.1).",
+   "approved": "09/12/2022"
   },
   {
    "unii": "236Y2F7D9J",
@@ -2895,7 +3607,11 @@
    "tier": "moiety-base",
    "examples": [
     "pemetrexed diacid monohydrate"
-   ]
+   ],
+   "area": "Carcinoma, Non-Small-Cell Lung;Mesothelioma",
+   "atc": "L01BA04",
+   "indication": "Malignant pleural mesothelioma Pemetrexed in combination with cisplatin is indicated for the treatment of chemotherapy na\u00efve patients with unresectable malignant pleural mesothelioma. Non-small cell lung cancer Pemetrexed in combination with cisplatin is indicated for the first line treatment of patients with locally advanced or metastatic non-small cell lung cancer other than predominantly squamous cell histology. Pemetrexed is indicated as monotherapy for the maintenance treatment of locally advanced or metastatic non-small cell lung cancer other than predominantly squamous cell histology in patients whose disease has not progressed immediately following platinum-based chemotherapy. Pemetrexed is indicated as monotherapy for the second line treatment of patients with locally advanced or metastatic non-small cell lung cancer other than predominantly squamous cell histology.",
+   "approved": "18/01/2016"
   },
   {
    "unii": "I6KPI2E1HD",
@@ -2911,7 +3627,11 @@
    "tier": "exact-moiety",
    "examples": [
     "PERACETIC ACID"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "2L4RKM5351",
@@ -2927,7 +3647,11 @@
    "tier": "exact-moiety",
    "examples": [
     "PHENOL"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "HM5Z15LEBN",
@@ -2943,7 +3667,11 @@
    "tier": "exact-moiety",
    "examples": [
     "POTASSIUM BICARBONATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "F1CB00L2RH",
@@ -2959,7 +3687,11 @@
    "tier": "exact-moiety",
    "examples": [
     "(18F)-PSMA-1007"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "RG20W8WYLS",
@@ -2975,7 +3707,11 @@
    "tier": "moiety-base",
    "examples": [
     "VITAMIN B6 (PYRIDOXINE HYDROCHLORIDE)"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "0T2NG1539G",
@@ -2991,7 +3727,11 @@
    "tier": "moiety-base",
    "examples": [
     "OCTYL DECYL DIMETHYL AMMONIUM CHLORIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "38WFI1311A",
@@ -3007,7 +3747,11 @@
    "tier": "exact-moiety",
    "examples": [
     "DL-METHIONINE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "7N464URE7E",
@@ -3024,7 +3768,11 @@
    "examples": [
     "VITAMIN B2",
     "VITAMIN B2 (RIBOFLAVIN 5'-PHOSPHATE SODIUM)"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "HL0V2LQZ09",
@@ -3040,7 +3788,11 @@
    "tier": "exact-moiety",
    "examples": [
     "rimonabant"
-   ]
+   ],
+   "area": "Obesity",
+   "atc": "A08AX01",
+   "indication": "As an adjunct to diet and exercise for the treatment of obese patients (BMI 30 kg/m2), or overweight patients (BMI 27 kg/m2) with associated risk factor(s), such as type 2 diabetes or dyslipidaemia (see section 5.1).",
+   "approved": "19/06/2006"
   },
   {
    "unii": "4TY24FTS56",
@@ -3056,7 +3808,11 @@
    "tier": "exact-moiety",
    "examples": [
     "ruboxistaurin"
-   ]
+   ],
+   "area": "Diabetic Retinopathy",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "51T0V5Z5AD",
@@ -3072,7 +3828,11 @@
    "tier": "exact-moiety",
    "examples": [
     "sacubitril;valsartan"
-   ]
+   ],
+   "area": "Heart Failure",
+   "atc": "C09DX04",
+   "indication": "Paediatric heart failure Entresto is indicated in children and adolescents aged one year or older for treatment of symptomatic chronic heart failure with left ventricular systolic dysfunction. Adult heart failure Entresto is indicated in adult patients for treatment of symptomatic chronic heart failure with reduced ejection fraction.",
+   "approved": "19/11/2015"
   },
   {
    "unii": "6WRB0BWV8E",
@@ -3088,7 +3848,11 @@
    "tier": "exact-moiety",
    "examples": [
     "selenium"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "Z7G02XZ0M6",
@@ -3104,7 +3868,11 @@
    "tier": "exact-moiety",
    "examples": [
     "siponimod fumaric acid"
-   ]
+   ],
+   "area": "Multiple Sclerosis, Relapsing-Remitting",
+   "atc": "L04",
+   "indication": "Mayzent is indicated for the treatment of adult patients with secondary progressive multiple sclerosis (SPMS) with active disease evidenced by relapses or imaging features of inflammatory activity.",
+   "approved": "13/01/2020"
   },
   {
    "unii": "9NEZ333N27",
@@ -3120,7 +3888,11 @@
    "tier": "exact-moiety",
    "examples": [
     "natrium"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "NVG71ZZ7P0",
@@ -3136,7 +3908,11 @@
    "tier": "direct",
    "examples": [
     "SODIUM ACETATE ANHYDROUS"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "F83TIJ81F8",
@@ -3152,7 +3928,11 @@
    "tier": "exact-moiety",
    "examples": [
     "SODIUM CHLORITE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "55X04QC32I",
@@ -3168,7 +3948,11 @@
    "tier": "exact-moiety",
    "examples": [
     "SODIUM HYDROXIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "DY38VHM5OD",
@@ -3184,7 +3968,11 @@
    "tier": "exact-moiety",
    "examples": [
     "SODIUM HYPOCHLORITE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "4VN69WUP7N",
@@ -3200,7 +3988,11 @@
    "tier": "exact-moiety",
    "examples": [
     "SODIUM HYPOPHOSPHITE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "F5WR8N145C",
@@ -3216,7 +4008,11 @@
    "tier": "direct",
    "examples": [
     "SODIUM IODIDE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "Z7G82NV92P",
@@ -3232,7 +4028,11 @@
    "tier": "exact-moiety",
    "examples": [
     "SODIUM PERCARBONATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "04NQ160FRU",
@@ -3248,7 +4048,11 @@
    "tier": "exact-moiety",
    "examples": [
     "strontium ranelate"
-   ]
+   ],
+   "area": "Osteoporosis, Postmenopausal",
+   "atc": "M05BX03",
+   "indication": "Treatment of severe osteoporosis in postmenopausal women at high risk for fracture to reduce the risk of vertebral and hip fractures. Treatment of severe osteoporosis in adult men at increased risk of fracture. The decision to prescribe strontium ranelate should be based on an assessment of the individual patient's overall risks.",
+   "approved": "20/09/2004"
   },
   {
    "unii": "3E794G4ZRB",
@@ -3264,7 +4068,11 @@
    "tier": "exact-moiety",
    "examples": [
     "TRIS HYDROXYMETHYL NITROMETHANE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "07M9U9U0LK",
@@ -3280,7 +4088,11 @@
    "tier": "exact-moiety",
    "examples": [
     "SODIUM DICHLOROISOCYANURATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "1J6JM3JE61",
@@ -3296,7 +4108,11 @@
    "tier": "moiety-base",
    "examples": [
     "TROLAMINE SALICYLATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "7NS97N9H1G",
@@ -3312,7 +4128,11 @@
    "tier": "exact-moiety",
    "examples": [
     "TRYPTOPHAN"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   },
   {
    "unii": "9KND64V2AA",
@@ -3328,7 +4148,11 @@
    "tier": "exact-moiety",
    "examples": [
     "vildagliptin"
-   ]
+   ],
+   "area": "Diabetes Mellitus, Type 2",
+   "atc": "A10BH02",
+   "indication": "Vildagliptin is indicated as an adjunct to diet and exercise to improve glycaemic control in adults with type 2 diabetes mellitus:  as monotherapy in patients in whom metformin is inappropriate due to contraindications or intolerance. in combination with other medicinal products for the treatment of diabetes, including insulin, when these do not provide adequate glycaemic control (see sections 4.4, 4.5 and 5.1 for available data on different combinations).",
+   "approved": "19/11/2008"
   },
   {
    "unii": "1K8M7UR6O1",
@@ -3344,7 +4168,11 @@
    "tier": "moiety-base",
    "examples": [
     "yttrium (90Y) chloride"
-   ]
+   ],
+   "area": "Radionuclide Imaging",
+   "atc": "V09",
+   "indication": "To be used only for the radiolabelling of carrier molecules, which have been specifically developed and authorised for radiolabelling with this radionuclide.Radiopharmaceutical precursor - Not intended for direct use in patients.",
+   "approved": "19/01/2006"
   },
   {
    "unii": "J41CSQ7QDS",
@@ -3360,7 +4188,11 @@
    "tier": "direct",
    "examples": [
     "zinc"
-   ]
+   ],
+   "area": "Hepatolenticular Degeneration",
+   "atc": "A16AX05",
+   "indication": "Treatment of Wilson's disease.",
+   "approved": "12/10/2004"
   },
   {
    "unii": "349S2ZHF05",
@@ -3376,7 +4208,11 @@
    "tier": "moiety-base",
    "examples": [
     "ZUCLOPENTHIXOL DECANOATE"
-   ]
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": ""
   }
  ]
 }
