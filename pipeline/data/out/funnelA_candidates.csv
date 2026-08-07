@@ -1,0 +1,106 @@
+unii,preferred_name,moiety_key,is_INN,is_USAN,substance_type,foreign_sources,n_sources,orphan_flag,match_tier,example_source_names
+CEG1Q6OGU1,BARDOXOLONE METHYL,BARDOXOLONE METHYL,N,Y,chemical,EMA,1,Y,exact-moiety,Bardoxolone methyl
+A3749M6582,CATEQUENTINIB HYDROCHLORIDE,CATEQUENTINIB,N,Y,chemical,EMA,1,Y,moiety-base,catequentinib dihydrochloride
+U194AS08HZ,EDOTREOTIDE,EDOTREOTIDE,Y,Y,chemical,EMA,1,Y,exact-moiety,edotreotide
+5X0D9H16IU,EPRODISATE DISODIUM,EPRODISATE,N,Y,chemical,EMA,1,Y,moiety-base,eprodisate disodium
+6JLQ8K35KK,GOVORESTAT,GOVORESTAT,Y,Y,chemical,EMA,1,Y,exact-moiety,govorestat
+HB6PN45W4J,IDEBENONE,IDEBENONE,Y,Y,chemical,EMA,1,Y,exact-moiety,idebenone
+58BH47BV6S,INFIGRATINIB PHOSPHATE,INFIGRATINIB MONOPHOSPHATE,N,Y,chemical,EMA,1,Y,exact-moiety,Infigratinib monophosphate
+60UTO373KE,ISAVUCONAZOLE,ISAVUCONAZOLE,Y,N,chemical,EMA,1,Y,exact-moiety,isavuconazole
+K824X25AYA,LERIGLITAZONE,LERIGLITAZONE,Y,Y,chemical,EMA,1,Y,exact-moiety,leriglitazone ; leriglitazone hydrochloride
+M59NC4E26P,MASITINIB,MASITINIB,Y,N,chemical,EMA,1,Y,moiety-base,Masitinib mesilate ; masitinib
+Y76ID234HW,PLITIDEPSIN,PLITIDEPSIN,Y,N,chemical,EMA,1,Y,exact-moiety,plitidepsin
+HD4TW8S2VK,PRIDOPIDINE,PRIDOPIDINE,Y,Y,chemical,EMA,1,Y,moiety-base,pridopidine hydrochloride
+1578EUB98L,RESMINOSTAT,RESMINOSTAT,Y,N,chemical,EMA,1,Y,moiety-base,resminostat mesilate
+H19C446XXB,RUBITECAN,RUBITECAN,Y,Y,chemical,EMA,1,Y,exact-moiety,rubitecan
+29OQ9EU4R1,TIRATRICOL,TIRATRICOL,Y,Y,chemical,EMA,1,Y,exact-moiety,tiratricol
+137R1N49AD,AGOMELATINE,AGOMELATINE,Y,N,chemical,EMA,1,N,exact-moiety,agomelatine
+URQ2517572,ALFACALCIDOL,ALFACALCIDOL,Y,N,chemical,Health Canada,1,N,exact-moiety,ALFACALCIDOL
+2U0X0JA2NB,ALTRENOGEST,ALTRENOGEST,Y,N,chemical,Health Canada,1,N,exact-moiety,ALTRENOGEST
+05W904P57F,AMYLMETACRESOL,AMYLMETACRESOL,Y,N,chemical,Health Canada,1,N,exact-moiety,AMYLMETACRESOL
+55F75LJQ0V,ANAMORELIN HYDROCHLORIDE,ANAMORELIN,N,Y,chemical,EMA,1,N,moiety-base,anamorelin hydrochloride
+K16AME9I3V,ATALUREN,ATALUREN,Y,Y,chemical,EMA,1,N,exact-moiety,ataluren
+RZ6I9WX68U,AUMOLERTINIB MESYLATE,AUMOLERTINIB,N,Y,chemical,EMA,1,N,moiety-base,Aumolertinib mesilate
+XNM7LT65NP,AZTREONAM LYSINE,AZTREONAM LYSINE,N,Y,chemical,EMA,1,N,exact-moiety,aztreonam lysine
+PWZ1720CBH,BEMOTRIZINOL,BEMOTRIZINOL,Y,Y,chemical,Health Canada,1,N,exact-moiety,BEMOTRIZINOL
+PA1123N395,BILASTINE,BILASTINE,Y,N,chemical,Health Canada,1,N,exact-moiety,BILASTINE
+8NT850T0YS,BISOCTRIZOLE,BISOCTRIZOLE,Y,Y,chemical,Health Canada,1,N,exact-moiety,BISOCTRIZOLE
+1M49V1PBPL,BLARCAMESINE HYDROCHLORIDE,BLARCAMESINE,N,Y,chemical,EMA,1,N,moiety-base,blarcamesine hydrochloride
+X015L14V0O,BROMAZEPAM,BROMAZEPAM,Y,N,chemical,Health Canada,1,N,exact-moiety,BROMAZEPAM
+568ET80C3D,CALCIUM PANTOTHENATE,CALCIUM D PANTOTHENATE,Y,N,chemical,Health Canada,1,N,exact-moiety,CALCIUM D-PANTOTHENATE
+JUP57A8EPZ,CAMIZESTRANT,CAMIZESTRANT,Y,Y,chemical,EMA,1,N,exact-moiety,camizestrant
+0MQ44VUN84,CAPROMORELIN,CAPROMORELIN,Y,N,chemical,Health Canada,1,N,moiety-base,CAPROMORELIN TARTRATE
+P7725I9V3Z,CARISBAMATE,CARISBAMATE,Y,Y,chemical,EMA,1,N,exact-moiety,carisbamate
+3B03KPM27L,CASOPITANT,CASOPITANT,Y,N,chemical,EMA,1,N,exact-moiety,casopitant
+68AYS9A614,CEDIRANIB MALEATE,CEDIRANIB,N,Y,chemical,EMA,1,N,moiety-base,cediranib maleate
+0F32U78V2Q,CHLOROXYLENOL,CHLOROXYLENOL,Y,N,chemical,Health Canada,1,N,exact-moiety,CHLOROXYLENOL
+45I14D8O27,CHOLINE CHLORIDE,,Y,N,chemical,Health Canada,1,N,direct,CHOLINE CHLORIDE
+7560BB0BO3,CLOROPHENE,CLOROPHENE,Y,N,chemical,Health Canada,1,N,exact-moiety,CLOROPHENE
+K848JZ4886,CYSTEINE,CYSTEINUM,Y,N,chemical,Swissmedic,1,N,exact-moiety,cysteinum
+8OOT6M1PC7,DELAMANID,DELAMANID,Y,Y,chemical,EMA,1,N,exact-moiety,Delamanid
+VX29JB5XWV,DERACOXIB,DERACOXIB,Y,Y,chemical,Health Canada,1,N,exact-moiety,DERACOXIB
+R6D2UI4FLS,ENCLOMIPHENE,ENCLOMIFENE,Y,N,chemical,EMA,1,N,moiety-base,enclomifene citrate
+3DX3XEK1BN,ENROFLOXACIN,ENROFLOXACIN,Y,Y,chemical,Health Canada,1,N,exact-moiety,ENROFLOXACIN
+YKH834O4BH,EPINEPHRINE,ADRENALINUM,Y,N,chemical,Swissmedic,1,N,exact-moiety,adrenalinum
+1494Q15E7Z,FALDAPREVIR SODIUM,FALDAPREVIR,N,Y,chemical,EMA,1,N,exact-moiety,faldaprevir
+2CQ8Y0B8XQ,FILGOTINIB HYDROCHLORIDE,FILGOTINIB,N,Y,chemical,EMA,1,N,moiety-base,filgotinib maleate
+Y6V2W4S4WT,FIROCOXIB,FIROCOXIB,Y,Y,chemical,Health Canada,1,N,exact-moiety,FIROCOXIB
+WSH8393RM5,FLURALANER,FLURALANER,Y,Y,chemical,Health Canada,1,N,exact-moiety,FLURALANER
+6L8OF9XRDC,FOSAPREPITANT,FOSAPREPITANT,Y,N,chemical,EMA,1,N,exact-moiety,fosaprepitant
+124X2V25W4,FOSFOSAL,SALICYLIC ACID,Y,N,chemical,Health Canada,1,N,exact-moiety,SALICYLIC ACID
+6K6L7E3F1L,GEFAPIXANT,GEFAPIXANT,Y,Y,chemical,EMA,1,N,exact-moiety,gefapixant
+G4PX8C4HKV,GLICLAZIDE,GLICLAZIDE,Y,N,chemical,Health Canada,1,N,exact-moiety,GLICLAZIDE
+PDC6A3C0OX,GLYCERIN,GLYCERINE,Y,N,chemical,Health Canada,1,N,exact-moiety,GLYCERINE
+V06SV4M95S,HOMOSALATE,HOMOSALATE,Y,Y,chemical,Health Canada,1,N,exact-moiety,HOMOSALATE
+UMD7G2653W,IBANDRONIC ACID,IBANDRONIC ACID,Y,N,chemical,EMA,1,N,exact-moiety,ibandronic acid
+0VUA21238F,LAPATINIB,LAPATINIB,Y,N,chemical,EMA,1,N,exact-moiety,lapatinib
+4H914M0CSP,LAQUINIMOD SODIUM,LAQUINIMOD,N,Y,chemical,EMA,1,N,exact-moiety,laquinimod
+337G83N988,LASOFOXIFENE,LASOFOXIFENE,Y,N,chemical,EMA,1,N,moiety-base,Lasofoxifene tartrate
+5KN5Y9V01K,LEVOMEPROMAZINE MALEATE,LEVOMEPROMAZINUM,N,Y,chemical,Swissmedic,1,N,exact-moiety,levomepromazinum
+R3B637Y991,LEVOMETHADYL ACETATE,LEVACETYLMETHADOL,Y,N,chemical,EMA,1,N,exact-moiety,levacetylmethadol
+7CDW97HUEX,LINZAGOLIX,LINZAGOLIX,Y,Y,chemical,EMA,1,N,moiety-base,linzagolix choline
+E0QN3D755O,LISURIDE,LISURIDE,Y,N,chemical,EMA,1,N,exact-moiety,lisuride
+3412470A0V,MELPHALAN FLUFENAMIDE HYDROCHLORIDE,MELPHALAN FLUFENAMIDE,N,Y,chemical,EMA,1,N,moiety-base,Melphalan flufenamide hydrochloride
+53QOG569E0,METAPROTERENOL,ORCIPRENALINE,Y,N,chemical,Health Canada,1,N,moiety-base,ORCIPRENALINE SULFATE
+8NAP7826UB,METHYLENE BLUE ANHYDROUS,METHYLTHIONINIUM,Y,N,chemical,EMA,1,N,moiety-base,methylthioninium chloride
+A2I8C7HI9T,METHYLPARABEN,E 218,N,Y,chemical,Swissmedic,1,N,exact-moiety,E 218
+1LM890Q4FY,MIFAMURTIDE,MIFAMURTIDE,N,Y,chemical,EMA,1,N,exact-moiety,mifamurtide
+YA84KI1VEW,MOLNUPIRAVIR,MOLNUPIRAVIR,Y,Y,chemical,EMA,1,N,exact-moiety,molnupiravir
+V24GR4LI3I,NAPROXCINOD,NAPROXCINOD,Y,Y,chemical,EMA,1,N,exact-moiety,naproxcinod
+4X49Y0596W,OCTISALATE,OCTISALATE,Y,Y,chemical,Health Canada,1,N,exact-moiety,OCTISALATE
+2M19539ERK,OMECAMTIV MECARBIL,OMECAMTIV MECARBIL,Y,Y,chemical,EMA,1,N,moiety-base,omecamtiv mecarbil dihydrochloride hydrate
+9TUW81Y3CE,PARECOXIB,PARECOXIB,Y,Y,chemical,EMA,1,N,moiety-base,parecoxib ; parecoxib sodium
+OS7097575K,PARSACLISIB,PARSACLISIB,Y,Y,chemical,EMA,1,N,moiety-base,Parsaclisib hydrochloride
+SSZ1S4I0US,PENICILLIN G BENZATHINE ANHYDROUS,BENZATHINI BENZYLPENICILLINUM,Y,N,chemical,Swissmedic,1,N,exact-moiety,benzathini benzylpenicillinum
+483AU1Y5CZ,PERFLENAPENT,DODECAFLUOROPENTANE,Y,Y,chemical,EMA,1,N,exact-moiety,dodecafluoropentane
+SE4TWR0K2C,PERFLUBUTANE,PERFLUBUTANE,Y,Y,chemical,EMA,1,N,exact-moiety,perflubutane
+YQE403BP4D,PHENOBARBITAL,PHENOBARBITALUM,Y,N,chemical,Swissmedic,1,N,exact-moiety,phenobarbitalum
+34AP3BBP9T,PIMOBENDAN,PIMOBENDAN,Y,Y,chemical,Health Canada,1,N,exact-moiety,PIMOBENDAN
+F5SXN2KNMR,PIXANTRONE,PIXANTRONE,Y,Y,chemical,EMA,1,N,moiety-base,pixantrone dimaleate
+468GE2241L,PROPIVERINE,PROPIVERINE,Y,N,chemical,Health Canada,1,N,moiety-base,PROPIVERINE HYDROCHLORIDE
+309G9J93TP,RACTOPAMINE HYDROCHLORIDE,RACTOPAMINE,N,Y,chemical,Health Canada,1,N,moiety-base,RACTOPAMINE HYDROCHLORIDE
+TLM2976OFR,RIBOFLAVIN,RIBOFLAVINUM,Y,N,chemical,Swissmedic,1,N,exact-moiety,riboflavinum
+X3O30D9YMX,ROXADUSTAT,ROXADUSTAT,Y,Y,chemical,EMA,1,N,exact-moiety,roxadustat
+YS90V3DTX0,SAFINAMIDE MESYLATE,SAFINAMIDE METHANESULFONATE,N,Y,chemical,EMA,1,N,exact-moiety,safinamide methanesulfonate
+AJS8S3P31H,SATAVAPTAN,SATAVAPTAN,Y,N,chemical,EMA,1,N,exact-moiety,satavaptan
+8D7B37T28G,SATRAPLATIN,SATRAPLATIN,Y,Y,chemical,EMA,1,N,exact-moiety,satraplatin
+6V9JH46E20,SITAXENTAN SODIUM,SITAXENTAN,N,Y,chemical,EMA,1,N,moiety-base,sitaxentan sodium
+9U1ETH79CK,SOLITHROMYCIN,SOLITHROMYCIN,Y,Y,chemical,EMA,1,N,exact-moiety,solithromycin
+15XQ8043FN,SULFAGUANIDINE,SULFAGUANIDINE,Y,N,chemical,Health Canada,1,N,exact-moiety,SULFAGUANIDINE
+WS7LR3I1D6,SULFUR HEXAFLUORIDE,SULPHUR HEXAFLUORIDE,N,Y,chemical,EMA,1,N,exact-moiety,sulphur hexafluoride
+B2K5L1L8S9,SURUFATINIB,SURUFATINIB,Y,Y,chemical,EMA,1,N,exact-moiety,surufatinib
+MXD6KMG2ZP,TEGOMIL FUMARATE,TEGOMIL,Y,N,chemical,EMA,1,N,moiety-base,tegomil fumarate
+FU21S769PF,TEMOPORFIN,TEMOPORFIN,Y,Y,chemical,EMA,1,N,exact-moiety,temoporfin
+Z1R9N0A399,TENOXICAM,TENOXICAM,Y,Y,chemical,Health Canada,1,N,exact-moiety,TENOXICAM
+X66NSO3N35,THIAMINE,VITAMIN B1,Y,N,chemical,Health Canada,1,N,exact-moiety,VITAMIN B1
+E38WZ4U54R,TIAMULIN,TIAMULIN,Y,N,chemical,Health Canada,1,N,moiety-base,TIAMULIN FUMARATE
+8CZ82ZYY9X,TOLEBRUTINIB,TOLEBRUTINIB,Y,Y,chemical,EMA,1,N,exact-moiety,tolebrutinib
+06KB629TKV,TOLNAFTATE,TOLNAFTATE,Y,N,chemical,Health Canada,1,N,exact-moiety,TOLNAFTATE
+QVZ3IAR3JS,TOLTRAZURIL,TOLTRAZURIL,Y,Y,chemical,Health Canada,1,N,exact-moiety,TOLTRAZURIL
+BQ5F77DZS3,TRORILUZOLE HYDROCHLORIDE,TRORILUZOLE,N,Y,chemical,EMA,1,N,exact-moiety,troriluzole
+7G4J1ZD9UQ,VERNAKALANT HYDROCHLORIDE,VERNAKALANT,N,Y,chemical,EMA,1,N,moiety-base,vernakalant hydrochloride
+33MG53C7XW,VINFLUNINE DITARTRATE,VINFLUNINE,N,Y,chemical,EMA,1,N,exact-moiety,vinflunine
+K6A90IIZ19,VOSAROXIN,VOSAROXIN,Y,Y,chemical,EMA,1,N,exact-moiety,vosaroxin
+49HFB70472,XIMELAGATRAN,XIMELAGATRAN,Y,Y,chemical,EMA,1,N,exact-moiety,ximelagatran
+WPY40FTH8K,XYLOMETAZOLINE,XYLOMETAZOLINE,Y,N,chemical,Health Canada,1,N,moiety-base,XYLOMETAZOLINE HYDROCHLORIDE
+03A5ORL08Q,ZOPICLONE,ZOPICLONE,Y,N,chemical,Health Canada,1,N,exact-moiety,ZOPICLONE
