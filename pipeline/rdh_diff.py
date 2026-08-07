@@ -150,6 +150,26 @@ def main():
         fh.write(_report_md(funnel, us_stats, candidates, orphan_n, inn_n, multi_n,
                             time.time() - t0))
 
+    # 7b) Machine-readable summary for the dashboard UI --------------------
+    import json
+    def pack(e):
+        return {"unii": e["unii"], "name": e["display"], "moiety": e["moiety_key"],
+                "inn": e["inn"], "usan": e["usan"], "type": e["subtype"],
+                "sources": sorted(e["sources"]), "orphan": e["orphan"],
+                "tier": e["match_tier"], "examples": sorted(e["examples"])[:3]}
+    summary = {
+        "generated": time.strftime("%Y-%m-%d"),
+        "snapshot": "UNII 26 Feb 2026 · Drugs@FDA 4 Aug 2026 · Orange Book Jul 2026 · EMA 5 Aug 2026",
+        "funnel": funnel,
+        "us_ingredient_rows": us_stats["ingredient_rows"],
+        "counts": {"named": len(named), "unnamed": len(unnamed),
+                   "orphan": orphan_n, "inn": inn_n, "multi_regulator": multi_n},
+        "candidates": [pack(e) for e in named],
+        "unnamed": [pack(e) for e in unnamed],
+    }
+    with open(os.path.join(OUT, "summary.json"), "w", encoding="utf-8") as fh:
+        json.dump(summary, fh, indent=1)
+
     log(f"DONE in {time.time()-t0:.1f}s")
     log(f"  candidates (small-molecule, never-US): {len(candidates):,}")
     log(f"  of which orphan-flagged: {orphan_n:,}")

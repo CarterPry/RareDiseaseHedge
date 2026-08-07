@@ -1,0 +1,3382 @@
+{
+ "generated": "2026-08-07",
+ "snapshot": "UNII 26 Feb 2026 \u00b7 Drugs@FDA 4 Aug 2026 \u00b7 Orange Book Jul 2026 \u00b7 EMA 5 Aug 2026",
+ "funnel": {
+  "foreign_rows": 6344,
+  "resolved": 2683,
+  "unmatched": 3661,
+  "biologic_or_mixture": 223,
+  "in_us": 1152,
+  "candidate_small_mol": 209,
+  "needs_translit_unmatched": 138,
+  "named_drug": 105,
+  "unnamed": 104
+ },
+ "us_ingredient_rows": 117034,
+ "counts": {
+  "named": 105,
+  "unnamed": 104,
+  "orphan": 15,
+  "inn": 82,
+  "multi_regulator": 0
+ },
+ "candidates": [
+  {
+   "unii": "CEG1Q6OGU1",
+   "name": "BARDOXOLONE METHYL",
+   "moiety": "BARDOXOLONE METHYL",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "Bardoxolone methyl"
+   ]
+  },
+  {
+   "unii": "A3749M6582",
+   "name": "CATEQUENTINIB HYDROCHLORIDE",
+   "moiety": "CATEQUENTINIB",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "moiety-base",
+   "examples": [
+    "catequentinib dihydrochloride"
+   ]
+  },
+  {
+   "unii": "U194AS08HZ",
+   "name": "EDOTREOTIDE",
+   "moiety": "EDOTREOTIDE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "edotreotide"
+   ]
+  },
+  {
+   "unii": "5X0D9H16IU",
+   "name": "EPRODISATE DISODIUM",
+   "moiety": "EPRODISATE",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "moiety-base",
+   "examples": [
+    "eprodisate disodium"
+   ]
+  },
+  {
+   "unii": "6JLQ8K35KK",
+   "name": "GOVORESTAT",
+   "moiety": "GOVORESTAT",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "govorestat"
+   ]
+  },
+  {
+   "unii": "HB6PN45W4J",
+   "name": "IDEBENONE",
+   "moiety": "IDEBENONE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "idebenone"
+   ]
+  },
+  {
+   "unii": "58BH47BV6S",
+   "name": "INFIGRATINIB PHOSPHATE",
+   "moiety": "INFIGRATINIB MONOPHOSPHATE",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "Infigratinib monophosphate"
+   ]
+  },
+  {
+   "unii": "60UTO373KE",
+   "name": "ISAVUCONAZOLE",
+   "moiety": "ISAVUCONAZOLE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "isavuconazole"
+   ]
+  },
+  {
+   "unii": "K824X25AYA",
+   "name": "LERIGLITAZONE",
+   "moiety": "LERIGLITAZONE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "leriglitazone",
+    "leriglitazone hydrochloride"
+   ]
+  },
+  {
+   "unii": "M59NC4E26P",
+   "name": "MASITINIB",
+   "moiety": "MASITINIB",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "moiety-base",
+   "examples": [
+    "Masitinib mesilate",
+    "masitinib"
+   ]
+  },
+  {
+   "unii": "Y76ID234HW",
+   "name": "PLITIDEPSIN",
+   "moiety": "PLITIDEPSIN",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "plitidepsin"
+   ]
+  },
+  {
+   "unii": "HD4TW8S2VK",
+   "name": "PRIDOPIDINE",
+   "moiety": "PRIDOPIDINE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "moiety-base",
+   "examples": [
+    "pridopidine hydrochloride"
+   ]
+  },
+  {
+   "unii": "1578EUB98L",
+   "name": "RESMINOSTAT",
+   "moiety": "RESMINOSTAT",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "moiety-base",
+   "examples": [
+    "resminostat mesilate"
+   ]
+  },
+  {
+   "unii": "H19C446XXB",
+   "name": "RUBITECAN",
+   "moiety": "RUBITECAN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "rubitecan"
+   ]
+  },
+  {
+   "unii": "29OQ9EU4R1",
+   "name": "TIRATRICOL",
+   "moiety": "TIRATRICOL",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "tiratricol"
+   ]
+  },
+  {
+   "unii": "137R1N49AD",
+   "name": "AGOMELATINE",
+   "moiety": "AGOMELATINE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "agomelatine"
+   ]
+  },
+  {
+   "unii": "URQ2517572",
+   "name": "ALFACALCIDOL",
+   "moiety": "ALFACALCIDOL",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ALFACALCIDOL"
+   ]
+  },
+  {
+   "unii": "2U0X0JA2NB",
+   "name": "ALTRENOGEST",
+   "moiety": "ALTRENOGEST",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ALTRENOGEST"
+   ]
+  },
+  {
+   "unii": "05W904P57F",
+   "name": "AMYLMETACRESOL",
+   "moiety": "AMYLMETACRESOL",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "AMYLMETACRESOL"
+   ]
+  },
+  {
+   "unii": "55F75LJQ0V",
+   "name": "ANAMORELIN HYDROCHLORIDE",
+   "moiety": "ANAMORELIN",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "anamorelin hydrochloride"
+   ]
+  },
+  {
+   "unii": "K16AME9I3V",
+   "name": "ATALUREN",
+   "moiety": "ATALUREN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ataluren"
+   ]
+  },
+  {
+   "unii": "RZ6I9WX68U",
+   "name": "AUMOLERTINIB MESYLATE",
+   "moiety": "AUMOLERTINIB",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "Aumolertinib mesilate"
+   ]
+  },
+  {
+   "unii": "XNM7LT65NP",
+   "name": "AZTREONAM LYSINE",
+   "moiety": "AZTREONAM LYSINE",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "aztreonam lysine"
+   ]
+  },
+  {
+   "unii": "PWZ1720CBH",
+   "name": "BEMOTRIZINOL",
+   "moiety": "BEMOTRIZINOL",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "BEMOTRIZINOL"
+   ]
+  },
+  {
+   "unii": "PA1123N395",
+   "name": "BILASTINE",
+   "moiety": "BILASTINE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "BILASTINE"
+   ]
+  },
+  {
+   "unii": "8NT850T0YS",
+   "name": "BISOCTRIZOLE",
+   "moiety": "BISOCTRIZOLE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "BISOCTRIZOLE"
+   ]
+  },
+  {
+   "unii": "1M49V1PBPL",
+   "name": "BLARCAMESINE HYDROCHLORIDE",
+   "moiety": "BLARCAMESINE",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "blarcamesine hydrochloride"
+   ]
+  },
+  {
+   "unii": "X015L14V0O",
+   "name": "BROMAZEPAM",
+   "moiety": "BROMAZEPAM",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "BROMAZEPAM"
+   ]
+  },
+  {
+   "unii": "568ET80C3D",
+   "name": "CALCIUM PANTOTHENATE",
+   "moiety": "CALCIUM D PANTOTHENATE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "CALCIUM D-PANTOTHENATE"
+   ]
+  },
+  {
+   "unii": "JUP57A8EPZ",
+   "name": "CAMIZESTRANT",
+   "moiety": "CAMIZESTRANT",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "camizestrant"
+   ]
+  },
+  {
+   "unii": "0MQ44VUN84",
+   "name": "CAPROMORELIN",
+   "moiety": "CAPROMORELIN",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "CAPROMORELIN TARTRATE"
+   ]
+  },
+  {
+   "unii": "P7725I9V3Z",
+   "name": "CARISBAMATE",
+   "moiety": "CARISBAMATE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "carisbamate"
+   ]
+  },
+  {
+   "unii": "3B03KPM27L",
+   "name": "CASOPITANT",
+   "moiety": "CASOPITANT",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "casopitant"
+   ]
+  },
+  {
+   "unii": "68AYS9A614",
+   "name": "CEDIRANIB MALEATE",
+   "moiety": "CEDIRANIB",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "cediranib maleate"
+   ]
+  },
+  {
+   "unii": "0F32U78V2Q",
+   "name": "CHLOROXYLENOL",
+   "moiety": "CHLOROXYLENOL",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "CHLOROXYLENOL"
+   ]
+  },
+  {
+   "unii": "45I14D8O27",
+   "name": "CHOLINE CHLORIDE",
+   "moiety": "",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "direct",
+   "examples": [
+    "CHOLINE CHLORIDE"
+   ]
+  },
+  {
+   "unii": "7560BB0BO3",
+   "name": "CLOROPHENE",
+   "moiety": "CLOROPHENE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "CLOROPHENE"
+   ]
+  },
+  {
+   "unii": "K848JZ4886",
+   "name": "CYSTEINE",
+   "moiety": "CYSTEINUM",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "cysteinum"
+   ]
+  },
+  {
+   "unii": "8OOT6M1PC7",
+   "name": "DELAMANID",
+   "moiety": "DELAMANID",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "Delamanid"
+   ]
+  },
+  {
+   "unii": "VX29JB5XWV",
+   "name": "DERACOXIB",
+   "moiety": "DERACOXIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "DERACOXIB"
+   ]
+  },
+  {
+   "unii": "R6D2UI4FLS",
+   "name": "ENCLOMIPHENE",
+   "moiety": "ENCLOMIFENE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "enclomifene citrate"
+   ]
+  },
+  {
+   "unii": "3DX3XEK1BN",
+   "name": "ENROFLOXACIN",
+   "moiety": "ENROFLOXACIN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ENROFLOXACIN"
+   ]
+  },
+  {
+   "unii": "YKH834O4BH",
+   "name": "EPINEPHRINE",
+   "moiety": "ADRENALINUM",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "adrenalinum"
+   ]
+  },
+  {
+   "unii": "1494Q15E7Z",
+   "name": "FALDAPREVIR SODIUM",
+   "moiety": "FALDAPREVIR",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "faldaprevir"
+   ]
+  },
+  {
+   "unii": "2CQ8Y0B8XQ",
+   "name": "FILGOTINIB HYDROCHLORIDE",
+   "moiety": "FILGOTINIB",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "filgotinib maleate"
+   ]
+  },
+  {
+   "unii": "Y6V2W4S4WT",
+   "name": "FIROCOXIB",
+   "moiety": "FIROCOXIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "FIROCOXIB"
+   ]
+  },
+  {
+   "unii": "WSH8393RM5",
+   "name": "FLURALANER",
+   "moiety": "FLURALANER",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "FLURALANER"
+   ]
+  },
+  {
+   "unii": "6L8OF9XRDC",
+   "name": "FOSAPREPITANT",
+   "moiety": "FOSAPREPITANT",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "fosaprepitant"
+   ]
+  },
+  {
+   "unii": "124X2V25W4",
+   "name": "FOSFOSAL",
+   "moiety": "SALICYLIC ACID",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "SALICYLIC ACID"
+   ]
+  },
+  {
+   "unii": "6K6L7E3F1L",
+   "name": "GEFAPIXANT",
+   "moiety": "GEFAPIXANT",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "gefapixant"
+   ]
+  },
+  {
+   "unii": "G4PX8C4HKV",
+   "name": "GLICLAZIDE",
+   "moiety": "GLICLAZIDE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "GLICLAZIDE"
+   ]
+  },
+  {
+   "unii": "PDC6A3C0OX",
+   "name": "GLYCERIN",
+   "moiety": "GLYCERINE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "GLYCERINE"
+   ]
+  },
+  {
+   "unii": "V06SV4M95S",
+   "name": "HOMOSALATE",
+   "moiety": "HOMOSALATE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "HOMOSALATE"
+   ]
+  },
+  {
+   "unii": "UMD7G2653W",
+   "name": "IBANDRONIC ACID",
+   "moiety": "IBANDRONIC ACID",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ibandronic acid"
+   ]
+  },
+  {
+   "unii": "0VUA21238F",
+   "name": "LAPATINIB",
+   "moiety": "LAPATINIB",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "lapatinib"
+   ]
+  },
+  {
+   "unii": "4H914M0CSP",
+   "name": "LAQUINIMOD SODIUM",
+   "moiety": "LAQUINIMOD",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "laquinimod"
+   ]
+  },
+  {
+   "unii": "337G83N988",
+   "name": "LASOFOXIFENE",
+   "moiety": "LASOFOXIFENE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "Lasofoxifene tartrate"
+   ]
+  },
+  {
+   "unii": "5KN5Y9V01K",
+   "name": "LEVOMEPROMAZINE MALEATE",
+   "moiety": "LEVOMEPROMAZINUM",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "levomepromazinum"
+   ]
+  },
+  {
+   "unii": "R3B637Y991",
+   "name": "LEVOMETHADYL ACETATE",
+   "moiety": "LEVACETYLMETHADOL",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "levacetylmethadol"
+   ]
+  },
+  {
+   "unii": "7CDW97HUEX",
+   "name": "LINZAGOLIX",
+   "moiety": "LINZAGOLIX",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "linzagolix choline"
+   ]
+  },
+  {
+   "unii": "E0QN3D755O",
+   "name": "LISURIDE",
+   "moiety": "LISURIDE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "lisuride"
+   ]
+  },
+  {
+   "unii": "3412470A0V",
+   "name": "MELPHALAN FLUFENAMIDE HYDROCHLORIDE",
+   "moiety": "MELPHALAN FLUFENAMIDE",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "Melphalan flufenamide hydrochloride"
+   ]
+  },
+  {
+   "unii": "53QOG569E0",
+   "name": "METAPROTERENOL",
+   "moiety": "ORCIPRENALINE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "ORCIPRENALINE SULFATE"
+   ]
+  },
+  {
+   "unii": "8NAP7826UB",
+   "name": "METHYLENE BLUE ANHYDROUS",
+   "moiety": "METHYLTHIONINIUM",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "methylthioninium chloride"
+   ]
+  },
+  {
+   "unii": "A2I8C7HI9T",
+   "name": "METHYLPARABEN",
+   "moiety": "E 218",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "E 218"
+   ]
+  },
+  {
+   "unii": "1LM890Q4FY",
+   "name": "MIFAMURTIDE",
+   "moiety": "MIFAMURTIDE",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "mifamurtide"
+   ]
+  },
+  {
+   "unii": "YA84KI1VEW",
+   "name": "MOLNUPIRAVIR",
+   "moiety": "MOLNUPIRAVIR",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "molnupiravir"
+   ]
+  },
+  {
+   "unii": "V24GR4LI3I",
+   "name": "NAPROXCINOD",
+   "moiety": "NAPROXCINOD",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "naproxcinod"
+   ]
+  },
+  {
+   "unii": "4X49Y0596W",
+   "name": "OCTISALATE",
+   "moiety": "OCTISALATE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "OCTISALATE"
+   ]
+  },
+  {
+   "unii": "2M19539ERK",
+   "name": "OMECAMTIV MECARBIL",
+   "moiety": "OMECAMTIV MECARBIL",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "omecamtiv mecarbil dihydrochloride hydrate"
+   ]
+  },
+  {
+   "unii": "9TUW81Y3CE",
+   "name": "PARECOXIB",
+   "moiety": "PARECOXIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "parecoxib",
+    "parecoxib sodium"
+   ]
+  },
+  {
+   "unii": "OS7097575K",
+   "name": "PARSACLISIB",
+   "moiety": "PARSACLISIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "Parsaclisib hydrochloride"
+   ]
+  },
+  {
+   "unii": "SSZ1S4I0US",
+   "name": "PENICILLIN G BENZATHINE ANHYDROUS",
+   "moiety": "BENZATHINI BENZYLPENICILLINUM",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "benzathini benzylpenicillinum"
+   ]
+  },
+  {
+   "unii": "483AU1Y5CZ",
+   "name": "PERFLENAPENT",
+   "moiety": "DODECAFLUOROPENTANE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "dodecafluoropentane"
+   ]
+  },
+  {
+   "unii": "SE4TWR0K2C",
+   "name": "PERFLUBUTANE",
+   "moiety": "PERFLUBUTANE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "perflubutane"
+   ]
+  },
+  {
+   "unii": "YQE403BP4D",
+   "name": "PHENOBARBITAL",
+   "moiety": "PHENOBARBITALUM",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "phenobarbitalum"
+   ]
+  },
+  {
+   "unii": "34AP3BBP9T",
+   "name": "PIMOBENDAN",
+   "moiety": "PIMOBENDAN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "PIMOBENDAN"
+   ]
+  },
+  {
+   "unii": "F5SXN2KNMR",
+   "name": "PIXANTRONE",
+   "moiety": "PIXANTRONE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "pixantrone dimaleate"
+   ]
+  },
+  {
+   "unii": "468GE2241L",
+   "name": "PROPIVERINE",
+   "moiety": "PROPIVERINE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "PROPIVERINE HYDROCHLORIDE"
+   ]
+  },
+  {
+   "unii": "309G9J93TP",
+   "name": "RACTOPAMINE HYDROCHLORIDE",
+   "moiety": "RACTOPAMINE",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "RACTOPAMINE HYDROCHLORIDE"
+   ]
+  },
+  {
+   "unii": "TLM2976OFR",
+   "name": "RIBOFLAVIN",
+   "moiety": "RIBOFLAVINUM",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "riboflavinum"
+   ]
+  },
+  {
+   "unii": "X3O30D9YMX",
+   "name": "ROXADUSTAT",
+   "moiety": "ROXADUSTAT",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "roxadustat"
+   ]
+  },
+  {
+   "unii": "YS90V3DTX0",
+   "name": "SAFINAMIDE MESYLATE",
+   "moiety": "SAFINAMIDE METHANESULFONATE",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "safinamide methanesulfonate"
+   ]
+  },
+  {
+   "unii": "AJS8S3P31H",
+   "name": "SATAVAPTAN",
+   "moiety": "SATAVAPTAN",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "satavaptan"
+   ]
+  },
+  {
+   "unii": "8D7B37T28G",
+   "name": "SATRAPLATIN",
+   "moiety": "SATRAPLATIN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "satraplatin"
+   ]
+  },
+  {
+   "unii": "6V9JH46E20",
+   "name": "SITAXENTAN SODIUM",
+   "moiety": "SITAXENTAN",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "sitaxentan sodium"
+   ]
+  },
+  {
+   "unii": "9U1ETH79CK",
+   "name": "SOLITHROMYCIN",
+   "moiety": "SOLITHROMYCIN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "solithromycin"
+   ]
+  },
+  {
+   "unii": "15XQ8043FN",
+   "name": "SULFAGUANIDINE",
+   "moiety": "SULFAGUANIDINE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "SULFAGUANIDINE"
+   ]
+  },
+  {
+   "unii": "WS7LR3I1D6",
+   "name": "SULFUR HEXAFLUORIDE",
+   "moiety": "SULPHUR HEXAFLUORIDE",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "sulphur hexafluoride"
+   ]
+  },
+  {
+   "unii": "B2K5L1L8S9",
+   "name": "SURUFATINIB",
+   "moiety": "SURUFATINIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "surufatinib"
+   ]
+  },
+  {
+   "unii": "MXD6KMG2ZP",
+   "name": "TEGOMIL FUMARATE",
+   "moiety": "TEGOMIL",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "tegomil fumarate"
+   ]
+  },
+  {
+   "unii": "FU21S769PF",
+   "name": "TEMOPORFIN",
+   "moiety": "TEMOPORFIN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "temoporfin"
+   ]
+  },
+  {
+   "unii": "Z1R9N0A399",
+   "name": "TENOXICAM",
+   "moiety": "TENOXICAM",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "TENOXICAM"
+   ]
+  },
+  {
+   "unii": "X66NSO3N35",
+   "name": "THIAMINE",
+   "moiety": "VITAMIN B1",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "VITAMIN B1"
+   ]
+  },
+  {
+   "unii": "E38WZ4U54R",
+   "name": "TIAMULIN",
+   "moiety": "TIAMULIN",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "TIAMULIN FUMARATE"
+   ]
+  },
+  {
+   "unii": "8CZ82ZYY9X",
+   "name": "TOLEBRUTINIB",
+   "moiety": "TOLEBRUTINIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "tolebrutinib"
+   ]
+  },
+  {
+   "unii": "06KB629TKV",
+   "name": "TOLNAFTATE",
+   "moiety": "TOLNAFTATE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "TOLNAFTATE"
+   ]
+  },
+  {
+   "unii": "QVZ3IAR3JS",
+   "name": "TOLTRAZURIL",
+   "moiety": "TOLTRAZURIL",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "TOLTRAZURIL"
+   ]
+  },
+  {
+   "unii": "BQ5F77DZS3",
+   "name": "TRORILUZOLE HYDROCHLORIDE",
+   "moiety": "TRORILUZOLE",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "troriluzole"
+   ]
+  },
+  {
+   "unii": "7G4J1ZD9UQ",
+   "name": "VERNAKALANT HYDROCHLORIDE",
+   "moiety": "VERNAKALANT",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "vernakalant hydrochloride"
+   ]
+  },
+  {
+   "unii": "33MG53C7XW",
+   "name": "VINFLUNINE DITARTRATE",
+   "moiety": "VINFLUNINE",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "vinflunine"
+   ]
+  },
+  {
+   "unii": "K6A90IIZ19",
+   "name": "VOSAROXIN",
+   "moiety": "VOSAROXIN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "vosaroxin"
+   ]
+  },
+  {
+   "unii": "49HFB70472",
+   "name": "XIMELAGATRAN",
+   "moiety": "XIMELAGATRAN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ximelagatran"
+   ]
+  },
+  {
+   "unii": "WPY40FTH8K",
+   "name": "XYLOMETAZOLINE",
+   "moiety": "XYLOMETAZOLINE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "XYLOMETAZOLINE HYDROCHLORIDE"
+   ]
+  },
+  {
+   "unii": "03A5ORL08Q",
+   "name": "ZOPICLONE",
+   "moiety": "ZOPICLONE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ZOPICLONE"
+   ]
+  }
+ ],
+ "unnamed": [
+  {
+   "unii": "40UB1H6Q6T",
+   "name": "ETARFOLATIDE",
+   "moiety": "ETARFOLATIDE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "Etarfolatide"
+   ]
+  },
+  {
+   "unii": "QZS4144IO0",
+   "name": "GUSPERIMUS TRIHYDROCHLORIDE",
+   "moiety": "GUSPERIMUS TRIHYDROCHLORIDE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "gusperimus trihydrochloride"
+   ]
+  },
+  {
+   "unii": "99R86Y6V0M",
+   "name": "OXODOTREOTIDE ACETATE",
+   "moiety": "OXODOTREOTIDE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "oxodotreotide"
+   ]
+  },
+  {
+   "unii": "R16CO5Y76E",
+   "name": "ASPIRIN",
+   "moiety": "ACETYLSALICYLIC ACID",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada",
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ACETYLSALICYLIC ACID",
+    "acidum acetylsalicylicum"
+   ]
+  },
+  {
+   "unii": "92019DWI1D",
+   "name": "SUNITINIB MALEATE",
+   "moiety": "SUNITINIB",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA",
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "SUNITINIB",
+    "sunitinib"
+   ]
+  },
+  {
+   "unii": "3J50XA376E",
+   "name": "THYMOL",
+   "moiety": "THYMOL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada",
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "THYMOL",
+    "thymolum"
+   ]
+  },
+  {
+   "unii": "2S38I4XUYG",
+   "name": "2-HYDROXYPROPYL SALICYLATE",
+   "moiety": "PROPYLENE GLYCOL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "PROPYLENE GLYCOL"
+   ]
+  },
+  {
+   "unii": "D343Z75HT8",
+   "name": "2-PHENYLPHENOL",
+   "moiety": "O PHENYLPHENOL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "O-PHENYLPHENOL"
+   ]
+  },
+  {
+   "unii": "O18V5XYO0G",
+   "name": "ACETYL BROMIDE",
+   "moiety": "ACETIC ACID",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ACETIC ACID"
+   ]
+  },
+  {
+   "unii": "HXQ6A1N7R6",
+   "name": "AMPICILLIN TRIHYDRATE",
+   "moiety": "AMPICILLIN AMPICILLIN",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "AMPICILLIN (AMPICILLIN SODIUM)"
+   ]
+  },
+  {
+   "unii": "R5Y8O51589",
+   "name": "ANECORTAVE",
+   "moiety": "ANECORTAVE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "anecortave acetate"
+   ]
+  },
+  {
+   "unii": "L11K75P92J",
+   "name": "ANHYDROUS DIBASIC CALCIUM PHOSPHATE",
+   "moiety": "CALCIUM CALCIUM PHOSPHATE DIBASIC",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "CALCIUM (CALCIUM PHOSPHATE (DIBASIC))"
+   ]
+  },
+  {
+   "unii": "1VU15B70BP",
+   "name": "BENZETHONIUM",
+   "moiety": "BENZETHONIUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "BENZETHONIUM CHLORIDE"
+   ]
+  },
+  {
+   "unii": "49K58SMZ7U",
+   "name": "BETAHISTINE HYDROCHLORIDE",
+   "moiety": "BETAHISTINE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "BETAHISTINE HYDROCHLORIDE"
+   ]
+  },
+  {
+   "unii": "844ZJE6I55",
+   "name": "BOSUTINIB MONOHYDRATE",
+   "moiety": "BOSUTINIB AS",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "bosutinib (as monohydrate)"
+   ]
+  },
+  {
+   "unii": "0GH9JX37C8",
+   "name": "BUTYLSCOPOLAMINE BROMIDE",
+   "moiety": "HYOSCINE BUTYLBROMIDE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "HYOSCINE BUTYLBROMIDE"
+   ]
+  },
+  {
+   "unii": "6915G2PQI0",
+   "name": "CALCIUM BOROGLUCONATE",
+   "moiety": "CALCIUM BOROGLUCONATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "CALCIUM BOROGLUCONATE"
+   ]
+  },
+  {
+   "unii": "N20HL7Q941",
+   "name": "CAMPHOR (NATURAL)",
+   "moiety": "DEXTROCAMPHORA",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "dextrocamphora"
+   ]
+  },
+  {
+   "unii": "213N3S8275",
+   "name": "CAMPHOR, (-)-",
+   "moiety": "CAMPHOR",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "CAMPHOR"
+   ]
+  },
+  {
+   "unii": "9B1J4V995Q",
+   "name": "CARVACROL",
+   "moiety": "CARVACROL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "CARVACROL"
+   ]
+  },
+  {
+   "unii": "1P489GK6AR",
+   "name": "CETRIMONIUM TOSYLATE",
+   "moiety": "CETRIMONIUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "CETRIMONIUM BROMIDE"
+   ]
+  },
+  {
+   "unii": "25QX3JT22D",
+   "name": "CETYLPYRIDINIUM IODIDE",
+   "moiety": "CETYLPYRIDINIUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "CETYLPYRIDINIUM CHLORIDE"
+   ]
+  },
+  {
+   "unii": "418M5916WG",
+   "name": "CHLORAL HYDRATE",
+   "moiety": "CHLORAL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "CHLORAL HYDRATE"
+   ]
+  },
+  {
+   "unii": "8061YMS4RM",
+   "name": "CHLORINE DIOXIDE",
+   "moiety": "CHLORINE DIOXIDE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "CHLORINE DIOXIDE"
+   ]
+  },
+  {
+   "unii": "0R0008Q3JB",
+   "name": "CHROMIUM",
+   "moiety": "CHROMIUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "chromium"
+   ]
+  },
+  {
+   "unii": "07D5053T1R",
+   "name": "COBALTOUS CITRATE",
+   "moiety": "COBALT",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "COBALT SULFATE"
+   ]
+  },
+  {
+   "unii": "SML2Y3J35T",
+   "name": "COLCHICINE",
+   "moiety": "COLCHICINUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "colchicinum"
+   ]
+  },
+  {
+   "unii": "9J2IBN2H70",
+   "name": "COPPER NAPHTHENATE",
+   "moiety": "COPPER NAPHTHENATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "COPPER NAPHTHENATE"
+   ]
+  },
+  {
+   "unii": "3IGV2Y2378",
+   "name": "CUPRIC CHLORIDE ANHYDROUS CU-64",
+   "moiety": "COPPER 64CU",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "copper (64Cu) chloride"
+   ]
+  },
+  {
+   "unii": "4AKF24FA4C",
+   "name": "DAPAGLIFLOZIN PROPANEDIOL ANHYDROUS",
+   "moiety": "DAPAGLIFLOZIN PROPANEDIOL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "dapagliflozin propanediol monohydrate"
+   ]
+  },
+  {
+   "unii": "41103DW4UG",
+   "name": "DEPREOTIDE TRIFLUOROACETATE",
+   "moiety": "DEPREOTIDE TRIFLUOROACETATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "depreotide trifluoroacetate"
+   ]
+  },
+  {
+   "unii": "1NKX3648J9",
+   "name": "DICHLOROBENZYL ALCOHOL",
+   "moiety": "DICHLOROBENZYL ALCOHOL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "DICHLOROBENZYL ALCOHOL"
+   ]
+  },
+  {
+   "unii": "6TGQ35Z71K",
+   "name": "DICLOFENAC DIETHYLAMINE",
+   "moiety": "DICLOFENAC DIETHYLAMINE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "DICLOFENAC DIETHYLAMINE"
+   ]
+  },
+  {
+   "unii": "0L0ZW34692",
+   "name": "DIDECYLDIMONIUM ACETATE",
+   "moiety": "DIDECYL DIMETHYL AMMONIUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "DIDECYL DIMETHYL AMMONIUM CHLORIDE"
+   ]
+  },
+  {
+   "unii": "0X0RL40Y6H",
+   "name": "DIOCTYLDIMONIUM CHLORIDE",
+   "moiety": "DIOCTYL DIMETHYL AMMONIUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "DIOCTYL DIMETHYL AMMONIUM CHLORIDE"
+   ]
+  },
+  {
+   "unii": "6429L0L52Y",
+   "name": "DIPYRONE",
+   "moiety": "DIPYRONE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "DIPYRONE MONOHYDRATE"
+   ]
+  },
+  {
+   "unii": "6K7YS503HC",
+   "name": "DOCUSATE CALCIUM",
+   "moiety": "DOCUSATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "DOCUSATE SODIUM"
+   ]
+  },
+  {
+   "unii": "HC22845I1X",
+   "name": "DROMETRIZOLE TRISILOXANE",
+   "moiety": "DROMETRIZOLE TRISILOXANE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "DROMETRIZOLE TRISILOXANE"
+   ]
+  },
+  {
+   "unii": "058078A0QS",
+   "name": "ENSULIZOLE POTASSIUM",
+   "moiety": "ENSULIZOLE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ENSULIZOLE"
+   ]
+  },
+  {
+   "unii": "MLU731K321",
+   "name": "ERTUGLIFLOZIN PIDOLATE",
+   "moiety": "ERTUGLIFLOZIN L PYROGLUTAMIC ACID",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ertugliflozin l-pyroglutamic acid"
+   ]
+  },
+  {
+   "unii": "721M52NQ5L",
+   "name": "ETHYLENEDIAMINE DIHYDRIODIDE",
+   "moiety": "ETHYLENEDIAMINE DIHYDROIODIDE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ETHYLENEDIAMINE DIHYDROIODIDE"
+   ]
+  },
+  {
+   "unii": "14255EXE39",
+   "name": "ETHYLPARABEN",
+   "moiety": "E 214",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "E 214"
+   ]
+  },
+  {
+   "unii": "1K09F3G675",
+   "name": "FERRIC OXIDE RED",
+   "moiety": "IRON OXIDE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "iron oxide"
+   ]
+  },
+  {
+   "unii": "1HG84L3525",
+   "name": "FORMALDEHYDE",
+   "moiety": "FORMALDEHYDE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "FORMALDEHYDE"
+   ]
+  },
+  {
+   "unii": "RD9L8XE13L",
+   "name": "GALLIUM CITRATE GA-68",
+   "moiety": "68GA",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "PMDA-JP"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "\u5869\u5316\u30ac\u30ea\u30a6\u30e0\uff0868Ga\uff09"
+   ]
+  },
+  {
+   "unii": "437ZKU48CF",
+   "name": "GARENOXACIN MESYLATE ANHYDROUS",
+   "moiety": "GARENOXACIN",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "garenoxacin mesylate"
+   ]
+  },
+  {
+   "unii": "M2GDW2QE6P",
+   "name": "GLUTARAL MONOHYDRATE",
+   "moiety": "GLUTARAL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "GLUTARAL"
+   ]
+  },
+  {
+   "unii": "0324G66D0E",
+   "name": "GLYCOL STEARATE",
+   "moiety": "GLYCOL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "GLYCOL SALICYLATE"
+   ]
+  },
+  {
+   "unii": "9AG41L3AOQ",
+   "name": "GOZETOTIDE",
+   "moiety": "GOZETOTIDE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "gozetotide"
+   ]
+  },
+  {
+   "unii": "Q71XPQ6R29",
+   "name": "GUAIACOL CARBONATE",
+   "moiety": "GUAIACOL CARBONATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "GUAIACOL CARBONATE"
+   ]
+  },
+  {
+   "unii": "R9QTB5E82N",
+   "name": "HEXYLRESORCINOL",
+   "moiety": "HEXYLRESORCINOL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "HEXYLRESORCINOL"
+   ]
+  },
+  {
+   "unii": "QTT17582CB",
+   "name": "HYDROCHLORIC ACID",
+   "moiety": "HYDROCHLORIC ACID",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "HYDROCHLORIC ACID"
+   ]
+  },
+  {
+   "unii": "712K4CDC10",
+   "name": "HYPOCHLOROUS ACID",
+   "moiety": "HYPOCHLOROUS ACID",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "HYPOCHLOROUS ACID"
+   ]
+  },
+  {
+   "unii": "9679TC07X4",
+   "name": "IODINE",
+   "moiety": "IODINE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "IODINE",
+    "IODINE (POTASSIUM IODIDE)"
+   ]
+  },
+  {
+   "unii": "24H4NWX5CO",
+   "name": "KAOLIN",
+   "moiety": "KAOLIN",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "KAOLIN"
+   ]
+  },
+  {
+   "unii": "435SSH7H89",
+   "name": "LACTATE ION, L-",
+   "moiety": "L",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "PMDA-JP"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "\u30a8\u30c8\u30e9\u30b7\u30e2\u30c9 L-\u30a2\u30eb\u30ae\u30cb\u30f3"
+   ]
+  },
+  {
+   "unii": "F9S9FFU82N",
+   "name": "LACTIC ACID, L-",
+   "moiety": "L LACTIC ACID",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "L-LACTIC ACID"
+   ]
+  },
+  {
+   "unii": "04M8624OXV",
+   "name": "LANTHANUM CHLORIDE",
+   "moiety": "LANTHANUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "lanthanum"
+   ]
+  },
+  {
+   "unii": "9FN79X2M3F",
+   "name": "LITHIUM",
+   "moiety": "",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "direct",
+   "examples": [
+    "lithium"
+   ]
+  },
+  {
+   "unii": "1U477369SN",
+   "name": "LUTETIUM CHLORIDE LU-177",
+   "moiety": "LUTETIUM 177LU",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "lutetium (177Lu) chloride"
+   ]
+  },
+  {
+   "unii": "I38ZP9992A",
+   "name": "MAGNESIUM",
+   "moiety": "",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "direct",
+   "examples": [
+    "magnesium"
+   ]
+  },
+  {
+   "unii": "19364RWW06",
+   "name": "MAROPITANT CITRATE ANHYDROUS",
+   "moiety": "MAROPITANT",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "MAROPITANT"
+   ]
+  },
+  {
+   "unii": "JL5DK93RCL",
+   "name": "MELATONIN",
+   "moiety": "MELATONIN",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "melatonin"
+   ]
+  },
+  {
+   "unii": "81AH48963U",
+   "name": "MOLYBDENUM",
+   "moiety": "MOLYBDENUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "molybdenum"
+   ]
+  },
+  {
+   "unii": "6634O61GOI",
+   "name": "MOLYBDENUM MO-99",
+   "moiety": "MOLYBDENUM 99 MO",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "molybdenum(99-Mo)"
+   ]
+  },
+  {
+   "unii": "040ZB27861",
+   "name": "MONOPOTASSIUM PEROXYMONOSULFATE",
+   "moiety": "POTASSIUM PEROXYMONOSULFATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "POTASSIUM PEROXYMONOSULFATE"
+   ]
+  },
+  {
+   "unii": "41TQ665R1X",
+   "name": "MORPHINE MONOHYDRATE",
+   "moiety": "MORPHINUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "morphinum"
+   ]
+  },
+  {
+   "unii": "Q3NHK36BKL",
+   "name": "MYRISTALKONIUM SACCHARINATE",
+   "moiety": "ALKYL DIMETHYL BENZYL AMMONIUM SACCHARINATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ALKYL DIMETHYL BENZYL AMMONIUM SACCHARINATE"
+   ]
+  },
+  {
+   "unii": "E775ICF82G",
+   "name": "OCTANOIC ACID 1-C-13",
+   "moiety": "1 13C CAPRYLIC ACID",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "1-13C-caprylic acid"
+   ]
+  },
+  {
+   "unii": "6NP9LYK846",
+   "name": "P-TERT-PENTYLPHENOL",
+   "moiety": "P TERT PENTYLPHENOL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "P-TERT-PENTYLPHENOL"
+   ]
+  },
+  {
+   "unii": "UA8U0KJM72",
+   "name": "PAMABROM",
+   "moiety": "PAMABROM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "PAMABROM"
+   ]
+  },
+  {
+   "unii": "F4GSH45R4C",
+   "name": "PEMETREXED DISODIUM HEMIPENTAHYDRATE",
+   "moiety": "PEMETREXED DISODIUM HEMIPENTAHYDRATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "pemetrexed disodium hemipentahydrate"
+   ]
+  },
+  {
+   "unii": "9T47E4OM16",
+   "name": "PEMETREXED DISODIUM HEPTAHYDRATE",
+   "moiety": "PEMETREXED DISODIUM HEPTAHYDRATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "pemetrexed disodium heptahydrate"
+   ]
+  },
+  {
+   "unii": "236Y2F7D9J",
+   "name": "PEMETREXED MONOHYDRATE",
+   "moiety": "PEMETREXED DIACID",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "pemetrexed diacid monohydrate"
+   ]
+  },
+  {
+   "unii": "I6KPI2E1HD",
+   "name": "PERACETIC ACID",
+   "moiety": "PERACETIC ACID",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "PERACETIC ACID"
+   ]
+  },
+  {
+   "unii": "2L4RKM5351",
+   "name": "PHENYL HYDROGEN SULFATE",
+   "moiety": "PHENOL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "PHENOL"
+   ]
+  },
+  {
+   "unii": "HM5Z15LEBN",
+   "name": "POTASSIUM BICARBONATE",
+   "moiety": "POTASSIUM BICARBONATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "POTASSIUM BICARBONATE"
+   ]
+  },
+  {
+   "unii": "F1CB00L2RH",
+   "name": "PSMA-1007 F-18",
+   "moiety": "18F PSMA 1007",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "(18F)-PSMA-1007"
+   ]
+  },
+  {
+   "unii": "RG20W8WYLS",
+   "name": "PYRIDOXINE PHOSPHATE",
+   "moiety": "VITAMIN B6 PYRIDOXINE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "VITAMIN B6 (PYRIDOXINE HYDROCHLORIDE)"
+   ]
+  },
+  {
+   "unii": "0T2NG1539G",
+   "name": "QUATERNIUM-24",
+   "moiety": "OCTYL DECYL DIMETHYL AMMONIUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "OCTYL DECYL DIMETHYL AMMONIUM CHLORIDE"
+   ]
+  },
+  {
+   "unii": "38WFI1311A",
+   "name": "RACEMETHIONINE HYDROCHLORIDE",
+   "moiety": "DL METHIONINE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "DL-METHIONINE"
+   ]
+  },
+  {
+   "unii": "7N464URE7E",
+   "name": "RIBOFLAVIN 5'-PHOSPHATE",
+   "moiety": "VITAMIN B2 RIBOFLAVIN 5",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "VITAMIN B2",
+    "VITAMIN B2 (RIBOFLAVIN 5'-PHOSPHATE SODIUM)"
+   ]
+  },
+  {
+   "unii": "HL0V2LQZ09",
+   "name": "RIMONABANT HYDROCHLORIDE",
+   "moiety": "RIMONABANT",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "rimonabant"
+   ]
+  },
+  {
+   "unii": "4TY24FTS56",
+   "name": "RUBOXISTAURIN MESYLATE MONOHYDRATE",
+   "moiety": "RUBOXISTAURIN",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ruboxistaurin"
+   ]
+  },
+  {
+   "unii": "51T0V5Z5AD",
+   "name": "SACUBITRIL VALSARTAN SODIUM ANHYDROUS",
+   "moiety": "SACUBITRIL VALSARTAN",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "sacubitril;valsartan"
+   ]
+  },
+  {
+   "unii": "6WRB0BWV8E",
+   "name": "SELENIUM BROMIDE",
+   "moiety": "SELENIUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "selenium"
+   ]
+  },
+  {
+   "unii": "Z7G02XZ0M6",
+   "name": "SIPONIMOD FUMARIC ACID",
+   "moiety": "SIPONIMOD FUMARIC ACID",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "siponimod fumaric acid"
+   ]
+  },
+  {
+   "unii": "9NEZ333N27",
+   "name": "SODIUM",
+   "moiety": "NATRIUM",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "natrium"
+   ]
+  },
+  {
+   "unii": "NVG71ZZ7P0",
+   "name": "SODIUM ACETATE ANHYDROUS",
+   "moiety": "",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "direct",
+   "examples": [
+    "SODIUM ACETATE ANHYDROUS"
+   ]
+  },
+  {
+   "unii": "F83TIJ81F8",
+   "name": "SODIUM CHLORITE TRIHYDRATE",
+   "moiety": "SODIUM CHLORITE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "SODIUM CHLORITE"
+   ]
+  },
+  {
+   "unii": "55X04QC32I",
+   "name": "SODIUM HYDROXIDE",
+   "moiety": "SODIUM HYDROXIDE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "SODIUM HYDROXIDE"
+   ]
+  },
+  {
+   "unii": "DY38VHM5OD",
+   "name": "SODIUM HYPOCHLORITE",
+   "moiety": "SODIUM HYPOCHLORITE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "SODIUM HYPOCHLORITE"
+   ]
+  },
+  {
+   "unii": "4VN69WUP7N",
+   "name": "SODIUM HYPOPHOSPHITE MONOHYDRATE",
+   "moiety": "SODIUM HYPOPHOSPHITE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "SODIUM HYPOPHOSPHITE"
+   ]
+  },
+  {
+   "unii": "F5WR8N145C",
+   "name": "SODIUM IODIDE",
+   "moiety": "",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "direct",
+   "examples": [
+    "SODIUM IODIDE"
+   ]
+  },
+  {
+   "unii": "Z7G82NV92P",
+   "name": "SODIUM PERCARBONATE",
+   "moiety": "SODIUM PERCARBONATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "SODIUM PERCARBONATE"
+   ]
+  },
+  {
+   "unii": "04NQ160FRU",
+   "name": "STRONTIUM RANELATE",
+   "moiety": "STRONTIUM RANELATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "strontium ranelate"
+   ]
+  },
+  {
+   "unii": "3E794G4ZRB",
+   "name": "TRIS(HYDROXYMETHYL)NITROMETHANE",
+   "moiety": "TRIS HYDROXYMETHYL NITROMETHANE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "TRIS HYDROXYMETHYL NITROMETHANE"
+   ]
+  },
+  {
+   "unii": "07M9U9U0LK",
+   "name": "TROCLOSENE SODIUM",
+   "moiety": "SODIUM DICHLOROISOCYANURATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "SODIUM DICHLOROISOCYANURATE"
+   ]
+  },
+  {
+   "unii": "1J6JM3JE61",
+   "name": "TROLAMINE STEARATE",
+   "moiety": "TROLAMINE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "TROLAMINE SALICYLATE"
+   ]
+  },
+  {
+   "unii": "7NS97N9H1G",
+   "name": "TRYPTOPHAN, D-",
+   "moiety": "TRYPTOPHAN",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "TRYPTOPHAN"
+   ]
+  },
+  {
+   "unii": "9KND64V2AA",
+   "name": "VILDAGLIPTIN HYDROCHLORIDE",
+   "moiety": "VILDAGLIPTIN",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "vildagliptin"
+   ]
+  },
+  {
+   "unii": "1K8M7UR6O1",
+   "name": "YTTRIUM Y-90",
+   "moiety": "YTTRIUM 90Y",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "yttrium (90Y) chloride"
+   ]
+  },
+  {
+   "unii": "J41CSQ7QDS",
+   "name": "ZINC",
+   "moiety": "",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "direct",
+   "examples": [
+    "zinc"
+   ]
+  },
+  {
+   "unii": "349S2ZHF05",
+   "name": "ZUCLOPENTHIXOL ACETATE",
+   "moiety": "ZUCLOPENTHIXOL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "ZUCLOPENTHIXOL DECANOATE"
+   ]
+  }
+ ]
+}

@@ -25,6 +25,22 @@ Outputs (written to `pipeline/data/out/`, ~7s runtime):
 - `funnelA_candidates.csv` — named-drug (INN/USAN) never-US candidates, the headline list
 - `funnelA_unnamed_excipients.csv` — never-US substances lacking an INN/USAN (excipients, antiseptics, sunscreen filters, reagents, vet-only) — kept for completeness, not repurposing candidates
 - `funnel_report.md` — the funnel counts, top orphan candidates, and caveats
+- `summary.json` — machine-readable version of all of the above (feeds the dashboard)
+
+## The dashboard (what to actually look at)
+
+Don't read the CSVs by hand. Generate and open the visual dashboard:
+
+```bash
+python3 pipeline/build_ui.py          # writes pipeline/ui/index.html
+open pipeline/ui/index.html           # double-click also works — no server needed
+```
+
+It shows the headline numbers, a visual funnel, and every candidate as a card
+with orphan/INN/USAN badges, source tags, and one-click lookup links (EMA,
+PubMed, FDA GSRS). Search and filter chips ("Orphan only", by regulator). The
+data is embedded in the file, so it works offline and is safe to share as a
+single `index.html`. Re-run `rdh_diff.py` then `build_ui.py` to refresh it.
 
 ## Data
 
