@@ -17,9 +17,45 @@ FILTER                      drop biologics/vaccines; split named-drug vs excipie
 ## Run it
 
 ```bash
-pip install --break-system-packages openpyxl      # only third-party dep
-python3 pipeline/rdh_diff.py
+python3 -m pip install --break-system-packages openpyxl   # only third-party dep
+python3 pipeline/fetch.py       # (optional) refresh source files from live URLs
+python3 pipeline/rdh_diff.py    # run the diff -> summary.json + CSVs
+python3 pipeline/enrich.py      # (optional) add live PubMed/trials + competitor monitor
+python3 pipeline/build_ui.py    # generate the dashboard
+open pipeline/ui/index.html
 ```
+
+## Live data
+
+The dashboard is a static file, but it can be rebuilt from current data — "live"
+happens at the build step, not in the browser (keeps it offline-safe & shareable).
+
+- **`fetch.py`** — re-downloads the source bulk files from their live URLs (EMA
+  publishes nightly; Drugs@FDA weekly; Orange Book, Canada, Swissmedic, UNII on
+  their own cadences). Atomic + validated: a dead URL keeps the last good copy.
+  `python3 pipeline/fetch.py ema fda` refreshes only named sources.
+- **`enrich.py`** — at build time, adds real-world signal per candidate and a
+  global competitor monitor, then embeds it. Cached in `data/cache/` (re-runs are
+  instant), rate-limited, and fail-safe (a flaky API degrades to "—", never breaks
+  the build):
+  - **PubMed** hits in a rare/paediatric context (evidence signal)
+  - **ClinicalTrials.gov v2** trial count (is anyone already developing it?)
+  - **Federal Register** live PRV ledger + **SEC EDGAR** recent RPD-designation
+    filers — the competitor early-warning channel (FDA publishes no RPD list)
+  - US orphan designation is deliberately **not** asserted — FDA OOPD blocks
+    automation, so it's surfaced as a manual-check, never a false "clear".
+
+To refresh everything: `fetch.py` → `rdh_diff.py` → `enrich.py` → `build_ui.py`.
+
+## The dashboard has two views
+
+1. **Open & eligible** (top, plain-language) — the drugs that qualify for the
+   voucher program *and* look freely available, with an off-patent-by-age read and
+   an explicit warning that old candidates are exactly where "never US-approved"
+   and freedom-to-operate are least certain. This is the "just show me what's
+   available" view.
+2. **Full analyst view** — all 105, promise-scored, filterable, with the detail
+   drawer, triage state, and competitor monitor.
 
 Outputs (written to `pipeline/data/out/`, ~7s runtime):
 - `funnelA_candidates.csv` — named-drug (INN/USAN) never-US candidates, the headline list

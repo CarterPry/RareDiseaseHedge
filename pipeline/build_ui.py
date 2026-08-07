@@ -116,6 +116,37 @@ header.top button.exp:hover{border-color:var(--signal);color:#fff}
 .card .n{font-family:var(--mono);font-size:27px;font-weight:600;line-height:1;color:var(--ink)}
 .card .l{font-size:12.5px;color:var(--ink-secondary);margin-top:7px;font-weight:500}
 .card .s{font-size:11px;color:var(--ink-tertiary);margin-top:3px}
+/* simple / plain-language view */
+.simple{margin:24px 0 8px}
+.simple-head h2{font-size:22px;font-weight:600;margin:0 0 6px;letter-spacing:-.2px}
+.simple-head p{font-size:14px;line-height:1.6;color:var(--ink-secondary);max-width:820px;margin:0 0 14px}
+.honest-note{background:var(--investigate-bg);border:1px solid #e8c88c;border-radius:8px;padding:11px 14px;font-size:13px!important;color:#6d4400!important}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:14px;font-size:12px;color:var(--ink-tertiary)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.pill{font-family:var(--mono);font-size:11px;font-weight:600;padding:2px 8px;border-radius:20px}
+.pill.open{background:var(--keep-bg);color:var(--keep)} .pill.soon{background:var(--investigate-bg);color:var(--investigate)}
+.pill.prot{background:var(--reject-bg);color:var(--reject)} .pill.unk{background:#eef1f0;color:var(--ink-tertiary)}
+.scard{background:var(--parchment-raised);border:1px solid var(--rule);border-left:4px solid var(--keep);border-radius:10px;padding:16px 18px;margin-bottom:10px;cursor:pointer}
+.scard:hover{background:#fff}
+.scard.soon{border-left-color:var(--investigate)} .scard.prot{border-left-color:var(--reject)} .scard.unk{border-left-color:var(--ink-ghost)}
+.scard .sc-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.scard .sc-name{font-size:18px;font-weight:600}
+.scard .sc-desc{font-size:14px;line-height:1.55;color:var(--ink-secondary);margin:7px 0 10px}
+.scard .sc-checks{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px}
+.scard .chk-y{color:var(--keep)} .scard .chk-w{color:var(--investigate)} .scard .chk-i{color:var(--ink-tertiary)}
+.simple-more{text-align:center;margin:6px 0 4px}
+.simple-more button{background:none;border:1px solid var(--rule-strong);border-radius:20px;padding:8px 18px;font-family:var(--mono);font-size:12px;cursor:pointer;color:var(--ink-secondary)}
+.simple-more button:hover{border-color:var(--signal);color:var(--signal-ink)}
+/* competitor monitor */
+details.monitor{margin:6px 0;background:var(--parchment-raised);border:1px solid var(--rule);border-radius:10px;padding:2px 18px}
+details.monitor summary{cursor:pointer;font-weight:600;font-size:14px;padding:13px 0}
+.mon-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:6px 0 16px}
+.mon-grid h4{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-tertiary);margin:0 0 8px}
+.mon-num{font-family:var(--mono);font-size:26px;font-weight:600;color:var(--signal-ink)}
+.mon-list{font-size:12.5px;line-height:1.7;margin-top:6px}
+.mon-list .mi{display:flex;gap:8px;border-bottom:1px solid var(--rule);padding:3px 0}
+.mon-list .mi .d{font-family:var(--mono);color:var(--ink-tertiary);white-space:nowrap}
+@media(max-width:720px){.mon-grid{grid-template-columns:1fr}}
 /* funnel */
 details.funnel{margin:14px 0 6px}
 details.funnel summary{cursor:pointer;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--ink-tertiary);padding:6px 0}
@@ -231,6 +262,25 @@ footer{color:var(--ink-tertiary);font-size:12px;text-align:center;margin:40px 0 
 
 <div class="wrap">
   <div class="cards" id="cards"></div>
+
+  <!-- PLAIN-LANGUAGE SIMPLE VIEW -->
+  <div class="simple">
+    <div class="simple-head">
+      <h2>Open &amp; eligible — the plain-language shortlist</h2>
+      <p>Drugs approved overseas that have <b>never been approved in the US</b> (so they qualify for the congressional voucher program) <b>and</b> look freely available to develop — sorted with the likely off-patent ones first. Each still needs a patent / rights check before you commit; those are marked.</p>
+      <p class="honest-note">⚠️ <b>Read this first.</b> "Off-patent" here is inferred from how long ago the drug was approved abroad — a signal, not a legal clearance. And the older a drug is, the <i>less</i> certain the "never US-approved" test is: the underlying US list is NDA-based, so a drug once approved in the US and later <b>withdrawn</b> (e.g. an old anesthetic or a discontinued product) can wrongly appear here as eligible. For any old candidate, re-confirm both <b>eligibility</b> (was it ever US-approved, including withdrawn/pre-1938?) and <b>freedom-to-operate</b> before acting.</p>
+    </div>
+    <div class="legend" id="simple-legend"></div>
+    <div id="simple-list"></div>
+    <div class="simple-more"><button id="simple-toggle">Show all eligible drugs ↓</button></div>
+  </div>
+
+  <!-- COMPETITOR MONITOR -->
+  <details class="monitor" id="monitor-sec"><summary>Who else is in the game — live competitor monitor</summary>
+    <div id="monitor"></div>
+  </details>
+
+  <div class="seclabel" style="margin-top:34px">Full analyst view — all 105 candidates, scored &amp; filterable</div>
   <details class="funnel"><summary>How the funnel narrows</summary><div id="funnel"></div></details>
 
   <div class="progress">
@@ -316,6 +366,27 @@ function tierOf(s){ return s>=60?{k:'A',lab:'A — Worth a diligence week',cls:'
                   : s>=45?{k:'B',lab:'B — Needs a trigger',cls:'mid'}
                   : {k:'C',lab:'C — Screen level',cls:'low'}; }
 CANDS.forEach(c=>{ const s=score(c); c._s=s.total; c._floored=s.floored; c._parts=s.parts; c._tier=tierOf(s.total); });
+
+/* ---------- availability (off-patent-by-age proxy) ---------- */
+const NOW_Y=2026;
+function approvedYear(c){ const m=(c.approved||'').match(/(\d{4})/); return m?+m[1]:null; }
+function availability(c){
+  const y=approvedYear(c);
+  if(y===null) return {k:'unk', pill:'Patent status unknown', cls:'unk',
+    say:'No overseas approval date on record — patent status not assessable here.'};
+  const age=NOW_Y-y;
+  if(age>=20) return {k:'open', pill:'Likely off-patent', cls:'open',
+    say:`Approved overseas ${y} (~${age} yrs ago) — original composition patents have almost certainly expired.`};
+  if(age>=12) return {k:'soon', pill:'May be off-patent', cls:'soon',
+    say:`Approved overseas ${y} (~${age} yrs ago) — core patents may have expired; verify exact dates.`};
+  return {k:'prot', pill:'Likely still patented', cls:'prot',
+    say:`Approved overseas ${y} (only ~${age} yrs ago) — likely still under patent/exclusivity protection.`};
+}
+CANDS.forEach(c=>{ c._avail=availability(c); });
+function evText(c){
+  const pm=(c.pubmed==null?'—':c.pubmed), ct=(c.trials==null?'—':c.trials);
+  return `${pm} rare/paed papers · ${ct} trials`;
+}
 
 /* caveat flags derived client-side (v2 interim; pipeline may populate later) */
 function caveats(c){
@@ -414,6 +485,7 @@ function rowNode(c){
   const l3=el('div','rl3');
   c.sources.forEach(s=>l3.appendChild(el('span','srcchip',s)));
   l3.appendChild(el('span',null, c.approved?('Approved '+c.approved):'—'));
+  l3.appendChild(el('span',null,'·')); l3.appendChild(el('span',null,evText(c)));
   const conf=(c.tier==='exact-moiety'||c.tier==='exact')?'high':(c.tier==='moiety-base'?'medium':'low');
   const cd=el('span','cdot '+conf); l3.appendChild(cd); l3.appendChild(el('span',null,conf+' confidence'));
   main.appendChild(l3);
@@ -530,6 +602,14 @@ function openDrawer(c){
   const dt=el('div','dsec');dt.appendChild(el('div','lbl','Regulatory dates'));
   dt.appendChild(el('div','val','Approved abroad: '+(c.approved||'—')));body.appendChild(dt);
 
+  // evidence & availability (live-enriched)
+  const evsec=el('div','dsec');evsec.appendChild(el('div','lbl','Evidence & availability (live)'));
+  evsec.appendChild(el('div','val','PubMed (rare/paediatric context): '+(c.pubmed==null?'—':c.pubmed)+' · ClinicalTrials.gov: '+(c.trials==null?'—':c.trials)+' registered trials'));
+  const av=el('div','val');av.style.marginTop='6px';
+  av.innerHTML='<b>'+c._avail.pill+'.</b> '+c._avail.say; evsec.appendChild(av);
+  evsec.appendChild(Object.assign(el('div','caveat'),{textContent:'US orphan designation: NOT machine-checkable (FDA OOPD blocks automation). Verify manually at accessdata.fda.gov before relying on availability.'}));
+  body.appendChild(evsec);
+
   // EV
   const evs=el('div','dsec');evs.appendChild(el('div','lbl','Risk-adjusted EV proxy'));
   if(t.k==='C'){
@@ -588,7 +668,83 @@ document.getElementById('export').onclick=()=>{
 document.getElementById('import').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();
   r.onload=()=>{try{triage=JSON.parse(r.result);saveTriage();render();}catch(err){alert('Invalid triage file');}};r.readAsText(f);};
 
-render();
+/* ---------- simple "Open & eligible" view ---------- */
+const AVAIL_ORDER={open:0,soon:1,unk:2,prot:3};
+let simpleExpanded=false;
+function plainDesc(c){
+  const area=(c.area||'').split(';')[0];
+  const where=c.sources.includes('EMA')?'Europe':c.sources.includes('Health Canada')?'Canada':c.sources.includes('Swissmedic')?'Switzerland':c.sources.includes('PMDA-JP')?'Japan':'overseas';
+  let s='Approved in '+where+(approvedYear(c)?(' ('+approvedYear(c)+')'):'');
+  if(area) s+=' for '+area.toLowerCase().replace(/;/g,', ');
+  else if(c.indication) s+=' — '+c.indication.slice(0,80);
+  s+='. Never approved in the US.';
+  return s;
+}
+function simpleCard(c){
+  const a=c._avail;
+  const card=el('div','scard '+a.cls);
+  const top=el('div','sc-top');
+  top.appendChild(el('span','sc-name',titleCase(c.name)));
+  top.appendChild(el('span','pill '+a.cls,a.pill));
+  if(c.orphan)top.appendChild(el('span','b orphan','ORPHAN (EU)'));
+  card.appendChild(top);
+  card.appendChild(el('div','sc-desc',plainDesc(c)+' '+a.say));
+  const ch=el('div','sc-checks');
+  ch.appendChild(el('span','chk-y','✅ Eligible for the voucher program (novel to the US)'));
+  const ev=el('span','chk-i','📄 '+evText(c)); ch.appendChild(ev);
+  ch.appendChild(el('span','chk-w','⚠️ Still verify: US patents / freedom-to-operate'));
+  ch.appendChild(el('span','chk-w','⚠️ Still verify: US orphan designation (not machine-checkable)'));
+  card.appendChild(ch);
+  card.onclick=()=>openDrawer(c);
+  return card;
+}
+function renderSimple(){
+  const leg=document.getElementById('simple-legend');
+  leg.innerHTML='';
+  [['open','Likely off-patent'],['soon','May be off-patent'],['prot','Likely still patented'],['unk','Status unknown']].forEach(([k,t])=>{
+    const s=el('span'); s.appendChild(el('span','pill '+k,'')); s.appendChild(el('span',null,t)); leg.appendChild(s);});
+  const ranked=[...CANDS].sort((a,b)=>(AVAIL_ORDER[a._avail.k]-AVAIL_ORDER[b._avail.k])||(b._s-a._s));
+  // default: show the genuinely "open" ones (off-patent or may-be), capped; expand for all
+  let show = simpleExpanded ? ranked : ranked.filter(c=>c._avail.k==='open'||c._avail.k==='soon');
+  if(!simpleExpanded && show.length>18) show=show.slice(0,18);
+  const wrap=document.getElementById('simple-list'); wrap.innerHTML='';
+  if(!show.length) wrap.appendChild(el('div','empty','No off-patent-eligible drugs detected from approval dates (most candidates are recent EMA approvals). Click “Show all” to see the full eligible list.'));
+  show.forEach(c=>wrap.appendChild(simpleCard(c)));
+  const openN=CANDS.filter(c=>c._avail.k==='open').length, soonN=CANDS.filter(c=>c._avail.k==='soon').length;
+  document.getElementById('simple-toggle').textContent = simpleExpanded
+    ? 'Show only the likely-available ones ↑'
+    : `Show all ${CANDS.length} eligible drugs ↓  (currently showing ${show.length}: ${openN} likely off-patent, ${soonN} maybe)`;
+}
+document.getElementById('simple-toggle').onclick=()=>{simpleExpanded=!simpleExpanded;renderSimple();};
+
+/* ---------- competitor monitor ---------- */
+function renderMonitor(){
+  const m=DATA.monitor; const w=document.getElementById('monitor');
+  if(!m){document.getElementById('monitor-sec').style.display='none';return;}
+  w.innerHTML='';
+  const grid=el('div','mon-grid');
+  const a=el('div');
+  a.appendChild(el('h4','Priority Review Vouchers — live Federal Register ledger'));
+  a.appendChild(el('div','mon-num', (m.fedreg&&m.fedreg.count!=null)?m.fedreg.count:'—'));
+  a.appendChild(el('div',null,'PRV-related documents on file'));
+  const al=el('div','mon-list');
+  (m.fedreg&&m.fedreg.recent||[]).forEach(r=>{const mi=el('div','mi');mi.appendChild(el('span','d',r.date||''));mi.appendChild(el('span',null,r.title||''));al.appendChild(mi);});
+  a.appendChild(al); grid.appendChild(a);
+  const b=el('div');
+  b.appendChild(el('h4','Who is filing — SEC EDGAR (“rare pediatric disease designation”)'));
+  b.appendChild(el('div','mon-num', (m.edgar&&m.edgar.total!=null)?m.edgar.total:'—'));
+  b.appendChild(el('div',null,'filings mention it (2025–26) — the competitor early-warning channel'));
+  const bl=el('div','mon-list');
+  (m.edgar&&m.edgar.filers||[]).forEach(f=>{const mi=el('div','mi');mi.appendChild(el('span','d',f.date||''));mi.appendChild(el('span',null,(f.name||'')+(f.form?(' · '+f.form):'')));bl.appendChild(mi);});
+  b.appendChild(bl); grid.appendChild(b);
+  w.appendChild(grid);
+  w.appendChild(el('div',null,'')).style.cssText='font-size:11.5px;color:var(--ink-tertiary)';
+  const note=el('div'); note.style.cssText='font-size:11.5px;color:var(--ink-tertiary);padding-bottom:12px';
+  note.textContent='As of '+(m.as_of||'—')+'. FDA publishes no public RPD-designation list, so SEC filings + the Federal Register are the only competitor-detection channels (per the research). Rebuild with python3 pipeline/enrich.py to refresh.';
+  w.appendChild(note);
+}
+
+renderSimple(); renderMonitor(); render();
 </script>
 </body>
 </html>

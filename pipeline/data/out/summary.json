@@ -39,7 +39,10 @@
    "area": "",
    "atc": "",
    "indication": "Treatment of chronic kidney disease",
-   "approved": ""
+   "approved": "",
+   "pubmed": 4,
+   "trials": 32,
+   "us_orphan": "unknown"
   },
   {
    "unii": "A3749M6582",
@@ -59,7 +62,10 @@
    "area": "Sarcoma;Leiomyosarcoma",
    "atc": "L01EX",
    "indication": "Treatment of synovial sarcoma or leiomyosarcoma.",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 513,
+   "us_orphan": "unknown"
   },
   {
    "unii": "U194AS08HZ",
@@ -79,7 +85,10 @@
    "area": "Neuroendocrine Tumors;Radionuclide Imaging",
    "atc": "V09IX",
    "indication": "This medicinal product is for diagnostic use only. After radiolabelling with gallium (68Ga) chloride solution, the solution of gallium (68Ga) edotreotide obtained is indicated for Positron Emission Tomography (PET) imaging of somatostatin receptor overexpression in adult patients with confirmed or suspected well-differentiated gastro-enteropancreatic neuroendocrine tumours (GEP-NET) for localizing primary tumours and their metastases.",
-   "approved": "08/12/2016"
+   "approved": "08/12/2016",
+   "pubmed": 0,
+   "trials": 75,
+   "us_orphan": "unknown"
   },
   {
    "unii": "5X0D9H16IU",
@@ -99,7 +108,10 @@
    "area": "Amyloidosis",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 3,
+   "us_orphan": "unknown"
   },
   {
    "unii": "6JLQ8K35KK",
@@ -119,7 +131,10 @@
    "area": "Galactosemias",
    "atc": "A16AX24",
    "indication": "Treatment of adults and children aged 2 years and older with a confirmed diagnosis of classic galactosemia.",
-   "approved": ""
+   "approved": "",
+   "pubmed": 3,
+   "trials": 3,
+   "us_orphan": "unknown"
   },
   {
    "unii": "HB6PN45W4J",
@@ -139,7 +154,10 @@
    "area": "Optic Atrophy, Hereditary, Leber",
    "atc": "N06BX13",
    "indication": "Raxone is indicated for the treatment of visual impairment in adolescent and adult patients with Leber\u2019s Hereditary Optic Neuropathy (LHON).",
-   "approved": "08/09/2015"
+   "approved": "08/09/2015",
+   "pubmed": 36,
+   "trials": 35,
+   "us_orphan": "unknown"
   },
   {
    "unii": "58BH47BV6S",
@@ -159,7 +177,10 @@
    "area": "Cholangiocarcinoma",
    "atc": "L01E",
    "indication": "Treatment of cholangiocarcinoma.",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "60UTO373KE",
@@ -179,7 +200,10 @@
    "area": "Aspergillosis",
    "atc": "J02AC05",
    "indication": "Powder for concentrate for solution for infusion: Cresemba is indicated in patients from 1 year of age and older for the treatment of  invasive aspergillosis mucormycosis in patients for whom amphotericin B is inappropriate (see sections 4.4 and 5.1)  Consideration should be given to official guidance on the appropriate use of antifungal agents. Hard capsules: Cresemba hard capsules are indicated in adults and in paediatric patients from 6 years of age for the treatment of  invasive aspergillosis mucormycosis in patients for whom amphotericin B is inappropriate (see sections 4.4 and 5.1)  Consideration should be given to official guidance on the appropriate use of antifungal agents. Cresemba 40 mg hard capsules are intended to be used for paediatric patients.",
-   "approved": "15/10/2015"
+   "approved": "15/10/2015",
+   "pubmed": 68,
+   "trials": 66,
+   "us_orphan": "unknown"
   },
   {
    "unii": "K824X25AYA",
@@ -200,7 +224,10 @@
    "area": "Adrenoleukodystrophy",
    "atc": "A16AX23",
    "indication": "Treatment of adrenoleukodystrophy.",
-   "approved": ""
+   "approved": "",
+   "pubmed": 2,
+   "trials": 2,
+   "us_orphan": "unknown"
   },
   {
    "unii": "M59NC4E26P",
@@ -221,7 +248,10 @@
    "area": "Amyotrophic Lateral Sclerosis",
    "atc": "L01EX06",
    "indication": "In combination with riluzole for the treatment of adult patients with amyotrophic lateral sclerosis (ALS)",
-   "approved": ""
+   "approved": "",
+   "pubmed": 1,
+   "trials": 38,
+   "us_orphan": "unknown"
   },
   {
    "unii": "Y76ID234HW",
@@ -241,7 +271,10 @@
    "area": "Multiple Myeloma",
    "atc": "L01",
    "indication": "Treatment of multiple myeloma&nbsp;",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 16,
+   "us_orphan": "unknown"
   },
   {
    "unii": "HD4TW8S2VK",
@@ -261,7 +294,10 @@
    "area": "Huntington Disease",
    "atc": "N07",
    "indication": "Treatment of Huntington's disease&nbsp;",
-   "approved": ""
+   "approved": "",
+   "pubmed": 1,
+   "trials": 13,
+   "us_orphan": "unknown"
   },
   {
    "unii": "1578EUB98L",
@@ -281,7 +317,10 @@
    "area": "Mycosis Fungoides;Sezary Syndrome",
    "atc": "L01X",
    "indication": "Treatment of patients with advanced stage mycosis fungoides (MF) and S\u00e9zary syndrome (SS)",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 7,
+   "us_orphan": "unknown"
   },
   {
    "unii": "H19C446XXB",
@@ -301,7 +340,10 @@
    "area": "Pancreatic Neoplasms",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 3,
+   "trials": 22,
+   "us_orphan": "unknown"
   },
   {
    "unii": "29OQ9EU4R1",
@@ -321,7 +363,10 @@
    "area": "Thyrotoxicosis;Heredodegenerative Disorders, Nervous System",
    "atc": "H03AA04",
    "indication": "Emcitate is indicated for the treatment of peripheral thyrotoxicosis in patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley Syndrome), from birth.",
-   "approved": "12/02/2025"
+   "approved": "12/02/2025",
+   "pubmed": 3,
+   "trials": 5,
+   "us_orphan": "unknown"
   },
   {
    "unii": "137R1N49AD",
@@ -341,7 +386,10 @@
    "area": "Depressive Disorder, Major",
    "atc": "N06AX22",
    "indication": "Treatment of major depressive episodes in adults.",
-   "approved": "19/02/2009"
+   "approved": "19/02/2009",
+   "pubmed": 9,
+   "trials": 27,
+   "us_orphan": "unknown"
   },
   {
    "unii": "URQ2517572",
@@ -361,7 +409,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 31,
+   "trials": 52,
+   "us_orphan": "unknown"
   },
   {
    "unii": "2U0X0JA2NB",
@@ -381,7 +432,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "05W904P57F",
@@ -401,7 +455,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 1,
+   "us_orphan": "unknown"
   },
   {
    "unii": "55F75LJQ0V",
@@ -421,7 +478,10 @@
    "area": "Cachexia;Anorexia;Carcinoma, Non-Small-Cell Lung",
    "atc": "V03",
    "indication": "Treatment of anorexia, cachexia or unintended weight loss in adult patients with non-small cell lung cancer (NSCLC)",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 11,
+   "us_orphan": "unknown"
   },
   {
    "unii": "K16AME9I3V",
@@ -441,7 +501,10 @@
    "area": "Muscular Dystrophy, Duchenne",
    "atc": "M09AX03",
    "indication": "Translarna is indicated for the treatment of Duchenne muscular dystrophy resulting from a nonsense mutation in the dystrophin gene, in ambulatory patients aged 2 years and older. Efficacy has not been demonstrated in non-ambulatory patients. The presence of a nonsense mutation in the dystrophin gene should be determined by genetic testing.",
-   "approved": "31/07/2014"
+   "approved": "31/07/2014",
+   "pubmed": 34,
+   "trials": 34,
+   "us_orphan": "unknown"
   },
   {
    "unii": "RZ6I9WX68U",
@@ -461,7 +524,10 @@
    "area": "Carcinoma, Non-Small-Cell Lung",
    "atc": "L01EB",
    "indication": "Aumseqa as monotherapy is indicated for:- the first-line treatment of adult patients with advanced non-small cell lung cancer (NSCLC)whose tumours have EGFR exon 19 deletions or exon 21 (L858R) substitution mutations (forbiomarker-based patient selection, see section 4.2).- the treatment of adult patients with advanced EGFR T790M mutation-positive NSCLC (forbiomarker-based patient selection, see section 4.2)",
-   "approved": "12/02/2026"
+   "approved": "12/02/2026",
+   "pubmed": 0,
+   "trials": 79,
+   "us_orphan": "unknown"
   },
   {
    "unii": "XNM7LT65NP",
@@ -481,7 +547,10 @@
    "area": "Cystic Fibrosis;Respiratory Tract Infections",
    "atc": "J01DF01",
    "indication": "Cayston is indicated for the suppressive therapy of chronic pulmonary infections due to Pseudomonas aeruginosa in patients with cystic fibrosis (CF) aged 6 years and older. Consideration should be given to official guidance on the appropriate use of antibacterial agents.",
-   "approved": "21/09/2009"
+   "approved": "21/09/2009",
+   "pubmed": 3,
+   "trials": 13,
+   "us_orphan": "unknown"
   },
   {
    "unii": "PWZ1720CBH",
@@ -501,7 +570,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 7,
+   "us_orphan": "unknown"
   },
   {
    "unii": "PA1123N395",
@@ -521,7 +593,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 12,
+   "trials": 28,
+   "us_orphan": "unknown"
   },
   {
    "unii": "8NT850T0YS",
@@ -541,7 +616,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 1,
+   "us_orphan": "unknown"
   },
   {
    "unii": "1M49V1PBPL",
@@ -561,7 +639,10 @@
    "area": "",
    "atc": "N06D",
    "indication": "Treatment of Alzheimer\u2019s disease and dementia.",
-   "approved": ""
+   "approved": "",
+   "pubmed": 1,
+   "trials": 3,
+   "us_orphan": "unknown"
   },
   {
    "unii": "X015L14V0O",
@@ -581,7 +662,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 6,
+   "trials": 5,
+   "us_orphan": "unknown"
   },
   {
    "unii": "568ET80C3D",
@@ -601,7 +685,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 82,
+   "us_orphan": "unknown"
   },
   {
    "unii": "JUP57A8EPZ",
@@ -621,7 +708,10 @@
    "area": "Breast Neoplasms",
    "atc": "L02BA05",
    "indication": "Etcamah&nbsp;in combination with a CDK4/6 inhibitor (palbociclib, ribociclib, or abemaciclib) is indicated for the treatment of&nbsp;adult&nbsp;patients with ER-positive,&nbsp;HER2-negative,&nbsp;locally advanced or metastatic breast&nbsp;cancer upon detection of ESR1\u2011mutation and without disease progression during first-line endocrine therapy in combination with a CDK4/6 inhibitor (for biomarker based patient-selection, see section 4.2 and 5.1).",
-   "approved": "20/07/2026"
+   "approved": "20/07/2026",
+   "pubmed": 1,
+   "trials": 16,
+   "us_orphan": "unknown"
   },
   {
    "unii": "0MQ44VUN84",
@@ -641,7 +731,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "P7725I9V3Z",
@@ -661,7 +754,10 @@
    "area": "Epilepsy",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 3,
+   "trials": 21,
+   "us_orphan": "unknown"
   },
   {
    "unii": "3B03KPM27L",
@@ -681,7 +777,10 @@
    "area": "Vomiting;Postoperative Nausea and Vomiting;Cancer",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 32,
+   "us_orphan": "unknown"
   },
   {
    "unii": "68AYS9A614",
@@ -701,7 +800,10 @@
    "area": "Ovarian Neoplasms",
    "atc": "L01XE32",
    "indication": "Treatment of platinum sensitive relapsed (PSR) ovarian cancer",
-   "approved": ""
+   "approved": "",
+   "pubmed": 6,
+   "trials": 106,
+   "us_orphan": "unknown"
   },
   {
    "unii": "0F32U78V2Q",
@@ -721,7 +823,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 9,
+   "us_orphan": "unknown"
   },
   {
    "unii": "45I14D8O27",
@@ -741,7 +846,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 3,
+   "trials": 374,
+   "us_orphan": "unknown"
   },
   {
    "unii": "7560BB0BO3",
@@ -761,7 +869,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "K848JZ4886",
@@ -781,7 +892,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 731,
+   "us_orphan": "unknown"
   },
   {
    "unii": "8OOT6M1PC7",
@@ -801,7 +915,10 @@
    "area": "Tuberculosis, Multidrug-Resistant",
    "atc": "J04AK06",
    "indication": "Deltyba is indicated for use as part of an appropriate combination regimen for pulmonary multi-drug resistant tuberculosis (MDR-TB) in adults, adolescents, children and infants with a body weight of at least 10 kg when an effective treatment regimen cannot otherwise be composed for reasons of resistance or tolerability (see sections 4.2, 4.4 and 5.1). Consideration should be given to official guidance on the appropriate use of antibacterial agents.",
-   "approved": "27/04/2014"
+   "approved": "27/04/2014",
+   "pubmed": 40,
+   "trials": 44,
+   "us_orphan": "unknown"
   },
   {
    "unii": "VX29JB5XWV",
@@ -821,7 +938,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "R6D2UI4FLS",
@@ -841,7 +961,10 @@
    "area": "Hypogonadism",
    "atc": "G03X",
    "indication": "Treatment of hypogonadotropic hypogonadism in men",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 258,
+   "us_orphan": "unknown"
   },
   {
    "unii": "3DX3XEK1BN",
@@ -861,7 +984,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 6,
+   "trials": 1,
+   "us_orphan": "unknown"
   },
   {
    "unii": "YKH834O4BH",
@@ -881,7 +1007,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "1494Q15E7Z",
@@ -901,7 +1030,10 @@
    "area": "Hepatitis C, Chronic",
    "atc": "J05AE",
    "indication": "Treatment of chronic genotype-1 hepatitis C virus (HCV) infection.",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 50,
+   "us_orphan": "unknown"
   },
   {
    "unii": "2CQ8Y0B8XQ",
@@ -921,7 +1053,10 @@
    "area": "Arthritis, Rheumatoid",
    "atc": "L04AF04",
    "indication": "Rheumatoid arthritis Jyseleca is indicated for the treatment of moderate to severe active rheumatoid arthritis in adult patients who have responded inadequately to, or who are intolerant to one or more disease modifying anti rheumatic drugs (DMARDs). Jyseleca may be used as monotherapy or in combination with methotrexate (MTX). Ulcerative colitis Jyseleca is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis who have had an inadequate response with, lost response to, or were intolerant to either conventional therapy or a biologic agent.",
-   "approved": "24/09/2020"
+   "approved": "24/09/2020",
+   "pubmed": 10,
+   "trials": 66,
+   "us_orphan": "unknown"
   },
   {
    "unii": "Y6V2W4S4WT",
@@ -941,7 +1076,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "WSH8393RM5",
@@ -961,7 +1099,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 1,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "6L8OF9XRDC",
@@ -981,7 +1122,10 @@
    "area": "Vomiting;Cancer",
    "atc": "A04AD12",
    "indication": "Prevention of nausea and vomiting associated with highly and moderately emetogenic cancer chemotherapy in adults and paediatric patients aged 6 months and older. Ivemend 150 mg is given as part of a combination therapy.",
-   "approved": "11/01/2008"
+   "approved": "11/01/2008",
+   "pubmed": 25,
+   "trials": 167,
+   "us_orphan": "unknown"
   },
   {
    "unii": "124X2V25W4",
@@ -1001,7 +1145,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 64,
+   "trials": 222,
+   "us_orphan": "unknown"
   },
   {
    "unii": "6K6L7E3F1L",
@@ -1021,7 +1168,10 @@
    "area": "Cough",
    "atc": "R05DB29",
    "indication": "Lyfnua is indicated in adults for the treatment of refractory or unexplained chronic cough.",
-   "approved": "15/09/2023"
+   "approved": "15/09/2023",
+   "pubmed": 0,
+   "trials": 27,
+   "us_orphan": "unknown"
   },
   {
    "unii": "G4PX8C4HKV",
@@ -1041,7 +1191,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 8,
+   "trials": 85,
+   "us_orphan": "unknown"
   },
   {
    "unii": "PDC6A3C0OX",
@@ -1061,7 +1214,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 14,
+   "trials": 46,
+   "us_orphan": "unknown"
   },
   {
    "unii": "V06SV4M95S",
@@ -1081,7 +1237,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 3,
+   "us_orphan": "unknown"
   },
   {
    "unii": "UMD7G2653W",
@@ -1101,7 +1260,10 @@
    "area": "Breast Neoplasms;Neoplasm Metastasis;Fractures, Bone",
    "atc": "M05BA06",
    "indication": "Ibandronic acid Sandoz is indicated for the prevention of skeletal events (pathological fractures, bone complications requiring radiotherapy or surgery) in patients with breast cancer and bone metastases.",
-   "approved": "26/07/2011"
+   "approved": "26/07/2011",
+   "pubmed": 0,
+   "trials": 88,
+   "us_orphan": "unknown"
   },
   {
    "unii": "0VUA21238F",
@@ -1121,7 +1283,10 @@
    "area": "Breast Neoplasms",
    "atc": "L01EH01",
    "indication": "Tyverb is indicated for the treatment of patients with breast cancer, whose tumours overexpress HER2 (ErbB2):  in combination with capecitabine for patients with advanced or metastatic disease with progression following prior therapy, which must have included anthracyclines and taxanes and therapy with trastuzumab in the metastatic setting; in combination with trastuzumab for patients with hormone-receptor-negative metastatic disease that has progressed on prior trastuzumab therapy or therapies in combination with chemotherapy; in combination with an aromatase inhibitor for post-menopausal women with hormone-receptor-positive metastatic disease, not currently intended for chemotherapy. The patients in the registration study had not previously been treated with trastuzumab or an aromatase inhibitor. No data are available on the efficacy of this combination relative to trastuzumab in combination with an aromatase inhibitor in this patient population.",
-   "approved": "10/06/2008"
+   "approved": "10/06/2008",
+   "pubmed": 22,
+   "trials": 322,
+   "us_orphan": "unknown"
   },
   {
    "unii": "4H914M0CSP",
@@ -1141,7 +1306,10 @@
    "area": "Multiple Sclerosis",
    "atc": "N07",
    "indication": "Treatment of multiple sclerosis",
-   "approved": ""
+   "approved": "",
+   "pubmed": 1,
+   "trials": 17,
+   "us_orphan": "unknown"
   },
   {
    "unii": "337G83N988",
@@ -1161,7 +1329,10 @@
    "area": "Osteoporosis, Postmenopausal",
    "atc": "G03",
    "indication": "Fablyn is indicated for the treatment of osteoporosis in postmenopausal women at increased risk of fracture. A significant reduction in the incidence of vertebral and non-vertebral fractures but not hip fractures has been demonstrated (see section 5.1). When determining the choice of Fablyn or other therapies, including oestrogens, for a postmenopausal woman, consideration should be given to menopausal symptoms, effects on uterine and breast tissues, and cardiovascular risks and benefits (see section 5.1).",
-   "approved": "24/02/2009"
+   "approved": "24/02/2009",
+   "pubmed": 0,
+   "trials": 9,
+   "us_orphan": "unknown"
   },
   {
    "unii": "5KN5Y9V01K",
@@ -1181,7 +1352,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 5,
+   "us_orphan": "unknown"
   },
   {
    "unii": "R3B637Y991",
@@ -1201,7 +1375,10 @@
    "area": "Opioid-Related Disorders",
    "atc": "N02AC",
    "indication": "ORLAAM is indicated for the substitution maintenance treatment of opiate addiction in adults previously treated with methadone, as part of a comprehensive treatment plan including medical, social and psychological care. ORLAAM should be administered under the supervision of physicians with experience in addiction treatment and whenever practicable, in centres specialising in the treatment of drug addiction. ORLAAM is not intended for take home use.",
-   "approved": "01/07/1997"
+   "approved": "01/07/1997",
+   "pubmed": 1,
+   "trials": 7,
+   "us_orphan": "unknown"
   },
   {
    "unii": "7CDW97HUEX",
@@ -1221,7 +1398,10 @@
    "area": "Leiomyoma",
    "atc": "H01CC04",
    "indication": "Yselty is indicated in adult women of reproductive age for:&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; treatment of moderate to severe symptoms of uterine fibroids,-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; symptomatic treatment of endometriosis in women with a history of previous medical or surgical treatment for their endometriosis (see section 5.1).",
-   "approved": "14/06/2022"
+   "approved": "14/06/2022",
+   "pubmed": 0,
+   "trials": 18,
+   "us_orphan": "unknown"
   },
   {
    "unii": "E0QN3D755O",
@@ -1241,7 +1421,10 @@
    "area": "Restless Legs Syndrome",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 2,
+   "trials": 5,
+   "us_orphan": "unknown"
   },
   {
    "unii": "3412470A0V",
@@ -1261,7 +1444,10 @@
    "area": "Multiple Myeloma",
    "atc": "L01AA10",
    "indication": "Pepaxti is indicated, in combination with dexamethasone, for the treatment of adult patients with multiple myeloma who have received at least three prior lines of therapies, whose disease is refractory to at least one proteasome inhibitor, one immunomodulatory agent, and one anti-CD38 monoclonal antibody, and who have demonstrated disease progression on or after the last therapy. For patients with a prior autologous stem cell transplantation, the time to progression should be at least 3 years from transplantation (see section 4.4).",
-   "approved": "17/08/2022"
+   "approved": "17/08/2022",
+   "pubmed": 1,
+   "trials": 11,
+   "us_orphan": "unknown"
   },
   {
    "unii": "53QOG569E0",
@@ -1281,7 +1467,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 6,
+   "trials": 6,
+   "us_orphan": "unknown"
   },
   {
    "unii": "8NAP7826UB",
@@ -1301,7 +1490,10 @@
    "area": "Methemoglobinemia",
    "atc": "V03AB17",
    "indication": "Acute symptomatic treatment of medicinal and chemical products- induced methaemoglobinaemia. Methylthioninium chloride Proveblue is indicated in adults, children and adolescents (aged 0 to 17 years old).",
-   "approved": "06/05/2011"
+   "approved": "06/05/2011",
+   "pubmed": 1,
+   "trials": 14,
+   "us_orphan": "unknown"
   },
   {
    "unii": "A2I8C7HI9T",
@@ -1321,7 +1513,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "1LM890Q4FY",
@@ -1341,7 +1536,10 @@
    "area": "Osteosarcoma",
    "atc": "L03AX15",
    "indication": "Mepact is indicated in children, adolescents and young adults for the treatment of high-grade resectable non-metastatic osteosarcoma after macroscopically complete surgical resection. It is used in combination with postoperative multi-agent chemotherapy. Safety and efficacy have been assessed in studies of patients two to 30 years of age at initial diagnosis.",
-   "approved": "06/03/2009"
+   "approved": "06/03/2009",
+   "pubmed": 16,
+   "trials": 8,
+   "us_orphan": "unknown"
   },
   {
    "unii": "YA84KI1VEW",
@@ -1361,7 +1559,10 @@
    "area": "COVID-19 virus infection",
    "atc": "J05A",
    "indication": "Treatment of coronavirus disease 2019 (COVID-19).",
-   "approved": ""
+   "approved": "",
+   "pubmed": 13,
+   "trials": 32,
+   "us_orphan": "unknown"
   },
   {
    "unii": "V24GR4LI3I",
@@ -1381,7 +1582,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 10,
+   "us_orphan": "unknown"
   },
   {
    "unii": "4X49Y0596W",
@@ -1401,7 +1605,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 2,
+   "us_orphan": "unknown"
   },
   {
    "unii": "2M19539ERK",
@@ -1421,7 +1628,10 @@
    "area": "Heart Failure, Systolic",
    "atc": "C01CX10",
    "indication": "Treatment of adult patients with symptomatic chronic heart failure and reduced ejection fraction less than 30%",
-   "approved": ""
+   "approved": "",
+   "pubmed": 5,
+   "trials": 16,
+   "us_orphan": "unknown"
   },
   {
    "unii": "9TUW81Y3CE",
@@ -1442,7 +1652,10 @@
    "area": "Pain, Postoperative",
    "atc": "M01AH04",
    "indication": "For the short-term treatment of postoperative pain in adults.",
-   "approved": "22/03/2002"
+   "approved": "22/03/2002",
+   "pubmed": 11,
+   "trials": 76,
+   "us_orphan": "unknown"
   },
   {
    "unii": "OS7097575K",
@@ -1462,7 +1675,10 @@
    "area": "",
    "atc": "L01EM04",
    "indication": "Treatment of marginal zone lymphoma",
-   "approved": ""
+   "approved": "",
+   "pubmed": 4,
+   "trials": 36,
+   "us_orphan": "unknown"
   },
   {
    "unii": "SSZ1S4I0US",
@@ -1482,7 +1698,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "483AU1Y5CZ",
@@ -1502,7 +1721,10 @@
    "area": "Echocardiography",
    "atc": "V08DA",
    "indication": "EchoGen is a transpulmonary echocardiographic contrast agent for use in patients with suspected or established cardiovascular disease to provide opacification of cardiac chambers, enhance left ventricular border delineation with resulting improvement in wall motion visualisation. EchoGen should only be used in patients where the study without contrast enhancement is inconclusive.",
-   "approved": "17/07/1998"
+   "approved": "17/07/1998",
+   "pubmed": 0,
+   "trials": 6,
+   "us_orphan": "unknown"
   },
   {
    "unii": "SE4TWR0K2C",
@@ -1522,7 +1744,10 @@
    "area": "Ultrasonography",
    "atc": "V08D",
    "indication": "ultrasound imaging agent indicated for the detection of coronary artery disease (CAD)",
-   "approved": ""
+   "approved": "",
+   "pubmed": 2,
+   "trials": 20,
+   "us_orphan": "unknown"
   },
   {
    "unii": "YQE403BP4D",
@@ -1542,7 +1767,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "34AP3BBP9T",
@@ -1562,7 +1790,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 15,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "F5SXN2KNMR",
@@ -1582,7 +1813,10 @@
    "area": "Lymphoma, Non-Hodgkin",
    "atc": "L01DB11",
    "indication": "Pixuvri is indicated as monotherapy for the treatment of adult patients with multiply relapsed or refractory aggressive non-Hodgkin B-cell lymphomas (NHL). The benefit of pixantrone treatment has not been established in patients when used as fifth-line or greater chemotherapy in patients who are refractory to last therapy.",
-   "approved": "10/05/2012"
+   "approved": "10/05/2012",
+   "pubmed": 3,
+   "trials": 18,
+   "us_orphan": "unknown"
   },
   {
    "unii": "468GE2241L",
@@ -1602,7 +1836,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 15,
+   "trials": 17,
+   "us_orphan": "unknown"
   },
   {
    "unii": "309G9J93TP",
@@ -1622,7 +1859,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "TLM2976OFR",
@@ -1642,7 +1882,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 350,
+   "us_orphan": "unknown"
   },
   {
    "unii": "X3O30D9YMX",
@@ -1662,7 +1905,10 @@
    "area": "Anemia;Kidney Failure, Chronic",
    "atc": "B03XA05",
    "indication": "Evrenzo is indicated for treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD).",
-   "approved": "18/08/2021"
+   "approved": "18/08/2021",
+   "pubmed": 5,
+   "trials": 66,
+   "us_orphan": "unknown"
   },
   {
    "unii": "YS90V3DTX0",
@@ -1682,7 +1928,10 @@
    "area": "Parkinson Disease",
    "atc": "N04B",
    "indication": "Xadago is indicated for the treatment of adult patients with idiopathic Parkinson\u2019s disease (PD) as add-on therapy to a stable dose of Levodopa (L-dopa) alone or in combination with other PD medicinal products in mid-to late-stage fluctuating patients.",
-   "approved": "23/02/2015"
+   "approved": "23/02/2015",
+   "pubmed": 0,
+   "trials": 28,
+   "us_orphan": "unknown"
   },
   {
    "unii": "AJS8S3P31H",
@@ -1702,7 +1951,10 @@
    "area": "Hyponatremia",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 1,
+   "trials": 11,
+   "us_orphan": "unknown"
   },
   {
    "unii": "8D7B37T28G",
@@ -1722,7 +1974,10 @@
    "area": "Prostatic Neoplasms",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 1,
+   "trials": 17,
+   "us_orphan": "unknown"
   },
   {
    "unii": "6V9JH46E20",
@@ -1742,7 +1997,10 @@
    "area": "Hypertension, Pulmonary",
    "atc": "C02KX03",
    "indication": "Treatment of patients with pulmonary arterial hypertension (PAH) classified as WHO functional class III, to improve exercise capacity. Efficacy has been shown in primary pulmonary hypertension and in pulmonary hypertension associated with connective tissue disease.",
-   "approved": "10/08/2006"
+   "approved": "10/08/2006",
+   "pubmed": 10,
+   "trials": 24,
+   "us_orphan": "unknown"
   },
   {
    "unii": "9U1ETH79CK",
@@ -1762,7 +2020,10 @@
    "area": "Tularemia;Pneumonia;Anthrax",
    "atc": "J01FA",
    "indication": "Treatment of bacterial infections",
-   "approved": ""
+   "approved": "",
+   "pubmed": 5,
+   "trials": 11,
+   "us_orphan": "unknown"
   },
   {
    "unii": "15XQ8043FN",
@@ -1782,7 +2043,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 1,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "WS7LR3I1D6",
@@ -1802,7 +2066,10 @@
    "area": "Ultrasonography;Echocardiography",
    "atc": "V08DA05",
    "indication": "This medicinal product is for diagnostic use only. SonoVue is for use with ultrasound imaging to enhance the echogenicity of the blood, or of fluids in the urinary tract which results in an improved signal to noise ratio. SonoVue should only be used in patients where study without contrast enhancement is inconclusive. Echocardiography SonoVue is a transpulmonary echocardiographic contrast agent for use in adult patients with suspected or established cardiovascular disease to provide opacification of cardiac chambers and enhance left ventricular endocardial border delineation. Doppler of macrovasculature SonoVue increases the accuracy in detection or exclusion of abnormalities in cerebral arteries and extracranial carotid or peripheral arteries in adult patients by improving the Doppler signal to noise ratio. SonoVue increases the quality of the Doppler flow image and the duration of clinically useful signal enhancement in portal vein assessment in adult patients. Doppler of microvasculature SonoVue improves display of the vascularity of liver and breast lesions during Doppler sonography in adult patients leading to more specific lesion characterisation. Ultrasonography of excretory urinary tract SonoVue is indicated for use in ultrasonography of the excretory tract in paediatric patients from newborn to 18 years to detect vesicoureteral reflux. For the limitation in the interpretation of a negative urosonography.",
-   "approved": "26/03/2001"
+   "approved": "26/03/2001",
+   "pubmed": 4,
+   "trials": 200,
+   "us_orphan": "unknown"
   },
   {
    "unii": "B2K5L1L8S9",
@@ -1822,7 +2089,10 @@
    "area": "Neuroendocrine Tumors",
    "atc": "L01EX01",
    "indication": "Treatment of progressive neuroendocrine tumours",
-   "approved": ""
+   "approved": "",
+   "pubmed": 1,
+   "trials": 109,
+   "us_orphan": "unknown"
   },
   {
    "unii": "MXD6KMG2ZP",
@@ -1842,7 +2112,10 @@
    "area": "Multiple Sclerosis, Relapsing-Remitting",
    "atc": "L04AX10",
    "indication": "Riulvy is indicated for the treatment of adult and paediatric patients aged 13 years and older with relapsing remitting multiple sclerosis (RRMS).",
-   "approved": "28/07/2025"
+   "approved": "28/07/2025",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "FU21S769PF",
@@ -1862,7 +2135,10 @@
    "area": "Head and Neck Neoplasms;Carcinoma, Squamous Cell",
    "atc": "L01XD05",
    "indication": "Foscan is indicated for the palliative treatment of patients with advanced head and neck squamous cell carcinoma failing prior therapies and unsuitable for radiotherapy, surgery or systemic chemotherapy.",
-   "approved": "24/10/2001"
+   "approved": "24/10/2001",
+   "pubmed": 0,
+   "trials": 8,
+   "us_orphan": "unknown"
   },
   {
    "unii": "Z1R9N0A399",
@@ -1882,7 +2158,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 4,
+   "trials": 41,
+   "us_orphan": "unknown"
   },
   {
    "unii": "X66NSO3N35",
@@ -1902,7 +2181,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 37,
+   "trials": 311,
+   "us_orphan": "unknown"
   },
   {
    "unii": "E38WZ4U54R",
@@ -1922,7 +2204,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 0,
+   "us_orphan": "unknown"
   },
   {
    "unii": "8CZ82ZYY9X",
@@ -1942,7 +2227,10 @@
    "area": "Multiple Sclerosis, Chronic Progressive",
    "atc": "L04AA62",
    "indication": "Cenrifki is indicated for the treatment of adult patients with secondary progressive multiple sclerosis (SPMS) without relapses in the last 2 years.",
-   "approved": "19/06/2026"
+   "approved": "19/06/2026",
+   "pubmed": 0,
+   "trials": 12,
+   "us_orphan": "unknown"
   },
   {
    "unii": "06KB629TKV",
@@ -1962,7 +2250,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 1,
+   "trials": 34,
+   "us_orphan": "unknown"
   },
   {
    "unii": "QVZ3IAR3JS",
@@ -1982,7 +2273,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 2,
+   "trials": 1,
+   "us_orphan": "unknown"
   },
   {
    "unii": "BQ5F77DZS3",
@@ -2002,7 +2296,10 @@
    "area": "Spinocerebellar Ataxias",
    "atc": "N07XX",
    "indication": "Treatment of adult patients with spinocerebellar ataxia genotype 3 (SCA3)",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 15,
+   "us_orphan": "unknown"
   },
   {
    "unii": "7G4J1ZD9UQ",
@@ -2022,7 +2319,10 @@
    "area": "Atrial Fibrillation",
    "atc": "C01BG11",
    "indication": "Rapid conversion of recent onset atrial fibrillation to sinus rhythm in adults:  for non-surgery patients: atrial fibrillation&nbsp;&lt;/= 7 days duration; for post-cardiac surgery patients: atrial fibrillation&nbsp;&lt;/= 3 days duration.",
-   "approved": "01/09/2010"
+   "approved": "01/09/2010",
+   "pubmed": 1,
+   "trials": 17,
+   "us_orphan": "unknown"
   },
   {
    "unii": "33MG53C7XW",
@@ -2042,7 +2342,10 @@
    "area": "Carcinoma, Transitional Cell;Urologic Neoplasms",
    "atc": "L01CA05",
    "indication": "Javlor is indicated in monotherapy for the treatment of adult patients with advanced or metastatic transitional-cell carcinoma of the urothelial tract after failure of a prior platinum-containing regimen. Efficacy and safety of vinflunine have not been studied in patients with performance status ? 2.",
-   "approved": "21/09/2009"
+   "approved": "21/09/2009",
+   "pubmed": 0,
+   "trials": 35,
+   "us_orphan": "unknown"
   },
   {
    "unii": "K6A90IIZ19",
@@ -2062,7 +2365,10 @@
    "area": "Leukemia, Myeloid, Acute",
    "atc": "L01",
    "indication": "Treatment acute myeloid leukaemia",
-   "approved": ""
+   "approved": "",
+   "pubmed": 0,
+   "trials": 17,
+   "us_orphan": "unknown"
   },
   {
    "unii": "49HFB70472",
@@ -2082,7 +2388,10 @@
    "area": "Atrial Fibrillation",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 3,
+   "trials": 2,
+   "us_orphan": "unknown"
   },
   {
    "unii": "WPY40FTH8K",
@@ -2102,7 +2411,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 10,
+   "trials": 37,
+   "us_orphan": "unknown"
   },
   {
    "unii": "03A5ORL08Q",
@@ -2122,7 +2434,10 @@
    "area": "",
    "atc": "",
    "indication": "",
-   "approved": ""
+   "approved": "",
+   "pubmed": 3,
+   "trials": 108,
+   "us_orphan": "unknown"
   }
  ],
  "unnamed": [
@@ -4214,5 +4529,98 @@
    "indication": "",
    "approved": ""
   }
- ]
+ ],
+ "monitor": {
+  "fedreg": {
+   "count": 153,
+   "recent": [
+    {
+     "title": "Fee Rate for Using a Priority Review Voucher in Fiscal Year 2026; Correction",
+     "date": "2026-07-28"
+    },
+    {
+     "title": "Public Charge Ground of Inadmissibility",
+     "date": "2026-07-20"
+    },
+    {
+     "title": "Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2027; and Basic Health Prog",
+     "date": "2026-05-20"
+    },
+    {
+     "title": "Issuance of Priority Review Voucher; Rare Pediatric Disease Product; AVLAYAH (tividenofusp alfa-eknm)",
+     "date": "2026-05-11"
+    },
+    {
+     "title": "Issuance of Priority Review Voucher; Rare Pediatric Disease Product; OTARMENI (lunsotogene parvec-cwha)",
+     "date": "2026-05-06"
+    }
+   ]
+  },
+  "edgar": {
+   "total": 583,
+   "filers": [
+    {
+     "name": "Cadrenal Therapeutics, Inc. ",
+     "form": "EX-99.1",
+     "date": "2026-06-18"
+    },
+    {
+     "name": "Quoin Pharmaceuticals, Ltd. ",
+     "form": "EX-99.1",
+     "date": "2025-08-07"
+    },
+    {
+     "name": "Longeveron Inc. ",
+     "form": "EX-99.1",
+     "date": "2026-05-08"
+    },
+    {
+     "name": "Jasper Therapeutics, Inc. ",
+     "form": "EX-99.1",
+     "date": "2026-07-17"
+    },
+    {
+     "name": "OS Therapies Inc ",
+     "form": "EX-99.1",
+     "date": "2026-04-30"
+    },
+    {
+     "name": "Monopar Therapeutics ",
+     "form": "EX-99.1",
+     "date": "2026-06-30"
+    },
+    {
+     "name": "CUMBERLAND PHARMACEUTICALS INC ",
+     "form": "EX-99.1",
+     "date": "2025-03-19"
+    },
+    {
+     "name": "Cartesian Therapeutics, Inc. ",
+     "form": "EX-99.2",
+     "date": "2025-01-13"
+    },
+    {
+     "name": "Camp4 Therapeutics Corp ",
+     "form": "EX-99.2",
+     "date": "2025-01-07"
+    },
+    {
+     "name": "Inmune Bio, Inc. ",
+     "form": "EX-99.1",
+     "date": "2025-02-10"
+    },
+    {
+     "name": "PRECISION BIOSCIENCES INC ",
+     "form": "EX-99.1",
+     "date": "2025-08-07"
+    },
+    {
+     "name": "Cabaletta Bio, Inc. ",
+     "form": "8-K",
+     "date": "2026-06-03"
+    }
+   ]
+  },
+  "as_of": "2026-08-07 15:37"
+ }
 }

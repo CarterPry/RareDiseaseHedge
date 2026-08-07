@@ -1,0 +1,165 @@
+#!/usr/bin/env python3
+"""
+Live enrichment for the candidate list. Adds, at build time, real-world signals
+that the offline diff cannot see — then embeds them so the dashboard stays a
+static file.
+
+Per candidate (cached in data/cache/enrich.json, keyed by UNII):
+  - pubmed   : PubMed hits for the drug in a rare/pediatric context (evidence signal)
+  - trials   : ClinicalTrials.gov v2 study count (is anyone already trialing it?)
+  - us_orphan: does the drug already hold a US FDA orphan designation? (a
+               "someone may already have rights here" signal — best-effort;
+               'unknown' on any failure, never a false 'clear')
+
+Global competitor monitor (top-level 'monitor' block):
+  - fedreg   : live Federal Register RPD-PRV ledger (count + most recent)
+  - edgar    : recent SEC filers mentioning "rare pediatric disease designation"
+               (the leading-indicator competitor channel from the research)
+
+All network calls are wrapped, throttled and cached. A failure degrades to
+'unknown'/empty and keeps going — the build never breaks on a flaky API.
+
+Run:  python3 pipeline/enrich.py            # enrich all (uses cache)
+      python3 pipeline/enrich.py --limit 5  # test on first 5
+      python3 pipeline/enrich.py --fresh     # ignore cache
+"""
+import json, os, sys, time, ssl, urllib.parse, urllib.request
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.join(HERE, "data", "out")
+SUMMARY = os.path.join(OUT, "summary.json")
+CACHE_DIR = os.path.join(HERE, "data", "cache")
+CACHE = os.path.join(CACHE_DIR, "enrich.json")
+UA = "RareDiseaseHedge/1.0 (research; carterpry@gmail.com)"
+CTX = ssl.create_default_context()
+
+def get(url, headers=None, timeout=25):
+    h = {"User-Agent": UA, "Accept": "application/json"}
+    if headers:
+        h.update(headers)
+    req = urllib.request.Request(url, headers=h)
+    with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
+        return r.read()
+
+def get_json(url, **kw):
+    return json.loads(get(url, **kw))
+
+def q(s):
+    return urllib.parse.quote(s)
+
+# ---------------------------------------------------------------- per-drug
+def pubmed_count(name):
+    """PubMed hits for the drug (clean moiety name) in a rare/pediatric context."""
+    term = f'{name}[tiab] AND (rare disease[tiab] OR pediatric[tiab] OR paediatric[tiab] OR orphan[tiab] OR congenital[tiab])'
+    url = ("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=0"
+           f"&tool=raredduxhedge&email=carterpry@gmail.com&term={q(term)}")
+    d = get_json(url)
+    return int(d["esearchresult"]["count"])
+
+def trials_count(name):
+    """ClinicalTrials.gov v2 study count with the drug as INTERVENTION (query.intr
+    is far more precise than query.term, which OR-matches salt tokens like
+    'hydrochloride' into hundreds of unrelated trials)."""
+    url = f"https://clinicaltrials.gov/api/v2/studies?query.intr={q(name)}&countTotal=true&pageSize=1"
+    d = get_json(url)
+    return int(d.get("totalCount", 0))
+
+# NOTE: FDA OOPD (orphan designations) is NOT reliably machine-queryable — it
+# returns 403/503/form pages to automation (confirmed 2026-08, matches sources
+# 01/15/19). We therefore do NOT assert a US-orphan boolean, which would risk a
+# false 'clear'. US-orphan-conflict is surfaced in the UI as a mandatory MANUAL
+# check. This function is intentionally honest rather than wrong.
+def us_orphan(name):
+    return "unknown"
+
+# ---------------------------------------------------------------- global monitor
+def fedreg_prv():
+    try:
+        url = ("https://www.federalregister.gov/api/v1/documents.json?per_page=5&order=newest"
+               "&conditions%5Bterm%5D=" + q("rare pediatric disease priority review voucher"))
+        d = get_json(url)
+        recent = [{"title": (x.get("title") or "")[:120], "date": x.get("publication_date")}
+                  for x in (d.get("results") or [])[:5]]
+        return {"count": d.get("count", 0), "recent": recent}
+    except Exception as e:
+        return {"count": None, "recent": [], "error": str(e)}
+
+def edgar_competitors():
+    try:
+        url = ('https://efts.sec.gov/LATEST/search-index?q=%22rare+pediatric+disease+designation%22'
+               '&forms=8-K,10-K,10-Q&dateRange=custom&startdt=2025-01-01&enddt=2026-12-31')
+        d = get_json(url, headers={"Accept": "application/json"})
+        hits = d.get("hits", {})
+        total = hits.get("total", {}).get("value")
+        filers = []
+        seen = set()
+        for h in hits.get("hits", [])[:25]:
+            src = h.get("_source", {})
+            for nm in src.get("display_names", []):
+                nm = nm.split(" (")[0]
+                if nm not in seen:
+                    seen.add(nm)
+                    filers.append({"name": nm, "form": src.get("root_form") or src.get("file_type"),
+                                   "date": src.get("file_date")})
+        return {"total": total, "filers": filers[:15]}
+    except Exception as e:
+        return {"total": None, "filers": [], "error": str(e)}
+
+# ---------------------------------------------------------------- driver
+def main():
+    fresh = "--fresh" in sys.argv
+    limit = None
+    if "--limit" in sys.argv:
+        limit = int(sys.argv[sys.argv.index("--limit") + 1])
+
+    with open(SUMMARY, encoding="utf-8") as fh:
+        data = json.load(fh)
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    cache = {}
+    if os.path.exists(CACHE) and not fresh:
+        cache = json.load(open(CACHE, encoding="utf-8"))
+
+    cands = data["candidates"]
+    todo = cands[:limit] if limit else cands
+    print(f"enriching {len(todo)} candidates (cache has {len(cache)})")
+    n_fetched = 0
+    for i, c in enumerate(todo, 1):
+        key = c["unii"]
+        if key in cache and not fresh:
+            e = cache[key]
+        else:
+            # query on the CLEAN moiety name, not the salt form (the salt token
+            # both misses PubMed and inflates trial counts)
+            name = (c.get("moiety") or c["name"]).lower()
+            e = {}
+            try: e["pubmed"] = pubmed_count(name)
+            except Exception: e["pubmed"] = None
+            time.sleep(0.34)                       # NCBI: <=3 req/s
+            try: e["trials"] = trials_count(name)
+            except Exception: e["trials"] = None
+            time.sleep(0.2)
+            e["us_orphan"] = us_orphan(name)
+            cache[key] = e
+            n_fetched += 1
+            if n_fetched % 10 == 0:
+                json.dump(cache, open(CACHE, "w"), indent=1)   # checkpoint
+                print(f"  {i}/{len(todo)}  {name[:28]:30} pm={e['pubmed']} ct={e['trials']} orph={e['us_orphan']}")
+        c["pubmed"] = e.get("pubmed")
+        c["trials"] = e.get("trials")
+        c["us_orphan"] = e.get("us_orphan")
+    json.dump(cache, open(CACHE, "w"), indent=1)
+
+    if not limit:
+        print("fetching global competitor monitor...")
+        data["monitor"] = {"fedreg": fedreg_prv(), "edgar": edgar_competitors(),
+                           "as_of": time.strftime("%Y-%m-%d %H:%M")}
+        json.dump(data, open(SUMMARY, "w"), indent=1)
+        print(f"  Federal Register PRV docs: {data['monitor']['fedreg'].get('count')}")
+        print(f"  EDGAR RPD-designation filers: {data['monitor']['edgar'].get('total')}")
+        print(f"wrote enriched summary.json ({n_fetched} newly fetched, rest cached)")
+    else:
+        print(f"test run ({n_fetched} fetched) — summary.json NOT overwritten (use full run)")
+
+
+if __name__ == "__main__":
+    main()
