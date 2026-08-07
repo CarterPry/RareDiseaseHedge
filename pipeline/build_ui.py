@@ -96,6 +96,16 @@ html,body{margin:0}
 body{background:var(--parchment);color:var(--ink);font:14px/1.4 var(--sans);-webkit-font-smoothing:antialiased}
 .mono{font-family:var(--mono)}
 a{color:var(--signal-ink)}
+/* tooltips */
+#tip{position:fixed;z-index:100;max-width:300px;background:var(--ink);color:#eaf4f5;
+  font:12.5px/1.5 var(--sans);font-weight:400;padding:9px 12px;border-radius:8px;
+  box-shadow:0 6px 22px rgba(15,26,32,.28);pointer-events:none;display:none;letter-spacing:.1px}
+#tip b{color:#fff}
+[data-tip]{cursor:help}
+.row [data-tip],.scard [data-tip],button[data-tip]{cursor:inherit}
+.hoverhint{font-size:12px;color:var(--ink-tertiary);font-family:var(--mono);margin:2px 0 0}
+.hoverhint b{color:var(--signal-ink)}
+@media(prefers-reduced-motion:reduce){#tip{transition:none}}
 /* header */
 header.top{background:var(--ink);color:#EAF2F3;height:56px;display:flex;align-items:center;position:sticky;top:0;z-index:40}
 header.top .wrap{max-width:1180px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;gap:14px}
@@ -327,6 +337,50 @@ function tstate(u){ return (triage[u]||{}).state || null; }
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;};
 const titleCase=s=>s.toLowerCase().replace(/\b([a-z])/g,(m,c)=>c.toUpperCase());
 
+/* ---------- hover tooltips (plain-English explanations everywhere) ---------- */
+const TIPS={
+ orphan:"Flagged an 'orphan drug' by a foreign regulator — approved for a rare disease abroad. A rare-disease signal; it does NOT by itself prove US voucher eligibility.",
+ orphaneu:"Holds an EU orphan (rare-disease) designation. Rare-disease status abroad — not a US clearance.",
+ inn:"International Nonproprietary Name — the official global generic name. Its presence means this is a recognised drug substance, not an excipient.",
+ usan:"United States Adopted Name — the US-recognised generic name for the drug.",
+ atc:"Anatomical Therapeutic Chemical class — a standard code for what kind of drug this is and what it treats.",
+ caveat:"Data caveat (e.g. matched via a salt/prodrug form). Open the row to see the specific flag to verify.",
+ score:"Promise score (0–100): a triage rank for how likely this survives diligence — NOT a probability of FDA approval. Click the row for the factor breakdown.",
+ conf:"Match confidence: how sure we are the foreign drug maps to the correct US active moiety. Lower = verify the match by hand.",
+ source:"The foreign regulator whose approval put this drug on the list. (It is NOT approved in the US — that's the whole point.)",
+ evidence:"Left: PubMed papers mentioning the drug in a rare/paediatric context. Right: registered clinical trials. A rough read on existing evidence and whether others are already developing it.",
+ keep:"Mark 'keep' — worth a real diligence week.",
+ investigate:"Mark 'investigate' — needs a trigger or more info.",
+ reject:"Mark 'reject' — screen it out.",
+ avail_open:"Approved abroad ≥20 years ago, so original composition patents have almost certainly expired. A signal, not a legal clearance.",
+ avail_soon:"Approved abroad 12–20 years ago — core patents may have expired. Verify exact dates.",
+ avail_prot:"Approved abroad recently — very likely still under patent/exclusivity protection.",
+ avail_unk:"No overseas approval date on record, so patent age can't be estimated here.",
+ card_named:"Drugs approved abroad, never approved in the US, that carry a real generic name (INN/USAN). A screening shortlist — not 105 businesses.",
+ card_orphan:"How many of the shortlist already carry a foreign rare-disease (orphan) designation — the strongest single rare-disease signal.",
+ card_actionable:"The research estimate of how many are TRULY workable after filters this tool can't run: freedom-to-operate, US orphan exclusivity, API sourcing, trial feasibility.",
+ card_sunset:"The program ends 2029-09-30 — FDA can't award a voucher after that date. A drug must be APPROVED by then, so a program has to start very soon.",
+ fedreg:"Live count of Priority Review Voucher documents in the Federal Register — the program's official public ledger.",
+ edgar:"Live count of recent SEC filings mentioning 'rare pediatric disease designation'. FDA publishes no list of who holds these, so SEC filings are the main way to spot competitors.",
+ funnel:"How the raw pile of foreign approvals is narrowed step by step down to the scored shortlist.",
+};
+function tp(node,key){ if(node) node.setAttribute('data-tip', TIPS[key]||key); return node; }
+
+const TIP=el('div'); TIP.id='tip'; document.body.appendChild(TIP);
+let tipCur=null;
+function placeTip(t){
+  const txt=t.getAttribute('data-tip'); if(!txt) return;
+  TIP.innerHTML=txt.replace(/NOT|does not|only|verify|must/g,'<b>$&</b>'); TIP.style.display='block';
+  const r=t.getBoundingClientRect(), tr=TIP.getBoundingClientRect();
+  let top=r.top-tr.height-9; if(top<8) top=r.bottom+9;
+  let left=r.left+r.width/2-tr.width/2;
+  left=Math.max(8,Math.min(left, window.innerWidth-tr.width-8));
+  TIP.style.top=top+'px'; TIP.style.left=left+'px';
+}
+document.addEventListener('mouseover',e=>{const t=e.target.closest('[data-tip]'); if(t){tipCur=t;placeTip(t);}});
+document.addEventListener('mouseout',e=>{if(tipCur&&(!e.relatedTarget||!tipCur.contains(e.relatedTarget))){TIP.style.display='none';tipCur=null;}});
+document.addEventListener('click',()=>{TIP.style.display='none';},true);
+
 /* ---------- scoring (full PED where indication text exists) ---------- */
 function pedScore(c){
   const text=((c.indication||'')+' '+(c.area||'')).toLowerCase();
@@ -403,13 +457,15 @@ document.getElementById('honesty').innerHTML=
 const C=DATA.counts, F=DATA.funnel;
 [['','.',''],].slice(0,0);
 const cards=[
- [C.named,'Named drug candidates','screening shortlist'],
- [C.orphan,'Foreign orphan-flagged','rare-disease filter passed; pediatric, FTO, API, timeline remain'],
- ['~7','Estimated actionable','after FTO, orphan exclusivity, API sourcing, timeline'],
- ['37 mo','To PRV sunset','2029-09-30'],
+ [C.named,'Named drug candidates','screening shortlist','card_named'],
+ [C.orphan,'Foreign orphan-flagged','rare-disease filter passed; pediatric, FTO, API, timeline remain','card_orphan'],
+ ['~7','Estimated actionable','after FTO, orphan exclusivity, API sourcing, timeline','card_actionable'],
+ ['37 mo','To PRV sunset','2029-09-30','card_sunset'],
 ];
 const cw=document.getElementById('cards');
-cards.forEach(([n,l,s])=>{const d=el('div','card');d.appendChild(el('div','n',n));d.appendChild(el('div','l',l));d.appendChild(el('div','s',s));cw.appendChild(d);});
+cards.forEach(([n,l,s,tip])=>{const d=tp(el('div','card'),tip);d.appendChild(el('div','n',n));d.appendChild(el('div','l',l));d.appendChild(el('div','s',s));cw.appendChild(d);});
+const hint=el('p','hoverhint'); hint.innerHTML='ⓘ <b>Hover any term, badge, score or number</b> for a plain-English explanation.';
+cw.parentNode.insertBefore(hint, cw.nextSibling);
 const stages=[['dim',F.foreign_rows,'Foreign approval rows ingested'],['dim',F.resolved,'Resolved to an FDA UNII'],
  ['',F.resolved-F.in_us,'Moiety not in the US approval record'],['',F.candidate_small_mol,'Small-molecule (biologics removed)'],
  ['',F.named_drug,'Named drug (INN or USAN)'],['',C.orphan,'Foreign orphan-flagged']];
@@ -473,34 +529,35 @@ function rowNode(c){
   const main=el('div','rmain');
   const nm=el('div','rname'); nm.appendChild(document.createTextNode(titleCase(c.name)));
   const bd=el('span','badges');
-  if(c.orphan)bd.appendChild(el('span','b orphan','ORPHAN'));
-  if(c.inn)bd.appendChild(el('span','b inn','INN'));
-  if(c.usan)bd.appendChild(el('span','b usan','USAN'));
-  if(c.atc)bd.appendChild(el('span','b atc',c.atc));
-  if(caveats(c).length)bd.appendChild(el('span','b caveat','⚑'));
+  if(c.orphan)bd.appendChild(tp(el('span','b orphan','ORPHAN'),'orphan'));
+  if(c.inn)bd.appendChild(tp(el('span','b inn','INN'),'inn'));
+  if(c.usan)bd.appendChild(tp(el('span','b usan','USAN'),'usan'));
+  if(c.atc)bd.appendChild(tp(el('span','b atc',c.atc),'atc'));
+  if(caveats(c).length)bd.appendChild(tp(el('span','b caveat','⚑'),'caveat'));
   nm.appendChild(bd); main.appendChild(nm);
   const area=(c.area||'').split(';')[0];
   const l2txt=[area, c.indication].filter(Boolean).join(' · ');
   if(l2txt){const l2=el('div','rl2',l2txt);main.appendChild(l2);}
   const l3=el('div','rl3');
-  c.sources.forEach(s=>l3.appendChild(el('span','srcchip',s)));
+  c.sources.forEach(s=>l3.appendChild(tp(el('span','srcchip',s),'source')));
   l3.appendChild(el('span',null, c.approved?('Approved '+c.approved):'—'));
-  l3.appendChild(el('span',null,'·')); l3.appendChild(el('span',null,evText(c)));
+  l3.appendChild(el('span',null,'·')); l3.appendChild(tp(el('span',null,evText(c)),'evidence'));
   const conf=(c.tier==='exact-moiety'||c.tier==='exact')?'high':(c.tier==='moiety-base'?'medium':'low');
-  const cd=el('span','cdot '+conf); l3.appendChild(cd); l3.appendChild(el('span',null,conf+' confidence'));
+  const cd=el('span','cdot '+conf); const cw2=tp(el('span',null,conf+' confidence'),'conf');
+  l3.appendChild(cd); l3.appendChild(cw2);
   main.appendChild(l3);
   r.appendChild(main);
   // triage hover icons
   const tri=el('div','tri');
   [['keep','◆'],['investigate','◎'],['reject','✕']].forEach(([k,g])=>{
-    const bt=el('button',(st===k?'on-'+k:''),g); bt.title=k;
+    const bt=tp(el('button',(st===k?'on-'+k:''),g),k);
     bt.onclick=(e)=>{e.stopPropagation(); setTriage(c.unii,st===k?null:k); render();};
     tri.appendChild(bt);
   });
   r.appendChild(tri);
   // score column
   const sc=el('div','score');
-  const sn=el('div','snum '+c._tier.cls, c._s); sc.appendChild(sn);
+  const sn=tp(el('div','snum '+c._tier.cls, c._s),'score'); sc.appendChild(sn);
   sc.appendChild(segBar(c._s,c._tier.cls));
   r.appendChild(sc);
   r.onclick=()=>openDrawer(c);
@@ -568,10 +625,10 @@ function openDrawer(c){
   const body=el('div','dbody');
   const badge=el('div','dsec');
   const bb=el('div','badges');
-  if(c.orphan)bb.appendChild(el('span','b orphan','ORPHAN'));
-  if(c.inn)bb.appendChild(el('span','b inn','INN'));
-  if(c.usan)bb.appendChild(el('span','b usan','USAN'));
-  if(c.atc)bb.appendChild(el('span','b atc',c.atc));
+  if(c.orphan)bb.appendChild(tp(el('span','b orphan','ORPHAN'),'orphan'));
+  if(c.inn)bb.appendChild(tp(el('span','b inn','INN'),'inn'));
+  if(c.usan)bb.appendChild(tp(el('span','b usan','USAN'),'usan'));
+  if(c.atc)bb.appendChild(tp(el('span','b atc',c.atc),'atc'));
   badge.appendChild(bb); body.appendChild(badge);
 
   // score
@@ -685,8 +742,8 @@ function simpleCard(c){
   const card=el('div','scard '+a.cls);
   const top=el('div','sc-top');
   top.appendChild(el('span','sc-name',titleCase(c.name)));
-  top.appendChild(el('span','pill '+a.cls,a.pill));
-  if(c.orphan)top.appendChild(el('span','b orphan','ORPHAN (EU)'));
+  top.appendChild(tp(el('span','pill '+a.cls,a.pill),'avail_'+a.k));
+  if(c.orphan)top.appendChild(tp(el('span','b orphan','ORPHAN (EU)'),'orphaneu'));
   card.appendChild(top);
   card.appendChild(el('div','sc-desc',plainDesc(c)+' '+a.say));
   const ch=el('div','sc-checks');
@@ -725,14 +782,14 @@ function renderMonitor(){
   const grid=el('div','mon-grid');
   const a=el('div');
   a.appendChild(el('h4','Priority Review Vouchers — live Federal Register ledger'));
-  a.appendChild(el('div','mon-num', (m.fedreg&&m.fedreg.count!=null)?m.fedreg.count:'—'));
+  a.appendChild(tp(el('div','mon-num', (m.fedreg&&m.fedreg.count!=null)?m.fedreg.count:'—'),'fedreg'));
   a.appendChild(el('div',null,'PRV-related documents on file'));
   const al=el('div','mon-list');
   (m.fedreg&&m.fedreg.recent||[]).forEach(r=>{const mi=el('div','mi');mi.appendChild(el('span','d',r.date||''));mi.appendChild(el('span',null,r.title||''));al.appendChild(mi);});
   a.appendChild(al); grid.appendChild(a);
   const b=el('div');
   b.appendChild(el('h4','Who is filing — SEC EDGAR (“rare pediatric disease designation”)'));
-  b.appendChild(el('div','mon-num', (m.edgar&&m.edgar.total!=null)?m.edgar.total:'—'));
+  b.appendChild(tp(el('div','mon-num', (m.edgar&&m.edgar.total!=null)?m.edgar.total:'—'),'edgar'));
   b.appendChild(el('div',null,'filings mention it (2025–26) — the competitor early-warning channel'));
   const bl=el('div','mon-list');
   (m.edgar&&m.edgar.filers||[]).forEach(f=>{const mi=el('div','mi');mi.appendChild(el('span','d',f.date||''));mi.appendChild(el('span',null,(f.name||'')+(f.form?(' · '+f.form):'')));bl.appendChild(mi);});
