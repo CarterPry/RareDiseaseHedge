@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
-Build the "Triage" dashboard (v2) from the pipeline's summary.json.
+Build the candidate dashboard from the pipeline's summary.json.
 
-Implements pipeline/design/BUILD_BRIEF.md (which reconciles DESIGN_SPEC.md and
-SCORING_MODEL.md, authored by the design / buy-side-analyst / creative-director
-specialists). Self-contained single-file HTML: data + scoring embedded inline,
-vanilla JS, no build step, opens by double-click, works offline.
+Plain-language-first, single-file HTML: data + scoring embedded inline, vanilla
+JS, no build step, opens by double-click, works offline. The simple searchable
+card list is the whole default surface; all analyst machinery (promise score,
+funnel, competitor monitor, EV proxy) lives behind one collapsed "Advanced"
+section.
 
 Reads  pipeline/data/out/summary.json
 Writes pipeline/ui/index.html
@@ -76,7 +77,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Triage — Funnel A PRV candidates</title>
+<title>Rare-disease voucher candidates</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 :root{
@@ -85,7 +86,6 @@ TEMPLATE = r"""<!DOCTYPE html>
   --signal:#0B6E75; --signal-dim:#D5EEF0; --signal-ink:#075056;
   --keep:#2B7A3D; --keep-bg:#EAF3EC; --investigate:#B06000; --investigate-bg:#FDF3E0;
   --reject:#A52828; --reject-bg:#FAECEC;
-  --score-top:#0B5A62; --score-mid:#7A5C00; --score-low:#6B3838;
   --gold:#9a7a10; --gold-bg:#FBF1CE; --green:#2B7A3D; --green-bg:#EAF3EC; --blue:#255E8E; --blue-bg:#E6EFF7;
   --purple:#5b4a86; --purple-bg:#EEEAF6;
   --shadow-card:0 1px 2px rgba(15,26,32,.04),0 3px 8px rgba(15,26,32,.06);
@@ -93,135 +93,97 @@ TEMPLATE = r"""<!DOCTYPE html>
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-body{background:var(--parchment);color:var(--ink);font:14px/1.4 var(--sans);-webkit-font-smoothing:antialiased}
+body{background:var(--parchment);color:var(--ink);font:15px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
 .mono{font-family:var(--mono)}
 a{color:var(--signal-ink)}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
 /* tooltips */
 #tip{position:fixed;z-index:100;max-width:300px;background:var(--ink);color:#eaf4f5;
   font:12.5px/1.5 var(--sans);font-weight:400;padding:9px 12px;border-radius:8px;
   box-shadow:0 6px 22px rgba(15,26,32,.28);pointer-events:none;display:none;letter-spacing:.1px}
 #tip b{color:#fff}
-[data-tip]{cursor:help}
-.row [data-tip],.scard [data-tip],button[data-tip]{cursor:inherit}
-.hoverhint{font-size:12px;color:var(--ink-tertiary);font-family:var(--mono);margin:2px 0 0}
-.hoverhint b{color:var(--signal-ink)}
-@media(prefers-reduced-motion:reduce){#tip{transition:none}}
+[data-tip]{cursor:help;border-bottom:1px dotted var(--ink-ghost)}
+.scard [data-tip],button[data-tip],.pill[data-tip],.b[data-tip]{border-bottom:none}
 /* header */
-header.top{background:var(--ink);color:#EAF2F3;height:56px;display:flex;align-items:center;position:sticky;top:0;z-index:40}
-header.top .wrap{max-width:1180px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;gap:14px}
-header.top .brand{font-weight:600;font-size:18px;letter-spacing:.5px}
-header.top .sub{color:#8FB6BA;font-size:12px;font-family:var(--mono)}
-header.top .right{margin-left:auto;display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:11.5px;color:#8FB6BA}
+header.top{background:var(--ink);color:#EAF2F3;padding:16px 0;position:sticky;top:0;z-index:40}
+header.top .wrap{display:flex;align-items:center;gap:14px}
+header.top .brand{font-weight:600;font-size:19px;letter-spacing:.3px}
+header.top .brand small{display:block;font-weight:400;font-size:12px;color:#8FB6BA;letter-spacing:.2px;margin-top:2px}
+header.top .right{margin-left:auto;display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:11px;color:#8FB6BA}
 header.top button.exp{background:transparent;border:1px solid #3a4f57;color:#cfe3e5;font-family:var(--mono);font-size:11px;padding:5px 11px;border-radius:5px;cursor:pointer}
 header.top button.exp:hover{border-color:var(--signal);color:#fff}
-/* honesty bar */
-.honesty{background:#12252b;color:#c8dcde;font-family:var(--mono);font-size:11.7px;letter-spacing:.2px;
-  padding:8px 0;border-bottom:1px solid #24404733;position:sticky;top:56px;z-index:39}
-.honesty .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-.honesty b{color:#fff;font-weight:600}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-/* stat cards */
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0 8px}
-.card{background:var(--parchment-raised);border:1px solid var(--rule);border-radius:8px;padding:15px 16px}
-.card .n{font-family:var(--mono);font-size:27px;font-weight:600;line-height:1;color:var(--ink)}
-.card .l{font-size:12.5px;color:var(--ink-secondary);margin-top:7px;font-weight:500}
-.card .s{font-size:11px;color:var(--ink-tertiary);margin-top:3px}
-/* simple / plain-language view */
-.simple{margin:24px 0 8px}
-.simple-head h2{font-size:22px;font-weight:600;margin:0 0 6px;letter-spacing:-.2px}
-.simple-head p{font-size:14px;line-height:1.6;color:var(--ink-secondary);max-width:820px;margin:0 0 14px}
-.honest-note{background:var(--investigate-bg);border:1px solid #e8c88c;border-radius:8px;padding:11px 14px;font-size:13px!important;color:#6d4400!important}
-.legend{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:14px;font-size:12px;color:var(--ink-tertiary)}
+/* intro */
+.intro{background:var(--parchment-raised);border:1px solid var(--rule);border-radius:12px;padding:22px 24px;margin:24px 0 18px}
+.intro h1{font-size:22px;font-weight:600;margin:0 0 12px;letter-spacing:-.2px}
+.intro p{font-size:15px;line-height:1.65;color:var(--ink-secondary);margin:0 0 12px;max-width:720px}
+.intro p:last-child{margin-bottom:0}
+.intro b{color:var(--ink)}
+.intro .money{color:var(--signal-ink);font-weight:600}
+.intro .deadline{background:var(--investigate-bg);border:1px solid #e8c88c;border-radius:8px;padding:11px 14px;color:#6d4400;font-size:14px}
+.steps{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}
+.step{flex:1;min-width:180px;background:var(--parchment);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.step .k{font-family:var(--mono);font-size:11px;color:var(--signal-ink);font-weight:600}
+.step .t{font-size:13px;color:var(--ink-secondary);margin-top:4px;line-height:1.45}
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin:22px 0 8px}
+.search{flex:1;min-width:220px;padding:11px 14px;border:1px solid var(--rule-strong);border-radius:8px;font-family:var(--sans);font-size:14px;background:var(--parchment-raised)}
+.search:focus{outline:2px solid var(--signal);border-color:var(--signal)}
+select.sort{padding:11px 12px;border:1px solid var(--rule-strong);border-radius:8px;font-size:13px;background:var(--parchment-raised);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:2px 0 4px}
+.chip{border:1px solid var(--rule-strong);background:var(--parchment-raised);border-radius:16px;padding:6px 13px;font-size:12.5px;cursor:pointer;color:var(--ink-secondary);user-select:none}
+.chip.on{background:var(--signal-ink);color:#fff;border-color:var(--signal-ink)}
+.count{font-family:var(--mono);font-size:12px;color:var(--ink-tertiary);margin:6px 0 0}
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin:12px 0 4px;font-size:12.5px;color:var(--ink-tertiary)}
 .legend span{display:inline-flex;align-items:center;gap:6px}
-.pill{font-family:var(--mono);font-size:11px;font-weight:600;padding:2px 8px;border-radius:20px}
+.pill{font-family:var(--mono);font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;white-space:nowrap}
 .pill.open{background:var(--keep-bg);color:var(--keep)} .pill.soon{background:var(--investigate-bg);color:var(--investigate)}
 .pill.prot{background:var(--reject-bg);color:var(--reject)} .pill.unk{background:#eef1f0;color:var(--ink-tertiary)}
-.scard{background:var(--parchment-raised);border:1px solid var(--rule);border-left:4px solid var(--keep);border-radius:10px;padding:16px 18px;margin-bottom:10px;cursor:pointer}
-.scard:hover{background:#fff}
-.scard.soon{border-left-color:var(--investigate)} .scard.prot{border-left-color:var(--reject)} .scard.unk{border-left-color:var(--ink-ghost)}
-.scard .sc-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.scard .sc-name{font-size:18px;font-weight:600}
-.scard .sc-desc{font-size:14px;line-height:1.55;color:var(--ink-secondary);margin:7px 0 10px}
-.scard .sc-checks{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px}
-.scard .chk-y{color:var(--keep)} .scard .chk-w{color:var(--investigate)} .scard .chk-i{color:var(--ink-tertiary)}
-.simple-more{text-align:center;margin:6px 0 4px}
-.simple-more button{background:none;border:1px solid var(--rule-strong);border-radius:20px;padding:8px 18px;font-family:var(--mono);font-size:12px;cursor:pointer;color:var(--ink-secondary)}
-.simple-more button:hover{border-color:var(--signal);color:var(--signal-ink)}
-/* competitor monitor */
-details.monitor{margin:6px 0;background:var(--parchment-raised);border:1px solid var(--rule);border-radius:10px;padding:2px 18px}
-details.monitor summary{cursor:pointer;font-weight:600;font-size:14px;padding:13px 0}
-.mon-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:6px 0 16px}
-.mon-grid h4{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-tertiary);margin:0 0 8px}
-.mon-num{font-family:var(--mono);font-size:26px;font-weight:600;color:var(--signal-ink)}
-.mon-list{font-size:12.5px;line-height:1.7;margin-top:6px}
-.mon-list .mi{display:flex;gap:8px;border-bottom:1px solid var(--rule);padding:3px 0}
-.mon-list .mi .d{font-family:var(--mono);color:var(--ink-tertiary);white-space:nowrap}
-@media(max-width:720px){.mon-grid{grid-template-columns:1fr}}
-/* funnel */
-details.funnel{margin:14px 0 6px}
-details.funnel summary{cursor:pointer;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--ink-tertiary);padding:6px 0}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.dot.open{background:var(--keep)} .dot.soon{background:var(--investigate)} .dot.prot{background:var(--reject)} .dot.unk{background:var(--ink-ghost)}
+/* group heading */
+.grouphd{margin:26px 0 10px}
+.grouphd h2{font-size:16px;font-weight:600;margin:0;display:flex;align-items:baseline;gap:9px}
+.grouphd h2 .n{font-family:var(--mono);font-size:13px;color:var(--ink-tertiary);font-weight:400}
+.grouphd p{font-size:13px;color:var(--ink-tertiary);margin:3px 0 0}
+/* cards */
+.scard{background:var(--parchment-raised);border:1px solid var(--rule);border-left:4px solid var(--ink-ghost);border-radius:10px;padding:15px 18px;margin-bottom:10px;cursor:pointer;transition:background .12s}
+.scard:hover{background:#fff;box-shadow:var(--shadow-card)}
+.scard.open{border-left-color:var(--keep)} .scard.soon{border-left-color:var(--investigate)}
+.scard.prot{border-left-color:var(--reject)} .scard.unk{border-left-color:var(--ink-ghost)}
+.scard.tri-keep{border-left-color:var(--keep);border-left-width:5px} .scard.tri-reject{opacity:.5}
+.sc-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sc-name{font-size:17px;font-weight:600;letter-spacing:.2px}
+.b{font-family:var(--mono);font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;letter-spacing:.3px}
+.b.orphan{background:var(--gold-bg);color:var(--gold)} .b.caveat{background:var(--investigate-bg);color:var(--investigate)}
+.sc-desc{font-size:14px;line-height:1.55;color:var(--ink-secondary);margin:8px 0 11px}
+.sc-checks{display:flex;flex-wrap:wrap;gap:7px 16px;font-size:13px}
+.chk-y{color:var(--keep)} .chk-w{color:var(--investigate)} .chk-i{color:var(--ink-tertiary)}
+.empty{padding:40px;text-align:center;color:var(--ink-tertiary)}
+/* advanced */
+details.adv{margin:34px 0 10px;background:var(--parchment-raised);border:1px solid var(--rule);border-radius:12px;padding:2px 22px}
+details.adv>summary{cursor:pointer;font-weight:600;font-size:15px;padding:16px 0;list-style:none}
+details.adv>summary::-webkit-details-marker{display:none}
+details.adv>summary::before{content:'▸ ';color:var(--ink-tertiary)}
+details.adv[open]>summary::before{content:'▾ '}
+details.adv .advnote{font-size:13px;color:var(--ink-tertiary);margin:-4px 0 14px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:6px 0 18px}
+.card{background:var(--parchment);border:1px solid var(--rule);border-radius:8px;padding:14px 15px}
+.card .n{font-family:var(--mono);font-size:24px;font-weight:600;line-height:1;color:var(--ink)}
+.card .l{font-size:12px;color:var(--ink-secondary);margin-top:7px;font-weight:500}
+.card .s{font-size:11px;color:var(--ink-tertiary);margin-top:3px}
+.advsub{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--ink-tertiary);margin:20px 0 8px;border-top:1px solid var(--rule);padding-top:16px}
 .frow{display:flex;align-items:center;gap:12px;margin:6px 0}
-.frow .bar{height:24px;border-radius:3px;background:var(--signal);display:flex;align-items:center;padding:0 9px;color:#fff;font-family:var(--mono);font-size:11px;min-width:38px}
+.frow .bar{height:22px;border-radius:3px;background:var(--signal);display:flex;align-items:center;padding:0 9px;color:#fff;font-family:var(--mono);font-size:11px;min-width:38px}
 .frow.dim .bar{background:var(--rule-strong)}
 .frow .lab{font-size:12.5px;color:var(--ink-secondary)}
-/* section label */
-.seclabel{font-family:var(--sans);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;
-  color:var(--ink-tertiary);margin:26px 0 10px;padding-bottom:7px;border-bottom:1px solid var(--rule-strong)}
-/* progress */
-.progress{position:sticky;top:92px;z-index:38;background:var(--parchment);padding:12px 0 8px;border-bottom:1px solid var(--rule)}
-.dots{display:flex;flex-wrap:wrap;gap:3px;margin-top:7px}
-.dot{width:7px;height:7px;border-radius:2px;background:var(--rule-strong)}
-.dot.keep{background:var(--keep)} .dot.investigate{background:var(--investigate)} .dot.reject{background:var(--reject)}
-.ptxt{font-family:var(--mono);font-size:11px;color:var(--ink-tertiary)}
-/* controls */
-.controls{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin:16px 0 6px}
-.search{flex:1;min-width:200px;padding:9px 12px;border:1px solid var(--rule-strong);border-radius:6px;font-family:var(--sans);font-size:13.5px;background:var(--parchment-raised)}
-.search:focus{outline:2px solid var(--signal);border-color:var(--signal)}
-select.sort{padding:9px 10px;border:1px solid var(--rule-strong);border-radius:6px;font-family:var(--mono);font-size:12px;background:var(--parchment-raised);color:var(--ink)}
-.chips{display:flex;flex-wrap:wrap;gap:7px;margin:4px 0}
-.chip{border:1px solid var(--rule-strong);background:var(--parchment-raised);border-radius:15px;padding:5px 12px;font-family:var(--mono);font-size:11.5px;cursor:pointer;color:var(--ink-secondary);user-select:none}
-.chip.on{background:var(--signal-ink);color:#fff;border-color:var(--signal-ink)}
-.count{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--ink-tertiary)}
-.banner{background:var(--investigate-bg);border:1px solid #e8c88c;color:#7a4d00;border-radius:6px;padding:9px 13px;font-size:12.5px;margin:8px 0;display:flex;gap:10px;align-items:center}
-.banner button{margin-left:auto;background:none;border:none;color:#7a4d00;cursor:pointer;font-size:15px}
-/* rows */
-.list{margin-top:4px}
-.row{display:grid;grid-template-columns:1fr auto 96px;gap:0 14px;align-items:center;min-height:64px;
-  background:var(--parchment-raised);border:1px solid var(--rule);border-top:none;padding:10px 16px 10px 0;cursor:pointer;position:relative}
-.row:first-child{border-top:1px solid var(--rule);border-radius:8px 8px 0 0}
-.row:last-child{border-radius:0 0 8px 8px}
-.row:hover{background:#fff}
-.row.rejected{opacity:.5}
-.rail{position:absolute;left:0;top:0;bottom:0;width:4px;background:transparent;border-radius:8px 0 0 8px}
-.row.t-keep .rail{background:var(--keep)} .row.t-investigate .rail{background:var(--investigate)} .row.t-reject .rail{background:var(--reject)}
-.rmain{padding-left:16px;min-width:0}
-.rname{font-weight:600;font-size:15px;letter-spacing:.2px}
-.rl2{font-size:13px;color:var(--ink-secondary);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.rl3{display:flex;gap:8px;align-items:center;margin-top:5px;font-family:var(--mono);font-size:11px;color:var(--ink-tertiary);flex-wrap:wrap}
-.badges{display:inline-flex;gap:5px;margin-left:9px;vertical-align:middle}
-.b{font-family:var(--mono);font-size:10px;font-weight:600;padding:2px 6px;border-radius:3px;letter-spacing:.3px}
-.b.orphan{background:var(--gold-bg);color:var(--gold)} .b.inn{background:var(--green-bg);color:var(--green)}
-.b.usan{background:var(--blue-bg);color:var(--blue)} .b.atc{background:var(--purple-bg);color:var(--purple)}
-.b.caveat{background:var(--investigate-bg);color:var(--investigate)}
-.srcchip{background:var(--parchment);border:1px solid var(--rule);border-radius:3px;padding:1px 6px}
-.cdot{width:7px;height:7px;border-radius:50%;display:inline-block}
-.cdot.high{background:var(--keep)} .cdot.medium{background:var(--investigate)} .cdot.low{background:var(--ink-ghost)}
-/* score column */
-.score{text-align:right;padding-right:16px}
-.snum{font-family:var(--mono);font-size:22px;font-weight:600;line-height:1}
-.snum.top{color:var(--score-top)} .snum.mid{color:var(--score-mid)} .snum.low{color:var(--score-low)}
-.sbar{display:flex;gap:2px;justify-content:flex-end;margin-top:5px}
-.seg{width:6px;height:6px;border-radius:1px;background:var(--rule-strong)}
-.seg.on.top{background:var(--score-top)} .seg.on.mid{background:var(--score-mid)} .seg.on.low{background:var(--score-low)}
-/* hover triage icons */
-.tri{display:none;gap:4px;justify-self:end}
-.row:hover .tri{display:flex}
-.tri button{width:26px;height:26px;border:1px solid var(--rule-strong);background:var(--parchment-raised);border-radius:5px;cursor:pointer;font-size:13px;color:var(--ink-tertiary);line-height:1}
-.tri button:hover{border-color:var(--signal);color:var(--signal-ink)}
-.tri button.on-keep{background:var(--keep-bg);color:var(--keep);border-color:var(--keep)}
-.tri button.on-investigate{background:var(--investigate-bg);color:var(--investigate);border-color:var(--investigate)}
-.tri button.on-reject{background:var(--reject-bg);color:var(--reject);border-color:var(--reject)}
-.empty{padding:40px;text-align:center;color:var(--ink-tertiary)}
+.mon-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:4px 0 8px}
+.mon-grid h4{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--ink-tertiary);margin:0 0 8px}
+.mon-num{font-family:var(--mono);font-size:24px;font-weight:600;color:var(--signal-ink)}
+.mon-list{font-size:12px;line-height:1.6;margin-top:6px}
+.mon-list .mi{display:flex;gap:8px;border-bottom:1px solid var(--rule);padding:3px 0}
+.mon-list .mi .d{font-family:var(--mono);color:var(--ink-tertiary);white-space:nowrap}
+@media(max-width:720px){.mon-grid,.cards{grid-template-columns:1fr 1fr}}
 /* drawer */
 .overlay{position:fixed;inset:0;background:rgba(15,26,32,.32);opacity:0;pointer-events:none;transition:opacity .18s;z-index:50}
 .overlay.open{opacity:1;pointer-events:auto}
@@ -231,96 +193,95 @@ select.sort{padding:9px 10px;border:1px solid var(--rule-strong);border-radius:6
 .dhead{position:sticky;top:0;background:var(--parchment-raised);border-bottom:1px solid var(--rule-strong);padding:16px 22px;display:flex;align-items:center;gap:12px}
 .dhead h2{margin:0;font-size:19px;font-weight:600;flex:1}
 .dhead .x{background:none;border:none;font-size:20px;cursor:pointer;color:var(--ink-tertiary)}
-.seg-ctl{display:flex;gap:0;border:1px solid var(--rule-strong);border-radius:6px;overflow:hidden}
+.seg-ctl{display:flex;border:1px solid var(--rule-strong);border-radius:6px;overflow:hidden}
 .seg-ctl button{background:var(--parchment-raised);border:none;border-right:1px solid var(--rule);padding:6px 10px;font-family:var(--mono);font-size:10.5px;cursor:pointer;color:var(--ink-secondary)}
 .seg-ctl button:last-child{border-right:none}
 .seg-ctl button.on-keep{background:var(--keep);color:#fff} .seg-ctl button.on-investigate{background:var(--investigate);color:#fff} .seg-ctl button.on-reject{background:var(--reject);color:#fff}
 .dbody{padding:18px 22px 60px}
-.dsec{margin:20px 0}
+.dsec{margin:18px 0}
 .dsec .lbl{font-family:var(--mono);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--ink-tertiary);margin-bottom:6px}
-.dsec .val{font-size:14px;color:var(--ink)}
-.dsec .prose{font-size:13.5px;line-height:1.6;color:var(--ink-secondary);font-style:italic;border-left:2px solid var(--rule-strong);padding-left:12px}
-.scorebox{background:var(--parchment);border:1px solid var(--rule-strong);border-radius:8px;padding:16px}
-.scorebox .big{font-family:var(--mono);font-size:34px;font-weight:600;line-height:1}
-.scorebox .tier{font-family:var(--mono);font-size:12px;margin-top:4px}
-.scorebox .note{font-size:12px;color:var(--ink-tertiary);margin-top:8px;line-height:1.5}
-.evbox{background:var(--parchment);border:1px dashed var(--rule-strong);border-radius:8px;padding:14px}
-.evbox .lbl{color:var(--ink-tertiary)}
-.evbox .p{font-family:var(--mono);font-size:14px;color:var(--ink)}
-.evbox .rng{font-family:var(--mono);font-size:13px;color:var(--ink-secondary);margin-top:4px}
+.dsec .val{font-size:14px;color:var(--ink);line-height:1.5}
+.dsec .prose{font-size:13.5px;line-height:1.6;color:var(--ink-secondary);font-style:italic;border-left:2px solid var(--rule-strong);padding-left:12px;margin-top:6px}
+.checkline{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;margin:8px 0;line-height:1.45}
+.checkline .ic{flex-shrink:0}
 .caveat{background:var(--investigate-bg);border:1px solid #e8c88c;border-radius:6px;padding:10px 12px;font-size:12.5px;color:#7a4d00;margin-top:8px}
+.chk{display:flex;align-items:center;gap:8px;font-size:13px;margin:6px 0;color:var(--ink-secondary)}
+textarea.note{width:100%;min-height:70px;border:1px solid var(--rule-strong);border-radius:6px;padding:9px;font-family:var(--sans);font-size:13px;resize:vertical;background:var(--parchment)}
+.links a{font-family:var(--mono);font-size:12px;margin-right:14px;display:inline-block;margin-top:4px}
+details.adv2{margin-top:8px}
+details.adv2 summary{cursor:pointer;font-family:var(--mono);font-size:11px;color:var(--ink-tertiary)}
+.scorebox{background:var(--parchment);border:1px solid var(--rule-strong);border-radius:8px;padding:14px;margin-top:8px}
+.scorebox .big{font-family:var(--mono);font-size:30px;font-weight:600;line-height:1}
+.scorebox .note{font-size:12px;color:var(--ink-tertiary);margin-top:8px;line-height:1.5}
 .brk table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:11.5px;margin-top:8px}
 .brk td{padding:3px 6px;border-bottom:1px solid var(--rule)}
 .brk td:last-child{text-align:right}
-.chk{display:flex;align-items:center;gap:8px;font-size:13px;margin:6px 0;color:var(--ink-secondary)}
-textarea.note{width:100%;min-height:70px;border:1px solid var(--rule-strong);border-radius:6px;padding:9px;font-family:var(--sans);font-size:13px;resize:vertical;background:var(--parchment)}
-.links a{font-family:var(--mono);font-size:12px;margin-right:14px}
 footer{color:var(--ink-tertiary);font-size:12px;text-align:center;margin:40px 0 30px;font-family:var(--mono)}
-@media(prefers-reduced-motion:reduce){.drawer,.overlay{transition:none}}
-@media print{.controls,.chips,.progress,.tri,.drawer,.overlay,header.top .right,details.funnel{display:none!important}
-  .row{break-inside:avoid}body{background:#fff}}
-@media(max-width:760px){.cards{grid-template-columns:repeat(2,1fr)}.row{grid-template-columns:14px 1fr 70px}.tri{display:none!important}}
+@media print{.controls,.chips,.drawer,.overlay,header.top .right{display:none!important}.scard{break-inside:avoid}body{background:#fff}}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <span class="brand">Triage</span>
-  <span class="sub">Funnel A · PRV-eligible candidate universe</span>
-  <span class="right"><button class="exp" id="export">Export triage</button><label class="exp" style="cursor:pointer">Import<input id="import" type="file" accept="application/json" hidden></label><span id="gen"></span></span>
+  <span class="brand">Rare-disease voucher candidates<small>Drugs approved abroad · never approved in the US</small></span>
+  <span class="right"><button class="exp" id="export">Export notes</button><label class="exp" style="cursor:pointer">Import<input id="import" type="file" accept="application/json" hidden></label><span id="gen"></span></span>
 </div></header>
-<div class="honesty"><div class="wrap" id="honesty"></div></div>
 
 <div class="wrap">
-  <div class="cards" id="cards"></div>
-
-  <!-- PLAIN-LANGUAGE SIMPLE VIEW -->
-  <div class="simple">
-    <div class="simple-head">
-      <h2>Open &amp; eligible — the plain-language shortlist</h2>
-      <p>Drugs approved overseas that have <b>never been approved in the US</b> (so they qualify for the congressional voucher program) <b>and</b> look freely available to develop — sorted with the likely off-patent ones first. Each still needs a patent / rights check before you commit; those are marked.</p>
-      <p class="honest-note">⚠️ <b>Read this first.</b> "Off-patent" here is inferred from how long ago the drug was approved abroad — a signal, not a legal clearance. And the older a drug is, the <i>less</i> certain the "never US-approved" test is: the underlying US list is NDA-based, so a drug once approved in the US and later <b>withdrawn</b> (e.g. an old anesthetic or a discontinued product) can wrongly appear here as eligible. For any old candidate, re-confirm both <b>eligibility</b> (was it ever US-approved, including withdrawn/pre-1938?) and <b>freedom-to-operate</b> before acting.</p>
+  <!-- PLAIN-ENGLISH INTRO -->
+  <div class="intro">
+    <h1>What am I looking at?</h1>
+    <p>These are medicines already approved in <b>Europe, Canada, or Switzerland</b> that have <b>never been approved in the United States</b>. That gap is the opportunity: if you get one of them approved in the US to treat a <b>rare childhood disease</b>, the FDA awards a <b class="money">Priority Review Voucher</b> — a transferable prize that has sold for <b class="money">$100&nbsp;million+</b>.</p>
+    <p>Think of this as a <b>starting shortlist</b>, not a list of ready businesses. Every drug here clears the first gate (novel to the US), but each still needs a few human checks before it's real — shown on every card and explained when you click one.</p>
+    <div class="steps">
+      <div class="step"><div class="k">THE GAP</div><div class="t">Approved abroad, never in the US → clears the first eligibility gate.</div></div>
+      <div class="step"><div class="k">THE FIT</div><div class="t">Must be developable for a <b>rare pediatric disease</b> to qualify for the voucher.</div></div>
+      <div class="step"><div class="k">THE CHECKS</div><div class="t">Confirm US patents / rights are clear and the active ingredient is sourceable.</div></div>
+      <div class="step"><div class="k">THE PRIZE</div><div class="t">Get it approved → a voucher you can sell to any drugmaker.</div></div>
     </div>
-    <div class="legend" id="simple-legend"></div>
-    <div id="simple-list"></div>
-    <div class="simple-more"><button id="simple-toggle">Show all eligible drugs ↓</button></div>
+    <p class="deadline" style="margin-top:14px">⏳ <b>The program ends 30 September 2029.</b> A drug has to be <i>approved</i> by then, so a realistic program needs to start soon. <span id="sunset-remain"></span></p>
   </div>
 
-  <!-- COMPETITOR MONITOR -->
-  <details class="monitor" id="monitor-sec"><summary>Who else is in the game — live competitor monitor</summary>
-    <div id="monitor"></div>
-  </details>
-
-  <div class="seclabel" style="margin-top:34px">Full analyst view — all 105 candidates, scored &amp; filterable</div>
-  <details class="funnel"><summary>How the funnel narrows</summary><div id="funnel"></div></details>
-
-  <div class="progress">
-    <div class="ptxt" id="ptxt"></div>
-    <div class="dots" id="dots"></div>
-  </div>
-
+  <!-- SEARCH + FILTER -->
   <div class="controls">
-    <input class="search" id="search" placeholder="Search name, indication, therapeutic area…">
+    <input class="search" id="search" placeholder="Search a drug, disease, or therapy area…">
     <select class="sort" id="sort">
-      <option value="score">Sort: Promise score ↓</option>
-      <option value="score_asc">Promise score ↑</option>
-      <option value="name">Name A–Z</option>
-      <option value="area">Therapeutic area</option>
-      <option value="sources">Regulator count</option>
-      <option value="orphan">Orphan first</option>
-      <option value="recency">Recency of approval</option>
-      <option value="shuffle">Shuffle</option>
+      <option value="best">Sort: Most promising first</option>
+      <option value="name">Name (A–Z)</option>
+      <option value="oldest">Oldest approval first (likely off-patent)</option>
+      <option value="research">Most research activity</option>
     </select>
   </div>
-  <div class="chips" id="chips-src"></div>
-  <div class="chips" id="chips-tri"></div>
-  <div id="banner-slot"></div>
-  <div class="controls"><span class="count" id="count"></span></div>
+  <div class="chips" id="chips"></div>
+  <div class="legend" id="legend"></div>
+  <div class="count" id="count"></div>
 
-  <div class="list" id="list"></div>
+  <div id="list"></div>
 
-  <div class="seclabel">Reading this honestly</div>
-  <p style="font-size:13px;color:var(--ink-secondary);max-width:760px">The promise score ranks likelihood of surviving downstream diligence — <b>not</b> probability of regulatory approval. It cannot see freedom-to-operate, existing US orphan exclusivity, API sourcing, or trial feasibility. A high score means "worth a diligence week," not "a business." The ~7-actionable estimate, not the 105, is the honest size of the opportunity.</p>
-  <footer>Generated by pipeline/build_ui.py · triage state stored locally in your browser · data embedded, works offline</footer>
+  <!-- ADVANCED (analyst machinery, collapsed) -->
+  <details class="adv" id="adv">
+    <summary>Advanced — the numbers, the funnel, and who else is filing</summary>
+    <div class="advnote">Everything below is the analyst layer behind the shortlist above. You don't need it to use the list.</div>
+
+    <div class="cards" id="cards"></div>
+
+    <div class="advsub">How the raw pile narrows to the shortlist</div>
+    <div id="funnel"></div>
+
+    <div class="advsub">Who else is in the game — live competitor monitor</div>
+    <div id="monitor"></div>
+
+    <div class="advsub">How to read the "most promising" ranking, honestly</div>
+    <p style="font-size:13px;color:var(--ink-secondary);max-width:720px;margin:0 0 8px">
+      The ranking scores how likely a drug is to <b>survive a week of diligence</b> — <b>not</b> its
+      chance of FDA approval. It rewards rare/pediatric relevance, a foreign rare-disease flag,
+      approval by multiple regulators, and match confidence. It can't see freedom-to-operate,
+      existing US orphan exclusivity, ingredient sourcing, or trial feasibility — so a high rank
+      means "worth a closer look," never "a sure thing." The <b>~7 estimated actionable</b> figure,
+      not the full count, is the honest size of the opportunity.
+    </p>
+  </details>
+
+  <footer id="footer"></footer>
 </div>
 
 <div class="overlay" id="overlay"></div>
@@ -337,40 +298,25 @@ function tstate(u){ return (triage[u]||{}).state || null; }
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;};
 const titleCase=s=>s.toLowerCase().replace(/\b([a-z])/g,(m,c)=>c.toUpperCase());
 
-/* ---------- hover tooltips (plain-English explanations everywhere) ---------- */
+/* ---------- hover tooltips (plain-English) ---------- */
 const TIPS={
- orphan:"Flagged an 'orphan drug' by a foreign regulator — approved for a rare disease abroad. A rare-disease signal; it does NOT by itself prove US voucher eligibility.",
- orphaneu:"Holds an EU orphan (rare-disease) designation. Rare-disease status abroad — not a US clearance.",
- inn:"International Nonproprietary Name — the official global generic name. Its presence means this is a recognised drug substance, not an excipient.",
- usan:"United States Adopted Name — the US-recognised generic name for the drug.",
- atc:"Anatomical Therapeutic Chemical class — a standard code for what kind of drug this is and what it treats.",
- caveat:"Data caveat (e.g. matched via a salt/prodrug form). Open the row to see the specific flag to verify.",
- score:"Promise score (0–100): a triage rank for how likely this survives diligence — NOT a probability of FDA approval. Click the row for the factor breakdown.",
- conf:"Match confidence: how sure we are the foreign drug maps to the correct US active moiety. Lower = verify the match by hand.",
- source:"The foreign regulator whose approval put this drug on the list. (It is NOT approved in the US — that's the whole point.)",
- evidence:"Left: PubMed papers mentioning the drug in a rare/paediatric context. Right: registered clinical trials. A rough read on existing evidence and whether others are already developing it.",
- keep:"Mark 'keep' — worth a real diligence week.",
- investigate:"Mark 'investigate' — needs a trigger or more info.",
- reject:"Mark 'reject' — screen it out.",
- avail_open:"Approved abroad ≥20 years ago, so original composition patents have almost certainly expired. A signal, not a legal clearance.",
- avail_soon:"Approved abroad 12–20 years ago — core patents may have expired. Verify exact dates.",
- avail_prot:"Approved abroad recently — very likely still under patent/exclusivity protection.",
- avail_unk:"No overseas approval date on record, so patent age can't be estimated here.",
- card_named:"Drugs approved abroad, never approved in the US, that carry a real generic name (INN/USAN). A screening shortlist — not 105 businesses.",
- card_orphan:"How many of the shortlist already carry a foreign rare-disease (orphan) designation — the strongest single rare-disease signal.",
- card_actionable:"The research estimate of how many are TRULY workable after filters this tool can't run: freedom-to-operate, US orphan exclusivity, API sourcing, trial feasibility.",
- card_sunset:"The program ends 2029-09-30 — FDA can't award a voucher after that date. A drug must be APPROVED by then, so a program has to start very soon.",
+ orphan:"Flagged an 'orphan drug' by a foreign regulator — approved for a rare disease abroad. A strong rare-disease signal, but it does NOT by itself prove US voucher eligibility.",
+ caveat:"Heads up — this drug was matched through a salt or prodrug form. Open the card to see the exact flag to double-check.",
+ off_open:"Approved abroad 20+ years ago, so the original patents have almost certainly expired. A signal, not a legal clearance — still verify.",
+ off_soon:"Approved abroad 12–20 years ago — core patents may have expired. Verify the exact dates.",
+ off_prot:"Approved abroad recently — very likely still under patent protection.",
+ off_unk:"No overseas approval date on record, so patent age can't be estimated here.",
+ research:"Left: research papers mentioning this drug in a rare/pediatric context. Right: registered clinical trials. A rough read on how much is already known and whether others are working on it.",
+ novel:"This drug's active ingredient has no record of US approval, so it clears the program's first gate: it must be 'novel' to the US.",
  fedreg:"Live count of Priority Review Voucher documents in the Federal Register — the program's official public ledger.",
- edgar:"Live count of recent SEC filings mentioning 'rare pediatric disease designation'. FDA publishes no list of who holds these, so SEC filings are the main way to spot competitors.",
- funnel:"How the raw pile of foreign approvals is narrowed step by step down to the scored shortlist.",
+ edgar:"Live count of recent SEC filings mentioning 'rare pediatric disease designation'. The FDA publishes no list of who holds these, so SEC filings are the main way to spot competitors.",
 };
 function tp(node,key){ if(node) node.setAttribute('data-tip', TIPS[key]||key); return node; }
-
 const TIP=el('div'); TIP.id='tip'; document.body.appendChild(TIP);
 let tipCur=null;
 function placeTip(t){
   const txt=t.getAttribute('data-tip'); if(!txt) return;
-  TIP.innerHTML=txt.replace(/NOT|does not|only|verify|must/g,'<b>$&</b>'); TIP.style.display='block';
+  TIP.innerHTML=txt.replace(/\b(NOT|does not|only|verify|must|never)\b/g,'<b>$&</b>'); TIP.style.display='block';
   const r=t.getBoundingClientRect(), tr=TIP.getBoundingClientRect();
   let top=r.top-tr.height-9; if(top<8) top=r.bottom+9;
   let left=r.left+r.width/2-tr.width/2;
@@ -381,7 +327,7 @@ document.addEventListener('mouseover',e=>{const t=e.target.closest('[data-tip]')
 document.addEventListener('mouseout',e=>{if(tipCur&&(!e.relatedTarget||!tipCur.contains(e.relatedTarget))){TIP.style.display='none';tipCur=null;}});
 document.addEventListener('click',()=>{TIP.style.display='none';},true);
 
-/* ---------- scoring (full PED where indication text exists) ---------- */
+/* ---------- scoring (drives "most promising" sort; surfaced only in detail) ---------- */
 function pedScore(c){
   const text=((c.indication||'')+' '+(c.area||'')).toLowerCase();
   if(!text.trim()) return {v:0.2, floored:true};
@@ -389,18 +335,10 @@ function pedScore(c){
   if(P.ped_moderate.some(k=>text.includes(k))) return {v:0.5, floored:false};
   return {v:0.0, floored:false};
 }
-function atcSub(c){
-  if(!c.atc) return 0.3;
-  const k=c.atc.slice(0,3).toUpperCase();
-  if(P.high_atc.includes(k)) return 1.0;
-  if(P.med_atc.includes(k)) return 0.5;
-  return 0.1;
-}
-function recencySub(c){
-  if(!c.approved) return 0.3;
-  const m=(c.approved.match(/(\d{4})/)||[])[1]; const y=m?+m:0;
-  if(y>=2015) return 1.0; if(y>=2005) return 0.7; if(y>=1995) return 0.4; return 0.1;
-}
+function atcSub(c){ if(!c.atc) return 0.3; const k=c.atc.slice(0,3).toUpperCase();
+  if(P.high_atc.includes(k)) return 1.0; if(P.med_atc.includes(k)) return 0.5; return 0.1; }
+function recencySub(c){ if(!c.approved) return 0.3; const m=(c.approved.match(/(\d{4})/)||[])[1]; const y=m?+m:0;
+  if(y>=2015) return 1.0; if(y>=2005) return 0.7; if(y>=1995) return 0.4; return 0.1; }
 const TIERMAP={'exact-moiety':1.0,'exact':1.0,'moiety-base':0.7,'salt-stripped':0.7,'moiety':0.7,'direct':0.5,'name-match':0.4,'fuzzy':0.1};
 function regSub(c){const n=c.sources.length; return n>=3?1.0:n===2?0.6:n===1?0.2:0.0;}
 function score(c){
@@ -408,217 +346,164 @@ function score(c){
         match=(TIERMAP[c.tier]??0.3), atc=atcSub(c), rec=recencySub(c);
   const total=Math.round(35*ped.v+25*orph+15*reg+15*match+5*atc+5*rec);
   return {total, floored:ped.floored, parts:[
-    ['Pediatric-rare signal',35,ped.v, ped.floored?'no indication text — floored':''],
-    ['Foreign orphan flag',25,orph,''],
-    ['Regulator count',15,reg, c.sources.length+' source(s)'],
+    ['Rare / pediatric relevance',35,ped.v, ped.floored?'no indication text on record':''],
+    ['Rare-disease flag abroad',25,orph,''],
+    ['Approved by multiple regulators',15,reg, c.sources.length+' regulator(s)'],
     ['Match confidence',15,match, c.tier],
-    ['ATC proximity',5,atc, c.atc||'—'],
+    ['Drug-class fit',5,atc, c.atc||'—'],
     ['Approval recency',5,rec, c.approved||'—'],
   ]};
 }
-function tierOf(s){ return s>=60?{k:'A',lab:'A — Worth a diligence week',cls:'top'}
-                  : s>=45?{k:'B',lab:'B — Needs a trigger',cls:'mid'}
-                  : {k:'C',lab:'C — Screen level',cls:'low'}; }
-CANDS.forEach(c=>{ const s=score(c); c._s=s.total; c._floored=s.floored; c._parts=s.parts; c._tier=tierOf(s.total); });
+CANDS.forEach(c=>{ const s=score(c); c._s=s.total; c._floored=s.floored; c._parts=s.parts; });
 
-/* ---------- availability (off-patent-by-age proxy) ---------- */
+/* ---------- off-patent-by-age proxy ---------- */
 const NOW_Y=2026;
 function approvedYear(c){ const m=(c.approved||'').match(/(\d{4})/); return m?+m[1]:null; }
 function availability(c){
   const y=approvedYear(c);
-  if(y===null) return {k:'unk', pill:'Patent status unknown', cls:'unk',
-    say:'No overseas approval date on record — patent status not assessable here.'};
+  if(y===null) return {k:'unk', pill:'Patent status unknown', tipk:'off_unk',
+    say:'No overseas approval date on record — patent status can\'t be estimated here.'};
   const age=NOW_Y-y;
-  if(age>=20) return {k:'open', pill:'Likely off-patent', cls:'open',
-    say:`Approved overseas ${y} (~${age} yrs ago) — original composition patents have almost certainly expired.`};
-  if(age>=12) return {k:'soon', pill:'May be off-patent', cls:'soon',
-    say:`Approved overseas ${y} (~${age} yrs ago) — core patents may have expired; verify exact dates.`};
-  return {k:'prot', pill:'Likely still patented', cls:'prot',
-    say:`Approved overseas ${y} (only ~${age} yrs ago) — likely still under patent/exclusivity protection.`};
+  if(age>=20) return {k:'open', pill:'Likely off-patent', tipk:'off_open',
+    say:`Approved abroad in ${y} (~${age} years ago) — original patents have almost certainly expired.`};
+  if(age>=12) return {k:'soon', pill:'Maybe off-patent', tipk:'off_soon',
+    say:`Approved abroad in ${y} (~${age} years ago) — core patents may have expired; verify the exact dates.`};
+  return {k:'prot', pill:'Likely still patented', tipk:'off_prot',
+    say:`Approved abroad in ${y} (only ~${age} years ago) — likely still under patent protection.`};
 }
 CANDS.forEach(c=>{ c._avail=availability(c); });
-function evText(c){
-  const pm=(c.pubmed==null?'—':c.pubmed), ct=(c.trials==null?'—':c.trials);
-  return `${pm} rare/paed papers · ${ct} trials`;
+function evText(c){ const pm=(c.pubmed==null?'—':c.pubmed), ct=(c.trials==null?'—':c.trials);
+  return `${pm} papers · ${ct} trials`; }
+function whereApproved(c){
+  return c.sources.includes('EMA')?'Europe':c.sources.includes('Health Canada')?'Canada'
+    :c.sources.includes('Swissmedic')?'Switzerland':c.sources.includes('PMDA-JP')?'Japan':'overseas';
 }
-
-/* caveat flags: pipeline-emitted (c.flags, from the GSRS/stereo layer) first,
-   then the client-side heuristics kept as a backstop */
+function plainDesc(c){
+  const area=(c.area||'').split(';')[0];
+  let s='Approved in '+whereApproved(c)+(approvedYear(c)?(' in '+approvedYear(c)):'');
+  if(area) s+=' to treat '+area.toLowerCase().replace(/;/g,', ');
+  else if(c.indication) s+=' — '+c.indication.replace(/\.$/,'');
+  s+='. Never approved in the US.';
+  return s;
+}
 function caveats(c){
-  const out=[];
-  (c.flags||[]).forEach(f=>out.push(f));
-  if(['moiety-base','salt-stripped','moiety'].includes(c.tier)) out.push('Salt/base match only — verify active moiety against Orange Book.');
-  if(!(c.flags&&c.flags.length) && /onium|sulfate ester|prodrug/i.test(c.name)) out.push('Possible prodrug — active moiety may already be US-approved under a different parent.');
+  const out=[]; (c.flags||[]).forEach(f=>out.push(f));
+  if(['moiety-base','salt-stripped','moiety'].includes(c.tier)) out.push('Matched on the base/salt form only — double-check the active ingredient against the FDA Orange Book.');
+  if(!(c.flags&&c.flags.length) && /onium|sulfate ester|prodrug/i.test(c.name)) out.push('Might be a prodrug — the active form could already be US-approved under a different parent name.');
   return out;
 }
 
-/* ---------- header / honesty / cards / funnel ---------- */
-document.getElementById('gen').textContent='generated '+DATA.generated;
-document.getElementById('honesty').innerHTML=
-  `<b>${DATA.counts.named} candidates</b> in screening shortlist`
-  +((DATA.counts.review|0)?` · <b>${DATA.counts.review} rows need human review</b> (funnelA_review.csv)`:``)
-  +((DATA.funnel.in_us_gsrs|0)?` · ${DATA.funnel.in_us_gsrs} excluded via FDA GSRS prodrug/conjugate graph`:``)
-  +` · <b>~7 estimated actionable</b> after orphan-designation, pediatric-indication fit, FTO, API sourcing and timeline filters · FDA PRV sunset <b>2029-09-30</b> · window remaining <b>~37 months</b>`;
-const C=DATA.counts, F=DATA.funnel;
-[['','.',''],].slice(0,0);
-const cards=[
- [C.named,'Named drug candidates','screening shortlist','card_named'],
- [C.orphan,'Foreign orphan-flagged','rare-disease filter passed; pediatric, FTO, API, timeline remain','card_orphan'],
- ['~7','Estimated actionable','after FTO, orphan exclusivity, API sourcing, timeline','card_actionable'],
- ['37 mo','To PRV sunset','2029-09-30','card_sunset'],
-];
-const cw=document.getElementById('cards');
-cards.forEach(([n,l,s,tip])=>{const d=tp(el('div','card'),tip);d.appendChild(el('div','n',n));d.appendChild(el('div','l',l));d.appendChild(el('div','s',s));cw.appendChild(d);});
-const hint=el('p','hoverhint'); hint.innerHTML='ⓘ <b>Hover any term, badge, score or number</b> for a plain-English explanation.';
-cw.parentNode.insertBefore(hint, cw.nextSibling);
-const stages=[['dim',F.foreign_rows,'Foreign approval rows ingested'],['dim',F.resolved,'Resolved to an FDA UNII'],
- ['',F.resolved-F.in_us,'Moiety not in the US approval record'],['',F.candidate_small_mol,'Small-molecule (biologics removed)'],
- ['',F.named_drug,'Named drug (INN or USAN)'],['',C.orphan,'Foreign orphan-flagged']];
-const fw=document.getElementById('funnel'), fmax=F.foreign_rows;
-stages.forEach(([cls,n,l])=>{const r=el('div','frow '+cls);const b=el('div','bar',n.toLocaleString());
- b.style.width=Math.max(4,Math.round(n/fmax*66))+'%';r.appendChild(b);r.appendChild(el('div','lab',l));fw.appendChild(r);});
+/* ---------- header bits ---------- */
+document.getElementById('gen').textContent='data as of '+DATA.generated;
+(function(){ // months to sunset
+  const g=(DATA.generated||'').match(/(\d{4})-(\d{2})/);
+  if(g){ const months=(2029-+g[1])*12+(9-+g[2]); if(months>0)
+    document.getElementById('sunset-remain').textContent='About '+months+' months left.'; }
+})();
+document.getElementById('footer').textContent='Generated by pipeline/build_ui.py · your keep/investigate notes stay in this browser · data embedded, works offline';
 
-/* ---------- filters/state ---------- */
-const SRC=['Orphan only','INN','EMA','Health Canada','Swissmedic','PMDA-JP'];
-const TRI=['Keep','Investigate','Untriaged','Rejected'];
-let fsrc=new Set(), ftri=new Set(), query='', sortBy='score', shuffleSeed=1;
-function mkChips(id,arr,set){const w=document.getElementById(id);arr.forEach(t=>{const c=el('span','chip',t);
- c.onclick=()=>{set.has(t)?set.delete(t):set.add(t);c.classList.toggle('on');render();};w.appendChild(c);});}
-mkChips('chips-src',SRC,fsrc); mkChips('chips-tri',TRI,ftri);
+/* ---------- filters ---------- */
+const FILTERS=[
+  ['rare','Rare-disease flagged', c=>c.orphan],
+  ['offpatent','Likely off-patent', c=>c._avail.k==='open'||c._avail.k==='soon'],
+  ['research','Has clinical trials', c=>(c.trials||0)>0],
+  ['eu','Europe', c=>c.sources.includes('EMA')],
+  ['ca','Canada', c=>c.sources.includes('Health Canada')],
+  ['ch','Switzerland', c=>c.sources.includes('Swissmedic')],
+];
+let active=new Set(), query='', sortBy='best';
+(function(){ const w=document.getElementById('chips');
+  FILTERS.forEach(([k,label])=>{ const c=el('span','chip',label);
+    c.onclick=()=>{active.has(k)?active.delete(k):active.add(k);c.classList.toggle('on');render();}; w.appendChild(c);});
+})();
+(function(){ const lg=document.getElementById('legend');
+  [['open','Likely off-patent'],['soon','Maybe off-patent'],['prot','Likely still patented'],['unk','Date unknown']]
+   .forEach(([k,t])=>{const s=el('span'); s.appendChild(el('span','dot '+k)); s.appendChild(el('span',null,t)); lg.appendChild(s);});
+  const o=el('span'); o.appendChild(tp(el('span','b orphan','ORPHAN'),'orphan')); o.appendChild(el('span',null,'rare-disease flagged abroad')); lg.appendChild(o);
+})();
+document.getElementById('sort').onchange=e=>{sortBy=e.target.value;render();};
+let searchTO; document.getElementById('search').oninput=e=>{clearTimeout(searchTO);
+  searchTO=setTimeout(()=>{query=e.target.value.trim().toLowerCase();render();},180);};
 
 function passes(c){
-  if(fsrc.has('Orphan only')&&!c.orphan) return false;
-  if(fsrc.has('INN')&&!c.inn) return false;
-  const srcSel=['EMA','Health Canada','Swissmedic','PMDA-JP'].filter(s=>fsrc.has(s));
-  if(srcSel.length&&!srcSel.some(s=>c.sources.includes(s))) return false;
-  const st=tstate(c.unii);
-  if(ftri.size){
-    const want=[]; if(ftri.has('Keep'))want.push('keep'); if(ftri.has('Investigate'))want.push('investigate');
-    if(ftri.has('Rejected'))want.push('reject');
-    const unt=ftri.has('Untriaged');
-    const ok=(st&&want.includes(st))||(unt&&!st);
-    if(!ok) return false;
-  } else { /* default: hide rejected unless explicitly shown handled below */ }
-  if(query){const h=(c.name+' '+(c.indication||'')+' '+(c.area||'')).toLowerCase();if(!h.includes(query))return false;}
+  for(const [k,,fn] of FILTERS){ if(active.has(k)&&!fn(c)) return false; }
+  if(query){ const h=(c.name+' '+(c.indication||'')+' '+(c.area||'')).toLowerCase(); if(!h.includes(query)) return false; }
   return true;
 }
 const SORTS={
-  score:(a,b)=>b._s-a._s, score_asc:(a,b)=>a._s-b._s,
+  best:(a,b)=>b._s-a._s || a.name.localeCompare(b.name),
   name:(a,b)=>a.name.localeCompare(b.name),
-  area:(a,b)=>(a.area||'~').localeCompare(b.area||'~'),
-  sources:(a,b)=>b.sources.length-a.sources.length||b._s-a._s,
-  orphan:(a,b)=>(b.orphan-a.orphan)||b._s-a._s,
-  recency:(a,b)=>((b.approved||'').slice(0,4)).localeCompare((a.approved||'').slice(0,4))||b._s-a._s,
-  shuffle:(a,b)=>((Math.sin((CANDS.indexOf(a)+1)*shuffleSeed*99)+1)-(Math.sin((CANDS.indexOf(b)+1)*shuffleSeed*99)+1)),
+  oldest:(a,b)=>((a.approved||'9999').slice(0,4)).localeCompare((b.approved||'9999').slice(0,4))||b._s-a._s,
+  research:(a,b)=>(b.trials||0)-(a.trials||0)||(b.pubmed||0)-(a.pubmed||0),
 };
-document.getElementById('sort').onchange=e=>{sortBy=e.target.value; if(sortBy==='shuffle')shuffleSeed=Math.floor(Math.sin(Date.parse(DATA.generated)/8.64e7)*1e4)/1e4+ (shuffleSeed*1.7%3); render();};
-let searchTO; document.getElementById('search').oninput=e=>{clearTimeout(searchTO);searchTO=setTimeout(()=>{query=e.target.value.trim().toLowerCase();render();},200);};
 
-/* interim banner if any candidate PED floored */
-if(CANDS.some(c=>c._floored) && localStorage.getItem('rdh_banner_'+DATA.generated)!=='1'){
-  const slot=document.getElementById('banner-slot');
-  const b=el('div','banner');
-  b.appendChild(el('span',null,'Scoring is partial — candidates without abroad-indication text (mostly Canada/Swissmedic/Japan rows) have their pediatric component floored, so their rank understates them. EMA rows are fully scored.'));
-  const x=el('button',null,'✕'); x.onclick=()=>{localStorage.setItem('rdh_banner_'+DATA.generated,'1');b.remove();}; b.appendChild(x);
-  slot.appendChild(b);
+/* ---------- cards ---------- */
+function cardNode(c){
+  const a=c._avail, st=tstate(c.unii);
+  const card=el('div','scard '+a.k+(st?' tri-'+st:''));
+  const top=el('div','sc-top');
+  top.appendChild(el('span','sc-name',titleCase(c.name)));
+  top.appendChild(tp(el('span','pill '+a.k,a.pill),a.tipk));
+  if(c.orphan) top.appendChild(tp(el('span','b orphan','ORPHAN'),'orphan'));
+  if(caveats(c).length) top.appendChild(tp(el('span','b caveat','⚑ check'),'caveat'));
+  card.appendChild(top);
+  card.appendChild(el('div','sc-desc',plainDesc(c)+' '+a.say));
+  const ch=el('div','sc-checks');
+  ch.appendChild(tp(el('span','chk-y','✓ Never US-approved — clears the first gate'),'novel'));
+  ch.appendChild(tp(el('span','chk-i','📄 '+evText(c)),'research'));
+  ch.appendChild(el('span','chk-w','⚠ Still to verify: rare-pediatric fit · US patents · ingredient supply'));
+  card.appendChild(ch);
+  card.onclick=()=>openDrawer(c);
+  return card;
 }
-
-/* ---------- rows ---------- */
-const listEl=document.getElementById('list');
-function segBar(s,cls){const w=el('div','sbar');const on=Math.round(s/10);for(let i=0;i<10;i++){const g=el('div','seg'+(i<on?' on '+cls:''));w.appendChild(g);}return w;}
-function rowNode(c){
-  const st=tstate(c.unii);
-  const r=el('div','row'+(st?' t-'+st:'')+(st==='reject'?' rejected':''));
-  r.tabIndex=0; r.setAttribute('role','button');
-  r.appendChild(el('div','rail'));
-  const main=el('div','rmain');
-  const nm=el('div','rname'); nm.appendChild(document.createTextNode(titleCase(c.name)));
-  const bd=el('span','badges');
-  if(c.orphan)bd.appendChild(tp(el('span','b orphan','ORPHAN'),'orphan'));
-  if(c.inn)bd.appendChild(tp(el('span','b inn','INN'),'inn'));
-  if(c.usan)bd.appendChild(tp(el('span','b usan','USAN'),'usan'));
-  if(c.atc)bd.appendChild(tp(el('span','b atc',c.atc),'atc'));
-  if(caveats(c).length)bd.appendChild(tp(el('span','b caveat','⚑'),'caveat'));
-  nm.appendChild(bd); main.appendChild(nm);
-  const area=(c.area||'').split(';')[0];
-  const l2txt=[area, c.indication].filter(Boolean).join(' · ');
-  if(l2txt){const l2=el('div','rl2',l2txt);main.appendChild(l2);}
-  const l3=el('div','rl3');
-  c.sources.forEach(s=>l3.appendChild(tp(el('span','srcchip',s),'source')));
-  l3.appendChild(el('span',null, c.approved?('Approved '+c.approved):'—'));
-  l3.appendChild(el('span',null,'·')); l3.appendChild(tp(el('span',null,evText(c)),'evidence'));
-  const conf=(c.tier==='exact-moiety'||c.tier==='exact')?'high':(c.tier==='moiety-base'?'medium':'low');
-  const cd=el('span','cdot '+conf); const cw2=tp(el('span',null,conf+' confidence'),'conf');
-  l3.appendChild(cd); l3.appendChild(cw2);
-  main.appendChild(l3);
-  r.appendChild(main);
-  // triage hover icons
-  const tri=el('div','tri');
-  [['keep','◆'],['investigate','◎'],['reject','✕']].forEach(([k,g])=>{
-    const bt=tp(el('button',(st===k?'on-'+k:''),g),k);
-    bt.onclick=(e)=>{e.stopPropagation(); setTriage(c.unii,st===k?null:k); render();};
-    tri.appendChild(bt);
-  });
-  r.appendChild(tri);
-  // score column
-  const sc=el('div','score');
-  const sn=tp(el('div','snum '+c._tier.cls, c._s),'score'); sc.appendChild(sn);
-  sc.appendChild(segBar(c._s,c._tier.cls));
-  r.appendChild(sc);
-  r.onclick=()=>openDrawer(c);
-  r.onkeydown=(e)=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openDrawer(c);}};
-  return r;
-}
-function setTriage(u,state){
-  if(!triage[u])triage[u]={};
-  if(state===null){ delete triage[u].state; if(!triage[u].note && !triage[u].registry_identified && !triage[u].advocacy_contact) delete triage[u]; }
-  else { triage[u].state=state; triage[u].ts=Date.now(); }
-  saveTriage();
+function groupHead(title,n,sub){
+  const w=el('div','grouphd'); const h=el('h2'); h.appendChild(document.createTextNode(title));
+  h.appendChild(el('span','n','('+n+')')); w.appendChild(h);
+  if(sub) w.appendChild(el('p',null,sub)); return w;
 }
 function render(){
+  const listEl=document.getElementById('list'); listEl.innerHTML='';
   let rows=CANDS.filter(passes);
-  // default: hide rejected unless "Rejected" chip active
-  if(!ftri.has('Rejected')) rows=rows.filter(c=>tstate(c.unii)!=='reject');
-  rows.sort(SORTS[sortBy]||SORTS.score);
-  listEl.innerHTML='';
-  if(!rows.length)listEl.appendChild(el('div','empty','No candidates match those filters.'));
-  else rows.forEach(c=>listEl.appendChild(rowNode(c)));
-  document.getElementById('count').textContent=`Showing ${rows.length} of ${CANDS.length} candidates`;
-  renderProgress();
-}
-function renderProgress(){
-  const counts={keep:0,investigate:0,reject:0};
-  CANDS.forEach(c=>{const s=tstate(c.unii); if(s)counts[s]++;});
-  const done=counts.keep+counts.investigate+counts.reject;
-  document.getElementById('ptxt').textContent=
-   `Triaged ${done} of ${CANDS.length}  ·  ${counts.keep} keep · ${counts.investigate} investigate · ${counts.reject} reject`;
-  const dw=document.getElementById('dots'); dw.innerHTML='';
-  CANDS.forEach(c=>{const s=tstate(c.unii); dw.appendChild(el('span','dot'+(s?' '+s:'')));});
+  rows.sort(SORTS[sortBy]||SORTS.best);
+  const grouped = !query && active.size===0 && sortBy==='best';
+  if(!rows.length){ listEl.appendChild(el('div','empty','No drugs match — try clearing a filter or the search box.')); }
+  else if(grouped){
+    const orphan=rows.filter(c=>c.orphan), other=rows.filter(c=>!c.orphan);
+    if(orphan.length){
+      listEl.appendChild(groupHead('Flagged for a rare disease abroad', orphan.length,
+        'The sharpest starting point — already recognised as rare-disease drugs by a foreign regulator.'));
+      orphan.forEach(c=>listEl.appendChild(cardNode(c)));
+    }
+    if(other.length){
+      listEl.appendChild(groupHead('Other never-in-US drugs', other.length,
+        'A broader pool — worth scanning for a rare-disease use even without a formal flag.'));
+      other.forEach(c=>listEl.appendChild(cardNode(c)));
+    }
+  } else {
+    rows.forEach(c=>listEl.appendChild(cardNode(c)));
+  }
+  document.getElementById('count').textContent =
+    (query||active.size) ? ('Showing '+rows.length+' of '+CANDS.length+' drugs' + (active.size?' (filtered)':''))
+                         : (CANDS.length+' drugs approved abroad, never in the US');
 }
 
-/* ---------- drawer ---------- */
+/* ---------- detail drawer ---------- */
 const overlay=document.getElementById('overlay'), drawer=document.getElementById('drawer');
 let lastFocus=null;
-function fmtEV(c){
-  // probability-first, generic vs optimized; suppressed for Tier C
-  const base=190; // $M
-  const pGen=0.04, pOpt=0.21, cost=0.5;
-  const lo=Math.round(pGen*base-cost), hi=Math.round(pOpt*base-cost);
-  return {pGen,pOpt,lo,hi};
-}
+function checkline(ic,cls,text){ const w=el('div','checkline'); w.appendChild(el('span','ic '+cls,ic)); w.appendChild(el('span',null,text)); return w; }
 function openDrawer(c){
   lastFocus=document.activeElement;
-  const cav=caveats(c), t=c._tier, ev=fmtEV(c), rec=(triage[c.unii]||{});
+  const cav=caveats(c), a=c._avail, rec=(triage[c.unii]||{});
+  const atcLab=c.atc?(P.atc_labels[c.atc.slice(0,3).toUpperCase()]||''):'';
   const links=[['EMA','https://www.ema.europa.eu/en/search?search_api_fulltext='+encodeURIComponent(c.name)],
     ['PubMed','https://pubmed.ncbi.nlm.nih.gov/?term='+encodeURIComponent(c.name)],
     ['DrugBank','https://go.drugbank.com/unearth/q?query='+encodeURIComponent(c.name)+'&searcher=drugs'],
-    ['FDA UNII','https://gsrs.ncats.nih.gov/ginas/app/beta/substances/'+c.unii]];
-  const atcLab=c.atc?(P.atc_labels[c.atc.slice(0,3).toUpperCase()]||''):'';
+    ['FDA record','https://gsrs.ncats.nih.gov/ginas/app/beta/substances/'+c.unii]];
   drawer.innerHTML='';
   const head=el('div','dhead');
-  head.appendChild(Object.assign(el('h2',null,titleCase(c.name)),{}));
+  head.appendChild(el('h2',null,titleCase(c.name)));
   const seg=el('div','seg-ctl');
-  [['keep','KEEP'],['investigate','INVESTIGATE'],['reject','REJECT']].forEach(([k,l])=>{
+  [['keep','KEEP'],['investigate','MAYBE'],['reject','SKIP']].forEach(([k,l])=>{
     const b=el('button',(tstate(c.unii)===k?'on-'+k:''),l);
     b.onclick=()=>{setTriage(c.unii, tstate(c.unii)===k?null:k); openDrawer(c); render();};
     seg.appendChild(b);
@@ -628,95 +513,85 @@ function openDrawer(c){
   drawer.appendChild(head);
 
   const body=el('div','dbody');
-  const badge=el('div','dsec');
-  const bb=el('div','badges');
-  if(c.orphan)bb.appendChild(tp(el('span','b orphan','ORPHAN'),'orphan'));
-  if(c.inn)bb.appendChild(tp(el('span','b inn','INN'),'inn'));
-  if(c.usan)bb.appendChild(tp(el('span','b usan','USAN'),'usan'));
-  if(c.atc)bb.appendChild(tp(el('span','b atc',c.atc),'atc'));
-  badge.appendChild(bb); body.appendChild(badge);
 
-  // score
-  const ss=el('div','dsec');
-  ss.appendChild(el('div','lbl','Promise score (triage rank only)'));
-  const sb=el('div','scorebox');
-  sb.appendChild(el('div','big '+t.cls, c._s));
-  sb.appendChild(el('div','tier '+t.cls, t.lab));
-  sb.appendChild(el('div','note','Ranks likelihood of surviving downstream diligence — not probability of regulatory approval.'));
-  if(c._floored) sb.appendChild(Object.assign(el('div','caveat'),{textContent:'Score partial — pediatric component (weight 35) floored: no abroad-indication text for this row.'}));
-  const brk=el('details','brk'); brk.appendChild(el('summary',null,'Score breakdown'));
-  const tbl=el('table');
+  // the one-line story
+  const st=el('div','dsec'); st.appendChild(el('div','lbl','In plain terms'));
+  st.appendChild(el('div','val',plainDesc(c)));
+  if(c.indication) st.appendChild(Object.assign(el('div','prose'),{textContent:c.indication}));
+  body.appendChild(st);
+
+  // where it stands
+  const gate=el('div','dsec'); gate.appendChild(el('div','lbl','Where it stands'));
+  gate.appendChild(checkline('✅','chk-y','Never approved in the US — clears the program’s first gate.'));
+  if(c.orphan) gate.appendChild(checkline('✅','chk-y','Already flagged as a rare-disease (orphan) drug abroad.'));
+  gate.appendChild(checkline(a.k==='open'?'🟢':a.k==='soon'?'🟡':a.k==='prot'?'🔴':'⚪',
+     a.k==='open'||a.k==='soon'?'chk-y':'chk-i', a.pill+'. '+a.say));
+  body.appendChild(gate);
+
+  // still to check
+  const todo=el('div','dsec'); todo.appendChild(el('div','lbl','Still to check before it’s real'));
+  todo.appendChild(checkline('⚠️','chk-w','Is it developable for a rare pediatric disease? (the voucher requires this)'));
+  todo.appendChild(checkline('⚠️','chk-w','Are US patents / rights clear? (freedom-to-operate)'));
+  todo.appendChild(checkline('⚠️','chk-w','Can the active ingredient be sourced at quality?'));
+  todo.appendChild(checkline('⚠️','chk-w','Any existing US orphan exclusivity? (FDA blocks automation — check by hand)'));
+  body.appendChild(todo);
+
+  // evidence
+  const ev=el('div','dsec'); ev.appendChild(el('div','lbl','How much is already known'));
+  ev.appendChild(el('div','val','Research papers (rare/pediatric context): '+(c.pubmed==null?'—':c.pubmed)
+    +'  ·  Registered clinical trials: '+(c.trials==null?'—':c.trials)));
+  body.appendChild(ev);
+
+  // facts
+  const facts=el('div','dsec'); facts.appendChild(el('div','lbl','The basics'));
+  const rows2=[['Approved by', c.sources.join(', ')||'—'],
+    ['Approved abroad', c.approved||'—'],
+    ['Therapy area', (c.area||'').replace(/;/g,' · ')||'—'],
+    ['Drug class (ATC)', c.atc?(c.atc+(atcLab?'  ·  '+atcLab:'')):'—']];
+  rows2.forEach(([k,v])=>{ const d=el('div','val'); d.style.margin='3px 0';
+    d.innerHTML='<span style="color:var(--ink-tertiary)">'+k+':</span> '+v; facts.appendChild(d); });
+  body.appendChild(facts);
+
+  // caveats
+  if(cav.length){ const w=el('div','dsec'); w.appendChild(el('div','lbl','Data caveats to double-check'));
+    cav.forEach(t2=>w.appendChild(Object.assign(el('div','caveat'),{textContent:t2}))); body.appendChild(w); }
+
+  // look it up
+  const lk=el('div','dsec'); lk.appendChild(el('div','lbl','Look it up'));
+  const la=el('div','links'); links.forEach(([t2,u])=>{const A=el('a',null,t2);A.href=u;A.target='_blank';A.rel='noopener';la.appendChild(A);});
+  lk.appendChild(la); body.appendChild(lk);
+
+  // your note
+  const nt=el('div','dsec'); nt.appendChild(el('div','lbl','Your note'));
+  const ta=el('textarea','note'); ta.value=rec.note||''; ta.placeholder='Working notes for this drug…';
+  let nto; ta.oninput=()=>{clearTimeout(nto);nto=setTimeout(()=>{if(!triage[c.unii])triage[c.unii]={};triage[c.unii].note=ta.value;saveTriage();},400);};
+  nt.appendChild(ta); body.appendChild(nt);
+
+  // analyst detail (collapsed inside the drawer)
+  const adv=el('details','adv2'); adv.appendChild(el('summary',null,'Analyst detail (promise score & match)'));
+  const box=el('div','scorebox');
+  box.appendChild(el('div','big', c._s));
+  box.appendChild(el('div','note','Promise score (0–100): how likely this survives a week of diligence — not a probability of FDA approval.'
+    +(c._floored?' Partial: no indication text for this row, so the rare/pediatric component is floored.':'')));
+  const brk=el('div','brk'); const tbl=el('table');
   c._parts.forEach(([n,w,v,note])=>{const tr=el('tr');
     tr.appendChild(el('td',null,n)); tr.appendChild(el('td',null,note||''));
     tr.appendChild(el('td',null,Math.round(w*v)+' / '+w)); tbl.appendChild(tr);});
-  brk.appendChild(tbl); sb.appendChild(brk);
-  ss.appendChild(sb); body.appendChild(ss);
-
-  // what it treats
-  if(c.area||c.indication){const w=el('div','dsec');w.appendChild(el('div','lbl','What it treats'));
-    if(c.area)w.appendChild(el('div','val',c.area.replace(/;/g,' · ')));
-    if(c.indication)w.appendChild(Object.assign(el('div','prose'),{textContent:c.indication}));
-    body.appendChild(w);}
-  // ATC
-  if(c.atc){const w=el('div','dsec');w.appendChild(el('div','lbl','ATC classification'));
-    w.appendChild(el('div','val',c.atc+(atcLab?'  ·  '+atcLab:'')));body.appendChild(w);}
-  // dates
-  const dt=el('div','dsec');dt.appendChild(el('div','lbl','Regulatory dates'));
-  dt.appendChild(el('div','val','Approved abroad: '+(c.approved||'—')));body.appendChild(dt);
-
-  // evidence & availability (live-enriched)
-  const evsec=el('div','dsec');evsec.appendChild(el('div','lbl','Evidence & availability (live)'));
-  evsec.appendChild(el('div','val','PubMed (rare/paediatric context): '+(c.pubmed==null?'—':c.pubmed)+' · ClinicalTrials.gov: '+(c.trials==null?'—':c.trials)+' registered trials'));
-  const av=el('div','val');av.style.marginTop='6px';
-  av.innerHTML='<b>'+c._avail.pill+'.</b> '+c._avail.say; evsec.appendChild(av);
-  evsec.appendChild(Object.assign(el('div','caveat'),{textContent:'US orphan designation: NOT machine-checkable (FDA OOPD blocks automation). Verify manually at accessdata.fda.gov before relying on availability.'}));
-  body.appendChild(evsec);
-
-  // EV
-  const evs=el('div','dsec');evs.appendChild(el('div','lbl','Risk-adjusted EV proxy'));
-  if(t.k==='C'){
-    evs.appendChild(Object.assign(el('div','caveat'),{textContent:'EV proxy not shown — a Tier C candidate needs a stronger diligence basis before financial framing is appropriate.'}));
-  } else {
-    const box=el('div','evbox');
-    box.appendChild(el('div','p','P(success): ~4% generic  →  up to ~21% optimized'));
-    box.appendChild(el('div','rng','Trial cost floor ~$0.5M · PRV value ~$190M → risk-adjusted EV ≈ $'+ev.lo+'M – $'+ev.hi+'M'));
-    evs.appendChild(box);
-    evs.appendChild(Object.assign(el('div','caveat'),{textContent:'A proxy, not a valuation. Assumes the candidate clears FTO, has no blocking US orphan exclusivity, sane API sourcing, and a feasible ~20-patient trial — none of which this score can see.'}));
-  }
-  body.appendChild(evs);
-
-  // timeline check
-  const tl=el('div','dsec');tl.appendChild(el('div','lbl','Timeline check'));
-  tl.appendChild(el('div','val','Latest viable first-patient-in ≈ 2027-02-28 to clear the 2029-09-30 sunset.'));
-  [['registry_identified','Patient registry or natural-history dataset identified'],
-   ['advocacy_contact','Advocacy-group contact made']].forEach(([key,lab])=>{
-    const row=el('label','chk');const cb=el('input');cb.type='checkbox';cb.checked=!!rec[key];
-    cb.onchange=()=>{if(!triage[c.unii])triage[c.unii]={};triage[c.unii][key]=cb.checked;saveTriage();};
-    row.appendChild(cb);row.appendChild(el('span',null,lab));tl.appendChild(row);});
-  body.appendChild(tl);
-
-  // sources & provenance
-  const sp=el('div','dsec');sp.appendChild(el('div','lbl','Sources & provenance'));
-  sp.appendChild(el('div','val',c.sources.join(' · ')));
-  sp.appendChild(Object.assign(el('div','val'),{style:'font-family:var(--mono);font-size:12px;color:var(--ink-tertiary);margin-top:4px',
-    textContent:'UNII '+c.unii+' · match '+c.tier}));
-  const lk=el('div','links');lk.style.marginTop='8px';
-  links.forEach(([t2,u])=>{const a=el('a',null,t2);a.href=u;a.target='_blank';a.rel='noopener';lk.appendChild(a);});
-  sp.appendChild(lk);body.appendChild(sp);
-
-  // caveats
-  if(cav.length){const w=el('div','dsec');w.appendChild(el('div','lbl','Caveat flags'));
-    cav.forEach(t2=>w.appendChild(Object.assign(el('div','caveat'),{textContent:t2})));body.appendChild(w);}
-
-  // note
-  const nt=el('div','dsec');nt.appendChild(el('div','lbl','Triage note'));
-  const ta=el('textarea','note');ta.value=rec.note||'';ta.placeholder='Working notes for this candidate…';
-  let nto;ta.oninput=()=>{clearTimeout(nto);nto=setTimeout(()=>{if(!triage[c.unii])triage[c.unii]={};triage[c.unii].note=ta.value;saveTriage();},400);};
-  nt.appendChild(ta);body.appendChild(nt);
+  brk.appendChild(tbl); box.appendChild(brk);
+  const prov=el('div','note'); prov.style.marginTop='8px';
+  prov.textContent='Match: '+c.tier+' · FDA ingredient ID (UNII) '+c.unii;
+  box.appendChild(prov);
+  adv.appendChild(box); body.appendChild(adv);
 
   drawer.appendChild(body);
-  overlay.classList.add('open');drawer.classList.add('open');
+  overlay.classList.add('open'); drawer.classList.add('open');
   drawer.querySelector('.x').focus();
+}
+function setTriage(u,state){
+  if(!triage[u])triage[u]={};
+  if(state===null){ delete triage[u].state; if(!triage[u].note) delete triage[u]; }
+  else { triage[u].state=state; triage[u].ts=Date.now(); }
+  saveTriage();
 }
 function closeDrawer(){overlay.classList.remove('open');drawer.classList.remove('open');if(lastFocus)lastFocus.focus();}
 overlay.onclick=closeDrawer;
@@ -725,88 +600,54 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&drawer.classList.co
 /* export / import */
 document.getElementById('export').onclick=()=>{
   const blob=new Blob([JSON.stringify(triage,null,1)],{type:'application/json'});
-  const a=el('a');a.href=URL.createObjectURL(blob);a.download='rdh_triage_'+DATA.generated+'.json';a.click();
+  const a=el('a');a.href=URL.createObjectURL(blob);a.download='rdh_notes_'+DATA.generated+'.json';a.click();
 };
 document.getElementById('import').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();
-  r.onload=()=>{try{triage=JSON.parse(r.result);saveTriage();render();}catch(err){alert('Invalid triage file');}};r.readAsText(f);};
+  r.onload=()=>{try{triage=JSON.parse(r.result);saveTriage();render();}catch(err){alert('Invalid notes file');}};r.readAsText(f);};
 
-/* ---------- simple "Open & eligible" view ---------- */
-const AVAIL_ORDER={open:0,soon:1,unk:2,prot:3};
-let simpleExpanded=false;
-function plainDesc(c){
-  const area=(c.area||'').split(';')[0];
-  const where=c.sources.includes('EMA')?'Europe':c.sources.includes('Health Canada')?'Canada':c.sources.includes('Swissmedic')?'Switzerland':c.sources.includes('PMDA-JP')?'Japan':'overseas';
-  let s='Approved in '+where+(approvedYear(c)?(' ('+approvedYear(c)+')'):'');
-  if(area) s+=' for '+area.toLowerCase().replace(/;/g,', ');
-  else if(c.indication) s+=' — '+c.indication.slice(0,80);
-  s+='. Never approved in the US.';
-  return s;
-}
-function simpleCard(c){
-  const a=c._avail;
-  const card=el('div','scard '+a.cls);
-  const top=el('div','sc-top');
-  top.appendChild(el('span','sc-name',titleCase(c.name)));
-  top.appendChild(tp(el('span','pill '+a.cls,a.pill),'avail_'+a.k));
-  if(c.orphan)top.appendChild(tp(el('span','b orphan','ORPHAN (EU)'),'orphaneu'));
-  card.appendChild(top);
-  card.appendChild(el('div','sc-desc',plainDesc(c)+' '+a.say));
-  const ch=el('div','sc-checks');
-  ch.appendChild(el('span','chk-y','✅ Eligible for the voucher program (novel to the US)'));
-  const ev=el('span','chk-i','📄 '+evText(c)); ch.appendChild(ev);
-  ch.appendChild(el('span','chk-w','⚠️ Still verify: US patents / freedom-to-operate'));
-  ch.appendChild(el('span','chk-w','⚠️ Still verify: US orphan designation (not machine-checkable)'));
-  card.appendChild(ch);
-  card.onclick=()=>openDrawer(c);
-  return card;
-}
-function renderSimple(){
-  const leg=document.getElementById('simple-legend');
-  leg.innerHTML='';
-  [['open','Likely off-patent'],['soon','May be off-patent'],['prot','Likely still patented'],['unk','Status unknown']].forEach(([k,t])=>{
-    const s=el('span'); s.appendChild(el('span','pill '+k,'')); s.appendChild(el('span',null,t)); leg.appendChild(s);});
-  const ranked=[...CANDS].sort((a,b)=>(AVAIL_ORDER[a._avail.k]-AVAIL_ORDER[b._avail.k])||(b._s-a._s));
-  // default: show the genuinely "open" ones (off-patent or may-be), capped; expand for all
-  let show = simpleExpanded ? ranked : ranked.filter(c=>c._avail.k==='open'||c._avail.k==='soon');
-  if(!simpleExpanded && show.length>18) show=show.slice(0,18);
-  const wrap=document.getElementById('simple-list'); wrap.innerHTML='';
-  if(!show.length) wrap.appendChild(el('div','empty','No off-patent-eligible drugs detected from approval dates (most candidates are recent EMA approvals). Click “Show all” to see the full eligible list.'));
-  show.forEach(c=>wrap.appendChild(simpleCard(c)));
-  const openN=CANDS.filter(c=>c._avail.k==='open').length, soonN=CANDS.filter(c=>c._avail.k==='soon').length;
-  document.getElementById('simple-toggle').textContent = simpleExpanded
-    ? 'Show only the likely-available ones ↑'
-    : `Show all ${CANDS.length} eligible drugs ↓  (currently showing ${show.length}: ${openN} likely off-patent, ${soonN} maybe)`;
-}
-document.getElementById('simple-toggle').onclick=()=>{simpleExpanded=!simpleExpanded;renderSimple();};
-
-/* ---------- competitor monitor ---------- */
-function renderMonitor(){
+/* ---------- advanced: stat cards, funnel, monitor ---------- */
+(function(){
+  const C=DATA.counts, F=DATA.funnel;
+  const cards=[
+   [C.named,'Never-in-US drugs','the screening shortlist'],
+   [C.orphan,'Rare-disease flagged','recognised as orphan drugs abroad'],
+   ['~7','Estimated actionable','after patents, sourcing & timeline filters'],
+   ['~'+(((2029-+(DATA.generated||'2026').slice(0,4))*12)||37),'Months to deadline','program ends 2029-09-30'],
+  ];
+  const cw=document.getElementById('cards');
+  cards.forEach(([n,l,s])=>{const d=el('div','card');d.appendChild(el('div','n',n));d.appendChild(el('div','l',l));d.appendChild(el('div','s',s));cw.appendChild(d);});
+  const stages=[['dim',F.foreign_rows,'Foreign approvals looked at'],['dim',F.resolved,'Identified as a known ingredient'],
+   ['',F.resolved-F.in_us,'Not found in the US approval record'],['',F.candidate_small_mol,'Small molecules (biologics removed)'],
+   ['',F.named_drug,'Have a real generic name'],['',C.orphan,'Rare-disease flagged']];
+  const fw=document.getElementById('funnel'), fmax=F.foreign_rows||1;
+  stages.forEach(([cls,n,l])=>{const r=el('div','frow '+cls);const b=el('div','bar',(n||0).toLocaleString());
+   b.style.width=Math.max(4,Math.round((n||0)/fmax*66))+'%';r.appendChild(b);r.appendChild(el('div','lab',l));fw.appendChild(r);});
+})();
+(function(){
   const m=DATA.monitor; const w=document.getElementById('monitor');
-  if(!m){document.getElementById('monitor-sec').style.display='none';return;}
-  w.innerHTML='';
+  if(!m){ w.textContent='No competitor data in this build.'; return; }
   const grid=el('div','mon-grid');
   const a=el('div');
-  a.appendChild(el('h4','Priority Review Vouchers — live Federal Register ledger'));
-  a.appendChild(tp(el('div','mon-num', (m.fedreg&&m.fedreg.count!=null)?m.fedreg.count:'—'),'fedreg'));
-  a.appendChild(el('div',null,'PRV-related documents on file'));
+  a.appendChild(el('h4','Priority Review Vouchers — Federal Register ledger'));
+  a.appendChild(tp(el('div','mon-num',(m.fedreg&&m.fedreg.count!=null)?m.fedreg.count:'—'),'fedreg'));
+  a.appendChild(el('div',null,'PRV documents on file'));
   const al=el('div','mon-list');
   (m.fedreg&&m.fedreg.recent||[]).forEach(r=>{const mi=el('div','mi');mi.appendChild(el('span','d',r.date||''));mi.appendChild(el('span',null,r.title||''));al.appendChild(mi);});
   a.appendChild(al); grid.appendChild(a);
   const b=el('div');
-  b.appendChild(el('h4','Who is filing — SEC EDGAR (“rare pediatric disease designation”)'));
-  b.appendChild(tp(el('div','mon-num', (m.edgar&&m.edgar.total!=null)?m.edgar.total:'—'),'edgar'));
-  b.appendChild(el('div',null,'filings mention it (2025–26) — the competitor early-warning channel'));
+  b.appendChild(el('h4','Who is filing — SEC EDGAR ("rare pediatric disease designation")'));
+  b.appendChild(tp(el('div','mon-num',(m.edgar&&m.edgar.total!=null)?m.edgar.total:'—'),'edgar'));
+  b.appendChild(el('div',null,'filings mention it (2025–26)'));
   const bl=el('div','mon-list');
   (m.edgar&&m.edgar.filers||[]).forEach(f=>{const mi=el('div','mi');mi.appendChild(el('span','d',f.date||''));mi.appendChild(el('span',null,(f.name||'')+(f.form?(' · '+f.form):'')));bl.appendChild(mi);});
   b.appendChild(bl); grid.appendChild(b);
   w.appendChild(grid);
-  w.appendChild(el('div',null,'')).style.cssText='font-size:11.5px;color:var(--ink-tertiary)';
   const note=el('div'); note.style.cssText='font-size:11.5px;color:var(--ink-tertiary);padding-bottom:12px';
-  note.textContent='As of '+(m.as_of||'—')+'. FDA publishes no public RPD-designation list, so SEC filings + the Federal Register are the only competitor-detection channels (per the research). Rebuild with python3 pipeline/enrich.py to refresh.';
+  note.textContent='As of '+(m.as_of||'—')+'. The FDA publishes no public rare-pediatric-designation list, so SEC filings + the Federal Register are the only competitor-detection channels. Refresh with: python3 pipeline/enrich.py';
   w.appendChild(note);
-}
+})();
 
-renderSimple(); renderMonitor(); render();
+render();
 </script>
 </body>
 </html>

@@ -60,15 +60,20 @@ happens at the build step, not in the browser (keeps it offline-safe & shareable
 
 To refresh everything: `fetch.py` → `rdh_diff.py` → `enrich.py` → `build_ui.py`.
 
-## The dashboard has two views
+## The dashboard is plain-language first
 
-1. **Open & eligible** (top, plain-language) — the drugs that qualify for the
-   voucher program *and* look freely available, with an off-patent-by-age read and
-   an explicit warning that old candidates are exactly where "never US-approved"
-   and freedom-to-operate are least certain. This is the "just show me what's
-   available" view.
-2. **Full analyst view** — all 105, promise-scored, filterable, with the detail
-   drawer, triage state, and competitor monitor.
+One surface, built to explain itself in the first five seconds:
+
+1. **"What am I looking at?"** intro — the voucher thesis in plain English
+   (the gap → the fit → the checks → the prize) plus the 2029-09-30 deadline.
+2. **One searchable card list** — every never-US drug as a plain-English card
+   (what it treats, where/when approved, off-patent-by-age read, what's still to
+   verify), grouped with the rare-disease-flagged ones first. Search + filter
+   chips ("Rare-disease flagged", "Likely off-patent", by regulator); click any
+   card for a plain-language detail panel.
+3. **Advanced** (one collapsed section) — all the analyst machinery hidden by
+   default: headline counts, the funnel, the promise-score methodology, and the
+   live competitor monitor. Nothing was removed, just tucked away.
 
 Outputs (written to `pipeline/data/out/`, ~7s runtime):
 - `funnelA_candidates.csv` — named-drug (INN/USAN) never-US candidates, the headline list
@@ -85,11 +90,13 @@ python3 pipeline/build_ui.py          # writes pipeline/ui/index.html
 open pipeline/ui/index.html           # double-click also works — no server needed
 ```
 
-It shows the headline numbers, a visual funnel, and every candidate as a card
-with orphan/INN/USAN badges, source tags, and one-click lookup links (EMA,
-PubMed, FDA GSRS). Search and filter chips ("Orphan only", by regulator). The
-data is embedded in the file, so it works offline and is safe to share as a
-single `index.html`. Re-run `rdh_diff.py` then `build_ui.py` to refresh it.
+Every candidate is a plain-English card (what it treats, where/when approved,
+an off-patent-by-age read, and the checks still owed) with a rare-disease badge
+and one-click lookup links (EMA, PubMed, DrugBank, FDA). Search + filter chips
+sit on top; the numbers/funnel/competitor-monitor live behind the collapsed
+**Advanced** section. The data is embedded in the file, so it works offline and
+is safe to share as a single `index.html`. Re-run `rdh_diff.py` then
+`build_ui.py` to refresh it.
 
 ## Data
 
