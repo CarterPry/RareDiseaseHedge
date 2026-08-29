@@ -13,56 +13,25 @@ and "hydroxyamphetamine" (the base moiety, a different UNII) must be treated as
 the SAME thing for the "previously approved in the US" test. Matching on UNII
 alone would miss that and produce false positives — the single most expensive
 error in the pipeline (believing a moiety is new to the US when it is not). So a
-foreign substance is only called "never approved in the US" when BOTH its UNII
-is absent from the US UNII set AND its moiety key is absent from the US moiety
-set.
+foreign substance is only called "never approved in the US" when its UNIIs, its
+key variants, AND its GSRS relatives (rdh_diff.py) are all absent from the US
+record.
+
+String normalization (generated salt vocabulary, counterion canonicalisation,
+acid/-ate bridging, key sets) lives in moiety.py; this module layers the UNII
+join on top. The old hand-listed SALT_TOKENS matcher measured 12/19 silent
+misses against labeled US-approved drugs (2026-08-28); see
+pipeline/test_accuracy.py for the harness that keeps this measured.
 
 Pure stdlib + the two UNII flat files. No pandas.
 """
 from __future__ import annotations
 import csv, io, os, re, sys, zipfile
 
-# --- salt / hydrate / ester counter-ions stripped to approximate active moiety.
-# Not exhaustive; it is the pragmatic set that covers the large majority of
-# marketed small-molecule salts. GSRS /moieties is the authoritative source and
-# is listed as a future refinement in the method doc.
-SALT_TOKENS = {
-    "HYDROCHLORIDE", "HCL", "DIHYDROCHLORIDE", "HYDROBROMIDE", "HYDROIODIDE",
-    "SODIUM", "DISODIUM", "POTASSIUM", "CALCIUM", "MAGNESIUM", "ZINC", "LITHIUM",
-    "SULFATE", "SULPHATE", "BISULFATE", "HEMISULFATE",
-    "ACETATE", "DIACETATE", "TRIHYDRATE", "DIHYDRATE", "MONOHYDRATE", "HYDRATE",
-    "MESYLATE", "MESILATE", "MALEATE", "CITRATE", "DIHYDROGEN", "TARTRATE",
-    "BITARTRATE", "PHOSPHATE", "DIPHOSPHATE", "BESYLATE", "BESILATE",
-    "FUMARATE", "HEMIFUMARATE", "SUCCINATE", "BROMIDE", "CHLORIDE", "IODIDE",
-    "NITRATE", "PAMOATE", "EMBONATE", "GLUCONATE", "LACTATE", "STEARATE",
-    "SALICYLATE", "OXALATE", "TOSYLATE", "TOSILATE", "XINAFOATE", "VALERATE",
-    "PROPIONATE", "DECANOATE", "ENANTATE", "ENANTHATE", "PALMITATE", "PIVALATE",
-    "DIMALEATE", "HYDROGEN", "SESQUIHYDRATE", "MONOHYDROCHLORIDE", "AXETIL",
-    "TROMETAMOL", "TROMETHAMINE", "MEGLUMINE", "ARGININE", "CHOLINE", "OLAMINE",
-    "ETHANOLATE", "SOLVATE", "ANHYDROUS", "BASE", "FREE",
-}
-# tokens that are pure noise in names
-NOISE_TOKENS = {"AND", "OF", "THE", "USP", "BP", "EP", "PH", "EUR"}
-
-
-def norm(s: str) -> str:
-    """Uppercase, drop punctuation, collapse whitespace."""
-    if s is None:
-        return ""
-    s = str(s).upper()
-    # unify various dashes / quotes to space, drop other punctuation
-    s = re.sub(r"[^A-Z0-9 ]+", " ", s)
-    s = re.sub(r"\s+", " ", s).strip()
-    return s
-
-
-def moiety_key(s: str) -> str:
-    """Strip trailing salt/hydrate/ester tokens to approximate the active moiety."""
-    toks = norm(s).split()
-    # peel salt/noise tokens from the end (they follow the moiety name)
-    while toks and (toks[-1] in SALT_TOKENS or toks[-1] in NOISE_TOKENS):
-        toks.pop()
-    return " ".join(toks)
+# normalization layer — re-exported so sources.py / rdh_diff.py keep importing
+# from unii
+from moiety import (norm, moiety_key, keys, split_ingredients,  # noqa: F401
+                    has_stereo_marker, SALT_TOKENS, NOISE_TOKENS)
 
 
 class UniiIndex:
@@ -71,10 +40,28 @@ class UniiIndex:
     def __init__(self):
         self.name2unii: dict[str, str] = {}      # normalized synonym -> UNII
         self.moiety2unii: dict[str, str] = {}     # moiety-key -> a representative UNII
+        self._moiety_claim: dict[str, int] = {}   # key -> quality of current claim
         self.unii2display: dict[str, str] = {}
         self.unii2type: dict[str, str] = {}       # SUBSTANCE_TYPE (chemical/protein/...)
         self.unii2inn: dict[str, bool] = {}
         self.unii2usan: dict[str, bool] = {}      # has a USAN (US Adopted Name)
+
+    def _claim_moiety(self, mk: str, nm: str, unii: str):
+        """Representative UNII for a moiety key. An exact base name ('SUNITINIB'
+        for key 'SUNITINIB') beats a stripped derivative ('SUNITINIB ACID'),
+        and among derivatives the shortest name wins ('SALICYLIC ACID' beats
+        'SALICYLIC ACID MONOETHANOLAMINE' for key 'SALICYLIC') — else whatever
+        salt the names file lists first becomes the moiety's face: wrong
+        display name, wrong INN/USAN flags, wrong substance type. Membership
+        testing is unaffected (collect() checks every variant); this is about
+        which record represents the group."""
+        if not mk:
+            return
+        score = 0 if nm == mk else len(nm)
+        prev = self._moiety_claim.get(mk)
+        if prev is None or score < prev:
+            self.moiety2unii[mk] = unii
+            self._moiety_claim[mk] = score
 
     # ---- loaders -----------------------------------------------------------
     def load_names(self, path: str) -> int:
@@ -92,9 +79,7 @@ class UniiIndex:
                 nm = norm(name)
                 if nm and nm not in self.name2unii:
                     self.name2unii[nm] = unii
-                    mk = moiety_key(name)
-                    if mk and mk not in self.moiety2unii:
-                        self.moiety2unii[mk] = unii
+                    self._claim_moiety(moiety_key(name), nm, unii)
                 n += 1
         return n
 
@@ -121,9 +106,7 @@ class UniiIndex:
                 nm = norm(display)
                 if nm and nm not in self.name2unii:
                     self.name2unii[nm] = unii
-                mk = moiety_key(display)
-                if mk and mk not in self.moiety2unii:
-                    self.moiety2unii[mk] = unii
+                self._claim_moiety(moiety_key(display), nm, unii)
                 n += 1
         return n
 
@@ -168,12 +151,36 @@ class UniiIndex:
         t = (self.unii2type.get(unii) or "").lower()
         return any(k in t for k in ("protein", "nucleic", "polymer", "structurally", "mixture"))
 
+    def is_counterion(self, name: str) -> bool:
+        """Synonym-robust counterion test for GSRS graph walls. The name list
+        alone is bypassable — GSRS says '2-Aminoethanol' where the wall list
+        says 'ETHANOLAMINE' — so also resolve the name and test the display
+        names of everything it resolves to. (Found live: fosfosal was excluded
+        through 2-aminoethanol -> ethanolamine oleate before this check.)"""
+        from moiety import is_counterion_substance
+        if is_counterion_substance(name):
+            return True
+        uniis, _ = self.collect(name)
+        return any(is_counterion_substance(self.unii2display.get(u, ""))
+                   for u in uniis)
 
-def split_ingredients(field: str):
-    """FDA/foreign active-ingredient fields pack combos and dual name/salt forms
-    with ';', '+', or '/' (e.g. 'CEFADROXIL/CEFADROXIL HEMIHYDRATE'). Split on all
-    three so each component resolves cleanly."""
-    if not field:
-        return []
-    parts = re.split(r"[;+/]", field)
-    return [p.strip() for p in parts if p.strip()]
+    def collect(self, name: str):
+        """All UNIIs and all key variants a substance name can legitimately
+        resolve to. THIS — not a single canonical key — is what exclusion-set
+        membership is tested on, on both sides symmetrically.
+
+        Why a set: one string cannot represent a molecule that is written
+        several ways. US "LAPATINIB DITOSYLATE" collects {salt UNII, base UNII,
+        'LAPATINIB DITOSYLATE', 'LAPATINIB'}; foreign "lapatinib" collects the
+        base UNII and 'LAPATINIB'; the intersection is the match the old
+        single-key comparison missed. Returns (uniis:set, keyset:set)."""
+        keyset = keys(name)
+        uniis = set()
+        for k in keyset:
+            u = self.name2unii.get(k)
+            if u:
+                uniis.add(u)
+            b = self.moiety2unii.get(k)
+            if b:
+                uniis.add(b)
+        return uniis, keyset

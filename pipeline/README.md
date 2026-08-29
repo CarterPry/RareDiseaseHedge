@@ -9,10 +9,23 @@ transferable Priority Review Voucher for a repurposed molecule.
 ```
 LEFT  (foreign approvals)   EMA centralised · Health Canada DPD · Swissmedic · PMDA(partial)
 RIGHT (US exclusion set)    Drugs@FDA Products.txt  +  Orange Book products.txt
-JOIN                        FDA UNII, canonicalized to active-MOIETY UNII
-DIFF                        LEFT − RIGHT
+JOIN                        three layers, each measured against labeled cases:
+                              1. UNII overlap across EVERY key variant (salt, base,
+                                 spelling, INN-acid/USAN-ate) — moiety.py keys()
+                              2. string-key overlap as backstop
+                              3. GSRS relationship graph, 2 hops (prodrug / salt-parent /
+                                 active-moiety; counterion edges are walls) — gsrs.py
+DIFF                        LEFT − RIGHT, three-state: in_us / candidate / REVIEW
 FILTER                      drop biologics/vaccines; split named-drug vs excipient noise
 ```
+
+**The matcher is measured, not asserted.** `python3 pipeline/test_accuracy.py`
+replays labeled known-answer drugs through the string layer (offline, seconds);
+`--real` replays them through the exact production path against the real data
+files. The hand-listed matcher this replaced silently passed 12/19 labeled
+US-approved drugs (lapatinib, sunitinib, ibandronic acid, isavuconazole, ...);
+the current one catches 19/19 with 19/19 true candidates retained. Run it
+before and after any matcher change.
 
 ## Run it
 
@@ -101,20 +114,35 @@ dominated by vaccines and complex biologics, which are not repurposing targets.
 ## Known limitations (also printed in every run's report)
 
 1. **US exclusion set is NDA-based** — no OTC-monograph / pre-1938 / DESI drugs,
-   so a monograph-only moiety (e.g. aspirin) can appear as a false candidate.
-   This intersects the *Sun Pharma* A2 population, so treat as "investigate".
-2. **Prodrugs still leak** — an active moiety US-approved under a different
-   parent (isavuconazole vs US isavuconazonium) needs the GSRS active-moiety
-   graph, not implemented.
+   so a monograph-only moiety (e.g. aspirin, sunscreen filters) can appear as a
+   false candidate. This intersects the *Sun Pharma* A2 population, so treat as
+   "investigate".
+2. **Prodrug/conjugate exclusion runs via the live GSRS graph** (`gsrs.py`,
+   cached in `data/cache/gsrs.json`) and catches the isavuconazole class, the
+   edotreotide radiolabel class, and synonym islands (methylene blue). It is
+   only as complete as GSRS's edges — a missing edge is a missing exclusion, so
+   prodrug-looking candidate names still deserve a manual glance. If GSRS is
+   unreachable for a row, that row lands in `funnelA_review.csv`, never in the
+   candidate list.
 3. **EMA is centralised-only**; nationally-authorised EU drugs are absent.
 4. **Japan is under-covered** — only PMDA FY2025 loads and katakana names mostly
    fail to resolve without a transliteration layer. This is the highest-yield
    source, so the JP→UNII transliteration layer is the top next build.
 5. This diff does **not** apply the § 360ff(a)(3) rare-pediatric gate, freedom
-   to operate, or the orphan-exclusivity conflict check. It produces the
-   screening list those downstream filters consume.
+   to operate, or the orphan-exclusivity conflict check. `eligibility.py` walks
+   all ten statutory criteria per candidate and labels which a machine settled,
+   which a dataset could settle, and which need a human — it never returns
+   "eligible", only "nothing has ruled it out yet".
 
 ## Files
-- `unii.py` — UNII index, normalization, salt→moiety canonicalization
+- `moiety.py` — hardened string layer: generated salt vocabulary (multiplier ×
+  counterion × spelling), INN-acid/USAN-ate bridge, ester-prodrug suffixes,
+  key-SET matching, counterion walls; plus the standalone `StringExclusionSet`
+- `unii.py` — UNII index; `collect()` gathers every UNII + key variant a name
+  can resolve to (membership is tested on the full set, both sides)
+- `gsrs.py` — live FDA GSRS relationship client (prodrug / salt-parent /
+  active-moiety edges, two hops, counterion-walled), disk-cached
 - `sources.py` — loaders for each regulator + the US exclusion set
-- `rdh_diff.py` — the pipeline entry point
+- `rdh_diff.py` — the pipeline entry point (three-state verdicts)
+- `eligibility.py` — the ten § 360ff criteria, labeled by decidability
+- `test_accuracy.py` — labeled known-answer harness (offline + `--real`)

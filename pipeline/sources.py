@@ -21,10 +21,13 @@ from unii import UniiIndex, split_ingredients, moiety_key
 # --------------------------------------------------------------- US exclusion
 def load_us_exclusion(idx: UniiIndex, raw: str):
     """Union of Drugs@FDA Products.txt ActiveIngredient and Orange Book Ingredient,
-    canonicalized to MOIETY UNIIs (plus moiety-name keys as a backstop). This is
-    the set a foreign moiety must be ABSENT from to count as never-approved-in-US.
-    Using moiety UNIIs — not raw UNIIs — is what makes salt-vs-base and INN-vs-USAN
-    differences collapse correctly (see UniiIndex.moiety_unii)."""
+    canonicalized to ALL resolvable UNIIs plus ALL string key variants (see
+    UniiIndex.collect). This is the set a foreign moiety must be ABSENT from to
+    count as never-approved-in-US. Collecting every variant — salt UNII, base
+    UNII, stripped key, canonicalised-counterion key, acid/-ate stem — on BOTH
+    sides is what makes salt-vs-base, spelling-variant and INN-vs-USAN
+    differences collapse correctly. The single-canonical-key version of this
+    measured 12/19 silent misses on labeled US-approved drugs (test_accuracy.py)."""
     us_moiety_uniis: set[str] = set()
     us_moieties: set[str] = set()
     n_ingredients = 0
@@ -33,13 +36,12 @@ def load_us_exclusion(idx: UniiIndex, raw: str):
     def ingest(ing):
         nonlocal n_ingredients, unmatched
         n_ingredients += 1
-        cu, mk, tier = idx.moiety_unii(ing)
-        if cu:
-            us_moiety_uniis.add(cu)
+        uniis, keyset = idx.collect(ing)
+        if uniis:
+            us_moiety_uniis.update(uniis)
         else:
             unmatched += 1
-        if mk:
-            us_moieties.add(mk)
+        us_moieties.update(keyset)
 
     # Drugs@FDA — tab-delimited, ActiveIngredient is column index 6
     with zipfile.ZipFile(os.path.join(raw, "drugsatfda.zip")) as z:

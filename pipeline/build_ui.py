@@ -442,18 +442,23 @@ function evText(c){
   return `${pm} rare/paed papers · ${ct} trials`;
 }
 
-/* caveat flags derived client-side (v2 interim; pipeline may populate later) */
+/* caveat flags: pipeline-emitted (c.flags, from the GSRS/stereo layer) first,
+   then the client-side heuristics kept as a backstop */
 function caveats(c){
   const out=[];
+  (c.flags||[]).forEach(f=>out.push(f));
   if(['moiety-base','salt-stripped','moiety'].includes(c.tier)) out.push('Salt/base match only — verify active moiety against Orange Book.');
-  if(/onium|sulfate ester|prodrug/i.test(c.name)) out.push('Possible prodrug — active moiety may already be US-approved under a different parent.');
+  if(!(c.flags&&c.flags.length) && /onium|sulfate ester|prodrug/i.test(c.name)) out.push('Possible prodrug — active moiety may already be US-approved under a different parent.');
   return out;
 }
 
 /* ---------- header / honesty / cards / funnel ---------- */
 document.getElementById('gen').textContent='generated '+DATA.generated;
 document.getElementById('honesty').innerHTML=
-  `<b>${DATA.counts.named} candidates</b> in screening shortlist · <b>~7 estimated actionable</b> after orphan-designation, pediatric-indication fit, FTO, API sourcing and timeline filters · FDA PRV sunset <b>2029-09-30</b> · window remaining <b>~37 months</b>`;
+  `<b>${DATA.counts.named} candidates</b> in screening shortlist`
+  +((DATA.counts.review|0)?` · <b>${DATA.counts.review} rows need human review</b> (funnelA_review.csv)`:``)
+  +((DATA.funnel.in_us_gsrs|0)?` · ${DATA.funnel.in_us_gsrs} excluded via FDA GSRS prodrug/conjugate graph`:``)
+  +` · <b>~7 estimated actionable</b> after orphan-designation, pediatric-indication fit, FTO, API sourcing and timeline filters · FDA PRV sunset <b>2029-09-30</b> · window remaining <b>~37 months</b>`;
 const C=DATA.counts, F=DATA.funnel;
 [['','.',''],].slice(0,0);
 const cards=[
