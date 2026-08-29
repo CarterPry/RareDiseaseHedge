@@ -230,7 +230,7 @@ footer{color:var(--ink-tertiary);font-size:12px;text-align:center;margin:40px 0 
   <!-- PLAIN-ENGLISH INTRO -->
   <div class="intro">
     <h1>What am I looking at?</h1>
-    <p>These are medicines already approved in <b>Europe, Canada, or Switzerland</b> that have <b>never been approved in the United States</b>. That gap is the opportunity: if you get one of them approved in the US to treat a <b>rare childhood disease</b>, the FDA awards a <b class="money">Priority Review Voucher</b> — a transferable prize that has sold for <b class="money">$100&nbsp;million+</b>.</p>
+    <p>These are medicines already approved in <b>Europe, Canada, or Switzerland</b> that have <b>never been approved in the United States</b>. That gap is the opportunity: if you get one of them approved in the US to treat a <b>rare childhood disease</b>, the FDA awards a <b class="money">Priority Review Voucher</b> — a freely transferable prize that <b class="money">recently sold for ~$100–160&nbsp;million</b> (record $350M in 2015).</p>
     <p>Think of this as a <b>starting shortlist</b>, not a list of ready businesses. Every drug here clears the first gate (novel to the US), but each still needs a few human checks before it's real — shown on every card and explained when you click one.</p>
     <div class="steps">
       <div class="step"><div class="k">THE GAP</div><div class="t">Approved abroad, never in the US → clears the first eligibility gate.</div></div>
@@ -238,7 +238,7 @@ footer{color:var(--ink-tertiary);font-size:12px;text-align:center;margin:40px 0 
       <div class="step"><div class="k">THE CHECKS</div><div class="t">Confirm US patents / rights are clear and the active ingredient is sourceable.</div></div>
       <div class="step"><div class="k">THE PRIZE</div><div class="t">Get it approved → a voucher you can sell to any drugmaker.</div></div>
     </div>
-    <p class="deadline" style="margin-top:14px">⏳ <b>The program ends 30 September 2029.</b> A drug has to be <i>approved</i> by then, so a realistic program needs to start soon. <span id="sunset-remain"></span></p>
+    <p class="deadline" style="margin-top:14px">⏳ <b>The program ends 30 September 2029.</b> The voucher is awarded on <i>approval</i>, so a drug must be approved by that date — a realistic program needs to start soon. (The program briefly lapsed in Dec 2024 and was reauthorized in Feb 2026; new designations are open again.) <span id="sunset-remain"></span></p>
   </div>
 
   <!-- SEARCH + FILTER -->
@@ -307,7 +307,7 @@ const TIPS={
  off_prot:"Approved abroad recently — very likely still under patent protection.",
  off_unk:"No overseas approval date on record, so patent age can't be estimated here.",
  research:"Left: research papers mentioning this drug in a rare/pediatric context. Right: registered clinical trials. A rough read on how much is already known and whether others are working on it.",
- novel:"This drug's active ingredient has no record of US approval, so it clears the program's first gate: it must be 'novel' to the US.",
+ novel:"No US human-drug (NDA/BLA) approval on record for this active moiety, so it clears the program's first gate — 'novel' to the US. Veterinary and OTC-monograph products are screened out and do NOT disqualify. One residual gap: drugs approved and then withdrawn before FDA's electronic records (pre-~1982) can still slip through — verify old candidates by hand.",
  fedreg:"Live count of Priority Review Voucher documents in the Federal Register — the program's official public ledger.",
  edgar:"Live count of recent SEC filings mentioning 'rare pediatric disease designation'. The FDA publishes no list of who holds these, so SEC filings are the main way to spot competitors.",
 };
@@ -533,7 +533,7 @@ function openDrawer(c){
   todo.appendChild(checkline('⚠️','chk-w','Is it developable for a rare pediatric disease? (the voucher requires this)'));
   todo.appendChild(checkline('⚠️','chk-w','Are US patents / rights clear? (freedom-to-operate)'));
   todo.appendChild(checkline('⚠️','chk-w','Can the active ingredient be sourced at quality?'));
-  todo.appendChild(checkline('⚠️','chk-w','Any existing US orphan exclusivity? (FDA blocks automation — check by hand)'));
+  todo.appendChild(checkline('⚠️','chk-w','Any existing US orphan designation/exclusivity? (searchable in FDA’s public orphan database)'));
   body.appendChild(todo);
 
   // evidence

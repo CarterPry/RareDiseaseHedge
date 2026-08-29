@@ -30,6 +30,8 @@ SOURCES = {
     "orangebook":("https://www.fda.gov/media/76860/download", "eob.zip", "zip"),
     "canada":    ("https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/ingred_ap.zip",
                   "ingred_ap.zip", "zip"),
+    "canada_drug":("https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/drug_ap.zip",
+                  "drug_ap.zip", "zip"),
     "unii":      ("https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip", "UNIIs.zip", "zip"),
     "unii_data": ("https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip", "UNII_Data.zip", "zip"),
     "swissmedic":("https://www.swissmedic.ch/dam/swissmedic/de/dokumente/internetlisten/zugelassene_wirkstoffe_ham.xlsx.download.xlsx/Zugelassene_Wirkstoffe_HAM.xlsx",

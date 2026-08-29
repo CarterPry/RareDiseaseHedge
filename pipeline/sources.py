@@ -66,6 +66,17 @@ def load_us_exclusion(idx: UniiIndex, raw: str):
                 for ing in split_ingredients(row[0]):
                     ingest(ing)
 
+    # Manual supplement: moieties with a real US approval that the NDA-based bulk
+    # files omit — withdrawn-before-electronic-record and pre-1938/DESI drugs.
+    # Each is a verified fact, not a heuristic; kept small and cited pending a
+    # proper 21 CFR 216.24 / DESI feed (see README limitations #1). A withdrawn
+    # approval still disqualifies under s.529 (the moiety was once approved).
+    US_WITHDRAWN_SUPPLEMENT = [
+        "betahistine",   # Serc — FDA NDA approved 1966, withdrawn 1972 (DESI/efficacy)
+    ]
+    for ing in US_WITHDRAWN_SUPPLEMENT:
+        ingest(ing)
+
     return us_moiety_uniis, us_moieties, {"ingredient_rows": n_ingredients, "unmatched": unmatched}
 
 
@@ -109,14 +120,49 @@ def load_ema(raw: str):
 
 
 # --------------------------------------------------------------- Health Canada DPD
+def _canada_drug_meta(raw: str):
+    """DRUG_CODE -> (class, product_categorization) from drug_ap.txt.
+    class is Human / Veterinary / Disinfectant / Radiopharmaceutical;
+    product_categorization exposes OTC-monograph buckets ('CAT IV - ...',
+    'LS - ...'). Optional file: if absent, every row is treated as plain human."""
+    path = os.path.join(raw, "drug_ap.zip")
+    meta = {}
+    if not os.path.exists(path):
+        return meta
+    with zipfile.ZipFile(path) as z:
+        name = [n for n in z.namelist() if n.endswith(".txt")][0]
+        with z.open(name) as f:
+            for row in csv.reader(io.TextIOWrapper(f, "latin-1", errors="replace")):
+                if len(row) > 2:
+                    meta[row[0]] = (row[2].strip(), row[1].strip())
+    return meta
+
+
+def _is_otc_monograph(cat: str) -> bool:
+    """Canadian OTC-monograph product categories: Category IV monographs and
+    Labelling Standards (sunscreens, antiseptics, laxatives, OTC decongestants,
+    athlete's-foot treatments, ...). Not 505/351-type approvals — they pollute
+    the 'never US-approved' test and are not repurposing candidates."""
+    c = cat.upper()
+    return c.startswith("CAT ") or c.startswith("LS -") or c.startswith("LS-")
+
+
 def load_canada(raw: str):
-    """ingred_ap.txt (inside ingred_ap.zip): quoted CSV, ingredient name in col 3
-    (index 2). 'ap' = approved-products subset."""
+    """ingred_ap.txt (inside ingred_ap.zip): quoted CSV, DRUG_CODE in col 0,
+    ingredient name in col 2. 'ap' = approved-products subset.
+
+    Joined against the DPD drug table (drug_ap.zip) so we keep ONLY genuine human
+    prescription approvals: a substance is retained iff it has at least one
+    Human, non-OTC-monograph product row AND no OTC-monograph row at all. This
+    drops (a) veterinary/disinfectant/radiopharmaceutical products and (b) the
+    OTC-monograph noise (sunscreen filters, antiseptics, laxatives, decongestants)
+    that otherwise appear as false 'never US-approved' candidates. If the drug
+    table is missing, it degrades to the old behaviour (all rows kept)."""
     path = os.path.join(raw, "ingred_ap.zip")
     if not os.path.exists(path):
         return []
-    seen = set()
-    out = []
+    meta = _canada_drug_meta(raw)
+    contexts = {}   # substance -> list of (class, categorization)
     with zipfile.ZipFile(path) as z:
         name = [n for n in z.namelist() if n.endswith(".txt")][0]
         with z.open(name) as f:
@@ -125,11 +171,18 @@ def load_canada(raw: str):
                 if len(row) < 3:
                     continue
                 ing = row[2].strip()
-                if not ing or ing in seen:
+                if not ing:
                     continue
-                seen.add(ing)
-                out.append({"substance": ing, "source": "Health Canada",
-                            "status": "approved", "orphan": False, "raw": ing})
+                cls, cat = meta.get(row[0], ("Human", "")) if meta else ("Human", "")
+                contexts.setdefault(ing, []).append((cls, cat))
+    out = []
+    for ing, ctx in contexts.items():
+        has_human_rx = any(cls == "Human" and not _is_otc_monograph(cat) for cls, cat in ctx)
+        has_otc = any(_is_otc_monograph(cat) for _, cat in ctx)
+        if not (has_human_rx and not has_otc):
+            continue
+        out.append({"substance": ing, "source": "Health Canada",
+                    "status": "approved", "orphan": False, "raw": ing})
     return out
 
 

@@ -2,26 +2,26 @@
  "generated": "2026-08-29",
  "snapshot": "UNII 26 Feb 2026 \u00b7 Drugs@FDA 4 Aug 2026 \u00b7 Orange Book Jul 2026 \u00b7 EMA 5 Aug 2026 \u00b7 GSRS live sweep",
  "funnel": {
-  "foreign_rows": 6344,
-  "resolved": 2694,
-  "unmatched": 3650,
-  "biologic_or_mixture": 223,
-  "in_us": 1205,
-  "in_us_string": 1168,
-  "in_us_gsrs": 37,
+  "foreign_rows": 6115,
+  "resolved": 2510,
+  "unmatched": 3605,
+  "biologic_or_mixture": 203,
+  "in_us": 1114,
+  "in_us_string": 1087,
+  "in_us_gsrs": 27,
   "review": 0,
-  "candidate_small_mol": 149,
+  "candidate_small_mol": 94,
   "needs_translit_unmatched": 139,
-  "named_drug": 91,
-  "unnamed": 58
+  "named_drug": 67,
+  "unnamed": 27
  },
- "us_ingredient_rows": 117092,
+ "us_ingredient_rows": 117093,
  "counts": {
-  "named": 91,
-  "unnamed": 58,
+  "named": 67,
+  "unnamed": 27,
   "review": 0,
   "orphan": 13,
-  "inn": 88,
+  "inn": 64,
   "multi_regulator": 0
  },
  "candidates": [
@@ -388,30 +388,6 @@
    "us_orphan": "unknown"
   },
   {
-   "unii": "2U0X0JA2NB",
-   "name": "ALTRENOGEST",
-   "moiety": "ALTRENOGEST",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "ALTRENOGEST"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 0,
-   "us_orphan": "unknown"
-  },
-  {
    "unii": "05W904P57F",
    "name": "AMYLMETACRESOL",
    "moiety": "AMYLMETACRESOL",
@@ -532,54 +508,6 @@
    "us_orphan": "unknown"
   },
   {
-   "unii": "PWZ1720CBH",
-   "name": "BEMOTRIZINOL",
-   "moiety": "BEMOTRIZINOL",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "BEMOTRIZINOL"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 7,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "X32KK4201D",
-   "name": "BETAHISTINE",
-   "moiety": "BETAHISTINE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "BETAHISTINE HYDROCHLORIDE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 10,
-   "trials": 31,
-   "us_orphan": "unknown"
-  },
-  {
    "unii": "PA1123N395",
    "name": "BILASTINE",
    "moiety": "BILASTINE",
@@ -601,30 +529,6 @@
    "flags": [],
    "pubmed": 12,
    "trials": 28,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "8NT850T0YS",
-   "name": "BISOCTRIZOLE",
-   "moiety": "BISOCTRIZOLE",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "BISOCTRIZOLE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 1,
    "us_orphan": "unknown"
   },
   {
@@ -700,30 +604,6 @@
    "us_orphan": "unknown"
   },
   {
-   "unii": "0MQ44VUN84",
-   "name": "CAPROMORELIN",
-   "moiety": "CAPROMORELIN",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "CAPROMORELIN TARTRATE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 0,
-   "us_orphan": "unknown"
-  },
-  {
    "unii": "P7725I9V3Z",
    "name": "CARISBAMATE",
    "moiety": "CARISBAMATE",
@@ -796,78 +676,6 @@
    "us_orphan": "unknown"
   },
   {
-   "unii": "0F32U78V2Q",
-   "name": "CHLOROXYLENOL",
-   "moiety": "CHLOROXYLENOL",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "CHLOROXYLENOL"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 9,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "45I14D8O27",
-   "name": "CHOLINE CHLORIDE",
-   "moiety": "",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "direct",
-   "examples": [
-    "CHOLINE CHLORIDE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 3,
-   "trials": 374,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "7560BB0BO3",
-   "name": "CLOROPHENE",
-   "moiety": "CLOROPHENE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "CLOROPHENE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 0,
-   "us_orphan": "unknown"
-  },
-  {
    "unii": "8OOT6M1PC7",
    "name": "DELAMANID",
    "moiety": "DELAMANID",
@@ -892,30 +700,6 @@
    "us_orphan": "unknown"
   },
   {
-   "unii": "VX29JB5XWV",
-   "name": "DERACOXIB",
-   "moiety": "DERACOXIB",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "DERACOXIB"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 0,
-   "us_orphan": "unknown"
-  },
-  {
    "unii": "R6D2UI4FLS",
    "name": "ENCLOMIPHENE",
    "moiety": "ENCLOMIFENE",
@@ -937,54 +721,6 @@
    "flags": [],
    "pubmed": 0,
    "trials": 258,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "3DX3XEK1BN",
-   "name": "ENROFLOXACIN",
-   "moiety": "ENROFLOXACIN",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "ENROFLOXACIN"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 6,
-   "trials": 1,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "9YQ9DI1W42",
-   "name": "ENSULIZOLE",
-   "moiety": "ENSULIZOLE",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "ENSULIZOLE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 1,
    "us_orphan": "unknown"
   },
   {
@@ -1033,54 +769,6 @@
    "flags": [],
    "pubmed": 11,
    "trials": 66,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "Y6V2W4S4WT",
-   "name": "FIROCOXIB",
-   "moiety": "FIROCOXIB",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "FIROCOXIB"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 0,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "WSH8393RM5",
-   "name": "FLURALANER",
-   "moiety": "FLURALANER",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "FLURALANER"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 1,
-   "trials": 0,
    "us_orphan": "unknown"
   },
   {
@@ -1153,54 +841,6 @@
    "flags": [],
    "pubmed": 8,
    "trials": 85,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "T3C89M417N",
-   "name": "GLUTARAL",
-   "moiety": "GLUTARAL",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "GLUTARAL"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 41,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "V06SV4M95S",
-   "name": "HOMOSALATE",
-   "moiety": "HOMOSALATE",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "HOMOSALATE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 3,
    "us_orphan": "unknown"
   },
   {
@@ -1300,30 +940,6 @@
    "us_orphan": "unknown"
   },
   {
-   "unii": "4XE2T9H4DH",
-   "name": "MAROPITANT",
-   "moiety": "MAROPITANT",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "MAROPITANT"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 0,
-   "us_orphan": "unknown"
-  },
-  {
    "unii": "A2I8C7HI9T",
    "name": "METHYLPARABEN",
    "moiety": "E 218",
@@ -1417,30 +1033,6 @@
    "flags": [],
    "pubmed": 0,
    "trials": 20,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "4X49Y0596W",
-   "name": "OCTISALATE",
-   "moiety": "OCTISALATE",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "OCTISALATE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 2,
    "us_orphan": "unknown"
   },
   {
@@ -1540,30 +1132,6 @@
    "us_orphan": "unknown"
   },
   {
-   "unii": "34AP3BBP9T",
-   "name": "PIMOBENDAN",
-   "moiety": "PIMOBENDAN",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "PIMOBENDAN"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 15,
-   "trials": 0,
-   "us_orphan": "unknown"
-  },
-  {
    "unii": "F5SXN2KNMR",
    "name": "PIXANTRONE",
    "moiety": "PIXANTRONE",
@@ -1609,32 +1177,6 @@
    "flags": [],
    "pubmed": 15,
    "trials": 17,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "57370OZ3P1",
-   "name": "RACTOPAMINE",
-   "moiety": "RACTOPAMINE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "RACTOPAMINE HYDROCHLORIDE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [
-    "STEREO_NAME: name carries an enantiomer/racemate marker; check the counterpart's US status by hand"
-   ],
-   "pubmed": 0,
-   "trials": 0,
    "us_orphan": "unknown"
   },
   {
@@ -1806,30 +1348,6 @@
    "us_orphan": "unknown"
   },
   {
-   "unii": "15XQ8043FN",
-   "name": "SULFAGUANIDINE",
-   "moiety": "SULFAGUANIDINE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "SULFAGUANIDINE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 1,
-   "trials": 0,
-   "us_orphan": "unknown"
-  },
-  {
    "unii": "B2K5L1L8S9",
    "name": "SURUFATINIB",
    "moiety": "SURUFATINIB",
@@ -1926,30 +1444,6 @@
    "us_orphan": "unknown"
   },
   {
-   "unii": "E38WZ4U54R",
-   "name": "TIAMULIN",
-   "moiety": "TIAMULIN",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "TIAMULIN FUMARATE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 0,
-   "us_orphan": "unknown"
-  },
-  {
    "unii": "8CZ82ZYY9X",
    "name": "TOLEBRUTINIB",
    "moiety": "TOLEBRUTINIB",
@@ -1971,54 +1465,6 @@
    "flags": [],
    "pubmed": 0,
    "trials": 12,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "06KB629TKV",
-   "name": "TOLNAFTATE",
-   "moiety": "TOLNAFTATE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "TOLNAFTATE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 1,
-   "trials": 34,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "QVZ3IAR3JS",
-   "name": "TOLTRAZURIL",
-   "moiety": "TOLTRAZURIL",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "TOLTRAZURIL"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 2,
-   "trials": 1,
    "us_orphan": "unknown"
   },
   {
@@ -2142,30 +1588,6 @@
    "us_orphan": "unknown"
   },
   {
-   "unii": "WPY40FTH8K",
-   "name": "XYLOMETAZOLINE",
-   "moiety": "XYLOMETAZOLINE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "XYLOMETAZOLINE HYDROCHLORIDE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 10,
-   "trials": 37,
-   "us_orphan": "unknown"
-  },
-  {
    "unii": "03A5ORL08Q",
    "name": "ZOPICLONE",
    "moiety": "ZOPICLONE",
@@ -2237,50 +1659,6 @@
    "flags": []
   },
   {
-   "unii": "3J50XA376E",
-   "name": "THYMOL",
-   "moiety": "THYMOL",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada",
-    "Swissmedic"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "THYMOL",
-    "thymolum"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "D343Z75HT8",
-   "name": "2-PHENYLPHENOL",
-   "moiety": "O PHENYLPHENOL",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "O-PHENYLPHENOL"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
    "unii": "R5Y8O51589",
    "name": "ANECORTAVE",
    "moiety": "ANECORTAVE",
@@ -2296,27 +1674,6 @@
     "anecortave acetate"
    ],
    "area": "Wet Macular Degeneration",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "1VU15B70BP",
-   "name": "BENZETHONIUM",
-   "moiety": "BENZETHONIUM",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "BENZETHONIUM CHLORIDE"
-   ],
-   "area": "",
    "atc": "",
    "indication": "",
    "approved": "",
@@ -2386,27 +1743,6 @@
    "flags": []
   },
   {
-   "unii": "9B1J4V995Q",
-   "name": "CARVACROL",
-   "moiety": "CARVACROL",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "CARVACROL"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
    "unii": "CUB7JI0JV3",
    "name": "CETYLPYRIDINIUM",
    "moiety": "CETYLPYRIDINIUM",
@@ -2449,27 +1785,6 @@
    "flags": []
   },
   {
-   "unii": "8061YMS4RM",
-   "name": "CHLORINE DIOXIDE",
-   "moiety": "CHLORINE DIOXIDE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "CHLORINE DIOXIDE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
    "unii": "0R0008Q3JB",
    "name": "CHROMIUM",
    "moiety": "CHROMIUM",
@@ -2483,48 +1798,6 @@
    "tier": "exact-moiety",
    "examples": [
     "chromium"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "3G0H8C9362",
-   "name": "COBALT",
-   "moiety": "COBALT",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "COBALT SULFATE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "9J2IBN2H70",
-   "name": "COPPER NAPHTHENATE",
-   "moiety": "COPPER NAPHTHENATE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "COPPER NAPHTHENATE"
    ],
    "area": "",
    "atc": "",
@@ -2575,111 +1848,6 @@
    "flags": []
   },
   {
-   "unii": "0L0ZW34692",
-   "name": "DIDECYLDIMONIUM ACETATE",
-   "moiety": "DIDECYL DIMETHYL",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "DIDECYL DIMETHYL AMMONIUM CHLORIDE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "0X0RL40Y6H",
-   "name": "DIOCTYLDIMONIUM CHLORIDE",
-   "moiety": "DIOCTYL DIMETHYL",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "DIOCTYL DIMETHYL AMMONIUM CHLORIDE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "6429L0L52Y",
-   "name": "DIPYRONE",
-   "moiety": "DIPYRONE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "DIPYRONE MONOHYDRATE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "M7P27195AG",
-   "name": "DOCUSATE",
-   "moiety": "DOCUSATE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "DOCUSATE SODIUM"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "HC22845I1X",
-   "name": "DROMETRIZOLE TRISILOXANE",
-   "moiety": "DROMETRIZOLE TRISILOXANE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "DROMETRIZOLE TRISILOXANE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
    "unii": "FC72KVT52F",
    "name": "ETHYLENE GLYCOL",
    "moiety": "GLYCOL",
@@ -2722,27 +1890,6 @@
    "flags": []
   },
   {
-   "unii": "1HG84L3525",
-   "name": "FORMALDEHYDE",
-   "moiety": "FORMALDEHYDE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "FORMALDEHYDE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
    "unii": "6JKA7MAH9C",
    "name": "GUAIACOL",
    "moiety": "GUAIACOL",
@@ -2756,90 +1903,6 @@
    "tier": "moiety-base",
    "examples": [
     "GUAIACOL CARBONATE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "QTT17582CB",
-   "name": "HYDROCHLORIC ACID",
-   "moiety": "HYDROCHLORIC",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "HYDROCHLORIC ACID"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "712K4CDC10",
-   "name": "HYPOCHLOROUS ACID",
-   "moiety": "HYPOCHLOROUS",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "HYPOCHLOROUS ACID"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "24H4NWX5CO",
-   "name": "KAOLIN",
-   "moiety": "KAOLIN",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "KAOLIN"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "F9S9FFU82N",
-   "name": "LACTIC ACID, L-",
-   "moiety": "L LACTIC",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "L-LACTIC ACID"
    ],
    "area": "",
    "atc": "",
@@ -2932,48 +1995,6 @@
    "flags": []
   },
   {
-   "unii": "040ZB27861",
-   "name": "MONOPOTASSIUM PEROXYMONOSULFATE",
-   "moiety": "POTASSIUM PEROXYMONOSULFATE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "POTASSIUM PEROXYMONOSULFATE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "Q3NHK36BKL",
-   "name": "MYRISTALKONIUM SACCHARINATE",
-   "moiety": "ALKYL DIMETHYL BENZYL AMMONIUM SACCHARINATE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "ALKYL DIMETHYL BENZYL AMMONIUM SACCHARINATE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
    "unii": "E775ICF82G",
    "name": "OCTANOIC ACID 1-C-13",
    "moiety": "1 13C CAPRYLIC",
@@ -2995,27 +2016,6 @@
    "flags": []
   },
   {
-   "unii": "6NP9LYK846",
-   "name": "P-TERT-PENTYLPHENOL",
-   "moiety": "P TERT PENTYLPHENOL",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "P-TERT-PENTYLPHENOL"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
    "unii": "UA8U0KJM72",
    "name": "PAMABROM",
    "moiety": "PAMABROM",
@@ -3029,27 +2029,6 @@
    "tier": "exact-moiety",
    "examples": [
     "PAMABROM"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "I6KPI2E1HD",
-   "name": "PERACETIC ACID",
-   "moiety": "PERACETIC",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "PERACETIC ACID"
    ],
    "area": "",
    "atc": "",
@@ -3079,27 +2058,6 @@
    "flags": []
   },
   {
-   "unii": "602HN5L69H",
-   "name": "PROPYLENE GLYCOL, (R)-",
-   "moiety": "PROPYLENE GLYCOL",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "PROPYLENE GLYCOL"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
    "unii": "F1CB00L2RH",
    "name": "PSMA-1007 F-18",
    "moiety": "18F PSMA 1007",
@@ -3119,71 +2077,6 @@
    "indication": "",
    "approved": "",
    "flags": []
-  },
-  {
-   "unii": "RG20W8WYLS",
-   "name": "PYRIDOXINE PHOSPHATE",
-   "moiety": "VITAMIN B6 PYRIDOXINE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "VITAMIN B6 (PYRIDOXINE HYDROCHLORIDE)"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "0T2NG1539G",
-   "name": "QUATERNIUM-24",
-   "moiety": "OCTYL DECYL DIMETHYL",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "OCTYL DECYL DIMETHYL AMMONIUM CHLORIDE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "73JWT2K6T3",
-   "name": "RACEMETHIONINE",
-   "moiety": "DL METHIONINE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "DL-METHIONINE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [
-    "STEREO_NAME: name carries an enantiomer/racemate marker; check the counterpart's US status by hand"
-   ]
   },
   {
    "unii": "H6241UJ22B",
@@ -3228,145 +2121,19 @@
    "flags": []
   },
   {
-   "unii": "G538EBV4VF",
-   "name": "SODIUM CHLORITE",
-   "moiety": "SODIUM CHLORITE",
+   "unii": "3J50XA376E",
+   "name": "THYMOL",
+   "moiety": "THYMOLUM",
    "inn": false,
    "usan": false,
    "type": "chemical",
    "sources": [
-    "Health Canada"
+    "Swissmedic"
    ],
    "orphan": false,
    "tier": "exact-moiety",
    "examples": [
-    "SODIUM CHLORITE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "55X04QC32I",
-   "name": "SODIUM HYDROXIDE",
-   "moiety": "SODIUM HYDROXIDE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "SODIUM HYDROXIDE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "DY38VHM5OD",
-   "name": "SODIUM HYPOCHLORITE",
-   "moiety": "SODIUM HYPOCHLORITE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "SODIUM HYPOCHLORITE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "8TU1537O43",
-   "name": "SODIUM HYPOPHOSPHITE",
-   "moiety": "SODIUM HYPOPHOSPHITE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "SODIUM HYPOPHOSPHITE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "Z7G82NV92P",
-   "name": "SODIUM PERCARBONATE",
-   "moiety": "SODIUM PERCARBONATE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "SODIUM PERCARBONATE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "3E794G4ZRB",
-   "name": "TRIS(HYDROXYMETHYL)NITROMETHANE",
-   "moiety": "TRIS HYDROXYMETHYL NITROMETHANE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "TRIS HYDROXYMETHYL NITROMETHANE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "07M9U9U0LK",
-   "name": "TROCLOSENE SODIUM",
-   "moiety": "SODIUM DICHLOROISOCYANURATE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "SODIUM DICHLOROISOCYANURATE"
+    "thymolum"
    ],
    "area": "",
    "atc": "",
@@ -3530,6 +2297,6 @@
     }
    ]
   },
-  "as_of": "2026-08-29 00:34"
+  "as_of": "2026-08-29 13:38"
  }
 }

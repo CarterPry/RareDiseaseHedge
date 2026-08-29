@@ -1,59 +1,28 @@
 unii,preferred_name,moiety_key,is_INN,is_USAN,substance_type,foreign_sources,n_sources,orphan_flag,therapeutic_area,atc,indication,approved_abroad,match_tier,flags,example_source_names
 40UB1H6Q6T,ETARFOLATIDE,ETARFOLATIDE,N,N,chemical,EMA,1,Y,Ovarian Neoplasms;Radionuclide Imaging,V09,Indicated for single photon emission computed tomography (SPECT) imaging,,exact-moiety,,Etarfolatide
-3J50XA376E,THYMOL,THYMOL,N,N,chemical,Health Canada|Swissmedic,2,N,,,,,exact-moiety,,THYMOL ; thymolum
-D343Z75HT8,2-PHENYLPHENOL,O PHENYLPHENOL,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,O-PHENYLPHENOL
 R5Y8O51589,ANECORTAVE,ANECORTAVE,N,N,chemical,EMA,1,N,Wet Macular Degeneration,,,,moiety-base,,anecortave acetate
-1VU15B70BP,BENZETHONIUM,BENZETHONIUM,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,BENZETHONIUM CHLORIDE
 0GH9JX37C8,BUTYLSCOPOLAMINE BROMIDE,HYOSCINE BUTYLBROMIDE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,HYOSCINE BUTYLBROMIDE
 N20HL7Q941,CAMPHOR (NATURAL),DEXTROCAMPHORA,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,dextrocamphora
 213N3S8275,"CAMPHOR, (-)-",CAMPHOR,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,CAMPHOR
-9B1J4V995Q,CARVACROL,CARVACROL,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,CARVACROL
 CUB7JI0JV3,CETYLPYRIDINIUM,CETYLPYRIDINIUM,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,CETYLPYRIDINIUM CHLORIDE
 FLI06WS32H,CHLORAL,CHLORAL,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,CHLORAL HYDRATE
-8061YMS4RM,CHLORINE DIOXIDE,CHLORINE DIOXIDE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,CHLORINE DIOXIDE
 0R0008Q3JB,CHROMIUM,CHROMIUM,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,chromium
-3G0H8C9362,COBALT,COBALT,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,COBALT SULFATE
-9J2IBN2H70,COPPER NAPHTHENATE,COPPER NAPHTHENATE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,COPPER NAPHTHENATE
 N0KCY1368Z,CUPRIC ACETATE CU-64,COPPER 64CU,N,N,chemical,EMA,1,N,Radionuclide Imaging,Not yet assigned,"Cuprymina is a radiopharmaceutical precursor. It is not intended for direct use in patients. This medicinal product must be used only for the radiolabelling of carrier molecules, which have been specifically developed and authorised for radiolabelling with this radionuclide.",23/08/2012,moiety-base,,copper (64Cu) chloride
 1NKX3648J9,DICHLOROBENZYL ALCOHOL,DICHLOROBENZYL ALCOHOL,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,DICHLOROBENZYL ALCOHOL
-0L0ZW34692,DIDECYLDIMONIUM ACETATE,DIDECYL DIMETHYL,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,DIDECYL DIMETHYL AMMONIUM CHLORIDE
-0X0RL40Y6H,DIOCTYLDIMONIUM CHLORIDE,DIOCTYL DIMETHYL,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,DIOCTYL DIMETHYL AMMONIUM CHLORIDE
-6429L0L52Y,DIPYRONE,DIPYRONE,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,DIPYRONE MONOHYDRATE
-M7P27195AG,DOCUSATE,DOCUSATE,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,DOCUSATE SODIUM
-HC22845I1X,DROMETRIZOLE TRISILOXANE,DROMETRIZOLE TRISILOXANE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,DROMETRIZOLE TRISILOXANE
 FC72KVT52F,ETHYLENE GLYCOL,GLYCOL,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,GLYCOL SALICYLATE
 14255EXE39,ETHYLPARABEN,E 214,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,E 214
-1HG84L3525,FORMALDEHYDE,FORMALDEHYDE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,FORMALDEHYDE
 6JKA7MAH9C,GUAIACOL,GUAIACOL,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,GUAIACOL CARBONATE
-QTT17582CB,HYDROCHLORIC ACID,HYDROCHLORIC,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,HYDROCHLORIC ACID
-712K4CDC10,HYPOCHLOROUS ACID,HYPOCHLOROUS,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,HYPOCHLOROUS ACID
-24H4NWX5CO,KAOLIN,KAOLIN,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,KAOLIN
-F9S9FFU82N,"LACTIC ACID, L-",L LACTIC,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,L-LACTIC ACID
 1U477369SN,LUTETIUM CHLORIDE LU-177,LUTETIUM 177LU,N,N,chemical,EMA,1,N,Radionuclide Imaging,V10X,"Theralugand is a radiopharmaceutical precursor, and it is not intended for direct use in patients. It is to be used only for the radiolabelling of carrier molecules that have been specifically developed and authorised for radiolabelling with lutetium (177Lu) chloride.",22/11/2024,moiety-base,,lutetium (177Lu) chloride
 I38ZP9992A,MAGNESIUM,,N,N,chemical,Swissmedic,1,N,,,,,direct,,magnesium
 JL5DK93RCL,MELATONIN,MELATONIN,N,N,chemical,EMA,1,N,Sleep Initiation and Maintenance Disorders;Autistic Disorder,N05CH01,"Slenyto is indicated for:  treatment of insomnia in children and adolescents aged 2-18 years with Autism Spectrum Disorder (ASD), and / or neurogenetic disorders with aberrant diurnal melatonin secretion and /or nocturnal awakenings, where sleep hygiene measures have been insufficient. treatment of insomnia in children and adolescents aged 6-17 years with attention-deficit hyperactivity disorder (ADHD) where sleep hygiene measures have been insufficient.",20/09/2018,exact-moiety,,melatonin
 6634O61GOI,MOLYBDENUM MO-99,MOLYBDENUM 99 MO,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,molybdenum(99-Mo)
-040ZB27861,MONOPOTASSIUM PEROXYMONOSULFATE,POTASSIUM PEROXYMONOSULFATE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,POTASSIUM PEROXYMONOSULFATE
-Q3NHK36BKL,MYRISTALKONIUM SACCHARINATE,ALKYL DIMETHYL BENZYL AMMONIUM SACCHARINATE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,ALKYL DIMETHYL BENZYL AMMONIUM SACCHARINATE
 E775ICF82G,OCTANOIC ACID 1-C-13,1 13C CAPRYLIC,N,N,chemical,EMA,1,N,Gastric Emptying;Breath Tests,,,,moiety-base,,1-13C-caprylic acid
-6NP9LYK846,P-TERT-PENTYLPHENOL,P TERT PENTYLPHENOL,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,P-TERT-PENTYLPHENOL
 UA8U0KJM72,PAMABROM,PAMABROM,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,PAMABROM
-I6KPI2E1HD,PERACETIC ACID,PERACETIC,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,PERACETIC ACID
 339NCG44TV,PHENOL,PHENOL,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,PHENOL
-602HN5L69H,"PROPYLENE GLYCOL, (R)-",PROPYLENE GLYCOL,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,PROPYLENE GLYCOL
 F1CB00L2RH,PSMA-1007 F-18,18F PSMA 1007,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,(18F)-PSMA-1007
-RG20W8WYLS,PYRIDOXINE PHOSPHATE,VITAMIN B6 PYRIDOXINE,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,VITAMIN B6 (PYRIDOXINE HYDROCHLORIDE)
-0T2NG1539G,QUATERNIUM-24,OCTYL DECYL DIMETHYL,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,OCTYL DECYL DIMETHYL AMMONIUM CHLORIDE
-73JWT2K6T3,RACEMETHIONINE,DL METHIONINE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,STEREO_NAME: name carries an enantiomer/racemate marker; check the counterpart's US status by hand,DL-METHIONINE
 H6241UJ22B,SELENIUM,SELENIUM,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,selenium
 9NEZ333N27,SODIUM,NATRIUM,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,natrium
-G538EBV4VF,SODIUM CHLORITE,SODIUM CHLORITE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,SODIUM CHLORITE
-55X04QC32I,SODIUM HYDROXIDE,SODIUM HYDROXIDE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,SODIUM HYDROXIDE
-DY38VHM5OD,SODIUM HYPOCHLORITE,SODIUM HYPOCHLORITE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,SODIUM HYPOCHLORITE
-8TU1537O43,SODIUM HYPOPHOSPHITE,SODIUM HYPOPHOSPHITE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,SODIUM HYPOPHOSPHITE
-Z7G82NV92P,SODIUM PERCARBONATE,SODIUM PERCARBONATE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,SODIUM PERCARBONATE
-3E794G4ZRB,TRIS(HYDROXYMETHYL)NITROMETHANE,TRIS HYDROXYMETHYL NITROMETHANE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,TRIS HYDROXYMETHYL NITROMETHANE
-07M9U9U0LK,TROCLOSENE SODIUM,SODIUM DICHLOROISOCYANURATE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,SODIUM DICHLOROISOCYANURATE
+3J50XA376E,THYMOL,THYMOLUM,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,thymolum
 7NS97N9H1G,"TRYPTOPHAN, D-",TRYPTOPHAN,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,TRYPTOPHAN
 1K8M7UR6O1,YTTRIUM Y-90,YTTRIUM 90Y,N,N,chemical,EMA,1,N,Radionuclide Imaging,V09,"To be used only for the radiolabelling of carrier molecules, which have been specifically developed and authorised for radiolabelling with this radionuclide.Radiopharmaceutical precursor - Not intended for direct use in patients.",19/01/2006,moiety-base,,yttrium (90Y) chloride
 J41CSQ7QDS,ZINC,,N,N,chemical,EMA,1,N,Hepatolenticular Degeneration,A16AX05,Treatment of Wilson's disease.,12/10/2004,direct,,zinc

@@ -55,8 +55,10 @@ happens at the build step, not in the browser (keeps it offline-safe & shareable
   - **ClinicalTrials.gov v2** trial count (is anyone already developing it?)
   - **Federal Register** live PRV ledger + **SEC EDGAR** recent RPD-designation
     filers — the competitor early-warning channel (FDA publishes no RPD list)
-  - US orphan designation is deliberately **not** asserted — FDA OOPD blocks
-    automation, so it's surfaced as a manual-check, never a false "clear".
+  - US orphan designation is surfaced as a manual-check, never a false "clear".
+    (It *is* checkable — FDA OOPD's "Search Orphan Drug Designations and
+    Approvals" DB exports to Excel — wiring it in as an exclusion/flag source is
+    a good next build.)
 
 To refresh everything: `fetch.py` → `rdh_diff.py` → `enrich.py` → `build_ui.py`.
 
@@ -120,10 +122,19 @@ dominated by vaccines and complex biologics, which are not repurposing targets.
 
 ## Known limitations (also printed in every run's report)
 
-1. **US exclusion set is NDA-based** — no OTC-monograph / pre-1938 / DESI drugs,
-   so a monograph-only moiety (e.g. aspirin, sunscreen filters) can appear as a
-   false candidate. This intersects the *Sun Pharma* A2 population, so treat as
-   "investigate".
+1. **US exclusion set is NDA/BLA-based** — it does not yet include the US
+   OTC-monograph or DESI ingredient lists, so a US-OTC-only moiety could in
+   principle appear as a false candidate. This is now largely mitigated on the
+   *input* side: the Health Canada loader (`load_canada`) joins the DPD drug
+   table and keeps only genuine **human, non-OTC-monograph** approvals — it drops
+   veterinary/disinfectant/radiopharmaceutical products and Canadian Category-IV /
+   Labelling-Standard OTC products (sunscreen filters, antiseptics, laxatives,
+   OTC decongestants). That removed ~23 false candidates (measured). The residual
+   gap is **withdrawn / pre-1938 US drugs** absent from Drugs@FDA: one confirmed
+   case (betahistine/Serc) is carried in a small documented supplement in
+   `load_us_exclusion`; a proper 21 CFR 216.24 / DESI feed is the clean fix.
+   Adding the US OTC-monograph moiety set (openFDA `marketing_category`) as an
+   exclusion source would close this fully.
 2. **Prodrug/conjugate exclusion runs via the live GSRS graph** (`gsrs.py`,
    cached in `data/cache/gsrs.json`) and catches the isavuconazole class, the
    edotreotide radiolabel class, and synonym islands (methylene blue). It is
