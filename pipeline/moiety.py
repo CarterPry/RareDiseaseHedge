@@ -103,9 +103,12 @@ SIMPLE_COUNTERIONS = {
     "UNDECYLENATE", "HEXANOATE", "CAPROATE", "CYPIONATE", "PIVALATE",
     "ADIPATE", "ASPARTATE", "GLUTAMATE", "CARBONATE", "BICARBONATE",
     "BORATE", "TANNATE", "THIOCYANATE", "TRIFLUOROACETATE", "FORMATE",
-    # ester-prodrug suffixes — the statute reaches "any ester or salt"
+    # ester-prodrug suffixes — the statute reaches "any ester or salt".
+    # ETEXILATE was missing and cost a measured false positive: EU/Article-57
+    # "dabigatran" did not meet US "DABIGATRAN ETEXILATE MESYLATE" (Pradaxa),
+    # so a US-approved active moiety read as never-approved (found 2026-08-29).
     "AXETIL", "PROXETIL", "PIVOXIL", "DIPIVOXIL", "MEDOXOMIL", "CILEXETIL",
-    "ETABONATE", "FOSAMIL", "MOFETIL",
+    "ETABONATE", "FOSAMIL", "MOFETIL", "ETEXILATE",
     # hydrate / solvate / state descriptors
     "HYDRATE", "SOLVATE", "ETHANOLATE", "METHANOLATE", "ANHYDROUS",
     # bare qualifiers seen trailing real names
@@ -185,6 +188,56 @@ def is_counterion_substance(name: str) -> bool:
 # decided. (Single letters D/L are excluded — "VITAMIN D" is not a stereo call.)
 STEREO_PREFIXES = ["LEVO", "DEXTRO", "RAC"]
 STEREO_MARKERS = {"DL", "RS", "SR", "RACEMIC", "RACEMATE"}
+
+# WHO INN stereochemical and geometric-isomer prefixes, fused into the stem
+# rather than written as a "(R)-"/"(±)-" marker. Used to find a US-approved
+# stereoisomer PARTNER of a candidate — the one exclusion class FDA's own GSRS
+# substance graph provably cannot see: verified live 2026-08-29, GSRS carries no
+# enantiomer/racemate edge between zopiclone and eszopiclone (Lunesta) nor
+# between enclomifene and clomifene (Clomid). Broader than STEREO_PREFIXES
+# above, which answers the different question "does this NAME look stereo".
+INN_STEREO_PREFIXES = ["ES", "LEVO", "LEV", "DEXTRO", "DEX", "AR", "RAC",
+                       "EN", "ZU", "CIS", "TRANS", "MESO", "ALLO", "EPI"]
+
+
+# Trailing stereo descriptors as they survive norm(): UNII writes the single
+# enantiomer as "ZOPICLONE, (R)-" and norm() reduces that to "ZOPICLONE R".
+# Which UNII record claims a moiety key is not stable across UNII releases — the
+# 4 Aug 2026 file made "ZOPICLONE" resolve to the (R)- record rather than the
+# racemate — so the descriptor has to be stripped before looking for a partner,
+# or the pair silently stops being found.
+STEREO_SUFFIXES = {"R", "S", "RS", "SR", "E", "Z", "D", "L", "DL",
+                   "1R", "1S", "2R", "2S", "ALPHA", "BETA"}
+
+
+def stereo_name_variants(name: str) -> set[str]:
+    """Candidate names for a stereoisomer/geometric-isomer partner of `name`.
+
+    Both directions, because either name may carry the descriptor:
+      add    ZOPICLONE   + ES -> ESZOPICLONE   (US-approved: Lunesta)
+      strip  ENCLOMIFENE - EN -> CLOMIFENE     (US-approved: Clomid)
+    and a trailing descriptor is removed first, so "ZOPICLONE, (R)-" is treated
+    as ZOPICLONE. A stripped prefix stem must keep >= 6 characters so short words
+    cannot collide. Pure string generation — the caller decides which variants
+    are US-approved. Measured over the full survivor set this yields only real
+    pairs (zopiclone/eszopiclone, enclomifene/clomifene, levomenthol/menthol)
+    and raises no false alarms."""
+    n = norm(name)
+    if not n:
+        return set()
+    bases = {n}
+    toks = n.split()
+    if len(toks) > 1 and toks[-1] in STEREO_SUFFIXES:
+        stem = " ".join(toks[:-1])
+        if len(stem) >= 4:
+            bases.add(stem)
+    out = set()
+    for b in bases:
+        out |= {p + b for p in INN_STEREO_PREFIXES}
+        out |= {b[len(p):] for p in INN_STEREO_PREFIXES
+                if b.startswith(p) and len(b) - len(p) >= 6}
+        out.add(b)
+    return {v for v in out if v and v != n}
 
 
 def _build_salt_vocabulary() -> set[str]:
@@ -274,6 +327,27 @@ def _acid_ate_variants(stem: str) -> set[str]:
     return out
 
 
+def _orthographic_variants(n: str) -> set[str]:
+    """INN-vs-USAN spelling variants that UNII records as SEPARATE substances.
+
+    UNII's synonym table already unifies almost every INN/USAN divergence —
+    paracetamol/acetaminophen, salbutamol/albuterol, ciclosporin/cyclosporine,
+    rifampicin/rifampin all resolve to one UNII. Measured over 26 known pairs
+    (2026-08-29) exactly one class does not: the cephalosporin CEF-/CEPH- rule,
+    where INN 'cefalexin' and USAN 'cephalexin' carry different UNIIs and
+    different keys. That let EU cefalexin and cefradine read as never-US-approved
+    while cephalexin and cephradine are both US-approved.
+
+    Restricted to a leading CEF/CEPH so it cannot fire mid-word or on unrelated
+    names, and applied in both directions."""
+    out = set()
+    if n.startswith("CEPH"):
+        out.add("CEF" + n[4:])
+    elif n.startswith("CEF"):
+        out.add("CEPH" + n[3:])
+    return out
+
+
 def keys(name: str) -> set[str]:
     """
     Every plausible canonical form of a substance name.
@@ -305,6 +379,10 @@ def keys(name: str) -> set[str]:
 
     # acid/-ate variants on the full name, for cases where nothing strips
     out |= _acid_ate_variants(n)
+
+    # INN/USAN spelling variants UNII keeps as separate substances (CEF-/CEPH-)
+    for k in list(out):
+        out |= _orthographic_variants(k)
 
     return {k for k in out if k}
 

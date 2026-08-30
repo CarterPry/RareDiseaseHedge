@@ -10,21 +10,45 @@ Every criterion therefore returns one of PASS / FAIL / UNKNOWN / HUMAN, and the
 overall verdict can never be ELIGIBLE while any criterion is UNKNOWN or HUMAN.
 The best a machine can return is LIKELY_ELIGIBLE_PENDING_REVIEW.
 
-Statutory text and FDA guidance relied on:
-  - a rare pediatric disease is serious or life-threatening, primarily affects
-    individuals aged from birth to 18 years, and is rare (US prevalence under
-    200,000, or the not-cost-recoverable prong)
-  - no active ingredient, INCLUDING ANY ESTER OR SALT of the active ingredient,
-    may have been approved in any other application under 505(b)(1), 505(b)(2),
-    505(j), 351(a) or 351(k)  <- this is the criterion rdh_diff.py screens
-  - the application must be submitted under 505(b)(1) or 505(b)(2)
-  - it must rely on clinical data derived from studies in a pediatric
-    population, at pediatric dosages
-  - the original application must not seek approval of an adult indication
-  - it must qualify for priority review, i.e. offer a significant improvement
-    in safety or effectiveness over available therapy
-  - a voucher cannot be awarded for an approval after 30 September 2029
-    (the current statutory sunset)
+Statutory text relied on, verified verbatim against 21 U.S.C. 360ff on
+uscode.house.gov 2026-08-29. NOTE: Pub. L. 117-9 (2021) rewrote (a)(4)(A) and
+(B); pre-2021 summaries of this program — including most law-firm explainers
+still online — describe superseded law. The two substantive changes matter here:
+
+  - (a)(4)(B)(i)(I)  for a DRUG, the application must contain "no active MOIETY
+    (as defined by the Secretary in section 314.3 of title 21, Code of Federal
+    Regulations)" previously approved in any other application under 505(b)(1),
+    505(b)(2) or 505(j).  <- the criterion rdh_diff.py screens.
+    It is NOT the older "active ingredient, including any ester or salt"
+    formulation, and 351(a)/351(k) do NOT appear in the drug prong; they belong
+    to the separate biologic prong at (a)(4)(B)(ii). Screening on active moiety
+    — which is what the pipeline does — is therefore the correct standard.
+  - (a)(4)(B)(i)(II)  the application must be "the subject of an application
+    submitted under section 355(b)(1)", i.e. a full NDA under 505(b)(1) ONLY.
+    A 505(b)(2) application is NOT eligible for a rare pediatric disease
+    voucher. Vouchers awarded on 505(b)(2) applications predate Pub. L. 117-9.
+    This does not sink a repurposing thesis — a 505(b)(1) may rest on published
+    literature the sponsor did not generate — but it does mean the filing is a
+    full NDA, with the cost and data burden that implies.
+
+Remaining criteria:
+  - (a)(3)(A) the disease is serious or life-threatening and its serious or
+    life-threatening manifestations primarily affect individuals aged from birth
+    to 18 years
+  - (a)(3)(B) the disease is rare within the meaning of section 360bb (the
+    orphan-drug definition: fewer than 200,000 persons in the US, or the
+    not-cost-recoverable prong)
+  - (a)(4)(A) the drug is for the prevention or treatment of that disease
+  - (a)(4)(C) the Secretary deems the application eligible for priority review
+  - (a)(4)(D) it relies on clinical data derived from studies examining a
+    pediatric population and dosages intended for that population
+  - (a)(4)(E) the original application does not seek an adult indication
+  - (a)(4)(F) it is approved after 30 September 2016
+  - (b)(5) "The Secretary may not award any priority review vouchers under
+    paragraph (1) after September 30, 2029." The program had lapsed on
+    20 December 2024 and was restored by the Consolidated Appropriations Act,
+    2026 (Pub. L. 119-75, 3 February 2026), s.6604. There is no separate
+    designation deadline.
 
 FDA guidance further confirms that a drug approved and used abroad but never
 submitted to FDA can qualify, while a new pediatric use or formulation of a
@@ -50,7 +74,8 @@ from dataclasses import dataclass, field
 from datetime import date
 from enum import Enum
 
-SUNSET = date(2029, 9, 30)
+SUNSET = date(2029, 9, 30)   # s.529(b)(5) — last date a voucher may be awarded
+FLOOR = date(2016, 9, 30)    # s.529(a)(4)(F) — approval must be after this
 
 
 class Status(str, Enum):
@@ -143,10 +168,10 @@ def assess(cand: Candidate, today: date | None = None) -> Assessment:
         st, note = Status.HUMAN, cand.us_exclusion_note or \
             "screen could not settle it (see funnelA_review.csv flags)"
     crit.append(Criterion(
-        "no_prior_us_active_ingredient",
-        "s.529(a)(4)(A)(iv) / 360ff(a)(4)(A)(iv)",
-        "Has no active ingredient, including any ester or salt of it, been "
-        "approved in any other US application?",
+        "no_prior_us_active_moiety",
+        "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
+        "Has no active moiety (21 CFR 314.3) been previously approved in any "
+        "other application under 505(b)(1), 505(b)(2) or 505(j)?",
         Decidability.MACHINE, st, note))
 
     # ---- 2. rarity
@@ -201,7 +226,7 @@ def assess(cand: Candidate, today: date | None = None) -> Assessment:
         st, note = Status.HUMAN, ("no approved US therapy found, which helps, "
                                   "but FDA decides priority review at filing")
     crit.append(Criterion(
-        "qualifies_for_priority_review", "s.529(a)(4)(A)(v)",
+        "qualifies_for_priority_review", "s.529(a)(4)(C)",
         "Would the application qualify for priority review?",
         Decidability.JUDGMENT, st, note))
 
@@ -216,17 +241,22 @@ def assess(cand: Candidate, today: date | None = None) -> Assessment:
 
     # ---- 7-9. filing design. Not properties of the drug; choices the sponsor
     #           makes. Listed so they are never silently assumed satisfied.
-    for key, cite, q in [
-        ("filed_as_505b1_or_505b2", "s.529(a)(4)(A)(i)",
-         "Will the application be submitted under 505(b)(1) or 505(b)(2)?"),
-        ("relies_on_pediatric_data", "s.529(a)(4)(A)(ii)",
+    for key, cite, q, note in [
+        ("filed_as_505b1", "s.529(a)(4)(B)(i)(II)",
+         "Will the application be submitted under 505(b)(1)? A 505(b)(2) is "
+         "NOT eligible for this voucher.",
+         "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to "
+         "505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"),
+        ("relies_on_pediatric_data", "s.529(a)(4)(D)",
          "Will it rely on clinical data from a pediatric population at "
-         "pediatric dosages?"),
-        ("no_adult_indication_sought", "s.529(a)(4)(A)(iii)",
-         "Does the original application avoid seeking an adult indication?"),
+         "pediatric dosages?",
+         "sponsor's filing decision, not a drug property"),
+        ("no_adult_indication_sought", "s.529(a)(4)(E)",
+         "Does the original application avoid seeking an adult indication?",
+         "sponsor's filing decision, not a drug property"),
     ]:
         crit.append(Criterion(key, cite, q, Decidability.DESIGN, Status.HUMAN,
-                              "sponsor's filing decision, not a drug property"))
+                              note))
 
     # ---- 10. the clock
     if cand.earliest_possible_approval is None:
@@ -243,8 +273,23 @@ def assess(cand: Candidate, today: date | None = None) -> Assessment:
                                  f"{over} days past the 30 Sep 2029 sunset; "
                                  f"reauthorisation would be required")
     crit.append(Criterion(
-        "approval_before_sunset", "statutory sunset",
-        "Can approval land on or before 30 September 2029?",
+        "voucher_awardable_before_sunset", "s.529(b)(5)",
+        "Can approval — and therefore the voucher award — land on or before "
+        "30 September 2029?",
+        Decidability.DATA, st, note))
+
+    # ---- 11. the floor date. Trivially satisfied for anything filed now, but
+    #          listed so the criterion set matches the statute rather than a
+    #          remembered subset of it.
+    if cand.earliest_possible_approval is None:
+        st, note = Status.UNKNOWN, "no projected approval date supplied"
+    elif cand.earliest_possible_approval > FLOOR:
+        st, note = Status.PASS, f"approval would fall after {FLOOR}"
+    else:
+        st, note = Status.FAIL, f"approval on or before {FLOOR} cannot earn a voucher"
+    crit.append(Criterion(
+        "approved_after_30_sep_2016", "s.529(a)(4)(F)",
+        "Is the approval after 30 September 2016?",
         Decidability.DATA, st, note))
 
     return Assessment(cand.name, crit)

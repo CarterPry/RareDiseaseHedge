@@ -75,6 +75,26 @@ MUST_EXCLUDE = [
     # 2001, withdrawn 2005) — active moiety already US-approved, mirror image
     # of the isavuconazole case.
     ("parecoxib sodium",            "prodrug of US-approved valdecoxib (Bextra)", "graph"),
+    # found by the 2026-08-29 audit, using EMA Article 57 as an unseen test set.
+    # Each was reading as never-US-approved against the real files.
+    ("dabigatran",                  "Pradaxa 2010; US row is the ETEXILATE ester", "string"),
+    ("cefalexin",                   "Keflex; INN cef- vs USAN ceph- spelling",     "string"),
+    ("cefradine",                   "Velosef; INN cef- vs USAN ceph- spelling",    "string"),
+    # found BY this harness on real data 2026-08-29, originally mislabeled as a
+    # keeper — the same way parecoxib was. Mandol (cefamandole nafate, FDA 1978,
+    # long discontinued) is on the record, so the moiety is disqualified.
+    ("cefamandole",                 "Mandol; US row is the NAFATE ester",          "graph"),
+]
+
+# Substances whose US status the data CANNOT settle, where the only correct
+# answer is REVIEW. Asserting either verdict would be a lie: for an enantiomer
+# of an approved racemate (or vice versa) the statute does not say whether the
+# approved "active moiety" carries across, and FDA's GSRS graph holds no edge
+# between the pair — so no dataset on hand decides it. The harness checks that
+# the stereo-partner layer still FINDS the pair; a human decides what it means.
+MUST_REVIEW_STEREO = [
+    ("zopiclone",    "ESZOPICLONE",  "Lunesta is the S-enantiomer of the racemate"),
+    ("enclomifene",  "CLOMIFENE",    "Clomid is a mixture of en-/zu-clomifene"),
 ]
 
 # Substances with no US approval. These must survive the screen.
@@ -101,6 +121,8 @@ MUST_KEEP = [
     ("capromorelin",          "vet-only US (FDA CVM, s.512) — s.529 lists only 505/351"),
     ("cediranib maleate",     "never FDA approved — maleic-acid wall"),
     ("vinflunine ditartrate", "Javlor EU only — tartaric-acid wall"),
+    # CEF-/CEPH- bridge regression guard: the variant must not over-fire.
+    ("cefovecin",         "vet-only US (Convenia, FDA CVM) — s.529 lists only 505/351"),
 ]
 
 # --------------------------------------------------------------------------
@@ -126,6 +148,10 @@ US_INGREDIENT_RECORD = [
     "CEFPODOXIME PROXETIL",            # Vantin
     "GALLIUM GA-68 EDOTREOTIDE",       # Ga-68 dotatoc (site-made kit approvals)
     "VALDECOXIB",                      # Bextra (withdrawn 2005 — still disqualifies)
+    "DABIGATRAN ETEXILATE MESYLATE",   # Pradaxa
+    "CEPHALEXIN",                      # Keflex (USAN ceph- spelling)
+    "CEPHRADINE",                      # Velosef (USAN ceph- spelling)
+    "CEFAMANDOLE NAFATE",              # Mandol (FDA 1978, discontinued)
 ]
 
 # GSRS-style active-moiety edges for the graph class (offline stand-in; the
@@ -139,6 +165,7 @@ MOIETY_LINKS = [
     ("MYCOPHENOLATE MOFETIL", "MYCOPHENOLIC ACID"),
     ("PARECOXIB", "VALDECOXIB"),
     ("PARECOXIB SODIUM", "VALDECOXIB"),
+    ("CEFAMANDOLE NAFATE", "CEFAMANDOLE"),
 ]
 
 
@@ -180,11 +207,18 @@ def run_real():
     from gsrs import GsrsClient, grade  # noqa: F401
     import sources
 
+    # Same date-stamped-file resolution rdh_diff.py uses. Hardcoding
+    # UNII_Names_26Feb2026.txt here meant --real mode silently tested a
+    # different (older) identity index than the pipeline it claims to replay.
+    from rdh_diff import _newest_unii
+
     raw = os.path.join(HERE, "data", "raw")
     idx = UniiIndex()
-    print("loading UNII name index (~80MB)...", flush=True)
-    idx.load_names(os.path.join(raw, "UNII_Names_26Feb2026.txt"))
-    idx.load_records(os.path.join(raw, "UNII_Records_26Feb2026.txt"))
+    names_path = _newest_unii("UNII_Names_")
+    recs_path = _newest_unii("UNII_Records_")
+    print(f"loading UNII name index ({os.path.basename(names_path)})...", flush=True)
+    idx.load_names(names_path)
+    idx.load_records(recs_path)
     print("building US exclusion set...", flush=True)
     us_uniis, us_moieties, st = sources.load_us_exclusion(idx, raw)
     print(f"  {st['ingredient_rows']:,} rows -> {len(us_uniis):,} UNIIs, "
@@ -276,6 +310,20 @@ def main() -> int:
         for line in hard_miss + soft + fp:
             print(line)
         worst = max(worst, len(hard_miss) + len(fp))
+
+    # Stereoisomer-partner layer. Pure string generation, so it runs identically
+    # in both modes and needs no data files.
+    from moiety import stereo_name_variants, norm as _norm
+    stereo_bad = []
+    for name, partner, why in MUST_REVIEW_STEREO:
+        if _norm(partner) not in stereo_name_variants(name):
+            stereo_bad.append(f"  MISS  {name:22} -> {partner} not generated ({why})")
+    print(f"\n--- stereoisomer-partner layer ---")
+    print(f"  stereo pairs found  : {len(MUST_REVIEW_STEREO)-len(stereo_bad)}"
+          f"/{len(MUST_REVIEW_STEREO)}   <- must reach REVIEW, never a silent keep")
+    for line in stereo_bad:
+        print(line)
+    worst += len(stereo_bad)
 
     print("\n" + "=" * 74)
     if worst == 0:

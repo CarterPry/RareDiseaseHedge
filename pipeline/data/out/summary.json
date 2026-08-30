@@ -1,150 +1,44 @@
 {
  "generated": "2026-08-29",
- "snapshot": "UNII 26 Feb 2026 \u00b7 Drugs@FDA 4 Aug 2026 \u00b7 Orange Book Jul 2026 \u00b7 EMA 5 Aug 2026 \u00b7 GSRS live sweep",
+ "snapshot": "UNII 4Aug2026 \u00b7 Drugs@FDA 29 Aug 2026 \u00b7 Orange Book 07 Aug 2026 \u00b7 EMA 29 Aug 2026 \u00b7 Health Canada 07 Aug 2026 \u00b7 Swissmedic 07 Aug 2026 \u00b7 PMDA 07 Aug 2026 \u00b7 GSRS relationship graph",
  "funnel": {
-  "foreign_rows": 6115,
-  "resolved": 2510,
+  "foreign_rows": 6117,
+  "resolved": 2512,
   "unmatched": 3605,
   "biologic_or_mixture": 203,
-  "in_us": 1114,
-  "in_us_string": 1087,
-  "in_us_gsrs": 27,
-  "review": 0,
-  "candidate_small_mol": 94,
+  "in_us": 1116,
+  "in_us_string": 1088,
+  "in_us_gsrs": 28,
+  "review": 3,
+  "candidate_small_mol": 90,
   "needs_translit_unmatched": 139,
-  "named_drug": 67,
-  "unnamed": 27
+  "named_drug": 32,
+  "unnamed": 26,
+  "no_authorisation_in_loaded_registers": 32,
+  "unresolved_by_source": {
+   "EMA": 375,
+   "Health Canada": 223,
+   "PMDA-JP": 139,
+   "Swissmedic": 2868
+  },
+  "rows_by_source": {
+   "EMA": 2292,
+   "Health Canada": 715,
+   "PMDA-JP": 140,
+   "Swissmedic": 2970
+  }
  },
- "us_ingredient_rows": 117093,
+ "us_ingredient_rows": 117171,
  "counts": {
-  "named": 67,
-  "unnamed": 27,
-  "review": 0,
-  "orphan": 13,
-  "inn": 64,
+  "named": 32,
+  "unnamed": 26,
+  "review": 3,
+  "dossier_only": 32,
+  "orphan": 2,
+  "inn": 30,
   "multi_regulator": 0
  },
  "candidates": [
-  {
-   "unii": "CEG1Q6OGU1",
-   "name": "BARDOXOLONE METHYL",
-   "moiety": "BARDOXOLONE METHYL",
-   "inn": false,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": true,
-   "tier": "exact-moiety",
-   "examples": [
-    "Bardoxolone methyl"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "Treatment of chronic kidney disease",
-   "approved": "",
-   "flags": [],
-   "pubmed": 4,
-   "trials": 32,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "GKF8S4C432",
-   "name": "CATEQUENTINIB",
-   "moiety": "CATEQUENTINIB",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": true,
-   "tier": "moiety-base",
-   "examples": [
-    "catequentinib dihydrochloride"
-   ],
-   "area": "Sarcoma;Leiomyosarcoma",
-   "atc": "L01EX",
-   "indication": "Treatment of synovial sarcoma or leiomyosarcoma.",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 514,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "6QFP76V7S7",
-   "name": "EPRODISATE",
-   "moiety": "EPRODISATE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": true,
-   "tier": "moiety-base",
-   "examples": [
-    "eprodisate disodium"
-   ],
-   "area": "Amyloidosis",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 3,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "6JLQ8K35KK",
-   "name": "GOVORESTAT",
-   "moiety": "GOVORESTAT",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": true,
-   "tier": "exact-moiety",
-   "examples": [
-    "govorestat"
-   ],
-   "area": "Galactosemias",
-   "atc": "A16AX24",
-   "indication": "Treatment of adults and children aged 2 years and older with a confirmed diagnosis of classic galactosemia.",
-   "approved": "",
-   "flags": [],
-   "pubmed": 3,
-   "trials": 3,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "UJ0ZJ76DO9",
-   "name": "GUSPERIMUS",
-   "moiety": "GUSPERIMUS",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": true,
-   "tier": "moiety-base",
-   "examples": [
-    "gusperimus trihydrochloride"
-   ],
-   "area": "Wegener Granulomatosis",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 1,
-   "trials": 6,
-   "us_orphan": "unknown"
-  },
   {
    "unii": "HB6PN45W4J",
    "name": "IDEBENONE",
@@ -165,154 +59,12 @@
    "indication": "Raxone is indicated for the treatment of visual impairment in adolescent and adult patients with Leber\u2019s Hereditary Optic Neuropathy (LHON).",
    "approved": "08/09/2015",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 36,
    "trials": 35,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "K824X25AYA",
-   "name": "LERIGLITAZONE",
-   "moiety": "LERIGLITAZONE",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": true,
-   "tier": "exact-moiety",
-   "examples": [
-    "leriglitazone",
-    "leriglitazone hydrochloride"
-   ],
-   "area": "Adrenoleukodystrophy",
-   "atc": "A16AX23",
-   "indication": "Treatment of adrenoleukodystrophy.",
-   "approved": "",
-   "flags": [],
-   "pubmed": 2,
-   "trials": 2,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "M59NC4E26P",
-   "name": "MASITINIB",
-   "moiety": "MASITINIB",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": true,
-   "tier": "moiety-base",
-   "examples": [
-    "Masitinib mesilate",
-    "masitinib"
-   ],
-   "area": "Amyotrophic Lateral Sclerosis",
-   "atc": "L01EX06",
-   "indication": "In combination with riluzole for the treatment of adult patients with amyotrophic lateral sclerosis (ALS)",
-   "approved": "",
-   "flags": [],
-   "pubmed": 1,
-   "trials": 38,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "Y76ID234HW",
-   "name": "PLITIDEPSIN",
-   "moiety": "PLITIDEPSIN",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": true,
-   "tier": "exact-moiety",
-   "examples": [
-    "plitidepsin"
-   ],
-   "area": "Multiple Myeloma",
-   "atc": "L01",
-   "indication": "Treatment of multiple myeloma&nbsp;",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 16,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "HD4TW8S2VK",
-   "name": "PRIDOPIDINE",
-   "moiety": "PRIDOPIDINE",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": true,
-   "tier": "moiety-base",
-   "examples": [
-    "pridopidine hydrochloride"
-   ],
-   "area": "Huntington Disease",
-   "atc": "N07",
-   "indication": "Treatment of Huntington's disease&nbsp;",
-   "approved": "",
-   "flags": [],
-   "pubmed": 1,
-   "trials": 13,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "1578EUB98L",
-   "name": "RESMINOSTAT",
-   "moiety": "RESMINOSTAT",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": true,
-   "tier": "moiety-base",
-   "examples": [
-    "resminostat mesilate"
-   ],
-   "area": "Mycosis Fungoides;Sezary Syndrome",
-   "atc": "L01X",
-   "indication": "Treatment of patients with advanced stage mycosis fungoides (MF) and S\u00e9zary syndrome (SS)",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 7,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "H19C446XXB",
-   "name": "RUBITECAN",
-   "moiety": "RUBITECAN",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": true,
-   "tier": "exact-moiety",
-   "examples": [
-    "rubitecan"
-   ],
-   "area": "Pancreatic Neoplasms",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 3,
-   "trials": 22,
    "us_orphan": "unknown"
   },
   {
@@ -335,6 +87,10 @@
    "indication": "Emcitate is indicated for the treatment of peripheral thyrotoxicosis in patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley Syndrome), from birth.",
    "approved": "12/02/2025",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 3,
    "trials": 5,
    "us_orphan": "unknown"
@@ -359,6 +115,10 @@
    "indication": "Treatment of major depressive episodes in adults.",
    "approved": "19/02/2009",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 9,
    "trials": 27,
    "us_orphan": "unknown"
@@ -383,6 +143,10 @@
    "indication": "",
    "approved": "",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   },
    "pubmed": 31,
    "trials": 52,
    "us_orphan": "unknown"
@@ -407,32 +171,12 @@
    "indication": "",
    "approved": "",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   },
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "DD5RBA1NKF",
-   "name": "ANAMORELIN",
-   "moiety": "ANAMORELIN",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "anamorelin hydrochloride"
-   ],
-   "area": "Cachexia;Anorexia;Carcinoma, Non-Small-Cell Lung",
-   "atc": "V03",
-   "indication": "Treatment of anorexia, cachexia or unintended weight loss in adult patients with non-small cell lung cancer (NSCLC)",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 11,
    "us_orphan": "unknown"
   },
   {
@@ -455,6 +199,10 @@
    "indication": "Translarna is indicated for the treatment of Duchenne muscular dystrophy resulting from a nonsense mutation in the dystrophin gene, in ambulatory patients aged 2 years and older. Efficacy has not been demonstrated in non-ambulatory patients. The presence of a nonsense mutation in the dystrophin gene should be determined by genetic testing.",
    "approved": "31/07/2014",
    "flags": [],
+   "foreign_status": "previously_authorised",
+   "status_by_source": {
+    "EMA": "previously_authorised"
+   },
    "pubmed": 34,
    "trials": 34,
    "us_orphan": "unknown"
@@ -479,6 +227,10 @@
    "indication": "Atosiban is indicated to delay imminent pre-term birth in pregnant adult women with:  regular uterine contractions of at least 30 seconds\u2019 duration at a rate of ? 4 per 30 minutes; a cervical dilation of 1 to 3 cm (0-3 for nulliparas) and effacement of ? 50%; a gestational age from 24 until 33 completed weeks; a normal foetal heart rate.",
    "approved": "31/07/2013",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 7,
    "trials": 23,
    "us_orphan": "unknown"
@@ -503,6 +255,10 @@
    "indication": "Aumseqa as monotherapy is indicated for:- the first-line treatment of adult patients with advanced non-small cell lung cancer (NSCLC)whose tumours have EGFR exon 19 deletions or exon 21 (L858R) substitution mutations (forbiomarker-based patient selection, see section 4.2).- the treatment of adult patients with advanced EGFR T790M mutation-positive NSCLC (forbiomarker-based patient selection, see section 4.2)",
    "approved": "12/02/2026",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 0,
    "trials": 80,
    "us_orphan": "unknown"
@@ -527,32 +283,12 @@
    "indication": "",
    "approved": "",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   },
    "pubmed": 12,
    "trials": 28,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "9T210MMZ3F",
-   "name": "BLARCAMESINE",
-   "moiety": "BLARCAMESINE",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "blarcamesine hydrochloride"
-   ],
-   "area": "",
-   "atc": "N06D",
-   "indication": "Treatment of Alzheimer\u2019s disease and dementia.",
-   "approved": "",
-   "flags": [],
-   "pubmed": 1,
-   "trials": 3,
    "us_orphan": "unknown"
   },
   {
@@ -575,6 +311,10 @@
    "indication": "",
    "approved": "",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   },
    "pubmed": 6,
    "trials": 5,
    "us_orphan": "unknown"
@@ -599,80 +339,12 @@
    "indication": "Etcamah&nbsp;in combination with a CDK4/6 inhibitor (palbociclib, ribociclib, or abemaciclib) is indicated for the treatment of&nbsp;adult&nbsp;patients with ER-positive,&nbsp;HER2-negative,&nbsp;locally advanced or metastatic breast&nbsp;cancer upon detection of ESR1\u2011mutation and without disease progression during first-line endocrine therapy in combination with a CDK4/6 inhibitor (for biomarker based patient-selection, see section 4.2 and 5.1).",
    "approved": "20/07/2026",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 1,
    "trials": 16,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "P7725I9V3Z",
-   "name": "CARISBAMATE",
-   "moiety": "CARISBAMATE",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "carisbamate"
-   ],
-   "area": "Epilepsy",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 3,
-   "trials": 21,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "3B03KPM27L",
-   "name": "CASOPITANT",
-   "moiety": "CASOPITANT",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "casopitant"
-   ],
-   "area": "Vomiting;Postoperative Nausea and Vomiting;Cancer",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 32,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "NQU9IPY4K9",
-   "name": "CEDIRANIB",
-   "moiety": "CEDIRANIB",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "cediranib maleate"
-   ],
-   "area": "Ovarian Neoplasms",
-   "atc": "L01XE32",
-   "indication": "Treatment of platinum sensitive relapsed (PSR) ovarian cancer",
-   "approved": "",
-   "flags": [],
-   "pubmed": 6,
-   "trials": 106,
    "us_orphan": "unknown"
   },
   {
@@ -695,56 +367,12 @@
    "indication": "Deltyba is indicated for use as part of an appropriate combination regimen for pulmonary multi-drug resistant tuberculosis (MDR-TB) in adults, adolescents, children and infants with a body weight of at least 10 kg when an effective treatment regimen cannot otherwise be composed for reasons of resistance or tolerability (see sections 4.2, 4.4 and 5.1). Consideration should be given to official guidance on the appropriate use of antibacterial agents.",
    "approved": "27/04/2014",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 40,
    "trials": 44,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "R6D2UI4FLS",
-   "name": "ENCLOMIPHENE",
-   "moiety": "ENCLOMIFENE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "enclomifene citrate"
-   ],
-   "area": "Hypogonadism",
-   "atc": "G03X",
-   "indication": "Treatment of hypogonadotropic hypogonadism in men",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 258,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "958X4J301A",
-   "name": "FALDAPREVIR",
-   "moiety": "FALDAPREVIR",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "faldaprevir"
-   ],
-   "area": "Hepatitis C, Chronic",
-   "atc": "J05AE",
-   "indication": "Treatment of chronic genotype-1 hepatitis C virus (HCV) infection.",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 50,
    "us_orphan": "unknown"
   },
   {
@@ -767,32 +395,12 @@
    "indication": "Rheumatoid arthritis Jyseleca is indicated for the treatment of moderate to severe active rheumatoid arthritis in adult patients who have responded inadequately to, or who are intolerant to one or more disease modifying anti rheumatic drugs (DMARDs). Jyseleca may be used as monotherapy or in combination with methotrexate (MTX). Ulcerative colitis Jyseleca is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis who have had an inadequate response with, lost response to, or were intolerant to either conventional therapy or a biologic agent.",
    "approved": "24/09/2020",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 11,
    "trials": 66,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "V72H9867WB",
-   "name": "GARENOXACIN",
-   "moiety": "GARENOXACIN",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "garenoxacin mesylate"
-   ],
-   "area": "Surgical Wound Infection;Sinusitis;Skin Diseases, Infectious;Pneumonia;Soft Tissue Infections;Bronchitis, Chronic",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 6,
-   "trials": 0,
    "us_orphan": "unknown"
   },
   {
@@ -815,6 +423,10 @@
    "indication": "Lyfnua is indicated in adults for the treatment of refractory or unexplained chronic cough.",
    "approved": "15/09/2023",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 0,
    "trials": 27,
    "us_orphan": "unknown"
@@ -839,32 +451,12 @@
    "indication": "",
    "approved": "",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   },
    "pubmed": 8,
    "trials": 85,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "908SY76S4G",
-   "name": "LAQUINIMOD",
-   "moiety": "LAQUINIMOD",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "laquinimod"
-   ],
-   "area": "Multiple Sclerosis",
-   "atc": "N07",
-   "indication": "Treatment of multiple sclerosis",
-   "approved": "",
-   "flags": [],
-   "pubmed": 1,
-   "trials": 17,
    "us_orphan": "unknown"
   },
   {
@@ -887,6 +479,10 @@
    "indication": "Fablyn is indicated for the treatment of osteoporosis in postmenopausal women at increased risk of fracture. A significant reduction in the incidence of vertebral and non-vertebral fractures but not hip fractures has been demonstrated (see section 5.1). When determining the choice of Fablyn or other therapies, including oestrogens, for a postmenopausal woman, consideration should be given to menopausal symptoms, effects on uterine and breast tissues, and cardiovascular risks and benefits (see section 5.1).",
    "approved": "24/02/2009",
    "flags": [],
+   "foreign_status": "previously_authorised",
+   "status_by_source": {
+    "EMA": "previously_authorised"
+   },
    "pubmed": 0,
    "trials": 9,
    "us_orphan": "unknown"
@@ -911,32 +507,12 @@
    "indication": "Yselty is indicated in adult women of reproductive age for:&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; treatment of moderate to severe symptoms of uterine fibroids,-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; symptomatic treatment of endometriosis in women with a history of previous medical or surgical treatment for their endometriosis (see section 5.1).",
    "approved": "14/06/2022",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 0,
    "trials": 18,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "E0QN3D755O",
-   "name": "LISURIDE",
-   "moiety": "LISURIDE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "lisuride"
-   ],
-   "area": "Restless Legs Syndrome",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 2,
-   "trials": 5,
    "us_orphan": "unknown"
   },
   {
@@ -959,6 +535,10 @@
    "indication": "",
    "approved": "",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Swissmedic": "authorised"
+   },
    "pubmed": 0,
    "trials": 0,
    "us_orphan": "unknown"
@@ -983,104 +563,12 @@
    "indication": "Mepact is indicated in children, adolescents and young adults for the treatment of high-grade resectable non-metastatic osteosarcoma after macroscopically complete surgical resection. It is used in combination with postoperative multi-agent chemotherapy. Safety and efficacy have been assessed in studies of patients two to 30 years of age at initial diagnosis.",
    "approved": "06/03/2009",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 16,
    "trials": 8,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "YA84KI1VEW",
-   "name": "MOLNUPIRAVIR",
-   "moiety": "MOLNUPIRAVIR",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "molnupiravir"
-   ],
-   "area": "COVID-19 virus infection",
-   "atc": "J05A",
-   "indication": "Treatment of coronavirus disease 2019 (COVID-19).",
-   "approved": "",
-   "flags": [],
-   "pubmed": 13,
-   "trials": 32,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "8O74K609HN",
-   "name": "OBICETRAPIB",
-   "moiety": "OBICETRAPIB",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "obicetrapib hemicalcium"
-   ],
-   "area": "Hypercholesterolemia;Dyslipidemias",
-   "atc": "C10A",
-   "indication": "Treatment of primary hypercholesterolaemia or mixed dyslipidaemia.",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 20,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "2M19539ERK",
-   "name": "OMECAMTIV MECARBIL",
-   "moiety": "OMECAMTIV MECARBIL",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "omecamtiv mecarbil dihydrochloride hydrate"
-   ],
-   "area": "Heart Failure, Systolic",
-   "atc": "C01CX10",
-   "indication": "Treatment of adult patients with symptomatic chronic heart failure and reduced ejection fraction less than 30%",
-   "approved": "",
-   "flags": [],
-   "pubmed": 5,
-   "trials": 16,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "OS7097575K",
-   "name": "PARSACLISIB",
-   "moiety": "PARSACLISIB",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "Parsaclisib hydrochloride"
-   ],
-   "area": "",
-   "atc": "L01EM04",
-   "indication": "Treatment of marginal zone lymphoma",
-   "approved": "",
-   "flags": [],
-   "pubmed": 4,
-   "trials": 36,
    "us_orphan": "unknown"
   },
   {
@@ -1103,32 +591,12 @@
    "indication": "EchoGen is a transpulmonary echocardiographic contrast agent for use in patients with suspected or established cardiovascular disease to provide opacification of cardiac chambers, enhance left ventricular border delineation with resulting improvement in wall motion visualisation. EchoGen should only be used in patients where the study without contrast enhancement is inconclusive.",
    "approved": "17/07/1998",
    "flags": [],
+   "foreign_status": "previously_authorised",
+   "status_by_source": {
+    "EMA": "previously_authorised"
+   },
    "pubmed": 0,
    "trials": 6,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "SE4TWR0K2C",
-   "name": "PERFLUBUTANE",
-   "moiety": "PERFLUBUTANE",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "perflubutane"
-   ],
-   "area": "Ultrasonography",
-   "atc": "V08D",
-   "indication": "ultrasound imaging agent indicated for the detection of coronary artery disease (CAD)",
-   "approved": "",
-   "flags": [],
-   "pubmed": 2,
-   "trials": 20,
    "us_orphan": "unknown"
   },
   {
@@ -1151,6 +619,10 @@
    "indication": "Pixuvri is indicated as monotherapy for the treatment of adult patients with multiply relapsed or refractory aggressive non-Hodgkin B-cell lymphomas (NHL). The benefit of pixantrone treatment has not been established in patients when used as fifth-line or greater chemotherapy in patients who are refractory to last therapy.",
    "approved": "10/05/2012",
    "flags": [],
+   "foreign_status": "previously_authorised",
+   "status_by_source": {
+    "EMA": "previously_authorised"
+   },
    "pubmed": 3,
    "trials": 18,
    "us_orphan": "unknown"
@@ -1175,6 +647,10 @@
    "indication": "",
    "approved": "",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   },
    "pubmed": 15,
    "trials": 17,
    "us_orphan": "unknown"
@@ -1199,6 +675,10 @@
    "indication": "As an adjunct to diet and exercise for the treatment of obese patients (BMI 30 kg/m2), or overweight patients (BMI 27 kg/m2) with associated risk factor(s), such as type 2 diabetes or dyslipidaemia (see section 5.1).",
    "approved": "19/06/2006",
    "flags": [],
+   "foreign_status": "previously_authorised",
+   "status_by_source": {
+    "EMA": "previously_authorised"
+   },
    "pubmed": 10,
    "trials": 48,
    "us_orphan": "unknown"
@@ -1223,80 +703,12 @@
    "indication": "Evrenzo is indicated for treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD).",
    "approved": "18/08/2021",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 5,
    "trials": 66,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "721809WQCP",
-   "name": "RUBOXISTAURIN",
-   "moiety": "RUBOXISTAURIN",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "ruboxistaurin"
-   ],
-   "area": "Diabetic Retinopathy",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 15,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "AJS8S3P31H",
-   "name": "SATAVAPTAN",
-   "moiety": "SATAVAPTAN",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "satavaptan"
-   ],
-   "area": "Hyponatremia",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 1,
-   "trials": 11,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "8D7B37T28G",
-   "name": "SATRAPLATIN",
-   "moiety": "SATRAPLATIN",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "satraplatin"
-   ],
-   "area": "Prostatic Neoplasms",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 1,
-   "trials": 17,
    "us_orphan": "unknown"
   },
   {
@@ -1319,80 +731,12 @@
    "indication": "Treatment of patients with pulmonary arterial hypertension (PAH) classified as WHO functional class III, to improve exercise capacity. Efficacy has been shown in primary pulmonary hypertension and in pulmonary hypertension associated with connective tissue disease.",
    "approved": "10/08/2006",
    "flags": [],
+   "foreign_status": "previously_authorised",
+   "status_by_source": {
+    "EMA": "previously_authorised"
+   },
    "pubmed": 10,
    "trials": 24,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "9U1ETH79CK",
-   "name": "SOLITHROMYCIN",
-   "moiety": "SOLITHROMYCIN",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "solithromycin"
-   ],
-   "area": "Tularemia;Pneumonia;Anthrax",
-   "atc": "J01FA",
-   "indication": "Treatment of bacterial infections",
-   "approved": "",
-   "flags": [],
-   "pubmed": 5,
-   "trials": 11,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "B2K5L1L8S9",
-   "name": "SURUFATINIB",
-   "moiety": "SURUFATINIB",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "surufatinib"
-   ],
-   "area": "Neuroendocrine Tumors",
-   "atc": "L01EX01",
-   "indication": "Treatment of progressive neuroendocrine tumours",
-   "approved": "",
-   "flags": [],
-   "pubmed": 1,
-   "trials": 109,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "MXD6KMG2ZP",
-   "name": "TEGOMIL FUMARATE",
-   "moiety": "TEGOMIL",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "tegomil fumarate"
-   ],
-   "area": "Multiple Sclerosis, Relapsing-Remitting",
-   "atc": "L04AX10",
-   "indication": "Riulvy is indicated for the treatment of adult and paediatric patients aged 13 years and older with relapsing remitting multiple sclerosis (RRMS).",
-   "approved": "28/07/2025",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 0,
    "us_orphan": "unknown"
   },
   {
@@ -1415,6 +759,10 @@
    "indication": "Foscan is indicated for the palliative treatment of patients with advanced head and neck squamous cell carcinoma failing prior therapies and unsuitable for radiotherapy, surgery or systemic chemotherapy.",
    "approved": "24/10/2001",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 0,
    "trials": 8,
    "us_orphan": "unknown"
@@ -1439,6 +787,10 @@
    "indication": "",
    "approved": "",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   },
    "pubmed": 4,
    "trials": 41,
    "us_orphan": "unknown"
@@ -1463,6 +815,10 @@
    "indication": "Cenrifki is indicated for the treatment of adult patients with secondary progressive multiple sclerosis (SPMS) without relapses in the last 2 years.",
    "approved": "19/06/2026",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 0,
    "trials": 12,
    "us_orphan": "unknown"
@@ -1487,6 +843,10 @@
    "indication": "Rapid conversion of recent onset atrial fibrillation to sinus rhythm in adults:  for non-surgery patients: atrial fibrillation&nbsp;&lt;/= 7 days duration; for post-cardiac surgery patients: atrial fibrillation&nbsp;&lt;/= 3 days duration.",
    "approved": "01/09/2010",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 1,
    "trials": 17,
    "us_orphan": "unknown"
@@ -1511,6 +871,10 @@
    "indication": "Vildagliptin is indicated as an adjunct to diet and exercise to improve glycaemic control in adults with type 2 diabetes mellitus:  as monotherapy in patients in whom metformin is inappropriate due to contraindications or intolerance. in combination with other medicinal products for the treatment of diabetes, including insulin, when these do not provide adequate glycaemic control (see sections 4.4, 4.5 and 5.1 for available data on different combinations).",
    "approved": "19/11/2008",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 0,
    "trials": 209,
    "us_orphan": "unknown"
@@ -1535,80 +899,12 @@
    "indication": "Javlor is indicated in monotherapy for the treatment of adult patients with advanced or metastatic transitional-cell carcinoma of the urothelial tract after failure of a prior platinum-containing regimen. Efficacy and safety of vinflunine have not been studied in patients with performance status ? 2.",
    "approved": "21/09/2009",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
    "pubmed": 0,
    "trials": 35,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "K6A90IIZ19",
-   "name": "VOSAROXIN",
-   "moiety": "VOSAROXIN",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "vosaroxin"
-   ],
-   "area": "Leukemia, Myeloid, Acute",
-   "atc": "L01",
-   "indication": "Treatment acute myeloid leukaemia",
-   "approved": "",
-   "flags": [],
-   "pubmed": 0,
-   "trials": 17,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "49HFB70472",
-   "name": "XIMELAGATRAN",
-   "moiety": "XIMELAGATRAN",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "ximelagatran"
-   ],
-   "area": "Atrial Fibrillation",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 3,
-   "trials": 2,
-   "us_orphan": "unknown"
-  },
-  {
-   "unii": "03A5ORL08Q",
-   "name": "ZOPICLONE",
-   "moiety": "ZOPICLONE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "ZOPICLONE"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "pubmed": 3,
-   "trials": 108,
    "us_orphan": "unknown"
   },
   {
@@ -1631,6 +927,10 @@
    "indication": "",
    "approved": "",
    "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   },
    "pubmed": 3,
    "trials": 10,
    "us_orphan": "unknown"
@@ -1656,7 +956,39 @@
    "atc": "V09",
    "indication": "Indicated for single photon emission computed tomography (SPECT) imaging",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "N20HL7Q941",
+   "name": "CAMPHOR (NATURAL)",
+   "moiety": "CAMPHOR",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada",
+    "Swissmedic"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "CAMPHOR",
+    "dextrocamphora"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised",
+    "Swissmedic": "authorised"
+   }
   },
   {
    "unii": "R5Y8O51589",
@@ -1677,7 +1009,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
   },
   {
    "unii": "0GH9JX37C8",
@@ -1698,49 +1034,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "N20HL7Q941",
-   "name": "CAMPHOR (NATURAL)",
-   "moiety": "DEXTROCAMPHORA",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Swissmedic"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "dextrocamphora"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
-  },
-  {
-   "unii": "213N3S8275",
-   "name": "CAMPHOR, (-)-",
-   "moiety": "CAMPHOR",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "Health Canada"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "CAMPHOR"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   }
   },
   {
    "unii": "CUB7JI0JV3",
@@ -1761,7 +1059,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   }
   },
   {
    "unii": "FLI06WS32H",
@@ -1782,7 +1084,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   }
   },
   {
    "unii": "0R0008Q3JB",
@@ -1803,7 +1109,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Swissmedic": "authorised"
+   }
   },
   {
    "unii": "N0KCY1368Z",
@@ -1824,7 +1134,11 @@
    "atc": "Not yet assigned",
    "indication": "Cuprymina is a radiopharmaceutical precursor. It is not intended for direct use in patients. This medicinal product must be used only for the radiolabelling of carrier molecules, which have been specifically developed and authorised for radiolabelling with this radionuclide.",
    "approved": "23/08/2012",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   }
   },
   {
    "unii": "1NKX3648J9",
@@ -1845,7 +1159,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   }
   },
   {
    "unii": "FC72KVT52F",
@@ -1866,7 +1184,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   }
   },
   {
    "unii": "14255EXE39",
@@ -1887,7 +1209,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Swissmedic": "authorised"
+   }
   },
   {
    "unii": "6JKA7MAH9C",
@@ -1908,7 +1234,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   }
   },
   {
    "unii": "1U477369SN",
@@ -1929,7 +1259,11 @@
    "atc": "V10X",
    "indication": "Theralugand is a radiopharmaceutical precursor, and it is not intended for direct use in patients. It is to be used only for the radiolabelling of carrier molecules that have been specifically developed and authorised for radiolabelling with lutetium (177Lu) chloride.",
    "approved": "22/11/2024",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   }
   },
   {
    "unii": "I38ZP9992A",
@@ -1950,7 +1284,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Swissmedic": "authorised"
+   }
   },
   {
    "unii": "JL5DK93RCL",
@@ -1971,7 +1309,11 @@
    "atc": "N05CH01",
    "indication": "Slenyto is indicated for:  treatment of insomnia in children and adolescents aged 2-18 years with Autism Spectrum Disorder (ASD), and / or neurogenetic disorders with aberrant diurnal melatonin secretion and /or nocturnal awakenings, where sleep hygiene measures have been insufficient. treatment of insomnia in children and adolescents aged 6-17 years with attention-deficit hyperactivity disorder (ADHD) where sleep hygiene measures have been insufficient.",
    "approved": "20/09/2018",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   }
   },
   {
    "unii": "6634O61GOI",
@@ -1992,7 +1334,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Swissmedic": "authorised"
+   }
   },
   {
    "unii": "E775ICF82G",
@@ -2013,7 +1359,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
   },
   {
    "unii": "UA8U0KJM72",
@@ -2034,7 +1384,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   }
   },
   {
    "unii": "339NCG44TV",
@@ -2055,7 +1409,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   }
   },
   {
    "unii": "F1CB00L2RH",
@@ -2076,7 +1434,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Swissmedic": "authorised"
+   }
   },
   {
    "unii": "H6241UJ22B",
@@ -2097,7 +1459,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Swissmedic": "authorised"
+   }
   },
   {
    "unii": "9NEZ333N27",
@@ -2118,7 +1484,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Swissmedic": "authorised"
+   }
   },
   {
    "unii": "3J50XA376E",
@@ -2139,7 +1509,11 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Swissmedic": "authorised"
+   }
   },
   {
    "unii": "7NS97N9H1G",
@@ -2160,11 +1534,15 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   }
   },
   {
-   "unii": "1K8M7UR6O1",
-   "name": "YTTRIUM Y-90",
+   "unii": "J8L3BWC4BD",
+   "name": "YTTRIUM CITRATE Y-90",
    "moiety": "YTTRIUM 90Y",
    "inn": false,
    "usan": false,
@@ -2181,7 +1559,11 @@
    "atc": "V09",
    "indication": "To be used only for the radiolabelling of carrier molecules, which have been specifically developed and authorised for radiolabelling with this radionuclide.Radiopharmaceutical precursor - Not intended for direct use in patients.",
    "approved": "19/01/2006",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   }
   },
   {
    "unii": "J41CSQ7QDS",
@@ -2202,10 +1584,912 @@
    "atc": "A16AX05",
    "indication": "Treatment of Wilson's disease.",
    "approved": "12/10/2004",
-   "flags": []
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   }
   }
  ],
- "review": [],
+ "review": [
+  {
+   "unii": "R6D2UI4FLS",
+   "name": "ENCLOMIPHENE",
+   "moiety": "ENCLOMIFENE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "enclomifene citrate"
+   ],
+   "area": "Hypogonadism",
+   "atc": "G03X",
+   "indication": "Treatment of hypogonadotropic hypogonadism in men",
+   "approved": "",
+   "flags": [
+    "STEREO_US_PARTNER: CLOMIPHENE is US-approved (stereo-unii:1HRS458QU2); s.529 treatment of enantiomer/isomer pairs is unsettled and GSRS carries no stereo edge for this pair"
+   ],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "BZ1R15MTK7",
+   "name": "LEVOMENTHOL",
+   "moiety": "LEVOMENTHOL",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "LEVOMENTHOL"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [
+    "STEREO_US_PARTNER: MENTHOL is US-approved (stereo-unii:C6B1OE8P3W); s.529 treatment of enantiomer/isomer pairs is unsettled and GSRS carries no stereo edge for this pair"
+   ],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   }
+  },
+  {
+   "unii": "7A997Q53NR",
+   "name": "ZOPICLONE, (R)-",
+   "moiety": "ZOPICLONE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "Health Canada"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ZOPICLONE"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [
+    "STEREO_US_PARTNER: ESZOPICLONE is US-approved (stereo-unii:UZX80K71OE); s.529 treatment of enantiomer/isomer pairs is unsettled and GSRS carries no stereo edge for this pair"
+   ],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "Health Canada": "authorised"
+   }
+  }
+ ],
+ "dossier_only": [
+  {
+   "unii": "CEG1Q6OGU1",
+   "name": "BARDOXOLONE METHYL",
+   "moiety": "BARDOXOLONE METHYL",
+   "inn": false,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "Bardoxolone methyl"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "Treatment of chronic kidney disease",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "GKF8S4C432",
+   "name": "CATEQUENTINIB",
+   "moiety": "CATEQUENTINIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "moiety-base",
+   "examples": [
+    "catequentinib dihydrochloride"
+   ],
+   "area": "Sarcoma;Leiomyosarcoma",
+   "atc": "L01EX",
+   "indication": "Treatment of synovial sarcoma or leiomyosarcoma.",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "6QFP76V7S7",
+   "name": "EPRODISATE",
+   "moiety": "EPRODISATE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "moiety-base",
+   "examples": [
+    "eprodisate disodium"
+   ],
+   "area": "Amyloidosis",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "6JLQ8K35KK",
+   "name": "GOVORESTAT",
+   "moiety": "GOVORESTAT",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "govorestat"
+   ],
+   "area": "Galactosemias",
+   "atc": "A16AX24",
+   "indication": "Treatment of adults and children aged 2 years and older with a confirmed diagnosis of classic galactosemia.",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "UJ0ZJ76DO9",
+   "name": "GUSPERIMUS",
+   "moiety": "GUSPERIMUS",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "moiety-base",
+   "examples": [
+    "gusperimus trihydrochloride"
+   ],
+   "area": "Wegener Granulomatosis",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "K824X25AYA",
+   "name": "LERIGLITAZONE",
+   "moiety": "LERIGLITAZONE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "leriglitazone",
+    "leriglitazone hydrochloride"
+   ],
+   "area": "Adrenoleukodystrophy",
+   "atc": "A16AX23",
+   "indication": "Treatment of adrenoleukodystrophy.",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "M59NC4E26P",
+   "name": "MASITINIB",
+   "moiety": "MASITINIB",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "moiety-base",
+   "examples": [
+    "Masitinib mesilate",
+    "masitinib"
+   ],
+   "area": "Amyotrophic Lateral Sclerosis",
+   "atc": "L01EX06",
+   "indication": "In combination with riluzole for the treatment of adult patients with amyotrophic lateral sclerosis (ALS)",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "Y76ID234HW",
+   "name": "PLITIDEPSIN",
+   "moiety": "PLITIDEPSIN",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "plitidepsin"
+   ],
+   "area": "Multiple Myeloma",
+   "atc": "L01",
+   "indication": "Treatment of multiple myeloma&nbsp;",
+   "approved": "",
+   "flags": [
+    "AUTHORISED_ELSEWHERE (TGA Australia): approved Dec 2018 (Aplidin, multiple myeloma); EMA row is a withdrawn application. Not visible to the registers loaded here."
+   ],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "HD4TW8S2VK",
+   "name": "PRIDOPIDINE",
+   "moiety": "PRIDOPIDINE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "moiety-base",
+   "examples": [
+    "pridopidine hydrochloride"
+   ],
+   "area": "Huntington Disease",
+   "atc": "N07",
+   "indication": "Treatment of Huntington's disease&nbsp;",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "1578EUB98L",
+   "name": "RESMINOSTAT",
+   "moiety": "RESMINOSTAT",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "moiety-base",
+   "examples": [
+    "resminostat mesilate"
+   ],
+   "area": "Mycosis Fungoides;Sezary Syndrome",
+   "atc": "L01X",
+   "indication": "Treatment of patients with advanced stage mycosis fungoides (MF) and S\u00e9zary syndrome (SS)",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "H19C446XXB",
+   "name": "RUBITECAN",
+   "moiety": "RUBITECAN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": true,
+   "tier": "exact-moiety",
+   "examples": [
+    "rubitecan"
+   ],
+   "area": "Pancreatic Neoplasms",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "DD5RBA1NKF",
+   "name": "ANAMORELIN",
+   "moiety": "ANAMORELIN",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "anamorelin hydrochloride"
+   ],
+   "area": "Cachexia;Anorexia;Carcinoma, Non-Small-Cell Lung",
+   "atc": "V03",
+   "indication": "Treatment of anorexia, cachexia or unintended weight loss in adult patients with non-small cell lung cancer (NSCLC)",
+   "approved": "",
+   "flags": [
+    "AUTHORISED_ELSEWHERE (PMDA Japan): approved Jan 2021 (Adlumiz, cancer cachexia); EMA row is a refusal. Not visible to the registers loaded here."
+   ],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "9T210MMZ3F",
+   "name": "BLARCAMESINE",
+   "moiety": "BLARCAMESINE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "blarcamesine hydrochloride"
+   ],
+   "area": "",
+   "atc": "N06D",
+   "indication": "Treatment of Alzheimer\u2019s disease and dementia.",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "P7725I9V3Z",
+   "name": "CARISBAMATE",
+   "moiety": "CARISBAMATE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "carisbamate"
+   ],
+   "area": "Epilepsy",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "3B03KPM27L",
+   "name": "CASOPITANT",
+   "moiety": "CASOPITANT",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "casopitant"
+   ],
+   "area": "Vomiting;Postoperative Nausea and Vomiting;Cancer",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "NQU9IPY4K9",
+   "name": "CEDIRANIB",
+   "moiety": "CEDIRANIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "cediranib maleate"
+   ],
+   "area": "Ovarian Neoplasms",
+   "atc": "L01XE32",
+   "indication": "Treatment of platinum sensitive relapsed (PSR) ovarian cancer",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "958X4J301A",
+   "name": "FALDAPREVIR",
+   "moiety": "FALDAPREVIR",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "faldaprevir"
+   ],
+   "area": "Hepatitis C, Chronic",
+   "atc": "J05AE",
+   "indication": "Treatment of chronic genotype-1 hepatitis C virus (HCV) infection.",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "V72H9867WB",
+   "name": "GARENOXACIN",
+   "moiety": "GARENOXACIN",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "garenoxacin mesylate"
+   ],
+   "area": "Surgical Wound Infection;Sinusitis;Skin Diseases, Infectious;Pneumonia;Soft Tissue Infections;Bronchitis, Chronic",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [
+    "AUTHORISED_ELSEWHERE (PMDA Japan): approved Jul 2007 (Geninax); EMA row is an withdrawn application. Not visible to the registers loaded here."
+   ],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "908SY76S4G",
+   "name": "LAQUINIMOD",
+   "moiety": "LAQUINIMOD",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "laquinimod"
+   ],
+   "area": "Multiple Sclerosis",
+   "atc": "N07",
+   "indication": "Treatment of multiple sclerosis",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "E0QN3D755O",
+   "name": "LISURIDE",
+   "moiety": "LISURIDE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "lisuride"
+   ],
+   "area": "Restless Legs Syndrome",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [
+    "AUTHORISED_ELSEWHERE (EU national): nationally authorised for Parkinson's disease and hyperprolactinaemia; the EMA row is a withdrawn RLS application. Not visible to the registers loaded here."
+   ],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "YA84KI1VEW",
+   "name": "MOLNUPIRAVIR",
+   "moiety": "MOLNUPIRAVIR",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "molnupiravir"
+   ],
+   "area": "COVID-19 virus infection",
+   "atc": "J05A",
+   "indication": "Treatment of coronavirus disease 2019 (COVID-19).",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "8O74K609HN",
+   "name": "OBICETRAPIB",
+   "moiety": "OBICETRAPIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "obicetrapib hemicalcium"
+   ],
+   "area": "Hypercholesterolemia;Dyslipidemias",
+   "atc": "C10A",
+   "indication": "Treatment of primary hypercholesterolaemia or mixed dyslipidaemia.",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "2M19539ERK",
+   "name": "OMECAMTIV MECARBIL",
+   "moiety": "OMECAMTIV MECARBIL",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "omecamtiv mecarbil dihydrochloride hydrate"
+   ],
+   "area": "Heart Failure, Systolic",
+   "atc": "C01CX10",
+   "indication": "Treatment of adult patients with symptomatic chronic heart failure and reduced ejection fraction less than 30%",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "OS7097575K",
+   "name": "PARSACLISIB",
+   "moiety": "PARSACLISIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "Parsaclisib hydrochloride"
+   ],
+   "area": "",
+   "atc": "L01EM04",
+   "indication": "Treatment of marginal zone lymphoma",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "SE4TWR0K2C",
+   "name": "PERFLUBUTANE",
+   "moiety": "PERFLUBUTANE",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "perflubutane"
+   ],
+   "area": "Ultrasonography",
+   "atc": "V08D",
+   "indication": "ultrasound imaging agent indicated for the detection of coronary artery disease (CAD)",
+   "approved": "",
+   "flags": [
+    "AUTHORISED_ELSEWHERE (PMDA Japan / MFDS Korea / Norway): approved as Sonazoid; EMA row is a withdrawn application. Not visible to the registers loaded here."
+   ],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "721809WQCP",
+   "name": "RUBOXISTAURIN",
+   "moiety": "RUBOXISTAURIN",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ruboxistaurin"
+   ],
+   "area": "Diabetic Retinopathy",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "AJS8S3P31H",
+   "name": "SATAVAPTAN",
+   "moiety": "SATAVAPTAN",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "satavaptan"
+   ],
+   "area": "Hyponatremia",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "8D7B37T28G",
+   "name": "SATRAPLATIN",
+   "moiety": "SATRAPLATIN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "satraplatin"
+   ],
+   "area": "Prostatic Neoplasms",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "9U1ETH79CK",
+   "name": "SOLITHROMYCIN",
+   "moiety": "SOLITHROMYCIN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "solithromycin"
+   ],
+   "area": "Tularemia;Pneumonia;Anthrax",
+   "atc": "J01FA",
+   "indication": "Treatment of bacterial infections",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "B2K5L1L8S9",
+   "name": "SURUFATINIB",
+   "moiety": "SURUFATINIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "surufatinib"
+   ],
+   "area": "Neuroendocrine Tumors",
+   "atc": "L01EX01",
+   "indication": "Treatment of progressive neuroendocrine tumours",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "K6A90IIZ19",
+   "name": "VOSAROXIN",
+   "moiety": "VOSAROXIN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "vosaroxin"
+   ],
+   "area": "Leukemia, Myeloid, Acute",
+   "atc": "L01",
+   "indication": "Treatment acute myeloid leukaemia",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  },
+  {
+   "unii": "49HFB70472",
+   "name": "XIMELAGATRAN",
+   "moiety": "XIMELAGATRAN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "ximelagatran"
+   ],
+   "area": "Atrial Fibrillation",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [
+    "AUTHORISED_ELSEWHERE (EU mutual recognition): authorised via MRP before 2006 withdrawal; the EMA centralised row is a withdrawn application. Not visible to the registers loaded here."
+   ],
+   "foreign_status": "never_authorised",
+   "status_by_source": {
+    "EMA": "never_authorised"
+   }
+  }
+ ],
  "monitor": {
   "fedreg": {
    "count": 153,
@@ -2297,6 +2581,6 @@
     }
    ]
   },
-  "as_of": "2026-08-29 13:38"
+  "as_of": "2026-08-29 17:37"
  }
 }

@@ -64,16 +64,57 @@ class UniiIndex:
             self._moiety_claim[mk] = score
 
     # ---- loaders -----------------------------------------------------------
+    @staticmethod
+    def _cols(header, wanted, legacy):
+        """Map logical field -> column index BY HEADER NAME, not by position.
+
+        FDA changes this schema without notice. The 4 Aug 2026 UNII_Records
+        release inserted UTF8_DISPLAY_NAME at index 23, shifting SUBSTANCE_TYPE
+        from 23 to 24 — so the previously-correct row[23] began returning a
+        display name. is_biologic() then matched almost nothing and the
+        biologic/mixture filter silently collapsed from 204 rows to 4, leaking
+        ~200 proteins and mixtures into the candidate list. Positional indices
+        are only a fallback for a file with no recognisable header.
+
+        Also tolerates the header renaming seen in the same release
+        ('Display Name' -> 'DISPLAY_NAME'): comparison is case- and
+        separator-insensitive.
+        """
+        idx = {}
+        if header:
+            norm = {re.sub(r"[^a-z0-9]", "", (h or "").lower()): i
+                    for i, h in enumerate(header)}
+            for key, aliases in wanted.items():
+                for a in aliases:
+                    j = norm.get(re.sub(r"[^a-z0-9]", "", a.lower()))
+                    if j is not None:
+                        idx[key] = j
+                        break
+        missing = [k for k in wanted if k not in idx]
+        for k in missing:
+            idx[k] = legacy[k]
+        if missing:
+            print(f"[unii] WARNING: no header match for {missing}; falling back to "
+                  f"legacy positions {[legacy[k] for k in missing]}. Verify the "
+                  f"UNII schema has not changed again.", flush=True)
+        return idx
+
     def load_names(self, path: str) -> int:
-        """UNII_Names file: Name<TAB>TYPE<TAB>UNII<TAB>Display Name."""
+        """UNII_Names file: NAME, TYPE, UNII, DISPLAY_NAME (columns by header)."""
         n = 0
         with open(path, encoding="utf-8", errors="replace", newline="") as fh:
             rd = csv.reader(fh, delimiter="\t")
             header = next(rd, None)
+            c = self._cols(header,
+                           {"name": ["NAME", "Name"], "unii": ["UNII"],
+                            "display": ["DISPLAY_NAME", "Display Name"]},
+                           {"name": 0, "unii": 2, "display": 3})
+            i_name, i_unii, i_disp = c["name"], c["unii"], c["display"]
+            need = max(i_name, i_unii, i_disp)
             for row in rd:
-                if len(row) < 4:
+                if len(row) <= need:
                     continue
-                name, _type, unii, display = row[0], row[1], row[2], row[3]
+                name, unii, display = row[i_name], row[i_unii], row[i_disp]
                 if not unii:
                     continue
                 nm = norm(name)
@@ -84,18 +125,29 @@ class UniiIndex:
         return n
 
     def load_records(self, path: str) -> int:
-        """UNII_Records: UNII, Display Name, ... INN_ID(16), ... SUBSTANCE_TYPE(23)."""
+        """UNII_Records: UNII, DISPLAY_NAME, INN_ID, USAN_ID, SUBSTANCE_TYPE.
+
+        Columns are resolved by header name — see _cols for why that is not
+        optional here."""
         n = 0
         with open(path, encoding="utf-8", errors="replace", newline="") as fh:
             rd = csv.reader(fh, delimiter="\t")
             header = next(rd, None)
+            c = self._cols(header,
+                           {"unii": ["UNII"],
+                            "display": ["DISPLAY_NAME", "Display Name"],
+                            "inn": ["INN_ID"], "usan": ["USAN_ID"],
+                            "subtype": ["SUBSTANCE_TYPE"]},
+                           {"unii": 0, "display": 1, "inn": 16, "usan": 17,
+                            "subtype": 23})
+            need = max(c.values())
             for row in rd:
-                if len(row) < 24:
+                if len(row) <= need:
                     continue
-                unii, display = row[0], row[1]
-                inn_id = row[16] if len(row) > 16 else ""
-                usan_id = row[17] if len(row) > 17 else ""
-                subtype = row[23] if len(row) > 23 else ""
+                unii, display = row[c["unii"]], row[c["display"]]
+                inn_id = row[c["inn"]]
+                usan_id = row[c["usan"]]
+                subtype = row[c["subtype"]]
                 if not unii:
                     continue
                 self.unii2display[unii] = display
@@ -108,7 +160,33 @@ class UniiIndex:
                     self.name2unii[nm] = unii
                 self._claim_moiety(moiety_key(display), nm, unii)
                 n += 1
+        self._check_subtypes(path)
         return n
+
+    def _check_subtypes(self, path: str):
+        """Belt-and-braces guard on the SUBSTANCE_TYPE column.
+
+        Header-name lookup fixes the known 2026-08 schema shift, but the failure
+        mode it protects against is silent and expensive — a mis-read column made
+        is_biologic() return False almost everywhere and leaked ~200 proteins and
+        mixtures into the candidate list, while every count still looked
+        plausible. So assert the shape of the data too: this column is a small
+        controlled vocabulary dominated by 'chemical'. Anything else means the
+        schema moved again."""
+        types = {}
+        for t in self.unii2type.values():
+            types[t] = types.get(t, 0) + 1
+        if not types:
+            return
+        n = sum(types.values())
+        chem = types.get("chemical", 0)
+        if len(types) > 25 or chem < 0.25 * n:
+            top = sorted(types.items(), key=lambda kv: -kv[1])[:5]
+            print(f"[unii] WARNING: SUBSTANCE_TYPE in {os.path.basename(path)} "
+                  f"looks wrong — {len(types):,} distinct values, 'chemical' is "
+                  f"{chem:,}/{n:,}. Expected a handful of values dominated by "
+                  f"'chemical'. The biologic/mixture filter is probably reading "
+                  f"the wrong column; top values: {top}", flush=True)
 
     # ---- resolution --------------------------------------------------------
     def resolve(self, name: str):

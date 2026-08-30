@@ -230,14 +230,23 @@ footer{color:var(--ink-tertiary);font-size:12px;text-align:center;margin:40px 0 
   <!-- PLAIN-ENGLISH INTRO -->
   <div class="intro">
     <h1>What am I looking at?</h1>
-    <p>These are medicines already approved in <b>Europe, Canada, or Switzerland</b> that have <b>never been approved in the United States</b>. That gap is the opportunity: if you get one of them approved in the US to treat a <b>rare childhood disease</b>, the FDA awards a <b class="money">Priority Review Voucher</b> — a freely transferable prize that <b class="money">recently sold for ~$100–160&nbsp;million</b> (record $350M in 2015).</p>
+    <p>These are medicines with a <b>real marketing authorisation from Europe, Canada or Switzerland</b> that have <b>never been approved in the United States</b>. That gap is the opportunity: if you get one of them approved in the US to treat a <b>rare childhood disease</b>, the FDA awards a <b class="money">Priority Review Voucher</b> — a freely transferable prize. The three SEC-verified 2026 sales went for <b class="money">$180M, $195M and $205M</b> (record $350M in 2015).</p>
     <p>Think of this as a <b>starting shortlist</b>, not a list of ready businesses. Every drug here clears the first gate (novel to the US), but each still needs a few human checks before it's real — shown on every card and explained when you click one.</p>
     <div class="steps">
       <div class="step"><div class="k">THE GAP</div><div class="t">Approved abroad, never in the US → clears the first eligibility gate.</div></div>
       <div class="step"><div class="k">THE FIT</div><div class="t">Must be developable for a <b>rare pediatric disease</b> to qualify for the voucher.</div></div>
+      <div class="step"><div class="k">THE FILING</div><div class="t">Must be filed as a <b>full 505(b)(1) NDA</b> — since 2021 a 505(b)(2) forfeits the voucher.</div></div>
       <div class="step"><div class="k">THE CHECKS</div><div class="t">Confirm US patents / rights are clear and the active ingredient is sourceable.</div></div>
       <div class="step"><div class="k">THE PRIZE</div><div class="t">Get it approved → a voucher you can sell to any drugmaker.</div></div>
     </div>
+    <p style="font-size:13px;color:var(--ink-secondary);margin-top:12px;border-left:2px solid var(--rule-strong);padding-left:12px">
+      <b>What this list deliberately excludes.</b> Drugs whose only overseas record is a
+      <i>refused</i> or <i>withdrawn application</i> are <b>not</b> counted here — they were never
+      approved abroad, so the headline claim would be false. They are kept separately as
+      "dossier-only" leads in <code>funnelA_dossier_only.csv</code>, because a dossier and human
+      data still exist. Before 2026-08-29 they were mixed into this list and inflated it by
+      roughly half.
+    </p>
     <p class="deadline" style="margin-top:14px">⏳ <b>The program ends 30 September 2029.</b> The voucher is awarded on <i>approval</i>, so a drug must be approved by that date — a realistic program needs to start soon. (The program briefly lapsed in Dec 2024 and was reauthorized in Feb 2026; new designations are open again.) <span id="sunset-remain"></span></p>
   </div>
 
@@ -276,8 +285,15 @@ footer{color:var(--ink-tertiary);font-size:12px;text-align:center;margin:40px 0 
       chance of FDA approval. It rewards rare/pediatric relevance, a foreign rare-disease flag,
       approval by multiple regulators, and match confidence. It can't see freedom-to-operate,
       existing US orphan exclusivity, ingredient sourcing, or trial feasibility — so a high rank
-      means "worth a closer look," never "a sure thing." The <b>~7 estimated actionable</b> figure,
-      not the full count, is the honest size of the opportunity.
+      means "worth a closer look," never "a sure thing."
+    </p>
+    <p style="font-size:13px;color:var(--ink-secondary);max-width:720px;margin:0 0 8px">
+      Two known gaps in the ranking, stated plainly. <b>Orphan flags are EMA-only</b>, so a
+      Canadian or Swiss drug can never earn that badge and is scored down for a reason that has
+      nothing to do with the drug. <b>"Approved by more than one regulator" is currently always
+      zero</b> — not because no drug qualifies, but because EMA here is centralised-only while
+      Canada and Switzerland list mostly nationally-approved drugs, so the sets barely overlap.
+      Both dimensions therefore deflate every candidate roughly equally.
     </p>
   </details>
 
@@ -300,14 +316,16 @@ const titleCase=s=>s.toLowerCase().replace(/\b([a-z])/g,(m,c)=>c.toUpperCase());
 
 /* ---------- hover tooltips (plain-English) ---------- */
 const TIPS={
- orphan:"Flagged an 'orphan drug' by a foreign regulator — approved for a rare disease abroad. A strong rare-disease signal, but it does NOT by itself prove US voucher eligibility.",
+ orphan:"Carries an EU orphan-medicine flag AND holds a real EU marketing authorisation. Only EMA supplies this flag — Canada, Switzerland and Japan are not screened for orphan status, so absence of the badge means 'not checked', not 'not rare'. A strong rare-disease signal, but it does NOT by itself prove US voucher eligibility.",
  caveat:"Heads up — this drug was matched through a salt or prodrug form. Open the card to see the exact flag to double-check.",
+ fstatus_authorised:"Currently holds a marketing authorisation from this regulator.",
+ fstatus_previously:"Was authorised by this regulator and the licence has since been withdrawn, lapsed, expired or been revoked. Still a genuine prior approval — but find out WHY it was pulled before going further.",
  off_open:"Approved abroad 20+ years ago, so the original patents have almost certainly expired. A signal, not a legal clearance — still verify.",
  off_soon:"Approved abroad 12–20 years ago — core patents may have expired. Verify the exact dates.",
  off_prot:"Approved abroad recently — very likely still under patent protection.",
  off_unk:"No overseas approval date on record, so patent age can't be estimated here.",
  research:"Left: research papers mentioning this drug in a rare/pediatric context. Right: registered clinical trials. A rough read on how much is already known and whether others are working on it.",
- novel:"No US human-drug (NDA/BLA) approval on record for this active moiety, so it clears the program's first gate — 'novel' to the US. Veterinary and OTC-monograph products are screened out and do NOT disqualify. One residual gap: drugs approved and then withdrawn before FDA's electronic records (pre-~1982) can still slip through — verify old candidates by hand.",
+ novel:"No US human-drug (NDA/BLA) approval on record for this active moiety, so it clears the program's first gate — 'novel' to the US. Veterinary approvals and OTC-monograph marketing do NOT disqualify: the statute bars only a prior approval in a 505(b)(1)/(b)(2)/(j) application. Measured residual gap: of 30 hand-checked drugs approved by FDA and later withdrawn, 13 are missing from the bulk files — every one withdrawn before ~2000. None currently appears in any foreign register loaded here, but verify pre-2000-era candidates by hand.",
  fedreg:"Live count of Priority Review Voucher documents in the Federal Register — the program's official public ledger.",
  edgar:"Live count of recent SEC filings mentioning 'rare pediatric disease designation'. The FDA publishes no list of who holds these, so SEC filings are the main way to spot competitors.",
 };
@@ -365,11 +383,11 @@ function availability(c){
     say:'No overseas approval date on record — patent status can\'t be estimated here.'};
   const age=NOW_Y-y;
   if(age>=20) return {k:'open', pill:'Likely off-patent', tipk:'off_open',
-    say:`Approved abroad in ${y} (~${age} years ago) — original patents have almost certainly expired.`};
+    say:`Approved abroad in ${y} (~${age} ${age===1?'year':'years'} ago) — original patents have almost certainly expired.`};
   if(age>=12) return {k:'soon', pill:'Maybe off-patent', tipk:'off_soon',
-    say:`Approved abroad in ${y} (~${age} years ago) — core patents may have expired; verify the exact dates.`};
+    say:`Approved abroad in ${y} (~${age} ${age===1?'year':'years'} ago) — core patents may have expired; verify the exact dates.`};
   return {k:'prot', pill:'Likely still patented', tipk:'off_prot',
-    say:`Approved abroad in ${y} (only ~${age} years ago) — likely still under patent protection.`};
+    say:`Approved abroad in ${y} (only ~${age} ${age===1?'year':'years'} ago) — likely still under patent protection.`};
 }
 CANDS.forEach(c=>{ c._avail=availability(c); });
 function evText(c){ const pm=(c.pubmed==null?'—':c.pubmed), ct=(c.trials==null?'—':c.trials);
@@ -445,6 +463,8 @@ function cardNode(c){
   top.appendChild(el('span','sc-name',titleCase(c.name)));
   top.appendChild(tp(el('span','pill '+a.k,a.pill),a.tipk));
   if(c.orphan) top.appendChild(tp(el('span','b orphan','ORPHAN'),'orphan'));
+  if(c.foreign_status==='previously_authorised')
+    top.appendChild(tp(el('span','b caveat','LICENCE PULLED'),'fstatus_previously'));
   if(caveats(c).length) top.appendChild(tp(el('span','b caveat','⚑ check'),'caveat'));
   card.appendChild(top);
   card.appendChild(el('div','sc-desc',plainDesc(c)+' '+a.say));
@@ -544,8 +564,13 @@ function openDrawer(c){
 
   // facts
   const facts=el('div','dsec'); facts.appendChild(el('div','lbl','The basics'));
+  const sbs=c.status_by_source||{};
+  const statusTxt=Object.keys(sbs).length
+    ? Object.keys(sbs).sort().map(k=>k+': '+String(sbs[k]).replace(/_/g,' ')).join('  ·  ')
+    : String(c.foreign_status||'—').replace(/_/g,' ');
   const rows2=[['Approved by', c.sources.join(', ')||'—'],
-    ['Approved abroad', c.approved||'—'],
+    ['Regulatory standing', statusTxt],
+    ['Authorisation date', c.approved||'—'],
     ['Therapy area', (c.area||'').replace(/;/g,' · ')||'—'],
     ['Drug class (ATC)', c.atc?(c.atc+(atcLab?'  ·  '+atcLab:'')):'—']];
   rows2.forEach(([k,v])=>{ const d=el('div','val'); d.style.margin='3px 0';
@@ -609,16 +634,19 @@ document.getElementById('import').onchange=e=>{const f=e.target.files[0];if(!f)r
 (function(){
   const C=DATA.counts, F=DATA.funnel;
   const cards=[
-   [C.named,'Never-in-US drugs','the screening shortlist'],
-   [C.orphan,'Rare-disease flagged','recognised as orphan drugs abroad'],
-   ['~7','Estimated actionable','after patents, sourcing & timeline filters'],
+   [C.named,'Approved abroad, never in US','the screening shortlist'],
+   [C.orphan,'EU orphan-flagged','and holding a real EU authorisation'],
+   [C.dossier_only||0,'Dossier-only','refused/withdrawn abroad — NOT approvals'],
+   [C.review||0,'Need a human call','data on hand cannot settle them'],
    ['~'+(((2029-+(DATA.generated||'2026').slice(0,4))*12)||37),'Months to deadline','program ends 2029-09-30'],
   ];
   const cw=document.getElementById('cards');
   cards.forEach(([n,l,s])=>{const d=el('div','card');d.appendChild(el('div','n',n));d.appendChild(el('div','l',l));d.appendChild(el('div','s',s));cw.appendChild(d);});
-  const stages=[['dim',F.foreign_rows,'Foreign approvals looked at'],['dim',F.resolved,'Identified as a known ingredient'],
+  const stages=[['dim',F.foreign_rows,'Foreign approval records looked at'],['dim',F.resolved,'Identified as a known ingredient'],
    ['',F.resolved-F.in_us,'Not found in the US approval record'],['',F.candidate_small_mol,'Small molecules (biologics removed)'],
-   ['',F.named_drug,'Have a real generic name'],['',C.orphan,'Rare-disease flagged']];
+   ['',(F.named_drug||0)+(F.no_authorisation_in_loaded_registers||0),'Have a real generic name'],
+   ['',F.named_drug,'…and a genuine foreign authorisation (the shortlist)'],
+   ['',C.orphan,'…and an EU orphan flag']];
   const fw=document.getElementById('funnel'), fmax=F.foreign_rows||1;
   stages.forEach(([cls,n,l])=>{const r=el('div','frow '+cls);const b=el('div','bar',(n||0).toLocaleString());
    b.style.width=Math.max(4,Math.round((n||0)/fmax*66))+'%';r.appendChild(b);r.appendChild(el('div','lab',l));fw.appendChild(r);});

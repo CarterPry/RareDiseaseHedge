@@ -1,28 +1,27 @@
-unii,preferred_name,moiety_key,is_INN,is_USAN,substance_type,foreign_sources,n_sources,orphan_flag,therapeutic_area,atc,indication,approved_abroad,match_tier,flags,example_source_names
-40UB1H6Q6T,ETARFOLATIDE,ETARFOLATIDE,N,N,chemical,EMA,1,Y,Ovarian Neoplasms;Radionuclide Imaging,V09,Indicated for single photon emission computed tomography (SPECT) imaging,,exact-moiety,,Etarfolatide
-R5Y8O51589,ANECORTAVE,ANECORTAVE,N,N,chemical,EMA,1,N,Wet Macular Degeneration,,,,moiety-base,,anecortave acetate
-0GH9JX37C8,BUTYLSCOPOLAMINE BROMIDE,HYOSCINE BUTYLBROMIDE,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,HYOSCINE BUTYLBROMIDE
-N20HL7Q941,CAMPHOR (NATURAL),DEXTROCAMPHORA,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,dextrocamphora
-213N3S8275,"CAMPHOR, (-)-",CAMPHOR,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,CAMPHOR
-CUB7JI0JV3,CETYLPYRIDINIUM,CETYLPYRIDINIUM,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,CETYLPYRIDINIUM CHLORIDE
-FLI06WS32H,CHLORAL,CHLORAL,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,CHLORAL HYDRATE
-0R0008Q3JB,CHROMIUM,CHROMIUM,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,chromium
-N0KCY1368Z,CUPRIC ACETATE CU-64,COPPER 64CU,N,N,chemical,EMA,1,N,Radionuclide Imaging,Not yet assigned,"Cuprymina is a radiopharmaceutical precursor. It is not intended for direct use in patients. This medicinal product must be used only for the radiolabelling of carrier molecules, which have been specifically developed and authorised for radiolabelling with this radionuclide.",23/08/2012,moiety-base,,copper (64Cu) chloride
-1NKX3648J9,DICHLOROBENZYL ALCOHOL,DICHLOROBENZYL ALCOHOL,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,DICHLOROBENZYL ALCOHOL
-FC72KVT52F,ETHYLENE GLYCOL,GLYCOL,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,GLYCOL SALICYLATE
-14255EXE39,ETHYLPARABEN,E 214,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,E 214
-6JKA7MAH9C,GUAIACOL,GUAIACOL,N,N,chemical,Health Canada,1,N,,,,,moiety-base,,GUAIACOL CARBONATE
-1U477369SN,LUTETIUM CHLORIDE LU-177,LUTETIUM 177LU,N,N,chemical,EMA,1,N,Radionuclide Imaging,V10X,"Theralugand is a radiopharmaceutical precursor, and it is not intended for direct use in patients. It is to be used only for the radiolabelling of carrier molecules that have been specifically developed and authorised for radiolabelling with lutetium (177Lu) chloride.",22/11/2024,moiety-base,,lutetium (177Lu) chloride
-I38ZP9992A,MAGNESIUM,,N,N,chemical,Swissmedic,1,N,,,,,direct,,magnesium
-JL5DK93RCL,MELATONIN,MELATONIN,N,N,chemical,EMA,1,N,Sleep Initiation and Maintenance Disorders;Autistic Disorder,N05CH01,"Slenyto is indicated for:  treatment of insomnia in children and adolescents aged 2-18 years with Autism Spectrum Disorder (ASD), and / or neurogenetic disorders with aberrant diurnal melatonin secretion and /or nocturnal awakenings, where sleep hygiene measures have been insufficient. treatment of insomnia in children and adolescents aged 6-17 years with attention-deficit hyperactivity disorder (ADHD) where sleep hygiene measures have been insufficient.",20/09/2018,exact-moiety,,melatonin
-6634O61GOI,MOLYBDENUM MO-99,MOLYBDENUM 99 MO,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,molybdenum(99-Mo)
-E775ICF82G,OCTANOIC ACID 1-C-13,1 13C CAPRYLIC,N,N,chemical,EMA,1,N,Gastric Emptying;Breath Tests,,,,moiety-base,,1-13C-caprylic acid
-UA8U0KJM72,PAMABROM,PAMABROM,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,PAMABROM
-339NCG44TV,PHENOL,PHENOL,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,PHENOL
-F1CB00L2RH,PSMA-1007 F-18,18F PSMA 1007,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,(18F)-PSMA-1007
-H6241UJ22B,SELENIUM,SELENIUM,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,selenium
-9NEZ333N27,SODIUM,NATRIUM,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,natrium
-3J50XA376E,THYMOL,THYMOLUM,N,N,chemical,Swissmedic,1,N,,,,,exact-moiety,,thymolum
-7NS97N9H1G,"TRYPTOPHAN, D-",TRYPTOPHAN,N,N,chemical,Health Canada,1,N,,,,,exact-moiety,,TRYPTOPHAN
-1K8M7UR6O1,YTTRIUM Y-90,YTTRIUM 90Y,N,N,chemical,EMA,1,N,Radionuclide Imaging,V09,"To be used only for the radiolabelling of carrier molecules, which have been specifically developed and authorised for radiolabelling with this radionuclide.Radiopharmaceutical precursor - Not intended for direct use in patients.",19/01/2006,moiety-base,,yttrium (90Y) chloride
-J41CSQ7QDS,ZINC,,N,N,chemical,EMA,1,N,Hepatolenticular Degeneration,A16AX05,Treatment of Wilson's disease.,12/10/2004,direct,,zinc
+unii,preferred_name,moiety_key,is_INN,is_USAN,substance_type,foreign_sources,n_sources,foreign_status,status_by_source,orphan_flag,therapeutic_area,atc,indication,approved_abroad,match_tier,flags,example_source_names
+40UB1H6Q6T,ETARFOLATIDE,ETARFOLATIDE,N,N,chemical,EMA,1,never_authorised,EMA=never_authorised,Y,Ovarian Neoplasms;Radionuclide Imaging,V09,Indicated for single photon emission computed tomography (SPECT) imaging,,exact-moiety,,Etarfolatide
+N20HL7Q941,CAMPHOR (NATURAL),CAMPHOR,N,N,chemical,Health Canada|Swissmedic,2,authorised,Health Canada=authorised|Swissmedic=authorised,N,,,,,exact-moiety,,CAMPHOR ; dextrocamphora
+R5Y8O51589,ANECORTAVE,ANECORTAVE,N,N,chemical,EMA,1,never_authorised,EMA=never_authorised,N,Wet Macular Degeneration,,,,moiety-base,,anecortave acetate
+0GH9JX37C8,BUTYLSCOPOLAMINE BROMIDE,HYOSCINE BUTYLBROMIDE,N,N,chemical,Health Canada,1,authorised,Health Canada=authorised,N,,,,,exact-moiety,,HYOSCINE BUTYLBROMIDE
+CUB7JI0JV3,CETYLPYRIDINIUM,CETYLPYRIDINIUM,N,N,chemical,Health Canada,1,authorised,Health Canada=authorised,N,,,,,moiety-base,,CETYLPYRIDINIUM CHLORIDE
+FLI06WS32H,CHLORAL,CHLORAL,N,N,chemical,Health Canada,1,authorised,Health Canada=authorised,N,,,,,moiety-base,,CHLORAL HYDRATE
+0R0008Q3JB,CHROMIUM,CHROMIUM,N,N,chemical,Swissmedic,1,authorised,Swissmedic=authorised,N,,,,,exact-moiety,,chromium
+N0KCY1368Z,CUPRIC ACETATE CU-64,COPPER 64CU,N,N,chemical,EMA,1,authorised,EMA=authorised,N,Radionuclide Imaging,Not yet assigned,"Cuprymina is a radiopharmaceutical precursor. It is not intended for direct use in patients. This medicinal product must be used only for the radiolabelling of carrier molecules, which have been specifically developed and authorised for radiolabelling with this radionuclide.",23/08/2012,moiety-base,,copper (64Cu) chloride
+1NKX3648J9,DICHLOROBENZYL ALCOHOL,DICHLOROBENZYL ALCOHOL,N,N,chemical,Health Canada,1,authorised,Health Canada=authorised,N,,,,,exact-moiety,,DICHLOROBENZYL ALCOHOL
+FC72KVT52F,ETHYLENE GLYCOL,GLYCOL,N,N,chemical,Health Canada,1,authorised,Health Canada=authorised,N,,,,,moiety-base,,GLYCOL SALICYLATE
+14255EXE39,ETHYLPARABEN,E 214,N,N,chemical,Swissmedic,1,authorised,Swissmedic=authorised,N,,,,,exact-moiety,,E 214
+6JKA7MAH9C,GUAIACOL,GUAIACOL,N,N,chemical,Health Canada,1,authorised,Health Canada=authorised,N,,,,,moiety-base,,GUAIACOL CARBONATE
+1U477369SN,LUTETIUM CHLORIDE LU-177,LUTETIUM 177LU,N,N,chemical,EMA,1,authorised,EMA=authorised,N,Radionuclide Imaging,V10X,"Theralugand is a radiopharmaceutical precursor, and it is not intended for direct use in patients. It is to be used only for the radiolabelling of carrier molecules that have been specifically developed and authorised for radiolabelling with lutetium (177Lu) chloride.",22/11/2024,moiety-base,,lutetium (177Lu) chloride
+I38ZP9992A,MAGNESIUM,,N,N,chemical,Swissmedic,1,authorised,Swissmedic=authorised,N,,,,,direct,,magnesium
+JL5DK93RCL,MELATONIN,MELATONIN,N,N,chemical,EMA,1,authorised,EMA=authorised,N,Sleep Initiation and Maintenance Disorders;Autistic Disorder,N05CH01,"Slenyto is indicated for:  treatment of insomnia in children and adolescents aged 2-18 years with Autism Spectrum Disorder (ASD), and / or neurogenetic disorders with aberrant diurnal melatonin secretion and /or nocturnal awakenings, where sleep hygiene measures have been insufficient. treatment of insomnia in children and adolescents aged 6-17 years with attention-deficit hyperactivity disorder (ADHD) where sleep hygiene measures have been insufficient.",20/09/2018,exact-moiety,,melatonin
+6634O61GOI,MOLYBDENUM MO-99,MOLYBDENUM 99 MO,N,N,chemical,Swissmedic,1,authorised,Swissmedic=authorised,N,,,,,exact-moiety,,molybdenum(99-Mo)
+E775ICF82G,OCTANOIC ACID 1-C-13,1 13C CAPRYLIC,N,N,chemical,EMA,1,never_authorised,EMA=never_authorised,N,Gastric Emptying;Breath Tests,,,,moiety-base,,1-13C-caprylic acid
+UA8U0KJM72,PAMABROM,PAMABROM,N,N,chemical,Health Canada,1,authorised,Health Canada=authorised,N,,,,,exact-moiety,,PAMABROM
+339NCG44TV,PHENOL,PHENOL,N,N,chemical,Health Canada,1,authorised,Health Canada=authorised,N,,,,,exact-moiety,,PHENOL
+F1CB00L2RH,PSMA-1007 F-18,18F PSMA 1007,N,N,chemical,Swissmedic,1,authorised,Swissmedic=authorised,N,,,,,exact-moiety,,(18F)-PSMA-1007
+H6241UJ22B,SELENIUM,SELENIUM,N,N,chemical,Swissmedic,1,authorised,Swissmedic=authorised,N,,,,,exact-moiety,,selenium
+9NEZ333N27,SODIUM,NATRIUM,N,N,chemical,Swissmedic,1,authorised,Swissmedic=authorised,N,,,,,exact-moiety,,natrium
+3J50XA376E,THYMOL,THYMOLUM,N,N,chemical,Swissmedic,1,authorised,Swissmedic=authorised,N,,,,,exact-moiety,,thymolum
+7NS97N9H1G,"TRYPTOPHAN, D-",TRYPTOPHAN,N,N,chemical,Health Canada,1,authorised,Health Canada=authorised,N,,,,,exact-moiety,,TRYPTOPHAN
+J8L3BWC4BD,YTTRIUM CITRATE Y-90,YTTRIUM 90Y,N,N,chemical,EMA,1,authorised,EMA=authorised,N,Radionuclide Imaging,V09,"To be used only for the radiolabelling of carrier molecules, which have been specifically developed and authorised for radiolabelling with this radionuclide.Radiopharmaceutical precursor - Not intended for direct use in patients.",19/01/2006,moiety-base,,yttrium (90Y) chloride
+J41CSQ7QDS,ZINC,,N,N,chemical,EMA,1,authorised,EMA=authorised,N,Hepatolenticular Degeneration,A16AX05,Treatment of Wilson's disease.,12/10/2004,direct,,zinc

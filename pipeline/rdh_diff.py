@@ -35,16 +35,94 @@ import csv, os, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from unii import UniiIndex, has_stereo_marker  # noqa: E402
-from moiety import full_keys  # noqa: E402
+from moiety import full_keys, stereo_name_variants  # noqa: E402
 from gsrs import GsrsClient  # noqa: E402
 import sources  # noqa: E402
 
 RAW = os.path.join(HERE, "data", "raw")
 OUT = os.path.join(HERE, "data", "out")
 
+# Regulatory standing, best-wins when several regulators list the same moiety.
+# "never_authorised" means a dossier exists but no regulator ever granted a
+# licence (EMA application-withdrawn / refused / opinion-only). Those rows are
+# real repurposing leads but they are NOT foreign approvals, so they are counted
+# and reported separately — conflating them overstated the 2026-08 candidate list
+# by 33 of 67 rows.
+STATUS_RANK = {"never_authorised": 1, "previously_authorised": 2, "authorised": 3}
+
+# Authorisations this pipeline structurally cannot see, for moieties whose only
+# LOADED record is a non-authorisation. The four registers loaded are EMA
+# CENTRALISED, Health Canada, Swissmedic and PMDA-FY — so a drug licensed only in
+# Japan, Australia, or via an EU national/mutual-recognition route reads as
+# "never authorised" when it is in fact approved abroad. Without this table the
+# status fix would trade one overclaim (calling refusals approvals) for another
+# (calling real approvals refusals). Each entry is a cited fact, and the row is
+# FLAGGED rather than promoted — the pipeline still has no machine evidence.
+#   moiety_key -> (regulator, citation)
+KNOWN_AUTHORISED_ELSEWHERE = {
+    "ANAMORELIN":   ("PMDA Japan", "approved Jan 2021 (Adlumiz, cancer cachexia); "
+                                   "EMA row is a refusal"),
+    "GARENOXACIN":  ("PMDA Japan", "approved Jul 2007 (Geninax); EMA row is an "
+                                   "withdrawn application"),
+    "PERFLUBUTANE": ("PMDA Japan / MFDS Korea / Norway",
+                     "approved as Sonazoid; EMA row is a withdrawn application"),
+    "PLITIDEPSIN":  ("TGA Australia", "approved Dec 2018 (Aplidin, multiple "
+                                      "myeloma); EMA row is a withdrawn application"),
+    "LISURIDE":     ("EU national", "nationally authorised for Parkinson's disease "
+                                    "and hyperprolactinaemia; the EMA row is a "
+                                    "withdrawn RLS application"),
+    "XIMELAGATRAN": ("EU mutual recognition",
+                     "authorised via MRP before 2006 withdrawal; the EMA "
+                     "centralised row is a withdrawn application"),
+}
+
+# The stereoisomer-partner vocabulary lives in moiety.py (INN_STEREO_PREFIXES /
+# stereo_name_variants) so the harness can test it and there is exactly one
+# definition of it in the codebase.
+
+# Prodrugs whose active moiety IS US-approved but for which the GSRS graph holds
+# no edge — typically because the substance is too new to have been curated.
+# The GSRS sweep is the general mechanism; this is the acknowledged residual, so
+# it stays small, cited, and VERIFIED at run time: each entry only excludes if
+# the named parent is genuinely present in the US record, so a stale entry can
+# never assert an approval that no longer exists.
+#   moiety_key -> (US-approved active moiety, citation)
+GSRS_GAP_PRODRUGS = {
+    "TEGOMIL": ("monomethyl fumarate",
+                "tegomil fumarate (Riulvy, EMA 2026) is two monomethyl-fumarate "
+                "moieties joined by tetraethylene glycol and is cleaved in vivo "
+                "to monomethyl fumarate + inactive PEG; MMF is US-approved as "
+                "Bafiertam (NDA 210296). Verified 2026-08-29 — GSRS carries no "
+                "relationship for UNII MXD6KMG2ZP."),
+}
+
 
 def log(msg):
     print(f"[{time.strftime('%H:%M:%S')}] {msg}", flush=True)
+
+
+def _newest_unii(prefix: str) -> str:
+    """Newest date-stamped UNII flat file for a prefix, by embedded date.
+
+    Sorting on the filename string would put 26Feb2026 after 4Aug2026, so the
+    date is parsed. Raises with an actionable message rather than letting the
+    run proceed on a file that is not there."""
+    import datetime, glob, re
+    best, best_d = None, None
+    for p in glob.glob(os.path.join(RAW, prefix + "*.txt")):
+        m = re.match(re.escape(prefix) + r"(.+)\.txt$", os.path.basename(p))
+        if not m:
+            continue
+        try:
+            d = datetime.datetime.strptime(m.group(1), "%d%b%Y").date()
+        except ValueError:
+            continue
+        if best_d is None or d > best_d:
+            best, best_d = p, d
+    if not best:
+        raise SystemExit(
+            f"no {prefix}*.txt in {RAW}. Run: python3 pipeline/fetch.py unii unii_data")
+    return best
 
 
 def main():
@@ -52,12 +130,18 @@ def main():
     t0 = time.time()
 
     # 1) Build the UNII join index -----------------------------------------
+    # Filenames are date-stamped by FDA (UNII_Names_4Aug2026.txt), so pick the
+    # newest present rather than hardcoding a date. The hardcoded 26Feb2026 path
+    # meant a refreshed index was never actually used — the pipeline read a
+    # six-month-old identity map while reporting a current snapshot.
     idx = UniiIndex()
-    log("loading UNII name index (77MB, ~1M synonyms)...")
-    n_names = idx.load_names(os.path.join(RAW, "UNII_Names_26Feb2026.txt"))
+    names_path = _newest_unii("UNII_Names_")
+    recs_path = _newest_unii("UNII_Records_")
+    log(f"loading UNII name index ({os.path.basename(names_path)}, ~1M synonyms)...")
+    n_names = idx.load_names(names_path)
     log(f"  {n_names:,} synonym rows -> {len(idx.name2unii):,} normalized names")
-    log("loading UNII records...")
-    n_rec = idx.load_records(os.path.join(RAW, "UNII_Records_26Feb2026.txt"))
+    log(f"loading UNII records ({os.path.basename(recs_path)})...")
+    n_rec = idx.load_records(recs_path)
     log(f"  {n_rec:,} UNII records")
 
     # 2) RIGHT side: US exclusion set --------------------------------------
@@ -68,12 +152,28 @@ def main():
         f"({us_stats['unmatched']:,} name rows unresolved to UNII)")
 
     # 3) LEFT side: foreign approvals --------------------------------------
+    # Every loader returns [] when its file is absent. Silently, that turns a
+    # missing download into a smaller candidate list that looks just as
+    # confident — losing EMA alone would drop most of the headline set. So the
+    # expected input file is named, and its absence is a loud warning.
     foreign = []
-    for name, fn in [("EMA", sources.load_ema), ("Canada", sources.load_canada),
-                     ("Swissmedic", sources.load_swissmedic), ("PMDA", sources.load_pmda)]:
+    missing = []
+    for name, fn, fname in [
+            ("EMA", sources.load_ema, "ema_med.xlsx"),
+            ("Canada", sources.load_canada, "ingred_ap.zip"),
+            ("Swissmedic", sources.load_swissmedic, "sm_stoff.xlsx"),
+            ("PMDA", sources.load_pmda, "pmda_fy2025.xlsx")]:
         recs = fn(RAW)
-        log(f"loaded {len(recs):,} substance rows from {name}")
+        if not recs:
+            missing.append(f"{name} ({fname})")
+            log(f"  !! WARNING: {name} contributed 0 rows — {fname} missing or "
+                f"unreadable. Candidate list is INCOMPLETE for this regulator.")
+        else:
+            log(f"loaded {len(recs):,} substance rows from {name}")
         foreign.extend(recs)
+    if missing:
+        log(f"  !! {len(missing)} source(s) contributed nothing: {', '.join(missing)}")
+        log(f"  !! run `python3 pipeline/fetch.py` before trusting these counts")
 
     # 4) Resolve + anti-join -----------------------------------------------
     # Collapse foreign rows to unique moiety, tracking which regulators and
@@ -83,12 +183,15 @@ def main():
     # labeled US-approved drugs (see test_accuracy.py).
     log("resolving foreign substances and running anti-join...")
     by_moiety: dict[str, dict] = {}
+    unresolved_by_source: dict[str, int] = {}
+    rows_by_source: dict[str, int] = {}
     funnel = {"foreign_rows": len(foreign), "resolved": 0, "unmatched": 0,
               "biologic_or_mixture": 0, "in_us": 0, "in_us_string": 0,
               "in_us_gsrs": 0, "review": 0, "candidate_small_mol": 0,
               "needs_translit_unmatched": 0}
 
     for rec in foreign:
+        rows_by_source[rec["source"]] = rows_by_source.get(rec["source"], 0) + 1
         cu, mk, tier = idx.moiety_unii(rec["substance"])
         if cu:
             funnel["resolved"] += 1
@@ -96,6 +199,11 @@ def main():
             funnel["unmatched"] += 1
             if rec.get("needs_translit"):
                 funnel["needs_translit_unmatched"] += 1
+            # Per-source, because the aggregate is misleading: the report used to
+            # blame "mostly PMDA katakana" when Japan is only ~140 rows and the
+            # real mass is Swissmedic's Latin pharmacopoeial genitives.
+            unresolved_by_source[rec["source"]] = \
+                unresolved_by_source.get(rec["source"], 0) + 1
             # unresolved names cannot be diffed reliably; skip from candidates
             continue
 
@@ -116,6 +224,7 @@ def main():
             "in_us": in_us, "biologic": biologic, "examples": set(),
             "area": "", "atc": "", "indication": "", "approved": "",
             "flags": [], "excluded_by": basis, "verdict": "",
+            "foreign_status": "never_authorised", "status_by_source": {},
         })
         entry["sources"].add(rec["source"])
         entry["orphan"] = entry["orphan"] or rec["orphan"]
@@ -123,6 +232,16 @@ def main():
         entry["in_us"] = entry["in_us"] or in_us
         if basis and not entry["excluded_by"]:
             entry["excluded_by"] = basis
+        # Best regulatory standing across every source that lists this moiety. A
+        # drug refused by EMA but licensed in Canada is approved abroad; a drug
+        # only ever refused everywhere is not. Keeping the per-source detail means
+        # the report can say WHICH regulator actually authorised it.
+        fs = rec.get("foreign_status", "authorised")
+        if STATUS_RANK.get(fs, 0) > STATUS_RANK.get(entry["foreign_status"], 0):
+            entry["foreign_status"] = fs
+        prev = entry["status_by_source"].get(rec["source"])
+        if prev is None or STATUS_RANK.get(fs, 0) > STATUS_RANK.get(prev, 0):
+            entry["status_by_source"][rec["source"]] = fs
         # keep the first non-empty enrichment (EMA carries these)
         for f in ("area", "atc", "indication", "approved"):
             if not entry[f] and rec.get(f):
@@ -161,8 +280,44 @@ def main():
                 return f"gsrs-key:{k}"
         return ""
 
+    def stereo_partner(name):
+        """A US-approved stereoisomer/geometric-isomer partner of this moiety.
+
+        Candidate names come from moiety.stereo_name_variants; this function only
+        decides which of them the US record actually contains. Returns
+        (partner_key, basis) or None."""
+        for c in sorted(stereo_name_variants(name)):
+            u = idx.name2unii.get(c) or idx.moiety2unii.get(c)
+            if u and u in us_uniis:
+                return c, f"stereo-unii:{u}"
+            if c in us_moieties:
+                return c, f"stereo-key:{c}"
+        return None
+
+    def gsrs_gap_hit(e):
+        """Cited prodrug exclusion for a pair GSRS does not link. Re-verifies the
+        parent against the live US set rather than trusting the table."""
+        ent = GSRS_GAP_PRODRUGS.get(e["moiety_key"])
+        if not ent:
+            return None
+        parent, cite = ent
+        puniis, pkeys = idx.collect(parent)
+        if (puniis & us_uniis) or (pkeys & us_moieties):
+            pu = sorted(puniis & us_uniis)
+            return (f"prodrug-supplement:{pu[0] if pu else parent}", parent, cite)
+        return None
+
     wall = idx.is_counterion  # synonym-robust counterion wall for the traversal
     for n_done, e in enumerate(survivors, 1):
+        gap = gsrs_gap_hit(e)
+        if gap:
+            basis, parent, cite = gap
+            e["in_us"] = True
+            e["excluded_by"] = basis
+            e["flags"].append(f"PRODRUG_OF_US_APPROVED: active moiety is {parent} "
+                              f"— {cite}")
+            funnel["in_us_gsrs"] += 1
+            continue
         res = g.relatives(e["unii"], wall=wall)
         if not res["ok"]:
             e["verdict"] = "review"
@@ -204,7 +359,20 @@ def main():
                     break
         if e["in_us"]:
             funnel["in_us_gsrs"] += 1
-        elif e["verdict"] != "review" and has_stereo_marker(e["display"] or e["moiety_key"]):
+            continue
+        # Name-based stereo partner: the exclusion case GSRS structurally misses.
+        # Whether a single enantiomer of an approved racemate (or vice versa)
+        # shares the approved "active moiety" under 21 CFR 314.3 is not settled by
+        # the statutory text, so this is REVIEW — never a silent keep or drop.
+        sp = stereo_partner(e["display"] or e["moiety_key"])
+        if sp:
+            partner, basis = sp
+            e["verdict"] = "review"
+            e["flags"].append(
+                f"STEREO_US_PARTNER: {partner} is US-approved ({basis}); "
+                f"s.529 treatment of enantiomer/isomer pairs is unsettled and "
+                f"GSRS carries no stereo edge for this pair")
+        elif has_stereo_marker(e["display"] or e["moiety_key"]):
             # caveat only — no US counterpart found, but a human should look
             e["flags"].append("STEREO_NAME: name carries an enantiomer/racemate "
                               "marker; check the counterpart's US status by hand")
@@ -221,7 +389,7 @@ def main():
     # separate bucket so the headline number is meaningful. REVIEW rows go to
     # their own bucket regardless of naming — they are open questions, not
     # candidates.
-    named, unnamed, review = [], [], []
+    named, unnamed, review, dossier_only = [], [], [], []
     for e in by_moiety.values():
         if e["in_us"]:
             funnel["in_us"] += 1
@@ -234,16 +402,36 @@ def main():
             review.append(e)
             continue
         funnel["candidate_small_mol"] += 1
-        (named if (e["inn"] or e["usan"]) else unnamed).append(e)
+        if not (e["inn"] or e["usan"]):
+            unnamed.append(e)
+            continue
+        # No authorisation in any register this pipeline LOADS — not the same as
+        # "never authorised anywhere", since only EMA centralised, Health Canada,
+        # Swissmedic and PMDA-FY are loaded. A dossier and human data exist (the
+        # feasibility signal), but calling it "approved abroad" on this evidence
+        # would be false. Its own bucket, never the headline number.
+        if e["foreign_status"] == "never_authorised":
+            known = KNOWN_AUTHORISED_ELSEWHERE.get(e["moiety_key"])
+            if known:
+                reg, cite = known
+                e["flags"].append(f"AUTHORISED_ELSEWHERE ({reg}): {cite}. Not "
+                                  f"visible to the registers loaded here.")
+            dossier_only.append(e)
+        else:
+            named.append(e)
     funnel["in_us_string"] = funnel["in_us"] - funnel["in_us_gsrs"]
     funnel["named_drug"] = len(named)
     funnel["unnamed"] = len(unnamed)
+    funnel["no_authorisation_in_loaded_registers"] = len(dossier_only)
+    funnel["unresolved_by_source"] = dict(sorted(unresolved_by_source.items()))
+    funnel["rows_by_source"] = dict(sorted(rows_by_source.items()))
 
     sort_key = lambda e: (not e["orphan"], not (len(e["sources"]) > 1),
                           e["display"] or e["moiety_key"])
     named.sort(key=sort_key)
     unnamed.sort(key=sort_key)
     review.sort(key=sort_key)
+    dossier_only.sort(key=sort_key)
 
     # 6) Write candidate CSVs ----------------------------------------------
     def write_csv(path, rows):
@@ -251,6 +439,7 @@ def main():
             w = csv.writer(fh)
             w.writerow(["unii", "preferred_name", "moiety_key", "is_INN", "is_USAN",
                         "substance_type", "foreign_sources", "n_sources",
+                        "foreign_status", "status_by_source",
                         "orphan_flag", "therapeutic_area", "atc", "indication",
                         "approved_abroad", "match_tier", "flags",
                         "example_source_names"])
@@ -258,7 +447,10 @@ def main():
                 w.writerow([e["unii"], e["display"], e["moiety_key"],
                             "Y" if e["inn"] else "N", "Y" if e["usan"] else "N",
                             e["subtype"], "|".join(sorted(e["sources"])),
-                            len(e["sources"]), "Y" if e["orphan"] else "N",
+                            len(e["sources"]), e["foreign_status"],
+                            "|".join(f"{k}={v}" for k, v in
+                                     sorted(e["status_by_source"].items())),
+                            "Y" if e["orphan"] else "N",
                             e["area"], e["atc"], e["indication"], e["approved"],
                             e["match_tier"], " | ".join(e["flags"]),
                             " ; ".join(sorted(e["examples"])[:3])])
@@ -267,6 +459,7 @@ def main():
     write_csv(csv_path, named)
     write_csv(os.path.join(OUT, "funnelA_unnamed_excipients.csv"), unnamed)
     write_csv(os.path.join(OUT, "funnelA_review.csv"), review)
+    write_csv(os.path.join(OUT, "funnelA_dossier_only.csv"), dossier_only)
     candidates = named  # headline set
 
     # 7) Write funnel report ------------------------------------------------
@@ -275,8 +468,8 @@ def main():
     multi_n = sum(1 for e in candidates if len(e["sources"]) > 1)
     rep_path = os.path.join(OUT, "funnel_report.md")
     with open(rep_path, "w", encoding="utf-8") as fh:
-        fh.write(_report_md(funnel, us_stats, candidates, review, orphan_n, inn_n,
-                            multi_n, time.time() - t0))
+        fh.write(_report_md(funnel, us_stats, candidates, review, dossier_only,
+                            orphan_n, inn_n, multi_n, time.time() - t0))
 
     # 7b) Machine-readable summary for the dashboard UI --------------------
     import json
@@ -286,38 +479,72 @@ def main():
                 "sources": sorted(e["sources"]), "orphan": e["orphan"],
                 "tier": e["match_tier"], "examples": sorted(e["examples"])[:3],
                 "area": e["area"], "atc": e["atc"], "indication": e["indication"],
-                "approved": e["approved"], "flags": e["flags"]}
+                "approved": e["approved"], "flags": e["flags"],
+                "foreign_status": e["foreign_status"],
+                "status_by_source": e["status_by_source"]}
     summary = {
         "generated": time.strftime("%Y-%m-%d"),
-        "snapshot": "UNII 26 Feb 2026 · Drugs@FDA 4 Aug 2026 · Orange Book Jul 2026 · EMA 5 Aug 2026 · GSRS live sweep",
+        "snapshot": _snapshot_label(),
         "funnel": funnel,
         "us_ingredient_rows": us_stats["ingredient_rows"],
         "counts": {"named": len(named), "unnamed": len(unnamed),
-                   "review": len(review),
+                   "review": len(review), "dossier_only": len(dossier_only),
                    "orphan": orphan_n, "inn": inn_n, "multi_regulator": multi_n},
         "candidates": [pack(e) for e in named],
         "unnamed": [pack(e) for e in unnamed],
         "review": [pack(e) for e in review],
+        "dossier_only": [pack(e) for e in dossier_only],
     }
     with open(os.path.join(OUT, "summary.json"), "w", encoding="utf-8") as fh:
         json.dump(summary, fh, indent=1)
 
     log(f"DONE in {time.time()-t0:.1f}s")
-    log(f"  candidates (small-molecule, never-US): {len(candidates):,}")
+    log(f"  candidates — approved abroad, never US: {len(candidates):,}")
     log(f"  of which orphan-flagged: {orphan_n:,}")
+    log(f"  dossier-only (no authorisation in loaded registers): {len(dossier_only):,}")
     log(f"  needs-human-review rows: {len(review):,}")
     log(f"  excluded by GSRS relationship graph: {funnel['in_us_gsrs']:,}")
     log(f"  -> {csv_path}")
     log(f"  -> {rep_path}")
 
 
-def _report_md(f, us, cands, review, orphan_n, inn_n, multi_n, secs):
+def _snapshot_label():
+    """Provenance from the files actually on disk, not a hand-edited string.
+
+    The previous label was a literal that drifted from reality (it claimed
+    'EMA 5 Aug 2026' while naming no Health Canada file at all, and survived a
+    refresh of drug_ap.zip). Deriving it from mtimes means the dashboard can
+    never overstate how fresh the inputs are."""
+    import datetime
+    parts = []
+    # the UNII index is date-stamped in its filename and picked by _newest_unii,
+    # so report the file actually loaded rather than a hardcoded one
+    try:
+        parts.append("UNII " + os.path.basename(_newest_unii("UNII_Names_"))
+                     .replace("UNII_Names_", "").replace(".txt", ""))
+    except SystemExit:
+        parts.append("UNII MISSING")
+    for label, fn in [("Drugs@FDA", "drugsatfda.zip"),
+                      ("Orange Book", "eob.zip"),
+                      ("EMA", "ema_med.xlsx"),
+                      ("Health Canada", "ingred_ap.zip"),
+                      ("Swissmedic", "sm_stoff.xlsx"),
+                      ("PMDA", "pmda_fy2025.xlsx")]:
+        p = os.path.join(RAW, fn)
+        if os.path.exists(p):
+            d = datetime.date.fromtimestamp(os.path.getmtime(p))
+            parts.append(f"{label} {d:%d %b %Y}")
+        else:
+            parts.append(f"{label} MISSING")
+    return " · ".join(parts) + " · GSRS relationship graph"
+
+
+def _report_md(f, us, cands, review, dossier_only, orphan_n, inn_n, multi_n, secs):
     lines = []
     A = lines.append
     A("# Funnel A candidate-discovery run\n")
-    A(f"_Generated by `pipeline/rdh_diff.py` in {secs:.0f}s. Data snapshot 2026-08 "
-      "(UNII 26Feb2026, Drugs@FDA 04Aug2026, Orange Book Jul2026, EMA 05Aug2026, "
-      "GSRS relationship graph queried live)._\n")
+    A(f"_Generated by `pipeline/rdh_diff.py` in {secs:.0f}s. Data snapshot: "
+      f"{_snapshot_label()}._\n")
     A("**What this is:** active substances approved by a foreign regulator whose "
       "active moiety is absent from the entire US approval record — i.e. the "
       "population A1 (never approved in the US) that § 360ff makes PRV-eligible. "
@@ -331,8 +558,11 @@ def _report_md(f, us, cands, review, orphan_n, inn_n, multi_n, secs):
     A("|---|---|")
     A(f"| Foreign substance rows ingested | {f['foreign_rows']:,} |")
     A(f"| Resolved to a UNII | {f['resolved']:,} |")
-    A(f"| Unresolved (mostly PMDA katakana — needs transliteration) | {f['unmatched']:,} |")
-    A(f"| — of which PMDA/Japanese | {f['needs_translit_unmatched']:,} |")
+    A(f"| Unresolved to a UNII (cannot be diffed; dropped) | {f['unmatched']:,} |")
+    for _src, _n in (f.get("unresolved_by_source") or {}).items():
+        _tot = (f.get("rows_by_source") or {}).get(_src, 0)
+        _pct = f"{100*_n/_tot:.0f}%" if _tot else "?"
+        A(f"| — {_src} | {_n:,} of {_tot:,} rows ({_pct}) |")
     A(f"| Unique moieties, resolved | {len(cands)+f['in_us']+f['biologic_or_mixture']+f['review']+f.get('unnamed',0):,} |")
     A(f"| Dropped — moiety already approved in US | {f['in_us']:,} |")
     A(f"| — via string/UNII variant match | {f['in_us_string']:,} |")
@@ -341,7 +571,8 @@ def _report_md(f, us, cands, review, orphan_n, inn_n, multi_n, secs):
     A(f"| **Needs human review — cannot be settled by data on hand** | **{f['review']:,}** |")
     A(f"| Small-molecule, never-US | {f['candidate_small_mol']:,} |")
     A(f"| — unnamed (excipient/antiseptic/reagent/vet — appendix CSV) | {f.get('unnamed',0):,} |")
-    A(f"| **Funnel A candidates — named drug (INN or USAN)** | **{f.get('named_drug',0):,}** |")
+    A(f"| — named, but no authorisation in any register loaded here (dossier-only) | {f.get('no_authorisation_in_loaded_registers',0):,} |")
+    A(f"| **Funnel A candidates — named drug (INN or USAN), genuinely approved abroad** | **{f.get('named_drug',0):,}** |")
     A(f"| — INN-designated | {inn_n:,} |")
     A(f"| — flagged orphan by a foreign regulator | {orphan_n:,} |")
     A(f"| — approved in >1 foreign regulator | {multi_n:,} |\n")
@@ -360,6 +591,30 @@ def _report_md(f, us, cands, review, orphan_n, inn_n, multi_n, secs):
     for e in [c for c in cands if c["orphan"]][:40]:
         A(f"| {e['unii']} | {e['display']} | {'|'.join(sorted(e['sources']))} | "
           f"{'Y' if e['inn'] else 'N'} |")
+    if dossier_only:
+        A("\n### Dossier-only — named, never-US, and no authorisation in any register "
+          "loaded here (funnelA_dossier_only.csv)\n")
+        A("These moieties reached a stringent regulator but the application was "
+          "withdrawn, refused, or sits at opinion stage in every register this "
+          "pipeline loads. They are **not** foreign approvals on this evidence and "
+          "must never be counted as such. Two cautions, in opposite directions:\n")
+        A("- **They may still be approved somewhere unseen.** Only EMA *centralised*, "
+          "Health Canada, Swissmedic and PMDA-FY are loaded, so a drug licensed in "
+          "Japan, Australia, or via an EU national/mutual-recognition route lands "
+          "here wrongly. Known cases are flagged AUTHORISED_ELSEWHERE; that list is "
+          "hand-built and certainly incomplete. Wiring in EMA Article 57 and a "
+          "Japanese source is what actually fixes this.\n")
+        A("- **A refusal is a real negative signal.** These are still genuine "
+          "repurposing leads — a full dossier and human clinical data exist — but a "
+          "refusal may reflect a safety or efficacy problem that would also sink a "
+          "US filing. Read each one's refusal grounds before spending on it.\n")
+        A("| UNII | Name | Regulator status | Orphan | Indication |")
+        A("|---|---|---|---|---|")
+        for e in dossier_only[:60]:
+            st = "; ".join(f"{k}: {v.replace('_', ' ')}"
+                           for k, v in sorted(e["status_by_source"].items()))
+            A(f"| {e['unii']} | {e['display']} | {st} | "
+              f"{'Y' if e['orphan'] else 'N'} | {(e['indication'] or '')[:70]} |")
     if review:
         A("\n### Needs human review (funnelA_review.csv)\n")
         A("These rows are neither kept nor dropped: the data on hand cannot settle "
@@ -369,24 +624,61 @@ def _report_md(f, us, cands, review, orphan_n, inn_n, multi_n, secs):
         for e in review[:40]:
             A(f"| {e['unii']} | {e['display']} | {' / '.join(e['flags'])[:160]} |")
     A("\n### Known residual error classes (do not skip)\n")
-    A("- **US exclusion set is NDA-based.** Drugs@FDA + Orange Book do NOT include "
-      "OTC-monograph, pre-1938, or DESI-withdrawn drugs. So a moiety marketed in "
-      "the US only under an OTC monograph (e.g. aspirin) can still surface as a "
-      "false candidate. This is the § 2 completeness gap in the method doc. It "
-      "also intersects the *Sun Pharma* A2 population, so treat these as "
-      "'investigate', not 'discard'.\n")
-    A("- **Prodrug/conjugate exclusion now runs via GSRS** (two hops along "
+    A("- **US OTC-monograph marketing is NOT a disqualifying approval.** "
+      "s.529(a)(4)(B)(i)(I) turns on a prior approval *in an application under "
+      "505(b)(1), (b)(2) or (j)*. A drug marketed under an OTC monograph has no "
+      "such application, so it does not bar a voucher. The exclusion set is "
+      "therefore correctly NDA/ANDA-based, and adding OTC-monograph moieties to it "
+      "would introduce false NEGATIVES. (The earlier version of this note claimed "
+      "the opposite and used aspirin as the example; aspirin also holds NDAs, so "
+      "it was doubly wrong.) What OTC status does change is commercial: no "
+      "exclusivity runway and existing competition. openFDA `drug/ndc` "
+      "`marketing_category` is the field that tells them apart.\n")
+    A("- **Pre-1962 approvals may not count against a candidate.** In the "
+      "*Sun Pharma* litigation over phenobarbital (SEZABY) the D.D.C. held that a "
+      "pre-1962 NDA which became effective by FDA inaction and was later 'deemed "
+      "approved' was never *approved* in the ordinary sense, so it did not bar a "
+      "rare-pediatric voucher. 740 applications in this Drugs@FDA snapshot have an "
+      "original approval before 10 Oct 1962, and 70 distinct active moieties are "
+      "approved ONLY through them. This diff still excludes all 70. If that "
+      "holding stands, they are a separate candidate population rather than "
+      "exclusions — a district-court ruling, so treat it as a live legal theory, "
+      "not settled law.\n")
+    A("- **Pre-2000 US withdrawals are missing from the bulk files.** Of 30 "
+      "hand-checked drugs with genuine FDA approvals later withdrawn, 13 are absent "
+      "from Drugs@FDA + Orange Book — every one withdrawn before ~2000 (terfenadine, "
+      "astemizole, mibefradil, temafloxacin, dexfenfluramine, encainide, "
+      "flosequinan, zomepirac, benoxaprofen, ticrynafen, nomifensine, methaqualone, "
+      "phenformin). Post-2000 withdrawals are retained. A withdrawn approval still "
+      "disqualifies, so this is a real false-positive channel; measured 2026-08-29, "
+      "none of the 13 currently appears in any loaded foreign register, so the hole "
+      "is latent rather than active. `US_WITHDRAWN_SUPPLEMENT` patches one case "
+      "(betahistine) and is not a substitute for a 21 CFR 216.24 feed.\n")
+    A("- **Prodrug/conjugate exclusion runs via GSRS** (two hops along "
       "ACTIVE MOIETY / PRODRUG / SALT-PARENT edges) and catches the "
-      "isavuconazole-class leaks the string layer measured. It depends on the "
-      "GSRS graph being complete for the substance; a missing GSRS edge is a "
-      "missing exclusion, so prodrug-looking names in the candidate list still "
-      "deserve a manual glance.\n")
-    A("- **EMA is centralised-only.** Nationally-authorised EU drugs are absent, "
-      "so some 'never-US' calls may actually be approved via an EU member state.\n")
-    A("- **Japan is under-covered.** Only PMDA FY2025 (~140 rows) is loaded and "
-      "katakana names mostly fail to resolve without a transliteration layer. The "
-      "true Funnel A pool is larger and concentrated in exactly this highest-yield "
-      "source — building the JP→UNII transliteration layer is the top next step.\n")
+      "isavuconazole-class leaks the string layer measured. It depends on the GSRS "
+      "graph being complete for the substance; a missing edge is a missing "
+      "exclusion. Two such gaps are known and handled explicitly: the stereoisomer "
+      "layer (GSRS holds no enantiomer/racemate edge for zopiclone/eszopiclone or "
+      "enclomifene/clomifene) and `GSRS_GAP_PRODRUGS` (tegomil fumarate -> "
+      "monomethyl fumarate). Newly-INN'd substances are the likeliest next gap, so "
+      "prodrug-looking names still deserve a manual glance.\n")
+    A("- **EMA is centralised-only, and that cuts both ways.** Nationally-authorised "
+      "EU drugs are absent, so a 'never-US' moiety may in fact be approved via a "
+      "member state — and, more damagingly, a drug whose only centralised record is "
+      "a refusal gets filed as dossier-only when it holds a national, Japanese or "
+      "Australian licence. `KNOWN_AUTHORISED_ELSEWHERE` hand-corrects six such "
+      "cases; the real fix is the EMA Article 57 (xEVMPD) product file, which "
+      "carries all nationally-authorised EEA products and measured 377 additional "
+      "named never-US moieties on 2026-08-29.\n")
+    A("- **Japan is effectively absent, and Switzerland nearly so.** Only PMDA "
+      "FY2025 (140 rows) is loaded and 139 of them fail to resolve, so Japan "
+      "contributes 1 moiety. Swissmedic resolves 102 of 2,970 rows (3%) because the "
+      "list is in Latin pharmacopoeial genitives ('abacaviri sulfas'). The unresolved "
+      "mass is Swiss, not Japanese — 2,868 rows against 139. KEGG DRUG "
+      "(rest.kegg.jp/list/drug) carries Japanese drugs under Latin-script names with "
+      "JAN tags and is the cheapest route into Japan without building a katakana "
+      "transliteration layer.\n")
     A("- This diff does NOT test the § 360ff(a)(3) rare-pediatric gate, FTO, or "
       "existing orphan exclusivity. `pipeline/eligibility.py` walks all ten "
       "statutory criteria per candidate and labels which a human must decide; it "
