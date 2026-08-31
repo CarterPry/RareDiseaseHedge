@@ -4,8 +4,9 @@ RareDiseaseHedge — candidate-discovery diff (Funnel A enumeration).
 
 Implements sources/00-CANDIDATE-DISCOVERY-METHOD.md end to end:
 
-  LEFT  = active substances approved by foreign regulators (EMA, Canada,
-          Swissmedic; PMDA best-effort)
+  LEFT  = active substances approved by foreign regulators: EMA centralised,
+          EMA Article 57 (every NATIONALLY-authorised EEA product), Health
+          Canada, Swissmedic; PMDA best-effort
   RIGHT = every active moiety ever approved in the US (Drugs@FDA + Orange Book)
   DIFF  = LEFT minus RIGHT, three layers deep:
             1. UNII overlap across every key variant (salt, base, spelling,
@@ -35,7 +36,7 @@ import csv, os, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from unii import UniiIndex, has_stereo_marker  # noqa: E402
-from moiety import full_keys, stereo_name_variants  # noqa: E402
+from moiety import full_keys, norm, stereo_name_variants  # noqa: E402
 from gsrs import GsrsClient  # noqa: E402
 import sources  # noqa: E402
 
@@ -64,8 +65,9 @@ KNOWN_AUTHORISED_ELSEWHERE = {
                                    "EMA row is a refusal"),
     "GARENOXACIN":  ("PMDA Japan", "approved Jul 2007 (Geninax); EMA row is an "
                                    "withdrawn application"),
-    "PERFLUBUTANE": ("PMDA Japan / MFDS Korea / Norway",
-                     "approved as Sonazoid; EMA row is a withdrawn application"),
+    # (PERFLUBUTANE was here until 2026-08-31; EMA Article 57 now carries it
+    #  directly — Denmark/Norway/Sweden — so it lands as a real candidate and no
+    #  longer needs a hand-correction.)
     "PLITIDEPSIN":  ("TGA Australia", "approved Dec 2018 (Aplidin, multiple "
                                       "myeloma); EMA row is a withdrawn application"),
     "LISURIDE":     ("EU national", "nationally authorised for Parkinson's disease "
@@ -151,6 +153,14 @@ def main():
         f"{len(us_uniis):,} US moiety-UNIIs, {len(us_moieties):,} US moiety keys "
         f"({us_stats['unmatched']:,} name rows unresolved to UNII)")
 
+    # 2b) US non-application marketing (flag-only layer) -------------------
+    # Optional and additive: it can add a flag but never change a verdict, so a
+    # missing openfda_ndc.zip degrades to silence rather than to a wrong answer.
+    ndc_unii, ndc_key = sources.load_us_otc_marketing(idx, RAW)
+    if ndc_unii:
+        log(f"  openFDA NDC marketing categories for {len(ndc_unii):,} UNIIs "
+            f"(flag-only: OTC-monograph/bulk marketing does NOT disqualify)")
+
     # 3) LEFT side: foreign approvals --------------------------------------
     # Every loader returns [] when its file is absent. Silently, that turns a
     # missing download into a smaller candidate list that looks just as
@@ -160,6 +170,7 @@ def main():
     missing = []
     for name, fn, fname in [
             ("EMA", sources.load_ema, "ema_med.xlsx"),
+            ("EU national (Art57)", sources.load_ema_art57, "ema_art57.xlsx"),
             ("Canada", sources.load_canada, "ingred_ap.zip"),
             ("Swissmedic", sources.load_swissmedic, "sm_stoff.xlsx"),
             ("PMDA", sources.load_pmda, "pmda_fy2025.xlsx")]:
@@ -225,8 +236,10 @@ def main():
             "area": "", "atc": "", "indication": "", "approved": "",
             "flags": [], "excluded_by": basis, "verdict": "",
             "foreign_status": "never_authorised", "status_by_source": {},
+            "countries": set(),
         })
         entry["sources"].add(rec["source"])
+        entry["countries"].update(rec.get("countries") or ())
         entry["orphan"] = entry["orphan"] or rec["orphan"]
         entry["examples"].add(rec["substance"][:60])
         entry["in_us"] = entry["in_us"] or in_us
@@ -389,6 +402,38 @@ def main():
     # separate bucket so the headline number is meaningful. REVIEW rows go to
     # their own bucket regardless of naming — they are open questions, not
     # candidates.
+    # US marketing flags on everything that survived the exclusion test. Skip
+    # rows already excluded or already biologic-dropped — flagging a biologic
+    # about to be discarded is noise, and NDA/ANDA/BLA moieties are now folded
+    # into the exclusion set so they carry in_us=True and never reach here (the
+    # US_APPLICATION_FOUND branch is now a defensive should-never-fire tripwire).
+    for e in by_moiety.values():
+        if e["in_us"] or e["biologic"]:
+            continue
+        cats = set()
+        cats |= ndc_unii.get(e["unii"], set())
+        for k in (e["moiety_key"], e["display"]):
+            if k:
+                cats |= ndc_key.get(norm(k), set())
+        hard = cats & sources.APPLICATION_CATEGORIES
+        soft = cats & sources.NON_APPLICATION_CATEGORIES
+        if hard:
+            # Should be unreachable: an NDA/ANDA/BLA row means a real US approval
+            # the exclusion set failed to see. Surface it as REVIEW, loudly.
+            e["verdict"] = "review"
+            e["flags"].append(
+                f"US_APPLICATION_FOUND: openFDA NDC lists this moiety under "
+                f"{sorted(hard)} — an application-based US approval the exclusion "
+                f"set missed. Treat the whole run as suspect until explained.")
+            log(f"  !! {e['display'] or e['moiety_key']}: NDC says {sorted(hard)}")
+        elif soft:
+            e["flags"].append(
+                f"US_NON_APPLICATION_MARKETING: sold in the US under {sorted(soft)}. "
+                f"Does NOT disqualify (s.529 bars a prior approval in a 505 "
+                f"application, which these are not) but there is no exclusivity "
+                f"runway and supply already exists — and rows like this are often "
+                f"excipients or antiseptics rather than drugs.")
+
     named, unnamed, review, dossier_only = [], [], [], []
     for e in by_moiety.values():
         if e["in_us"]:
@@ -426,7 +471,10 @@ def main():
     funnel["unresolved_by_source"] = dict(sorted(unresolved_by_source.items()))
     funnel["rows_by_source"] = dict(sorted(rows_by_source.items()))
 
+    # EEA country count is a real quality signal from Article 57: a substance
+    # authorised in 25 member states is an established medicine, not a curiosity.
     sort_key = lambda e: (not e["orphan"], not (len(e["sources"]) > 1),
+                          -len(e["countries"]),
                           e["display"] or e["moiety_key"])
     named.sort(key=sort_key)
     unnamed.sort(key=sort_key)
@@ -439,7 +487,7 @@ def main():
             w = csv.writer(fh)
             w.writerow(["unii", "preferred_name", "moiety_key", "is_INN", "is_USAN",
                         "substance_type", "foreign_sources", "n_sources",
-                        "foreign_status", "status_by_source",
+                        "n_eea_countries", "foreign_status", "status_by_source",
                         "orphan_flag", "therapeutic_area", "atc", "indication",
                         "approved_abroad", "match_tier", "flags",
                         "example_source_names"])
@@ -447,7 +495,8 @@ def main():
                 w.writerow([e["unii"], e["display"], e["moiety_key"],
                             "Y" if e["inn"] else "N", "Y" if e["usan"] else "N",
                             e["subtype"], "|".join(sorted(e["sources"])),
-                            len(e["sources"]), e["foreign_status"],
+                            len(e["sources"]), len(e["countries"]),
+                            e["foreign_status"],
                             "|".join(f"{k}={v}" for k, v in
                                      sorted(e["status_by_source"].items())),
                             "Y" if e["orphan"] else "N",
@@ -481,7 +530,9 @@ def main():
                 "area": e["area"], "atc": e["atc"], "indication": e["indication"],
                 "approved": e["approved"], "flags": e["flags"],
                 "foreign_status": e["foreign_status"],
-                "status_by_source": e["status_by_source"]}
+                "status_by_source": e["status_by_source"],
+                "n_countries": len(e["countries"]),
+                "countries": sorted(e["countries"])[:40]}
     summary = {
         "generated": time.strftime("%Y-%m-%d"),
         "snapshot": _snapshot_label(),
@@ -577,9 +628,12 @@ def _report_md(f, us, cands, review, dossier_only, orphan_n, inn_n, multi_n, sec
     A(f"| — flagged orphan by a foreign regulator | {orphan_n:,} |")
     A(f"| — approved in >1 foreign regulator | {multi_n:,} |\n")
     A("## US exclusion set\n")
-    A(f"- {us['ingredient_rows']:,} active-ingredient rows from Drugs@FDA + Orange Book, "
+    A(f"- {us['ingredient_rows']:,} active-ingredient rows from Drugs@FDA + Orange Book "
+      f"+ openFDA NDC ({us.get('ndc_rows', 0):,} NDA/ANDA/BLA rows), "
       "expanded to every salt/spelling/acid-ate variant (moiety.py) and to GSRS "
-      "prodrug/salt-parent/active-moiety relatives two hops out (gsrs.py)\n")
+      "prodrug/salt-parent/active-moiety relatives two hops out (gsrs.py). The NDC "
+      "pass covers moieties present in Drugs@FDA under a spelling whose UNII does "
+      "not intersect the foreign name's.\n")
     A("## How to read this\n")
     A("The **orphan-flagged, multi-regulator, INN** candidates are the highest-value "
       "rows: an INN exists (mature molecule), more than one stringent regulator "
@@ -663,14 +717,23 @@ def _report_md(f, us, cands, review, dossier_only, orphan_n, inn_n, multi_n, sec
       "enclomifene/clomifene) and `GSRS_GAP_PRODRUGS` (tegomil fumarate -> "
       "monomethyl fumarate). Newly-INN'd substances are the likeliest next gap, so "
       "prodrug-looking names still deserve a manual glance.\n")
-    A("- **EMA is centralised-only, and that cuts both ways.** Nationally-authorised "
-      "EU drugs are absent, so a 'never-US' moiety may in fact be approved via a "
-      "member state — and, more damagingly, a drug whose only centralised record is "
-      "a refusal gets filed as dossier-only when it holds a national, Japanese or "
-      "Australian licence. `KNOWN_AUTHORISED_ELSEWHERE` hand-corrects six such "
-      "cases; the real fix is the EMA Article 57 (xEVMPD) product file, which "
-      "carries all nationally-authorised EEA products and measured 377 additional "
-      "named never-US moieties on 2026-08-29.\n")
+    A("- **EEA national approvals are now loaded, with one caveat.** EMA Article 57 "
+      "(xEVMPD) covers every nationally-authorised EEA product, closing the gap "
+      "that made a drug licensed in 25 member states but never centrally read as "
+      "'never approved abroad'. The caveat: unlike the centralised medicines "
+      "report, Article 57 has **no status column** — it is marketing-authorisation-"
+      "holder-submitted data, so presence is taken as authorisation and there is no "
+      "'refused' or 'withdrawn' to filter. It is therefore labelled as its own "
+      "source, 'EU national (Art57)', so it can be discounted separately from a "
+      "regulator decision this pipeline has actually read.\n")
+    A("- **Non-EEA approvals are still invisible.** A drug licensed only in Japan, "
+      "Australia, Korea or Brazil whose sole EMA record is a refusal still lands in "
+      "the dossier-only bucket. `KNOWN_AUTHORISED_ELSEWHERE` hand-corrects the "
+      "cases found by audit (anamorelin, garenoxacin, plitidepsin, lisuride, "
+      "ximelagatran — Article 57 now covers perflubutane on its own). That list is "
+      "hand-built and certainly incomplete; KEGG DRUG and the MHLW price list are "
+      "the cheapest routes into Japan, and TGA/MFDS/ANVISA remain unfetchable from "
+      "this environment.\n")
     A("- **Japan is effectively absent, and Switzerland nearly so.** Only PMDA "
       "FY2025 (140 rows) is loaded and 139 of them fail to resolve, so Japan "
       "contributes 1 moiety. Swissmedic resolves 102 of 2,970 rows (3%) because the "

@@ -3,6 +3,7 @@
 *.tmp
 node_modules/
 __pycache__/
+.claude/
 # Never commit credentials
 *.env
 api-keys.md

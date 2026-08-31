@@ -247,6 +247,14 @@ footer{color:var(--ink-tertiary);font-size:12px;text-align:center;margin:40px 0 
       data still exist. Before 2026-08-29 they were mixed into this list and inflated it by
       roughly half.
     </p>
+    <p style="font-size:13px;color:var(--ink-secondary);margin-top:10px;border-left:2px solid var(--rule-strong);padding-left:12px">
+      <b>Coverage &amp; one caveat.</b> The list now includes drugs authorised in individual EEA
+      countries (via the EMA <i>Article 57</i> register), not just EU-central approvals — that is
+      why most cards show an "EEA national authorisations" count. Unlike the central register,
+      Article 57 carries no approval-status field: presence is taken as an authorisation, so those
+      rows can't be status-filtered the way EU-central ones are. Treat a high country count as a
+      strong "real, established medicine" signal.
+    </p>
     <p class="deadline" style="margin-top:14px">⏳ <b>The program ends 30 September 2029.</b> The voucher is awarded on <i>approval</i>, so a drug must be approved by that date — a realistic program needs to start soon. (The program briefly lapsed in Dec 2024 and was reauthorized in Feb 2026; new designations are open again.) <span id="sunset-remain"></span></p>
   </div>
 
@@ -568,8 +576,12 @@ function openDrawer(c){
   const statusTxt=Object.keys(sbs).length
     ? Object.keys(sbs).sort().map(k=>k+': '+String(sbs[k]).replace(/_/g,' ')).join('  ·  ')
     : String(c.foreign_status||'—').replace(/_/g,' ');
+  const eea=c.n_countries?(c.n_countries+' EEA countr'+(c.n_countries===1?'y':'ies')
+    +(c.countries&&c.countries.length?'  ·  '+c.countries.slice(0,8).join(', ')
+    +(c.countries.length>8?'…':''):'')):'';
   const rows2=[['Approved by', c.sources.join(', ')||'—'],
     ['Regulatory standing', statusTxt],
+    ['EEA national authorisations', eea||'—'],
     ['Authorisation date', c.approved||'—'],
     ['Therapy area', (c.area||'').replace(/;/g,' · ')||'—'],
     ['Drug class (ATC)', c.atc?(c.atc+(atcLab?'  ·  '+atcLab:'')):'—']];

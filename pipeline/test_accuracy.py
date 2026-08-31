@@ -80,6 +80,11 @@ MUST_EXCLUDE = [
     ("dabigatran",                  "Pradaxa 2010; US row is the ETEXILATE ester", "string"),
     ("cefalexin",                   "Keflex; INN cef- vs USAN ceph- spelling",     "string"),
     ("cefradine",                   "Velosef; INN cef- vs USAN ceph- spelling",    "string"),
+    # found by the 2026-08-31 Article-57 validation pass; both are US approvals
+    # absent from the electronic bulk files and caught only by the manual
+    # supplement, so they guard that the supplement stays wired in.
+    ("dimethindene maleate",        "Forhistal NDA 12-335, withdrawn 2000 (65 FR 54)", "string"),
+    ("tixocortol pivalate",         "T.R.U.E. TEST allergen, BLA STN 103738",      "string"),
     # found BY this harness on real data 2026-08-29, originally mislabeled as a
     # keeper — the same way parecoxib was. Mandol (cefamandole nafate, FDA 1978,
     # long discontinued) is on the record, so the moiety is disqualified.
@@ -152,6 +157,8 @@ US_INGREDIENT_RECORD = [
     "CEPHALEXIN",                      # Keflex (USAN ceph- spelling)
     "CEPHRADINE",                      # Velosef (USAN ceph- spelling)
     "CEFAMANDOLE NAFATE",              # Mandol (FDA 1978, discontinued)
+    "DIMETHINDENE MALEATE",            # Forhistal (withdrawn NDA — supplement)
+    "TIXOCORTOL PIVALATE",             # T.R.U.E. TEST allergen (BLA — supplement)
 ]
 
 # GSRS-style active-moiety edges for the graph class (offline stand-in; the
