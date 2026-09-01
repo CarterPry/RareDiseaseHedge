@@ -141,6 +141,85 @@ def enrich_orphadata(data):
     print(f"  orphadata: {n:,} disorders loaded, {matched} rows matched to a disease")
 
 
+# ---------------------------------------------------------------- EU orphan designations
+# Local, no network. ema_orph.xlsx is the EMA orphan-designation register (fetched
+# by fetch.py as ema_orph). A candidate carrying an EU orphan designation is a
+# strong rare-disease signal AND a competitor signal (someone pursued it in the
+# EU). Matched on normalised INN — orphan designations and candidate moieties are
+# both INN-named, so exact-INN matching is high precision.
+def _norm_name(s):
+    import re
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+
+def enrich_eu_orphan(data):
+    try:
+        import openpyxl
+    except Exception:
+        return
+    path = os.path.join(HERE, "data", "raw", "ema_orph.xlsx")
+    if not os.path.exists(path):
+        print("  [skip] eu_orphan: ema_orph.xlsx not present")
+        return
+    wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+    ws = wb.active
+    by_sub = {}
+    started = False
+    for r in ws.iter_rows(values_only=True):
+        v = [("" if c is None else str(c)) for c in r]
+        if not started:
+            if v and v[0].strip() == "Medicine name":
+                started = True
+            continue
+        if len(v) < 7:
+            continue
+        sub = _norm_name(v[2])
+        if not sub:
+            continue
+        by_sub.setdefault(sub, {"use": v[4].strip(), "status": v[6].strip(),
+                                "number": v[5].strip()})
+    wb.close()
+    matched = 0
+    for b in ("candidates", "dossier_only", "review", "unnamed"):
+        for c in data.get(b, []):
+            hit = by_sub.get(_norm_name(c.get("moiety"))) or by_sub.get(_norm_name(c.get("name")))
+            if hit:
+                c["eu_orphan_designation"] = hit
+                matched += 1
+    print(f"  eu_orphan: {len(by_sub):,} EU designations, {matched} candidate rows flagged")
+
+
+# ---------------------------------------------------------------- US Complete Response Letters
+# Local, no network. openfda_crl.zip is FDA's CRL disclosure set. A candidate that
+# already has a US CRL means a sponsor filed and FDA refused — the drug is not an
+# untouched opportunity (found: govorestat, tolebrutinib). Whole-word name match
+# against the letter text/company/application fields.
+def enrich_crl(data):
+    import re, zipfile
+    path = os.path.join(HERE, "data", "raw", "openfda_crl.zip")
+    if not os.path.exists(path):
+        print("  [skip] crl: openfda_crl.zip not present")
+        return
+    with zipfile.ZipFile(path) as z:
+        recs = json.load(z.open([n for n in z.namelist() if n.endswith(".json")][0])).get("results") or []
+    blobs = [(json.dumps(r).lower(), r) for r in recs]
+    matched = 0
+    for b in ("candidates", "dossier_only", "review"):
+        for c in data.get(b, []):
+            nm = (c.get("moiety") or c.get("name") or "").lower()
+            if len(nm) < 5:
+                continue
+            rx = re.compile(r"(^|[^a-z0-9])" + re.escape(nm) + r"([^a-z0-9]|$)")
+            for blob, r in blobs:
+                if rx.search(blob):
+                    appl = r.get("application_number")
+                    c["us_crl"] = {"application": appl[0] if isinstance(appl, list) else appl,
+                                   "date": r.get("letter_date") or r.get("action_date")}
+                    matched += 1
+                    break
+    print(f"  crl: {len(recs):,} letters, {matched} candidate rows flagged as already US-filed-and-refused")
+
+
 # ---------------------------------------------------------------- driver
 def main():
     fresh = "--fresh" in sys.argv
@@ -187,6 +266,8 @@ def main():
 
     if not limit:
         enrich_orphadata(data)
+        enrich_eu_orphan(data)
+        enrich_crl(data)
         print("fetching global competitor monitor...")
         data["monitor"] = {"fedreg": fedreg_prv(), "edgar": edgar_competitors(),
                            "as_of": time.strftime("%Y-%m-%d %H:%M")}

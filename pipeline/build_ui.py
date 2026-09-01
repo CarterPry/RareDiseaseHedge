@@ -23,6 +23,7 @@ PED_STRONG = [
  "pediatric","paediatric","children","child","infant","neonatal","congenital",
  "inherited","inborn","lysosomal","mucopolysaccharid","gaucher","fabry","pompe",
  "niemann-pick","krabbe","batten","neuronal ceroid","spinal muscular atrophy","sma",
+ "from birth","mct8","allan-herndon","monocarboxylate transporter",
  "duchenne","friedreich","hunter syndrome","hurler","sanfilippo","glycogen storage",
  "fatty acid oxidation","organic acidemia","maple syrup urine","phenylketonuria","pku",
  "urea cycle","galactosemia","biotinidase","homocystinuria","tyrosinemia",
@@ -354,12 +355,23 @@ document.addEventListener('mouseout',e=>{if(tipCur&&(!e.relatedTarget||!tipCur.c
 document.addEventListener('click',()=>{TIP.style.display='none';},true);
 
 /* ---------- scoring (drives "most promising" sort; surfaced only in detail) ---------- */
+// Whole-word match: substring matching let the acronym "sma" hit "non-SMAll
+// cell" and score adult NSCLC drugs (aumolertinib) as pediatric. Word boundaries
+// also protect pku/pah/ald/mld/pnh etc. Multi-word phrases still match verbatim.
+function hasKw(text, list){
+  return list.some(k=>{
+    const rx=new RegExp('(^|[^a-z0-9])'+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'([^a-z0-9]|$)','i');
+    return rx.test(text);
+  });
+}
 function pedScore(c){
   const text=((c.indication||'')+' '+(c.area||'')).toLowerCase();
   if(!text.trim()) return {v:0.2, floored:true};
-  if(P.ped_strong.some(k=>text.includes(k))) return {v:1.0, floored:false};
-  if(P.ped_moderate.some(k=>text.includes(k))) return {v:0.5, floored:false};
-  return {v:0.0, floored:false};
+  if(hasKw(text, P.ped_strong)) return {v:1.0, floored:false};
+  if(hasKw(text, P.ped_moderate)) return {v:0.5, floored:false};
+  // text present but no signal -> "not ruled out", per SCORING_MODEL.md §2.2
+  // (was 0.0, which scored real pediatric-onset drugs like tiratricol as adult)
+  return {v:0.2, floored:false};
 }
 function atcSub(c){ if(!c.atc) return 0.3; const k=c.atc.slice(0,3).toUpperCase();
   if(P.high_atc.includes(k)) return 1.0; if(P.med_atc.includes(k)) return 0.5; return 0.1; }

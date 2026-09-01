@@ -121,13 +121,14 @@ def main():
     recent = sorted([d for d in PRV_DEALS if d[2] == "RPD"], key=lambda x: -x[0])[:6]
     recent_prices = sorted(p for _, p, *_ in recent)
 
-    today = datetime.date(2026, 8, 31)
+    today = datetime.date.today()   # was hardcoded 2026-08-31; the countdown drifted
     sunset = datetime.date(2029, 9, 30)
-    months_to_sunset = (sunset.year - today.year) * 12 + (sunset.month - today.month)
+    months_to_sunset = max(0, (sunset.year - today.year) * 12 + (sunset.month - today.month))
 
     # --- full candidate list for the searchable shortlist --------------------
     def pack(c):
         o = c.get("orpha") or None
+        eo = c.get("eu_orphan_designation") or None
         return {
             "name": c["name"].title(), "moiety": c.get("moiety", ""),
             "sources": c.get("sources", []), "nc": c.get("n_countries", 0),
@@ -137,6 +138,8 @@ def main():
             "flags": c.get("flags", []),
             "orpha": ({"disease": o["name"], "rarity": o["rarity"],
                        "onset": o["onset"], "prev": o.get("us_prevalence_est")} if o else None),
+            "eu_orphan": ({"use": eo["use"], "status": eo["status"]} if eo else None),
+            "crl": c.get("us_crl") or None,
         }
     shortlist = [pack(c) for c in cands]
 

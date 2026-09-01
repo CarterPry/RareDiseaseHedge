@@ -154,10 +154,11 @@ const SL = {
   filters: { orphan: false, multi: false, rare: false, ped: false, pulled: false },
 };
 const SL_CHIPS = [
-  ["orphan", "EU orphan", c => c.orphan],
+  ["euorphan", "EU orphan designation", c => c.eu_orphan],
   ["multi", "Multi-regulator", c => (c.sources || []).length > 1],
   ["rare", "Rare (Orphanet)", c => c.orpha && c.orpha.rarity === "rare"],
   ["ped", "Pediatric onset", c => c.orpha && c.orpha.onset === "pediatric"],
+  ["nocrl", "Not yet US-filed", c => !c.crl],
   ["pulled", "Licence pulled", c => c.fs === "previously_authorised"],
 ];
 function slPredicate(key) { return SL_CHIPS.find(x => x[0] === key)[2]; }
@@ -183,6 +184,8 @@ function slCard(c) {
   if (c.orphan) badges.push('<span class="badge badge-orphan">orphan</span>');
   if (c.orpha && c.orpha.rarity === "rare") badges.push('<span class="badge badge-rare">rare disease</span>');
   if (c.orpha && c.orpha.onset === "pediatric") badges.push('<span class="badge badge-ped">pediatric onset</span>');
+  if (c.eu_orphan) badges.push('<span class="badge badge-orphan">EU orphan designation</span>');
+  if (c.crl) badges.push('<span class="badge badge-crl">US filed &amp; refused</span>');
   if ((c.sources || []).length > 1) badges.push('<span class="badge badge-multi">multi-regulator</span>');
   if (c.fs === "previously_authorised") badges.push('<span class="badge badge-pulled">licence pulled</span>');
   const dz = (c.orpha && c.orpha.disease) || c.area || (c.ind || "").replace(/\.$/, "") || "—";
@@ -228,6 +231,12 @@ function slInit() {
   let t = null;
   inp.addEventListener("input", () => { clearTimeout(t); t = setTimeout(() => { SL.q = inp.value; slRender(); }, 120); });
   document.getElementById("slSort").addEventListener("change", e => { SL.sort = e.target.value; slRender(); });
+  // data-freshness line (the site never surfaced the snapshot before)
+  const fresh = document.getElementById("slFresh");
+  if (fresh) fresh.textContent = "Pipeline data generated " + (BIO.generated || "—") +
+    (BIO.snapshot ? " · snapshot: " + BIO.snapshot : "");
+  const built = document.querySelector(".footer-built");
+  if (built && BIO.generated) built.textContent = "Data as of " + BIO.generated + " · built with D3";
   slRender();
 }
 slInit();

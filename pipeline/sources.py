@@ -19,9 +19,37 @@ Provenance and schemas verified live 2026-08-06 against the actual files;
 see sources/00-CANDIDATE-DISCOVERY-METHOD.md and _recovered/MINED-drug-data-sources.md.
 """
 from __future__ import annotations
-import csv, io, os, zipfile
+import csv, io, os, re, zipfile
 import openpyxl
 from unii import UniiIndex, split_ingredients, moiety_key
+
+
+def _resolve_cols(header, wanted):
+    """Map logical field -> column index BY HEADER NAME, with a positional
+    fallback that warns loudly. `wanted` is {field: (patterns, fallback_idx)};
+    a column matches a field if its normalised header contains any pattern.
+    Same defence as unii.py: a regulator that reorders/inserts a column silently
+    corrupts every downstream field when columns are read positionally (this is
+    exactly how the 2026-08 UNII column shift broke the biologic filter)."""
+    def norm(s):
+        return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+    hnorm = [norm(h) for h in header]
+    idx, missing = {}, []
+    for field, (patterns, fallback) in wanted.items():
+        found = None
+        for i, h in enumerate(hnorm):
+            if any(norm(p) in h for p in patterns):
+                found = i
+                break
+        if found is None:
+            found = fallback
+            missing.append(field)
+        idx[field] = found
+    if missing:
+        print(f"[sources] WARNING: header lookup failed for {missing}; using "
+              f"positional fallback {[wanted[m][1] for m in missing]}. Verify the "
+              f"file layout has not changed.", flush=True)
+    return idx
 
 
 # --------------------------------------------------------------- US exclusion
@@ -225,24 +253,37 @@ def load_ema(raw: str):
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
     ws = wb.active
     out = []
-    header_seen = False
+    col = None
     for r in ws.iter_rows(values_only=True):
         vals = [("" if c is None else str(c)) for c in r]
-        if not header_seen:
+        if col is None:
             if any("Active substance" in v for v in vals):
-                header_seen = True
+                # header row — resolve column indices by name (positional fallback)
+                col = _resolve_cols(vals, {
+                    "category": (["category"], 0),
+                    "status": (["medicine status"], 3),
+                    "inn": (["international non-proprietary", "inn"], 6),
+                    "active": (["active substance"], 7),
+                    "area": (["therapeutic area"], 8),
+                    "atc": (["atc code (human)", "atc code"], 11),
+                    "indication": (["therapeutic indication"], 15),
+                    "orphan": (["orphan medicine"], 23),
+                    "approved": (["marketing authorisation date"], 31),
+                })
             continue
-        if len(vals) < 24:
+        need = max(col.values())
+        if len(vals) <= need:
             continue
-        category = vals[0].strip()
-        status = vals[3].strip()
-        inn = vals[6].strip()
-        active = vals[7].strip()
-        area = vals[8].strip() if len(vals) > 8 else ""            # Therapeutic area (MeSH)
-        atc = vals[11].strip() if len(vals) > 11 else ""           # ATC code (human)
-        indication = vals[15].strip() if len(vals) > 15 else ""    # Therapeutic indication
-        approved = vals[31].strip() if len(vals) > 31 else ""      # Marketing authorisation date
-        orphan = vals[23].strip().lower() in ("yes", "true", "1")
+        g = lambda k: vals[col[k]].strip()
+        category = g("category")
+        status = g("status")
+        inn = g("inn")
+        active = g("active")
+        area = g("area")
+        atc = g("atc")
+        indication = g("indication")
+        approved = g("approved")
+        orphan = g("orphan").lower() in ("yes", "true", "1")
         substance = active or inn
         # Only human medicines. The report also carries Veterinary and (rarely)
         # Herbal categories; neither is a 505(b)(1) repurposing candidate.
@@ -311,17 +352,20 @@ def load_ema_art57(raw: str):
         return []
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
     ws = wb.active
-    started = False
+    col = None
     by_sub: dict[str, set[str]] = {}
     for r in ws.iter_rows(values_only=True):
         vals = [("" if c is None else str(c)) for c in r]
-        if not started:
+        if col is None:
             if vals and vals[0].strip().startswith("Product name"):
-                started = True
+                col = _resolve_cols(vals, {
+                    "active": (["active substance"], 1),
+                    "country": (["product authorisation country", "authorisation country"], 3),
+                })
             continue
-        if len(vals) < 4:
+        if len(vals) <= max(col.values()):
             continue
-        subs, country = vals[1].strip(), vals[3].strip()
+        subs, country = vals[col["active"]].strip(), vals[col["country"]].strip()
         if not subs or country.lower() in ART57_CENTRALISED:
             continue
         for part in subs.split("|"):

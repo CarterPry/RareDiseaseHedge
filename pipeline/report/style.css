@@ -390,8 +390,9 @@ body::after {
 /* ============================================================
    SHORTLIST / SEARCH
    ============================================================ */
-.sl-intro { max-width: 760px; font-size: 15px; line-height: 1.65; color: var(--ink-secondary); margin: -18px 0 22px; }
+.sl-intro { max-width: 760px; font-size: 15px; line-height: 1.65; color: var(--ink-secondary); margin: -18px 0 12px; }
 .sl-intro b { color: var(--ink); }
+.sl-fresh { font-family: var(--font-mono); font-size: 11.5px; color: var(--slate); margin: 0 0 20px; }
 
 .sl-controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 12px; }
 .sl-search {
@@ -443,6 +444,7 @@ body::after {
 .badge-ped { background: var(--keep-bg); color: var(--keep); }
 .badge-multi { background: #eeeaf6; color: #5b4a86; }
 .badge-pulled { background: var(--investigate-bg); color: var(--investigate); }
+.badge-crl { background: var(--reject-bg); color: var(--reject); }
 .badge-src { background: var(--cream-2); color: var(--slate); }
 .sl-foot { display: flex; gap: 16px; font-family: var(--font-mono); font-size: 11px; color: var(--slate); border-top: 1px solid var(--hairline); padding-top: 10px; margin-top: 2px; }
 .sl-foot b { color: var(--ink); }

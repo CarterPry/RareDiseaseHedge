@@ -21,7 +21,12 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of Leber's hereditary optic neuropathy",
+    "status": "Expired"
+   },
+   "crl": null
   },
   {
    "name": "Tiratricol",
@@ -39,7 +44,12 @@ window.BIO = {
    "pubmed": 3,
    "trials": 5,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of Allan-Herndon-Dudley syndrome",
+    "status": "Positive"
+   },
+   "crl": null
   },
   {
    "name": "Vildagliptin",
@@ -59,7 +69,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Alfacalcidol",
@@ -77,7 +89,9 @@ window.BIO = {
    "pubmed": 31,
    "trials": 52,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Bilastine",
@@ -97,7 +111,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Zuclopenthixol",
@@ -115,7 +131,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 10,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Gliclazide",
@@ -135,7 +153,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Atosiban",
@@ -153,7 +173,9 @@ window.BIO = {
    "pubmed": 7,
    "trials": 23,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Bromazepam",
@@ -171,7 +193,9 @@ window.BIO = {
    "pubmed": 6,
    "trials": 5,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Agomelatine",
@@ -191,7 +215,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Propiverine",
@@ -209,7 +235,9 @@ window.BIO = {
    "pubmed": 15,
    "trials": 17,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tenoxicam",
@@ -229,7 +257,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Delamanid",
@@ -247,7 +277,9 @@ window.BIO = {
    "pubmed": 40,
    "trials": 44,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Filgotinib",
@@ -267,7 +299,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Gefapixant",
@@ -285,7 +319,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 27,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Linzagolix",
@@ -305,7 +341,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['EXPORT ONLY']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Mifamurtide",
@@ -328,7 +366,12 @@ window.BIO = {
     "rarity": "rare",
     "onset": "pediatric",
     "prev": 16750
-   }
+   },
+   "eu_orphan": {
+    "use": "Treatment of echinococcosis",
+    "status": "Positive"
+   },
+   "crl": null
   },
   {
    "name": "Perflubutane",
@@ -346,7 +389,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 20,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Roxadustat",
@@ -366,7 +411,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'EXPORT ONLY']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tolebrutinib",
@@ -384,7 +431,12 @@ window.BIO = {
    "pubmed": 0,
    "trials": 12,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": {
+    "application": "NDA 219624",
+    "date": "12/23/2025"
+   }
   },
   {
    "name": "Vernakalant",
@@ -402,7 +454,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 17,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Vinflunine",
@@ -420,7 +474,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 35,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Amylmetacresol",
@@ -438,7 +494,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Etoricoxib",
@@ -457,7 +515,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Fusidic Acid",
@@ -476,7 +536,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Rupatadine",
@@ -493,7 +555,9 @@ window.BIO = {
    "pubmed": 7,
    "trials": 15,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Amorolfine",
@@ -510,7 +574,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 13,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Xylometazoline",
@@ -529,7 +595,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Benzydamine",
@@ -546,7 +614,9 @@ window.BIO = {
    "pubmed": 10,
    "trials": 49,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Bromhexine",
@@ -565,7 +635,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['EXPORT ONLY']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Moxonidine",
@@ -582,7 +654,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 21,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ambroxol",
@@ -601,7 +675,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Etofenamate",
@@ -618,7 +694,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Levosimendan",
@@ -637,7 +715,12 @@ window.BIO = {
    "flags": [
     "STEREO_NAME: name carries an enantiomer/racemate marker; check the counterpart's US status by hand"
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of amyotrophic lateral sclerosis",
+    "status": "Withdrawn"
+   },
+   "crl": null
   },
   {
    "name": "Cyproterone",
@@ -656,7 +739,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Dapoxetine",
@@ -675,7 +760,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Mebeverine",
@@ -692,7 +779,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 20,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Racecadotril",
@@ -711,7 +800,9 @@ window.BIO = {
    "flags": [
     "STEREO_NAME: name carries an enantiomer/racemate marker; check the counterpart's US status by hand"
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tibolone",
@@ -730,7 +821,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cytisinicline",
@@ -747,7 +840,12 @@ window.BIO = {
    "pubmed": 0,
    "trials": 34,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": {
+    "application": "NDA 218995",
+    "date": "06/20/2026"
+   }
   },
   {
    "name": "Fenticonazole",
@@ -764,7 +862,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Piracetam",
@@ -781,7 +881,9 @@ window.BIO = {
    "pubmed": 17,
    "trials": 16,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Domperidone",
@@ -800,7 +902,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Flucloxacillin",
@@ -817,7 +921,9 @@ window.BIO = {
    "pubmed": 62,
    "trials": 33,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Itopride",
@@ -834,7 +940,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 33,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Aceclofenac",
@@ -851,7 +959,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 22,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Carbetocin",
@@ -868,7 +978,12 @@ window.BIO = {
    "pubmed": 2,
    "trials": 103,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of Prader-Willi syndrome",
+    "status": "Withdrawn"
+   },
+   "crl": null
   },
   {
    "name": "Trimetazidine",
@@ -887,7 +1002,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Mianserin",
@@ -904,7 +1021,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 5,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Carbocysteine",
@@ -923,7 +1042,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Diosmin",
@@ -942,7 +1063,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Iobitridol",
@@ -959,7 +1082,9 @@ window.BIO = {
    "pubmed": 5,
    "trials": 9,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nitrazepam",
@@ -976,7 +1101,9 @@ window.BIO = {
    "pubmed": 20,
    "trials": 12,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Sertindole",
@@ -993,7 +1120,9 @@ window.BIO = {
    "pubmed": 9,
    "trials": 17,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Sulthiame",
@@ -1010,7 +1139,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 5,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ebastine",
@@ -1027,7 +1158,9 @@ window.BIO = {
    "pubmed": 4,
    "trials": 10,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Zofenopril",
@@ -1044,7 +1177,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 6,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Hexetidine",
@@ -1061,7 +1196,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 5,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Lacidipine",
@@ -1080,7 +1217,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Urapidil",
@@ -1099,7 +1238,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Butamirate",
@@ -1116,7 +1257,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Hexamidine",
@@ -1135,7 +1278,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['OTC MONOGRAPH DRUG']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Erdosteine",
@@ -1152,7 +1297,12 @@ window.BIO = {
    "pubmed": 5,
    "trials": 10,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of lead toxicity",
+    "status": "Positive"
+   },
+   "crl": null
   },
   {
    "name": "Moclobemide",
@@ -1169,7 +1319,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 9,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tramazoline",
@@ -1186,7 +1338,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Bezafibrate",
@@ -1205,7 +1359,12 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of primary sclerosing cholangitis",
+    "status": "Positive"
+   },
+   "crl": null
   },
   {
    "name": "Meldonium",
@@ -1222,7 +1381,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 7,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Octenidine",
@@ -1241,7 +1402,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Roxithromycin",
@@ -1258,7 +1421,9 @@ window.BIO = {
    "pubmed": 31,
    "trials": 11,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Somatostatin",
@@ -1275,7 +1440,12 @@ window.BIO = {
    "pubmed": 503,
    "trials": 359,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": {
+    "application": "NDA 208232",
+    "date": "04/15/2016"
+   }
   },
   {
    "name": "Tiapride",
@@ -1292,7 +1462,9 @@ window.BIO = {
    "pubmed": 11,
    "trials": 5,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Benfotiamine",
@@ -1309,7 +1481,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 21,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Levodropropizine",
@@ -1328,7 +1502,9 @@ window.BIO = {
    "flags": [
     "STEREO_NAME: name carries an enantiomer/racemate marker; check the counterpart's US status by hand"
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Lymecycline",
@@ -1345,7 +1521,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 6,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nimesulide",
@@ -1364,7 +1542,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Amsacrine",
@@ -1381,7 +1561,9 @@ window.BIO = {
    "pubmed": 16,
    "trials": 11,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Calcium Dobesilate",
@@ -1398,7 +1580,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 806,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Reboxetine",
@@ -1417,7 +1601,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Rilmenidine",
@@ -1434,7 +1620,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tauroselcholic Acid",
@@ -1451,7 +1639,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Carbimazole",
@@ -1470,7 +1660,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Dothiepin",
@@ -1489,7 +1681,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ethamsylate",
@@ -1506,7 +1700,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Gliquidone",
@@ -1523,7 +1719,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 5,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ipidacrine",
@@ -1540,7 +1738,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Isoconazole",
@@ -1559,7 +1759,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Lormetazepam",
@@ -1578,7 +1780,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Troxerutin",
@@ -1597,7 +1801,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Celiprolol",
@@ -1616,7 +1822,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Choline Salicylate",
@@ -1635,7 +1843,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'OTC MONOGRAPH DRUG']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Clodronic Acid",
@@ -1654,7 +1864,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Clomethiazole",
@@ -1671,7 +1883,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Hydrotalcite",
@@ -1690,7 +1904,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Lornoxicam",
@@ -1707,7 +1923,9 @@ window.BIO = {
    "pubmed": 4,
    "trials": 21,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Propamidine",
@@ -1724,7 +1942,9 @@ window.BIO = {
    "pubmed": 4,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Vinpocetine",
@@ -1741,7 +1961,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 9,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Buserelin",
@@ -1760,7 +1982,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cilazapril",
@@ -1777,7 +2001,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 4,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Drotaverine",
@@ -1794,7 +2020,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 6,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Melperone",
@@ -1811,7 +2039,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 4,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Quinagolide",
@@ -1828,7 +2058,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 6,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Raltitrexed",
@@ -1845,7 +2077,9 @@ window.BIO = {
    "pubmed": 8,
    "trials": 87,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Acemetacin",
@@ -1862,7 +2096,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Brivudine",
@@ -1879,7 +2115,12 @@ window.BIO = {
    "pubmed": 2,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of pancreatic cancer",
+    "status": "Positive"
+   },
+   "crl": null
   },
   {
    "name": "Brotizolam",
@@ -1896,7 +2137,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 10,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Etilefrine",
@@ -1913,7 +2156,12 @@ window.BIO = {
    "pubmed": 7,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of low-flow priapism",
+    "status": "Positive"
+   },
+   "crl": null
   },
   {
    "name": "Flunarizine",
@@ -1932,7 +2180,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nicergoline",
@@ -1949,7 +2199,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 6,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tacalcitol",
@@ -1966,7 +2218,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Temocillin",
@@ -1983,7 +2237,9 @@ window.BIO = {
    "pubmed": 5,
    "trials": 16,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Chloroxylenol",
@@ -2002,7 +2258,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'OTC MONOGRAPH DRUG', 'OTC MONOGRAPH NOT FINAL', 'UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Flunitrazepam",
@@ -2019,7 +2277,9 @@ window.BIO = {
    "pubmed": 19,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Lynestrenol",
@@ -2036,7 +2296,9 @@ window.BIO = {
    "pubmed": 6,
    "trials": 4,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Magaldrate",
@@ -2055,7 +2317,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'DRUG FOR FURTHER PROCESSING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Metildigoxin",
@@ -2072,7 +2336,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Naftidrofuryl",
@@ -2089,7 +2355,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Thiocolchicoside",
@@ -2106,7 +2374,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 15,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Benzocaine",
@@ -2125,7 +2395,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING', 'DRUG FOR FURTHER PROCESSING', 'OTC MONOGRAPH DRUG', 'OTC MONOGRAPH NOT FINAL', 'UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Citicoline",
@@ -2144,7 +2416,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Myrtecaine",
@@ -2161,7 +2435,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Niflumic Acid",
@@ -2178,7 +2454,9 @@ window.BIO = {
    "pubmed": 9,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pipamperone",
@@ -2197,7 +2475,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Piribedil",
@@ -2214,7 +2494,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 5,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Piritramide",
@@ -2231,7 +2513,9 @@ window.BIO = {
    "pubmed": 18,
    "trials": 25,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pizotyline",
@@ -2248,7 +2532,9 @@ window.BIO = {
    "pubmed": 8,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Sulprostone",
@@ -2265,7 +2551,9 @@ window.BIO = {
    "pubmed": 8,
    "trials": 5,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Canrenoate Potassium",
@@ -2282,7 +2570,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 20,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cinolazepam",
@@ -2299,7 +2589,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ciprofibrate",
@@ -2316,7 +2608,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 4,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Diflucortolone",
@@ -2333,7 +2627,9 @@ window.BIO = {
    "pubmed": 4,
    "trials": 3,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Flutrimazole",
@@ -2350,7 +2646,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Imidapril",
@@ -2367,7 +2665,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 5,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Levosulpiride",
@@ -2386,7 +2686,9 @@ window.BIO = {
    "flags": [
     "STEREO_NAME: name carries an enantiomer/racemate marker; check the counterpart's US status by hand"
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Loprazolam",
@@ -2403,7 +2705,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Mesterolone",
@@ -2420,7 +2724,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nifuratel",
@@ -2437,7 +2743,9 @@ window.BIO = {
    "pubmed": 4,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nomegestrol",
@@ -2456,7 +2764,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pridinol",
@@ -2475,7 +2785,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tofisopam",
@@ -2492,7 +2804,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Triflusal",
@@ -2509,7 +2823,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 6,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ubidecarenone",
@@ -2528,7 +2844,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING', 'UNAPPROVED DRUG OTHER', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Chloropyramine",
@@ -2545,7 +2863,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Enoximone",
@@ -2562,7 +2882,9 @@ window.BIO = {
    "pubmed": 20,
    "trials": 8,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Fenoterol",
@@ -2581,7 +2903,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Medazepam",
@@ -2598,7 +2922,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Mizolastine",
@@ -2615,7 +2941,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nicorandil",
@@ -2632,7 +2960,9 @@ window.BIO = {
    "pubmed": 14,
    "trials": 44,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nifuroxazide",
@@ -2649,7 +2979,9 @@ window.BIO = {
    "pubmed": 4,
    "trials": 3,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nitroxoline",
@@ -2666,7 +2998,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Sulbutiamine",
@@ -2683,7 +3017,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tolfenamic Acid",
@@ -2700,7 +3036,12 @@ window.BIO = {
    "pubmed": 4,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "treatment of behavioural variant frontotemporal dementia",
+    "status": "Positive"
+   },
+   "crl": null
   },
   {
    "name": "Acipimox",
@@ -2717,7 +3058,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 25,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ademetionine",
@@ -2736,7 +3079,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Alizapride",
@@ -2753,7 +3098,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 3,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Antipyrine",
@@ -2772,7 +3119,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Barnidipine",
@@ -2789,7 +3138,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Biclotymol",
@@ -2806,7 +3157,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Bromperidol",
@@ -2823,7 +3176,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 3,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Carbenoxolone",
@@ -2840,7 +3195,9 @@ window.BIO = {
    "pubmed": 19,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cinitapride",
@@ -2857,7 +3214,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Clobetasone",
@@ -2876,7 +3235,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cloperastine",
@@ -2893,7 +3254,9 @@ window.BIO = {
    "pubmed": 4,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Clotiazepam",
@@ -2910,7 +3273,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Diacerein",
@@ -2929,7 +3294,12 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of epidermolysis bullosa",
+    "status": "Positive"
+   },
+   "crl": null
   },
   {
    "name": "Dibrompropamidine",
@@ -2946,7 +3316,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ethyl Loflazepate",
@@ -2963,7 +3335,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Fluspirilene",
@@ -2980,7 +3354,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 19,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Hymecromone",
@@ -2997,7 +3373,12 @@ window.BIO = {
    "pubmed": 0,
    "trials": 6,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of spinal cord injury",
+    "status": "Positive"
+   },
+   "crl": null
   },
   {
    "name": "Indobufen",
@@ -3014,7 +3395,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 14,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Lutetium Lu-177 Zadavotide Guraxetan",
@@ -3031,7 +3414,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Oxitriptan",
@@ -3050,7 +3435,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pefloxacin",
@@ -3067,7 +3454,9 @@ window.BIO = {
    "pubmed": 12,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Periciazine",
@@ -3084,7 +3473,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Promestriene",
@@ -3101,7 +3492,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 10,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Prothipendyl",
@@ -3118,7 +3511,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tolnaftate",
@@ -3137,7 +3532,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'DRUG FOR FURTHER PROCESSING', 'OTC MONOGRAPH DRUG', 'OTC MONOGRAPH FINAL', 'UNAPPROVED DRUG OTHER', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Vindesine",
@@ -3154,7 +3551,9 @@ window.BIO = {
    "pubmed": 26,
    "trials": 85,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ambazone",
@@ -3171,7 +3570,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Bamipine",
@@ -3188,7 +3589,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Benzbromarone",
@@ -3205,7 +3608,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 13,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Clebopride",
@@ -3222,7 +3627,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Clothiapine",
@@ -3239,7 +3646,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cystine",
@@ -3258,7 +3667,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ergonovine",
@@ -3277,7 +3688,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ethacridine",
@@ -3296,7 +3709,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Etifoxine",
@@ -3315,7 +3730,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Floretyrosine F-18",
@@ -3332,7 +3749,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Fluprednidene",
@@ -3349,7 +3768,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Hexoprenaline",
@@ -3366,7 +3787,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nadifloxacin",
@@ -3383,7 +3806,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 3,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Naftazone",
@@ -3400,7 +3825,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Opipramol",
@@ -3419,7 +3846,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ornidazole",
@@ -3438,7 +3867,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Oxaceprol",
@@ -3455,7 +3886,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Padeliporfin",
@@ -3472,7 +3905,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 12,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pentetreotide",
@@ -3491,7 +3926,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pramiracetam",
@@ -3508,7 +3945,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Prulifloxacin",
@@ -3525,7 +3964,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 8,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Terizidone",
@@ -3542,7 +3983,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 4,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tiaprofenic Acid",
@@ -3559,7 +4002,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Xipamide",
@@ -3576,7 +4021,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Azidamfenicol",
@@ -3593,7 +4040,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Bencyclane",
@@ -3610,7 +4059,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Benperidol",
@@ -3627,7 +4078,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 4,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Bornaprine",
@@ -3644,7 +4097,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Chlormadinone",
@@ -3661,7 +4116,9 @@ window.BIO = {
    "pubmed": 7,
    "trials": 4,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Chlorphenoxamine",
@@ -3678,7 +4135,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Chlorquinaldol",
@@ -3695,7 +4154,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Choline Alfoscerate",
@@ -3714,7 +4175,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Clopamide",
@@ -3731,7 +4194,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Clorophene",
@@ -3748,7 +4213,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cobamamide",
@@ -3767,7 +4234,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cyamemazine",
@@ -3784,7 +4253,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Dehydrocholic Acid",
@@ -3801,7 +4272,9 @@ window.BIO = {
    "pubmed": 5,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Dihydralazine",
@@ -3818,7 +4291,9 @@ window.BIO = {
    "pubmed": 4,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Etofylline",
@@ -3835,7 +4310,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Felbinac",
@@ -3852,7 +4329,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 6,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Fenipentol",
@@ -3869,7 +4348,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Flubendazole",
@@ -3888,7 +4369,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Fluindione",
@@ -3905,7 +4388,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 14,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Gaxilose",
@@ -3922,7 +4407,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Indoramin",
@@ -3939,7 +4426,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Iprazochrome",
@@ -3956,7 +4445,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Lofepramine",
@@ -3973,7 +4464,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Metergoline",
@@ -3990,7 +4483,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Mexazolam",
@@ -4007,7 +4502,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Morniflumate",
@@ -4024,7 +4521,9 @@ window.BIO = {
    "pubmed": 4,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Penfluridol",
@@ -4041,7 +4540,9 @@ window.BIO = {
    "pubmed": 4,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pheneticillin",
@@ -4058,7 +4559,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pholcodine",
@@ -4075,7 +4578,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Piketoprofen",
@@ -4092,7 +4597,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pirenoxine",
@@ -4109,7 +4616,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Prenoxdiazine",
@@ -4126,7 +4635,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Protionamide",
@@ -4143,7 +4654,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 15,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pyritinol",
@@ -4160,7 +4673,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Quifenadine",
@@ -4177,7 +4692,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Sodium Picofosfate",
@@ -4194,7 +4711,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Spaglumic Acid",
@@ -4211,7 +4730,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tribenoside",
@@ -4228,7 +4749,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Trimecaine",
@@ -4245,7 +4768,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Valpromide",
@@ -4262,7 +4787,9 @@ window.BIO = {
    "pubmed": 9,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Vinburnine",
@@ -4279,7 +4806,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Zotepine",
@@ -4296,7 +4825,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 3,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Alfatradiol",
@@ -4315,7 +4846,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Almagate",
@@ -4332,7 +4865,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Almasilate",
@@ -4349,7 +4884,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Amitriptylinoxide",
@@ -4366,7 +4903,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Androstanolone",
@@ -4383,7 +4922,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Aniracetam",
@@ -4400,7 +4941,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Anthralin",
@@ -4419,7 +4962,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Arlipoic Acid",
@@ -4436,7 +4981,9 @@ window.BIO = {
    "pubmed": 42,
    "trials": 241,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Benproperine",
@@ -4453,7 +5000,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Bromopride",
@@ -4470,7 +5019,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Bronopol",
@@ -4487,7 +5038,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 4,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Carbaldrate",
@@ -4504,7 +5057,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Carbazochrome",
@@ -4521,7 +5076,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Caroverine",
@@ -4538,7 +5095,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 3,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cefatrizine",
@@ -4555,7 +5114,9 @@ window.BIO = {
    "pubmed": 6,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Chlorobutanol",
@@ -4574,7 +5135,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Chlorocresol",
@@ -4591,7 +5154,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cicletanine",
@@ -4610,7 +5175,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cifenline",
@@ -4627,7 +5194,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 3,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Clofoctol",
@@ -4644,7 +5213,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Clonixin",
@@ -4661,7 +5232,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cloprednol",
@@ -4678,7 +5251,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cloxazolam",
@@ -4695,7 +5270,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Cortivazol",
@@ -4712,7 +5289,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 4,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Delorazepam",
@@ -4731,7 +5310,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Demoxytocin",
@@ -4748,7 +5329,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Denotivir",
@@ -4765,7 +5348,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Dimethisoquin",
@@ -4782,7 +5367,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Doxofylline",
@@ -4801,7 +5388,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Eberconazole",
@@ -4818,7 +5407,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Etifenin",
@@ -4835,7 +5426,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Etizolam",
@@ -4852,7 +5445,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Flufenamic Acid",
@@ -4869,7 +5464,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Fosfructose",
@@ -4886,7 +5483,9 @@ window.BIO = {
    "pubmed": 35,
    "trials": 39,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Fotemustine",
@@ -4903,7 +5502,9 @@ window.BIO = {
    "pubmed": 4,
    "trials": 14,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Framycetin",
@@ -4920,7 +5521,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Fumagillin",
@@ -4937,7 +5540,12 @@ window.BIO = {
    "pubmed": 4,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of diarrhoea associated with intestinal microsporidial infection",
+    "status": "Withdrawn"
+   },
+   "crl": null
   },
   {
    "name": "Gabexate",
@@ -4954,7 +5562,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 9,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Glutaral",
@@ -4971,7 +5581,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 41,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Heptaminol",
@@ -4988,7 +5600,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ibopamine",
@@ -5005,7 +5619,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Iproniazid",
@@ -5022,7 +5638,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Isothipendyl",
@@ -5039,7 +5657,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Josamycin",
@@ -5056,7 +5676,9 @@ window.BIO = {
    "pubmed": 26,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Lidofenin",
@@ -5073,7 +5695,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Medrogestone",
@@ -5090,7 +5714,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Melarsoprol",
@@ -5107,7 +5733,12 @@ window.BIO = {
    "pubmed": 3,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of African trypanosomiasis",
+    "status": "Positive"
+   },
+   "crl": null
   },
   {
    "name": "Mephenoxalone",
@@ -5124,7 +5755,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 18,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Merbromin",
@@ -5141,7 +5774,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Methylcobalamin",
@@ -5160,7 +5795,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING', 'DRUG FOR FURTHER PROCESSING', 'UNAPPROVED DRUG OTHER', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Metopimazine",
@@ -5179,7 +5816,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Moxisylyte",
@@ -5196,7 +5835,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Neridronic Acid",
@@ -5215,7 +5856,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nikethamide",
@@ -5232,7 +5875,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nimorazole",
@@ -5249,7 +5894,12 @@ window.BIO = {
    "pubmed": 0,
    "trials": 10,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": {
+    "use": "Treatment of squamous-cell carcinoma of the head and neck in patients undergoing radiotherapy",
+    "status": "Withdrawn"
+   },
+   "crl": null
   },
   {
    "name": "Nonivamide",
@@ -5268,7 +5918,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['OTC MONOGRAPH DRUG', 'UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Nordazepam",
@@ -5285,7 +5937,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Norethandrolone",
@@ -5302,7 +5956,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Oxatomide",
@@ -5319,7 +5975,9 @@ window.BIO = {
    "pubmed": 10,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Oxetorone",
@@ -5336,7 +5994,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Phenibut",
@@ -5353,7 +6013,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 2,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Phenolphthalein",
@@ -5372,7 +6034,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Phenothrin",
@@ -5389,7 +6053,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Picloxydine",
@@ -5406,7 +6072,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pidotimod",
@@ -5425,7 +6093,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pinazepam",
@@ -5442,7 +6112,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pipemidic Acid",
@@ -5459,7 +6131,9 @@ window.BIO = {
    "pubmed": 3,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pipotiazine",
@@ -5476,7 +6150,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 3,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pirenzepine",
@@ -5495,7 +6171,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Piretanide",
@@ -5512,7 +6190,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pirlindole",
@@ -5529,7 +6209,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Piroxicam Cinnamate",
@@ -5546,7 +6228,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pranoprofen",
@@ -5563,7 +6247,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 8,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Proflavine",
@@ -5580,7 +6266,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 22,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Reproterol",
@@ -5597,7 +6285,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 1,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Rociverine",
@@ -5614,7 +6304,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Rufloxacin",
@@ -5631,7 +6323,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Rutin",
@@ -5650,7 +6344,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED DRUG OTHER', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Sodium Aurotiosulfate",
@@ -5667,7 +6363,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 3,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Sulisobenzone",
@@ -5686,7 +6384,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Temgicoluril",
@@ -5703,7 +6403,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Thiram",
@@ -5720,7 +6422,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Trepibutone",
@@ -5737,7 +6441,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Trimeperidine",
@@ -5754,7 +6460,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 3,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Trofosfamide",
@@ -5771,7 +6479,9 @@ window.BIO = {
    "pubmed": 11,
    "trials": 4,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tromantadine",
@@ -5788,7 +6498,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Tropatepine",
@@ -5805,7 +6517,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Vincamine",
@@ -5822,7 +6536,9 @@ window.BIO = {
    "pubmed": 2,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Xibornol",
@@ -5839,7 +6555,9 @@ window.BIO = {
    "pubmed": 1,
    "trials": 0,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Ataluren",
@@ -5863,7 +6581,12 @@ window.BIO = {
     "rarity": "rare",
     "onset": "pediatric",
     "prev": 16750
-   }
+   },
+   "eu_orphan": {
+    "use": "Treatment of Becker muscular dystrophy",
+    "status": "Withdrawn"
+   },
+   "crl": null
   },
   {
    "name": "Aumolertinib",
@@ -5880,7 +6603,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 80,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Camizestrant",
@@ -5899,7 +6624,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Lasofoxifene",
@@ -5916,7 +6643,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 9,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Methylparaben",
@@ -5935,7 +6664,9 @@ window.BIO = {
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING', 'OTC MONOGRAPH FINAL', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Perflenapent",
@@ -5952,7 +6683,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 6,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Pixantrone",
@@ -5974,7 +6707,9 @@ window.BIO = {
     "rarity": "rare",
     "onset": "mixed",
     "prev": 100499
-   }
+   },
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Rimonabant",
@@ -5991,7 +6726,9 @@ window.BIO = {
    "pubmed": 10,
    "trials": 48,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Sitaxentan",
@@ -6008,7 +6745,9 @@ window.BIO = {
    "pubmed": 10,
    "trials": 24,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   },
   {
    "name": "Temoporfin",
@@ -6025,7 +6764,9 @@ window.BIO = {
    "pubmed": 0,
    "trials": 8,
    "flags": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan": null,
+   "crl": null
   }
  ],
  "headline": {

@@ -80,7 +80,12 @@
    "pubmed": 36,
    "trials": 35,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of Leber's hereditary optic neuropathy",
+    "status": "Expired",
+    "number": "EU/3/07/434"
+   }
   },
   {
    "unii": "29OQ9EU4R1",
@@ -118,7 +123,12 @@
    "pubmed": 3,
    "trials": 5,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of Allan-Herndon-Dudley syndrome",
+    "status": "Positive",
+    "number": "EU/3/17/1945"
+   }
   },
   {
    "unii": "I6B4B2U96P",
@@ -922,6 +932,11 @@
     "us_prevalence_est": 16750,
     "onset": "pediatric",
     "onset_evidence": "Orphanet age of onset: Childhood \u2014 within birth-18"
+   },
+   "eu_orphan_designation": {
+    "use": "Treatment of echinococcosis",
+    "status": "Positive",
+    "number": "EU/3/16/1699"
    }
   },
   {
@@ -1038,7 +1053,11 @@
    "pubmed": 0,
    "trials": 12,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "us_crl": {
+    "application": "NDA 219624",
+    "date": "12/23/2025"
+   }
   },
   {
    "unii": "9G468C8B13",
@@ -1837,7 +1856,12 @@
    "pubmed": 117,
    "trials": 118,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of amyotrophic lateral sclerosis",
+    "status": "Withdrawn",
+    "number": "EU/3/18/1980"
+   }
   },
   {
    "unii": "E61Q31EK2F",
@@ -2194,7 +2218,11 @@
    "pubmed": 0,
    "trials": 34,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "us_crl": {
+    "application": "NDA 218995",
+    "date": "06/20/2026"
+   }
   },
   {
    "unii": "QG05NRB077",
@@ -2585,7 +2613,12 @@
    "pubmed": 2,
    "trials": 103,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of Prader-Willi syndrome",
+    "status": "Withdrawn",
+    "number": "EU/3/12/975"
+   }
   },
   {
    "unii": "N9A0A0R9S8",
@@ -3420,7 +3453,12 @@
    "pubmed": 5,
    "trials": 10,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of lead toxicity",
+    "status": "Positive",
+    "number": "EU/3/12/1084"
+   }
   },
   {
    "unii": "PJ0Y7AZB63",
@@ -3566,7 +3604,12 @@
    "pubmed": 10,
    "trials": 27,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of primary sclerosing cholangitis",
+    "status": "Positive",
+    "number": "EU/3/22/2675"
+   }
   },
   {
    "unii": "73H7UDN6EC",
@@ -3758,7 +3801,11 @@
    "pubmed": 503,
    "trials": 359,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "us_crl": {
+    "application": "NDA 208232",
+    "date": "04/15/2016"
+   }
   },
   {
    "unii": "LAH70H9JPH",
@@ -5281,7 +5328,12 @@
    "pubmed": 2,
    "trials": 2,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of pancreatic cancer",
+    "status": "Positive",
+    "number": "EU/3/09/703"
+   }
   },
   {
    "unii": "5XZM1R3DKF",
@@ -5363,7 +5415,12 @@
    "pubmed": 7,
    "trials": 2,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of low-flow priapism",
+    "status": "Positive",
+    "number": "EU/3/02/122"
+   }
   },
   {
    "unii": "R7PLA2DM0J",
@@ -7132,7 +7189,12 @@
    "pubmed": 4,
    "trials": 2,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "treatment of behavioural variant frontotemporal dementia",
+    "status": "Positive",
+    "number": "EU/3/16/1614"
+   }
   },
   {
    "unii": "K9AY9IR2SD",
@@ -7612,7 +7674,12 @@
    "pubmed": 4,
    "trials": 39,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of epidermolysis bullosa",
+    "status": "Positive",
+    "number": "EU/3/14/1236"
+   }
   },
   {
    "unii": "269M3QL74S",
@@ -7756,7 +7823,12 @@
    "pubmed": 0,
    "trials": 6,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of spinal cord injury",
+    "status": "Positive",
+    "number": "EU/3/22/2584"
+   }
   },
   {
    "unii": "6T9949G4LZ",
@@ -11617,7 +11689,12 @@
    "pubmed": 4,
    "trials": 0,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of diarrhoea associated with intestinal microsporidial infection",
+    "status": "Withdrawn",
+    "number": "EU/3/01/081"
+   }
   },
   {
    "unii": "4V7M9137X9",
@@ -11948,7 +12025,12 @@
    "pubmed": 3,
    "trials": 1,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of African trypanosomiasis",
+    "status": "Positive",
+    "number": "EU/3/12/1068"
+   }
   },
   {
    "unii": "CZ87T54W8W",
@@ -12218,7 +12300,12 @@
    "pubmed": 0,
    "trials": 10,
    "us_orphan": "unknown",
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of squamous-cell carcinoma of the head and neck in patients undergoing radiotherapy",
+    "status": "Withdrawn",
+    "number": "EU/3/10/842"
+   }
   },
   {
    "unii": "S846B891OR",
@@ -13396,6 +13483,11 @@
     "us_prevalence_est": 16750,
     "onset": "pediatric",
     "onset_evidence": "Orphanet age of onset: Childhood \u2014 within birth-18"
+   },
+   "eu_orphan_designation": {
+    "use": "Treatment of Becker muscular dystrophy",
+    "status": "Withdrawn",
+    "number": "EU/3/12/1010"
    }
   },
   {
@@ -13841,7 +13933,12 @@
     "Sweden",
     "United Kingdom (Northern Ireland)"
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of perinatal asphyxia",
+    "status": "Positive",
+    "number": "EU/3/12/978"
+   }
   },
   {
    "unii": "I38ZP9992A",
@@ -18281,7 +18378,12 @@
     "Germany",
     "Italy"
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of partial deep dermal and full-thickness burns",
+    "status": "Positive",
+    "number": "EU/3/16/1709"
+   }
   },
   {
    "unii": "368GB5141J",
@@ -19051,7 +19153,12 @@
    "countries": [
     "Poland"
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of epidermolysis bullosa",
+    "status": "Withdrawn",
+    "number": "EU/3/13/1232"
+   }
   },
   {
    "unii": "0D34IG724V",
@@ -20466,7 +20573,12 @@
    "countries": [
     "Italy"
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of cystic fibrosis",
+    "status": "Withdrawn",
+    "number": "EU/3/06/361"
+   }
   },
   {
    "unii": "7BK5G69305",
@@ -20560,7 +20672,12 @@
    "countries": [
     "France"
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of amyotrophic lateral sclerosis",
+    "status": "Positive",
+    "number": "EU/3/22/2686"
+   }
   },
   {
    "unii": "31J3Q51T6L",
@@ -22343,7 +22460,12 @@
    "countries": [
     "Germany"
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of ischaemia/reperfusion injury associated with cardiac arrest",
+    "status": "Positive",
+    "number": "EU/3/16/1768"
+   }
   },
   {
    "unii": "T967Q579KA",
@@ -23078,7 +23200,12 @@
    "countries": [
     "France"
    ],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of CACNA1A disorders",
+    "status": "Positive",
+    "number": "EU/3/26/3214"
+   }
   },
   {
    "unii": "U9VY0ZOK7A",
@@ -23236,7 +23363,12 @@
    },
    "n_countries": 0,
    "countries": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of autosomal dominant polycystic kidney disease",
+    "status": "Positive",
+    "number": "EU/3/21/2480"
+   }
   },
   {
    "unii": "GKF8S4C432",
@@ -23330,7 +23462,16 @@
    },
    "n_countries": 0,
    "countries": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of Charcot-Marie-Tooth disease",
+    "status": "Positive",
+    "number": "EU/3/23/2783"
+   },
+   "us_crl": {
+    "application": "NDA 219195",
+    "date": "11/27/2024"
+   }
   },
   {
    "unii": "UJ0ZJ76DO9",
@@ -23387,7 +23528,12 @@
    },
    "n_countries": 0,
    "countries": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of Friedreich\u2019s ataxia",
+    "status": "Positive",
+    "number": "EU/3/19/2212"
+   }
   },
   {
    "unii": "M59NC4E26P",
@@ -23462,6 +23608,11 @@
     "us_prevalence_est": 100499,
     "onset": "adult",
     "onset_evidence": "Orphanet age of onset: Adult \u2014 adult/elderly"
+   },
+   "eu_orphan_designation": {
+    "use": "Treatment of post-essential thrombocythaemia myelofibrosis",
+    "status": "Withdrawn",
+    "number": "EU/3/10/838"
    }
   },
   {
@@ -23526,7 +23677,12 @@
    },
    "n_countries": 0,
    "countries": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of Hodgkin's lymphoma",
+    "status": "Withdrawn",
+    "number": "EU/3/11/930"
+   }
   },
   {
    "unii": "H19C446XXB",
@@ -23554,7 +23710,12 @@
    },
    "n_countries": 0,
    "countries": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of pancreatic cancer",
+    "status": "Positive",
+    "number": "EU/3/03/145"
+   }
   },
   {
    "unii": "DD5RBA1NKF",
@@ -23697,7 +23858,12 @@
    },
    "n_countries": 0,
    "countries": [],
-   "orpha": null
+   "orpha": null,
+   "eu_orphan_designation": {
+    "use": "Treatment of ovarian cancer",
+    "status": "Positive",
+    "number": "EU/3/14/1303"
+   }
   },
   {
    "unii": "958X4J301A",
@@ -23937,6 +24103,11 @@
     "us_prevalence_est": 16750,
     "onset": "adult",
     "onset_evidence": "Orphanet age of onset: Adult \u2014 adult/elderly"
+   },
+   "eu_orphan_designation": {
+    "use": "Treatment of autoimmune haemolytic anaemia",
+    "status": "Positive",
+    "number": "EU/3/22/2659"
    }
   },
   {
@@ -24113,6 +24284,11 @@
     "us_prevalence_est": 100499,
     "onset": "mixed",
     "onset_evidence": "Orphanet age of onset: All ages \u2014 spans pediatric and adult"
+   },
+   "eu_orphan_designation": {
+    "use": "Treatment of acute myeloid leukaemia",
+    "status": "Positive",
+    "number": "EU/3/12/990"
    }
   },
   {
@@ -24146,6 +24322,10 @@
    "orpha": null
   }
  ],
+ "orphadata": {
+  "disorders_loaded": 7888,
+  "candidates_matched": 9
+ },
  "monitor": {
   "fedreg": {
    "count": 153,
@@ -24237,10 +24417,6 @@
     }
    ]
   },
-  "as_of": "2026-08-31 17:03"
- },
- "orphadata": {
-  "disorders_loaded": 7888,
-  "candidates_matched": 9
+  "as_of": "2026-08-31 18:04"
  }
 }
