@@ -1,0 +1,25 @@
+name: ci
+
+# Regression guard on every push/PR. Runs with no data files and no network:
+# the offline accuracy harness uses a hardcoded miniature US record, so it needs
+# only Python + the repo. This is what catches a matcher/scoring regression
+# before it ships.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  harness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: compile
+        run: python -m py_compile pipeline/*.py pipeline/report/*.py
+      - name: accuracy harness (offline)
+        run: python pipeline/test_accuracy.py
