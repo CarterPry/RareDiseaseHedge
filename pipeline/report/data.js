@@ -15,6 +15,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "Optic Atrophy, Hereditary, Leber",
    "ind": "Raxone is indicated for the treatment of visual impairment in adolescent and adult patients with Leber\u2019s Hereditary Optic Neuropathy (LHON).",
+   "disease": "Optic Atrophy, Hereditary, Leber",
+   "chembl": [
+    "Attention Deficit Disorder with Hyperactivity",
+    "Optic Atrophy, Hereditary, Leber",
+    "Muscular Dystrophy, Duchenne",
+    "Friedreich Ataxia",
+    "MELAS Syndrome",
+    "Multiple Sclerosis, Chronic Progressive"
+   ],
    "atc": "N06BX13",
    "pubmed": 36,
    "trials": 35,
@@ -40,6 +49,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "Thyrotoxicosis;Heredodegenerative Disorders, Nervous System",
    "ind": "Emcitate is indicated for the treatment of peripheral thyrotoxicosis in patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley Syndrome), from birth.",
+   "disease": "Thyrotoxicosis;Heredodegenerative Disorders, Nervous System",
+   "chembl": [],
    "atc": "H03AA04",
    "pubmed": 3,
    "trials": 5,
@@ -63,6 +74,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "Diabetes Mellitus, Type 2",
    "ind": "Vildagliptin is indicated as an adjunct to diet and exercise to improve glycaemic control in adults with type 2 diabetes mellitus:  as monotherapy in patients in whom metformin is inappropriate due to contraindications or intolerance. in combination with other medicinal products for the treatment of diabetes, including insulin, when these do not provide adequate glycaemic control (see sections 4.4, 4.5 and 5.1 for available data on different combinations).",
+   "disease": "Diabetes Mellitus, Type 2",
+   "chembl": [
+    "Diabetes Mellitus",
+    "Diabetes Mellitus, Type 2",
+    "Prediabetic State",
+    "Diabetes Mellitus, Type 1",
+    "Glucose Intolerance",
+    "Diabetes, Gestational"
+   ],
    "atc": "A10BH02",
    "pubmed": 0,
    "trials": 209,
@@ -85,6 +105,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Osteoporosis; Muscular Diseases; Osteoporosis, Postmenopausal; Pelvic Organ Prolapse",
+   "chembl": [
+    "Osteoporosis",
+    "Muscular Diseases",
+    "Osteoporosis, Postmenopausal",
+    "Pelvic Organ Prolapse",
+    "Calcinosis",
+    "Death, Sudden, Cardiac"
+   ],
    "atc": "",
    "pubmed": 31,
    "trials": 52,
@@ -105,6 +134,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Eye Manifestations; Hypersensitivity",
+   "chembl": [
+    "Eye Manifestations",
+    "Hypersensitivity",
+    "Rhinitis, Allergic, Seasonal",
+    "Urticaria",
+    "Rhinitis, Allergic, Perennial",
+    "Conjunctivitis, Allergic"
+   ],
    "atc": "",
    "pubmed": 12,
    "trials": 28,
@@ -127,6 +165,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Psychotic Disorders; Anxiety; Dementia; Depressive Disorder; Schizophrenia",
+   "chembl": [
+    "Psychotic Disorders",
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 10,
@@ -147,6 +193,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Diabetes Mellitus",
+   "chembl": [
+    "Diabetes Mellitus",
+    "Diabetes Mellitus, Type 2",
+    "Epilepsy"
+   ],
    "atc": "",
    "pubmed": 8,
    "trials": 85,
@@ -169,6 +221,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "Obstetric Labor, Premature",
    "ind": "Atosiban is indicated to delay imminent pre-term birth in pregnant adult women with:  regular uterine contractions of at least 30 seconds\u2019 duration at a rate of ? 4 per 30 minutes; a cervical dilation of 1 to 3 cm (0-3 for nulliparas) and effacement of ? 50%; a gestational age from 24 until 33 completed weeks; a normal foetal heart rate.",
+   "disease": "Obstetric Labor, Premature",
+   "chembl": [
+    "Premature Birth",
+    "Endometriosis"
+   ],
    "atc": "G02CX01",
    "pubmed": 7,
    "trials": 23,
@@ -189,6 +246,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Anxiety",
+   "chembl": [
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 6,
    "trials": 5,
@@ -209,6 +273,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "Depressive Disorder, Major",
    "ind": "Treatment of major depressive episodes in adults.",
+   "disease": "Depressive Disorder, Major",
+   "chembl": [
+    "Depressive Disorder, Major",
+    "Depressive Disorder",
+    "Anxiety",
+    "Dementia",
+    "Schizophrenia",
+    "Obsessive-Compulsive Disorder"
+   ],
    "atc": "N06AX22",
    "pubmed": 9,
    "trials": 27,
@@ -231,6 +304,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Urinary Incontinence; Polyuria",
+   "chembl": [
+    "Urinary Incontinence",
+    "Polyuria",
+    "Urinary Bladder, Overactive"
+   ],
    "atc": "",
    "pubmed": 15,
    "trials": 17,
@@ -251,6 +330,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Rheumatic Diseases",
+   "chembl": [
+    "Rheumatic Diseases",
+    "Pain"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 41,
@@ -273,11 +357,22 @@ window.BIO = {
    "fs": "authorised",
    "area": "Tuberculosis, Multidrug-Resistant",
    "ind": "Deltyba is indicated for use as part of an appropriate combination regimen for pulmonary multi-drug resistant tuberculosis (MDR-TB) in adults, adolescents, children and infants with a body weight of at least 10 kg when an effective treatment regimen cannot otherwise be composed for reasons of resistance or tolerability (see sections 4.2, 4.4 and 5.1). Consideration should be given to official guidance on the appropriate use of antibacterial agents.",
+   "disease": "Tuberculosis",
+   "chembl": [
+    "Tuberculosis, Multidrug-Resistant",
+    "Tuberculosis",
+    "Tuberculosis, Pulmonary"
+   ],
    "atc": "J04AK06",
    "pubmed": 40,
    "trials": 44,
    "flags": [],
-   "orpha": null,
+   "orpha": {
+    "disease": "Tuberculosis",
+    "rarity": "rare",
+    "onset": "mixed",
+    "prev": 100499
+   },
    "eu_orphan": null,
    "crl": null
   },
@@ -293,6 +388,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "Arthritis, Rheumatoid",
    "ind": "Rheumatoid arthritis Jyseleca is indicated for the treatment of moderate to severe active rheumatoid arthritis in adult patients who have responded inadequately to, or who are intolerant to one or more disease modifying anti rheumatic drugs (DMARDs). Jyseleca may be used as monotherapy or in combination with methotrexate (MTX). Ulcerative colitis Jyseleca is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis who have had an inadequate response with, lost response to, or were intolerant to either conventional therapy or a biologic agent.",
+   "disease": "Arthritis, Rheumatoid",
+   "chembl": [
+    "Arthritis, Rheumatoid",
+    "Crohn Disease",
+    "Colitis, Ulcerative",
+    "Arthritis, Psoriatic",
+    "Spondylitis, Ankylosing",
+    "Spondylarthropathies"
+   ],
    "atc": "L04AF04",
    "pubmed": 11,
    "trials": 66,
@@ -315,6 +419,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "Cough",
    "ind": "Lyfnua is indicated in adults for the treatment of refractory or unexplained chronic cough.",
+   "disease": "Cough",
+   "chembl": [
+    "Cough",
+    "Idiopathic Pulmonary Fibrosis",
+    "Osteoarthritis, Knee",
+    "Cystitis, Interstitial",
+    "Asthma",
+    "Sleep Apnea, Obstructive"
+   ],
    "atc": "R05DB29",
    "pubmed": 0,
    "trials": 27,
@@ -335,6 +448,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "Leiomyoma",
    "ind": "Yselty is indicated in adult women of reproductive age for:&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; treatment of moderate to severe symptoms of uterine fibroids,-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; symptomatic treatment of endometriosis in women with a history of previous medical or surgical treatment for their endometriosis (see section 5.1).",
+   "disease": "Leiomyoma",
+   "chembl": [
+    "Endometriosis",
+    "Leiomyoma",
+    "Liver Diseases",
+    "Kidney Diseases"
+   ],
    "atc": "H01CC04",
    "pubmed": 0,
    "trials": 18,
@@ -357,6 +477,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "Osteosarcoma",
    "ind": "Mepact is indicated in children, adolescents and young adults for the treatment of high-grade resectable non-metastatic osteosarcoma after macroscopically complete surgical resection. It is used in combination with postoperative multi-agent chemotherapy. Safety and efficacy have been assessed in studies of patients two to 30 years of age at initial diagnosis.",
+   "disease": "Osteosarcoma",
+   "chembl": [
+    "Osteosarcoma",
+    "Neoplasms"
+   ],
    "atc": "L03AX15",
    "pubmed": 16,
    "trials": 8,
@@ -385,6 +510,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "Ultrasonography",
    "ind": "ultrasound imaging agent indicated for the detection of coronary artery disease (CAD)",
+   "disease": "Ultrasonography",
+   "chembl": [
+    "Hypertension, Portal",
+    "Carcinoma, Pancreatic Ductal"
+   ],
    "atc": "V08D",
    "pubmed": 2,
    "trials": 20,
@@ -405,6 +535,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "Anemia;Kidney Failure, Chronic",
    "ind": "Evrenzo is indicated for treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD).",
+   "disease": "Anemia;Kidney Failure, Chronic",
+   "chembl": [
+    "Anemia",
+    "Kidney Failure, Chronic",
+    "Myelodysplastic Syndromes",
+    "ST Elevation Myocardial Infarction",
+    "Kidney Diseases"
+   ],
    "atc": "B03XA05",
    "pubmed": 5,
    "trials": 66,
@@ -427,6 +565,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "Multiple Sclerosis, Chronic Progressive",
    "ind": "Cenrifki is indicated for the treatment of adult patients with secondary progressive multiple sclerosis (SPMS) without relapses in the last 2 years.",
+   "disease": "Multiple Sclerosis, Chronic Progressive",
+   "chembl": [
+    "Multiple Sclerosis, Chronic Progressive",
+    "Multiple Sclerosis",
+    "Kidney Diseases"
+   ],
    "atc": "L04AA62",
    "pubmed": 0,
    "trials": 12,
@@ -450,6 +594,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "Atrial Fibrillation",
    "ind": "Rapid conversion of recent onset atrial fibrillation to sinus rhythm in adults:  for non-surgery patients: atrial fibrillation&nbsp;&lt;/= 7 days duration; for post-cardiac surgery patients: atrial fibrillation&nbsp;&lt;/= 3 days duration.",
+   "disease": "Atrial Fibrillation",
+   "chembl": [
+    "Arrhythmias, Cardiac",
+    "Atrial Fibrillation",
+    "Atrial Flutter"
+   ],
    "atc": "C01BG11",
    "pubmed": 1,
    "trials": 17,
@@ -470,6 +620,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "Carcinoma, Transitional Cell;Urologic Neoplasms",
    "ind": "Javlor is indicated in monotherapy for the treatment of adult patients with advanced or metastatic transitional-cell carcinoma of the urothelial tract after failure of a prior platinum-containing regimen. Efficacy and safety of vinflunine have not been studied in patients with performance status ? 2.",
+   "disease": "Carcinoma, Transitional Cell;Urologic Neoplasms",
+   "chembl": [
+    "Neoplasms",
+    "Urogenital Neoplasms",
+    "Urinary Bladder Neoplasms",
+    "Head and Neck Neoplasms",
+    "Breast Neoplasms",
+    "Small Cell Lung Carcinoma"
+   ],
    "atc": "L01CA05",
    "pubmed": 0,
    "trials": 35,
@@ -490,6 +649,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -509,6 +670,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Rheumatic Diseases",
+   "chembl": [
+    "Rheumatic Diseases",
+    "Pain",
+    "Arthritis, Rheumatoid",
+    "Spondylitis, Ankylosing",
+    "Osteoarthritis, Knee",
+    "Wounds and Injuries"
+   ],
    "atc": "",
    "pubmed": 12,
    "trials": 129,
@@ -530,6 +700,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 55,
    "trials": 27,
@@ -551,6 +723,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Hypersensitivity",
+   "chembl": [
+    "Hypersensitivity",
+    "Urticaria",
+    "Arthritis, Rheumatoid",
+    "Mastocytosis",
+    "Cold Urticaria"
+   ],
    "atc": "",
    "pubmed": 7,
    "trials": 15,
@@ -570,6 +750,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Onychomycosis",
+   "chembl": [
+    "Onychomycosis"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 13,
@@ -589,6 +773,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Eye Manifestations; Nasal Obstruction",
+   "chembl": [
+    "Eye Manifestations",
+    "Nasal Obstruction",
+    "Common Cold"
+   ],
    "atc": "",
    "pubmed": 10,
    "trials": 37,
@@ -610,6 +800,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Rheumatic Diseases; Vaginitis; Arthralgia; Myalgia",
+   "chembl": [
+    "Rheumatic Diseases",
+    "Vaginitis",
+    "Arthralgia",
+    "Myalgia",
+    "Stomatitis"
+   ],
    "atc": "",
    "pubmed": 10,
    "trials": 49,
@@ -629,6 +827,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Malaria"
+   ],
    "atc": "",
    "pubmed": 10,
    "trials": 30,
@@ -650,6 +852,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Hypertension",
+   "chembl": [
+    "Hypertension",
+    "Heart Diseases",
+    "Hypotension, Orthostatic"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 21,
@@ -669,6 +877,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Respiratory Tract Diseases; Pharyngitis; Parkinson Disease",
+   "chembl": [
+    "Respiratory Tract Diseases",
+    "Pharyngitis",
+    "Parkinson Disease",
+    "Cough",
+    "Dementia",
+    "Gaucher Disease"
+   ],
    "atc": "",
    "pubmed": 40,
    "trials": 40,
@@ -690,6 +907,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Myalgia",
+    "Arthralgia"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -709,6 +931,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Heart Failure; ST Elevation Myocardial Infarction; Cardiovascular Diseases; Shock; Amyotrophic Lateral Sclerosis",
+   "chembl": [
+    "Heart Failure",
+    "ST Elevation Myocardial Infarction",
+    "Cardiovascular Diseases",
+    "Shock",
+    "Amyotrophic Lateral Sclerosis",
+    "Shock, Septic"
+   ],
    "atc": "",
    "pubmed": 117,
    "trials": 118,
@@ -733,6 +964,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Polycystic Ovary Syndrome"
+   ],
    "atc": "",
    "pubmed": 33,
    "trials": 66,
@@ -754,6 +989,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Erectile Dysfunction; Sexual Dysfunction, Physiological; Premature Ejaculation",
+   "chembl": [
+    "Erectile Dysfunction",
+    "Sexual Dysfunction, Physiological",
+    "Premature Ejaculation"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 33,
@@ -775,6 +1016,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Digestive System Diseases",
+   "chembl": [
+    "Digestive System Diseases",
+    "Irritable Bowel Syndrome"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 20,
@@ -794,6 +1040,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Diarrhea; Diarrhea, Infantile",
+   "chembl": [
+    "Diarrhea",
+    "Diarrhea, Infantile"
+   ],
    "atc": "",
    "pubmed": 23,
    "trials": 15,
@@ -815,6 +1066,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Osteoporosis; Sexual Dysfunction, Physiological; Breast Neoplasms; Menopause",
+   "chembl": [
+    "Osteoporosis",
+    "Sexual Dysfunction, Physiological",
+    "Breast Neoplasms",
+    "Menopause",
+    "Depressive Disorder, Major"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 28,
@@ -836,6 +1095,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Tobacco Use Disorder; Smoking Cessation",
+   "chembl": [
+    "Tobacco Use Disorder",
+    "Smoking Cessation",
+    "Kidney Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 34,
@@ -858,6 +1123,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -877,6 +1144,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Attention Deficit Disorder with Hyperactivity",
+   "chembl": [
+    "Attention Deficit Disorder with Hyperactivity",
+    "Movement Disorders",
+    "Anxiety",
+    "Postpoliomyelitis Syndrome",
+    "Dementia",
+    "Depressive Disorder"
+   ],
    "atc": "",
    "pubmed": 17,
    "trials": 16,
@@ -896,6 +1172,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Digestive System Diseases",
+   "chembl": [
+    "Digestive System Diseases",
+    "Gastroparesis",
+    "Gastroenteritis",
+    "Gastroesophageal Reflux",
+    "Dyspepsia",
+    "Multiple Sclerosis, Relapsing-Remitting"
+   ],
    "atc": "",
    "pubmed": 49,
    "trials": 83,
@@ -917,6 +1202,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 62,
    "trials": 33,
@@ -936,6 +1223,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Dyspepsia; Peritonitis; Digestive System Diseases",
+   "chembl": [
+    "Dyspepsia",
+    "Peritonitis",
+    "Digestive System Diseases",
+    "Irritable Bowel Syndrome",
+    "Constipation",
+    "Gastroparesis"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 33,
@@ -955,6 +1251,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Rheumatic Diseases; Myalgia; Arthralgia; Arthritis, Rheumatoid; Spondylitis; Osteoarthritis",
+   "chembl": [
+    "Rheumatic Diseases",
+    "Myalgia",
+    "Arthralgia",
+    "Arthritis, Rheumatoid",
+    "Spondylitis",
+    "Osteoarthritis"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 22,
@@ -974,6 +1279,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Postpartum Hemorrhage; Prader-Willi Syndrome",
+   "chembl": [
+    "Postpartum Hemorrhage",
+    "Prader-Willi Syndrome",
+    "Uterine Inertia",
+    "Leiomyoma"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 103,
@@ -996,6 +1308,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Cardiomyopathy, Hypertrophic",
+    "Hypertension, Pulmonary",
+    "Cardiotoxicity",
+    "Diabetic Nephropathies",
+    "Non-alcoholic Fatty Liver Disease"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 40,
@@ -1017,6 +1338,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Depressive Disorder",
+   "chembl": [
+    "Depressive Disorder",
+    "Anxiety",
+    "Dementia",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 5,
@@ -1036,6 +1364,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 3,
    "trials": 10,
@@ -1057,6 +1387,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Venous Insufficiency",
+    "Arthritis, Rheumatoid",
+    "Colitis, Ulcerative",
+    "Peptic Ulcer",
+    "Non-alcoholic Fatty Liver Disease"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 55,
@@ -1078,6 +1417,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Acute Kidney Injury"
+   ],
    "atc": "",
    "pubmed": 5,
    "trials": 9,
@@ -1097,6 +1440,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Anxiety; Dementia; Depressive Disorder; Sleep Wake Disorders; Schizophrenia",
+   "chembl": [
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Sleep Wake Disorders",
+    "Schizophrenia",
+    "Epilepsy"
+   ],
    "atc": "",
    "pubmed": 20,
    "trials": 12,
@@ -1116,6 +1468,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Psychotic Disorders",
+   "chembl": [
+    "Psychotic Disorders",
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia",
+    "Cognitive Dysfunction"
+   ],
    "atc": "",
    "pubmed": 9,
    "trials": 17,
@@ -1135,6 +1496,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 5,
@@ -1154,6 +1517,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Hypersensitivity",
+   "chembl": [
+    "Hypersensitivity",
+    "Irritable Bowel Syndrome"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 10,
@@ -1173,6 +1541,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 6,
@@ -1192,6 +1564,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Infections",
+   "chembl": [
+    "Infections"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 5,
@@ -1211,6 +1587,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Hypertension",
+    "Angina, Stable"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 15,
@@ -1232,6 +1614,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Hypertension; Pre-Eclampsia; Stroke; Cerebrovascular Disorders",
+   "chembl": [
+    "Hypertension",
+    "Pre-Eclampsia",
+    "Stroke",
+    "Cerebrovascular Disorders"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 32,
@@ -1253,6 +1642,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cough"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 2,
@@ -1272,6 +1665,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Nasal Obstruction; Eye Infections",
+   "chembl": [
+    "Nasal Obstruction",
+    "Eye Infections"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 2,
@@ -1293,6 +1691,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Pulmonary Disease, Chronic Obstructive",
+   "chembl": [
+    "Pulmonary Disease, Chronic Obstructive",
+    "Bronchitis, Chronic"
+   ],
    "atc": "",
    "pubmed": 5,
    "trials": 10,
@@ -1315,6 +1718,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Depressive Disorder",
+   "chembl": [
+    "Depressive Disorder",
+    "Anxiety",
+    "Dementia",
+    "Schizophrenia",
+    "Tobacco Use Disorder",
+    "Substance-Related Disorders"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 9,
@@ -1334,6 +1746,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Nasal Obstruction"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -1353,6 +1769,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Hyperlipidemia, Familial Combined",
+    "Liver Cirrhosis, Biliary",
+    "Cholangitis, Sclerosing",
+    "Myelodysplastic Syndromes",
+    "Diabetes Mellitus, Type 2"
+   ],
    "atc": "",
    "pubmed": 10,
    "trials": 27,
@@ -1377,6 +1802,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Ischemic Stroke"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 7,
@@ -1396,6 +1826,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Infections"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 29,
@@ -1417,6 +1851,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Bacterial Infections",
+   "chembl": [
+    "Bacterial Infections"
+   ],
    "atc": "",
    "pubmed": 31,
    "trials": 11,
@@ -1436,6 +1874,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Carcinoma, Hepatocellular; Hypertension, Portal; Gallbladder Neoplasms; Neuroendocrine Tumors; Polycystic Kidney, Autosomal Dominant; Pancreatitis",
+   "chembl": [
+    "Carcinoma, Hepatocellular",
+    "Hypertension, Portal",
+    "Gallbladder Neoplasms",
+    "Neuroendocrine Tumors",
+    "Polycystic Kidney, Autosomal Dominant",
+    "Pancreatitis"
+   ],
    "atc": "",
    "pubmed": 503,
    "trials": 359,
@@ -1458,6 +1905,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Anxiety; Dementia; Tourette Syndrome; Psychotic Disorders; Depressive Disorder; Schizophrenia",
+   "chembl": [
+    "Anxiety",
+    "Dementia",
+    "Tourette Syndrome",
+    "Psychotic Disorders",
+    "Depressive Disorder",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 11,
    "trials": 5,
@@ -1477,6 +1933,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Diabetic Neuropathies",
+   "chembl": [
+    "Diabetic Neuropathies",
+    "Alzheimer Disease",
+    "Diabetes Mellitus, Type 2",
+    "Diabetes Mellitus, Type 1"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 21,
@@ -1496,6 +1959,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cough; Bronchial Diseases",
+   "chembl": [
+    "Cough",
+    "Bronchial Diseases",
+    "Dyspnea"
+   ],
    "atc": "",
    "pubmed": 9,
    "trials": 10,
@@ -1517,6 +1986,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Bacterial Infections",
+   "chembl": [
+    "Bacterial Infections",
+    "Acne Vulgaris"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 6,
@@ -1536,6 +2010,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Rheumatic Diseases; Arthralgia; Myalgia",
+   "chembl": [
+    "Rheumatic Diseases",
+    "Arthralgia",
+    "Myalgia",
+    "Breast Neoplasms",
+    "Pain"
+   ],
    "atc": "",
    "pubmed": 34,
    "trials": 17,
@@ -1557,6 +2039,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Neoplasms",
+   "chembl": [
+    "Neoplasms",
+    "Leukemia",
+    "Leukemia, Myeloid, Acute",
+    "Myelodysplastic Syndromes"
+   ],
    "atc": "",
    "pubmed": 16,
    "trials": 11,
@@ -1576,6 +2065,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Varicose Veins",
+   "chembl": [
+    "Varicose Veins",
+    "Menorrhagia",
+    "Infertility",
+    "Diabetes Mellitus, Type 2",
+    "Rosacea"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 806,
@@ -1595,6 +2092,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Depressive Disorder",
+   "chembl": [
+    "Depressive Disorder",
+    "Anxiety",
+    "Fibromyalgia",
+    "Dementia",
+    "Schizophrenia",
+    "Fatigue"
+   ],
    "atc": "",
    "pubmed": 5,
    "trials": 41,
@@ -1616,6 +2122,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Hypertension",
+   "chembl": [
+    "Hypertension"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 2,
@@ -1635,6 +2145,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -1654,6 +2166,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Thyroid Diseases",
+   "chembl": [
+    "Thyroid Diseases",
+    "Thyrotoxicosis"
+   ],
    "atc": "",
    "pubmed": 82,
    "trials": 7,
@@ -1675,6 +2192,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 3,
@@ -1696,6 +2215,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -1715,6 +2236,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Diabetes Mellitus",
+   "chembl": [
+    "Diabetes Mellitus"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 5,
@@ -1734,6 +2259,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Dementia"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -1753,6 +2282,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 3,
    "trials": 1,
@@ -1774,6 +2305,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Anxiety; Dementia; Depressive Disorder; Sleep Wake Disorders; Schizophrenia",
+   "chembl": [
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Sleep Wake Disorders",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 6,
@@ -1795,6 +2334,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Angina, Stable",
+    "Inflammation"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 6,
@@ -1816,6 +2361,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Ehlers-Danlos Syndrome"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 4,
@@ -1837,6 +2387,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Pain; Fever",
+   "chembl": [
+    "Pain",
+    "Fever"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 376,
@@ -1858,6 +2413,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 20,
    "trials": 17,
@@ -1879,6 +2436,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Anxiety; Dementia; Depressive Disorder; Schizophrenia",
+   "chembl": [
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 1,
@@ -1898,6 +2462,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 7,
@@ -1919,6 +2485,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Rheumatic Diseases",
+   "chembl": [
+    "Rheumatic Diseases",
+    "Pain",
+    "Alzheimer Disease",
+    "Migraine Disorders"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 21,
@@ -1938,6 +2511,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Acanthamoeba Keratitis; Eye Infections",
+   "chembl": [
+    "Acanthamoeba Keratitis",
+    "Eye Infections"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 1,
@@ -1957,6 +2535,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Attention Deficit Disorder with Hyperactivity",
+   "chembl": [
+    "Attention Deficit Disorder with Hyperactivity",
+    "Diabetic Nephropathies",
+    "Epilepsy"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 9,
@@ -1976,6 +2560,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Neoplasms",
+   "chembl": [
+    "Neoplasms",
+    "Prostatic Neoplasms, Castration-Resistant",
+    "Prostatic Neoplasms",
+    "Infertility"
+   ],
    "atc": "",
    "pubmed": 12,
    "trials": 42,
@@ -1997,6 +2588,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 4,
@@ -2016,6 +2611,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Digestive System Diseases; Bile Duct Diseases",
+   "chembl": [
+    "Digestive System Diseases",
+    "Bile Duct Diseases"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 6,
@@ -2035,6 +2635,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Psychotic Disorders; Anxiety; Dementia; Depressive Disorder; Schizophrenia",
+   "chembl": [
+    "Psychotic Disorders",
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 4,
@@ -2054,6 +2662,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Ovarian Hyperstimulation Syndrome"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 6,
@@ -2073,6 +2685,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Neoplasms",
+   "chembl": [
+    "Neoplasms",
+    "Mesothelioma",
+    "Carcinoma, Squamous Cell",
+    "Colorectal Neoplasms",
+    "Carcinoma, Hepatocellular",
+    "Liver Neoplasms"
+   ],
    "atc": "",
    "pubmed": 8,
    "trials": 87,
@@ -2092,6 +2713,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Rheumatic Diseases",
+   "chembl": [
+    "Rheumatic Diseases"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 2,
@@ -2111,6 +2736,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Virus Diseases",
+    "Pancreatic Neoplasms",
+    "Colorectal Neoplasms"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 2,
@@ -2133,6 +2764,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Sleep Initiation and Maintenance Disorders; Anxiety; Dementia; Depressive Disorder; Sleep Wake Disorders; Schizophrenia",
+   "chembl": [
+    "Sleep Initiation and Maintenance Disorders",
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Sleep Wake Disorders",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 10,
@@ -2152,6 +2792,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Ascites"
+   ],
    "atc": "",
    "pubmed": 7,
    "trials": 2,
@@ -2174,6 +2819,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Vertigo",
+   "chembl": [
+    "Vertigo",
+    "Migraine Disorders"
+   ],
    "atc": "",
    "pubmed": 53,
    "trials": 21,
@@ -2195,6 +2845,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia",
+    "Deglutition Disorders"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 6,
@@ -2214,6 +2873,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Psoriasis",
+   "chembl": [
+    "Psoriasis"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 2,
@@ -2233,6 +2896,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Urinary Tract Infections; Bacterial Infections; Bacteremia",
+   "chembl": [
+    "Urinary Tract Infections",
+    "Bacterial Infections",
+    "Bacteremia"
+   ],
    "atc": "",
    "pubmed": 5,
    "trials": 16,
@@ -2252,6 +2921,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Inflammation",
+   "chembl": [
+    "Inflammation"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 9,
@@ -2273,6 +2946,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 19,
    "trials": 2,
@@ -2292,6 +2967,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 6,
    "trials": 4,
@@ -2311,6 +2988,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 4,
@@ -2332,6 +3011,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -2351,6 +3034,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 0,
@@ -2370,6 +3055,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Low Back Pain",
+   "chembl": [
+    "Low Back Pain"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 15,
@@ -2389,6 +3078,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Pruritus; Anesthesia; Hemorrhoids; Pharyngitis; Sunburn; Burns",
+   "chembl": [
+    "Pruritus",
+    "Anesthesia",
+    "Hemorrhoids",
+    "Pharyngitis",
+    "Sunburn",
+    "Burns"
+   ],
    "atc": "",
    "pubmed": 49,
    "trials": 7250,
@@ -2410,6 +3108,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Stroke; Amphetamine-Related Disorders; Attention Deficit Disorder with Hyperactivity; Cerebral Infarction; Brain Ischemia; Brain Injuries",
+   "chembl": [
+    "Stroke",
+    "Amphetamine-Related Disorders",
+    "Attention Deficit Disorder with Hyperactivity",
+    "Cerebral Infarction",
+    "Brain Ischemia",
+    "Brain Injuries"
+   ],
    "atc": "",
    "pubmed": 6,
    "trials": 72,
@@ -2431,6 +3138,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -2450,6 +3159,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 9,
    "trials": 1,
@@ -2469,6 +3180,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Psychotic Disorders; Anxiety; Dementia; Depressive Disorder, Major; Depressive Disorder; Schizophrenia",
+   "chembl": [
+    "Psychotic Disorders",
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder, Major",
+    "Depressive Disorder",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 6,
@@ -2490,6 +3210,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 5,
@@ -2509,6 +3231,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Pain",
+   "chembl": [
+    "Pain"
+   ],
    "atc": "",
    "pubmed": 18,
    "trials": 25,
@@ -2528,6 +3254,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 8,
    "trials": 2,
@@ -2547,6 +3275,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 8,
    "trials": 5,
@@ -2566,6 +3296,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 2,
    "trials": 20,
@@ -2585,6 +3317,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -2604,6 +3338,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 4,
@@ -2623,6 +3361,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 4,
    "trials": 3,
@@ -2642,6 +3382,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -2661,6 +3403,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Essential Hypertension",
+    "Polycystic Kidney, Autosomal Dominant"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 5,
@@ -2680,6 +3428,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Psychotic Disorders",
+    "Psychomotor Agitation",
+    "Dyspepsia"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 5,
@@ -2701,6 +3455,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -2720,6 +3476,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 0,
@@ -2739,6 +3497,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 4,
    "trials": 0,
@@ -2758,6 +3518,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 22,
@@ -2779,6 +3541,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -2800,6 +3564,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Anxiety"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 2,
@@ -2819,6 +3587,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Thrombosis",
+   "chembl": [
+    "Thrombosis",
+    "Insulin Resistance"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 6,
@@ -2838,6 +3611,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases; Pre-Eclampsia; Fatigue Syndrome, Chronic; Multiple Organ Failure",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Pre-Eclampsia",
+    "Fatigue Syndrome, Chronic",
+    "Multiple Organ Failure",
+    "Carcinoma, Hepatocellular",
+    "Death, Sudden, Cardiac"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 285,
@@ -2859,6 +3641,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Pruritus",
+    "Hypersensitivity"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 1,
@@ -2878,6 +3665,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Heart Failure",
+    "Coronary Disease"
+   ],
    "atc": "",
    "pubmed": 20,
    "trials": 8,
@@ -2897,6 +3690,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Lung Diseases, Obstructive",
+   "chembl": [
+    "Lung Diseases, Obstructive",
+    "Pulmonary Disease, Chronic Obstructive",
+    "Asthma",
+    "Heart Failure"
+   ],
    "atc": "",
    "pubmed": 12,
    "trials": 25,
@@ -2918,6 +3718,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Anxiety",
+   "chembl": [
+    "Anxiety"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 2,
@@ -2937,6 +3741,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Hypersensitivity",
+   "chembl": [
+    "Hypersensitivity"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 1,
@@ -2956,6 +3764,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Myocardial Infarction",
+    "Dementia",
+    "Premature Birth",
+    "Coronary Disease",
+    "Cognitive Dysfunction"
+   ],
    "atc": "",
    "pubmed": 14,
    "trials": 44,
@@ -2975,6 +3792,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Brain Diseases",
+   "chembl": [
+    "Brain Diseases",
+    "Inflammatory Bowel Diseases"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 3,
@@ -2994,6 +3816,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Bacterial Infections",
+   "chembl": [
+    "Bacterial Infections"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -3013,6 +3839,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 1,
@@ -3032,6 +3860,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 4,
    "trials": 2,
@@ -3054,6 +3884,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Diabetes Mellitus, Type 1",
+    "Metabolic Syndrome",
+    "Heart Failure",
+    "Bulimia Nervosa",
+    "Diabetes Mellitus, Type 2"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 25,
@@ -3073,6 +3912,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Non-alcoholic Fatty Liver Disease; Cholestasis, Intrahepatic; Liver Diseases; Hepatitis",
+   "chembl": [
+    "Non-alcoholic Fatty Liver Disease",
+    "Cholestasis, Intrahepatic",
+    "Liver Diseases",
+    "Hepatitis",
+    "Liver Cirrhosis, Biliary",
+    "Depressive Disorder, Major"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 69,
@@ -3094,6 +3942,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Digestive System Diseases",
+   "chembl": [
+    "Digestive System Diseases"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 3,
@@ -3113,6 +3965,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 2,
    "trials": 47,
@@ -3134,6 +3988,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -3153,6 +4011,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -3172,6 +4032,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Psychotic Disorders",
+   "chembl": [
+    "Psychotic Disorders",
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 3,
@@ -3191,6 +4059,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Gastroesophageal Reflux; Peptic Ulcer",
+   "chembl": [
+    "Gastroesophageal Reflux",
+    "Peptic Ulcer"
+   ],
    "atc": "",
    "pubmed": 19,
    "trials": 0,
@@ -3210,6 +4083,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Dyspepsia; Digestive System Diseases",
+   "chembl": [
+    "Dyspepsia",
+    "Digestive System Diseases"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 1,
@@ -3229,6 +4107,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 3,
    "trials": 5,
@@ -3250,6 +4130,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cough"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 0,
@@ -3269,6 +4153,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Anxiety",
+   "chembl": [
+    "Anxiety"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -3288,6 +4176,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Rheumatic Diseases",
+   "chembl": [
+    "Rheumatic Diseases",
+    "Osteoarthritis, Hip",
+    "Osteoarthritis, Knee",
+    "Osteoarthritis",
+    "Arthritis, Rheumatoid",
+    "Gout"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 39,
@@ -3312,6 +4209,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Eye Infections"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -3331,6 +4232,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Anxiety"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -3350,6 +4255,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Psychotic Disorders",
+   "chembl": [
+    "Psychotic Disorders",
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 19,
@@ -3369,6 +4282,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cholangitis, Sclerosing",
+    "Hypertension, Pulmonary",
+    "Respiratory Tract Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 6,
@@ -3391,6 +4310,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Thrombosis; Atrial Fibrillation",
+   "chembl": [
+    "Thrombosis",
+    "Atrial Fibrillation"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 14,
@@ -3410,6 +4334,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -3429,6 +4355,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Depressive Disorder",
+   "chembl": [
+    "Depressive Disorder",
+    "Sleep Wake Disorders",
+    "Spinal Cord Injuries",
+    "Depressive Disorder, Major",
+    "Obesity"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 30,
@@ -3450,6 +4384,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Bacterial Infections",
+   "chembl": [
+    "Bacterial Infections"
+   ],
    "atc": "",
    "pubmed": 12,
    "trials": 2,
@@ -3469,6 +4407,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Psychotic Disorders",
+   "chembl": [
+    "Psychotic Disorders"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 1,
@@ -3488,6 +4430,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Hypospadias",
+   "chembl": [
+    "Hypospadias"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 10,
@@ -3507,6 +4453,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Psychotic Disorders",
+   "chembl": [
+    "Psychotic Disorders",
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -3526,6 +4480,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Infections; Tinea; Tinea Pedis; Pruritus",
+   "chembl": [
+    "Infections",
+    "Tinea",
+    "Tinea Pedis",
+    "Pruritus",
+    "Eczema"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 34,
@@ -3547,6 +4509,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Neoplasms",
+   "chembl": [
+    "Neoplasms",
+    "Precursor Cell Lymphoblastic Leukemia-Lymphoma",
+    "Lymphoma, Large B-Cell, Diffuse",
+    "Leukemia",
+    "Lymphoma",
+    "Neuroblastoma"
+   ],
    "atc": "",
    "pubmed": 26,
    "trials": 85,
@@ -3566,6 +4537,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -3585,6 +4558,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Pruritus",
+    "Hypersensitivity"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -3604,6 +4582,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Gout",
+   "chembl": [
+    "Gout",
+    "Hyperuricemia",
+    "Familial Primary Pulmonary Hypertension"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 13,
@@ -3623,6 +4607,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Digestive System Diseases",
+   "chembl": [
+    "Digestive System Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -3642,6 +4630,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 2,
@@ -3661,6 +4651,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 4,
    "trials": 31,
@@ -3682,6 +4674,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 3,
    "trials": 27,
@@ -3703,6 +4697,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -3724,6 +4720,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Anxiety",
+   "chembl": [
+    "Anxiety"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -3745,6 +4745,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -3764,6 +4766,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -3783,6 +4787,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Lung Diseases, Obstructive"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 0,
@@ -3802,6 +4810,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Acne Vulgaris",
+   "chembl": [
+    "Acne Vulgaris"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 3,
@@ -3821,6 +4833,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -3840,6 +4856,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Anxiety; Dementia; Depressive Disorder; Schizophrenia",
+   "chembl": [
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia",
+    "Substance-Related Disorders"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 3,
@@ -3861,6 +4885,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Bacterial Infections; Amebiasis",
+   "chembl": [
+    "Bacterial Infections",
+    "Amebiasis",
+    "Rectal Neoplasms",
+    "Colonic Neoplasms"
+   ],
    "atc": "",
    "pubmed": 6,
    "trials": 9,
@@ -3882,6 +4913,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Rheumatic Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -3901,6 +4936,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Neoplasms",
+   "chembl": [
+    "Neoplasms",
+    "Carcinoma, Non-Small-Cell Lung",
+    "Cholangiocarcinoma",
+    "Prostatic Neoplasms, Castration-Resistant",
+    "Urinary Bladder Neoplasms",
+    "Kidney Neoplasms"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 12,
@@ -3920,6 +4964,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Neuroendocrine Tumors"
+   ],
    "atc": "",
    "pubmed": 7,
    "trials": 15,
@@ -3941,6 +4989,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Attention Deficit Disorder with Hyperactivity"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -3960,6 +5012,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Bronchitis, Chronic; Urinary Tract Infections; Gastroenteritis; Bacterial Infections",
+   "chembl": [
+    "Bronchitis, Chronic",
+    "Urinary Tract Infections",
+    "Gastroenteritis",
+    "Bacterial Infections",
+    "Prostatitis"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 8,
@@ -3979,6 +5039,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Tuberculosis, Multidrug-Resistant",
+    "Tuberculosis"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 4,
@@ -3998,6 +5063,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 1,
@@ -4017,6 +5084,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4036,6 +5107,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Eye Infections"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4055,6 +5130,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4074,6 +5153,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Psychotic Disorders",
+   "chembl": [
+    "Psychotic Disorders",
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 4,
@@ -4093,6 +5180,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Parkinson Disease"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4112,6 +5203,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 7,
    "trials": 4,
@@ -4131,6 +5224,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Pruritus; Hypersensitivity",
+   "chembl": [
+    "Pruritus",
+    "Hypersensitivity"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4150,6 +5248,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Amebiasis",
+   "chembl": [
+    "Amebiasis"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -4169,6 +5271,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Diabetes Mellitus, Type 2",
+   "chembl": [
+    "Diabetes Mellitus, Type 2",
+    "Cognitive Dysfunction"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 28,
@@ -4190,6 +5297,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 0,
@@ -4209,6 +5320,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4228,6 +5341,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Anemia",
+    "Dermatitis, Atopic"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 3,
@@ -4249,6 +5367,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Psychotic Disorders"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 1,
@@ -4268,6 +5390,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 5,
    "trials": 0,
@@ -4287,6 +5411,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Hypertension; Aortic Valve Stenosis",
+   "chembl": [
+    "Hypertension",
+    "Aortic Valve Stenosis"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 2,
@@ -4306,6 +5435,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 0,
@@ -4325,6 +5456,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Myalgia; Arthralgia",
+   "chembl": [
+    "Myalgia",
+    "Arthralgia",
+    "Pain",
+    "Thromboembolism",
+    "Neoplasms",
+    "Acute Kidney Injury"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 6,
@@ -4344,6 +5484,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4363,6 +5505,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Helminthiasis"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 1,
@@ -4384,6 +5530,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Thrombosis",
+   "chembl": [
+    "Thrombosis"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 14,
@@ -4403,6 +5553,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 1,
@@ -4422,6 +5574,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Hypertension",
+   "chembl": [
+    "Hypertension"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4441,6 +5597,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Migraine Disorders"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4460,6 +5620,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Depressive Disorder",
+   "chembl": [
+    "Depressive Disorder"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4479,6 +5643,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4498,6 +5664,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Anxiety"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4517,6 +5687,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Rheumatic Diseases"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 0,
@@ -4536,6 +5710,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Psychotic Disorders"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 1,
@@ -4555,6 +5733,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -4574,6 +5754,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cough",
+   "chembl": [
+    "Cough"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 2,
@@ -4593,6 +5777,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Arthralgia",
+    "Myalgia"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4612,6 +5801,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4631,6 +5822,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4650,11 +5843,21 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Tuberculosis",
+   "chembl": [
+    "Tuberculosis",
+    "Tuberculosis, Pulmonary"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 15,
    "flags": [],
-   "orpha": null,
+   "orpha": {
+    "disease": "Tuberculosis",
+    "rarity": "rare",
+    "onset": "mixed",
+    "prev": 100499
+   },
    "eu_orphan": null,
    "crl": null
   },
@@ -4669,6 +5872,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Attention Deficit Disorder with Hyperactivity",
+   "chembl": [
+    "Attention Deficit Disorder with Hyperactivity",
+    "Anxiety",
+    "Dementia",
+    "Depressive Disorder",
+    "Schizophrenia"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -4688,6 +5899,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Hypersensitivity"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4707,6 +5922,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4726,6 +5943,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4745,6 +5964,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Hemorrhoids"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 2,
@@ -4764,6 +5988,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 1,
@@ -4783,6 +6009,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Epilepsy"
+   ],
    "atc": "",
    "pubmed": 9,
    "trials": 1,
@@ -4802,6 +6032,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4821,6 +6055,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Psychotic Disorders",
+   "chembl": [
+    "Psychotic Disorders"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 3,
@@ -4840,6 +6078,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4861,6 +6101,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 0,
@@ -4880,6 +6122,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4899,6 +6143,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -4918,6 +6164,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 0,
@@ -4937,6 +6185,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Attention Deficit Disorder with Hyperactivity"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -4956,6 +6208,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 4,
    "trials": 6,
@@ -4977,6 +6231,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 42,
    "trials": 241,
@@ -4996,6 +6252,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cough"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5015,6 +6275,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Dyspepsia; Digestive System Diseases",
+   "chembl": [
+    "Dyspepsia",
+    "Digestive System Diseases"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 1,
@@ -5034,6 +6299,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 2,
    "trials": 4,
@@ -5053,6 +6320,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5072,6 +6341,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Hemorrhage"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 1,
@@ -5091,6 +6364,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Digestive System Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 3,
@@ -5110,6 +6387,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Bacterial Infections"
+   ],
    "atc": "",
    "pubmed": 6,
    "trials": 2,
@@ -5129,6 +6410,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Nausea",
+   "chembl": [
+    "Nausea"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 7,
@@ -5150,6 +6435,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -5169,6 +6456,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Hypertension, Pulmonary",
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -5190,6 +6482,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 3,
    "trials": 3,
@@ -5209,6 +6503,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Bacterial Infections"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5228,6 +6526,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -5247,6 +6547,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5266,6 +6568,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Anxiety"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5285,6 +6591,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Pain"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 4,
@@ -5304,6 +6614,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 2,
    "trials": 1,
@@ -5325,6 +6637,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5344,6 +6658,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5363,6 +6679,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5382,6 +6700,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Lung Diseases, Obstructive; Asthma",
+   "chembl": [
+    "Lung Diseases, Obstructive",
+    "Asthma"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 7,
@@ -5403,6 +6726,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5422,6 +6747,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5441,6 +6768,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Anxiety"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 1,
@@ -5460,6 +6791,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 3,
    "trials": 2,
@@ -5479,6 +6812,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 35,
    "trials": 39,
@@ -5498,6 +6833,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Neoplasms; Melanoma; Uveal Melanoma",
+   "chembl": [
+    "Neoplasms",
+    "Melanoma",
+    "Uveal Melanoma",
+    "Glioblastoma"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 14,
@@ -5517,6 +6859,12 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Nasal Obstruction; Eye Infections",
+   "chembl": [
+    "Nasal Obstruction",
+    "Eye Infections",
+    "Osteomyelitis"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -5536,6 +6884,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Amebiasis"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 0,
@@ -5558,6 +6910,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Liver Diseases",
+   "chembl": [
+    "Liver Diseases"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 9,
@@ -5577,6 +6933,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 41,
@@ -5596,6 +6954,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -5615,6 +6977,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5634,6 +7000,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Depressive Disorder",
+   "chembl": [
+    "Depressive Disorder"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5653,6 +7023,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Pruritus",
+    "Hypersensitivity"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5672,6 +7047,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Premature Birth; Bacterial Infections",
+   "chembl": [
+    "Premature Birth",
+    "Bacterial Infections"
+   ],
    "atc": "",
    "pubmed": 26,
    "trials": 1,
@@ -5691,6 +7071,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -5710,6 +7092,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5729,6 +7113,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Trypanosomiasis; Leishmaniasis",
+   "chembl": [
+    "Trypanosomiasis",
+    "Leishmaniasis"
+   ],
    "atc": "",
    "pubmed": 3,
    "trials": 1,
@@ -5751,6 +7140,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Anxiety"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 18,
@@ -5770,6 +7163,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -5789,6 +7184,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Autistic Disorder",
+    "Multiple Sclerosis"
+   ],
    "atc": "",
    "pubmed": 17,
    "trials": 627,
@@ -5810,6 +7210,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Nausea"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 2,
@@ -5831,6 +7235,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases; Erectile Dysfunction",
+   "chembl": [
+    "Cardiovascular Diseases",
+    "Erectile Dysfunction"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5850,6 +7259,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 13,
    "trials": 7,
@@ -5871,6 +7282,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Respiratory Tract Diseases",
+   "chembl": [
+    "Respiratory Tract Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5890,6 +7305,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Amebiasis",
+   "chembl": [
+    "Amebiasis",
+    "Carcinoma, Squamous Cell"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 10,
@@ -5912,6 +7332,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Low Back Pain",
+   "chembl": [
+    "Low Back Pain"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -5933,6 +7357,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Anxiety"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -5952,6 +7380,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Leukemia, Myeloid, Acute",
+   "chembl": [
+    "Leukemia, Myeloid, Acute"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 1,
@@ -5971,6 +7403,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Hypersensitivity",
+   "chembl": [
+    "Hypersensitivity",
+    "Muscular Dystrophy, Duchenne"
+   ],
    "atc": "",
    "pubmed": 10,
    "trials": 1,
@@ -5990,6 +7427,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Migraine Disorders"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -6009,6 +7450,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 2,
@@ -6028,6 +7471,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Constipation",
+   "chembl": [
+    "Constipation"
+   ],
    "atc": "",
    "pubmed": 4,
    "trials": 3,
@@ -6049,6 +7496,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Ectoparasitic Infestations",
+   "chembl": [
+    "Ectoparasitic Infestations"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 0,
@@ -6068,6 +7519,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Eye Infections"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6087,6 +7542,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Neoplasms"
+   ],
    "atc": "",
    "pubmed": 18,
    "trials": 1,
@@ -6108,6 +7567,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Anxiety"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 1,
@@ -6127,6 +7590,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 3,
    "trials": 0,
@@ -6146,6 +7611,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 3,
@@ -6165,6 +7632,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Peptic Ulcer; Gastroesophageal Reflux",
+   "chembl": [
+    "Peptic Ulcer",
+    "Gastroesophageal Reflux",
+    "Peripheral Nervous System Diseases",
+    "Diabetic Neuropathies",
+    "Stomach Ulcer"
+   ],
    "atc": "",
    "pubmed": 7,
    "trials": 4,
@@ -6186,6 +7661,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6205,6 +7684,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6224,6 +7705,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6243,6 +7726,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Eye Diseases"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 8,
@@ -6262,6 +7749,14 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Carcinoma, Squamous Cell",
+    "Barrett Esophagus",
+    "Uterine Neoplasms",
+    "Genital Neoplasms, Female",
+    "Mouth Neoplasms"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 22,
@@ -6281,6 +7776,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Lung Diseases, Obstructive",
+   "chembl": [
+    "Lung Diseases, Obstructive",
+    "Asthma"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 1,
@@ -6300,6 +7800,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Digestive System Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6319,6 +7823,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Bacterial Infections"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6338,6 +7846,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 3,
    "trials": 55,
@@ -6359,6 +7869,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Rheumatic Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 3,
@@ -6378,6 +7892,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6399,6 +7915,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6418,6 +7936,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Ectoparasitic Infestations"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6437,6 +7959,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Digestive System Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6456,6 +7982,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 1,
    "trials": 3,
@@ -6475,6 +8003,13 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Sarcoma; Neoplasms",
+   "chembl": [
+    "Sarcoma",
+    "Neoplasms",
+    "Medulloblastoma",
+    "Melanoma"
+   ],
    "atc": "",
    "pubmed": 11,
    "trials": 4,
@@ -6494,6 +8029,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Virus Diseases"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6513,6 +8052,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Parkinson Disease"
+   ],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6532,6 +8075,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "Cardiovascular Diseases",
+   "chembl": [
+    "Cardiovascular Diseases"
+   ],
    "atc": "",
    "pubmed": 2,
    "trials": 0,
@@ -6551,6 +8098,10 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [
+    "Bacterial Infections"
+   ],
    "atc": "",
    "pubmed": 1,
    "trials": 0,
@@ -6570,6 +8121,15 @@ window.BIO = {
    "fs": "previously_authorised",
    "area": "Muscular Dystrophy, Duchenne",
    "ind": "Translarna is indicated for the treatment of Duchenne muscular dystrophy resulting from a nonsense mutation in the dystrophin gene, in ambulatory patients aged 2 years and older. Efficacy has not been demonstrated in non-ambulatory patients. The presence of a nonsense mutation in the dystrophin gene should be determined by genetic testing.",
+   "disease": "Duchenne muscular dystrophy",
+   "chembl": [
+    "Muscular Dystrophy, Duchenne",
+    "Cystic Fibrosis",
+    "Epilepsy",
+    "Hemophilia A",
+    "Hemophilia B",
+    "Aniridia"
+   ],
    "atc": "M09AX03",
    "pubmed": 34,
    "trials": 34,
@@ -6599,6 +8159,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "Carcinoma, Non-Small-Cell Lung",
    "ind": "Aumseqa as monotherapy is indicated for:- the first-line treatment of adult patients with advanced non-small cell lung cancer (NSCLC)whose tumours have EGFR exon 19 deletions or exon 21 (L858R) substitution mutations (forbiomarker-based patient selection, see section 4.2).- the treatment of adult patients with advanced EGFR T790M mutation-positive NSCLC (forbiomarker-based patient selection, see section 4.2)",
+   "disease": "Carcinoma, Non-Small-Cell Lung",
+   "chembl": [
+    "Carcinoma, Non-Small-Cell Lung",
+    "Lung Neoplasms",
+    "Neoplasms",
+    "Carcinoma, Squamous Cell",
+    "Carcinoma",
+    "Liver Diseases"
+   ],
    "atc": "L01EB",
    "pubmed": 0,
    "trials": 80,
@@ -6618,6 +8187,11 @@ window.BIO = {
    "fs": "authorised",
    "area": "Breast Neoplasms",
    "ind": "Etcamah&nbsp;in combination with a CDK4/6 inhibitor (palbociclib, ribociclib, or abemaciclib) is indicated for the treatment of&nbsp;adult&nbsp;patients with ER-positive,&nbsp;HER2-negative,&nbsp;locally advanced or metastatic breast&nbsp;cancer upon detection of ESR1\u2011mutation and without disease progression during first-line endocrine therapy in combination with a CDK4/6 inhibitor (for biomarker based patient-selection, see section 4.2 and 5.1).",
+   "disease": "Breast Neoplasms",
+   "chembl": [
+    "Breast Neoplasms",
+    "Liver Diseases"
+   ],
    "atc": "L02BA05",
    "pubmed": 1,
    "trials": 16,
@@ -6639,6 +8213,12 @@ window.BIO = {
    "fs": "previously_authorised",
    "area": "Osteoporosis, Postmenopausal",
    "ind": "Fablyn is indicated for the treatment of osteoporosis in postmenopausal women at increased risk of fracture. A significant reduction in the incidence of vertebral and non-vertebral fractures but not hip fractures has been demonstrated (see section 5.1). When determining the choice of Fablyn or other therapies, including oestrogens, for a postmenopausal woman, consideration should be given to menopausal symptoms, effects on uterine and breast tissues, and cardiovascular risks and benefits (see section 5.1).",
+   "disease": "Osteoporosis, Postmenopausal",
+   "chembl": [
+    "Osteoporosis",
+    "Breast Neoplasms",
+    "Hemangiosarcoma"
+   ],
    "atc": "G03",
    "pubmed": 0,
    "trials": 9,
@@ -6658,6 +8238,8 @@ window.BIO = {
    "fs": "authorised",
    "area": "",
    "ind": "",
+   "disease": "",
+   "chembl": [],
    "atc": "",
    "pubmed": 0,
    "trials": 0,
@@ -6679,6 +8261,8 @@ window.BIO = {
    "fs": "previously_authorised",
    "area": "Echocardiography",
    "ind": "EchoGen is a transpulmonary echocardiographic contrast agent for use in patients with suspected or established cardiovascular disease to provide opacification of cardiac chambers, enhance left ventricular border delineation with resulting improvement in wall motion visualisation. EchoGen should only be used in patients where the study without contrast enhancement is inconclusive.",
+   "disease": "Echocardiography",
+   "chembl": [],
    "atc": "V08DA",
    "pubmed": 0,
    "trials": 6,
@@ -6698,6 +8282,15 @@ window.BIO = {
    "fs": "previously_authorised",
    "area": "Lymphoma, Non-Hodgkin",
    "ind": "Pixuvri is indicated as monotherapy for the treatment of adult patients with multiply relapsed or refractory aggressive non-Hodgkin B-cell lymphomas (NHL). The benefit of pixantrone treatment has not been established in patients when used as fifth-line or greater chemotherapy in patients who are refractory to last therapy.",
+   "disease": "Non-Hodgkin lymphoma",
+   "chembl": [
+    "Neoplasms",
+    "Lymphoma",
+    "Lymphoma, Large B-Cell, Diffuse",
+    "Lymphoma, Non-Hodgkin",
+    "Lymphoma, Follicular",
+    "Leukemia, Lymphocytic, Chronic, B-Cell"
+   ],
    "atc": "L01DB11",
    "pubmed": 3,
    "trials": 18,
@@ -6722,6 +8315,15 @@ window.BIO = {
    "fs": "previously_authorised",
    "area": "Obesity",
    "ind": "As an adjunct to diet and exercise for the treatment of obese patients (BMI 30 kg/m2), or overweight patients (BMI 27 kg/m2) with associated risk factor(s), such as type 2 diabetes or dyslipidaemia (see section 5.1).",
+   "disease": "Obesity",
+   "chembl": [
+    "Obesity",
+    "Cardiovascular Diseases",
+    "Metabolic Syndrome",
+    "Fatty Liver",
+    "Smoking Cessation",
+    "Prediabetic State"
+   ],
    "atc": "A08AX01",
    "pubmed": 10,
    "trials": 48,
@@ -6741,6 +8343,14 @@ window.BIO = {
    "fs": "previously_authorised",
    "area": "Hypertension, Pulmonary",
    "ind": "Treatment of patients with pulmonary arterial hypertension (PAH) classified as WHO functional class III, to improve exercise capacity. Efficacy has been shown in primary pulmonary hypertension and in pulmonary hypertension associated with connective tissue disease.",
+   "disease": "Hypertension, Pulmonary",
+   "chembl": [
+    "Hypertension",
+    "Hypertension, Pulmonary",
+    "Renal Insufficiency, Chronic",
+    "Proteinuria",
+    "Asthma"
+   ],
    "atc": "C02KX03",
    "pubmed": 10,
    "trials": 24,
@@ -6760,6 +8370,15 @@ window.BIO = {
    "fs": "authorised",
    "area": "Head and Neck Neoplasms;Carcinoma, Squamous Cell",
    "ind": "Foscan is indicated for the palliative treatment of patients with advanced head and neck squamous cell carcinoma failing prior therapies and unsuitable for radiotherapy, surgery or systemic chemotherapy.",
+   "disease": "Head and Neck Neoplasms;Carcinoma, Squamous Cell",
+   "chembl": [
+    "Carcinoma, Squamous Cell",
+    "Head and Neck Neoplasms",
+    "Neoplasms",
+    "Bile Duct Neoplasms",
+    "Nasopharyngeal Carcinoma",
+    "Carcinoma, Non-Small-Cell Lung"
+   ],
    "atc": "L01XD05",
    "pubmed": 0,
    "trials": 8,

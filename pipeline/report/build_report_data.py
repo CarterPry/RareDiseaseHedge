@@ -129,11 +129,16 @@ def main():
     def pack(c):
         o = c.get("orpha") or None
         eo = c.get("eu_orphan_designation") or None
+        chembl = [x["disease"] for x in (c.get("chembl") or [])][:6]
+        # one clean disease line, best available source
+        disease = ((o or {}).get("name") or c.get("area") or c.get("disease_terms")
+                   or c.get("indication") or "")
         return {
             "name": c["name"].title(), "moiety": c.get("moiety", ""),
             "sources": c.get("sources", []), "nc": c.get("n_countries", 0),
             "orphan": c.get("orphan", False), "fs": c.get("foreign_status", ""),
             "area": c.get("area", ""), "ind": c.get("indication", ""),
+            "disease": disease, "chembl": chembl,
             "atc": c.get("atc", ""), "pubmed": c.get("pubmed"), "trials": c.get("trials"),
             "flags": c.get("flags", []),
             "orpha": ({"disease": o["name"], "rarity": o["rarity"],

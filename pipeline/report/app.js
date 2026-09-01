@@ -169,8 +169,8 @@ function slFiltered() {
   let out = cands.filter(c => {
     for (const k in SL.filters) if (SL.filters[k] && !slPredicate(k)(c)) return false;
     if (!q) return true;
-    return [c.name, c.moiety, c.area, c.ind, c.atc, c.orpha && c.orpha.disease,
-            (c.sources || []).join(" ")].some(s => (s || "").toLowerCase().includes(q));
+    return [c.name, c.moiety, c.area, c.ind, c.atc, c.disease, c.orpha && c.orpha.disease,
+            (c.chembl || []).join(" "), (c.sources || []).join(" ")].some(s => (s || "").toLowerCase().includes(q));
   });
   const research = c => (c.pubmed || 0) + (c.trials || 0);
   out.sort(SL.sort === "name" ? (a, b) => a.name.localeCompare(b.name)
@@ -188,7 +188,7 @@ function slCard(c) {
   if (c.crl) badges.push('<span class="badge badge-crl">US filed &amp; refused</span>');
   if ((c.sources || []).length > 1) badges.push('<span class="badge badge-multi">multi-regulator</span>');
   if (c.fs === "previously_authorised") badges.push('<span class="badge badge-pulled">licence pulled</span>');
-  const dz = (c.orpha && c.orpha.disease) || c.area || (c.ind || "").replace(/\.$/, "") || "—";
+  const dz = (c.orpha && c.orpha.disease) || c.area || c.disease || (c.ind || "").replace(/\.$/, "") || "—";
   const src = (c.sources || []).map(s => s.replace("EU national (Art57)", "EEA national").replace(" (Art57)", ""))
     .map(s => `<span class="badge badge-src">${s}</span>`).join("");
   return `<div class="sl-card">

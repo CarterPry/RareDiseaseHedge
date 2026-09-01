@@ -365,7 +365,7 @@ function hasKw(text, list){
   });
 }
 function pedScore(c){
-  const text=((c.indication||'')+' '+(c.area||'')).toLowerCase();
+  const text=((c.indication||'')+' '+(c.area||'')+' '+(c.disease_terms||'')).toLowerCase();
   if(!text.trim()) return {v:0.2, floored:true};
   if(hasKw(text, P.ped_strong)) return {v:1.0, floored:false};
   if(hasKw(text, P.ped_moderate)) return {v:0.5, floored:false};
@@ -417,7 +417,7 @@ function whereApproved(c){
     :c.sources.includes('Swissmedic')?'Switzerland':c.sources.includes('PMDA-JP')?'Japan':'overseas';
 }
 function plainDesc(c){
-  const area=(c.area||'').split(';')[0];
+  const area=(c.area||'').split(';')[0] || (c.disease_terms||'').split(';')[0];
   let s='Approved in '+whereApproved(c)+(approvedYear(c)?(' in '+approvedYear(c)):'');
   if(area) s+=' to treat '+area.toLowerCase().replace(/;/g,', ');
   else if(c.indication) s+=' — '+c.indication.replace(/\.$/,'');
@@ -465,7 +465,7 @@ let searchTO; document.getElementById('search').oninput=e=>{clearTimeout(searchT
 
 function passes(c){
   for(const [k,,fn] of FILTERS){ if(active.has(k)&&!fn(c)) return false; }
-  if(query){ const h=(c.name+' '+(c.indication||'')+' '+(c.area||'')).toLowerCase(); if(!h.includes(query)) return false; }
+  if(query){ const h=(c.name+' '+(c.indication||'')+' '+(c.area||'')+' '+(c.disease_terms||'')).toLowerCase(); if(!h.includes(query)) return false; }
   return true;
 }
 const SORTS={
@@ -596,6 +596,7 @@ function openDrawer(c){
     ['EEA national authorisations', eea||'—'],
     ['Authorisation date', c.approved||'—'],
     ['Therapy area', (c.area||'').replace(/;/g,' · ')||'—'],
+    ['Indications (ChEMBL)', (c.disease_terms||'').replace(/;/g,' · ')||'—'],
     ['Drug class (ATC)', c.atc?(c.atc+(atcLab?'  ·  '+atcLab:'')):'—']];
   rows2.forEach(([k,v])=>{ const d=el('div','val'); d.style.margin='3px 0';
     d.innerHTML='<span style="color:var(--ink-tertiary)">'+k+':</span> '+v; facts.appendChild(d); });

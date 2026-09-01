@@ -56,6 +56,39 @@ def pubmed_count(name):
     d = get_json(url)
     return int(d["esearchresult"]["count"])
 
+def chembl_indications(name):
+    """Disease terms a drug is/was developed for, from ChEMBL's drug_indication
+    endpoint (MeSH headings). ChEMBL (EMBL-EBI, CC-BY-SA, no auth) is the one free
+    source that reliably carries indications for the non-US INN drugs that dominate
+    the Article-57 candidate list — Wikidata and RxNav are sparse or wrong for
+    them. Returns a list of {disease, phase} ordered by max development phase, or
+    [] on any failure. This is THE field that unblocks scoring + Orphadata for the
+    ~318 candidates that carried no disease text."""
+    mol = get_json("https://www.ebi.ac.uk/chembl/api/data/molecule.json"
+                   f"?pref_name__iexact={q(name)}&limit=1")
+    mols = mol.get("molecules") or []
+    if not mols:
+        return []
+    cid = mols[0]["molecule_chembl_id"]
+    ind = get_json("https://www.ebi.ac.uk/chembl/api/data/drug_indication.json"
+                   f"?molecule_chembl_id={cid}&limit=20")
+    # 2020-era mass COVID repurposing trials gave almost every drug a
+    # SARS/COVID indication in ChEMBL; it is noise, not a real use.
+    COVID_NOISE = ("severe acute respiratory syndrome", "covid", "sars-cov", "coronavirus")
+    best = {}
+    for x in ind.get("drug_indications") or []:
+        dz = x.get("mesh_heading") or x.get("efo_term")
+        if not dz or any(t in dz.lower() for t in COVID_NOISE):
+            continue
+        try:
+            ph = float(x.get("max_phase_for_ind") or 0)
+        except (TypeError, ValueError):
+            ph = 0
+        best[dz] = max(best.get(dz, 0), ph)
+    return [{"disease": dz, "phase": ph}
+            for dz, ph in sorted(best.items(), key=lambda kv: -kv[1])]
+
+
 def trials_count(name):
     """ClinicalTrials.gov v2 study count with the drug as INTERVENTION (query.intr
     is far more precise than query.term, which OR-matches salt tokens like
@@ -126,7 +159,14 @@ def enrich_orphadata(data):
     buckets = ["candidates", "dossier_only", "review", "unnamed"]
     for b in buckets:
         for c in data.get(b, []):
-            rec = idx.resolve(c.get("area"), c.get("indication"))
+            # resolve on EMA area/indication AND approved-phase ChEMBL diseases.
+            # Only max_phase>=4 (what the drug is actually approved for) — the full
+            # ChEMBL indication list includes exploratory/COVID trials that
+            # produced wrong rare-disease matches (etoricoxib->tuberculosis). A
+            # wrong rarity claim is the error this pipeline most guards against.
+            texts = [c.get("area"), c.get("indication")]
+            texts += [x["disease"] for x in (c.get("chembl") or []) if x["phase"] >= 4]
+            rec = idx.resolve(*texts)
             if not rec:
                 c["orpha"] = None
                 continue
@@ -240,12 +280,11 @@ def main():
     n_fetched = 0
     for i, c in enumerate(todo, 1):
         key = c["unii"]
-        if key in cache and not fresh:
-            e = cache[key]
-        else:
+        name = (c.get("moiety") or c["name"]).lower()
+        e = cache.get(key) if not fresh else None
+        if e is None:
             # query on the CLEAN moiety name, not the salt form (the salt token
             # both misses PubMed and inflates trial counts)
-            name = (c.get("moiety") or c["name"]).lower()
             e = {}
             try: e["pubmed"] = pubmed_count(name)
             except Exception: e["pubmed"] = None
@@ -256,12 +295,36 @@ def main():
             e["us_orphan"] = us_orphan(name)
             cache[key] = e
             n_fetched += 1
+        # backfill ChEMBL indications for entries cached before this field existed
+        if "chembl" not in e:
+            try: e["chembl"] = chembl_indications(name)
+            except Exception: e["chembl"] = []
+            time.sleep(0.15)
+            cache[key] = e
+            n_fetched += 1
             if n_fetched % 10 == 0:
                 json.dump(cache, open(CACHE, "w"), indent=1)   # checkpoint
-                print(f"  {i}/{len(todo)}  {name[:28]:30} pm={e['pubmed']} ct={e['trials']} orph={e['us_orphan']}")
+                nind = len(e.get("chembl") or [])
+                print(f"  {i}/{len(todo)}  {name[:26]:28} pm={e.get('pubmed')} ct={e.get('trials')} chembl={nind}")
         c["pubmed"] = e.get("pubmed")
         c["trials"] = e.get("trials")
         c["us_orphan"] = e.get("us_orphan")
+        # drop COVID-era repurposing noise from cached entries too (see above)
+        _noise = ("severe acute respiratory syndrome", "covid", "sars-cov", "coronavirus")
+        c["chembl"] = [x for x in (e.get("chembl") or [])
+                       if not any(t in x["disease"].lower() for t in _noise)]
+        # derive a disease string for rows with no EMA area/indication. Use only
+        # APPROVED-phase (max_phase 4) ChEMBL indications, falling back to phase 3.
+        # ChEMBL lists every trialed indication — including COVID/SARS and Phase-1
+        # exploratory screens — so the unfiltered list produced wrong diseases
+        # (etoricoxib->tuberculosis, CoQ10->glioblastoma). Approved-phase only is
+        # the drug's actual use.
+        if not (c.get("area") or c.get("indication")) and c["chembl"]:
+            appr = [x["disease"] for x in c["chembl"] if x["phase"] >= 4]
+            if not appr:
+                appr = [x["disease"] for x in c["chembl"] if x["phase"] >= 3]
+            if appr:
+                c["disease_terms"] = "; ".join(appr[:6])
     json.dump(cache, open(CACHE, "w"), indent=1)
 
     if not limit:
