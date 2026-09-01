@@ -260,6 +260,37 @@ def enrich_crl(data):
     print(f"  crl: {len(recs):,} letters, {matched} candidate rows flagged as already US-filed-and-refused")
 
 
+# ---------------------------------------------------------------- s.529 assessment
+# Run the ten-criterion s.529 gate per candidate, pulling every input the pipeline
+# now has: exclusion verdict (candidates are never-US), rarity + onset (Orphadata),
+# published human evidence (PubMed hits). The rest stay HUMAN/UNKNOWN — the point
+# of eligibility.py is that it never claims "eligible", only "nothing rules it out
+# yet". This makes the detail panel show WHY a candidate is or isn't clear.
+def enrich_eligibility(data):
+    try:
+        from eligibility import Candidate, assess
+    except Exception as e:
+        print(f"  [skip] eligibility: {type(e).__name__} {e}")
+        return
+    verdict_map = {"candidates": "NOT_IN_US", "dossier_only": "NOT_IN_US", "review": "REVIEW"}
+    counts = {}
+    for b, v in verdict_map.items():
+        for c in data.get(b, []):
+            cand = Candidate.from_summary(
+                c, us_exclusion_verdict=v,
+                published_human_evidence=bool(c.get("pubmed")))
+            a = assess(cand)
+            c["eligibility"] = {
+                "verdict": a.verdict,
+                "criteria": [{"key": cr.key, "status": cr.status.value,
+                              "decidability": cr.decidability.value,
+                              "citation": cr.citation, "note": cr.note}
+                             for cr in a.criteria],
+            }
+            counts[a.verdict] = counts.get(a.verdict, 0) + 1
+    print(f"  eligibility: assessed {sum(counts.values())} rows -> {counts}")
+
+
 # ---------------------------------------------------------------- driver
 def main():
     fresh = "--fresh" in sys.argv
@@ -331,6 +362,7 @@ def main():
         enrich_orphadata(data)
         enrich_eu_orphan(data)
         enrich_crl(data)
+        enrich_eligibility(data)     # after orphadata/pubmed so it sees them
         print("fetching global competitor monitor...")
         data["monitor"] = {"fedreg": fedreg_prv(), "edgar": edgar_competitors(),
                            "as_of": time.strftime("%Y-%m-%d %H:%M")}

@@ -145,6 +145,8 @@ def main():
                        "onset": o["onset"], "prev": o.get("us_prevalence_est")} if o else None),
             "eu_orphan": ({"use": eo["use"], "status": eo["status"]} if eo else None),
             "crl": c.get("us_crl") or None,
+            "elig": c.get("eligibility") or None,
+            "unii": c.get("unii", ""),
         }
     shortlist = [pack(c) for c in cands]
 

@@ -191,7 +191,7 @@ function slCard(c) {
   const dz = (c.orpha && c.orpha.disease) || c.area || c.disease || (c.ind || "").replace(/\.$/, "") || "—";
   const src = (c.sources || []).map(s => s.replace("EU national (Art57)", "EEA national").replace(" (Art57)", ""))
     .map(s => `<span class="badge badge-src">${s}</span>`).join("");
-  return `<div class="sl-card">
+  return `<div class="sl-card" data-name="${c.name.replace(/"/g, "&quot;")}" tabindex="0" role="button">
     <div class="sl-card-top"><span class="sl-name">${c.name}</span>
       <span class="sl-reach"><b>${c.nc || 0}</b> EEA</span></div>
     <div class="sl-dz">${dz.length > 96 ? dz.slice(0, 96) + "…" : dz}</div>
@@ -215,6 +215,61 @@ function slRender() {
     : `<p class="sl-empty">No candidates match. Try a drug name, a disease, or clear the filters.</p>`;
 }
 
+/* ---------- candidate detail panel (was the #1 UX gap: cards did nothing) ---------- */
+const ST = { PASS: ["✓", "st-pass"], FAIL: ["✕", "st-fail"], HUMAN: ["?", "st-human"], UNKNOWN: ["–", "st-unknown"] };
+function slPanel(c) {
+  const wrap = document.getElementById("slPanel");
+  const badge = (t, cls) => `<span class="badge ${cls}">${t}</span>`;
+  const badges = [];
+  if (c.orphan) badges.push(badge("orphan", "badge-orphan"));
+  if (c.eu_orphan) badges.push(badge("EU orphan designation", "badge-orphan"));
+  if (c.orpha && c.orpha.rarity === "rare") badges.push(badge("rare disease", "badge-rare"));
+  if (c.orpha && c.orpha.onset === "pediatric") badges.push(badge("pediatric onset", "badge-ped"));
+  if (c.crl) badges.push(badge("US filed &amp; refused", "badge-crl"));
+  if (c.fs === "previously_authorised") badges.push(badge("licence pulled", "badge-pulled"));
+  const elig = c.elig ? c.elig.criteria.map(cr => {
+    const [g, cls] = ST[cr.status] || ST.UNKNOWN;
+    return `<div class="pc-crit"><span class="pc-st ${cls}">${g}</span>
+      <div><div class="pc-k">${cr.key.replace(/_/g, " ")}</div>
+      <div class="pc-note">${cr.note} <span class="pc-cite">${cr.citation}</span></div></div></div>`;
+  }).join("") : "<p>No assessment.</p>";
+  const rows = [
+    ["Disease", (c.orpha && c.orpha.disease) || c.area || c.disease || "—"],
+    ["Approved in", (c.sources || []).join(", ").replace("EU national (Art57)", "EEA (Article 57)")],
+    ["EEA countries", (c.nc || 0) + (c.countries && c.countries.length ? " — " + c.countries.slice(0, 12).join(", ") : "")],
+    ["Regulatory standing", (c.fs || "—").replace(/_/g, " ")],
+    ["Orphanet prevalence", c.orpha ? (c.orpha.rarity + (c.orpha.prev ? " · ~" + c.orpha.prev.toLocaleString() + " in US" : "")) : "no Orphanet match"],
+    ["EU orphan designation", c.eu_orphan ? (c.eu_orphan.status + " — " + c.eu_orphan.use) : "—"],
+    ["US CRL (already filed)", c.crl ? (c.crl.application + " · " + c.crl.date) : "none found"],
+    ["ChEMBL indications", (c.chembl || []).join("; ") || "—"],
+    ["ATC", c.atc || "—"],
+    ["Research", "PubMed " + (c.pubmed != null ? c.pubmed : "—") + " · trials " + (c.trials != null ? c.trials : "—")],
+  ];
+  const q = encodeURIComponent(c.name);
+  wrap.innerHTML = `
+    <div class="pc-inner" role="dialog" aria-label="${c.name} detail">
+      <button class="pc-close" id="pcClose" aria-label="Close">✕</button>
+      <div class="pc-name">${c.name}</div>
+      <div class="pc-verdict">${c.elig ? c.elig.verdict.replace(/_/g, " ").toLowerCase() : ""}</div>
+      <div class="pc-badges">${badges.join("")}</div>
+      <div class="pc-sec">s.529 eligibility — what's settled and what a human must decide</div>
+      <div class="pc-crits">${elig}</div>
+      <div class="pc-sec">Facts &amp; signals</div>
+      ${rows.map(([k, v]) => `<div class="pc-row"><span>${k}</span><div>${v}</div></div>`).join("")}
+      <div class="pc-sec">Look it up</div>
+      <div class="pc-links">
+        <a target="_blank" rel="noopener" href="https://www.ebi.ac.uk/chembl/g/#search_results/all/query=${q}">ChEMBL</a>
+        <a target="_blank" rel="noopener" href="https://www.orpha.net/en/disease/search?query=${q}">Orphanet</a>
+        <a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/?term=${q}">PubMed</a>
+        <a target="_blank" rel="noopener" href="https://clinicaltrials.gov/search?intr=${q}">ClinicalTrials</a>
+      </div>
+      <p class="pc-disc">A screening record, not a clearance. "Likely eligible pending review" means no criterion has ruled it out — the HUMAN/UNKNOWN rows above still require diligence and, ultimately, FDA.</p>
+    </div>`;
+  wrap.classList.add("open");
+  document.getElementById("pcClose").onclick = slClosePanel;
+}
+function slClosePanel() { document.getElementById("slPanel").classList.remove("open"); }
+
 function slInit() {
   const chipHost = document.getElementById("slChips");
   chipHost.innerHTML = SL_CHIPS.map(([key, label, pred]) => {
@@ -237,6 +292,15 @@ function slInit() {
     (BIO.snapshot ? " · snapshot: " + BIO.snapshot : "");
   const built = document.querySelector(".footer-built");
   if (built && BIO.generated) built.textContent = "Data as of " + BIO.generated + " · built with D3";
+  // open the detail panel on card click / Enter (event delegation)
+  const byName = {}; (BIO.candidates || []).forEach(c => (byName[c.name] = c));
+  const listEl = document.getElementById("slList");
+  const openCard = el => { const card = el.closest(".sl-card"); if (card && byName[card.dataset.name]) slPanel(byName[card.dataset.name]); };
+  listEl.addEventListener("click", e => openCard(e.target));
+  listEl.addEventListener("keydown", e => { if (e.key === "Enter") openCard(e.target); });
+  const panel = document.getElementById("slPanel");
+  panel.addEventListener("click", e => { if (e.target === panel) slClosePanel(); });
+  addEventListener("keydown", e => { if (e.key === "Escape") slClosePanel(); });
   slRender();
 }
 slInit();
