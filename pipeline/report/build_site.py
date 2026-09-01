@@ -97,7 +97,7 @@ th{{background:var(--paper);font-family:IBM Plex Mono,monospace;font-size:12px}}
 blockquote{{border-left:3px solid var(--sky);margin:14px 0;padding:6px 16px;color:var(--slate);background:var(--paper)}}
 ul{{padding-left:22px}} li{{margin:4px 0}} p{{margin:12px 0}}
 </style></head><body>
-<div class="bar"><div class="wrap"><span class="brand">meridian·bio</span>
+<div class="bar"><div class="wrap"><span class="brand">rarediseasehedge</span>
 <a href="./">← Almanac</a><a href="list/">Card list</a><a href="funnel.html">Funnel</a><a href="audit.html">Audit</a></div></div>
 <main class="wrap">{body}</main></body></html>"""
 
@@ -142,7 +142,7 @@ def main():
 
     files = sum(len(fs) for _, _, fs in os.walk(SITE))
     print(f"built {SITE} ({files} files) — deploy with:")
-    print("  npx wrangler pages deploy pipeline/report/_site --project-name=raredieasehedge")
+    print("  npx wrangler pages deploy pipeline/report/_site --project-name=rarediseasehedge")
 
 
 if __name__ == "__main__":
