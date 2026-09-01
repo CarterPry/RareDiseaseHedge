@@ -55,6 +55,14 @@ SOURCES = {
                   "openfda_ndc.zip", "zip"),
     "openfda_crl":("https://download.open.fda.gov/transparency/crl/transparency-crl-0001-of-0001.json.zip",
                   "openfda_crl.zip", "zip"),
+    # Orphadata: rare-disease epidemiology. prev = point prevalence by disorder;
+    # ages = average age of onset. Together they answer eligibility.py's
+    # rare_under_200k and primarily_pediatric criteria for any candidate whose
+    # disease resolves to an Orphanet disorder.
+    "orphadata_prev":("https://www.orphadata.com/data/xml/en_product9_prev.xml",
+                  "orphadata_prev.xml", "bin"),
+    "orphadata_ages":("https://www.orphadata.com/data/xml/en_product9_ages.xml",
+                  "orphadata_ages.xml", "bin"),
     # The UNII identity index — the join layer the whole diff depends on.
     # These are served through an AWS API Gateway that 308->302-redirects to a
     # presigned S3 URL and accepts GET ONLY: a HEAD request (curl -I) gets a

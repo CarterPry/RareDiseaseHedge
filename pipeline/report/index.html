@@ -20,8 +20,8 @@
       <div class="hero-bar">
         <a class="wordmark" href="#top">meridian<span>·</span>bio</a>
         <nav class="hero-nav">
+          <a href="#shortlist">Shortlist</a>
           <a href="#ecosystem">Market</a>
-          <a href="#blockchains">Candidates</a>
           <a href="#reports">Explore</a>
         </nav>
       </div>
@@ -54,12 +54,36 @@
 
 <!-- ======================= TICKER ======================= -->
 <div class="tickerbar" role="marquee" aria-label="Headline metrics">
-  <a class="ticker-cta" href="#reports">SEE THE CANDIDATE LIST <span class="cta-arrow">↗</span></a>
+  <a class="ticker-cta" href="#shortlist">SEE THE CANDIDATE LIST <span class="cta-arrow">↗</span></a>
   <div class="ticker-viewport">
     <div class="ticker-track" id="tickerTrack"><!-- filled by JS --></div>
   </div>
   <button class="ticker-info" id="tickerInfo" title="About these figures" aria-label="About these figures">i</button>
 </div>
+
+<!-- ======================= SHORTLIST / SEARCH ======================= -->
+<section class="section section--white reveal" id="shortlist">
+  <div class="wrap">
+    <p class="kicker">THE SHORTLIST</p>
+    <h2 class="giant"><span id="slCount">—</span> CANDIDATES</h2>
+    <p class="sl-intro">Drugs with a real marketing authorisation abroad whose active moiety has
+      <b>never been approved in the US</b> — the population FD&amp;C Act §529 makes eligible for a rare-pediatric
+      Priority Review Voucher. Search the full pipeline output; a match to Orphanet adds a real
+      <span class="badge badge-rare">rare</span> / <span class="badge badge-ped">pediatric</span> flag.</p>
+
+    <div class="sl-controls">
+      <input class="sl-search" id="slSearch" type="search" placeholder="Search a drug, disease, therapy area…" />
+      <select class="sl-sort" id="slSort">
+        <option value="reach">Sort: widest EEA reach</option>
+        <option value="name">Name (A–Z)</option>
+        <option value="research">Most research activity</option>
+      </select>
+    </div>
+    <div class="sl-chips" id="slChips"></div>
+    <p class="sl-status" id="slStatus"></p>
+    <div class="sl-list" id="slList"></div>
+  </div>
+</section>
 
 <!-- ======================= VOUCHER MARKET / TABBED CHART ======================= -->
 <section class="section section--cream reveal" id="ecosystem">
@@ -240,8 +264,8 @@
     <div class="footer-top">
       <a class="wordmark wordmark--light" href="#top">meridian<span>·</span>bio</a>
       <nav class="footer-nav">
+        <a href="#shortlist">Shortlist</a>
         <a href="#ecosystem">Market</a>
-        <a href="#wallets">Pipeline</a>
         <a href="#blockchains">Candidates</a>
         <a href="#reports">Explore</a>
       </nav>

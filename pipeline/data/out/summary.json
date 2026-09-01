@@ -79,7 +79,8 @@
    ],
    "pubmed": 36,
    "trials": 35,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "29OQ9EU4R1",
@@ -116,7 +117,8 @@
    ],
    "pubmed": 3,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "I6B4B2U96P",
@@ -182,7 +184,8 @@
    ],
    "pubmed": 0,
    "trials": 209,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "URQ2517572",
@@ -245,7 +248,8 @@
    ],
    "pubmed": 31,
    "trials": 52,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "PA1123N395",
@@ -311,7 +315,8 @@
    ],
    "pubmed": 12,
    "trials": 28,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "47ISU063SG",
@@ -375,7 +380,8 @@
    ],
    "pubmed": 3,
    "trials": 10,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "G4PX8C4HKV",
@@ -438,7 +444,8 @@
    ],
    "pubmed": 8,
    "trials": 85,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "081D12SI0Z",
@@ -497,7 +504,8 @@
    ],
    "pubmed": 7,
    "trials": 23,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "X015L14V0O",
@@ -555,7 +563,8 @@
    ],
    "pubmed": 6,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "137R1N49AD",
@@ -613,7 +622,8 @@
    ],
    "pubmed": 9,
    "trials": 27,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "468GE2241L",
@@ -661,7 +671,8 @@
    ],
    "pubmed": 15,
    "trials": 17,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "Z1R9N0A399",
@@ -709,7 +720,8 @@
    ],
    "pubmed": 4,
    "trials": 41,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "8OOT6M1PC7",
@@ -745,7 +757,8 @@
    ],
    "pubmed": 40,
    "trials": 44,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "3XVL385Q0M",
@@ -784,7 +797,8 @@
    ],
    "pubmed": 11,
    "trials": 66,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "6K6L7E3F1L",
@@ -821,7 +835,8 @@
    ],
    "pubmed": 0,
    "trials": 27,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "7CDW97HUEX",
@@ -860,7 +875,8 @@
    ],
    "pubmed": 0,
    "trials": 18,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "1LM890Q4FY",
@@ -897,7 +913,16 @@
    ],
    "pubmed": 16,
    "trials": 8,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": {
+    "code": "668",
+    "name": "Osteosarcoma",
+    "rarity": "rare",
+    "rarity_evidence": "Orphanet 1-9 / 100 000 (Europe) \u2248 16,750 in the US, under 200,000",
+    "us_prevalence_est": 16750,
+    "onset": "pediatric",
+    "onset_evidence": "Orphanet age of onset: Childhood \u2014 within birth-18"
+   }
   },
   {
    "unii": "SE4TWR0K2C",
@@ -934,7 +959,8 @@
    ],
    "pubmed": 2,
    "trials": 20,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "X3O30D9YMX",
@@ -973,7 +999,8 @@
    ],
    "pubmed": 5,
    "trials": 66,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "8CZ82ZYY9X",
@@ -1010,7 +1037,8 @@
    ],
    "pubmed": 0,
    "trials": 12,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "9G468C8B13",
@@ -1047,7 +1075,8 @@
    ],
    "pubmed": 1,
    "trials": 17,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "5BF646324K",
@@ -1084,7 +1113,8 @@
    ],
    "pubmed": 0,
    "trials": 35,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "05W904P57F",
@@ -1121,7 +1151,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "WRX4NFY03R",
@@ -1184,7 +1215,8 @@
    ],
    "pubmed": 12,
    "trials": 129,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "59XE10C19C",
@@ -1249,7 +1281,8 @@
    ],
    "pubmed": 55,
    "trials": 27,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "2AE8M83G3E",
@@ -1311,7 +1344,8 @@
    ],
    "pubmed": 7,
    "trials": 15,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "AB0BHP2FH0",
@@ -1372,7 +1406,8 @@
    ],
    "pubmed": 2,
    "trials": 13,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "WPY40FTH8K",
@@ -1434,7 +1469,8 @@
    ],
    "pubmed": 10,
    "trials": 37,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "4O21U048EF",
@@ -1493,7 +1529,8 @@
    ],
    "pubmed": 10,
    "trials": 49,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "Q1J152VB1P",
@@ -1556,7 +1593,8 @@
    ],
    "pubmed": 10,
    "trials": 30,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "CC6X0L40GW",
@@ -1615,7 +1653,8 @@
    ],
    "pubmed": 2,
    "trials": 21,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "200168S0CL",
@@ -1677,7 +1716,8 @@
    ],
    "pubmed": 40,
    "trials": 40,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "KZF0XM66JC",
@@ -1735,7 +1775,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "C6T4514L4E",
@@ -1795,7 +1836,8 @@
    ],
    "pubmed": 117,
    "trials": 118,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "E61Q31EK2F",
@@ -1854,7 +1896,8 @@
    ],
    "pubmed": 33,
    "trials": 66,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "GB2433A4M3",
@@ -1913,7 +1956,8 @@
    ],
    "pubmed": 1,
    "trials": 33,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "7F80CC3NNV",
@@ -1972,7 +2016,8 @@
    ],
    "pubmed": 2,
    "trials": 20,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "76K53XP4TO",
@@ -2031,7 +2076,8 @@
    ],
    "pubmed": 23,
    "trials": 15,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "FF9X0205V2",
@@ -2090,7 +2136,8 @@
    ],
    "pubmed": 2,
    "trials": 28,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "53S5U404NU",
@@ -2146,7 +2193,8 @@
    ],
    "pubmed": 0,
    "trials": 34,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "QG05NRB077",
@@ -2202,7 +2250,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "ZH516LNZ10",
@@ -2257,7 +2306,8 @@
    ],
    "pubmed": 17,
    "trials": 16,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "5587267Z69",
@@ -2314,7 +2364,8 @@
    ],
    "pubmed": 49,
    "trials": 83,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "43B2M34G2V",
@@ -2370,7 +2421,8 @@
    ],
    "pubmed": 62,
    "trials": 33,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "81BMQ80QRL",
@@ -2424,7 +2476,8 @@
    ],
    "pubmed": 0,
    "trials": 33,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "RPK779R03H",
@@ -2477,7 +2530,8 @@
    ],
    "pubmed": 3,
    "trials": 22,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "88TWF8015Y",
@@ -2530,7 +2584,8 @@
    ],
    "pubmed": 2,
    "trials": 103,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "N9A0A0R9S8",
@@ -2586,7 +2641,8 @@
    ],
    "pubmed": 3,
    "trials": 40,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "250PJI13LM",
@@ -2639,7 +2695,8 @@
    ],
    "pubmed": 3,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "740J2QX53R",
@@ -2694,7 +2751,8 @@
    ],
    "pubmed": 3,
    "trials": 10,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "7QM776WJ5N",
@@ -2747,7 +2805,8 @@
    ],
    "pubmed": 1,
    "trials": 55,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "182ECH14UH",
@@ -2798,7 +2857,8 @@
    ],
    "pubmed": 5,
    "trials": 9,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "9CLV70W7HS",
@@ -2850,7 +2910,8 @@
    ],
    "pubmed": 20,
    "trials": 12,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "GVV4Z879SP",
@@ -2901,7 +2962,8 @@
    ],
    "pubmed": 9,
    "trials": 17,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "I00Q766CZ2",
@@ -2952,7 +3014,8 @@
    ],
    "pubmed": 0,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "TQD7Q784P1",
@@ -3002,7 +3065,8 @@
    ],
    "pubmed": 4,
    "trials": 10,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "290ZY759PI",
@@ -3052,7 +3116,8 @@
    ],
    "pubmed": 1,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "852A84Y8LS",
@@ -3101,7 +3166,8 @@
    ],
    "pubmed": 0,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "260080034N",
@@ -3152,7 +3218,8 @@
    ],
    "pubmed": 1,
    "trials": 15,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "A78GF17HJS",
@@ -3204,7 +3271,8 @@
    ],
    "pubmed": 2,
    "trials": 32,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "M75MZG2236",
@@ -3252,7 +3320,8 @@
    ],
    "pubmed": 2,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "3483C2H13H",
@@ -3302,7 +3371,8 @@
    ],
    "pubmed": 1,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "76J0853EKA",
@@ -3349,7 +3419,8 @@
    ],
    "pubmed": 5,
    "trials": 10,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "PJ0Y7AZB63",
@@ -3396,7 +3467,8 @@
    ],
    "pubmed": 2,
    "trials": 9,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "SLE31693IV",
@@ -3444,7 +3516,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "Y9449Q51XH",
@@ -3492,7 +3565,8 @@
    ],
    "pubmed": 10,
    "trials": 27,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "73H7UDN6EC",
@@ -3539,7 +3613,8 @@
    ],
    "pubmed": 1,
    "trials": 7,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "OZE0372S5A",
@@ -3587,7 +3662,8 @@
    ],
    "pubmed": 2,
    "trials": 29,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "21KOF230FA",
@@ -3633,7 +3709,8 @@
    ],
    "pubmed": 31,
    "trials": 11,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "6E20216Q0L",
@@ -3680,7 +3757,8 @@
    ],
    "pubmed": 503,
    "trials": 359,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "LAH70H9JPH",
@@ -3727,7 +3805,8 @@
    ],
    "pubmed": 11,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "Y92OUS2H9B",
@@ -3772,7 +3851,8 @@
    ],
    "pubmed": 2,
    "trials": 21,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "3O31P6T4G3",
@@ -3819,7 +3899,8 @@
    ],
    "pubmed": 9,
    "trials": 10,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "7D6EM3S13P",
@@ -3864,7 +3945,8 @@
    ],
    "pubmed": 1,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "V4TKW1454M",
@@ -3911,7 +3993,8 @@
    ],
    "pubmed": 34,
    "trials": 17,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "00DPD30SOY",
@@ -3955,7 +4038,8 @@
    ],
    "pubmed": 16,
    "trials": 11,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "5921X1560Q",
@@ -4000,7 +4084,8 @@
    ],
    "pubmed": 0,
    "trials": 806,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "947S0YZ36I",
@@ -4047,7 +4132,8 @@
    ],
    "pubmed": 5,
    "trials": 41,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "P67IM25ID8",
@@ -4092,7 +4178,8 @@
    ],
    "pubmed": 1,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "H6630PU5ZJ",
@@ -4136,7 +4223,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "8KQ660G60G",
@@ -4182,7 +4270,8 @@
    ],
    "pubmed": 82,
    "trials": 7,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "W13O82Z7HL",
@@ -4228,7 +4317,8 @@
    ],
    "pubmed": 1,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "24YL531VOH",
@@ -4271,7 +4361,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "C7C2QDD75P",
@@ -4314,7 +4405,8 @@
    ],
    "pubmed": 0,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "CV71VTP0VN",
@@ -4357,7 +4449,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "GRI7WFR424",
@@ -4402,7 +4495,8 @@
    ],
    "pubmed": 3,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "GU56C842ZA",
@@ -4447,7 +4541,8 @@
    ],
    "pubmed": 0,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "7Y4N11PXO8",
@@ -4492,7 +4587,8 @@
    ],
    "pubmed": 2,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "DRB57K47QC",
@@ -4537,7 +4633,8 @@
    ],
    "pubmed": 3,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "KD510K1IQW",
@@ -4581,7 +4678,8 @@
    ],
    "pubmed": 3,
    "trials": 376,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "0813BZ6866",
@@ -4626,7 +4724,8 @@
    ],
    "pubmed": 20,
    "trials": 17,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "0C5DBZ19HV",
@@ -4669,7 +4768,8 @@
    ],
    "pubmed": 2,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "17432CG1KU",
@@ -4713,7 +4813,8 @@
    ],
    "pubmed": 0,
    "trials": 7,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "ER09126G7A",
@@ -4755,7 +4856,8 @@
    ],
    "pubmed": 4,
    "trials": 21,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "G20G12V769",
@@ -4797,7 +4899,8 @@
    ],
    "pubmed": 4,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "543512OBTC",
@@ -4839,7 +4942,8 @@
    ],
    "pubmed": 1,
    "trials": 9,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "PXW8U3YXDV",
@@ -4882,7 +4986,8 @@
    ],
    "pubmed": 12,
    "trials": 42,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "19KW7PI29F",
@@ -4924,7 +5029,8 @@
    ],
    "pubmed": 3,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "98QS4N58TW",
@@ -4965,7 +5071,8 @@
    ],
    "pubmed": 1,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "J8WA3K39B7",
@@ -5006,7 +5113,8 @@
    ],
    "pubmed": 0,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "80Q9QWN15M",
@@ -5048,7 +5156,8 @@
    ],
    "pubmed": 1,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "FCB9EGG971",
@@ -5089,7 +5198,8 @@
    ],
    "pubmed": 8,
    "trials": 87,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "5V141XK28X",
@@ -5129,7 +5239,8 @@
    ],
    "pubmed": 2,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "2M3055079H",
@@ -5169,7 +5280,8 @@
    ],
    "pubmed": 2,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "5XZM1R3DKF",
@@ -5209,7 +5321,8 @@
    ],
    "pubmed": 1,
    "trials": 10,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "ZB6F8MY53V",
@@ -5249,7 +5362,8 @@
    ],
    "pubmed": 7,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "R7PLA2DM0J",
@@ -5292,7 +5406,8 @@
    ],
    "pubmed": 53,
    "trials": 21,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "JCV8365FWN",
@@ -5332,7 +5447,8 @@
    ],
    "pubmed": 1,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "C2W72OJ5ZU",
@@ -5373,7 +5489,8 @@
    ],
    "pubmed": 1,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "03QB156W6I",
@@ -5413,7 +5530,8 @@
    ],
    "pubmed": 5,
    "trials": 16,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "0F32U78V2Q",
@@ -5455,7 +5573,8 @@
    ],
    "pubmed": 0,
    "trials": 9,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "620X0222FQ",
@@ -5494,7 +5613,8 @@
    ],
    "pubmed": 19,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "N2Z8ALG4U5",
@@ -5533,7 +5653,8 @@
    ],
    "pubmed": 6,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "6V88E24N5T",
@@ -5575,7 +5696,8 @@
    ],
    "pubmed": 0,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "I7GG1YUC5V",
@@ -5614,7 +5736,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "42H8PQ0NMJ",
@@ -5654,7 +5777,8 @@
    ],
    "pubmed": 1,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "T1X8S697GT",
@@ -5693,7 +5817,8 @@
    ],
    "pubmed": 3,
    "trials": 15,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "U3RSY48JW5",
@@ -5733,7 +5858,8 @@
    ],
    "pubmed": 49,
    "trials": 7250,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "536BQ2JVC7",
@@ -5774,7 +5900,8 @@
    ],
    "pubmed": 6,
    "trials": 72,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "9902116282",
@@ -5812,7 +5939,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "4U5MP5IUD8",
@@ -5850,7 +5978,8 @@
    ],
    "pubmed": 9,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "5402501F0W",
@@ -5891,7 +6020,8 @@
    ],
    "pubmed": 3,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "DO22K1PRDJ",
@@ -5929,7 +6059,8 @@
    ],
    "pubmed": 0,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "4RP92LYZ2F",
@@ -5967,7 +6098,8 @@
    ],
    "pubmed": 18,
    "trials": 25,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "0BY8440V3N",
@@ -6007,7 +6139,8 @@
    ],
    "pubmed": 8,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "501Q5EQ1GM",
@@ -6045,7 +6178,8 @@
    ],
    "pubmed": 8,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "M671F9NLEA",
@@ -6083,7 +6217,8 @@
    ],
    "pubmed": 2,
    "trials": 20,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "68P0556B0U",
@@ -6120,7 +6255,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "F8252JGO9S",
@@ -6157,7 +6293,8 @@
    ],
    "pubmed": 1,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "K253365DXI",
@@ -6194,7 +6331,8 @@
    ],
    "pubmed": 4,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "776S0UP252",
@@ -6231,7 +6369,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "BW7H1TJS22",
@@ -6268,7 +6407,8 @@
    ],
    "pubmed": 0,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "JTG7R315LK",
@@ -6307,7 +6447,8 @@
    ],
    "pubmed": 2,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "759N8462G8",
@@ -6345,7 +6486,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "0SRQ75X9I9",
@@ -6382,7 +6524,8 @@
    ],
    "pubmed": 1,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "U60U6P08SP",
@@ -6419,7 +6562,8 @@
    ],
    "pubmed": 4,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "10F89177CO",
@@ -6458,7 +6602,8 @@
    ],
    "pubmed": 0,
    "trials": 22,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "9E75Q6SUUB",
@@ -6498,7 +6643,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "UZC80HAU42",
@@ -6535,7 +6681,8 @@
    ],
    "pubmed": 1,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "1Z0YFI05OO",
@@ -6572,7 +6719,8 @@
    ],
    "pubmed": 0,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "EJ27X76M46",
@@ -6611,7 +6759,8 @@
    ],
    "pubmed": 0,
    "trials": 285,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "2K3L8O9SOV",
@@ -6647,7 +6796,8 @@
    ],
    "pubmed": 3,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "C7Z4ITI7L7",
@@ -6683,7 +6833,8 @@
    ],
    "pubmed": 20,
    "trials": 8,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "22M9P70OQ9",
@@ -6721,7 +6872,8 @@
    ],
    "pubmed": 12,
    "trials": 25,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "P0J3387W3S",
@@ -6757,7 +6909,8 @@
    ],
    "pubmed": 3,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "244O1F90NA",
@@ -6793,7 +6946,8 @@
    ],
    "pubmed": 2,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "260456HAM0",
@@ -6829,7 +6983,8 @@
    ],
    "pubmed": 14,
    "trials": 44,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "PM5LI0P38J",
@@ -6865,7 +7020,8 @@
    ],
    "pubmed": 4,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "A8M33244M6",
@@ -6901,7 +7057,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "42NCM1BW43",
@@ -6937,7 +7094,8 @@
    ],
    "pubmed": 1,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "3G943U18KM",
@@ -6973,7 +7131,8 @@
    ],
    "pubmed": 4,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "K9AY9IR2SD",
@@ -7008,7 +7167,8 @@
    ],
    "pubmed": 1,
    "trials": 25,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "7LP2MPO46S",
@@ -7045,7 +7205,8 @@
    ],
    "pubmed": 0,
    "trials": 69,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "P55703ZRZY",
@@ -7081,7 +7242,8 @@
    ],
    "pubmed": 3,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "T3CHA1B51H",
@@ -7118,7 +7280,8 @@
    ],
    "pubmed": 2,
    "trials": 47,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "2VBY96ASWJ",
@@ -7153,7 +7316,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "W4K0AE8XW9",
@@ -7188,7 +7352,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "LYH6F7I22E",
@@ -7225,7 +7390,8 @@
    ],
    "pubmed": 0,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "MM6384NG73",
@@ -7260,7 +7426,8 @@
    ],
    "pubmed": 19,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "R8I97I2L24",
@@ -7296,7 +7463,8 @@
    ],
    "pubmed": 1,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "LT69WY1J6D",
@@ -7333,7 +7501,8 @@
    ],
    "pubmed": 3,
    "trials": 5,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "69M5L7BXEK",
@@ -7368,7 +7537,8 @@
    ],
    "pubmed": 4,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "ZCN055599V",
@@ -7403,7 +7573,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "4HU6J11EL5",
@@ -7440,7 +7611,8 @@
    ],
    "pubmed": 4,
    "trials": 39,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "269M3QL74S",
@@ -7475,7 +7647,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "VJB5FW9W9J",
@@ -7510,7 +7683,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "C5QA4GLR9M",
@@ -7545,7 +7719,8 @@
    ],
    "pubmed": 0,
    "trials": 19,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "3T5NG4Q468",
@@ -7580,7 +7755,8 @@
    ],
    "pubmed": 0,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "6T9949G4LZ",
@@ -7615,7 +7791,8 @@
    ],
    "pubmed": 0,
    "trials": 14,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "G5B860B0G1",
@@ -7650,7 +7827,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "C1LJO185Q9",
@@ -7687,7 +7865,8 @@
    ],
    "pubmed": 0,
    "trials": 30,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "2H52Z9F2Q5",
@@ -7724,7 +7903,8 @@
    ],
    "pubmed": 12,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "3405M6FD73",
@@ -7759,7 +7939,8 @@
    ],
    "pubmed": 1,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "GXM4PER6WZ",
@@ -7794,7 +7975,8 @@
    ],
    "pubmed": 0,
    "trials": 10,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "5O6VWA87VA",
@@ -7830,7 +8012,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "06KB629TKV",
@@ -7867,7 +8050,8 @@
    ],
    "pubmed": 1,
    "trials": 34,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "RSA8KO39WH",
@@ -7902,7 +8086,8 @@
    ],
    "pubmed": 26,
    "trials": 85,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "BYK4592A3Q",
@@ -7936,7 +8121,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "Y6BHZ28O92",
@@ -7970,7 +8156,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "4POG0RL69O",
@@ -8004,7 +8191,8 @@
    ],
    "pubmed": 3,
    "trials": 13,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "I0A84520Y9",
@@ -8038,7 +8226,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "Z05HCY0X1T",
@@ -8072,7 +8261,8 @@
    ],
    "pubmed": 1,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "48TCX9A1VT",
@@ -8109,7 +8299,8 @@
    ],
    "pubmed": 4,
    "trials": 31,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "WH41D8433D",
@@ -8145,7 +8336,8 @@
    ],
    "pubmed": 3,
    "trials": 27,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "WIX85M1A6R",
@@ -8182,7 +8374,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "X24X82MX4X",
@@ -8218,7 +8411,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "1326R5J1IA",
@@ -8252,7 +8446,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "FA517NS3N7",
@@ -8286,7 +8481,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "G9L6B3W684",
@@ -8320,7 +8516,8 @@
    ],
    "pubmed": 1,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "6CL9Y5YZEQ",
@@ -8354,7 +8551,8 @@
    ],
    "pubmed": 1,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "15B0523P5L",
@@ -8388,7 +8586,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "D23ZXO613C",
@@ -8424,7 +8623,8 @@
    ],
    "pubmed": 0,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "62XCK0G93T",
@@ -8460,7 +8660,8 @@
    ],
    "pubmed": 6,
    "trials": 9,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "Q0XV76B96L",
@@ -8494,7 +8695,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "EEO29FZT86",
@@ -8528,7 +8730,8 @@
    ],
    "pubmed": 0,
    "trials": 12,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "G083B71P98",
@@ -8564,7 +8767,8 @@
    ],
    "pubmed": 7,
    "trials": 15,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "4449F8I3LE",
@@ -8598,7 +8802,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "J42298IESW",
@@ -8632,7 +8837,8 @@
    ],
    "pubmed": 1,
    "trials": 8,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "1199LEX5N8",
@@ -8666,7 +8872,8 @@
    ],
    "pubmed": 3,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "1LS1T6R34C",
@@ -8700,7 +8907,8 @@
    ],
    "pubmed": 1,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "4S9EY0NUEC",
@@ -8734,7 +8942,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "40257685LM",
@@ -8767,7 +8976,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "6I97Z6S135",
@@ -8800,7 +9010,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "97O6X78C53",
@@ -8833,7 +9044,8 @@
    ],
    "pubmed": 2,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "9M363FGA7J",
@@ -8866,7 +9078,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "SDS4N642GG",
@@ -8899,7 +9112,8 @@
    ],
    "pubmed": 7,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "3UVD77BP8R",
@@ -8932,7 +9146,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "D6VHC87LLS",
@@ -8965,7 +9180,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "60M22SGW66",
@@ -9000,7 +9216,8 @@
    ],
    "pubmed": 2,
    "trials": 28,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "17S83WON0I",
@@ -9033,7 +9250,8 @@
    ],
    "pubmed": 1,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "7560BB0BO3",
@@ -9066,7 +9284,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "F0R1QK73KB",
@@ -9101,7 +9320,8 @@
    ],
    "pubmed": 0,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "A2JGV5CNU4",
@@ -9135,7 +9355,8 @@
    ],
    "pubmed": 1,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "NH5000009I",
@@ -9168,7 +9389,8 @@
    ],
    "pubmed": 5,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "PCU411F5L6",
@@ -9201,7 +9423,8 @@
    ],
    "pubmed": 4,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "L164909TBI",
@@ -9234,7 +9457,8 @@
    ],
    "pubmed": 1,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "94WNJ5U8L7",
@@ -9267,7 +9491,8 @@
    ],
    "pubmed": 1,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "X3FZE77O60",
@@ -9300,7 +9525,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "R8M46911LR",
@@ -9335,7 +9561,8 @@
    ],
    "pubmed": 2,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "EQ35YMS20Q",
@@ -9368,7 +9595,8 @@
    ],
    "pubmed": 3,
    "trials": 14,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "A571S2B3JE",
@@ -9401,7 +9629,8 @@
    ],
    "pubmed": 1,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "0Z802HMY7H",
@@ -9435,7 +9664,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "903A9K181P",
@@ -9468,7 +9698,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "OCA4JT7PAW",
@@ -9502,7 +9733,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "1501393LY5",
@@ -9535,7 +9767,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "S5969B6237",
@@ -9568,7 +9801,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "R133MWH7X1",
@@ -9601,7 +9835,8 @@
    ],
    "pubmed": 4,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "25TLU22Q8H",
@@ -9634,7 +9869,8 @@
    ],
    "pubmed": 4,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "EFA30X554H",
@@ -9667,7 +9903,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "LPP64AWZ7L",
@@ -9702,7 +9939,8 @@
    ],
    "pubmed": 2,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "362QBC4NL0",
@@ -9736,7 +9974,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "27L0EP6IZK",
@@ -9770,7 +10009,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "S491HH391H",
@@ -9803,7 +10043,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "76YOO33643",
@@ -9836,7 +10077,8 @@
    ],
    "pubmed": 2,
    "trials": 15,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "AK5Q5FZH2R",
@@ -9869,7 +10111,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "W9A18RJ49B",
@@ -9902,7 +10145,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "9164VT6ANB",
@@ -9935,7 +10179,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "X81L78B3RB",
@@ -9968,7 +10213,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "Z7N0Y673NU",
@@ -10001,7 +10247,8 @@
    ],
    "pubmed": 2,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "IN1233R0JO",
@@ -10034,7 +10281,8 @@
    ],
    "pubmed": 1,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "RUA6CWU76G",
@@ -10067,7 +10315,8 @@
    ],
    "pubmed": 9,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "G54D0HMY25",
@@ -10100,7 +10349,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "U29O83JAZW",
@@ -10133,7 +10383,8 @@
    ],
    "pubmed": 0,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "3VQ38D63M7",
@@ -10167,7 +10418,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "568Z59H7ZJ",
@@ -10199,7 +10451,8 @@
    ],
    "pubmed": 1,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "OZQ8O62H53",
@@ -10231,7 +10484,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "TYR2U59WMA",
@@ -10263,7 +10517,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "08J2K08A3Y",
@@ -10295,7 +10550,8 @@
    ],
    "pubmed": 1,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "5L16LKN964",
@@ -10327,7 +10583,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "U8CJK0JH5M",
@@ -10361,7 +10618,8 @@
    ],
    "pubmed": 4,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "VLL71EBS9Z",
@@ -10393,7 +10651,8 @@
    ],
    "pubmed": 42,
    "trials": 241,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "3AA6IZ48YK",
@@ -10425,7 +10684,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "75473V2YZK",
@@ -10457,7 +10717,8 @@
    ],
    "pubmed": 1,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "6PU1E16C9W",
@@ -10489,7 +10750,8 @@
    ],
    "pubmed": 2,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "6931E8LH07",
@@ -10521,7 +10783,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "81F061RQS4",
@@ -10553,7 +10816,8 @@
    ],
    "pubmed": 1,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "XJ73B0K6KB",
@@ -10585,7 +10849,8 @@
    ],
    "pubmed": 0,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "8P4W949T8K",
@@ -10617,7 +10882,8 @@
    ],
    "pubmed": 6,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "HM4YQM8WRC",
@@ -10651,7 +10917,8 @@
    ],
    "pubmed": 2,
    "trials": 7,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "36W53O7109",
@@ -10683,7 +10950,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "CHG7QC509W",
@@ -10717,7 +10985,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "Z7489237QT",
@@ -10749,7 +11018,8 @@
    ],
    "pubmed": 3,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "704083NI0R",
@@ -10781,7 +11051,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "V7DXN0M42R",
@@ -10813,7 +11084,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "SYP56O3GJG",
@@ -10845,7 +11117,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "GYL649Z0HY",
@@ -10877,7 +11150,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "YM183K0H63",
@@ -10909,7 +11183,8 @@
    ],
    "pubmed": 2,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "O91W32476G",
@@ -10943,7 +11218,8 @@
    ],
    "pubmed": 2,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "2N9HM3X95F",
@@ -10975,7 +11251,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "W656S9I00W",
@@ -11007,7 +11284,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "772EN3BH6I",
@@ -11039,7 +11317,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "MPM23GMO7Z",
@@ -11073,7 +11352,8 @@
    ],
    "pubmed": 4,
    "trials": 7,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "V7O1U41C9B",
@@ -11105,7 +11385,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "MH922908EB",
@@ -11137,7 +11418,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "A76XI0HL37",
@@ -11169,7 +11451,8 @@
    ],
    "pubmed": 1,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "60GCX7Y6BH",
@@ -11201,7 +11484,8 @@
    ],
    "pubmed": 3,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "M7522JYX1H",
@@ -11233,7 +11517,8 @@
    ],
    "pubmed": 35,
    "trials": 39,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "GQ7JL9P5I2",
@@ -11265,7 +11550,8 @@
    ],
    "pubmed": 4,
    "trials": 14,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "4BOC774388",
@@ -11297,7 +11583,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "7OW73204U1",
@@ -11329,7 +11616,8 @@
    ],
    "pubmed": 4,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "4V7M9137X9",
@@ -11361,7 +11649,8 @@
    ],
    "pubmed": 2,
    "trials": 9,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "T3C89M417N",
@@ -11393,7 +11682,8 @@
    ],
    "pubmed": 0,
    "trials": 41,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "3DQS188SY5",
@@ -11425,7 +11715,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "8ZCA2I2L11",
@@ -11457,7 +11748,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "D892HFI3XA",
@@ -11489,7 +11781,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "WVZ7K9P0JY",
@@ -11521,7 +11814,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "HV13HFS217",
@@ -11554,7 +11848,8 @@
    ],
    "pubmed": 26,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "EK22QV7701",
@@ -11586,7 +11881,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "077DN93G5B",
@@ -11618,7 +11914,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "ZF3786Q2E8",
@@ -11650,7 +11947,8 @@
    ],
    "pubmed": 3,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "CZ87T54W8W",
@@ -11682,7 +11980,8 @@
    ],
    "pubmed": 0,
    "trials": 18,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "M0T18YH28D",
@@ -11714,7 +12013,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "BR1SN1JS2W",
@@ -11748,7 +12048,8 @@
    ],
    "pubmed": 17,
    "trials": 627,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "238S75V9AV",
@@ -11782,7 +12083,8 @@
    ],
    "pubmed": 4,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "PW8QYA7KI0",
@@ -11814,7 +12116,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "8U27U3RIN4",
@@ -11848,7 +12151,8 @@
    ],
    "pubmed": 13,
    "trials": 7,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "368IVD6M32",
@@ -11880,7 +12184,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "469ULX0H4G",
@@ -11912,7 +12217,8 @@
    ],
    "pubmed": 0,
    "trials": 10,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "S846B891OR",
@@ -11946,7 +12252,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "67220MCM01",
@@ -11978,7 +12285,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "P7W01638W6",
@@ -12010,7 +12318,8 @@
    ],
    "pubmed": 2,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "J31IL9Z2EE",
@@ -12043,7 +12352,8 @@
    ],
    "pubmed": 10,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "T3XOS33TIQ",
@@ -12075,7 +12385,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "T2M58D6LA8",
@@ -12107,7 +12418,8 @@
    ],
    "pubmed": 0,
    "trials": 2,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "6QK969R2IF",
@@ -12141,7 +12453,8 @@
    ],
    "pubmed": 4,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "707484X33X",
@@ -12173,7 +12486,8 @@
    ],
    "pubmed": 2,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "4YC2PY3AEU",
@@ -12205,7 +12519,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "785363R681",
@@ -12239,7 +12554,8 @@
    ],
    "pubmed": 18,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "5286RBZ882",
@@ -12271,7 +12587,8 @@
    ],
    "pubmed": 0,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "LT12J5HVR8",
@@ -12303,7 +12620,8 @@
    ],
    "pubmed": 3,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "L903J9JPYV",
@@ -12336,7 +12654,8 @@
    ],
    "pubmed": 0,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "3G0285N20N",
@@ -12370,7 +12689,8 @@
    ],
    "pubmed": 7,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "DQ6KK6GV93",
@@ -12402,7 +12722,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "V39YPH45FZ",
@@ -12434,7 +12755,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "7E8Q32N75N",
@@ -12466,7 +12788,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "2R7O1ET613",
@@ -12498,7 +12821,8 @@
    ],
    "pubmed": 1,
    "trials": 8,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "CY3RNB3K4T",
@@ -12530,7 +12854,8 @@
    ],
    "pubmed": 0,
    "trials": 22,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "11941YC6RN",
@@ -12562,7 +12887,8 @@
    ],
    "pubmed": 1,
    "trials": 1,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "VI08KS44V0",
@@ -12594,7 +12920,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "Y521XM2900",
@@ -12626,7 +12953,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "5G06TVY3R7",
@@ -12660,7 +12988,8 @@
    ],
    "pubmed": 3,
    "trials": 55,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "CKS1YQ9W1J",
@@ -12692,7 +13021,8 @@
    ],
    "pubmed": 0,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "1W6L629B4K",
@@ -12726,7 +13056,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "55FE6NPG89",
@@ -12758,7 +13089,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "0D771IS0FH",
@@ -12790,7 +13122,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "H1187LU49Q",
@@ -12822,7 +13155,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "1M2IB31DTS",
@@ -12854,7 +13188,8 @@
    ],
    "pubmed": 1,
    "trials": 3,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "H64JRU6GJ0",
@@ -12886,7 +13221,8 @@
    ],
    "pubmed": 11,
    "trials": 4,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "H191JFG8WA",
@@ -12918,7 +13254,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "C27HY5RFU5",
@@ -12951,7 +13288,8 @@
    ],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "996XVD0JHT",
@@ -12983,7 +13321,8 @@
    ],
    "pubmed": 2,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "RQ12GMY0FZ",
@@ -13015,7 +13354,8 @@
    ],
    "pubmed": 1,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "K16AME9I3V",
@@ -13047,7 +13387,16 @@
    "countries": [],
    "pubmed": 34,
    "trials": 34,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": {
+    "code": "98896",
+    "name": "Duchenne muscular dystrophy",
+    "rarity": "rare",
+    "rarity_evidence": "Orphanet 1-9 / 100 000 (Worldwide) \u2248 16,750 in the US, under 200,000",
+    "us_prevalence_est": 16750,
+    "onset": "pediatric",
+    "onset_evidence": "Orphanet age of onset: Childhood \u2014 within birth-18"
+   }
   },
   {
    "unii": "T4RS462G19",
@@ -13077,7 +13426,8 @@
    "countries": [],
    "pubmed": 0,
    "trials": 80,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "JUP57A8EPZ",
@@ -13109,7 +13459,8 @@
    "countries": [],
    "pubmed": 1,
    "trials": 16,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "337G83N988",
@@ -13139,7 +13490,8 @@
    "countries": [],
    "pubmed": 0,
    "trials": 9,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "A2I8C7HI9T",
@@ -13171,7 +13523,8 @@
    "countries": [],
    "pubmed": 0,
    "trials": 0,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "483AU1Y5CZ",
@@ -13201,7 +13554,8 @@
    "countries": [],
    "pubmed": 0,
    "trials": 6,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "F5SXN2KNMR",
@@ -13231,7 +13585,16 @@
    "countries": [],
    "pubmed": 3,
    "trials": 18,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": {
+    "code": "547",
+    "name": "Non-Hodgkin lymphoma",
+    "rarity": "rare",
+    "rarity_evidence": "Orphanet 1-5 / 10 000 (Europe) \u2248 100,499 in the US, under 200,000",
+    "us_prevalence_est": 100499,
+    "onset": "mixed",
+    "onset_evidence": "Orphanet age of onset: Adolescent, Adult, Childhood, Elderly, Infancy \u2014 spans pediatric and adult"
+   }
   },
   {
    "unii": "RML78EN3XE",
@@ -13261,7 +13624,8 @@
    "countries": [],
    "pubmed": 10,
    "trials": 48,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "J9QH779MEM",
@@ -13291,7 +13655,8 @@
    "countries": [],
    "pubmed": 10,
    "trials": 24,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   },
   {
    "unii": "FU21S769PF",
@@ -13321,7 +13686,8 @@
    "countries": [],
    "pubmed": 0,
    "trials": 8,
-   "us_orphan": "unknown"
+   "us_orphan": "unknown",
+   "orpha": null
   }
  ],
  "unnamed": [
@@ -13350,7 +13716,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "0GH9JX37C8",
@@ -13411,7 +13778,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "JL5DK93RCL",
@@ -13472,7 +13840,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "I38ZP9992A",
@@ -13523,7 +13892,8 @@
     "Slovenia",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "1U477369SN",
@@ -13569,7 +13939,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "CUB7JI0JV3",
@@ -13613,7 +13984,8 @@
     "Poland",
     "Slovenia",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "J8L3BWC4BD",
@@ -13654,7 +14026,8 @@
     "Netherlands",
     "Slovakia",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "N20HL7Q941",
@@ -13695,7 +14068,8 @@
     "Italy",
     "Poland",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "339NCG44TV",
@@ -13732,7 +14106,8 @@
     "Germany",
     "Italy",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "FLI06WS32H",
@@ -13768,7 +14143,8 @@
    "countries": [
     "Germany",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "9NEZ333N27",
@@ -13803,7 +14179,8 @@
    "countries": [
     "France",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "J41CSQ7QDS",
@@ -13838,7 +14215,8 @@
    "countries": [
     "Germany",
     "Luxembourg"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "J8GF8BXI8S",
@@ -13900,7 +14278,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "S7G510RUBH",
@@ -13958,7 +14337,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "J7P3696BCQ",
@@ -14017,7 +14397,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "E1UOL152H7",
@@ -14076,7 +14457,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "U5JDO2770Z",
@@ -14133,7 +14515,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "4109R0VM5R",
@@ -14186,7 +14569,8 @@
     "Slovenia",
     "Spain",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "E7QC7V26B8",
@@ -14237,7 +14621,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "XBO8UII5SV",
@@ -14288,7 +14673,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "QN49A5911G",
@@ -14337,7 +14723,8 @@
     "Slovenia",
     "Spain",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "E1W4N241FO",
@@ -14387,7 +14774,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "934T64RMNJ",
@@ -14438,7 +14826,8 @@
     "Slovakia",
     "Slovenia",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "AKU7QFL9ZT",
@@ -14487,7 +14876,8 @@
     "Slovakia",
     "Slovenia",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "J2Y905FQ57",
@@ -14533,7 +14923,8 @@
     "Slovakia",
     "Slovenia",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "7DKH3NEJ7F",
@@ -14577,7 +14968,8 @@
     "Slovakia",
     "Slovenia",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "6330179ARU",
@@ -14622,7 +15014,8 @@
     "Portugal",
     "Romania",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "JRD7912W79",
@@ -14664,7 +15057,8 @@
     "Romania",
     "Spain",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "RJ253LM2KD",
@@ -14706,7 +15100,8 @@
     "Romania",
     "Spain",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "A585MN1H2L",
@@ -14746,7 +15141,8 @@
     "Poland",
     "Romania",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "7V4KUP966U",
@@ -14788,7 +15184,8 @@
     "Poland",
     "Portugal",
     "Romania"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "20VJ8H4MNI",
@@ -14827,7 +15224,8 @@
     "Poland",
     "Portugal",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "88IQ3US5N5",
@@ -14866,7 +15264,8 @@
     "Poland",
     "Romania",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "GI96W46M5A",
@@ -14906,7 +15305,8 @@
     "Lithuania",
     "Romania",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "2381769MQC",
@@ -14947,7 +15347,8 @@
     "Luxembourg",
     "Poland",
     "Romania"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "DAA13NKG2Q",
@@ -14987,7 +15388,8 @@
     "Poland",
     "Portugal",
     "Romania"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "U2368VVE7O",
@@ -15026,7 +15428,8 @@
     "Portugal",
     "Slovakia",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "A17BS39YWR",
@@ -15062,7 +15465,8 @@
     "Lithuania",
     "Portugal",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "4LX0U5342U",
@@ -15098,7 +15502,8 @@
     "Portugal",
     "Spain",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "RV6J6604TK",
@@ -15136,7 +15541,8 @@
     "Romania",
     "Slovakia",
     "Slovenia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "A4C6WE7BZN",
@@ -15176,7 +15582,8 @@
     "Norway",
     "Spain",
     "Sweden"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "K72K37878A",
@@ -15212,7 +15619,8 @@
     "Portugal",
     "Spain",
     "Sweden"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "8P8Y8ZXJ8Y",
@@ -15249,7 +15657,8 @@
     "Luxembourg",
     "Netherlands",
     "Portugal"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "9RKX7S7WFY",
@@ -15286,7 +15695,8 @@
     "Portugal",
     "Romania",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "M7P27195AG",
@@ -15324,7 +15734,8 @@
     "Netherlands",
     "Poland",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "X6T6YN87SU",
@@ -15359,7 +15770,8 @@
     "Italy",
     "Luxembourg",
     "Portugal"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "602HN5L69H",
@@ -15396,7 +15808,8 @@
     "Poland",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "73Y7P0K73Y",
@@ -15433,7 +15846,8 @@
     "Latvia",
     "Slovakia",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "R57ZHV85D4",
@@ -15470,7 +15884,8 @@
     "Latvia",
     "Poland",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "V5PC588N7G",
@@ -15504,7 +15919,8 @@
     "Luxembourg",
     "Portugal",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "CIX3U01VAU",
@@ -15537,7 +15953,8 @@
     "France",
     "Hungary",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "19MLB4EQ88",
@@ -15570,7 +15987,8 @@
     "Poland",
     "Slovakia",
     "Sweden"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "3JXF0Z0XOI",
@@ -15605,7 +16023,8 @@
     "France",
     "Luxembourg",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "5TJD82A1ET",
@@ -15640,7 +16059,8 @@
     "Germany",
     "Latvia",
     "Lithuania"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "2M105305SU",
@@ -15673,7 +16093,8 @@
     "Luxembourg",
     "Portugal",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "T940307O7B",
@@ -15706,7 +16127,8 @@
     "Netherlands",
     "Poland",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "FS5K818KA7",
@@ -15739,7 +16161,8 @@
     "Italy",
     "Portugal",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "700YTQ6F2B",
@@ -15772,7 +16195,8 @@
     "Italy",
     "Luxembourg",
     "Malta"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "M40WCZ5X76",
@@ -15806,7 +16230,8 @@
     "Italy",
     "Portugal",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "I5M8YK41GK",
@@ -15839,7 +16264,8 @@
     "Hungary",
     "Lithuania",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "DHD7FFG6YS",
@@ -15873,7 +16299,8 @@
     "Italy",
     "Malta",
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "020IUV4N33",
@@ -15906,7 +16333,8 @@
     "Poland",
     "Romania",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "XK88N6ZJHP",
@@ -15939,7 +16367,8 @@
     "Germany",
     "Greece",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "2Y49VWD90Q",
@@ -15974,7 +16403,8 @@
     "France",
     "Germany",
     "Luxembourg"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "75UI7QUZ5J",
@@ -16008,7 +16438,8 @@
     "Germany",
     "Hungary",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "29VT07BGDA",
@@ -16042,7 +16473,8 @@
     "Malta",
     "Portugal",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "5V7PT38BJU",
@@ -16074,7 +16506,8 @@
     "Hungary",
     "Portugal",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "RWO67D87EU",
@@ -16107,7 +16540,8 @@
     "Finland",
     "Luxembourg",
     "Sweden"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "SU420W1S6N",
@@ -16139,7 +16573,8 @@
     "Czech Republic",
     "Germany",
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "00OT1QX5U4",
@@ -16173,7 +16608,8 @@
     "Latvia",
     "Lithuania",
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "3M4G523W1G",
@@ -16207,7 +16643,8 @@
     "Malta",
     "Spain",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "1K8M7UR6O1",
@@ -16239,7 +16676,8 @@
     "Liechtenstein",
     "Norway",
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "5RLR54Z22K",
@@ -16270,7 +16708,8 @@
     "Germany",
     "Italy",
     "Netherlands"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "2X1K91UT6N",
@@ -16301,7 +16740,8 @@
     "Czech Republic",
     "Greece",
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "QUY32964DJ",
@@ -16332,7 +16772,8 @@
     "Belgium",
     "France",
     "Luxembourg"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "E96303N5PG",
@@ -16363,7 +16804,8 @@
     "Austria",
     "France",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "U015TT5I8H",
@@ -16397,7 +16839,8 @@
     "France",
     "Greece",
     "Hungary"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "G0L543D370",
@@ -16428,7 +16871,8 @@
     "Estonia",
     "Latvia",
     "Lithuania"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "32SXB5VH2O",
@@ -16461,7 +16905,8 @@
     "Bulgaria",
     "Germany",
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "5G1JDI469J",
@@ -16494,7 +16939,8 @@
     "Denmark",
     "Poland",
     "Portugal"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "TMH99LTT6R",
@@ -16525,7 +16971,8 @@
     "Czech Republic",
     "France",
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "4I5K8199OQ",
@@ -16556,7 +17003,8 @@
     "Bulgaria",
     "Portugal",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "8P68XPY4HG",
@@ -16587,7 +17035,8 @@
     "France",
     "Italy",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "424J5HGB8E",
@@ -16618,7 +17067,8 @@
     "Italy",
     "Portugal",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "Y4F5ODM66L",
@@ -16649,7 +17099,8 @@
     "Germany",
     "Greece",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "6JD4830MKN",
@@ -16681,7 +17132,8 @@
     "Germany",
     "Ireland",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "0M7PSL4100",
@@ -16712,7 +17164,8 @@
     "Germany",
     "Italy",
     "Netherlands"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "7OV03QG267",
@@ -16745,7 +17198,8 @@
     "Germany",
     "Italy",
     "Netherlands"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "HFE9M7UF0L",
@@ -16776,7 +17230,8 @@
     "France",
     "Italy",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "U770QIT64J",
@@ -16807,7 +17262,8 @@
     "Germany",
     "Netherlands",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "75934UD4GJ",
@@ -16838,7 +17294,8 @@
     "Czech Republic",
     "Hungary",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "91MBZ8H3QO",
@@ -16872,7 +17329,8 @@
     "Czech Republic",
     "Hungary",
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "24JO8Z0RJU",
@@ -16903,7 +17361,8 @@
     "Germany",
     "Spain",
     "Sweden"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "K3D86KJ24N",
@@ -16936,7 +17395,8 @@
     "Ireland",
     "Poland",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "11P2JDE17B",
@@ -16966,7 +17426,8 @@
    "countries": [
     "France",
     "Luxembourg"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "2730CL9N7C",
@@ -16997,7 +17458,8 @@
    "countries": [
     "France",
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "FT898U5C9H",
@@ -17027,7 +17489,8 @@
    "countries": [
     "France",
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "03JLX11PE9",
@@ -17057,7 +17520,8 @@
    "countries": [
     "Italy",
     "Portugal"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "CL7T957EGC",
@@ -17087,7 +17551,8 @@
    "countries": [
     "Italy",
     "Portugal"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "595726R32U",
@@ -17117,7 +17582,8 @@
    "countries": [
     "Czech Republic",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "1D898P42YW",
@@ -17147,7 +17613,8 @@
    "countries": [
     "France",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "77YW1RTU8V",
@@ -17179,7 +17646,8 @@
    "countries": [
     "Ireland",
     "Malta"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "0T45P766JT",
@@ -17209,7 +17677,8 @@
    "countries": [
     "Czech Republic",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "06PW4M190R",
@@ -17239,7 +17708,8 @@
    "countries": [
     "Portugal",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "3G0H8C9362",
@@ -17272,7 +17742,8 @@
    "countries": [
     "France",
     "Netherlands"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "6770B58N0V",
@@ -17302,7 +17773,8 @@
    "countries": [
     "Germany",
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "3G98348KML",
@@ -17332,7 +17804,8 @@
    "countries": [
     "Croatia",
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "1HG84L3525",
@@ -17364,7 +17837,8 @@
    "countries": [
     "Germany",
     "Netherlands"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "K2R4N34Y9I",
@@ -17394,7 +17868,8 @@
    "countries": [
     "Latvia",
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "75G4TW236W",
@@ -17424,7 +17899,8 @@
    "countries": [
     "France",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "ED857BWP29",
@@ -17454,7 +17930,8 @@
    "countries": [
     "Czech Republic",
     "Hungary"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "M1V54MNO1P",
@@ -17484,7 +17961,8 @@
    "countries": [
     "Croatia",
     "Slovenia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "N6KNE1QA9O",
@@ -17514,7 +17992,8 @@
    "countries": [
     "Germany",
     "Netherlands"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "Q824SGH3RN",
@@ -17544,7 +18023,8 @@
    "countries": [
     "Bulgaria",
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "8915147A2B",
@@ -17575,7 +18055,8 @@
    "countries": [
     "Germany",
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "9U1VM840SP",
@@ -17607,7 +18088,8 @@
    "countries": [
     "Austria",
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "88496G1ERL",
@@ -17637,7 +18119,8 @@
    "countries": [
     "France",
     "Hungary"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "T4423S18FM",
@@ -17669,7 +18152,8 @@
    "countries": [
     "Germany",
     "Netherlands"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "WZH3C48M4T",
@@ -17701,7 +18185,8 @@
    "countries": [
     "Finland",
     "Sweden"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "F887D1637W",
@@ -17731,7 +18216,8 @@
    "countries": [
     "Austria",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "AI0NX02O35",
@@ -17761,7 +18247,8 @@
    "countries": [
     "Italy",
     "Malta"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "DY38VHM5OD",
@@ -17793,7 +18280,8 @@
    "countries": [
     "Germany",
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "368GB5141J",
@@ -17825,7 +18313,8 @@
    "countries": [
     "Germany",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "D0Y70F2B9J",
@@ -17855,7 +18344,8 @@
    "countries": [
     "Denmark",
     "Iceland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "WIQ1H85SYP",
@@ -17887,7 +18377,8 @@
    "countries": [
     "Czech Republic",
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "8A3Q9VKO7U",
@@ -17917,7 +18408,8 @@
    "countries": [
     "France",
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "UF17KA8AC5",
@@ -17947,7 +18439,8 @@
    "countries": [
     "Belgium",
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "91D9GV0Z28",
@@ -17979,7 +18472,8 @@
    "countries": [
     "Greece",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "P7K44M64CW",
@@ -18008,7 +18502,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "P01OUT964K",
@@ -18039,7 +18534,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "QYK0D6H79O",
@@ -18068,7 +18564,8 @@
    "n_countries": 1,
    "countries": [
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "S347WMO6M4",
@@ -18099,7 +18596,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "CM46XGM78M",
@@ -18128,7 +18626,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "3154M2Q6GD",
@@ -18157,7 +18656,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "E9MU425FIB",
@@ -18186,7 +18686,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "6R5Y84T8W9",
@@ -18215,7 +18716,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "6E1I4IV47V",
@@ -18244,7 +18746,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "V3ZU6E76NB",
@@ -18273,7 +18776,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "GG5LL7OBZC",
@@ -18302,7 +18806,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "X387L5559O",
@@ -18331,7 +18836,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "9A069144KR",
@@ -18360,7 +18866,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "O81VMW36CV",
@@ -18389,7 +18896,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "20E75SVO7A",
@@ -18418,7 +18926,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "V3DHX33184",
@@ -18447,7 +18956,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "C5BTS0548U",
@@ -18476,7 +18986,8 @@
    "n_countries": 1,
    "countries": [
     "Bulgaria"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "8L70Q75FXE",
@@ -18507,7 +19018,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "XDK458E1J9",
@@ -18538,7 +19050,8 @@
    "n_countries": 1,
    "countries": [
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "0D34IG724V",
@@ -18567,7 +19080,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "NZO8Q0FP2E",
@@ -18596,7 +19110,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "F92V3S521O",
@@ -18627,7 +19142,8 @@
    "n_countries": 1,
    "countries": [
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "0HM1E174TN",
@@ -18656,7 +19172,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "7E2P22546V",
@@ -18685,7 +19202,8 @@
    "n_countries": 1,
    "countries": [
     "Austria"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "5138Q19F1X",
@@ -18716,7 +19234,8 @@
    "n_countries": 1,
    "countries": [
     "Lithuania"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "22QF6L357F",
@@ -18745,7 +19264,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "SU46BAM238",
@@ -18776,7 +19296,8 @@
    "n_countries": 1,
    "countries": [
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "6P9E788VZZ",
@@ -18805,7 +19326,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "QRW683O56T",
@@ -18834,7 +19356,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "N0BN0O8CSL",
@@ -18865,7 +19388,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "D95EHT6Y2L",
@@ -18894,7 +19418,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "PZ35LUM333",
@@ -18923,7 +19448,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "F069Y6XCZ6",
@@ -18952,7 +19478,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "Y02A7LBH82",
@@ -18981,7 +19508,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "1P9D0Z171K",
@@ -19012,7 +19540,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "2Z3E1OF81V",
@@ -19043,7 +19572,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "FHG725432Z",
@@ -19074,7 +19604,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "1V984I1L1M",
@@ -19103,7 +19634,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "KW8K411A1P",
@@ -19132,7 +19664,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "4R7X1O2820",
@@ -19163,7 +19696,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "2R97846T1L",
@@ -19192,7 +19726,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "SR60A3XG0F",
@@ -19221,7 +19756,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "8406EY2OQA",
@@ -19252,7 +19788,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "RTJ1W9DF34",
@@ -19283,7 +19820,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "A4VZ22K1WT",
@@ -19314,7 +19852,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "Z7F472XQPA",
@@ -19345,7 +19884,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "3RYP614N6L",
@@ -19374,7 +19914,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "05D48LUM4Z",
@@ -19403,7 +19944,8 @@
    "n_countries": 1,
    "countries": [
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "S8XC5939VU",
@@ -19432,7 +19974,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "CR113982E5",
@@ -19461,7 +20004,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "6MRZ85RNHQ",
@@ -19490,7 +20034,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "0890872E2E",
@@ -19519,7 +20064,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "4AZL56CU0F",
@@ -19550,7 +20096,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "22IHM5PF20",
@@ -19579,7 +20126,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "FE5SPV1Z6G",
@@ -19608,7 +20156,8 @@
    "n_countries": 1,
    "countries": [
     "Latvia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "V14XF1PJUF",
@@ -19637,7 +20186,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "0F5N573A2Y",
@@ -19668,7 +20218,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "46U771ERWK",
@@ -19697,7 +20248,8 @@
    "n_countries": 1,
    "countries": [
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "M0942C52XH",
@@ -19726,7 +20278,8 @@
    "n_countries": 1,
    "countries": [
     "Hungary"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "PN2ZH5LOQY",
@@ -19755,7 +20308,8 @@
    "n_countries": 1,
    "countries": [
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "DI3477D0PI",
@@ -19784,7 +20338,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "ZO2JV75L55",
@@ -19813,7 +20368,8 @@
    "n_countries": 1,
    "countries": [
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "284SYP0193",
@@ -19844,7 +20400,8 @@
    "n_countries": 1,
    "countries": [
     "Sweden"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "L837108USY",
@@ -19875,7 +20432,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "GAN16C9B8O",
@@ -19907,7 +20465,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "7BK5G69305",
@@ -19936,7 +20495,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "R6GJS0F9NZ",
@@ -19967,7 +20527,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "79Y1949PYO",
@@ -19998,7 +20559,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "31J3Q51T6L",
@@ -20027,7 +20589,8 @@
    "n_countries": 1,
    "countries": [
     "Netherlands"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "8SQ0VA4YUR",
@@ -20058,7 +20621,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "QUE43B9Z2Q",
@@ -20087,7 +20651,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "02X2TO1S2D",
@@ -20116,7 +20681,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "M629807ATL",
@@ -20147,7 +20713,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "KXI2J76489",
@@ -20178,7 +20745,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "454I75YXY0",
@@ -20207,7 +20775,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "Z7Y1U20IBU",
@@ -20236,7 +20805,8 @@
    "n_countries": 1,
    "countries": [
     "Romania"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "09837K287S",
@@ -20267,7 +20837,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "BRH40Y9V1Q",
@@ -20298,7 +20869,8 @@
    "n_countries": 1,
    "countries": [
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "L3WTS6QT82",
@@ -20327,7 +20899,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "5Q5ZYJ43UH",
@@ -20356,7 +20929,8 @@
    "n_countries": 1,
    "countries": [
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "70097M6I30",
@@ -20385,7 +20959,8 @@
    "n_countries": 1,
    "countries": [
     "Portugal"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "05VP796JC6",
@@ -20414,7 +20989,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "JD546Z56F0",
@@ -20443,7 +21019,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "7SPF5O5BW8",
@@ -20472,7 +21049,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "196OC77688",
@@ -20503,7 +21081,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "YX089CPS05",
@@ -20532,7 +21111,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "229D0E1QFA",
@@ -20563,7 +21143,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "37X3OTM55N",
@@ -20592,7 +21173,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "50Z9596NJ3",
@@ -20621,7 +21203,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "4LFS24GD0V",
@@ -20650,7 +21233,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "079IIA2811",
@@ -20679,7 +21263,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "JA08T3B97O",
@@ -20708,7 +21293,8 @@
    "n_countries": 1,
    "countries": [
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "5TWQ1V240M",
@@ -20739,7 +21325,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "7K81IL792L",
@@ -20768,7 +21355,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "2RDB26I5ZB",
@@ -20797,7 +21385,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "HIE492ZZ3T",
@@ -20828,7 +21417,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "27YLU75U4W",
@@ -20859,7 +21449,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "654G2VCI4Q",
@@ -20888,7 +21479,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "ZA38L5WD1K",
@@ -20917,7 +21509,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "RWP5GA015D",
@@ -20948,7 +21541,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "OC4598NZEQ",
@@ -20979,7 +21573,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "96F264O9SV",
@@ -21008,7 +21603,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "YUL4LO94HK",
@@ -21039,7 +21635,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "MLT4718TJW",
@@ -21070,7 +21667,8 @@
    "n_countries": 1,
    "countries": [
     "Netherlands"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "FST467XS7D",
@@ -21101,7 +21699,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "690VN2L7TK",
@@ -21133,7 +21732,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "X75ZKL134L",
@@ -21162,7 +21762,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "LC1V549NOM",
@@ -21193,7 +21794,8 @@
    "n_countries": 1,
    "countries": [
     "Bulgaria"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "4VON5FNS3C",
@@ -21222,7 +21824,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "94255I6E2T",
@@ -21253,7 +21856,8 @@
    "n_countries": 1,
    "countries": [
     "Belgium"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "X045WJ989B",
@@ -21284,7 +21888,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "C151H8M554",
@@ -21315,7 +21920,8 @@
    "n_countries": 1,
    "countries": [
     "Netherlands"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "6032D45BEM",
@@ -21344,7 +21950,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "S3V868548T",
@@ -21373,7 +21980,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "C12674942B",
@@ -21402,7 +22010,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "H0KNQ242J5",
@@ -21431,7 +22040,8 @@
    "n_countries": 1,
    "countries": [
     "Slovakia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "549BT7IE1Q",
@@ -21460,7 +22070,8 @@
    "n_countries": 1,
    "countries": [
     "Portugal"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "9YCB5VR86Z",
@@ -21489,7 +22100,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "KL096K0KXL",
@@ -21518,7 +22130,8 @@
    "n_countries": 1,
    "countries": [
     "Poland"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "387GMG9FH5",
@@ -21549,7 +22162,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "5V2JDO056X",
@@ -21578,7 +22192,8 @@
    "n_countries": 1,
    "countries": [
     "Italy"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "14I47YJ5EY",
@@ -21607,7 +22222,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "OU2JEB22IE",
@@ -21636,7 +22252,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "9870N09I68",
@@ -21665,7 +22282,8 @@
    "n_countries": 1,
    "countries": [
     "Latvia"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "CHI530446X",
@@ -21694,7 +22312,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "3H3U766W84",
@@ -21723,7 +22342,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "T967Q579KA",
@@ -21754,7 +22374,8 @@
    "n_countries": 1,
    "countries": [
     "Germany"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "R5Y8O51589",
@@ -21781,7 +22402,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "0R0008Q3JB",
@@ -21810,7 +22432,8 @@
     "Swissmedic": "authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "N0KCY1368Z",
@@ -21837,7 +22460,8 @@
     "EMA": "authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "1NKX3648J9",
@@ -21864,7 +22488,8 @@
     "Health Canada": "authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "FC72KVT52F",
@@ -21893,7 +22518,8 @@
     "Health Canada": "authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "14255EXE39",
@@ -21922,7 +22548,8 @@
     "Swissmedic": "authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "6JKA7MAH9C",
@@ -21949,7 +22576,8 @@
     "Health Canada": "authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "6634O61GOI",
@@ -21978,7 +22606,8 @@
     "Swissmedic": "authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "E775ICF82G",
@@ -22005,7 +22634,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "UA8U0KJM72",
@@ -22034,7 +22664,8 @@
     "Health Canada": "authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "F1CB00L2RH",
@@ -22061,7 +22692,8 @@
     "Swissmedic": "authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "3J50XA376E",
@@ -22090,7 +22722,8 @@
     "Swissmedic": "authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   }
  ],
  "review": [
@@ -22154,7 +22787,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "BZ1R15MTK7",
@@ -22191,7 +22825,8 @@
    "countries": [
     "Bulgaria",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "661FH77Z3P",
@@ -22244,7 +22879,8 @@
     "Slovakia",
     "Slovenia",
     "Spain"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "671DKG7P5S",
@@ -22289,7 +22925,8 @@
     "Spain",
     "Sweden",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "6Y75Z4E8NS",
@@ -22339,7 +22976,8 @@
     "Slovenia",
     "Spain",
     "Sweden"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "GNN1DV99GX",
@@ -22373,7 +23011,8 @@
     "Greece",
     "Portugal",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "4MXU9LJS4Q",
@@ -22406,7 +23045,8 @@
     "Germany",
     "Luxembourg",
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "K76S41V71X",
@@ -22437,7 +23077,8 @@
    "n_countries": 1,
    "countries": [
     "France"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "U9VY0ZOK7A",
@@ -22469,7 +23110,8 @@
    "n_countries": 1,
    "countries": [
     "Greece"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "01Q0586BG1",
@@ -22500,7 +23142,8 @@
    "n_countries": 1,
    "countries": [
     "Romania"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "8DUH1N11BX",
@@ -22531,7 +23174,8 @@
    "n_countries": 1,
    "countries": [
     "United Kingdom (Northern Ireland)"
-   ]
+   ],
+   "orpha": null
   },
   {
    "unii": "R6D2UI4FLS",
@@ -22561,7 +23205,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   }
  ],
  "dossier_only": [
@@ -22590,7 +23235,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "GKF8S4C432",
@@ -22619,7 +23265,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "6QFP76V7S7",
@@ -22646,7 +23293,16 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": {
+    "code": "69",
+    "name": "Amyloidosis",
+    "rarity": "rare",
+    "rarity_evidence": "Orphanet 1-9 / 100 000 (Korea, Republic of) \u2248 16,750 in the US, under 200,000",
+    "us_prevalence_est": 16750,
+    "onset": "mixed",
+    "onset_evidence": "Orphanet age of onset: All ages \u2014 spans pediatric and adult"
+   }
   },
   {
    "unii": "6JLQ8K35KK",
@@ -22673,7 +23329,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "UJ0ZJ76DO9",
@@ -22700,7 +23357,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "K824X25AYA",
@@ -22728,7 +23386,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "M59NC4E26P",
@@ -22756,7 +23415,16 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": {
+    "code": "803",
+    "name": "Amyotrophic lateral sclerosis",
+    "rarity": "rare",
+    "rarity_evidence": "Orphanet 1-9 / 100 000 (Worldwide) \u2248 16,750 in the US, under 200,000",
+    "us_prevalence_est": 16750,
+    "onset": "adult",
+    "onset_evidence": "Orphanet age of onset: Adult \u2014 adult/elderly"
+   }
   },
   {
    "unii": "Y76ID234HW",
@@ -22785,7 +23453,16 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": {
+    "code": "29073",
+    "name": "Multiple myeloma",
+    "rarity": "rare",
+    "rarity_evidence": "Orphanet 1-5 / 10 000 (Europe) \u2248 100,499 in the US, under 200,000",
+    "us_prevalence_est": 100499,
+    "onset": "adult",
+    "onset_evidence": "Orphanet age of onset: Adult \u2014 adult/elderly"
+   }
   },
   {
    "unii": "HD4TW8S2VK",
@@ -22812,7 +23489,16 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": {
+    "code": "399",
+    "name": "Huntington disease",
+    "rarity": "rare",
+    "rarity_evidence": "Orphanet 1-9 / 100 000 (United States) \u2248 16,750 in the US, under 200,000",
+    "us_prevalence_est": 16750,
+    "onset": "mixed",
+    "onset_evidence": "Orphanet age of onset: Adolescent, Adult, Childhood, Elderly \u2014 spans pediatric and adult"
+   }
   },
   {
    "unii": "1578EUB98L",
@@ -22839,7 +23525,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "H19C446XXB",
@@ -22866,7 +23553,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "DD5RBA1NKF",
@@ -22896,7 +23584,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "9T210MMZ3F",
@@ -22923,7 +23612,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "P7725I9V3Z",
@@ -22950,7 +23640,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "3B03KPM27L",
@@ -22977,7 +23668,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "NQU9IPY4K9",
@@ -23004,7 +23696,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "958X4J301A",
@@ -23031,7 +23724,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "V72H9867WB",
@@ -23060,7 +23754,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "908SY76S4G",
@@ -23087,7 +23782,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "E0QN3D755O",
@@ -23116,7 +23812,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "YA84KI1VEW",
@@ -23145,7 +23842,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "8O74K609HN",
@@ -23172,7 +23870,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "2M19539ERK",
@@ -23201,7 +23900,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "OS7097575K",
@@ -23228,7 +23928,16 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": {
+    "code": "300912",
+    "name": "Marginal zone lymphoma",
+    "rarity": "rare",
+    "rarity_evidence": "Orphanet 1-9 / 100 000 (Europe) \u2248 16,750 in the US, under 200,000",
+    "us_prevalence_est": 16750,
+    "onset": "adult",
+    "onset_evidence": "Orphanet age of onset: Adult \u2014 adult/elderly"
+   }
   },
   {
    "unii": "721809WQCP",
@@ -23255,7 +23964,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "AJS8S3P31H",
@@ -23282,7 +23992,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "8D7B37T28G",
@@ -23309,7 +24020,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "9U1ETH79CK",
@@ -23336,7 +24048,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "B2K5L1L8S9",
@@ -23363,7 +24076,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   },
   {
    "unii": "K6A90IIZ19",
@@ -23390,7 +24104,16 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": {
+    "code": "519",
+    "name": "Acute myeloid leukemia",
+    "rarity": "rare",
+    "rarity_evidence": "Orphanet 1-5 / 10 000 (Europe) \u2248 100,499 in the US, under 200,000",
+    "us_prevalence_est": 100499,
+    "onset": "mixed",
+    "onset_evidence": "Orphanet age of onset: All ages \u2014 spans pediatric and adult"
+   }
   },
   {
    "unii": "49HFB70472",
@@ -23419,7 +24142,8 @@
     "EMA": "never_authorised"
    },
    "n_countries": 0,
-   "countries": []
+   "countries": [],
+   "orpha": null
   }
  ],
  "monitor": {
@@ -23513,6 +24237,10 @@
     }
    ]
   },
-  "as_of": "2026-08-31 15:55"
+  "as_of": "2026-08-31 17:03"
+ },
+ "orphadata": {
+  "disorders_loaded": 7888,
+  "candidates_matched": 9
  }
 }

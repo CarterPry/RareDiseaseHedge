@@ -125,9 +125,25 @@ def main():
     sunset = datetime.date(2029, 9, 30)
     months_to_sunset = (sunset.year - today.year) * 12 + (sunset.month - today.month)
 
+    # --- full candidate list for the searchable shortlist --------------------
+    def pack(c):
+        o = c.get("orpha") or None
+        return {
+            "name": c["name"].title(), "moiety": c.get("moiety", ""),
+            "sources": c.get("sources", []), "nc": c.get("n_countries", 0),
+            "orphan": c.get("orphan", False), "fs": c.get("foreign_status", ""),
+            "area": c.get("area", ""), "ind": c.get("indication", ""),
+            "atc": c.get("atc", ""), "pubmed": c.get("pubmed"), "trials": c.get("trials"),
+            "flags": c.get("flags", []),
+            "orpha": ({"disease": o["name"], "rarity": o["rarity"],
+                       "onset": o["onset"], "prev": o.get("us_prevalence_est")} if o else None),
+        }
+    shortlist = [pack(c) for c in cands]
+
     payload = {
         "generated": d.get("generated", ""),
         "snapshot": d.get("snapshot", ""),
+        "candidates": shortlist,
         "headline": {
             "candidates": d["counts"]["named"],
             "orphan": d["counts"]["orphan"],

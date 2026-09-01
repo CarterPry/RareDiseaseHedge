@@ -147,6 +147,92 @@ buildMosaic();
 heroScrollUpdate();
 
 /* ============================================================
+   SHORTLIST — searchable candidate list (RDH pipeline)
+   ============================================================ */
+const SL = {
+  q: "", sort: "reach",
+  filters: { orphan: false, multi: false, rare: false, ped: false, pulled: false },
+};
+const SL_CHIPS = [
+  ["orphan", "EU orphan", c => c.orphan],
+  ["multi", "Multi-regulator", c => (c.sources || []).length > 1],
+  ["rare", "Rare (Orphanet)", c => c.orpha && c.orpha.rarity === "rare"],
+  ["ped", "Pediatric onset", c => c.orpha && c.orpha.onset === "pediatric"],
+  ["pulled", "Licence pulled", c => c.fs === "previously_authorised"],
+];
+function slPredicate(key) { return SL_CHIPS.find(x => x[0] === key)[2]; }
+
+function slFiltered() {
+  const cands = BIO.candidates || [];
+  const q = SL.q.trim().toLowerCase();
+  let out = cands.filter(c => {
+    for (const k in SL.filters) if (SL.filters[k] && !slPredicate(k)(c)) return false;
+    if (!q) return true;
+    return [c.name, c.moiety, c.area, c.ind, c.atc, c.orpha && c.orpha.disease,
+            (c.sources || []).join(" ")].some(s => (s || "").toLowerCase().includes(q));
+  });
+  const research = c => (c.pubmed || 0) + (c.trials || 0);
+  out.sort(SL.sort === "name" ? (a, b) => a.name.localeCompare(b.name)
+    : SL.sort === "research" ? (a, b) => research(b) - research(a)
+    : (a, b) => (b.nc - a.nc) || a.name.localeCompare(b.name));
+  return out;
+}
+
+function slCard(c) {
+  const badges = [];
+  if (c.orphan) badges.push('<span class="badge badge-orphan">orphan</span>');
+  if (c.orpha && c.orpha.rarity === "rare") badges.push('<span class="badge badge-rare">rare disease</span>');
+  if (c.orpha && c.orpha.onset === "pediatric") badges.push('<span class="badge badge-ped">pediatric onset</span>');
+  if ((c.sources || []).length > 1) badges.push('<span class="badge badge-multi">multi-regulator</span>');
+  if (c.fs === "previously_authorised") badges.push('<span class="badge badge-pulled">licence pulled</span>');
+  const dz = (c.orpha && c.orpha.disease) || c.area || (c.ind || "").replace(/\.$/, "") || "—";
+  const src = (c.sources || []).map(s => s.replace("EU national (Art57)", "EEA national").replace(" (Art57)", ""))
+    .map(s => `<span class="badge badge-src">${s}</span>`).join("");
+  return `<div class="sl-card">
+    <div class="sl-card-top"><span class="sl-name">${c.name}</span>
+      <span class="sl-reach"><b>${c.nc || 0}</b> EEA</span></div>
+    <div class="sl-dz">${dz.length > 96 ? dz.slice(0, 96) + "…" : dz}</div>
+    <div class="sl-badges">${badges.join("")}</div>
+    <div class="sl-badges">${src}</div>
+    <div class="sl-foot"><span>papers <b>${c.pubmed != null ? c.pubmed : "—"}</b></span>
+      <span>trials <b>${c.trials != null ? c.trials : "—"}</b></span>
+      ${c.atc ? `<span>ATC <b>${c.atc}</b></span>` : ""}</div>
+  </div>`;
+}
+
+function slRender() {
+  const rows = slFiltered();
+  const listEl = document.getElementById("slList");
+  const total = (BIO.candidates || []).length;
+  document.getElementById("slCount").textContent = total;
+  document.getElementById("slStatus").textContent =
+    `Showing ${rows.length} of ${total} candidates` + (SL.q ? ` matching “${SL.q}”` : "");
+  listEl.innerHTML = rows.length
+    ? rows.map(slCard).join("")
+    : `<p class="sl-empty">No candidates match. Try a drug name, a disease, or clear the filters.</p>`;
+}
+
+function slInit() {
+  const chipHost = document.getElementById("slChips");
+  chipHost.innerHTML = SL_CHIPS.map(([key, label, pred]) => {
+    const n = (BIO.candidates || []).filter(pred).length;
+    return `<button class="sl-chip" data-k="${key}">${label}<span class="n">${n}</span></button>`;
+  }).join("");
+  chipHost.querySelectorAll(".sl-chip").forEach(btn => btn.addEventListener("click", () => {
+    const k = btn.dataset.k;
+    SL.filters[k] = !SL.filters[k];
+    btn.classList.toggle("on", SL.filters[k]);
+    slRender();
+  }));
+  const inp = document.getElementById("slSearch");
+  let t = null;
+  inp.addEventListener("input", () => { clearTimeout(t); t = setTimeout(() => { SL.q = inp.value; slRender(); }, 120); });
+  document.getElementById("slSort").addEventListener("change", e => { SL.sort = e.target.value; slRender(); });
+  slRender();
+}
+slInit();
+
+/* ============================================================
    VOUCHER MARKET — real PRV sales (SEC 8-K)
    Primary: annual $ disclosed, stacked by voucher type.
    Secondary: cumulative disclosed value.

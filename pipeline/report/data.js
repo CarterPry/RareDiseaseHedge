@@ -2,6 +2,6032 @@
 window.BIO = {
  "generated": "2026-08-31",
  "snapshot": "UNII 4Aug2026 \u00b7 Drugs@FDA 29 Aug 2026 \u00b7 Orange Book 07 Aug 2026 \u00b7 EMA 29 Aug 2026 \u00b7 Health Canada 07 Aug 2026 \u00b7 Swissmedic 07 Aug 2026 \u00b7 PMDA 07 Aug 2026 \u00b7 GSRS relationship graph",
+ "candidates": [
+  {
+   "name": "Idebenone",
+   "moiety": "IDEBENONE",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": true,
+   "fs": "authorised",
+   "area": "Optic Atrophy, Hereditary, Leber",
+   "ind": "Raxone is indicated for the treatment of visual impairment in adolescent and adult patients with Leber\u2019s Hereditary Optic Neuropathy (LHON).",
+   "atc": "N06BX13",
+   "pubmed": 36,
+   "trials": 35,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Tiratricol",
+   "moiety": "TIRATRICOL",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": true,
+   "fs": "authorised",
+   "area": "Thyrotoxicosis;Heredodegenerative Disorders, Nervous System",
+   "ind": "Emcitate is indicated for the treatment of peripheral thyrotoxicosis in patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley Syndrome), from birth.",
+   "atc": "H03AA04",
+   "pubmed": 3,
+   "trials": 5,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Vildagliptin",
+   "moiety": "VILDAGLIPTIN",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 30,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Diabetes Mellitus, Type 2",
+   "ind": "Vildagliptin is indicated as an adjunct to diet and exercise to improve glycaemic control in adults with type 2 diabetes mellitus:  as monotherapy in patients in whom metformin is inappropriate due to contraindications or intolerance. in combination with other medicinal products for the treatment of diabetes, including insulin, when these do not provide adequate glycaemic control (see sections 4.4, 4.5 and 5.1 for available data on different combinations).",
+   "atc": "A10BH02",
+   "pubmed": 0,
+   "trials": 209,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Alfacalcidol",
+   "moiety": "ALFACALCIDOL",
+   "sources": [
+    "EU national (Art57)",
+    "Health Canada"
+   ],
+   "nc": 29,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 31,
+   "trials": 52,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Bilastine",
+   "moiety": "BILASTINE",
+   "sources": [
+    "EU national (Art57)",
+    "Health Canada"
+   ],
+   "nc": 29,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 12,
+   "trials": 28,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Zuclopenthixol",
+   "moiety": "ZUCLOPENTHIXOL",
+   "sources": [
+    "EU national (Art57)",
+    "Health Canada"
+   ],
+   "nc": 29,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 10,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Gliclazide",
+   "moiety": "GLICLAZIDE",
+   "sources": [
+    "EU national (Art57)",
+    "Health Canada"
+   ],
+   "nc": 27,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 8,
+   "trials": 85,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Atosiban",
+   "moiety": "ATOSIBAN",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 24,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Obstetric Labor, Premature",
+   "ind": "Atosiban is indicated to delay imminent pre-term birth in pregnant adult women with:  regular uterine contractions of at least 30 seconds\u2019 duration at a rate of ? 4 per 30 minutes; a cervical dilation of 1 to 3 cm (0-3 for nulliparas) and effacement of ? 50%; a gestational age from 24 until 33 completed weeks; a normal foetal heart rate.",
+   "atc": "G02CX01",
+   "pubmed": 7,
+   "trials": 23,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Bromazepam",
+   "moiety": "BROMAZEPAM",
+   "sources": [
+    "EU national (Art57)",
+    "Health Canada"
+   ],
+   "nc": 24,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 6,
+   "trials": 5,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Agomelatine",
+   "moiety": "AGOMELATINE",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 22,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Depressive Disorder, Major",
+   "ind": "Treatment of major depressive episodes in adults.",
+   "atc": "N06AX22",
+   "pubmed": 9,
+   "trials": 27,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Propiverine",
+   "moiety": "PROPIVERINE",
+   "sources": [
+    "EU national (Art57)",
+    "Health Canada"
+   ],
+   "nc": 14,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 15,
+   "trials": 17,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Tenoxicam",
+   "moiety": "TENOXICAM",
+   "sources": [
+    "EU national (Art57)",
+    "Health Canada"
+   ],
+   "nc": 12,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 41,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Delamanid",
+   "moiety": "DELAMANID",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Tuberculosis, Multidrug-Resistant",
+   "ind": "Deltyba is indicated for use as part of an appropriate combination regimen for pulmonary multi-drug resistant tuberculosis (MDR-TB) in adults, adolescents, children and infants with a body weight of at least 10 kg when an effective treatment regimen cannot otherwise be composed for reasons of resistance or tolerability (see sections 4.2, 4.4 and 5.1). Consideration should be given to official guidance on the appropriate use of antibacterial agents.",
+   "atc": "J04AK06",
+   "pubmed": 40,
+   "trials": 44,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Filgotinib",
+   "moiety": "FILGOTINIB",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Arthritis, Rheumatoid",
+   "ind": "Rheumatoid arthritis Jyseleca is indicated for the treatment of moderate to severe active rheumatoid arthritis in adult patients who have responded inadequately to, or who are intolerant to one or more disease modifying anti rheumatic drugs (DMARDs). Jyseleca may be used as monotherapy or in combination with methotrexate (MTX). Ulcerative colitis Jyseleca is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis who have had an inadequate response with, lost response to, or were intolerant to either conventional therapy or a biologic agent.",
+   "atc": "L04AF04",
+   "pubmed": 11,
+   "trials": 66,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Gefapixant",
+   "moiety": "GEFAPIXANT",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Cough",
+   "ind": "Lyfnua is indicated in adults for the treatment of refractory or unexplained chronic cough.",
+   "atc": "R05DB29",
+   "pubmed": 0,
+   "trials": 27,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Linzagolix",
+   "moiety": "LINZAGOLIX",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Leiomyoma",
+   "ind": "Yselty is indicated in adult women of reproductive age for:&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; treatment of moderate to severe symptoms of uterine fibroids,-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; symptomatic treatment of endometriosis in women with a history of previous medical or surgical treatment for their endometriosis (see section 5.1).",
+   "atc": "H01CC04",
+   "pubmed": 0,
+   "trials": 18,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['EXPORT ONLY']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Mifamurtide",
+   "moiety": "MIFAMURTIDE",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Osteosarcoma",
+   "ind": "Mepact is indicated in children, adolescents and young adults for the treatment of high-grade resectable non-metastatic osteosarcoma after macroscopically complete surgical resection. It is used in combination with postoperative multi-agent chemotherapy. Safety and efficacy have been assessed in studies of patients two to 30 years of age at initial diagnosis.",
+   "atc": "L03AX15",
+   "pubmed": 16,
+   "trials": 8,
+   "flags": [],
+   "orpha": {
+    "disease": "Osteosarcoma",
+    "rarity": "rare",
+    "onset": "pediatric",
+    "prev": 16750
+   }
+  },
+  {
+   "name": "Perflubutane",
+   "moiety": "PERFLUBUTANE",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Ultrasonography",
+   "ind": "ultrasound imaging agent indicated for the detection of coronary artery disease (CAD)",
+   "atc": "V08D",
+   "pubmed": 2,
+   "trials": 20,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Roxadustat",
+   "moiety": "ROXADUSTAT",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Anemia;Kidney Failure, Chronic",
+   "ind": "Evrenzo is indicated for treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD).",
+   "atc": "B03XA05",
+   "pubmed": 5,
+   "trials": 66,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'EXPORT ONLY']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Tolebrutinib",
+   "moiety": "TOLEBRUTINIB",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Multiple Sclerosis, Chronic Progressive",
+   "ind": "Cenrifki is indicated for the treatment of adult patients with secondary progressive multiple sclerosis (SPMS) without relapses in the last 2 years.",
+   "atc": "L04AA62",
+   "pubmed": 0,
+   "trials": 12,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Vernakalant",
+   "moiety": "VERNAKALANT",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Atrial Fibrillation",
+   "ind": "Rapid conversion of recent onset atrial fibrillation to sinus rhythm in adults:  for non-surgery patients: atrial fibrillation&nbsp;&lt;/= 7 days duration; for post-cardiac surgery patients: atrial fibrillation&nbsp;&lt;/= 3 days duration.",
+   "atc": "C01BG11",
+   "pubmed": 1,
+   "trials": 17,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Vinflunine",
+   "moiety": "VINFLUNINE",
+   "sources": [
+    "EMA",
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Carcinoma, Transitional Cell;Urologic Neoplasms",
+   "ind": "Javlor is indicated in monotherapy for the treatment of adult patients with advanced or metastatic transitional-cell carcinoma of the urothelial tract after failure of a prior platinum-containing regimen. Efficacy and safety of vinflunine have not been studied in patients with performance status ? 2.",
+   "atc": "L01CA05",
+   "pubmed": 0,
+   "trials": 35,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Amylmetacresol",
+   "moiety": "AMYLMETACRESOL",
+   "sources": [
+    "EU national (Art57)",
+    "Health Canada"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Etoricoxib",
+   "moiety": "ETORICOXIB",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 30,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 12,
+   "trials": 129,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Fusidic Acid",
+   "moiety": "FUSIDIC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 30,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 55,
+   "trials": 27,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Rupatadine",
+   "moiety": "RUPATADINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 30,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 7,
+   "trials": 15,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Amorolfine",
+   "moiety": "AMOROLFINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 29,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 13,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Xylometazoline",
+   "moiety": "XYLOMETAZOLINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 29,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 10,
+   "trials": 37,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Benzydamine",
+   "moiety": "BENZYDAMINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 28,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 10,
+   "trials": 49,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Bromhexine",
+   "moiety": "BROMHEXINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 28,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 10,
+   "trials": 30,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['EXPORT ONLY']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Moxonidine",
+   "moiety": "MOXONIDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 28,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 21,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Ambroxol",
+   "moiety": "AMBROXOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 27,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 40,
+   "trials": 40,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Etofenamate",
+   "moiety": "ETOFENAMATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 27,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Levosimendan",
+   "moiety": "LEVOSIMENDAN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 27,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 117,
+   "trials": 118,
+   "flags": [
+    "STEREO_NAME: name carries an enantiomer/racemate marker; check the counterpart's US status by hand"
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Cyproterone",
+   "moiety": "CYPROTERONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 26,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 33,
+   "trials": 66,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Dapoxetine",
+   "moiety": "DAPOXETINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 26,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 33,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Mebeverine",
+   "moiety": "MEBEVERINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 26,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 20,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Racecadotril",
+   "moiety": "RACECADOTRIL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 26,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 23,
+   "trials": 15,
+   "flags": [
+    "STEREO_NAME: name carries an enantiomer/racemate marker; check the counterpart's US status by hand"
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Tibolone",
+   "moiety": "TIBOLONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 26,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 28,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Cytisinicline",
+   "moiety": "CYTISINICLINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 25,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 34,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Fenticonazole",
+   "moiety": "FENTICONAZOLE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 25,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Piracetam",
+   "moiety": "PIRACETAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 24,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 17,
+   "trials": 16,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Domperidone",
+   "moiety": "DOMPERIDONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 23,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 49,
+   "trials": 83,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Flucloxacillin",
+   "moiety": "FLUCLOXACILLIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 23,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 62,
+   "trials": 33,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Itopride",
+   "moiety": "ITOPRIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 23,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 33,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Aceclofenac",
+   "moiety": "ACECLOFENAC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 22,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 22,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Carbetocin",
+   "moiety": "CARBETOCIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 22,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 103,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Trimetazidine",
+   "moiety": "TRIMETAZIDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 22,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 40,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Mianserin",
+   "moiety": "MIANSERIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 21,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 5,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Carbocysteine",
+   "moiety": "CARBOCISTEINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 20,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 10,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Diosmin",
+   "moiety": "DIOSMIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 20,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 55,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Iobitridol",
+   "moiety": "IOBITRIDOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 20,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 5,
+   "trials": 9,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Nitrazepam",
+   "moiety": "NITRAZEPAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 20,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 20,
+   "trials": 12,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Sertindole",
+   "moiety": "SERTINDOLE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 20,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 9,
+   "trials": 17,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Sulthiame",
+   "moiety": "SULTIAME",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 20,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 5,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Ebastine",
+   "moiety": "EBASTINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 19,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 10,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Zofenopril",
+   "moiety": "ZOFENOPRIL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 19,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 6,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Hexetidine",
+   "moiety": "HEXETIDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 18,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 5,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Lacidipine",
+   "moiety": "LACIDIPINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 18,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 15,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Urapidil",
+   "moiety": "URAPIDIL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 18,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 32,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Butamirate",
+   "moiety": "BUTAMIRATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 17,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Hexamidine",
+   "moiety": "HEXAMIDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 17,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 2,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['OTC MONOGRAPH DRUG']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Erdosteine",
+   "moiety": "ERDOSTEINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 16,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 5,
+   "trials": 10,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Moclobemide",
+   "moiety": "MOCLOBEMIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 16,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 9,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Tramazoline",
+   "moiety": "TRAMAZOLINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 16,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Bezafibrate",
+   "moiety": "BEZAFIBRATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 15,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 10,
+   "trials": 27,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Meldonium",
+   "moiety": "MELDONIUM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 15,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 7,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Octenidine",
+   "moiety": "OCTENIDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 15,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 29,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Roxithromycin",
+   "moiety": "ROXITHROMYCIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 15,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 31,
+   "trials": 11,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Somatostatin",
+   "moiety": "SOMATOSTATIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 15,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 503,
+   "trials": 359,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Tiapride",
+   "moiety": "TIAPRIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 15,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 11,
+   "trials": 5,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Benfotiamine",
+   "moiety": "BENFOTIAMINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 14,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 21,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Levodropropizine",
+   "moiety": "LEVODROPROPIZINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 14,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 9,
+   "trials": 10,
+   "flags": [
+    "STEREO_NAME: name carries an enantiomer/racemate marker; check the counterpart's US status by hand"
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Lymecycline",
+   "moiety": "LYMECYCLINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 14,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 6,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Nimesulide",
+   "moiety": "NIMESULIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 14,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 34,
+   "trials": 17,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Amsacrine",
+   "moiety": "AMSACRINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 13,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 16,
+   "trials": 11,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Calcium Dobesilate",
+   "moiety": "CALCIUM DOBESILATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 13,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 806,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Reboxetine",
+   "moiety": "REBOXETINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 13,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 5,
+   "trials": 41,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Rilmenidine",
+   "moiety": "RILMENIDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 13,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Tauroselcholic Acid",
+   "moiety": "TAUROSELCHOLIC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 13,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Carbimazole",
+   "moiety": "CARBIMAZOLE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 12,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 82,
+   "trials": 7,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Dothiepin",
+   "moiety": "DOSULEPIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 12,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 3,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Ethamsylate",
+   "moiety": "ETAMSILATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 12,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Gliquidone",
+   "moiety": "GLIQUIDONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 12,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 5,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Ipidacrine",
+   "moiety": "IPIDACRINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 12,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Isoconazole",
+   "moiety": "ISOCONAZOLE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 12,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 1,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Lormetazepam",
+   "moiety": "LORMETAZEPAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 12,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 6,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Troxerutin",
+   "moiety": "TROXERUTIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 12,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 6,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Celiprolol",
+   "moiety": "CELIPROLOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 11,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 4,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Choline Salicylate",
+   "moiety": "",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 11,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 376,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'OTC MONOGRAPH DRUG']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Clodronic Acid",
+   "moiety": "CLODRONATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 11,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 20,
+   "trials": 17,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Clomethiazole",
+   "moiety": "CLOMETHIAZOLE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 11,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Hydrotalcite",
+   "moiety": "HYDROTALCITE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 11,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 7,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Lornoxicam",
+   "moiety": "LORNOXICAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 11,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 21,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Propamidine",
+   "moiety": "PROPAMIDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 11,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Vinpocetine",
+   "moiety": "VINPOCETINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 11,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 9,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Buserelin",
+   "moiety": "BUSERELIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 10,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 12,
+   "trials": 42,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Cilazapril",
+   "moiety": "CILAZAPRIL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 10,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 4,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Drotaverine",
+   "moiety": "DROTAVERINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 10,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 6,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Melperone",
+   "moiety": "MELPERONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 10,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 4,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Quinagolide",
+   "moiety": "QUINAGOLIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 10,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 6,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Raltitrexed",
+   "moiety": "RALTITREXED",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 10,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 8,
+   "trials": 87,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Acemetacin",
+   "moiety": "ACEMETACIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 9,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Brivudine",
+   "moiety": "BRIVUDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 9,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Brotizolam",
+   "moiety": "BROTIZOLAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 9,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 10,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Etilefrine",
+   "moiety": "ETILEFRINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 9,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 7,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Flunarizine",
+   "moiety": "FLUNARIZINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 9,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 53,
+   "trials": 21,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Nicergoline",
+   "moiety": "NICERGOLINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 9,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 6,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Tacalcitol",
+   "moiety": "TACALCITOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 9,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Temocillin",
+   "moiety": "TEMOCILLIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 9,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 5,
+   "trials": 16,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Chloroxylenol",
+   "moiety": "CHLOROXYLENOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 8,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 9,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'OTC MONOGRAPH DRUG', 'OTC MONOGRAPH NOT FINAL', 'UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Flunitrazepam",
+   "moiety": "FLUNITRAZEPAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 8,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 19,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Lynestrenol",
+   "moiety": "LYNESTRENOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 8,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 6,
+   "trials": 4,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Magaldrate",
+   "moiety": "MAGALDRATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 8,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 4,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'DRUG FOR FURTHER PROCESSING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Metildigoxin",
+   "moiety": "METILDIGOXIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 8,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Naftidrofuryl",
+   "moiety": "NAFTIDROFURYL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 8,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Thiocolchicoside",
+   "moiety": "THIOCOLCHICOSIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 8,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 15,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Benzocaine",
+   "moiety": "BENZOCAINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 7,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 49,
+   "trials": 7250,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING', 'DRUG FOR FURTHER PROCESSING', 'OTC MONOGRAPH DRUG', 'OTC MONOGRAPH NOT FINAL', 'UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Citicoline",
+   "moiety": "CITICOLINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 7,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 6,
+   "trials": 72,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Myrtecaine",
+   "moiety": "MYRTECAINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 7,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Niflumic Acid",
+   "moiety": "NIFLUMIC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 7,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 9,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pipamperone",
+   "moiety": "PIPAMPERONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 7,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 6,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Piribedil",
+   "moiety": "PIRIBEDIL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 7,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 5,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Piritramide",
+   "moiety": "PIRITRAMIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 7,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 18,
+   "trials": 25,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pizotyline",
+   "moiety": "PIZOTIFEN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 7,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 8,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Sulprostone",
+   "moiety": "SULPROSTONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 7,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 8,
+   "trials": 5,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Canrenoate Potassium",
+   "moiety": "POTASSIUM CANRENOATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 20,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Cinolazepam",
+   "moiety": "CINOLAZEPAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Ciprofibrate",
+   "moiety": "CIPROFIBRATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 4,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Diflucortolone",
+   "moiety": "DIFLUCORTOLONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 3,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Flutrimazole",
+   "moiety": "FLUTRIMAZOLE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Imidapril",
+   "moiety": "IMIDAPRIL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 5,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Levosulpiride",
+   "moiety": "LEVOSULPIRIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 5,
+   "flags": [
+    "STEREO_NAME: name carries an enantiomer/racemate marker; check the counterpart's US status by hand"
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Loprazolam",
+   "moiety": "LOPRAZOLAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Mesterolone",
+   "moiety": "MESTEROLONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Nifuratel",
+   "moiety": "NIFURATEL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Nomegestrol",
+   "moiety": "NOMEGESTROL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 22,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Pridinol",
+   "moiety": "PRIDINOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Tofisopam",
+   "moiety": "TOFISOPAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Triflusal",
+   "moiety": "TRIFLUSAL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 6,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Ubidecarenone",
+   "moiety": "UBIDECARENONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 6,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 285,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING', 'UNAPPROVED DRUG OTHER', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Chloropyramine",
+   "moiety": "CHLOROPYRAMINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 5,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Enoximone",
+   "moiety": "ENOXIMONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 5,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 20,
+   "trials": 8,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Fenoterol",
+   "moiety": "FENOTEROL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 5,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 12,
+   "trials": 25,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Medazepam",
+   "moiety": "MEDAZEPAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 5,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Mizolastine",
+   "moiety": "MIZOLASTINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 5,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Nicorandil",
+   "moiety": "NICORANDIL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 5,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 14,
+   "trials": 44,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Nifuroxazide",
+   "moiety": "NIFUROXAZIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 5,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 3,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Nitroxoline",
+   "moiety": "NITROXOLINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 5,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Sulbutiamine",
+   "moiety": "SULBUTIAMINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 5,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Tolfenamic Acid",
+   "moiety": "TOLFENAMIC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 5,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Acipimox",
+   "moiety": "ACIPIMOX",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 25,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Ademetionine",
+   "moiety": "ADEMETIONINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 69,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Alizapride",
+   "moiety": "ALIZAPRIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 3,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Antipyrine",
+   "moiety": "PHENAZONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 47,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Barnidipine",
+   "moiety": "BARNIDIPINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Biclotymol",
+   "moiety": "BICLOTYMOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Bromperidol",
+   "moiety": "BROMPERIDOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 3,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Carbenoxolone",
+   "moiety": "CARBENOXOLONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 19,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Cinitapride",
+   "moiety": "CINITAPRIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Clobetasone",
+   "moiety": "CLOBETASONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 5,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Cloperastine",
+   "moiety": "CLOPERASTINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Clotiazepam",
+   "moiety": "CLOTIAZEPAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Diacerein",
+   "moiety": "DIACEREIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 39,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Dibrompropamidine",
+   "moiety": "DIBROMPROPAMIDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Ethyl Loflazepate",
+   "moiety": "ETHYL LOFLAZEPATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Fluspirilene",
+   "moiety": "FLUSPIRILENE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 19,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Hymecromone",
+   "moiety": "HYMECROMONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 6,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Indobufen",
+   "moiety": "INDOBUFEN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 14,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Lutetium Lu-177 Zadavotide Guraxetan",
+   "moiety": "LUTETIUM 177LU ZADAVOTIDE GURAXETAN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Oxitriptan",
+   "moiety": "OXITRIPTAN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 30,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Pefloxacin",
+   "moiety": "PEFLOXACIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 12,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Periciazine",
+   "moiety": "PERICIAZINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Promestriene",
+   "moiety": "PROMESTRIENE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 10,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Prothipendyl",
+   "moiety": "PROTHIPENDYL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Tolnaftate",
+   "moiety": "TOLNAFTATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 34,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'DRUG FOR FURTHER PROCESSING', 'OTC MONOGRAPH DRUG', 'OTC MONOGRAPH FINAL', 'UNAPPROVED DRUG OTHER', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Vindesine",
+   "moiety": "VINDESINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 4,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 26,
+   "trials": 85,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Ambazone",
+   "moiety": "AMBAZONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Bamipine",
+   "moiety": "BAMIPINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Benzbromarone",
+   "moiety": "BENZBROMARONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 13,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Clebopride",
+   "moiety": "CLEBOPRIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Clothiapine",
+   "moiety": "CLOTIAPINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Cystine",
+   "moiety": "L CYSTINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 31,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Ergonovine",
+   "moiety": "ERGOMETRINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 27,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Ethacridine",
+   "moiety": "ETHACRIDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Etifoxine",
+   "moiety": "ETIFOXINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Floretyrosine F-18",
+   "moiety": "FLUOROETHYLTYROSINE F 18",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Fluprednidene",
+   "moiety": "FLUPREDNIDENE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Hexoprenaline",
+   "moiety": "HEXOPRENALINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Nadifloxacin",
+   "moiety": "NADIFLOXACIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 3,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Naftazone",
+   "moiety": "NAFTAZONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Opipramol",
+   "moiety": "OPIPRAMOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 3,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Ornidazole",
+   "moiety": "ORNIDAZOLE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 6,
+   "trials": 9,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Oxaceprol",
+   "moiety": "OXACEPROL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Padeliporfin",
+   "moiety": "PADELIPORFIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 12,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pentetreotide",
+   "moiety": "PENTETREOTIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 7,
+   "trials": 15,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Pramiracetam",
+   "moiety": "PRAMIRACETAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Prulifloxacin",
+   "moiety": "PRULIFLOXACIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 8,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Terizidone",
+   "moiety": "TERIZIDONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 4,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Tiaprofenic Acid",
+   "moiety": "TIAPROFENIC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Xipamide",
+   "moiety": "XIPAMIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 3,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Azidamfenicol",
+   "moiety": "AZIDAMFENICOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Bencyclane",
+   "moiety": "BENCYCLANE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Benperidol",
+   "moiety": "BENPERIDOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 4,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Bornaprine",
+   "moiety": "BORNAPRINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Chlormadinone",
+   "moiety": "CHLORMADINONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 7,
+   "trials": 4,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Chlorphenoxamine",
+   "moiety": "CHLORPHENOXAMINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Chlorquinaldol",
+   "moiety": "CHLORQUINALDOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Choline Alfoscerate",
+   "moiety": "CHOLINE ALFOSCERATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 28,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Clopamide",
+   "moiety": "CLOPAMIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Clorophene",
+   "moiety": "CLOROFENE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Cobamamide",
+   "moiety": "COBAMAMIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 3,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Cyamemazine",
+   "moiety": "CYAMEMAZINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Dehydrocholic Acid",
+   "moiety": "DEHYDROCHOLIC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 5,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Dihydralazine",
+   "moiety": "DIHYDRALAZINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Etofylline",
+   "moiety": "ETOFYLLINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Felbinac",
+   "moiety": "FELBINAC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 6,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Fenipentol",
+   "moiety": "FENIPENTOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Flubendazole",
+   "moiety": "FLUBENDAZOLE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 1,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Fluindione",
+   "moiety": "FLUINDIONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 14,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Gaxilose",
+   "moiety": "GAXILOSE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Indoramin",
+   "moiety": "INDORAMIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Iprazochrome",
+   "moiety": "IPRAZOCHROME",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Lofepramine",
+   "moiety": "LOFEPRAMINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Metergoline",
+   "moiety": "METERGOLINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Mexazolam",
+   "moiety": "MEXAZOLAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Morniflumate",
+   "moiety": "MORNIFLUMATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Penfluridol",
+   "moiety": "PENFLURIDOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pheneticillin",
+   "moiety": "PHENETICILLIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pholcodine",
+   "moiety": "PHOLCODINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Piketoprofen",
+   "moiety": "PIKETOPROFEN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pirenoxine",
+   "moiety": "PIRENOXINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Prenoxdiazine",
+   "moiety": "PRENOXDIAZIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Protionamide",
+   "moiety": "PROTIONAMIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 15,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pyritinol",
+   "moiety": "PYRITINOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Quifenadine",
+   "moiety": "QUIFENADINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Sodium Picofosfate",
+   "moiety": "SODIUM PICOFOSFATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Spaglumic Acid",
+   "moiety": "SPAGLUMIC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Tribenoside",
+   "moiety": "TRIBENOSIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Trimecaine",
+   "moiety": "TRIMECAINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Valpromide",
+   "moiety": "VALPROMIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 9,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Vinburnine",
+   "moiety": "VINBURNINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Zotepine",
+   "moiety": "ZOTEPINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 2,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 3,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Alfatradiol",
+   "moiety": "ALFATRADIOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Almagate",
+   "moiety": "ALMAGATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Almasilate",
+   "moiety": "ALMASILATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Amitriptylinoxide",
+   "moiety": "AMITRIPTYLINOXIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Androstanolone",
+   "moiety": "ANDROSTANOLONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Aniracetam",
+   "moiety": "ANIRACETAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Anthralin",
+   "moiety": "DITHRANOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 6,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Arlipoic Acid",
+   "moiety": "LIPOIC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 42,
+   "trials": 241,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Benproperine",
+   "moiety": "BENPROPERINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Bromopride",
+   "moiety": "BROMOPRIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Bronopol",
+   "moiety": "BRONOPOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 4,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Carbaldrate",
+   "moiety": "CARBALDRATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Carbazochrome",
+   "moiety": "CARBAZOCHROME",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Caroverine",
+   "moiety": "CAROVERINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 3,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Cefatrizine",
+   "moiety": "CEFATRIZINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 6,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Chlorobutanol",
+   "moiety": "CHLOROBUTANOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 7,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Chlorocresol",
+   "moiety": "CHLOROCRESOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Cicletanine",
+   "moiety": "CICLETANINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Cifenline",
+   "moiety": "CIBENZOLINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 3,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Clofoctol",
+   "moiety": "CLOFOCTOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Clonixin",
+   "moiety": "CLONIXIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Cloprednol",
+   "moiety": "CLOPREDNOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Cloxazolam",
+   "moiety": "CLOXAZOLAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Cortivazol",
+   "moiety": "CORTIVAZOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 4,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Delorazepam",
+   "moiety": "DELORAZEPAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 1,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Demoxytocin",
+   "moiety": "DEMOXYTOCIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Denotivir",
+   "moiety": "DENOTIVIR",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Dimethisoquin",
+   "moiety": "QUINISOCAINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Doxofylline",
+   "moiety": "DOXOFYLLINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 7,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Eberconazole",
+   "moiety": "EBERCONAZOLE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Etifenin",
+   "moiety": "ETIFENIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Etizolam",
+   "moiety": "ETIZOLAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Flufenamic Acid",
+   "moiety": "FLUFENAMIC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Fosfructose",
+   "moiety": "FRUCTOSE 1 6",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 35,
+   "trials": 39,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Fotemustine",
+   "moiety": "FOTEMUSTINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 14,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Framycetin",
+   "moiety": "FRAMYCETIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Fumagillin",
+   "moiety": "FUMAGILLIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Gabexate",
+   "moiety": "GABEXATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 9,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Glutaral",
+   "moiety": "GLUTARAL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 41,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Heptaminol",
+   "moiety": "HEPTAMINOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Ibopamine",
+   "moiety": "IBOPAMINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Iproniazid",
+   "moiety": "IPRONIAZID",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Isothipendyl",
+   "moiety": "ISOTHIPENDYL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Josamycin",
+   "moiety": "JOSAMYCIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 26,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Lidofenin",
+   "moiety": "LIDOFENIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Medrogestone",
+   "moiety": "MEDROGESTONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Melarsoprol",
+   "moiety": "MELARSOPROL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Mephenoxalone",
+   "moiety": "MEPHENOXALONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 18,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Merbromin",
+   "moiety": "MERBROMIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Methylcobalamin",
+   "moiety": "METHYLCOBALAMIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 17,
+   "trials": 627,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT', 'BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING', 'DRUG FOR FURTHER PROCESSING', 'UNAPPROVED DRUG OTHER', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Metopimazine",
+   "moiety": "METOPIMAZINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 2,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Moxisylyte",
+   "moiety": "MOXISYLYTE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Neridronic Acid",
+   "moiety": "NERIDRONATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 13,
+   "trials": 7,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Nikethamide",
+   "moiety": "NIKETHAMIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Nimorazole",
+   "moiety": "NIMORAZOLE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 10,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Nonivamide",
+   "moiety": "NONIVAMIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['OTC MONOGRAPH DRUG', 'UNAPPROVED DRUG OTHER']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Nordazepam",
+   "moiety": "NORDAZEPAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Norethandrolone",
+   "moiety": "NORETHANDROLONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Oxatomide",
+   "moiety": "OXATOMIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 10,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Oxetorone",
+   "moiety": "OXETORONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Phenibut",
+   "moiety": "4 AMINO 3 PHENYLBUTYRIC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 2,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Phenolphthalein",
+   "moiety": "PHENOLPHTHALEIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 4,
+   "trials": 3,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Phenothrin",
+   "moiety": "PHENOTHRIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Picloxydine",
+   "moiety": "PICLOXYDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pidotimod",
+   "moiety": "PIDOTIMOD",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 18,
+   "trials": 1,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Pinazepam",
+   "moiety": "PINAZEPAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pipemidic Acid",
+   "moiety": "PIPEMIDIC",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pipotiazine",
+   "moiety": "PIPOTIAZINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 3,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pirenzepine",
+   "moiety": "PIRENZEPINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 7,
+   "trials": 4,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Piretanide",
+   "moiety": "PIRETANIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pirlindole",
+   "moiety": "PIRLINDOLE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Piroxicam Cinnamate",
+   "moiety": "PIROXICAM CINNAMATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pranoprofen",
+   "moiety": "PRANOPROFEN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 8,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Proflavine",
+   "moiety": "PROFLAVINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 22,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Reproterol",
+   "moiety": "REPROTEROL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 1,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Rociverine",
+   "moiety": "ROCIVERINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Rufloxacin",
+   "moiety": "RUFLOXACIN",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Rutin",
+   "moiety": "RUTOSIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 3,
+   "trials": 55,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED DRUG OTHER', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Sodium Aurotiosulfate",
+   "moiety": "SODIUM AUROTIOSULFATE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 3,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Sulisobenzone",
+   "moiety": "SULISOBENZONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Temgicoluril",
+   "moiety": "TEMGICOLURIL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Thiram",
+   "moiety": "THIRAM",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Trepibutone",
+   "moiety": "TREPIBUTONE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Trimeperidine",
+   "moiety": "TRIMEPERIDINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 3,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Trofosfamide",
+   "moiety": "TROFOSFAMIDE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 11,
+   "trials": 4,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Tromantadine",
+   "moiety": "TROMANTADINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Tropatepine",
+   "moiety": "TROPATEPINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Vincamine",
+   "moiety": "VINCAMINE",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 2,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Xibornol",
+   "moiety": "XIBORNOL",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "nc": 1,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 1,
+   "trials": 0,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Ataluren",
+   "moiety": "ATALUREN",
+   "sources": [
+    "EMA"
+   ],
+   "nc": 0,
+   "orphan": false,
+   "fs": "previously_authorised",
+   "area": "Muscular Dystrophy, Duchenne",
+   "ind": "Translarna is indicated for the treatment of Duchenne muscular dystrophy resulting from a nonsense mutation in the dystrophin gene, in ambulatory patients aged 2 years and older. Efficacy has not been demonstrated in non-ambulatory patients. The presence of a nonsense mutation in the dystrophin gene should be determined by genetic testing.",
+   "atc": "M09AX03",
+   "pubmed": 34,
+   "trials": 34,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": {
+    "disease": "Duchenne muscular dystrophy",
+    "rarity": "rare",
+    "onset": "pediatric",
+    "prev": 16750
+   }
+  },
+  {
+   "name": "Aumolertinib",
+   "moiety": "AUMOLERTINIB",
+   "sources": [
+    "EMA"
+   ],
+   "nc": 0,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Carcinoma, Non-Small-Cell Lung",
+   "ind": "Aumseqa as monotherapy is indicated for:- the first-line treatment of adult patients with advanced non-small cell lung cancer (NSCLC)whose tumours have EGFR exon 19 deletions or exon 21 (L858R) substitution mutations (forbiomarker-based patient selection, see section 4.2).- the treatment of adult patients with advanced EGFR T790M mutation-positive NSCLC (forbiomarker-based patient selection, see section 4.2)",
+   "atc": "L01EB",
+   "pubmed": 0,
+   "trials": 80,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Camizestrant",
+   "moiety": "CAMIZESTRANT",
+   "sources": [
+    "EMA"
+   ],
+   "nc": 0,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Breast Neoplasms",
+   "ind": "Etcamah&nbsp;in combination with a CDK4/6 inhibitor (palbociclib, ribociclib, or abemaciclib) is indicated for the treatment of&nbsp;adult&nbsp;patients with ER-positive,&nbsp;HER2-negative,&nbsp;locally advanced or metastatic breast&nbsp;cancer upon detection of ESR1\u2011mutation and without disease progression during first-line endocrine therapy in combination with a CDK4/6 inhibitor (for biomarker based patient-selection, see section 4.2 and 5.1).",
+   "atc": "L02BA05",
+   "pubmed": 1,
+   "trials": 16,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Lasofoxifene",
+   "moiety": "LASOFOXIFENE",
+   "sources": [
+    "EMA"
+   ],
+   "nc": 0,
+   "orphan": false,
+   "fs": "previously_authorised",
+   "area": "Osteoporosis, Postmenopausal",
+   "ind": "Fablyn is indicated for the treatment of osteoporosis in postmenopausal women at increased risk of fracture. A significant reduction in the incidence of vertebral and non-vertebral fractures but not hip fractures has been demonstrated (see section 5.1). When determining the choice of Fablyn or other therapies, including oestrogens, for a postmenopausal woman, consideration should be given to menopausal symptoms, effects on uterine and breast tissues, and cardiovascular risks and benefits (see section 5.1).",
+   "atc": "G03",
+   "pubmed": 0,
+   "trials": 9,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Methylparaben",
+   "moiety": "E 218",
+   "sources": [
+    "Swissmedic"
+   ],
+   "nc": 0,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "",
+   "ind": "",
+   "atc": "",
+   "pubmed": 0,
+   "trials": 0,
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING', 'OTC MONOGRAPH FINAL', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "orpha": null
+  },
+  {
+   "name": "Perflenapent",
+   "moiety": "DODECAFLUOROPENTANE",
+   "sources": [
+    "EMA"
+   ],
+   "nc": 0,
+   "orphan": false,
+   "fs": "previously_authorised",
+   "area": "Echocardiography",
+   "ind": "EchoGen is a transpulmonary echocardiographic contrast agent for use in patients with suspected or established cardiovascular disease to provide opacification of cardiac chambers, enhance left ventricular border delineation with resulting improvement in wall motion visualisation. EchoGen should only be used in patients where the study without contrast enhancement is inconclusive.",
+   "atc": "V08DA",
+   "pubmed": 0,
+   "trials": 6,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Pixantrone",
+   "moiety": "PIXANTRONE",
+   "sources": [
+    "EMA"
+   ],
+   "nc": 0,
+   "orphan": false,
+   "fs": "previously_authorised",
+   "area": "Lymphoma, Non-Hodgkin",
+   "ind": "Pixuvri is indicated as monotherapy for the treatment of adult patients with multiply relapsed or refractory aggressive non-Hodgkin B-cell lymphomas (NHL). The benefit of pixantrone treatment has not been established in patients when used as fifth-line or greater chemotherapy in patients who are refractory to last therapy.",
+   "atc": "L01DB11",
+   "pubmed": 3,
+   "trials": 18,
+   "flags": [],
+   "orpha": {
+    "disease": "Non-Hodgkin lymphoma",
+    "rarity": "rare",
+    "onset": "mixed",
+    "prev": 100499
+   }
+  },
+  {
+   "name": "Rimonabant",
+   "moiety": "RIMONABANT",
+   "sources": [
+    "EMA"
+   ],
+   "nc": 0,
+   "orphan": false,
+   "fs": "previously_authorised",
+   "area": "Obesity",
+   "ind": "As an adjunct to diet and exercise for the treatment of obese patients (BMI 30 kg/m2), or overweight patients (BMI 27 kg/m2) with associated risk factor(s), such as type 2 diabetes or dyslipidaemia (see section 5.1).",
+   "atc": "A08AX01",
+   "pubmed": 10,
+   "trials": 48,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Sitaxentan",
+   "moiety": "SITAXENTAN",
+   "sources": [
+    "EMA"
+   ],
+   "nc": 0,
+   "orphan": false,
+   "fs": "previously_authorised",
+   "area": "Hypertension, Pulmonary",
+   "ind": "Treatment of patients with pulmonary arterial hypertension (PAH) classified as WHO functional class III, to improve exercise capacity. Efficacy has been shown in primary pulmonary hypertension and in pulmonary hypertension associated with connective tissue disease.",
+   "atc": "C02KX03",
+   "pubmed": 10,
+   "trials": 24,
+   "flags": [],
+   "orpha": null
+  },
+  {
+   "name": "Temoporfin",
+   "moiety": "TEMOPORFIN",
+   "sources": [
+    "EMA"
+   ],
+   "nc": 0,
+   "orphan": false,
+   "fs": "authorised",
+   "area": "Head and Neck Neoplasms;Carcinoma, Squamous Cell",
+   "ind": "Foscan is indicated for the palliative treatment of patients with advanced head and neck squamous cell carcinoma failing prior therapies and unsuitable for radiotherapy, surgery or systemic chemotherapy.",
+   "atc": "L01XD05",
+   "pubmed": 0,
+   "trials": 8,
+   "flags": [],
+   "orpha": null
+  }
+ ],
  "headline": {
   "candidates": 342,
   "orphan": 2,

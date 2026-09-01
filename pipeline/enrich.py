@@ -105,6 +105,42 @@ def edgar_competitors():
     except Exception as e:
         return {"total": None, "filers": [], "error": str(e)}
 
+# ---------------------------------------------------------------- Orphadata
+# Local, deterministic, no network: resolve each row's disease (EMA therapeutic
+# area / indication text) to an Orphanet disorder and attach rarity + age-of-onset.
+# This answers eligibility.py's rare_under_200k and primarily_pediatric criteria
+# for the rows that carry a disease name. Coverage is intentionally low and
+# precision-first — a NON-match is the correct answer for a common-disease drug.
+def enrich_orphadata(data):
+    try:
+        from orphadata import OrphaIndex, rarity, onset
+    except Exception as e:
+        print(f"  [skip] orphadata: {type(e).__name__} {e}")
+        return
+    idx = OrphaIndex()
+    n = idx.load(os.path.join(HERE, "data", "raw"))
+    if not n:
+        print("  [skip] orphadata: no XML in data/raw (run fetch.py orphadata_prev orphadata_ages)")
+        return
+    matched = 0
+    buckets = ["candidates", "dossier_only", "review", "unnamed"]
+    for b in buckets:
+        for c in data.get(b, []):
+            rec = idx.resolve(c.get("area"), c.get("indication"))
+            if not rec:
+                c["orpha"] = None
+                continue
+            rv, rev = rarity(rec)
+            ov, oev = onset(rec)
+            c["orpha"] = {"code": rec["orpha"], "name": rec["name"],
+                          "rarity": rv, "rarity_evidence": rev,
+                          "us_prevalence_est": rec.get("us_estimate"),
+                          "onset": ov, "onset_evidence": oev}
+            matched += 1
+    data["orphadata"] = {"disorders_loaded": n, "candidates_matched": matched}
+    print(f"  orphadata: {n:,} disorders loaded, {matched} rows matched to a disease")
+
+
 # ---------------------------------------------------------------- driver
 def main():
     fresh = "--fresh" in sys.argv
@@ -150,6 +186,7 @@ def main():
     json.dump(cache, open(CACHE, "w"), indent=1)
 
     if not limit:
+        enrich_orphadata(data)
         print("fetching global competitor monitor...")
         data["monitor"] = {"fedreg": fedreg_prv(), "edgar": edgar_competitors(),
                            "as_of": time.strftime("%Y-%m-%d %H:%M")}

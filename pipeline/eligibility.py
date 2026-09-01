@@ -54,17 +54,27 @@ FDA guidance further confirms that a drug approved and used abroad but never
 submitted to FDA can qualify, while a new pediatric use or formulation of a
 drug already US-approved cannot.
 
+Data sources per criterion:
+  - the exclusion test (1) is settled by rdh_diff.py (UNII/string/GSRS).
+  - rarity (2) and primarily-pediatric (3) are settled by ORPHADATA when the
+    disease resolves (orphadata.py — point prevalence + age of onset). Orphanet
+    lists only rare diseases, so a match is itself rarity evidence and a
+    common-disease drug correctly fails to match. Candidate.from_summary() pulls
+    these straight off the row['orpha'] block enrich.py attaches.
+  - seriousness (4), priority review (5) and the filing-design criteria (7-9)
+    still require a human.
+
 Usage against pipeline output:
 
+    import json
     from eligibility import Candidate, assess
-    # verdict/basis come from a funnelA row (rdh_diff.py already ran the
-    # exclusion test three layers deep); everything else is diligence input
-    a = assess(Candidate(name="tiratricol",
-                         us_exclusion_verdict="NOT_IN_US",
-                         us_prevalence=1500, pediatric_onset=True,
-                         serious_or_life_threatening=True,
-                         published_human_evidence=True,
-                         earliest_possible_approval=date(2029, 3, 1)))
+    row = json.load(open("data/out/summary.json"))["candidates"][0]
+    # rarity + onset come from Orphadata (row['orpha']); the exclusion verdict is
+    # NOT_IN_US because it is a funnelA candidate; the rest is diligence input.
+    a = assess(Candidate.from_summary(row, us_exclusion_verdict="NOT_IN_US",
+                                      serious_or_life_threatening=True,
+                                      published_human_evidence=True,
+                                      earliest_possible_approval=date(2029, 3, 1)))
     print(a.report())
 
 Stdlib only.
@@ -112,11 +122,34 @@ class Candidate:
     indication: str = ""
     disease: str = ""
     us_prevalence: int | None = None
+    prevalence_note: str = ""                  # Orphadata evidence string
     pediatric_onset: bool | None = None       # primarily affects ages 0-18
+    onset_class: str | None = None            # Orphadata: pediatric|adult|mixed|None
+    onset_note: str = ""                       # Orphadata evidence string
     serious_or_life_threatening: bool | None = None
     us_therapy_exists: bool | None = None
     published_human_evidence: bool = False
     earliest_possible_approval: date | None = None
+
+    @classmethod
+    def from_summary(cls, row: dict, **overrides):
+        """Build a Candidate from a summary.json row, pulling rarity and
+        age-of-onset straight from the Orphadata block enrich.py attached
+        (row['orpha']). Any field can be overridden by keyword — the exclusion
+        verdict, seriousness and filing-design criteria still come from
+        elsewhere. This is the wire between the pipeline output and the s.529
+        criteria set."""
+        o = row.get("orpha") or {}
+        kw = dict(
+            name=row.get("name", ""),
+            indication=row.get("indication", ""),
+            us_prevalence=o.get("us_prevalence_est"),
+            prevalence_note=o.get("rarity_evidence", ""),
+            onset_class=o.get("onset"),
+            onset_note=o.get("onset_evidence", ""),
+        )
+        kw.update(overrides)
+        return cls(**kw)
 
 
 @dataclass
@@ -174,26 +207,41 @@ def assess(cand: Candidate, today: date | None = None) -> Assessment:
         "other application under 505(b)(1), 505(b)(2) or 505(j)?",
         Decidability.MACHINE, st, note))
 
-    # ---- 2. rarity
-    if cand.us_prevalence is None:
-        st, note = Status.UNKNOWN, "US prevalence not supplied"
-    elif cand.us_prevalence < 200_000:
-        st, note = Status.PASS, f"US prevalence {cand.us_prevalence:,}"
+    # ---- 2. rarity. Orphadata point prevalence is the data source (orphadata.py):
+    #         Orphanet lists only rare diseases, so a match is itself evidence,
+    #         and the class refines it against the exact US 200,000 threshold.
+    if cand.us_prevalence is not None:
+        if cand.us_prevalence < 200_000:
+            st, note = Status.PASS, (cand.prevalence_note or f"US prevalence {cand.us_prevalence:,}")
+        else:
+            st, note = Status.FAIL, (cand.prevalence_note or
+                                     f"US prevalence {cand.us_prevalence:,} is not rare")
+    elif cand.prevalence_note:
+        # matched Orphanet but no numeric class (still a listed rare disease)
+        st, note = Status.PASS, cand.prevalence_note
     else:
-        st, note = Status.FAIL, f"US prevalence {cand.us_prevalence:,} is not rare"
+        st, note = Status.UNKNOWN, ("US prevalence not supplied; no Orphanet match "
+                                    "(a common-disease drug will not match)")
     crit.append(Criterion(
         "rare_under_200k", "s.529(a)(3)(B)",
         "Does the disease affect fewer than 200,000 people in the US?",
         Decidability.DATA, st, note))
 
-    # ---- 3. primarily pediatric. No dataset carries this as a field.
-    if cand.pediatric_onset is None:
-        st, note = Status.HUMAN, ("no database holds 'primarily affects ages "
-                                  "0-18'; must be read from the literature")
-    elif cand.pediatric_onset:
-        st, note = Status.PASS, "asserted primarily pediatric"
+    # ---- 3. primarily pediatric. Orphadata age-of-onset is the data proxy
+    #         (see orphadata.py); the statute's "primarily affects" is stricter
+    #         than "onset", so a pediatric onset is PASS, an adult onset FAIL,
+    #         and a mixed/all-ages onset stays HUMAN — a person must judge it.
+    if cand.onset_class == "pediatric" or cand.pediatric_onset is True:
+        st, note = Status.PASS, (cand.onset_note or "onset within birth-18")
+    elif cand.onset_class == "adult" or cand.pediatric_onset is False:
+        st, note = Status.FAIL, (cand.onset_note or "not primarily a pediatric population")
+    elif cand.onset_class == "mixed":
+        st, note = Status.HUMAN, (cand.onset_note or "onset spans pediatric and adult; "
+                                  "'primarily affects 0-18' is a human call")
     else:
-        st, note = Status.FAIL, "not primarily a pediatric population"
+        st, note = Status.HUMAN, ("no age-of-onset data resolved; must be read "
+                                  "from Orphadata (if the disease is listed) or "
+                                  "the literature")
     crit.append(Criterion(
         "primarily_pediatric", "s.529(a)(3)(A)",
         "Does the disease primarily affect individuals aged from birth to 18?",
