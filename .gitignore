@@ -8,3 +8,4 @@ __pycache__/
 *.env
 api-keys.md
 **/settings.local.json
+pipeline/report/_site/
