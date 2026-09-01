@@ -1,17 +1,17 @@
 {
- "generated": "2026-08-31",
- "snapshot": "UNII 4Aug2026 \u00b7 Drugs@FDA 29 Aug 2026 \u00b7 Orange Book 07 Aug 2026 \u00b7 EMA 29 Aug 2026 \u00b7 Health Canada 07 Aug 2026 \u00b7 Swissmedic 07 Aug 2026 \u00b7 PMDA 07 Aug 2026 \u00b7 GSRS relationship graph",
+ "generated": "2026-09-01",
+ "snapshot": "UNII 4Aug2026 \u00b7 Drugs@FDA 01 Sep 2026 \u00b7 Orange Book 01 Sep 2026 \u00b7 EMA 01 Sep 2026 \u00b7 Health Canada 01 Sep 2026 \u00b7 Swissmedic 01 Sep 2026 \u00b7 PMDA MISSING \u00b7 GSRS relationship graph",
  "funnel": {
-  "foreign_rows": 18017,
-  "resolved": 6490,
-  "unmatched": 11527,
+  "foreign_rows": 17877,
+  "resolved": 6489,
+  "unmatched": 11388,
   "biologic_or_mixture": 419,
-  "in_us": 2016,
+  "in_us": 2015,
   "in_us_string": 1867,
-  "in_us_gsrs": 149,
+  "in_us_gsrs": 148,
   "review": 12,
   "candidate_small_mol": 640,
-  "needs_translit_unmatched": 139,
+  "needs_translit_unmatched": 0,
   "named_drug": 342,
   "unnamed": 267,
   "no_authorisation_in_loaded_registers": 31,
@@ -19,18 +19,16 @@
    "EMA": 375,
    "EU national (Art57)": 7922,
    "Health Canada": 223,
-   "PMDA-JP": 139,
    "Swissmedic": 2868
   },
   "rows_by_source": {
    "EMA": 2292,
    "EU national (Art57)": 11900,
    "Health Canada": 715,
-   "PMDA-JP": 140,
    "Swissmedic": 2970
   }
  },
- "us_ingredient_rows": 188266,
+ "us_ingredient_rows": 188450,
  "counts": {
   "named": 342,
   "unnamed": 267,
@@ -77,8 +75,8 @@
     "Norway",
     "Portugal"
    ],
-   "pubmed": 36,
-   "trials": 35,
+   "pubmed": 37,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -237,7 +235,7 @@
     "Norway"
    ],
    "pubmed": 3,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -392,7 +390,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 209,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -572,7 +570,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 31,
-   "trials": 52,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -756,7 +754,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 12,
-   "trials": 28,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -934,7 +932,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 3,
-   "trials": 10,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -1103,7 +1101,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 8,
-   "trials": 85,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -1260,7 +1258,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 7,
-   "trials": 23,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -1411,7 +1409,7 @@
     "Spain"
    ],
    "pubmed": 6,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -1571,7 +1569,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 9,
-   "trials": 27,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -1728,7 +1726,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 15,
-   "trials": 17,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -1874,7 +1872,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 4,
-   "trials": 41,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -2003,8 +2001,8 @@
     "Liechtenstein",
     "Norway"
    ],
-   "pubmed": 40,
-   "trials": 44,
+   "pubmed": 41,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -2148,7 +2146,7 @@
     "Norway"
    ],
    "pubmed": 11,
-   "trials": 66,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -2322,7 +2320,7 @@
     "Norway"
    ],
    "pubmed": 0,
-   "trials": 27,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -2474,7 +2472,7 @@
     "Norway"
    ],
    "pubmed": 0,
-   "trials": 18,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -2612,7 +2610,7 @@
     "Norway"
    ],
    "pubmed": 16,
-   "trials": 8,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -2755,7 +2753,7 @@
     "Sweden"
    ],
    "pubmed": 2,
-   "trials": 20,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -2887,7 +2885,7 @@
     "Norway"
    ],
    "pubmed": 5,
-   "trials": 66,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -3029,7 +3027,7 @@
     "Norway"
    ],
    "pubmed": 0,
-   "trials": 12,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -3167,7 +3165,7 @@
     "Norway"
    ],
    "pubmed": 1,
-   "trials": 17,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -3301,7 +3299,7 @@
     "Norway"
    ],
    "pubmed": 0,
-   "trials": 35,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -3471,7 +3469,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -3618,7 +3616,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 12,
-   "trials": 129,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -3829,7 +3827,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 55,
-   "trials": 27,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -3975,7 +3973,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 7,
-   "trials": 15,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -4142,7 +4140,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 2,
-   "trials": 13,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -4294,7 +4292,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 10,
-   "trials": 37,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -4451,7 +4449,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 10,
-   "trials": 49,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -4620,7 +4618,7 @@
     "Sweden"
    ],
    "pubmed": 10,
-   "trials": 30,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -4768,7 +4766,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 2,
-   "trials": 21,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -4928,7 +4926,7 @@
     "Sweden"
    ],
    "pubmed": 40,
-   "trials": 40,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -5104,7 +5102,7 @@
     "Sweden"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -5257,7 +5255,7 @@
     "Sweden"
    ],
    "pubmed": 117,
-   "trials": 118,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -5463,7 +5461,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 33,
-   "trials": 66,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -5611,7 +5609,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 33,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -5768,7 +5766,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 2,
-   "trials": 20,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -5921,7 +5919,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 23,
-   "trials": 15,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -6074,7 +6072,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 2,
-   "trials": 28,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -6236,7 +6234,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 34,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -6394,7 +6392,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -6533,7 +6531,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 17,
-   "trials": 16,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -6708,7 +6706,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 49,
-   "trials": 83,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -6886,7 +6884,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 62,
-   "trials": 33,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -7024,7 +7022,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 33,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -7187,7 +7185,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 3,
-   "trials": 22,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -7354,7 +7352,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 2,
-   "trials": 103,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -7517,7 +7515,7 @@
     "Spain"
    ],
    "pubmed": 3,
-   "trials": 40,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -7692,7 +7690,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 3,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -7849,7 +7847,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 3,
-   "trials": 10,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -7986,7 +7984,7 @@
     "Spain"
    ],
    "pubmed": 1,
-   "trials": 55,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -8155,7 +8153,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 5,
-   "trials": 9,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -8296,7 +8294,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 20,
-   "trials": 12,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -8457,7 +8455,7 @@
     "Sweden"
    ],
    "pubmed": 9,
-   "trials": 17,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -8618,7 +8616,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -8752,7 +8750,7 @@
     "Sweden"
    ],
    "pubmed": 4,
-   "trials": 10,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -8896,7 +8894,7 @@
     "Slovenia"
    ],
    "pubmed": 1,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -9034,7 +9032,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -9175,7 +9173,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 15,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -9325,7 +9323,7 @@
     "Spain"
    ],
    "pubmed": 2,
-   "trials": 32,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -9475,7 +9473,7 @@
     "Slovenia"
    ],
    "pubmed": 2,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -9614,7 +9612,7 @@
     "Sweden"
    ],
    "pubmed": 1,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -9755,7 +9753,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 5,
-   "trials": 10,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -9901,7 +9899,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 2,
-   "trials": 9,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -10059,7 +10057,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -10196,7 +10194,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 10,
-   "trials": 27,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -10366,7 +10364,7 @@
     "Slovenia"
    ],
    "pubmed": 1,
-   "trials": 7,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -10507,7 +10505,7 @@
     "Slovenia"
    ],
    "pubmed": 2,
-   "trials": 29,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -10642,7 +10640,7 @@
     "Sweden"
    ],
    "pubmed": 31,
-   "trials": 11,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -10779,7 +10777,7 @@
     "Spain"
    ],
    "pubmed": 503,
-   "trials": 359,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -10968,7 +10966,7 @@
     "Spain"
    ],
    "pubmed": 11,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -11127,7 +11125,7 @@
     "Spain"
    ],
    "pubmed": 2,
-   "trials": 21,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -11276,7 +11274,7 @@
     "Spain"
    ],
    "pubmed": 9,
-   "trials": 10,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -11419,7 +11417,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -11560,7 +11558,7 @@
     "Slovakia"
    ],
    "pubmed": 34,
-   "trials": 17,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -11710,7 +11708,7 @@
     "Sweden"
    ],
    "pubmed": 16,
-   "trials": 11,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -11857,7 +11855,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 806,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -12010,7 +12008,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 5,
-   "trials": 41,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -12185,7 +12183,7 @@
     "Slovakia"
    ],
    "pubmed": 1,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -12319,7 +12317,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -12449,7 +12447,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 82,
-   "trials": 7,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -12589,7 +12587,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -12716,7 +12714,7 @@
     "Slovenia"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -12843,7 +12841,7 @@
     "Slovenia"
    ],
    "pubmed": 0,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -12976,7 +12974,7 @@
     "Slovenia"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -13110,7 +13108,7 @@
     "Romania"
    ],
    "pubmed": 3,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -13239,7 +13237,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -13390,7 +13388,7 @@
     "Spain"
    ],
    "pubmed": 2,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -13533,7 +13531,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 3,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -13671,7 +13669,7 @@
     "Slovakia"
    ],
    "pubmed": 3,
-   "trials": 376,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -13810,7 +13808,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 20,
-   "trials": 17,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -13937,7 +13935,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 2,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -14083,7 +14081,7 @@
     "Slovenia"
    ],
    "pubmed": 0,
-   "trials": 7,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -14209,7 +14207,7 @@
     "Spain"
    ],
    "pubmed": 4,
-   "trials": 21,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -14353,7 +14351,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 4,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -14489,7 +14487,7 @@
     "Spain"
    ],
    "pubmed": 1,
-   "trials": 9,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -14630,7 +14628,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 12,
-   "trials": 42,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -14774,7 +14772,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 3,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -14905,7 +14903,7 @@
     "Slovakia"
    ],
    "pubmed": 1,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -15040,7 +15038,7 @@
     "Sweden"
    ],
    "pubmed": 0,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -15188,7 +15186,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -15318,7 +15316,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 8,
-   "trials": 87,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -15496,7 +15494,7 @@
     "Portugal"
    ],
    "pubmed": 2,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -15626,7 +15624,7 @@
     "Spain"
    ],
    "pubmed": 2,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -15768,7 +15766,7 @@
     "Spain"
    ],
    "pubmed": 1,
-   "trials": 10,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -15918,7 +15916,7 @@
     "Sweden"
    ],
    "pubmed": 7,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -16060,7 +16058,7 @@
     "Spain"
    ],
    "pubmed": 53,
-   "trials": 21,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -16194,7 +16192,7 @@
     "Spain"
    ],
    "pubmed": 1,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -16345,7 +16343,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -16475,7 +16473,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 5,
-   "trials": 16,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -16615,7 +16613,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 9,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -16744,7 +16742,7 @@
     "Netherlands"
    ],
    "pubmed": 19,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -16867,7 +16865,7 @@
     "Sweden"
    ],
    "pubmed": 6,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -16993,7 +16991,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -17116,7 +17114,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -17246,7 +17244,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -17369,7 +17367,7 @@
     "Portugal"
    ],
    "pubmed": 3,
-   "trials": 15,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -17499,7 +17497,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 49,
-   "trials": 7250,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -17686,7 +17684,7 @@
     "Spain"
    ],
    "pubmed": 6,
-   "trials": 72,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -17850,7 +17848,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -17972,7 +17970,7 @@
     "Spain"
    ],
    "pubmed": 9,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -18097,7 +18095,7 @@
     "Netherlands"
    ],
    "pubmed": 3,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -18245,7 +18243,7 @@
     "Romania"
    ],
    "pubmed": 0,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -18367,7 +18365,7 @@
     "Slovenia"
    ],
    "pubmed": 18,
-   "trials": 25,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -18497,7 +18495,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 8,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -18619,7 +18617,7 @@
     "Portugal"
    ],
    "pubmed": 8,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -18741,7 +18739,7 @@
     "Poland"
    ],
    "pubmed": 2,
-   "trials": 20,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -18862,7 +18860,7 @@
     "Slovakia"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -18983,7 +18981,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -19110,7 +19108,7 @@
     "Spain"
    ],
    "pubmed": 4,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -19231,7 +19229,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -19352,7 +19350,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -19489,7 +19487,7 @@
     "Spain"
    ],
    "pubmed": 2,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -19624,7 +19622,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -19745,7 +19743,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -19866,7 +19864,7 @@
     "Slovakia"
    ],
    "pubmed": 4,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -19989,7 +19987,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 22,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -20113,7 +20111,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -20234,7 +20232,7 @@
     "Slovakia"
    ],
    "pubmed": 1,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -20360,7 +20358,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -20493,7 +20491,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 285,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -20695,7 +20693,7 @@
     "Lithuania"
    ],
    "pubmed": 3,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -20824,7 +20822,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 20,
-   "trials": 8,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -20960,7 +20958,7 @@
     "Poland"
    ],
    "pubmed": 12,
-   "trials": 25,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -21098,7 +21096,7 @@
     "Romania"
    ],
    "pubmed": 3,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -21224,7 +21222,7 @@
     "Netherlands"
    ],
    "pubmed": 2,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -21350,7 +21348,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 14,
-   "trials": 44,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -21500,7 +21498,7 @@
     "Poland"
    ],
    "pubmed": 4,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -21630,7 +21628,7 @@
     "Romania"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -21756,7 +21754,7 @@
     "Spain"
    ],
    "pubmed": 1,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -21876,7 +21874,7 @@
     "Poland"
    ],
    "pubmed": 4,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -22000,7 +21998,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 25,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -22151,7 +22149,7 @@
     "Lithuania"
    ],
    "pubmed": 0,
-   "trials": 69,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -22317,7 +22315,7 @@
     "Luxembourg"
    ],
    "pubmed": 3,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -22444,7 +22442,7 @@
     "Malta"
    ],
    "pubmed": 2,
-   "trials": 47,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -22563,7 +22561,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -22687,7 +22685,7 @@
     "Luxembourg"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -22808,7 +22806,7 @@
     "Netherlands"
    ],
    "pubmed": 0,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -22949,7 +22947,7 @@
     "Malta"
    ],
    "pubmed": 19,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -23079,7 +23077,7 @@
     "Spain"
    ],
    "pubmed": 1,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -23210,7 +23208,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 3,
-   "trials": 5,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -23329,7 +23327,7 @@
     "Spain"
    ],
    "pubmed": 4,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -23453,7 +23451,7 @@
     "Luxembourg"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -23580,7 +23578,7 @@
     "Italy"
    ],
    "pubmed": 4,
-   "trials": 39,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -23758,7 +23756,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -23882,7 +23880,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -24006,7 +24004,7 @@
     "Netherlands"
    ],
    "pubmed": 0,
-   "trials": 19,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -24147,7 +24145,7 @@
     "Slovakia"
    ],
    "pubmed": 0,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -24284,7 +24282,7 @@
     "Slovakia"
    ],
    "pubmed": 0,
-   "trials": 14,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -24413,7 +24411,7 @@
     "Netherlands"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -24534,7 +24532,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 30,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -24677,7 +24675,7 @@
     "Slovakia"
    ],
    "pubmed": 12,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -24802,7 +24800,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -24927,7 +24925,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 10,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -25053,7 +25051,7 @@
     "Luxembourg"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -25196,7 +25194,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 34,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -25337,7 +25335,7 @@
     "Spain"
    ],
    "pubmed": 26,
-   "trials": 85,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -25513,7 +25511,7 @@
     "Romania"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -25631,7 +25629,7 @@
     "Luxembourg"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -25758,7 +25756,7 @@
     "Spain"
    ],
    "pubmed": 3,
-   "trials": 13,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -25890,7 +25888,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -26014,7 +26012,7 @@
     "Spain"
    ],
    "pubmed": 1,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -26135,7 +26133,7 @@
     "Spain"
    ],
    "pubmed": 4,
-   "trials": 31,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -26255,7 +26253,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 3,
-   "trials": 27,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -26376,7 +26374,7 @@
     "Poland"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -26496,7 +26494,7 @@
     "Malta"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -26620,7 +26618,7 @@
     "Poland"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -26738,7 +26736,7 @@
     "Luxembourg"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -26856,7 +26854,7 @@
     "Czech Republic"
    ],
    "pubmed": 1,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -26979,7 +26977,7 @@
     "Spain"
    ],
    "pubmed": 1,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -27103,7 +27101,7 @@
     "Luxembourg"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -27229,7 +27227,7 @@
     "Poland"
    ],
    "pubmed": 0,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -27371,7 +27369,7 @@
     "Luxembourg"
    ],
    "pubmed": 6,
-   "trials": 9,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -27507,7 +27505,7 @@
     "Romania"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -27630,7 +27628,7 @@
     "Norway"
    ],
    "pubmed": 0,
-   "trials": 12,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -27780,7 +27778,7 @@
     "Portugal"
    ],
    "pubmed": 7,
-   "trials": 15,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -27903,7 +27901,7 @@
     "Romania"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -28026,7 +28024,7 @@
     "Portugal"
    ],
    "pubmed": 1,
-   "trials": 8,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -28166,7 +28164,7 @@
     "Lithuania"
    ],
    "pubmed": 3,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -28293,7 +28291,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -28411,7 +28409,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -28534,7 +28532,7 @@
     "Greece"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -28656,7 +28654,7 @@
     "Poland"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -28778,7 +28776,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 2,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -28917,7 +28915,7 @@
     "Italy"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -29039,7 +29037,7 @@
     "Germany"
    ],
    "pubmed": 7,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -29156,7 +29154,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -29283,7 +29281,7 @@
     "Romania"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -29408,7 +29406,7 @@
     "Poland"
    ],
    "pubmed": 2,
-   "trials": 28,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -29535,7 +29533,7 @@
     "Poland"
    ],
    "pubmed": 1,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -29657,7 +29655,7 @@
     "Luxembourg"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -29776,7 +29774,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -29903,7 +29901,7 @@
     "Portugal"
    ],
    "pubmed": 1,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -30025,7 +30023,7 @@
     "Romania"
    ],
    "pubmed": 5,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -30142,7 +30140,7 @@
     "Germany"
    ],
    "pubmed": 4,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -30269,7 +30267,7 @@
     "Slovakia"
    ],
    "pubmed": 1,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -30386,7 +30384,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 1,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -30529,7 +30527,7 @@
     "Slovakia"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -30648,7 +30646,7 @@
     "Portugal"
    ],
    "pubmed": 2,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -30770,7 +30768,7 @@
     "Luxembourg"
    ],
    "pubmed": 3,
-   "trials": 14,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -30893,7 +30891,7 @@
     "Spain"
    ],
    "pubmed": 1,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -31011,7 +31009,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -31134,7 +31132,7 @@
     "Poland"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -31257,7 +31255,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -31380,7 +31378,7 @@
     "Italy"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -31497,7 +31495,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -31619,7 +31617,7 @@
     "Italy"
    ],
    "pubmed": 4,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -31741,7 +31739,7 @@
     "Netherlands"
    ],
    "pubmed": 4,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -31863,7 +31861,7 @@
     "Netherlands"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -31982,7 +31980,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 2,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -32106,7 +32104,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -32233,7 +32231,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -32350,7 +32348,7 @@
     "Hungary"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -32467,7 +32465,7 @@
     "Lithuania"
    ],
    "pubmed": 2,
-   "trials": 15,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -32602,7 +32600,7 @@
     "Romania"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -32741,7 +32739,7 @@
     "Lithuania"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -32863,7 +32861,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -32980,7 +32978,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -33097,7 +33095,7 @@
     "Slovakia"
    ],
    "pubmed": 2,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -33223,7 +33221,7 @@
     "Slovakia"
    ],
    "pubmed": 1,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -33340,7 +33338,7 @@
     "Italy"
    ],
    "pubmed": 9,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -33462,7 +33460,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -33584,7 +33582,7 @@
     "Slovakia"
    ],
    "pubmed": 0,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -33708,7 +33706,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -33824,7 +33822,7 @@
     "Spain"
    ],
    "pubmed": 1,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -33940,7 +33938,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -34056,7 +34054,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -34172,7 +34170,7 @@
     "France"
    ],
    "pubmed": 1,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -34288,7 +34286,7 @@
     "Greece"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -34411,7 +34409,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 4,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -34527,7 +34525,7 @@
     "Portugal"
    ],
    "pubmed": 42,
-   "trials": 241,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -34643,7 +34641,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -34764,7 +34762,7 @@
     "Italy"
    ],
    "pubmed": 1,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -34890,7 +34888,7 @@
     "Germany"
    ],
    "pubmed": 2,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -35006,7 +35004,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -35122,7 +35120,7 @@
     "Romania"
    ],
    "pubmed": 1,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -35243,7 +35241,7 @@
     "Austria"
    ],
    "pubmed": 0,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -35364,7 +35362,7 @@
     "Greece"
    ],
    "pubmed": 6,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -35487,7 +35485,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 2,
-   "trials": 7,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -35609,7 +35607,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -35727,7 +35725,7 @@
     "France"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -35852,7 +35850,7 @@
     "France"
    ],
    "pubmed": 3,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -35968,7 +35966,7 @@
     "Italy"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -36089,7 +36087,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -36205,7 +36203,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -36321,7 +36319,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -36442,7 +36440,7 @@
     "France"
    ],
    "pubmed": 2,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -36565,7 +36563,7 @@
     "Italy"
    ],
    "pubmed": 2,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -36681,7 +36679,7 @@
     "Latvia"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -36797,7 +36795,7 @@
     "Poland"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -36913,7 +36911,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -37031,7 +37029,7 @@
     "Italy"
    ],
    "pubmed": 4,
-   "trials": 7,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -37157,7 +37155,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -37273,7 +37271,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -37389,7 +37387,7 @@
     "Italy"
    ],
    "pubmed": 1,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -37510,7 +37508,7 @@
     "Germany"
    ],
    "pubmed": 3,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -37626,7 +37624,7 @@
     "Italy"
    ],
    "pubmed": 35,
-   "trials": 39,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -37742,7 +37740,7 @@
     "France"
    ],
    "pubmed": 4,
-   "trials": 14,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -37876,7 +37874,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -38006,7 +38004,7 @@
     "France"
    ],
    "pubmed": 4,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -38132,7 +38130,7 @@
     "Italy"
    ],
    "pubmed": 2,
-   "trials": 9,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -38254,7 +38252,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 41,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -38370,7 +38368,7 @@
     "France"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -38491,7 +38489,7 @@
     "Italy"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -38612,7 +38610,7 @@
     "France"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -38734,7 +38732,7 @@
     "France"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -38860,7 +38858,7 @@
     "France"
    ],
    "pubmed": 26,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -38986,7 +38984,7 @@
     "Hungary"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -39102,7 +39100,7 @@
     "France"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -39218,7 +39216,7 @@
     "France"
    ],
    "pubmed": 3,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -39349,7 +39347,7 @@
     "Czech Republic"
    ],
    "pubmed": 0,
-   "trials": 18,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -39470,7 +39468,7 @@
     "Spain"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -39588,7 +39586,7 @@
     "Cyprus"
    ],
    "pubmed": 17,
-   "trials": 627,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -39715,7 +39713,7 @@
     "France"
    ],
    "pubmed": 4,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -39836,7 +39834,7 @@
     "France"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -39964,7 +39962,7 @@
     "Italy"
    ],
    "pubmed": 13,
-   "trials": 7,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -40080,7 +40078,7 @@
     "Latvia"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -40202,7 +40200,7 @@
     "Norway"
    ],
    "pubmed": 0,
-   "trials": 10,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -40335,7 +40333,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -40457,7 +40455,7 @@
     "Italy"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -40578,7 +40576,7 @@
     "France"
    ],
    "pubmed": 2,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -40701,7 +40699,7 @@
     "Italy"
    ],
    "pubmed": 10,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -40827,7 +40825,7 @@
     "France"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -40948,7 +40946,7 @@
     "Latvia"
    ],
    "pubmed": 0,
-   "trials": 2,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -41066,7 +41064,7 @@
     "Hungary"
    ],
    "pubmed": 4,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -41188,7 +41186,7 @@
     "Greece"
    ],
    "pubmed": 2,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -41310,7 +41308,7 @@
     "France"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -41433,7 +41431,7 @@
     "Italy"
    ],
    "pubmed": 18,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -41554,7 +41552,7 @@
     "Italy"
    ],
    "pubmed": 0,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -41675,7 +41673,7 @@
     "Italy"
    ],
    "pubmed": 3,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -41792,7 +41790,7 @@
     "France"
    ],
    "pubmed": 0,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -41910,7 +41908,7 @@
     "Germany"
    ],
    "pubmed": 7,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -42048,7 +42046,7 @@
     "France"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -42170,7 +42168,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -42286,7 +42284,7 @@
     "Greece"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -42402,7 +42400,7 @@
     "Poland"
    ],
    "pubmed": 1,
-   "trials": 8,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -42523,7 +42521,7 @@
     "United Kingdom (Northern Ireland)"
    ],
    "pubmed": 0,
-   "trials": 22,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -42660,7 +42658,7 @@
     "Germany"
    ],
    "pubmed": 1,
-   "trials": 1,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -42786,7 +42784,7 @@
     "Italy"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -42907,7 +42905,7 @@
     "Italy"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -43030,7 +43028,7 @@
     "Germany"
    ],
    "pubmed": 3,
-   "trials": 55,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -43146,7 +43144,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -43269,7 +43267,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -43385,7 +43383,7 @@
     "Latvia"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -43501,7 +43499,7 @@
     "Germany"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -43622,7 +43620,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -43743,7 +43741,7 @@
     "Latvia"
    ],
    "pubmed": 1,
-   "trials": 3,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -43859,7 +43857,7 @@
     "Germany"
    ],
    "pubmed": 11,
-   "trials": 4,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -43993,7 +43991,7 @@
     "Portugal"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -44115,7 +44113,7 @@
     "France"
    ],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -44236,7 +44234,7 @@
     "Romania"
    ],
    "pubmed": 2,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -44358,7 +44356,7 @@
     "Italy"
    ],
    "pubmed": 1,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -44479,7 +44477,7 @@
    "n_countries": 0,
    "countries": [],
    "pubmed": 34,
-   "trials": 34,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -44631,7 +44629,7 @@
    "n_countries": 0,
    "countries": [],
    "pubmed": 0,
-   "trials": 80,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -44772,7 +44770,7 @@
    "n_countries": 0,
    "countries": [],
    "pubmed": 1,
-   "trials": 16,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -44895,7 +44893,7 @@
    "n_countries": 0,
    "countries": [],
    "pubmed": 0,
-   "trials": 9,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -45024,7 +45022,7 @@
    "n_countries": 0,
    "countries": [],
    "pubmed": 0,
-   "trials": 0,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -45138,7 +45136,7 @@
    "n_countries": 0,
    "countries": [],
    "pubmed": 0,
-   "trials": 6,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [],
    "orpha": null,
@@ -45252,7 +45250,7 @@
    "n_countries": 0,
    "countries": [],
    "pubmed": 3,
-   "trials": 18,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -45403,7 +45401,7 @@
    "n_countries": 0,
    "countries": [],
    "pubmed": 10,
-   "trials": 48,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -45586,7 +45584,7 @@
    "n_countries": 0,
    "countries": [],
    "pubmed": 10,
-   "trials": 24,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -45721,7 +45719,7 @@
    "n_countries": 0,
    "countries": [],
    "pubmed": 0,
-   "trials": 8,
+   "trials": null,
    "us_orphan": "unknown",
    "chembl": [
     {
@@ -59999,6 +59997,6 @@
     }
    ]
   },
-  "as_of": "2026-08-31 18:36"
+  "as_of": "2026-09-01 11:35"
  }
 }
