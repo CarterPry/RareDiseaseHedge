@@ -238,11 +238,11 @@ Generated: {bio.get("generated", "")}
 
 ## Pages
 - [Almanac (home)]({BASE_URL}/): searchable shortlist, PRV market charts, pipeline breadth, approval map
-- [Candidate table, static HTML]({BASE_URL}/candidates.html): all candidates in one plain table, no JavaScript needed
+- [Candidate table, static HTML]({BASE_URL}/candidates): all candidates in one plain table, no JavaScript needed
 - [Full candidate list, plain text]({BASE_URL}/llms-full.txt): one section per candidate incl. the \u00a7529 checklist
 - [Card-list dashboard]({BASE_URL}/list/): interactive cards with notes export/import
-- [Funnel report]({BASE_URL}/funnel.html): how 18k foreign approval rows narrow to the shortlist
-- [Accuracy audit]({BASE_URL}/audit.html): harness results and known limitations
+- [Funnel report]({BASE_URL}/funnel): how 18k foreign approval rows narrow to the shortlist
+- [Accuracy audit]({BASE_URL}/audit): harness results and known limitations
 - [Raw pipeline output, JSON]({BASE_URL}/data/summary.json): everything above, machine-readable
 
 ## Notes
@@ -317,7 +317,7 @@ Sitemap: {base}/sitemap.xml
 
 
 def sitemap_xml(bio):
-    pages = ["/", "/candidates.html", "/list/", "/funnel.html", "/audit.html",
+    pages = ["/", "/candidates", "/list/", "/funnel", "/audit",  # Pages serves clean URLs; .html 308s to these
              "/llms.txt", "/llms-full.txt", "/data/summary.json"]
     mod = bio.get("generated") or ""
     lm = f"<lastmod>{mod}</lastmod>" if mod else ""
@@ -379,7 +379,7 @@ def main():
     # were returning index.html with HTTP 200)
     write("404.html", DOC_SHELL.format(title="Not found",
           body="<h1>Not found</h1><p>That page does not exist. Try the "
-               "<a href=\"/\">almanac</a>, the <a href=\"/candidates.html\">candidate table</a> "
+               "<a href=\"/\">almanac</a>, the <a href=\"/candidates\">candidate table</a> "
                "or <a href=\"/llms.txt\">llms.txt</a> for a map of the site.</p>"))
 
     files = sum(len(fs) for _, _, fs in os.walk(SITE))
