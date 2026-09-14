@@ -8,6 +8,17 @@ Layout served at the domain root:
   /funnel.html   -> the pipeline funnel report (rendered from markdown)
   /audit.html    -> the accuracy audit (rendered from markdown)
   /data/summary.json -> the raw pipeline output
+  /candidates.html -> static, no-JavaScript table of every candidate (for
+                      crawlers, AI fetchers, reader modes)
+  /llms.txt, /llms-full.txt -> plain-text site guide + the full candidate list
+  /robots.txt, /sitemap.xml -> crawlers are welcome (search + AI). The site is
+                      meant to be read by AI assistants; do not reintroduce a
+                      Disallow here.
+  /404.html        -> real 404 so Cloudflare Pages stops serving index.html with
+                      200 for unknown paths (soft-404s confuse crawlers)
+
+The almanac's shortlist is also pre-rendered into index.html (#slList) so the
+candidates are present in the raw HTML; app.js re-renders it on load.
 
 The almanac's "Explore" cards are rewritten to these in-site paths (their repo
 relative links do not resolve once deployed).
@@ -15,12 +26,13 @@ relative links do not resolve once deployed).
 Run:  python3 pipeline/report/build_site.py
 Deps: stdlib only.
 """
-import os, re, shutil, html
+import os, re, shutil, html, json
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 PIPE = os.path.join(ROOT, "pipeline")
 SITE = os.path.join(HERE, "_site")
+BASE_URL = "https://rarediseasehedge.carterpry.com"
 
 
 # --------------------------------------------------------------- markdown -> html
@@ -98,13 +110,225 @@ blockquote{{border-left:3px solid var(--sky);margin:14px 0;padding:6px 16px;colo
 ul{{padding-left:22px}} li{{margin:4px 0}} p{{margin:12px 0}}
 </style></head><body>
 <div class="bar"><div class="wrap"><span class="brand">rarediseasehedge</span>
-<a href="./">← Almanac</a><a href="list/">Card list</a><a href="funnel.html">Funnel</a><a href="audit.html">Audit</a></div></div>
+<a href="./">← Almanac</a><a href="candidates.html">Candidates</a><a href="list/">Card list</a><a href="funnel.html">Funnel</a><a href="audit.html">Audit</a></div></div>
 <main class="wrap">{body}</main></body></html>"""
 
 
 def render_doc(md_path, title):
     with open(md_path, encoding="utf-8") as fh:
         return DOC_SHELL.format(title=html.escape(title), body=md_to_html(fh.read()))
+
+
+# --------------------------------------------------------- crawler-facing output
+def load_bio():
+    """Parse the generated data.js (`window.BIO = {...};`) back into a dict."""
+    with open(os.path.join(HERE, "data.js"), encoding="utf-8") as fh:
+        js = fh.read()
+    return json.loads(js[js.index("{"): js.rindex("}") + 1])
+
+
+def sorted_cands(bio):
+    """Same default order as app.js slRender(): widest EEA reach, then name."""
+    return sorted(bio.get("candidates", []), key=lambda c: (-(c.get("nc") or 0), c.get("name", "")))
+
+
+def cand_disease(c):
+    o = c.get("orpha") or {}
+    return (o.get("disease") or c.get("area") or c.get("disease")
+            or (c.get("ind") or "").rstrip(".") or "—")
+
+
+def cand_badges(c):
+    b = []
+    if c.get("orphan"): b.append("orphan")
+    o = c.get("orpha") or {}
+    if o.get("rarity") == "rare": b.append("rare disease")
+    if o.get("onset") == "pediatric": b.append("pediatric onset")
+    if c.get("eu_orphan"): b.append("EU orphan designation")
+    if c.get("crl"): b.append("US filed & refused")
+    if len(c.get("sources") or []) > 1: b.append("multi-regulator")
+    if c.get("fs") == "previously_authorised": b.append("licence pulled")
+    return b
+
+
+def cand_sources(c):
+    return [x.replace("EU national (Art57)", "EEA national").replace(" (Art57)", "")
+            for x in (c.get("sources") or [])]
+
+
+def static_shortlist_html(bio):
+    """Server-side twin of app.js slCard() for the raw HTML of index.html."""
+    e = lambda v: html.escape(str(v), quote=True)
+    out = []
+    for c in sorted_cands(bio):
+        dz = cand_disease(c)
+        badges = "".join(f'<span class="badge">{e(b)}</span>' for b in cand_badges(c))
+        src = "".join(f'<span class="badge badge-src">{e(x)}</span>' for x in cand_sources(c))
+        pm = c.get("pubmed"); tr = c.get("trials")
+        atc = f'<span>ATC <b>{e(c["atc"])}</b></span>' if c.get("atc") else ""
+        out.append(
+            f'<div class="sl-card" data-name="{e(c["name"])}" tabindex="0" role="button">'
+            f'<div class="sl-card-top"><span class="sl-name">{e(c["name"])}</span>'
+            f'<span class="sl-reach"><b>{c.get("nc") or 0}</b> EEA</span></div>'
+            f'<div class="sl-dz">{e(dz if len(dz) <= 96 else dz[:96] + "…")}</div>'
+            f'<div class="sl-badges">{badges}</div><div class="sl-badges">{src}</div>'
+            f'<div class="sl-foot"><span>papers <b>{pm if pm is not None else "—"}</b></span>'
+            f'<span>trials <b>{tr if tr is not None else "—"}</b></span>{atc}</div></div>')
+    return "\n".join(out)
+
+
+def candidates_page(bio):
+    """A plain HTML table of every candidate — readable with JavaScript off."""
+    e = lambda v: html.escape(str(v), quote=False)
+    rows = []
+    for c in sorted_cands(bio):
+        el = (c.get("elig") or {}).get("verdict", "")
+        rows.append("<tr>"
+            f'<td><strong>{e(c["name"])}</strong><br><code>{e(c.get("moiety") or "")}</code></td>'
+            f'<td>{e(cand_disease(c))}</td>'
+            f'<td>{e(c.get("ind") or "")}</td>'
+            f'<td>{e(", ".join(cand_sources(c)))}</td>'
+            f'<td>{c.get("nc") or 0}</td>'
+            f'<td>{e(c.get("fs") or "")}</td>'
+            f'<td>{e(", ".join(cand_badges(c)) or "—")}</td>'
+            f'<td>{e(c.get("atc") or "—")}</td>'
+            f'<td>{c.get("pubmed") if c.get("pubmed") is not None else "—"}</td>'
+            f'<td>{c.get("trials") if c.get("trials") is not None else "—"}</td>'
+            f'<td>{e(el.replace("_", " ").lower())}</td>'
+            "</tr>")
+    n = len(rows)
+    body = (f"<h1>{n} candidates</h1>"
+            f"<p>Every drug in the RareDiseaseHedge \u201cFunnel A\u201d screen: a real marketing "
+            f"authorisation from a foreign regulator (EMA, EEA national, Health Canada, Swissmedic, PMDA) "
+            f"whose active moiety has <strong>never been approved in the United States</strong> \u2014 the "
+            f"population FD&amp;C Act \u00a7529 makes eligible for a rare-pediatric Priority Review Voucher. "
+            f"Sorted by how many EEA countries authorise the drug (widest reach first).</p>"
+            f"<p>Data snapshot: {e(bio.get('snapshot',''))}. Generated {e(bio.get('generated',''))}. "
+            f"Also available as <a href=\"llms-full.txt\">plain text</a> and "
+            f"<a href=\"data/summary.json\">raw JSON</a>; the interactive version with the per-candidate "
+            f"\u00a7529 checklist is on the <a href=\"./#shortlist\">almanac</a> and the <a href=\"list/\">card list</a>.</p>"
+            "<table><thead><tr><th>Drug / moiety</th><th>Disease</th><th>Indication</th><th>Approved by</th>"
+            "<th>EEA countries</th><th>Status</th><th>Flags</th><th>ATC</th><th>Papers</th><th>Trials</th>"
+            "<th>\u00a7529 verdict</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table>")
+    return DOC_SHELL.format(title=f"{n} candidates", body=body)
+
+
+def llms_txt(bio):
+    h = bio.get("headline", {})
+    return f"""# RareDiseaseHedge \u2014 State of Bio 2026
+
+> A screen of drugs approved by a foreign regulator (EMA, EEA national registers via
+> the EMA Article 57 database, Health Canada, Swissmedic, PMDA) whose active moiety has
+> never been approved in the United States. That is the population the FD&C Act
+> \u00a7529 makes eligible for a rare-pediatric Priority Review Voucher (PRV). Each
+> candidate carries a machine-drafted \u00a7529 eligibility checklist plus PubMed,
+> ClinicalTrials.gov, ChEMBL, Orphadata, EU orphan-designation and FDA complete-response
+> signals. Automated agents and AI assistants are welcome to read every page here.
+
+Data snapshot: {bio.get("snapshot", "")}
+Generated: {bio.get("generated", "")}
+
+## Headline numbers
+- Candidates (approved abroad, never in the US): {h.get("candidates")}
+- Multi-regulator candidates: {h.get("multi_regulator")}
+- Dossier-only (unnamed) rows: {h.get("dossier_only")}; rows queued for human review: {h.get("review")}
+- Foreign approval rows screened: {h.get("foreign_rows")}; of which already in the US record: {h.get("in_us")}
+- Disclosed PRV sales tracked (SEC 8-K): {h.get("deals")}; 2026 range US$ {h.get("prv_low")}M\u2013{h.get("prv_high")}M; record US$ {h.get("peak")}M (2015)
+- Months until the rare-pediatric PRV programme sunset: {h.get("months_to_sunset")}
+
+## Pages
+- [Almanac (home)]({BASE_URL}/): searchable shortlist, PRV market charts, pipeline breadth, approval map
+- [Candidate table, static HTML]({BASE_URL}/candidates.html): all candidates in one plain table, no JavaScript needed
+- [Full candidate list, plain text]({BASE_URL}/llms-full.txt): one section per candidate incl. the \u00a7529 checklist
+- [Card-list dashboard]({BASE_URL}/list/): interactive cards with notes export/import
+- [Funnel report]({BASE_URL}/funnel.html): how 18k foreign approval rows narrow to the shortlist
+- [Accuracy audit]({BASE_URL}/audit.html): harness results and known limitations
+- [Raw pipeline output, JSON]({BASE_URL}/data/summary.json): everything above, machine-readable
+
+## Notes
+- Charts labelled "RDH pipeline" and "SEC 8-K filings" are real data; charts labelled "Illustrative" (disease areas, modalities) are design placeholders.
+- Nothing on this site is investment, legal, business or tax advice.
+"""
+
+
+def llms_full_txt(bio):
+    parts = [llms_txt(bio), "\n## Candidates (widest EEA reach first)\n"]
+    for c in sorted_cands(bio):
+        parts.append(f"\n### {c['name']}\n")
+        parts.append(f"- Active moiety: {c.get('moiety') or '—'}" + (f" (UNII {c['unii']})" if c.get("unii") else ""))
+        parts.append(f"- Disease: {cand_disease(c)}")
+        if c.get("ind"): parts.append(f"- Indication: {c['ind']}")
+        parts.append(f"- Approved by: {', '.join(cand_sources(c)) or '—'}; authorised in {c.get('nc') or 0} EEA countries; status: {c.get('fs') or '—'}")
+        b = cand_badges(c)
+        if b: parts.append(f"- Flags: {', '.join(b)}")
+        if c.get("atc"): parts.append(f"- ATC: {c['atc']}")
+        parts.append(f"- Research activity: {c.get('pubmed') if c.get('pubmed') is not None else '—'} PubMed papers, {c.get('trials') if c.get('trials') is not None else '—'} registered trials")
+        if c.get("chembl"): parts.append(f"- ChEMBL indications: {', '.join(c['chembl'])}")
+        eo = c.get("eu_orphan")
+        if eo: parts.append(f"- EU orphan designation: {eo.get('use') or ''} ({eo.get('status') or ''})")
+        o = c.get("orpha")
+        if o: parts.append(f"- Orphadata: {o.get('disease') or ''}; rarity {o.get('rarity') or '?'}; onset {o.get('onset') or '?'}")
+        if c.get("crl"): parts.append(f"- US complete response letter on file: {c['crl'] if isinstance(c['crl'], str) else 'yes'}")
+        el = c.get("elig")
+        if el:
+            parts.append(f"- \u00a7529 verdict: {el.get('verdict', '').replace('_', ' ')}")
+            for cr in el.get("criteria", []):
+                parts.append(f"  - [{cr.get('status')}] {cr.get('key', '').replace('_', ' ')}: {cr.get('note', '')} ({cr.get('citation', '')})")
+        for f in c.get("flags") or []:
+            parts.append(f"- Note: {f}")
+    return "\n".join(parts) + "\n"
+
+
+ROBOTS_TXT = """# RareDiseaseHedge — crawlers, search engines and AI assistants are welcome.
+# This site exists to be read; please index it and cite it.
+User-agent: *
+Allow: /
+
+# Explicit allows for AI fetchers/crawlers (some check for a named record).
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: CCBot
+User-agent: DuckAssistBot
+User-agent: meta-externalagent
+User-agent: Bytespider
+User-agent: cohere-ai
+User-agent: MistralAI-User
+User-agent: YouBot
+Allow: /
+
+# Content Signals (contentsignals.org): search, AI answers and AI training all OK.
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Sitemap: {base}/sitemap.xml
+"""
+
+
+def sitemap_xml(bio):
+    pages = ["/", "/candidates.html", "/list/", "/funnel.html", "/audit.html",
+             "/llms.txt", "/llms-full.txt", "/data/summary.json"]
+    mod = bio.get("generated") or ""
+    lm = f"<lastmod>{mod}</lastmod>" if mod else ""
+    urls = "".join(f"<url><loc>{BASE_URL}{p}</loc>{lm}</url>" for p in pages)
+    return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n'
+
+
+def write(path, text):
+    with open(os.path.join(SITE, path), "w", encoding="utf-8") as fh:
+        fh.write(text)
+
 
 
 def main():
@@ -119,6 +343,14 @@ def main():
     idx = (idx.replace('href="../ui/index.html"', 'href="list/"')
               .replace('href="../data/out/funnel_report.md"', 'href="funnel.html"')
               .replace('href="../../AUDIT-2026-08-29.md"', 'href="audit.html"'))
+    # pre-render the shortlist so the candidates exist in the raw HTML (AI
+    # fetchers, search crawlers and reader modes rarely execute app.js)
+    bio = load_bio()
+    n = len(bio.get("candidates", []))
+    idx = idx.replace('<span id="slCount">—</span>', f'<span id="slCount">{n}</span>', 1)
+    idx = idx.replace('<div class="sl-list" id="slList"></div>',
+                      '<div class="sl-list" id="slList">\n' + static_shortlist_html(bio) + '\n</div>', 1)
+    assert 'id="slList">\n<div class="sl-card"' in idx, "shortlist pre-render anchor not found"
     with open(os.path.join(SITE, "index.html"), "w", encoding="utf-8") as fh:
         fh.write(idx)
     for f in ("style.css", "app.js", "data.js"):
@@ -136,9 +368,19 @@ def main():
     # 4) raw data
     shutil.copy(os.path.join(PIPE, "data", "out", "summary.json"),
                 os.path.join(SITE, "data", "summary.json"))
-    # noindex helper so search engines don't index the demo
-    with open(os.path.join(SITE, "robots.txt"), "w") as fh:
-        fh.write("User-agent: *\nDisallow: /\n")
+    # 5) crawler / AI-assistant facing files. The site WANTS to be read by
+    #    bots (the old "noindex" robots.txt made ChatGPT/Claude refuse to fetch).
+    write("robots.txt", ROBOTS_TXT.format(base=BASE_URL))
+    write("sitemap.xml", sitemap_xml(bio))
+    write("llms.txt", llms_txt(bio))
+    write("llms-full.txt", llms_full_txt(bio))
+    write("candidates.html", candidates_page(bio))
+    # a real 404.html switches Cloudflare Pages out of SPA mode (unknown paths
+    # were returning index.html with HTTP 200)
+    write("404.html", DOC_SHELL.format(title="Not found",
+          body="<h1>Not found</h1><p>That page does not exist. Try the "
+               "<a href=\"/\">almanac</a>, the <a href=\"/candidates.html\">candidate table</a> "
+               "or <a href=\"/llms.txt\">llms.txt</a> for a map of the site.</p>"))
 
     files = sum(len(fs) for _, _, fs in os.walk(SITE))
     print(f"built {SITE} ({files} files) — deploy with:")
