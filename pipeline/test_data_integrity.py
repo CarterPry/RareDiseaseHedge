@@ -27,6 +27,16 @@ def main():
     check(d["counts"]["named"] == len(cands),
           f"counts.named ({d['counts']['named']}) == len(candidates) ({len(cands)})")
 
+    # ---- every foreign register contributed a plausible row count ----
+    # (a file that downloads but parses to 0 rows is otherwise only a WARNING;
+    # 306/338 candidates come from Art57 alone, so an empty Art57 would publish
+    # ~32 candidates with a green run). Floors are ~85% of the 2026-10 counts.
+    rbs = (d.get("funnel") or {}).get("rows_by_source") or {}
+    for src, floor in [("EMA", 2000), ("EU national (Art57)", 10000),
+                       ("Health Canada", 600), ("Swissmedic", 2500), ("PMDA-JP", 200)]:
+        check(rbs.get(src, 0) >= floor, f"{src} rows >= {floor} (got {rbs.get(src, 0)})")
+    check("MISSING" not in (d.get("snapshot") or ""), f"no register MISSING in snapshot: {d.get('snapshot')}")
+
     # ---- every candidate is genuinely never-US (foreign_status not a non-approval) ----
     bad_status = [c["name"] for c in cands if c.get("foreign_status") == "never_authorised"]
     check(not bad_status, f"no candidate is 'never_authorised' (dossier-only leak): {bad_status[:5]}")

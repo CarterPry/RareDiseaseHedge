@@ -64,6 +64,11 @@ MUST_EXCLUDE = [
     ("amlodipine besilate",         "Norvasc; besilate/besylate spelling",    "string"),
     ("imatinib mesilate",           "Gleevec; mesilate/mesylate spelling",    "string"),
     ("pantoprazole sodium",         "Protonix; sesquihydrate on the US row",  "string"),
+    # 2026-10-11: leading isomer prefix (Art57 INN spelling) vs bare US name
+    ("D-Penicillamine",             "Cuprimine/Depen; D- prefix, own UNII record", "string"),
+    ("L-Tryptophan",                "US 'TRYPTOPHAN' (NDA/ANDA per NDC); L- prefix", "string"),
+    ("dimetindene maleate",         "Forhistal; INN spelling resolves to the racemate UNII", "string"),
+    ("tiratricol",                  "Emcitate NDA 220963 approved 2026-09-28 — was a top candidate", "string"),
     ("quinidine",                   "US approved as the gluconate salt",      "string"),
     ("deflazacort",                 "Emflaza 2017 — itself a PRV earner",     "string"),
     ("cefpodoxime proxetil",        "Vantin; ester prodrug suffix",           "string"),
@@ -108,7 +113,6 @@ MUST_KEEP = [
     ("masitinib",         "EU review only, no US approval"),
     ("pridopidine",       "no US approval"),
     ("leriglitazone",     "no US approval"),
-    ("tiratricol",        "Emcitate, EU 2025, no US approval"),
     ("ataluren",          "Translarna, EU only"),
     ("mifamurtide",       "Mepact, EU only"),
     ("gliclazide",        "widely marketed, never FDA approved"),
@@ -158,7 +162,11 @@ US_INGREDIENT_RECORD = [
     "CEPHRADINE",                      # Velosef (USAN ceph- spelling)
     "CEFAMANDOLE NAFATE",              # Mandol (FDA 1978, discontinued)
     "DIMETHINDENE MALEATE",            # Forhistal (withdrawn NDA — supplement)
+    "DIMETINDENE MALEATE",             # same, INN spelling (supplement ingests both)
     "TIXOCORTOL PIVALATE",             # T.R.U.E. TEST allergen (BLA — supplement)
+    "PENICILLAMINE",                   # Cuprimine/Depen — Art57 spells it D-Penicillamine
+    "TRYPTOPHAN",                      # US record form; Art57 spells it L-Tryptophan
+    "TIRATRICOL",                      # Emcitate NDA 220963, approved 2026-09-28 (+RPD PRV)
 ]
 
 # GSRS-style active-moiety edges for the graph class (offline stand-in; the

@@ -208,6 +208,7 @@ INN_STEREO_PREFIXES = ["ES", "LEVO", "LEV", "DEXTRO", "DEX", "AR", "RAC",
 # or the pair silently stops being found.
 STEREO_SUFFIXES = {"R", "S", "RS", "SR", "E", "Z", "D", "L", "DL",
                    "1R", "1S", "2R", "2S", "ALPHA", "BETA"}
+LEADING_ISOMER_PREFIXES = {"D", "L", "DL"}
 
 
 def stereo_name_variants(name: str) -> set[str]:
@@ -362,6 +363,15 @@ def keys(name: str) -> set[str]:
 
     out: set[str] = {n}
     tokens = n.split()
+
+    # Leading D-/L-/DL- isomer prefix (Art57 "D-Penicillamine", "L-Tryptophan"):
+    # the US record names the same substance without it (PENICILLAMINE,
+    # TRYPTOPHAN) and UNII gives the prefixed spelling its own record, so neither
+    # UNII nor key intersected and both sat in REVIEW. Found 2026-10-11. Stem
+    # must keep >= 4 chars so a bare "D"/"L" token cannot collide.
+    if len(tokens) > 1 and tokens[0] in LEADING_ISOMER_PREFIXES \
+            and len(" ".join(tokens[1:])) >= 4:
+        out |= keys(" ".join(tokens[1:]))
 
     # counterion spellings canonicalised in place, unstripped
     canon = [_canonical_counterion(t) for t in tokens]

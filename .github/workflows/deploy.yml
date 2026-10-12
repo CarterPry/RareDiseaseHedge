@@ -8,7 +8,7 @@ name: deploy
 # Requires two repo secrets (Settings -> Secrets -> Actions):
 #   CLOUDFLARE_API_TOKEN   (scope: Account > Cloudflare Pages > Edit)
 #   CLOUDFLARE_ACCOUNT_ID  (e4596a88dfcb23abba535ee140ae5ded)
-# Without them the deploy step is skipped, not failed.
+# Without them the job FAILS (exit 1) — a silent skip hid a never-deployed CI for weeks.
 
 on:
   push:
@@ -19,9 +19,17 @@ on:
       - "pipeline/data/out/**"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
+  # A push made with GITHUB_TOKEN (the monthly refresh bot) never fires `push`
+  # workflows, so the Sep + Oct 2026 refreshes were committed but never
+  # published. workflow_run keys off the refresh job finishing instead.
+  workflow_run:
+    workflows: [refresh-data]
+    types: [completed]
 
 jobs:
   deploy:
+    # a bare conclusion check would skip every human-push deploy
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -36,6 +44,8 @@ jobs:
       - name: deploy to Cloudflare Pages
         if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
         run: npx --yes wrangler@latest pages deploy pipeline/report/_site --project-name=rarediseasehedge --branch=main --commit-dirty=true
-      - name: note if secrets missing
+      - name: fail if secrets missing
         if: ${{ env.CLOUDFLARE_API_TOKEN == '' }}
-        run: echo "::warning::CLOUDFLARE_API_TOKEN not set — built _site but did not deploy. Add repo secrets to enable auto-deploy."
+        run: |
+          echo "::error::CLOUDFLARE_API_TOKEN not set — built _site but did NOT deploy. Add the repo secret (Cloudflare Pages: Edit scope)."
+          exit 1

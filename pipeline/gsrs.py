@@ -144,6 +144,10 @@ class GsrsClient:
                         ent["reverse"].append((t, su, sname))
             except Exception:
                 ent["ok"] = False
+            if not ent["ok"]:
+                # cache/ is committed to git since 2026-10-12: a transient GSRS
+                # outage must be retried next run, not frozen as a REVIEW row.
+                return ent
             self.cache[unii] = ent
             self._dirty += 1
             if self._dirty >= 25:

@@ -22,8 +22,7 @@ UA = "RareDiseaseHedge/1.0 (research; carterpry@gmail.com)"
 
 # name -> (url, local filename, kind)   kind in {zip, xlsx, bin}
 #
-# Every URL below was re-verified live on 2026-08-29. The UNII entries that used
-# to live here are NOT here any more: see MANUAL_SOURCES.
+# Every URL below was re-verified live on 2026-08-29 (PMDA entries 2026-10-11).
 SOURCES = {
     "ema":       ("https://www.ema.europa.eu/en/documents/report/medicines-output-medicines-report_en.xlsx",
                   "ema_med.xlsx", "xlsx"),
@@ -63,6 +62,15 @@ SOURCES = {
                   "orphadata_prev.xml", "bin"),
     "orphadata_ages":("https://www.orphadata.com/data/xml/en_product9_ages.xml",
                   "orphadata_ages.xml", "bin"),
+    # PMDA (Japan) new-approval lists, one xlsx per fiscal year. Until 2026-10-11
+    # these were never fetched: the FY2025 file lived only on one laptop, raw/
+    # is gitignored, so every CI refresh printed "PMDA MISSING". The /files/ id
+    # is stable for a published edition but changes if PMDA republishes; the
+    # index page is https://www.pmda.go.jp/review-services/drug-reviews/
+    # review-information/p-drugs/0010.html. sources.load_pmda reads every
+    # pmda_fy*.xlsx and every worksheet (FY2026 is split into month sheets).
+    "pmda_fy2025":("https://www.pmda.go.jp/files/000277966.xlsx", "pmda_fy2025.xlsx", "xlsx"),
+    "pmda_fy2026":("https://www.pmda.go.jp/files/000281578.xlsx", "pmda_fy2026.xlsx", "xlsx"),
     # The UNII identity index — the join layer the whole diff depends on.
     # These are served through an AWS API Gateway that 308->302-redirects to a
     # presigned S3 URL and accepts GET ONLY: a HEAD request (curl -I) gets a
@@ -185,6 +193,7 @@ def main():
     print(f"refreshing {len(which)} source(s) into {RAW}")
     ok = sum(fetch_one(n) for n in which)
     print(f"done — {ok}/{len(which)} refreshed.")
+    failed = ok < len(which)
 
     newest, local = unii_staleness()
     print("\nUNII identity index (the join layer the whole diff depends on):")
@@ -198,6 +207,12 @@ def main():
     elif have and want:
         print("  [ok]    index is current")
     print("\nNow run: python3 pipeline/rdh_diff.py")
+    if failed:
+        # A dead regulator host must fail the refresh loudly. In CI raw/ starts
+        # empty, so "keep the previous good copy" keeps nothing and a silent
+        # failure would publish a shrunken candidate list with a green run.
+        print(f"  [FAIL] {len(which) - ok} source(s) did not refresh", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

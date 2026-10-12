@@ -19,8 +19,8 @@ Every chart carries a source pill that says which it is.
   multi-regulator, orphan, months to sunset, …).
 - **The Voucher Market** — annual PRV sale value, stacked by voucher type, from
   the SEC-8-K transaction table in `sources/18-prv-transaction-market.md`.
-- **Candidates by Reach / Candidates** (bars + bubbles) — the 342 never-US
-  candidates, sized by how many EEA countries authorise each (EMA Article 57).
+- **Candidates by Reach / Candidates** (bars + bubbles) — the never-US candidates
+  (count in `summary.json`), sized by how many EEA countries authorise each (EMA Article 57).
 - **Where They're Approved** — per-country candidate counts on a Europe-centred
   map.
 

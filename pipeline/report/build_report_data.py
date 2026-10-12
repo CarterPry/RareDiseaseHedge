@@ -37,7 +37,9 @@ CENTROIDS = {
     "Canada": (-106.0, 56.0), "Switzerland": (8.2, 46.8), "Norway ": (8.5, 61.0),
 }
 
-# SEC-verified RPD/TD/MCM voucher sales, 2014–2026 (sources/18). Real prices.
+# RPD/TD/MCM voucher sales, 2014–2026 (sources/18). Real prices from SEC 8-Ks or,
+# for non-SEC sellers (SPARC, Immedica), the seller's own disclosure. Optional
+# 6th element = status; "agreement" marks a signed deal not yet confirmed closed.
 PRV_DEALS = [
     (2014, 67.5, "RPD", "VIMIZIM", "MPS IVA"),
     (2014, 125.0, "TD", "Miltefosine", "leishmaniasis"),
@@ -72,6 +74,11 @@ PRV_DEALS = [
     (2026, 205.0, "RPD", "ZYCUBO", "Menkes disease"),
     (2026, 180.0, "RPD", "KRESLADI", "leukocyte adhesion deficiency-I"),
     (2026, 195.0, "RPD", "AVLAYAH", "MPS II / Hunter syndrome"),
+    # added 2026-10-11 — SPARC APA 2026-04-30 (the Sun Pharma v. FDA voucher);
+    # Immedica completed 2026-05-18; Ultragenyx agreement 2026-10-07 (net $168M after NIH share)
+    (2026, 195.0, "RPD", "SEZABY", "neonatal seizures", "agreement"),
+    (2026, 200.0, "RPD", "LOARGYS", "arginase 1 deficiency", "closed"),
+    (2026, 210.0, "RPD", "GENGLYCOS", "glycogen storage disease Ia", "agreement"),
 ]
 
 
@@ -177,8 +184,9 @@ def main():
         "countries": countries,
         "bubbles": bubbles,
         "breadthHist": hist,
-        "prvDeals": [{"year": y, "price": p, "type": t, "drug": dr, "disease": dz}
-                     for y, p, t, dr, dz in PRV_DEALS],
+        "prvDeals": [{"year": y, "price": p, "type": t, "drug": dr, "disease": dz,
+                      "status": (st[0] if st else "closed")}
+                     for y, p, t, dr, dz, *st in PRV_DEALS],
         "prvByYear": prv_by_year,
         "prvTypes": types,
     }

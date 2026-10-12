@@ -305,7 +305,7 @@ The A2 sub-population (Sun Pharma carve-out) is novel and unexploited, but it is
 
 *Market size:* For the small-market registration program (Georgia, Ukraine, Armenia, Botswana, Albania, Barbados, Seychelles, Samoa), the revenue is modest. These markets are selected for registration speed and regulatory simplicity, not for market size. Realistic combined revenue from these 8 markets for a single rare pediatric disease drug: probably $500,000–$5 million annually (very rough; depends heavily on disease prevalence and pricing). This does not justify $300–400k per trial on a purely financial basis without the PRV upside.
 
-*Comparison to Funnel A:* A single Funnel A approval and PRV award ($180–205M per current market) yields a return that justifies enormous investment. A Funnel B program, without the PRV, generates only the small-market revenue plus orphan exclusivity protection. At $300–400k per trial and a 5–7 year development timeline, Funnel B economics are marginal unless the company can license the approved drug to a larger partner for the US market.
+*Comparison to Funnel A:* A single Funnel A approval and PRV award ($180–210M (top figure a signed, unclosed agreement) per current market) yields a return that justifies enormous investment. A Funnel B program, without the PRV, generates only the small-market revenue plus orphan exclusivity protection. At $300–400k per trial and a 5–7 year development timeline, Funnel B economics are marginal unless the company can license the approved drug to a larger partner for the US market.
 
 **Rebalancing recommendation:**
 
@@ -313,7 +313,7 @@ Funnel B has one significant advantage: the candidate pool is much larger. Every
 
 However, the revenue model for Funnel B without PRV is fundamentally different:
 - Value creation depends on: (a) licensing to a US/EU commercial partner, OR (b) generating enough small-market revenue to be sustainable
-- The "exit" for Funnel A is clear (sell the PRV for $180–205M); the "exit" for Funnel B requires either a licensing deal or a long-term generic sales operation
+- The "exit" for Funnel A is clear (sell the PRV for $180–210M (top figure a signed, unclosed agreement)); the "exit" for Funnel B requires either a licensing deal or a long-term generic sales operation
 
 **If the PRV sunset (2029-09-30) is a hard constraint**, and if a Funnel A program requires 5–7 years of development (it does), then for programs initiated now (August 2026) there are only 37 months until sunset. A 505(b)(1) NDA for a foreign-approved drug with new clinical data in rare pediatric disease in 37 months is possible only if:
 - Significant preclinical and early clinical work already exists (it does, for the foreign approval)

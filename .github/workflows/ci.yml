@@ -23,3 +23,5 @@ jobs:
         run: python -m py_compile pipeline/*.py pipeline/report/*.py
       - name: accuracy harness (offline)
         run: python pipeline/test_accuracy.py
+      - name: data integrity (committed summary.json)
+        run: python pipeline/test_data_integrity.py

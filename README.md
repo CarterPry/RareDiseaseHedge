@@ -25,7 +25,7 @@ Both prongs must hold. So:
 
 Three further statutory gates, all verified: the application must rely on **clinical data from a pediatric population** (D); must **not seek an adult indication** in the original RPD application (E); must be deemed **eligible for priority review** (C).
 
-### ⚖️ MATERIAL CARVE-OUT — *Sun Pharma Advanced Research Co. v. FDA* (D.D.C., 2 Dec 2025)
+### ⚖️ MATERIAL CARVE-OUT — *Sun Pharma Advanced Research Co. v. FDA* (D.D.C. No. 1:24-cv-00946, Mehta, J., opinion entered 1 Dec 2025)
 
 **Added 2026-08-06. This is the most important development since the original finding and it partially reopens the generic-repurposing route.**
 
@@ -37,7 +37,7 @@ The court's reasoning — "approved" requires affirmative agency action:
 
 The court further noted that Hatch-Waxman signalled any "previous approval" must have "successfully navigated" the modern approval process, and rejected a reading in which a drug "never able to show efficacy and ultimately pulled from the market" could block future pediatric treatments.
 
-**Outcome:** FDA awarded the voucher on **2026-02-03**. The 60-day appeal window from the 2025-12-02 ruling had by then expired, which strongly implies **FDA did not appeal** — though that should be confirmed on the docket.
+**Outcome:** FDA awarded the voucher on **2026-02-03**. The 60-day appeal window from the 2025-12-01 ruling had by then expired, which strongly implies **FDA did not appeal**. *(Checked 2026-10-11: no notice of appeal on the RECAP docket and no D.C. Circuit docket on CourtListener; PACER itself not queried.)* On **2026-04-30** SPARC signed a definitive agreement to sell the SEZABY voucher for **US$195M** to an undisclosed buyer (HSR-conditioned; closing not yet confirmed) — the A2 carve-out therefore has a realised market price.
 
 **What this changes — this is the business-relevant part:**
 
@@ -104,7 +104,7 @@ That is the *entire global inventory* meeting all conditions simultaneously — 
 
 ### ⏰ Two time-critical items
 
-**1. FDA CP 7346.832 revision takes effect 2026-08-10.** FDA will conduct **unannounced** pre-approval inspections at non-US facilities. A **WHO-GMP-only site drops to ~50–60% PAI pass probability**; an MRA-country manufacturer rises to **~88%**. Your suppliers currently hold WHO certification, not FDA GMP — this is the second-largest lever on program success after disease selection, and the policy lands in days.
+**1. Unannounced foreign pre-approval inspections are now FDA practice.** *(Corrected 2026-10-12: the earlier text attributed this to the revised Compliance Program 7346.832. That CP, effective 2026-08-10, adds risk-based PAI selection, MRA reliance and remote assessments and keeps a 60-day notification goal for original NDAs — the word "unannounced" does not appear in it. The unannounced policy comes from FDA's Office of Inspections and Investigations announcement of 2025-05-06; FDA reported India 87% / China 61% of inspections unannounced in FY2026 to date.)** A **WHO-GMP-only site drops to ~50–60% PAI pass probability**; an MRA-country manufacturer rises to **~88%**. Your suppliers currently hold WHO certification, not FDA GMP — this is the second-largest lever on program success after disease selection, and the policy lands in days.
 
 **2. Enrollment must start essentially now.** 37 months remain to the 2029-09-30 sunset. Under priority review (6-month clock + 60-day filing), the NDA must be submitted by **~November 2028**, implying LPLV by Feb 2028 and **enrollment start between August 2026 (conservative) and February 2027 (optimistic)**. A program started from scratch today sits at the outer edge of the optimistic case, with no margin for slippage.
 
@@ -162,6 +162,6 @@ Only **~4.7–14%** of a diagnosed population is realistically enrollable after 
 
 **There is no public Rare Pediatric Disease designation list.** Confirmed, not assumed: a sweep of all 43 fda.gov sitemap pages (85,349 URLs) returns exactly two `rare-pediatric` hits — the program page and the guidance page. § 360ff(f)(1) requires Federal Register notice only for voucher *issuance* and for approval *under* a voucher; no publication duty attaches to designations. Competitor RPD intelligence must be built on SEC EDGAR full-text search and newswire, not on FDA. The usable proxy: § 360ff(d)(2) requires the RPD request to be filed *simultaneously* with an orphan or fast-track request, so **a new orphan designation for a pediatric-onset serious disease is a leading indicator of a concurrent RPD request** — and the orphan database is fully downloadable and daily-fresh.
 
-**The PRV ledger lives in the Federal Register API, not on fda.gov.** `https://www.federalregister.gov/api/v1/documents.json`, no auth, JSON, daily. Live census on 2026-08-05: **73 RPD PRVs awarded** (2014-03-12 → 2026-05-11), 9 material-threat MCM PRVs, 32 redemption notices. Use `conditions[term]`, not `conditions[search]` — the latter is silently ignored and returns a null count. Title strings are not stable across years (including a literal typo, *"Notice of Approval of Product U nder Voucher"*), so match with a tolerant regex. Tropical-disease PRV issuances are **not** in the Federal Register at all.
+**The PRV ledger lives in the Federal Register API, not on fda.gov.** `https://www.federalregister.gov/api/v1/documents.json`, no auth, JSON, daily. Live census on 2026-08-05: **73 RPD PRVs awarded** *(76 as of 2026-10-09: GENGLYCOS 2026-08-19, ZANVASTRO 2026-09-03, FAYUVI 2026-09-17 added — plus Emcitate/tiratricol, approved 2026-09-28 with a voucher, whose notice had not yet published)* (2014-03-12 → 2026-05-11), 9 material-threat MCM PRVs, 32 redemption notices. Use `conditions[term]`, not `conditions[search]` — the latter is silently ignored and returns a null count. Title strings are not stable across years (including a literal typo, *"Notice of Approval of Product U nder Voucher"*), so match with a tolerant regex. Tropical-disease PRV issuances are **not** in the Federal Register at all.
 
 **`"Rare Diseases"[MeSH]` is a near-useless recall filter.** 15,927 records across all of PubMed for a domain of ~7,000 diseases, applied inconsistently by indexers — and only ~25% of newly-entered records are MeSH-indexed at all (measured: 43,431 of 175,025 records entered 2026-07-01→2026-08-05). **Detection must run on `[tiab]` + `[pt]` + a disease-name dictionary expanded from Orphanet/MONDO; MeSH is a backfill layer, not a detection layer.**

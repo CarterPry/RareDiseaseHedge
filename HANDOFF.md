@@ -50,7 +50,7 @@ Also recovered:
 
 **Two findings that changed the strategy since §0 was written:**
 
-1. ***Sun Pharma Advanced Research Co. v. FDA* (D.D.C., 2025-12-02)** — a pre-1962 "deemed approved"
+1. ***Sun Pharma Advanced Research Co. v. FDA* (D.D.C. 1:24-cv-00946, opinion entered 2025-12-01)** — a pre-1962 "deemed approved"
    NDA is NOT "previously approved" under § 360ff(a)(4)(B)(i). FDA awarded the SEZABY voucher
    2026-02-03 and did not appeal. Creates Funnel **A2** (1938–1962 grandfathered drugs). Narrow:
    any modern 505(b)(1)/(b)(2)/ANDA history still bars. See README and `sources/22-…`.
@@ -60,8 +60,8 @@ Also recovered:
    programs is not viable at ~$180k; one optimized program is the correct strategy.** See README and
    `sources/25`–`27`, each adversarially reviewed from two opposed directions.
 
-**Time-critical:** FDA CP 7346.832 (revised) takes effect **2026-08-10** — unannounced PAIs at non-US
-sites; WHO-GMP-only drops PAI pass to ~50–60% vs ~88% for an MRA-country manufacturer. And enrollment
+**Time-critical:** unannounced PAIs at non-US sites are FDA practice (OII policy of 2025-05-06; the revised
+CP 7346.832 effective 2026-08-10 adds risk-based selection + MRA reliance, not the unannounced rule); WHO-GMP-only drops PAI pass to ~50–60% vs ~88% for an MRA-country manufacturer. And enrollment
 must start **now** (Aug 2026 conservative / Feb 2027 optimistic) to clear the 2029-09-30 sunset.
 
 **Recovery statistics for this session** — the dominant lesson:

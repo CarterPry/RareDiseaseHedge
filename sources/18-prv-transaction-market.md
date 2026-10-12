@@ -316,7 +316,7 @@ With approximately 3.1 years remaining to the 2029-09-30 sunset, the remaining R
 
 **Buyers of PRVs** are large pharmaceutical companies with late-stage development pipelines where 4–5 months of expedited FDA review translates to material commercial value (first-mover sales, competitive dynamics, manufacturing buildout lead time). The pool of meaningful buyers — companies large enough to pay $150–200M for a regulatory option — is relatively stable: approximately 10–20 major global pharma companies are plausible buyers at any given time.
 
-**Buyer demand signal:** Three RPD PRV sales in Q2–Q3 2026 (Cyprium, Rocket, Denali) at $180–205M suggest sustained buyer appetite at these price levels. The 2026 prices suggest buyers are pricing in scarcity — they are willing to pay 70–90% more than the 2022–2023 trough.
+**Buyer demand signal:** Three RPD PRV sales in Q2–Q3 2026 (Cyprium, Rocket, Denali) at $180–210M (top figure a signed, unclosed agreement) suggest sustained buyer appetite at these price levels. The 2026 prices suggest buyers are pricing in scarcity — they are willing to pay 70–90% more than the 2022–2023 trough.
 
 ### 5.4 Scarcity Premium vs. Redemption/Sale Race
 

@@ -2,11 +2,12 @@ name: refresh-data
 
 # Monthly heavy path: re-fetch every source, re-run the diff + enrichment, rebuild
 # both front-ends, run the integrity check, and commit the updated outputs back to
-# main (which triggers deploy.yml). Also runnable on demand.
+# main. deploy.yml publishes afterwards via its `workflow_run` trigger (a bot
+# push never fires `push` workflows). Also runnable on demand.
 #
 # Heavier and less deterministic than deploy.yml: it downloads ~120 MB of bulk
 # data and runs the live GSRS relationship sweep for any new survivors (the GSRS
-# cache is not committed), so the first/monthly run can take 30-60 min and may hit
+# cache IS committed since 2026-10-12, so only new moieties hit the API), so the first/monthly run can take 30-60 min and may hit
 # a flaky regulator host — fetch.py keeps the previous good copy on any failure.
 # The UNII index is fetched + extracted by fetch.py; if precision.fda.gov blocks
 # the runner, drop the newest UNII_*.txt in manually and re-run.
@@ -19,6 +20,11 @@ on:
 permissions:
   contents: write
 
+# Never let a manual dispatch overlap the scheduled run: both would push.
+concurrency:
+  group: rdh-refresh
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -30,8 +36,11 @@ jobs:
           python-version: "3.12"
       - name: install deps
         run: pip install -r pipeline/requirements.txt
+      # raw/ is gitignored, so on a runner there is NO prior copy to fall back
+      # on: a dead regulator host must fail the run (fetch.py exits 1), not
+      # publish a shrunken candidate list with a green check.
       - name: fetch sources
-        run: python pipeline/fetch.py || true   # a dead source keeps the prior copy
+        run: python pipeline/fetch.py
       - name: pipeline + enrich + build
         run: |
           python pipeline/rdh_diff.py
@@ -44,6 +53,13 @@ jobs:
         run: |
           git config user.name  "rdh-refresh-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add pipeline/data/out pipeline/ui/index.html pipeline/report/data.js
-          git commit -m "Monthly data refresh (automated)" || echo "no changes"
-          git push || echo "nothing to push"
+          git add pipeline/data/out pipeline/data/cache pipeline/ui/index.html pipeline/report/data.js
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "Monthly data refresh (automated)"
+            # a human push during the ~45 min run would otherwise be a rejected
+            # push swallowed by `|| echo`; outputs are generated, so take ours.
+            git pull --rebase -X theirs origin main
+            git push
+          fi

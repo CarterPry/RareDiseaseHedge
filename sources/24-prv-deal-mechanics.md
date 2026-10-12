@@ -219,7 +219,7 @@ This is the shape that a small sponsor without commercial infrastructure should 
 1. **Conduct the trial and file the NDA** (505(b)(1), never-approved US moiety).
 2. **Out-license commercialization** to a party with distribution capability, keeping the PRV right
    (and ideally royalties and milestones) by contract.
-3. **Sell the PRV on approval** — $180–205M gross in 2026 transactions.
+3. **Sell the PRV on approval** — $180–210M (top figure a signed, unclosed agreement) gross in 2026 transactions.
 4. **The commercializing party** takes on launch costs and carries the commercial risk.
 
 The separation is clean under 21 U.S.C. § 360ff(b)(2)(A) because the voucher is a separate

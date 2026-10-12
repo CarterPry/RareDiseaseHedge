@@ -143,6 +143,11 @@ def load_us_exclusion(idx: UniiIndex, raw: str):
         "dimethindene",   # Forhistal — NDA 12-335/12-337/12-338 (Novartis),
                           # withdrawn 19 Apr 2000 (65 FR 54, doc 00-6722). Too old
                           # for the electronic bulk files.
+        # The USAN spelling above resolves to the (S)-enantiomer record in the
+        # 4 Aug 2026 UNII file, so the Art57 racemate "Dimetindene Maleate" still
+        # reached REVIEW. Ingest the INN spelling + salt too (2026-10-11).
+        "dimetindene",
+        "dimetindene maleate",
         "tixocortol",     # tixocortol pivalate — allergen in T.R.U.E. TEST, an
                           # FDA BLA (STN 103738, US License 1888) marketed since
                           # 1994. A 351(a) biologic; NDC did not expose the panel
@@ -482,32 +487,35 @@ def load_swissmedic(raw: str):
 
 # --------------------------------------------------------------- PMDA (Japan, best-effort)
 def load_pmda(raw: str):
-    """pmda_fy2025.xlsx: active ingredient in Japanese katakana (col index 5,
+    """pmda_fy*.xlsx: active ingredient in Japanese katakana (col index 5,
     '成分名'). Katakana->Latin transliteration is not implemented, so these
     resolve to UNII only if the UNII Names index happens to carry the JP synonym.
     Returned so the funnel can report Japan coverage honestly, NOT as validated
-    candidates. See method doc 1.1 (transliteration is the biggest single tax)."""
-    path = os.path.join(raw, "pmda_fy2025.xlsx")
-    if not os.path.exists(path):
-        return []
-    wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
-    ws = wb.active
+    candidates. See method doc 1.1 (transliteration is the biggest single tax).
+
+    Reads EVERY pmda_fy*.xlsx in raw/ and EVERY worksheet in each: the FY2026
+    edition is split into one sheet per approval month, and `wb.active` would
+    silently return only the last month (32 of 94 rows, measured 2026-10-11)."""
+    import glob
     out = []
-    started = False
-    for r in ws.iter_rows(values_only=True):
-        vals = [("" if c is None else str(c)) for c in r]
-        # header cell is '成  分  名' with full-width spaces -> strip them before matching
-        if not started:
-            if any("成分名" in v.replace("　", "").replace(" ", "") for v in vals):
-                started = True
-            continue
-        if len(vals) < 6:
-            continue
-        ing = vals[5].split("\n")[0].strip().replace("　", " ")
-        # drop the underline annotation marker for new active ingredients
-        if ing:
-            out.append({"substance": ing, "source": "PMDA-JP",
-                        "status": "approved", "orphan": False, "raw": ing,
-                        "needs_translit": True, "foreign_status": "authorised"})
-    wb.close()
+    for path in sorted(glob.glob(os.path.join(raw, "pmda_fy*.xlsx"))):
+        wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+        for ws in wb.worksheets:
+            started = False
+            for r in ws.iter_rows(values_only=True):
+                vals = [("" if c is None else str(c)) for c in r]
+                # header cell is '成  分  名' with full-width spaces -> strip them before matching
+                if not started:
+                    if any("成分名" in v.replace("　", "").replace(" ", "") for v in vals):
+                        started = True
+                    continue
+                if len(vals) < 6:
+                    continue
+                ing = vals[5].split("\n")[0].strip().replace("　", " ")
+                # drop the underline annotation marker for new active ingredients
+                if ing:
+                    out.append({"substance": ing, "source": "PMDA-JP",
+                                "status": "approved", "orphan": False, "raw": ing,
+                                "needs_translit": True, "foreign_status": "authorised"})
+        wb.close()
     return out

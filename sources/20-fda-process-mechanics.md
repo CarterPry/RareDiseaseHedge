@@ -210,6 +210,8 @@ Once the drug is approved, an annual program fee of $442,213 attaches. However, 
 
 The FY2026 fee of $1,962,472 is "in addition to any PDUFA fee that is required for such an application." (90 Fed. Reg. 45041)
 
+> **FY2027 update (added 2026-10-12).** "Fee Rate for Using a Priority Review Voucher in Fiscal Year 2027," 91 Fed. Reg. 57617 (September 10, 2026), Document No. 2026-18464, docket FDA-2026-N-9047, sets the fee at **$1,798,596** for applications submitted with a rare pediatric disease, tropical disease or material threat MCM voucher, effective **2026-10-01 through 2027-09-30**, and restates that the 2029-09-30 award sunset does not affect use of already-awarded vouchers. The FY2027 PDUFA application fee is $4,600,753 (FR Doc. 2026-15334), so a buyer's combined filing cost is ≈ $6.40M. Every "$1,962,472" / "$1.96M" figure below is the FY2026 rate; the mechanics are unchanged.
+
 ### Who pays this fee?
 **The buyer/user of the voucher pays this fee**, not the originating sponsor. When the PRV is sold and the buyer uses it to accelerate their own NDA or BLA, the buyer must pay $1,962,472 to FDA upon submission of their application. This is important for PRV valuation: a buyer nets a minimum of $1.96M in FDA fees against the purchase price. At the observed 2026 sale prices of $180–205M, this fee is a minor discount but must be factored into the buyer's negotiation.
 

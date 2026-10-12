@@ -301,7 +301,10 @@ def assess(cand: Candidate, today: date | None = None) -> Assessment:
          "sponsor's filing decision, not a drug property"),
         ("no_adult_indication_sought", "s.529(a)(4)(E)",
          "Does the original application avoid seeking an adult indication?",
-         "sponsor's filing decision, not a drug property"),
+         "sponsor's filing decision, not a drug property. Per FDA's 2019 draft "
+         "guidance (Q5) a label covering adults AND children with the SAME rare "
+         "pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); "
+         "what (E) bars is a separate adult indication"),
     ]:
         crit.append(Criterion(key, cite, q, Decidability.DESIGN, Status.HUMAN,
                               note))
@@ -347,7 +350,8 @@ if __name__ == "__main__":
     # worked example: everything passes except what a human must decide,
     # plus a sunset near-miss to show the FAIL path
     demo = Candidate(
-        name="tiratricol", us_exclusion_verdict="NOT_IN_US",
+        name="mifamurtide",   # (tiratricol was the example until Emcitate was US-approved 2026-09-28)
+        us_exclusion_verdict="NOT_IN_US",
         us_prevalence=1500, pediatric_onset=True,
         serious_or_life_threatening=True, us_therapy_exists=False,
         published_human_evidence=True,

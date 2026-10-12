@@ -1,0 +1,6061 @@
+{
+ "CEG1Q6OGU1": {
+  "pubmed": 4,
+  "trials": 32,
+  "us_orphan": "unknown"
+ },
+ "A3749M6582": {
+  "pubmed": 0,
+  "trials": 513,
+  "us_orphan": "unknown"
+ },
+ "U194AS08HZ": {
+  "pubmed": 0,
+  "trials": 75,
+  "us_orphan": "unknown"
+ },
+ "5X0D9H16IU": {
+  "pubmed": 0,
+  "trials": 3,
+  "us_orphan": "unknown"
+ },
+ "6JLQ8K35KK": {
+  "pubmed": 3,
+  "trials": 3,
+  "us_orphan": "unknown"
+ },
+ "HB6PN45W4J": {
+  "pubmed": 36,
+  "trials": 35,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Attention Deficit Disorder with Hyperactivity",
+    "phase": 4.0
+   },
+   {
+    "disease": "Optic Atrophy, Hereditary, Leber",
+    "phase": 4.0
+   },
+   {
+    "disease": "Muscular Dystrophy, Duchenne",
+    "phase": 3.0
+   },
+   {
+    "disease": "Friedreich Ataxia",
+    "phase": 3.0
+   },
+   {
+    "disease": "MELAS Syndrome",
+    "phase": 2.0
+   },
+   {
+    "disease": "Multiple Sclerosis, Chronic Progressive",
+    "phase": 1.0
+   },
+   {
+    "disease": "Non-alcoholic Fatty Liver Disease",
+    "phase": 1.0
+   },
+   {
+    "disease": "Huntington Disease",
+    "phase": 1.0
+   }
+  ]
+ },
+ "58BH47BV6S": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "60UTO373KE": {
+  "pubmed": 68,
+  "trials": 66,
+  "us_orphan": "unknown"
+ },
+ "K824X25AYA": {
+  "pubmed": 2,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Adrenoleukodystrophy",
+    "phase": 2.0
+   },
+   {
+    "disease": "Friedreich Ataxia",
+    "phase": 2.0
+   }
+  ]
+ },
+ "M59NC4E26P": {
+  "pubmed": 1,
+  "trials": 38,
+  "us_orphan": "unknown"
+ },
+ "Y76ID234HW": {
+  "pubmed": 0,
+  "trials": 16,
+  "us_orphan": "unknown"
+ },
+ "HD4TW8S2VK": {
+  "pubmed": 1,
+  "trials": 13,
+  "us_orphan": "unknown"
+ },
+ "1578EUB98L": {
+  "pubmed": 0,
+  "trials": 7,
+  "us_orphan": "unknown"
+ },
+ "H19C446XXB": {
+  "pubmed": 3,
+  "trials": 22,
+  "us_orphan": "unknown"
+ },
+ "29OQ9EU4R1": {
+  "pubmed": 3,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "137R1N49AD": {
+  "pubmed": 9,
+  "trials": 27,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Depressive Disorder, Major",
+    "phase": 4.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Obsessive-Compulsive Disorder",
+    "phase": 2.0
+   }
+  ]
+ },
+ "URQ2517572": {
+  "pubmed": 31,
+  "trials": 52,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Osteoporosis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Muscular Diseases",
+    "phase": 3.0
+   },
+   {
+    "disease": "Osteoporosis, Postmenopausal",
+    "phase": 3.0
+   },
+   {
+    "disease": "Pelvic Organ Prolapse",
+    "phase": 3.0
+   },
+   {
+    "disease": "Calcinosis",
+    "phase": 2.0
+   },
+   {
+    "disease": "Death, Sudden, Cardiac",
+    "phase": 2.0
+   },
+   {
+    "disease": "Scoliosis",
+    "phase": 2.0
+   },
+   {
+    "disease": "Renal Insufficiency",
+    "phase": 2.0
+   }
+  ]
+ },
+ "2U0X0JA2NB": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "05W904P57F": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "55F75LJQ0V": {
+  "pubmed": 0,
+  "trials": 11,
+  "us_orphan": "unknown"
+ },
+ "K16AME9I3V": {
+  "pubmed": 34,
+  "trials": 34,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Muscular Dystrophy, Duchenne",
+    "phase": 4.0
+   },
+   {
+    "disease": "Cystic Fibrosis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Epilepsy",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hemophilia A",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hemophilia B",
+    "phase": 2.0
+   },
+   {
+    "disease": "Aniridia",
+    "phase": 2.0
+   }
+  ]
+ },
+ "RZ6I9WX68U": {
+  "pubmed": 0,
+  "trials": 79,
+  "us_orphan": "unknown"
+ },
+ "XNM7LT65NP": {
+  "pubmed": 3,
+  "trials": 13,
+  "us_orphan": "unknown"
+ },
+ "PWZ1720CBH": {
+  "pubmed": 0,
+  "trials": 7,
+  "us_orphan": "unknown"
+ },
+ "PA1123N395": {
+  "pubmed": 12,
+  "trials": 28,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Eye Manifestations",
+    "phase": 4.0
+   },
+   {
+    "disease": "Hypersensitivity",
+    "phase": 4.0
+   },
+   {
+    "disease": "Rhinitis, Allergic, Seasonal",
+    "phase": 3.0
+   },
+   {
+    "disease": "Urticaria",
+    "phase": 3.0
+   },
+   {
+    "disease": "Rhinitis, Allergic, Perennial",
+    "phase": 3.0
+   },
+   {
+    "disease": "Conjunctivitis, Allergic",
+    "phase": 3.0
+   },
+   {
+    "disease": "Cold Urticaria",
+    "phase": 2.0
+   }
+  ]
+ },
+ "8NT850T0YS": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown"
+ },
+ "1M49V1PBPL": {
+  "pubmed": 1,
+  "trials": 3,
+  "us_orphan": "unknown"
+ },
+ "X015L14V0O": {
+  "pubmed": 6,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 4.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "568ET80C3D": {
+  "pubmed": 0,
+  "trials": 82,
+  "us_orphan": "unknown"
+ },
+ "JUP57A8EPZ": {
+  "pubmed": 1,
+  "trials": 16,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Breast Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Liver Diseases",
+    "phase": 1.0
+   }
+  ]
+ },
+ "0MQ44VUN84": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "P7725I9V3Z": {
+  "pubmed": 3,
+  "trials": 21,
+  "us_orphan": "unknown"
+ },
+ "3B03KPM27L": {
+  "pubmed": 0,
+  "trials": 32,
+  "us_orphan": "unknown"
+ },
+ "68AYS9A614": {
+  "pubmed": 6,
+  "trials": 106,
+  "us_orphan": "unknown"
+ },
+ "0F32U78V2Q": {
+  "pubmed": 0,
+  "trials": 9,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Inflammation",
+    "phase": 4.0
+   }
+  ]
+ },
+ "45I14D8O27": {
+  "pubmed": 3,
+  "trials": 374,
+  "us_orphan": "unknown"
+ },
+ "7560BB0BO3": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "K848JZ4886": {
+  "pubmed": 0,
+  "trials": 731,
+  "us_orphan": "unknown"
+ },
+ "8OOT6M1PC7": {
+  "pubmed": 40,
+  "trials": 44,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Tuberculosis, Multidrug-Resistant",
+    "phase": 4.0
+   },
+   {
+    "disease": "Tuberculosis",
+    "phase": 4.0
+   },
+   {
+    "disease": "Tuberculosis, Pulmonary",
+    "phase": 3.0
+   }
+  ]
+ },
+ "VX29JB5XWV": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "R6D2UI4FLS": {
+  "pubmed": 0,
+  "trials": 258,
+  "us_orphan": "unknown"
+ },
+ "3DX3XEK1BN": {
+  "pubmed": 6,
+  "trials": 1,
+  "us_orphan": "unknown"
+ },
+ "YKH834O4BH": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "1494Q15E7Z": {
+  "pubmed": 0,
+  "trials": 50,
+  "us_orphan": "unknown"
+ },
+ "2CQ8Y0B8XQ": {
+  "pubmed": 10,
+  "trials": 66,
+  "us_orphan": "unknown"
+ },
+ "Y6V2W4S4WT": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "WSH8393RM5": {
+  "pubmed": 1,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "6L8OF9XRDC": {
+  "pubmed": 25,
+  "trials": 167,
+  "us_orphan": "unknown"
+ },
+ "124X2V25W4": {
+  "pubmed": 64,
+  "trials": 222,
+  "us_orphan": "unknown"
+ },
+ "6K6L7E3F1L": {
+  "pubmed": 0,
+  "trials": 27,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cough",
+    "phase": 3.0
+   },
+   {
+    "disease": "Idiopathic Pulmonary Fibrosis",
+    "phase": 2.0
+   },
+   {
+    "disease": "Osteoarthritis, Knee",
+    "phase": 2.0
+   },
+   {
+    "disease": "Cystitis, Interstitial",
+    "phase": 2.0
+   },
+   {
+    "disease": "Asthma",
+    "phase": 2.0
+   },
+   {
+    "disease": "Sleep Apnea, Obstructive",
+    "phase": 1.0
+   },
+   {
+    "disease": "Renal Insufficiency",
+    "phase": 1.0
+   }
+  ]
+ },
+ "G4PX8C4HKV": {
+  "pubmed": 8,
+  "trials": 85,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Diabetes Mellitus",
+    "phase": 4.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 2",
+    "phase": 3.0
+   },
+   {
+    "disease": "Epilepsy",
+    "phase": 1.0
+   }
+  ]
+ },
+ "PDC6A3C0OX": {
+  "pubmed": 14,
+  "trials": 46,
+  "us_orphan": "unknown"
+ },
+ "V06SV4M95S": {
+  "pubmed": 0,
+  "trials": 3,
+  "us_orphan": "unknown"
+ },
+ "UMD7G2653W": {
+  "pubmed": 0,
+  "trials": 88,
+  "us_orphan": "unknown"
+ },
+ "0VUA21238F": {
+  "pubmed": 22,
+  "trials": 322,
+  "us_orphan": "unknown"
+ },
+ "4H914M0CSP": {
+  "pubmed": 1,
+  "trials": 17,
+  "us_orphan": "unknown"
+ },
+ "337G83N988": {
+  "pubmed": 0,
+  "trials": 9,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Osteoporosis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Breast Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Hemangiosarcoma",
+    "phase": 2.0
+   }
+  ]
+ },
+ "5KN5Y9V01K": {
+  "pubmed": 0,
+  "trials": 5,
+  "us_orphan": "unknown"
+ },
+ "R3B637Y991": {
+  "pubmed": 1,
+  "trials": 7,
+  "us_orphan": "unknown"
+ },
+ "7CDW97HUEX": {
+  "pubmed": 0,
+  "trials": 18,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Endometriosis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Leiomyoma",
+    "phase": 3.0
+   },
+   {
+    "disease": "Liver Diseases",
+    "phase": 1.0
+   },
+   {
+    "disease": "Kidney Diseases",
+    "phase": 1.0
+   }
+  ]
+ },
+ "E0QN3D755O": {
+  "pubmed": 2,
+  "trials": 5,
+  "us_orphan": "unknown"
+ },
+ "3412470A0V": {
+  "pubmed": 1,
+  "trials": 11,
+  "us_orphan": "unknown"
+ },
+ "53QOG569E0": {
+  "pubmed": 6,
+  "trials": 6,
+  "us_orphan": "unknown"
+ },
+ "8NAP7826UB": {
+  "pubmed": 1,
+  "trials": 14,
+  "us_orphan": "unknown"
+ },
+ "A2I8C7HI9T": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "1LM890Q4FY": {
+  "pubmed": 16,
+  "trials": 8,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Osteosarcoma",
+    "phase": 4.0
+   },
+   {
+    "disease": "Neoplasms",
+    "phase": 4.0
+   }
+  ]
+ },
+ "YA84KI1VEW": {
+  "pubmed": 13,
+  "trials": 32,
+  "us_orphan": "unknown"
+ },
+ "V24GR4LI3I": {
+  "pubmed": 0,
+  "trials": 10,
+  "us_orphan": "unknown"
+ },
+ "4X49Y0596W": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown"
+ },
+ "2M19539ERK": {
+  "pubmed": 5,
+  "trials": 16,
+  "us_orphan": "unknown"
+ },
+ "9TUW81Y3CE": {
+  "pubmed": 11,
+  "trials": 76,
+  "us_orphan": "unknown"
+ },
+ "OS7097575K": {
+  "pubmed": 4,
+  "trials": 36,
+  "us_orphan": "unknown"
+ },
+ "SSZ1S4I0US": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "483AU1Y5CZ": {
+  "pubmed": 0,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "SE4TWR0K2C": {
+  "pubmed": 2,
+  "trials": 20,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypertension, Portal",
+    "phase": 2.0
+   },
+   {
+    "disease": "Carcinoma, Pancreatic Ductal",
+    "phase": 1.0
+   }
+  ]
+ },
+ "YQE403BP4D": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "34AP3BBP9T": {
+  "pubmed": 15,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "F5SXN2KNMR": {
+  "pubmed": 3,
+  "trials": 18,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Neoplasms",
+    "phase": 4.0
+   },
+   {
+    "disease": "Lymphoma",
+    "phase": 3.0
+   },
+   {
+    "disease": "Lymphoma, Large B-Cell, Diffuse",
+    "phase": 3.0
+   },
+   {
+    "disease": "Lymphoma, Non-Hodgkin",
+    "phase": 3.0
+   },
+   {
+    "disease": "Lymphoma, Follicular",
+    "phase": 3.0
+   },
+   {
+    "disease": "Leukemia, Lymphocytic, Chronic, B-Cell",
+    "phase": 1.0
+   },
+   {
+    "disease": "Leukemia, Myeloid, Acute",
+    "phase": 1.0
+   }
+  ]
+ },
+ "468GE2241L": {
+  "pubmed": 15,
+  "trials": 17,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Urinary Incontinence",
+    "phase": 4.0
+   },
+   {
+    "disease": "Polyuria",
+    "phase": 4.0
+   },
+   {
+    "disease": "Urinary Bladder, Overactive",
+    "phase": 3.0
+   }
+  ]
+ },
+ "309G9J93TP": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "TLM2976OFR": {
+  "pubmed": 0,
+  "trials": 350,
+  "us_orphan": "unknown"
+ },
+ "X3O30D9YMX": {
+  "pubmed": 5,
+  "trials": 66,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anemia",
+    "phase": 4.0
+   },
+   {
+    "disease": "Kidney Failure, Chronic",
+    "phase": 4.0
+   },
+   {
+    "disease": "Myelodysplastic Syndromes",
+    "phase": 3.0
+   },
+   {
+    "disease": "ST Elevation Myocardial Infarction",
+    "phase": 2.0
+   },
+   {
+    "disease": "Kidney Diseases",
+    "phase": 1.0
+   }
+  ]
+ },
+ "YS90V3DTX0": {
+  "pubmed": 0,
+  "trials": 28,
+  "us_orphan": "unknown"
+ },
+ "AJS8S3P31H": {
+  "pubmed": 1,
+  "trials": 11,
+  "us_orphan": "unknown"
+ },
+ "8D7B37T28G": {
+  "pubmed": 1,
+  "trials": 17,
+  "us_orphan": "unknown"
+ },
+ "6V9JH46E20": {
+  "pubmed": 10,
+  "trials": 24,
+  "us_orphan": "unknown"
+ },
+ "9U1ETH79CK": {
+  "pubmed": 5,
+  "trials": 11,
+  "us_orphan": "unknown"
+ },
+ "15XQ8043FN": {
+  "pubmed": 1,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "WS7LR3I1D6": {
+  "pubmed": 4,
+  "trials": 200,
+  "us_orphan": "unknown"
+ },
+ "B2K5L1L8S9": {
+  "pubmed": 1,
+  "trials": 109,
+  "us_orphan": "unknown"
+ },
+ "MXD6KMG2ZP": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "FU21S769PF": {
+  "pubmed": 0,
+  "trials": 8,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Carcinoma, Squamous Cell",
+    "phase": 4.0
+   },
+   {
+    "disease": "Head and Neck Neoplasms",
+    "phase": 4.0
+   },
+   {
+    "disease": "Neoplasms",
+    "phase": 4.0
+   },
+   {
+    "disease": "Bile Duct Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Nasopharyngeal Carcinoma",
+    "phase": 2.0
+   },
+   {
+    "disease": "Carcinoma, Non-Small-Cell Lung",
+    "phase": 1.0
+   },
+   {
+    "disease": "Carcinoma",
+    "phase": 1.0
+   }
+  ]
+ },
+ "Z1R9N0A399": {
+  "pubmed": 4,
+  "trials": 41,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Rheumatic Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Pain",
+    "phase": 2.0
+   }
+  ]
+ },
+ "X66NSO3N35": {
+  "pubmed": 37,
+  "trials": 311,
+  "us_orphan": "unknown"
+ },
+ "E38WZ4U54R": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "8CZ82ZYY9X": {
+  "pubmed": 0,
+  "trials": 12,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Multiple Sclerosis, Chronic Progressive",
+    "phase": 3.0
+   },
+   {
+    "disease": "Multiple Sclerosis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Kidney Diseases",
+    "phase": 1.0
+   }
+  ]
+ },
+ "06KB629TKV": {
+  "pubmed": 1,
+  "trials": 34,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Infections",
+    "phase": 4.0
+   },
+   {
+    "disease": "Tinea",
+    "phase": 4.0
+   },
+   {
+    "disease": "Tinea Pedis",
+    "phase": 4.0
+   },
+   {
+    "disease": "Pruritus",
+    "phase": 4.0
+   },
+   {
+    "disease": "Eczema",
+    "phase": 3.0
+   }
+  ]
+ },
+ "QVZ3IAR3JS": {
+  "pubmed": 2,
+  "trials": 1,
+  "us_orphan": "unknown"
+ },
+ "BQ5F77DZS3": {
+  "pubmed": 0,
+  "trials": 15,
+  "us_orphan": "unknown"
+ },
+ "7G4J1ZD9UQ": {
+  "pubmed": 1,
+  "trials": 17,
+  "us_orphan": "unknown"
+ },
+ "33MG53C7XW": {
+  "pubmed": 0,
+  "trials": 35,
+  "us_orphan": "unknown"
+ },
+ "K6A90IIZ19": {
+  "pubmed": 0,
+  "trials": 17,
+  "us_orphan": "unknown"
+ },
+ "49HFB70472": {
+  "pubmed": 3,
+  "trials": 2,
+  "us_orphan": "unknown"
+ },
+ "WPY40FTH8K": {
+  "pubmed": 10,
+  "trials": 37,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Eye Manifestations",
+    "phase": 4.0
+   },
+   {
+    "disease": "Nasal Obstruction",
+    "phase": 4.0
+   },
+   {
+    "disease": "Common Cold",
+    "phase": 3.0
+   }
+  ]
+ },
+ "03A5ORL08Q": {
+  "pubmed": 3,
+  "trials": 108,
+  "us_orphan": "unknown"
+ },
+ "GKF8S4C432": {
+  "pubmed": 0,
+  "trials": 514,
+  "us_orphan": "unknown"
+ },
+ "6QFP76V7S7": {
+  "pubmed": 0,
+  "trials": 3,
+  "us_orphan": "unknown"
+ },
+ "UJ0ZJ76DO9": {
+  "pubmed": 1,
+  "trials": 6,
+  "us_orphan": "unknown"
+ },
+ "DD5RBA1NKF": {
+  "pubmed": 0,
+  "trials": 11,
+  "us_orphan": "unknown"
+ },
+ "081D12SI0Z": {
+  "pubmed": 7,
+  "trials": 23,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Premature Birth",
+    "phase": 3.0
+   },
+   {
+    "disease": "Endometriosis",
+    "phase": 2.0
+   }
+  ]
+ },
+ "T4RS462G19": {
+  "pubmed": 0,
+  "trials": 80,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Carcinoma, Non-Small-Cell Lung",
+    "phase": 3.0
+   },
+   {
+    "disease": "Lung Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Carcinoma, Squamous Cell",
+    "phase": 2.0
+   },
+   {
+    "disease": "Carcinoma",
+    "phase": 1.0
+   },
+   {
+    "disease": "Liver Diseases",
+    "phase": 1.0
+   }
+  ]
+ },
+ "X32KK4201D": {
+  "pubmed": 10,
+  "trials": 31,
+  "us_orphan": "unknown"
+ },
+ "9T210MMZ3F": {
+  "pubmed": 1,
+  "trials": 3,
+  "us_orphan": "unknown"
+ },
+ "NQU9IPY4K9": {
+  "pubmed": 6,
+  "trials": 106,
+  "us_orphan": "unknown"
+ },
+ "9YQ9DI1W42": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown"
+ },
+ "958X4J301A": {
+  "pubmed": 0,
+  "trials": 50,
+  "us_orphan": "unknown"
+ },
+ "3XVL385Q0M": {
+  "pubmed": 11,
+  "trials": 66,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Arthritis, Rheumatoid",
+    "phase": 3.0
+   },
+   {
+    "disease": "Crohn Disease",
+    "phase": 3.0
+   },
+   {
+    "disease": "Colitis, Ulcerative",
+    "phase": 3.0
+   },
+   {
+    "disease": "Arthritis, Psoriatic",
+    "phase": 3.0
+   },
+   {
+    "disease": "Spondylitis, Ankylosing",
+    "phase": 3.0
+   },
+   {
+    "disease": "Spondylarthropathies",
+    "phase": 3.0
+   },
+   {
+    "disease": "Sjogren's Syndrome",
+    "phase": 2.0
+   },
+   {
+    "disease": "Lupus Erythematosus, Cutaneous",
+    "phase": 2.0
+   },
+   {
+    "disease": "Uveitis",
+    "phase": 2.0
+   },
+   {
+    "disease": "Inflammatory Bowel Diseases",
+    "phase": 2.0
+   },
+   {
+    "disease": "Lupus Erythematosus, Systemic",
+    "phase": 2.0
+   },
+   {
+    "disease": "Kidney Diseases",
+    "phase": 1.0
+   },
+   {
+    "disease": "Arthritis, Juvenile",
+    "phase": 1.0
+   }
+  ]
+ },
+ "V72H9867WB": {
+  "pubmed": 6,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "T3C89M417N": {
+  "pubmed": 0,
+  "trials": 41,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "908SY76S4G": {
+  "pubmed": 1,
+  "trials": 17,
+  "us_orphan": "unknown"
+ },
+ "4XE2T9H4DH": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "8O74K609HN": {
+  "pubmed": 0,
+  "trials": 20,
+  "us_orphan": "unknown"
+ },
+ "57370OZ3P1": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "RML78EN3XE": {
+  "pubmed": 10,
+  "trials": 48,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Obesity",
+    "phase": 4.0
+   },
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 3.0
+   },
+   {
+    "disease": "Metabolic Syndrome",
+    "phase": 3.0
+   },
+   {
+    "disease": "Fatty Liver",
+    "phase": 3.0
+   },
+   {
+    "disease": "Smoking Cessation",
+    "phase": 3.0
+   },
+   {
+    "disease": "Prediabetic State",
+    "phase": 3.0
+   },
+   {
+    "disease": "Lipid Metabolism Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Weight Loss",
+    "phase": 3.0
+   },
+   {
+    "disease": "Coronary Artery Disease",
+    "phase": 3.0
+   },
+   {
+    "disease": "Arteriosclerosis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 2",
+    "phase": 3.0
+   },
+   {
+    "disease": "Prader-Willi Syndrome",
+    "phase": 3.0
+   },
+   {
+    "disease": "Tobacco Use Disorder",
+    "phase": 2.0
+   },
+   {
+    "disease": "Alcohol Drinking",
+    "phase": 2.0
+   },
+   {
+    "disease": "Spinal Cord Injuries",
+    "phase": 2.0
+   },
+   {
+    "disease": "Pain",
+    "phase": 1.0
+   },
+   {
+    "disease": "Marijuana Abuse",
+    "phase": 1.0
+   }
+  ]
+ },
+ "721809WQCP": {
+  "pubmed": 0,
+  "trials": 15,
+  "us_orphan": "unknown"
+ },
+ "J9QH779MEM": {
+  "pubmed": 10,
+  "trials": 24,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypertension",
+    "phase": 4.0
+   },
+   {
+    "disease": "Hypertension, Pulmonary",
+    "phase": 3.0
+   },
+   {
+    "disease": "Renal Insufficiency, Chronic",
+    "phase": 2.0
+   },
+   {
+    "disease": "Proteinuria",
+    "phase": 2.0
+   },
+   {
+    "disease": "Asthma",
+    "phase": 2.0
+   }
+  ]
+ },
+ "9G468C8B13": {
+  "pubmed": 1,
+  "trials": 17,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Arrhythmias, Cardiac",
+    "phase": 4.0
+   },
+   {
+    "disease": "Atrial Fibrillation",
+    "phase": 3.0
+   },
+   {
+    "disease": "Atrial Flutter",
+    "phase": 2.0
+   }
+  ]
+ },
+ "I6B4B2U96P": {
+  "pubmed": 0,
+  "trials": 209,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Diabetes Mellitus",
+    "phase": 4.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 2",
+    "phase": 4.0
+   },
+   {
+    "disease": "Prediabetic State",
+    "phase": 3.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 1",
+    "phase": 3.0
+   },
+   {
+    "disease": "Glucose Intolerance",
+    "phase": 2.0
+   },
+   {
+    "disease": "Diabetes, Gestational",
+    "phase": 2.0
+   },
+   {
+    "disease": "Breast Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Depressive Disorder, Major",
+    "phase": 1.0
+   }
+  ]
+ },
+ "5BF646324K": {
+  "pubmed": 0,
+  "trials": 35,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Urogenital Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Urinary Bladder Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Head and Neck Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Breast Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Small Cell Lung Carcinoma",
+    "phase": 2.0
+   },
+   {
+    "disease": "Carcinoma, Non-Small-Cell Lung",
+    "phase": 2.0
+   },
+   {
+    "disease": "Carcinoma, Transitional Cell",
+    "phase": 2.0
+   },
+   {
+    "disease": "Penile Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Stomach Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Prostatic Neoplasms, Castration-Resistant",
+    "phase": 2.0
+   },
+   {
+    "disease": "Lung Neoplasms",
+    "phase": 2.0
+   }
+  ]
+ },
+ "47ISU063SG": {
+  "pubmed": 3,
+  "trials": 10,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "WRX4NFY03R": {
+  "pubmed": 12,
+  "trials": 129,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Rheumatic Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Pain",
+    "phase": 3.0
+   },
+   {
+    "disease": "Arthritis, Rheumatoid",
+    "phase": 3.0
+   },
+   {
+    "disease": "Spondylitis, Ankylosing",
+    "phase": 3.0
+   },
+   {
+    "disease": "Osteoarthritis, Knee",
+    "phase": 3.0
+   },
+   {
+    "disease": "Wounds and Injuries",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dysmenorrhea",
+    "phase": 3.0
+   },
+   {
+    "disease": "Toothache",
+    "phase": 3.0
+   },
+   {
+    "disease": "Low Back Pain",
+    "phase": 3.0
+   },
+   {
+    "disease": "Osteoarthritis",
+    "phase": 3.0
+   },
+   {
+    "disease": "HIV Infections",
+    "phase": 2.0
+   },
+   {
+    "disease": "Bone Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Prostatic Neoplasms, Castration-Resistant",
+    "phase": 2.0
+   },
+   {
+    "disease": "Melanoma",
+    "phase": 1.0
+   },
+   {
+    "disease": "Tuberculosis",
+    "phase": 1.0
+   }
+  ]
+ },
+ "59XE10C19C": {
+  "pubmed": 55,
+  "trials": 27,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "2AE8M83G3E": {
+  "pubmed": 7,
+  "trials": 15,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypersensitivity",
+    "phase": 4.0
+   },
+   {
+    "disease": "Urticaria",
+    "phase": 3.0
+   },
+   {
+    "disease": "Arthritis, Rheumatoid",
+    "phase": 3.0
+   },
+   {
+    "disease": "Mastocytosis",
+    "phase": 2.0
+   },
+   {
+    "disease": "Cold Urticaria",
+    "phase": 2.0
+   }
+  ]
+ },
+ "AB0BHP2FH0": {
+  "pubmed": 2,
+  "trials": 13,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Onychomycosis",
+    "phase": 3.0
+   }
+  ]
+ },
+ "4O21U048EF": {
+  "pubmed": 10,
+  "trials": 49,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Rheumatic Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Vaginitis",
+    "phase": 4.0
+   },
+   {
+    "disease": "Arthralgia",
+    "phase": 4.0
+   },
+   {
+    "disease": "Myalgia",
+    "phase": 4.0
+   },
+   {
+    "disease": "Stomatitis",
+    "phase": 3.0
+   }
+  ]
+ },
+ "Q1J152VB1P": {
+  "pubmed": 10,
+  "trials": 30,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Severe Acute Respiratory Syndrome",
+    "phase": 3.0
+   },
+   {
+    "disease": "Malaria",
+    "phase": 0.5
+   }
+  ]
+ },
+ "CC6X0L40GW": {
+  "pubmed": 2,
+  "trials": 21,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypertension",
+    "phase": 4.0
+   },
+   {
+    "disease": "Heart Diseases",
+    "phase": 3.0
+   },
+   {
+    "disease": "Hypotension, Orthostatic",
+    "phase": 0.5
+   }
+  ]
+ },
+ "200168S0CL": {
+  "pubmed": 40,
+  "trials": 40,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Respiratory Tract Diseases",
+    "phase": 3.0
+   },
+   {
+    "disease": "Pharyngitis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Parkinson Disease",
+    "phase": 3.0
+   },
+   {
+    "disease": "Cough",
+    "phase": 2.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 2.0
+   },
+   {
+    "disease": "Gaucher Disease",
+    "phase": 2.0
+   },
+   {
+    "disease": "Amyotrophic Lateral Sclerosis",
+    "phase": 2.0
+   },
+   {
+    "disease": "Lewy Body Disease",
+    "phase": 1.0
+   }
+  ]
+ },
+ "KZF0XM66JC": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Myalgia",
+    "phase": 2.0
+   },
+   {
+    "disease": "Arthralgia",
+    "phase": 2.0
+   }
+  ]
+ },
+ "C6T4514L4E": {
+  "pubmed": 117,
+  "trials": 118,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Heart Failure",
+    "phase": 3.0
+   },
+   {
+    "disease": "Severe Acute Respiratory Syndrome",
+    "phase": 3.0
+   },
+   {
+    "disease": "ST Elevation Myocardial Infarction",
+    "phase": 3.0
+   },
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 3.0
+   },
+   {
+    "disease": "Shock",
+    "phase": 3.0
+   },
+   {
+    "disease": "Amyotrophic Lateral Sclerosis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Shock, Septic",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hernias, Diaphragmatic, Congenital",
+    "phase": 2.0
+   },
+   {
+    "disease": "Acute Kidney Injury",
+    "phase": 2.0
+   },
+   {
+    "disease": "Muscular Diseases",
+    "phase": 2.0
+   },
+   {
+    "disease": "Stroke",
+    "phase": 2.0
+   },
+   {
+    "disease": "Coronary Disease",
+    "phase": 2.0
+   },
+   {
+    "disease": "Ischemic Attack, Transient",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hemorrhage",
+    "phase": 2.0
+   },
+   {
+    "disease": "Heart Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "E61Q31EK2F": {
+  "pubmed": 33,
+  "trials": 66,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Polycystic Ovary Syndrome",
+    "phase": 0.5
+   }
+  ]
+ },
+ "GB2433A4M3": {
+  "pubmed": 1,
+  "trials": 33,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Erectile Dysfunction",
+    "phase": 3.0
+   },
+   {
+    "disease": "Sexual Dysfunction, Physiological",
+    "phase": 3.0
+   },
+   {
+    "disease": "Premature Ejaculation",
+    "phase": 3.0
+   }
+  ]
+ },
+ "7F80CC3NNV": {
+  "pubmed": 2,
+  "trials": 20,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Irritable Bowel Syndrome",
+    "phase": 3.0
+   }
+  ]
+ },
+ "76K53XP4TO": {
+  "pubmed": 23,
+  "trials": 15,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Diarrhea",
+    "phase": 3.0
+   },
+   {
+    "disease": "Diarrhea, Infantile",
+    "phase": 3.0
+   }
+  ]
+ },
+ "FF9X0205V2": {
+  "pubmed": 2,
+  "trials": 28,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Osteoporosis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Sexual Dysfunction, Physiological",
+    "phase": 3.0
+   },
+   {
+    "disease": "Breast Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Menopause",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder, Major",
+    "phase": 1.0
+   }
+  ]
+ },
+ "53S5U404NU": {
+  "pubmed": 0,
+  "trials": 34,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Tobacco Use Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Smoking Cessation",
+    "phase": 3.0
+   },
+   {
+    "disease": "Kidney Diseases",
+    "phase": 1.0
+   }
+  ]
+ },
+ "QG05NRB077": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "ZH516LNZ10": {
+  "pubmed": 17,
+  "trials": 16,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Attention Deficit Disorder with Hyperactivity",
+    "phase": 4.0
+   },
+   {
+    "disease": "Movement Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Postpoliomyelitis Syndrome",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Cocaine-Related Disorders",
+    "phase": 1.0
+   }
+  ]
+ },
+ "5587267Z69": {
+  "pubmed": 49,
+  "trials": 83,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Gastroparesis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Gastroenteritis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Gastroesophageal Reflux",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dyspepsia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Multiple Sclerosis, Relapsing-Remitting",
+    "phase": 2.0
+   },
+   {
+    "disease": "Multiple Sclerosis, Chronic Progressive",
+    "phase": 2.0
+   },
+   {
+    "disease": "Premature Birth",
+    "phase": 2.0
+   },
+   {
+    "disease": "Parkinson Disease",
+    "phase": 2.0
+   }
+  ]
+ },
+ "43B2M34G2V": {
+  "pubmed": 62,
+  "trials": 33,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "81BMQ80QRL": {
+  "pubmed": 0,
+  "trials": 33,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Dyspepsia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Peritonitis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 3.0
+   },
+   {
+    "disease": "Irritable Bowel Syndrome",
+    "phase": 2.0
+   },
+   {
+    "disease": "Constipation",
+    "phase": 2.0
+   },
+   {
+    "disease": "Gastroparesis",
+    "phase": 1.0
+   }
+  ]
+ },
+ "RPK779R03H": {
+  "pubmed": 3,
+  "trials": 22,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Rheumatic Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Myalgia",
+    "phase": 4.0
+   },
+   {
+    "disease": "Arthralgia",
+    "phase": 4.0
+   },
+   {
+    "disease": "Arthritis, Rheumatoid",
+    "phase": 4.0
+   },
+   {
+    "disease": "Spondylitis",
+    "phase": 4.0
+   },
+   {
+    "disease": "Osteoarthritis",
+    "phase": 4.0
+   },
+   {
+    "disease": "Pulpitis",
+    "phase": 2.0
+   }
+  ]
+ },
+ "88TWF8015Y": {
+  "pubmed": 2,
+  "trials": 103,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Postpartum Hemorrhage",
+    "phase": 3.0
+   },
+   {
+    "disease": "Prader-Willi Syndrome",
+    "phase": 3.0
+   },
+   {
+    "disease": "Uterine Inertia",
+    "phase": 1.0
+   },
+   {
+    "disease": "Leiomyoma",
+    "phase": 1.0
+   }
+  ]
+ },
+ "661FH77Z3P": {
+  "pubmed": 3,
+  "trials": 5,
+  "us_orphan": "unknown"
+ },
+ "N9A0A0R9S8": {
+  "pubmed": 3,
+  "trials": 40,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Cardiomyopathy, Hypertrophic",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hypertension, Pulmonary",
+    "phase": 2.0
+   },
+   {
+    "disease": "Cardiotoxicity",
+    "phase": 2.0
+   },
+   {
+    "disease": "Diabetic Nephropathies",
+    "phase": 2.0
+   },
+   {
+    "disease": "Non-alcoholic Fatty Liver Disease",
+    "phase": 2.0
+   },
+   {
+    "disease": "Heart Failure",
+    "phase": 1.0
+   },
+   {
+    "disease": "Acute-On-Chronic Liver Failure",
+    "phase": 1.0
+   },
+   {
+    "disease": "Peripheral Nervous System Diseases",
+    "phase": 1.0
+   }
+  ]
+ },
+ "250PJI13LM": {
+  "pubmed": 3,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Depressive Disorder",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "740J2QX53R": {
+  "pubmed": 3,
+  "trials": 10,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "7QM776WJ5N": {
+  "pubmed": 1,
+  "trials": 55,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Venous Insufficiency",
+    "phase": 3.0
+   },
+   {
+    "disease": "Arthritis, Rheumatoid",
+    "phase": 3.0
+   },
+   {
+    "disease": "Colitis, Ulcerative",
+    "phase": 3.0
+   },
+   {
+    "disease": "Peptic Ulcer",
+    "phase": 3.0
+   },
+   {
+    "disease": "Non-alcoholic Fatty Liver Disease",
+    "phase": 3.0
+   },
+   {
+    "disease": "Infertility",
+    "phase": 2.0
+   },
+   {
+    "disease": "Menorrhagia",
+    "phase": 1.0
+   }
+  ]
+ },
+ "182ECH14UH": {
+  "pubmed": 5,
+  "trials": 9,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Acute Kidney Injury",
+    "phase": 0.5
+   }
+  ]
+ },
+ "9CLV70W7HS": {
+  "pubmed": 20,
+  "trials": 12,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Sleep Wake Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Epilepsy",
+    "phase": 2.0
+   }
+  ]
+ },
+ "GVV4Z879SP": {
+  "pubmed": 9,
+  "trials": 17,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Cognitive Dysfunction",
+    "phase": 3.0
+   }
+  ]
+ },
+ "I00Q766CZ2": {
+  "pubmed": 0,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "TQD7Q784P1": {
+  "pubmed": 4,
+  "trials": 10,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypersensitivity",
+    "phase": 4.0
+   },
+   {
+    "disease": "Irritable Bowel Syndrome",
+    "phase": 3.0
+   }
+  ]
+ },
+ "290ZY759PI": {
+  "pubmed": 1,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "852A84Y8LS": {
+  "pubmed": 0,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Infections",
+    "phase": 4.0
+   }
+  ]
+ },
+ "260080034N": {
+  "pubmed": 1,
+  "trials": 15,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Hypertension",
+    "phase": 3.0
+   },
+   {
+    "disease": "Angina, Stable",
+    "phase": 2.0
+   }
+  ]
+ },
+ "A78GF17HJS": {
+  "pubmed": 2,
+  "trials": 32,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypertension",
+    "phase": 3.0
+   },
+   {
+    "disease": "Pre-Eclampsia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Stroke",
+    "phase": 3.0
+   },
+   {
+    "disease": "Cerebrovascular Disorders",
+    "phase": 3.0
+   }
+  ]
+ },
+ "M75MZG2236": {
+  "pubmed": 2,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cough",
+    "phase": 2.0
+   }
+  ]
+ },
+ "3483C2H13H": {
+  "pubmed": 1,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Nasal Obstruction",
+    "phase": 4.0
+   },
+   {
+    "disease": "Eye Infections",
+    "phase": 4.0
+   }
+  ]
+ },
+ "76J0853EKA": {
+  "pubmed": 5,
+  "trials": 10,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Pulmonary Disease, Chronic Obstructive",
+    "phase": 3.0
+   },
+   {
+    "disease": "Bronchitis, Chronic",
+    "phase": 2.0
+   }
+  ]
+ },
+ "PJ0Y7AZB63": {
+  "pubmed": 2,
+  "trials": 9,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Depressive Disorder",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Tobacco Use Disorder",
+    "phase": 2.0
+   },
+   {
+    "disease": "Substance-Related Disorders",
+    "phase": 2.0
+   }
+  ]
+ },
+ "SLE31693IV": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Nasal Obstruction",
+    "phase": 2.0
+   }
+  ]
+ },
+ "Y9449Q51XH": {
+  "pubmed": 10,
+  "trials": 27,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Hyperlipidemia, Familial Combined",
+    "phase": 3.0
+   },
+   {
+    "disease": "Liver Cirrhosis, Biliary",
+    "phase": 3.0
+   },
+   {
+    "disease": "Cholangitis, Sclerosing",
+    "phase": 3.0
+   },
+   {
+    "disease": "Myelodysplastic Syndromes",
+    "phase": 2.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 2",
+    "phase": 2.0
+   },
+   {
+    "disease": "Mitochondrial Diseases",
+    "phase": 2.0
+   },
+   {
+    "disease": "Bipolar Disorder",
+    "phase": 2.0
+   }
+  ]
+ },
+ "73H7UDN6EC": {
+  "pubmed": 1,
+  "trials": 7,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 2.0
+   },
+   {
+    "disease": "Ischemic Stroke",
+    "phase": 2.0
+   }
+  ]
+ },
+ "OZE0372S5A": {
+  "pubmed": 2,
+  "trials": 29,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Infections",
+    "phase": 2.0
+   }
+  ]
+ },
+ "21KOF230FA": {
+  "pubmed": 31,
+  "trials": 11,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Bacterial Infections",
+    "phase": 4.0
+   }
+  ]
+ },
+ "6E20216Q0L": {
+  "pubmed": 503,
+  "trials": 359,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Carcinoma, Hepatocellular",
+    "phase": 3.0
+   },
+   {
+    "disease": "Hypertension, Portal",
+    "phase": 3.0
+   },
+   {
+    "disease": "Gallbladder Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Neuroendocrine Tumors",
+    "phase": 3.0
+   },
+   {
+    "disease": "Polycystic Kidney, Autosomal Dominant",
+    "phase": 3.0
+   },
+   {
+    "disease": "Pancreatitis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Liver Failure",
+    "phase": 3.0
+   },
+   {
+    "disease": "Carcinoid Tumor",
+    "phase": 2.0
+   },
+   {
+    "disease": "Peptic Ulcer",
+    "phase": 2.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 1",
+    "phase": 2.0
+   },
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 2.0
+   },
+   {
+    "disease": "Prostatic Neoplasms",
+    "phase": 1.0
+   },
+   {
+    "disease": "Hypoglycemia",
+    "phase": 1.0
+   }
+  ]
+ },
+ "LAH70H9JPH": {
+  "pubmed": 11,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Tourette Syndrome",
+    "phase": 3.0
+   },
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Tic Disorders",
+    "phase": 3.0
+   }
+  ]
+ },
+ "Y92OUS2H9B": {
+  "pubmed": 2,
+  "trials": 21,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Diabetic Neuropathies",
+    "phase": 3.0
+   },
+   {
+    "disease": "Alzheimer Disease",
+    "phase": 2.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 2",
+    "phase": 2.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 1",
+    "phase": 1.0
+   }
+  ]
+ },
+ "3O31P6T4G3": {
+  "pubmed": 9,
+  "trials": 10,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cough",
+    "phase": 3.0
+   },
+   {
+    "disease": "Bronchial Diseases",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dyspnea",
+    "phase": 2.0
+   }
+  ]
+ },
+ "7D6EM3S13P": {
+  "pubmed": 1,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Bacterial Infections",
+    "phase": 4.0
+   },
+   {
+    "disease": "Acne Vulgaris",
+    "phase": 3.0
+   }
+  ]
+ },
+ "V4TKW1454M": {
+  "pubmed": 34,
+  "trials": 17,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Rheumatic Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Arthralgia",
+    "phase": 4.0
+   },
+   {
+    "disease": "Myalgia",
+    "phase": 4.0
+   },
+   {
+    "disease": "Breast Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Pain",
+    "phase": 1.0
+   }
+  ]
+ },
+ "00DPD30SOY": {
+  "pubmed": 16,
+  "trials": 11,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Neoplasms",
+    "phase": 4.0
+   },
+   {
+    "disease": "Leukemia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Leukemia, Myeloid, Acute",
+    "phase": 3.0
+   },
+   {
+    "disease": "Myelodysplastic Syndromes",
+    "phase": 3.0
+   }
+  ]
+ },
+ "5921X1560Q": {
+  "pubmed": 0,
+  "trials": 806,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Varicose Veins",
+    "phase": 4.0
+   },
+   {
+    "disease": "Menorrhagia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Infertility",
+    "phase": 2.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 2",
+    "phase": 2.0
+   },
+   {
+    "disease": "Severe Acute Respiratory Syndrome",
+    "phase": 2.0
+   },
+   {
+    "disease": "Rosacea",
+    "phase": 1.0
+   }
+  ]
+ },
+ "947S0YZ36I": {
+  "pubmed": 5,
+  "trials": 41,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Depressive Disorder",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Fibromyalgia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Fatigue",
+    "phase": 3.0
+   },
+   {
+    "disease": "Pain",
+    "phase": 2.0
+   },
+   {
+    "disease": "Attention Deficit Disorder with Hyperactivity",
+    "phase": 2.0
+   },
+   {
+    "disease": "Diabetic Neuropathies",
+    "phase": 2.0
+   },
+   {
+    "disease": "Depressive Disorder, Major",
+    "phase": 2.0
+   },
+   {
+    "disease": "Stress Disorders, Post-Traumatic",
+    "phase": 2.0
+   }
+  ]
+ },
+ "P67IM25ID8": {
+  "pubmed": 1,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypertension",
+    "phase": 4.0
+   }
+  ]
+ },
+ "H6630PU5ZJ": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "8KQ660G60G": {
+  "pubmed": 82,
+  "trials": 7,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Thyroid Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Thyrotoxicosis",
+    "phase": 3.0
+   }
+  ]
+ },
+ "W13O82Z7HL": {
+  "pubmed": 1,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "24YL531VOH": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "C7C2QDD75P": {
+  "pubmed": 0,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Diabetes Mellitus",
+    "phase": 4.0
+   }
+  ]
+ },
+ "CV71VTP0VN": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Dementia",
+    "phase": 2.0
+   }
+  ]
+ },
+ "GRI7WFR424": {
+  "pubmed": 3,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "GU56C842ZA": {
+  "pubmed": 0,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Sleep Wake Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "7Y4N11PXO8": {
+  "pubmed": 2,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Angina, Stable",
+    "phase": 3.0
+   },
+   {
+    "disease": "Inflammation",
+    "phase": 1.0
+   }
+  ]
+ },
+ "DRB57K47QC": {
+  "pubmed": 3,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Ehlers-Danlos Syndrome",
+    "phase": 3.0
+   }
+  ]
+ },
+ "KD510K1IQW": {
+  "pubmed": 3,
+  "trials": 376,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Pain",
+    "phase": 4.0
+   },
+   {
+    "disease": "Fever",
+    "phase": 4.0
+   }
+  ]
+ },
+ "0813BZ6866": {
+  "pubmed": 20,
+  "trials": 17,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "0C5DBZ19HV": {
+  "pubmed": 2,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "17432CG1KU": {
+  "pubmed": 0,
+  "trials": 7,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "ER09126G7A": {
+  "pubmed": 4,
+  "trials": 21,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Rheumatic Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Pain",
+    "phase": 3.0
+   },
+   {
+    "disease": "Alzheimer Disease",
+    "phase": 2.0
+   },
+   {
+    "disease": "Migraine Disorders",
+    "phase": 2.0
+   }
+  ]
+ },
+ "G20G12V769": {
+  "pubmed": 4,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Acanthamoeba Keratitis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Eye Infections",
+    "phase": 3.0
+   }
+  ]
+ },
+ "543512OBTC": {
+  "pubmed": 1,
+  "trials": 9,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Attention Deficit Disorder with Hyperactivity",
+    "phase": 4.0
+   },
+   {
+    "disease": "Diabetic Nephropathies",
+    "phase": 2.0
+   },
+   {
+    "disease": "Epilepsy",
+    "phase": 1.0
+   }
+  ]
+ },
+ "PXW8U3YXDV": {
+  "pubmed": 12,
+  "trials": 42,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Neoplasms",
+    "phase": 4.0
+   },
+   {
+    "disease": "Prostatic Neoplasms, Castration-Resistant",
+    "phase": 3.0
+   },
+   {
+    "disease": "Prostatic Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Infertility",
+    "phase": 1.0
+   }
+  ]
+ },
+ "19KW7PI29F": {
+  "pubmed": 3,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   }
+  ]
+ },
+ "98QS4N58TW": {
+  "pubmed": 1,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 3.0
+   },
+   {
+    "disease": "Bile Duct Diseases",
+    "phase": 3.0
+   }
+  ]
+ },
+ "J8WA3K39B7": {
+  "pubmed": 0,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "80Q9QWN15M": {
+  "pubmed": 1,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Ovarian Hyperstimulation Syndrome",
+    "phase": 2.0
+   }
+  ]
+ },
+ "FCB9EGG971": {
+  "pubmed": 8,
+  "trials": 87,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Neoplasms",
+    "phase": 4.0
+   },
+   {
+    "disease": "Mesothelioma",
+    "phase": 3.0
+   },
+   {
+    "disease": "Carcinoma, Squamous Cell",
+    "phase": 3.0
+   },
+   {
+    "disease": "Colorectal Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Carcinoma, Hepatocellular",
+    "phase": 3.0
+   },
+   {
+    "disease": "Liver Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Rectal Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Esophageal Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Stomach Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Pancreatic Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Adenoma, Bile Duct",
+    "phase": 2.0
+   },
+   {
+    "disease": "Nasopharyngeal Carcinoma",
+    "phase": 2.0
+   },
+   {
+    "disease": "Precursor Cell Lymphoblastic Leukemia-Lymphoma",
+    "phase": 1.0
+   }
+  ]
+ },
+ "5V141XK28X": {
+  "pubmed": 2,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Rheumatic Diseases",
+    "phase": 4.0
+   }
+  ]
+ },
+ "2M3055079H": {
+  "pubmed": 2,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Virus Diseases",
+    "phase": 2.0
+   },
+   {
+    "disease": "Pancreatic Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Colorectal Neoplasms",
+    "phase": 1.0
+   }
+  ]
+ },
+ "5XZM1R3DKF": {
+  "pubmed": 1,
+  "trials": 10,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Sleep Initiation and Maintenance Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Sleep Wake Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "ZB6F8MY53V": {
+  "pubmed": 7,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Ascites",
+    "phase": 2.0
+   }
+  ]
+ },
+ "R7PLA2DM0J": {
+  "pubmed": 53,
+  "trials": 21,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Vertigo",
+    "phase": 4.0
+   },
+   {
+    "disease": "Migraine Disorders",
+    "phase": 1.0
+   }
+  ]
+ },
+ "JCV8365FWN": {
+  "pubmed": 1,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Deglutition Disorders",
+    "phase": 3.0
+   }
+  ]
+ },
+ "C2W72OJ5ZU": {
+  "pubmed": 1,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psoriasis",
+    "phase": 4.0
+   }
+  ]
+ },
+ "03QB156W6I": {
+  "pubmed": 5,
+  "trials": 16,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Urinary Tract Infections",
+    "phase": 3.0
+   },
+   {
+    "disease": "Bacterial Infections",
+    "phase": 3.0
+   },
+   {
+    "disease": "Bacteremia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "620X0222FQ": {
+  "pubmed": 19,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "N2Z8ALG4U5": {
+  "pubmed": 6,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "6V88E24N5T": {
+  "pubmed": 0,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "I7GG1YUC5V": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   }
+  ]
+ },
+ "42H8PQ0NMJ": {
+  "pubmed": 1,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "T1X8S697GT": {
+  "pubmed": 3,
+  "trials": 15,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Low Back Pain",
+    "phase": 3.0
+   }
+  ]
+ },
+ "U3RSY48JW5": {
+  "pubmed": 49,
+  "trials": 7250,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Pruritus",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anesthesia",
+    "phase": 4.0
+   },
+   {
+    "disease": "Hemorrhoids",
+    "phase": 4.0
+   },
+   {
+    "disease": "Pharyngitis",
+    "phase": 4.0
+   },
+   {
+    "disease": "Sunburn",
+    "phase": 4.0
+   },
+   {
+    "disease": "Burns",
+    "phase": 4.0
+   },
+   {
+    "disease": "Toothache",
+    "phase": 4.0
+   },
+   {
+    "disease": "Nasal Obstruction",
+    "phase": 4.0
+   },
+   {
+    "disease": "Inflammation",
+    "phase": 4.0
+   },
+   {
+    "disease": "Insect Bites and Stings",
+    "phase": 4.0
+   },
+   {
+    "disease": "Premature Ejaculation",
+    "phase": 4.0
+   },
+   {
+    "disease": "Eczema",
+    "phase": 3.0
+   },
+   {
+    "disease": "Otitis Media",
+    "phase": 3.0
+   },
+   {
+    "disease": "Asthma",
+    "phase": 2.0
+   },
+   {
+    "disease": "Obesity",
+    "phase": 1.0
+   }
+  ]
+ },
+ "536BQ2JVC7": {
+  "pubmed": 6,
+  "trials": 72,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Stroke",
+    "phase": 3.0
+   },
+   {
+    "disease": "Amphetamine-Related Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Attention Deficit Disorder with Hyperactivity",
+    "phase": 3.0
+   },
+   {
+    "disease": "Cerebral Infarction",
+    "phase": 3.0
+   },
+   {
+    "disease": "Brain Ischemia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Brain Injuries",
+    "phase": 3.0
+   },
+   {
+    "disease": "Ischemic Stroke",
+    "phase": 3.0
+   },
+   {
+    "disease": "Glaucoma, Open-Angle",
+    "phase": 3.0
+   },
+   {
+    "disease": "Marijuana Abuse",
+    "phase": 2.0
+   },
+   {
+    "disease": "Alcoholism",
+    "phase": 2.0
+   },
+   {
+    "disease": "Severe Acute Respiratory Syndrome",
+    "phase": 1.0
+   }
+  ]
+ },
+ "9902116282": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "4U5MP5IUD8": {
+  "pubmed": 9,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "5402501F0W": {
+  "pubmed": 3,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder, Major",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "DO22K1PRDJ": {
+  "pubmed": 0,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "4RP92LYZ2F": {
+  "pubmed": 18,
+  "trials": 25,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Pain",
+    "phase": 3.0
+   }
+  ]
+ },
+ "0BY8440V3N": {
+  "pubmed": 8,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "501Q5EQ1GM": {
+  "pubmed": 8,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "M671F9NLEA": {
+  "pubmed": 2,
+  "trials": 20,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "68P0556B0U": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "F8252JGO9S": {
+  "pubmed": 1,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   }
+  ]
+ },
+ "K253365DXI": {
+  "pubmed": 4,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "776S0UP252": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "BW7H1TJS22": {
+  "pubmed": 0,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Essential Hypertension",
+    "phase": 3.0
+   },
+   {
+    "disease": "Polycystic Kidney, Autosomal Dominant",
+    "phase": 2.0
+   }
+  ]
+ },
+ "JTG7R315LK": {
+  "pubmed": 2,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 2.0
+   },
+   {
+    "disease": "Psychomotor Agitation",
+    "phase": 2.0
+   },
+   {
+    "disease": "Dyspepsia",
+    "phase": 1.0
+   }
+  ]
+ },
+ "759N8462G8": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "0SRQ75X9I9": {
+  "pubmed": 1,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "U60U6P08SP": {
+  "pubmed": 4,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "10F89177CO": {
+  "pubmed": 0,
+  "trials": 22,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "9E75Q6SUUB": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "UZC80HAU42": {
+  "pubmed": 1,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 2.0
+   }
+  ]
+ },
+ "1Z0YFI05OO": {
+  "pubmed": 0,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Thrombosis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Insulin Resistance",
+    "phase": 2.0
+   }
+  ]
+ },
+ "EJ27X76M46": {
+  "pubmed": 0,
+  "trials": 285,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 3.0
+   },
+   {
+    "disease": "Pre-Eclampsia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Fatigue Syndrome, Chronic",
+    "phase": 3.0
+   },
+   {
+    "disease": "Multiple Organ Failure",
+    "phase": 3.0
+   },
+   {
+    "disease": "Carcinoma, Hepatocellular",
+    "phase": 2.0
+   },
+   {
+    "disease": "Death, Sudden, Cardiac",
+    "phase": 2.0
+   },
+   {
+    "disease": "Heart Failure",
+    "phase": 2.0
+   },
+   {
+    "disease": "Sepsis",
+    "phase": 2.0
+   },
+   {
+    "disease": "Carcinoma, Squamous Cell",
+    "phase": 2.0
+   },
+   {
+    "disease": "Heart Arrest",
+    "phase": 2.0
+   },
+   {
+    "disease": "Heart Failure, Diastolic",
+    "phase": 2.0
+   },
+   {
+    "disease": "Glioblastoma",
+    "phase": 2.0
+   },
+   {
+    "disease": "Coronary Disease",
+    "phase": 2.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 2.0
+   },
+   {
+    "disease": "Polycystic Ovary Syndrome",
+    "phase": 2.0
+   },
+   {
+    "disease": "Gliosarcoma",
+    "phase": 1.0
+   },
+   {
+    "disease": "Carcinoma, Basal Cell",
+    "phase": 1.0
+   },
+   {
+    "disease": "Cerebellar Ataxia",
+    "phase": 1.0
+   },
+   {
+    "disease": "Breast Neoplasms",
+    "phase": 1.0
+   },
+   {
+    "disease": "Wounds and Injuries",
+    "phase": 0.5
+   }
+  ]
+ },
+ "2K3L8O9SOV": {
+  "pubmed": 3,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Pruritus",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hypersensitivity",
+    "phase": 2.0
+   }
+  ]
+ },
+ "C7Z4ITI7L7": {
+  "pubmed": 20,
+  "trials": 8,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Heart Failure",
+    "phase": 3.0
+   },
+   {
+    "disease": "Coronary Disease",
+    "phase": 3.0
+   }
+  ]
+ },
+ "22M9P70OQ9": {
+  "pubmed": 12,
+  "trials": 25,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Lung Diseases, Obstructive",
+    "phase": 4.0
+   },
+   {
+    "disease": "Pulmonary Disease, Chronic Obstructive",
+    "phase": 3.0
+   },
+   {
+    "disease": "Asthma",
+    "phase": 3.0
+   },
+   {
+    "disease": "Heart Failure",
+    "phase": 1.0
+   }
+  ]
+ },
+ "P0J3387W3S": {
+  "pubmed": 3,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 4.0
+   }
+  ]
+ },
+ "244O1F90NA": {
+  "pubmed": 2,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypersensitivity",
+    "phase": 4.0
+   }
+  ]
+ },
+ "260456HAM0": {
+  "pubmed": 14,
+  "trials": 44,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Myocardial Infarction",
+    "phase": 3.0
+   },
+   {
+    "disease": "Severe Acute Respiratory Syndrome",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 2.0
+   },
+   {
+    "disease": "Premature Birth",
+    "phase": 2.0
+   },
+   {
+    "disease": "Coronary Disease",
+    "phase": 2.0
+   },
+   {
+    "disease": "Cognitive Dysfunction",
+    "phase": 2.0
+   },
+   {
+    "disease": "Radiation Pneumonitis",
+    "phase": 2.0
+   }
+  ]
+ },
+ "PM5LI0P38J": {
+  "pubmed": 4,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Brain Diseases",
+    "phase": 3.0
+   },
+   {
+    "disease": "Inflammatory Bowel Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "A8M33244M6": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Bacterial Infections",
+    "phase": 4.0
+   }
+  ]
+ },
+ "42NCM1BW43": {
+  "pubmed": 1,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "3G943U18KM": {
+  "pubmed": 4,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "K9AY9IR2SD": {
+  "pubmed": 1,
+  "trials": 25,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 1",
+    "phase": 3.0
+   },
+   {
+    "disease": "Metabolic Syndrome",
+    "phase": 2.0
+   },
+   {
+    "disease": "Heart Failure",
+    "phase": 2.0
+   },
+   {
+    "disease": "Bulimia Nervosa",
+    "phase": 2.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 2",
+    "phase": 2.0
+   },
+   {
+    "disease": "Feeding and Eating Disorders",
+    "phase": 2.0
+   }
+  ]
+ },
+ "7LP2MPO46S": {
+  "pubmed": 0,
+  "trials": 69,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Non-alcoholic Fatty Liver Disease",
+    "phase": 3.0
+   },
+   {
+    "disease": "Cholestasis, Intrahepatic",
+    "phase": 3.0
+   },
+   {
+    "disease": "Liver Diseases",
+    "phase": 3.0
+   },
+   {
+    "disease": "Hepatitis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Liver Cirrhosis, Biliary",
+    "phase": 2.0
+   },
+   {
+    "disease": "Depressive Disorder, Major",
+    "phase": 2.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 2.0
+   },
+   {
+    "disease": "Liver Cirrhosis, Alcoholic",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hepatitis C",
+    "phase": 2.0
+   },
+   {
+    "disease": "Tobacco Use Disorder",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hyperhomocysteinemia",
+    "phase": 1.0
+   }
+  ]
+ },
+ "P55703ZRZY": {
+  "pubmed": 3,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 3.0
+   }
+  ]
+ },
+ "T3CHA1B51H": {
+  "pubmed": 2,
+  "trials": 47,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "2VBY96ASWJ": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "W4K0AE8XW9": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "LYH6F7I22E": {
+  "pubmed": 0,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "MM6384NG73": {
+  "pubmed": 19,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Gastroesophageal Reflux",
+    "phase": 4.0
+   },
+   {
+    "disease": "Peptic Ulcer",
+    "phase": 4.0
+   }
+  ]
+ },
+ "R8I97I2L24": {
+  "pubmed": 1,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Dyspepsia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 3.0
+   }
+  ]
+ },
+ "LT69WY1J6D": {
+  "pubmed": 3,
+  "trials": 5,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "69M5L7BXEK": {
+  "pubmed": 4,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cough",
+    "phase": 2.0
+   }
+  ]
+ },
+ "ZCN055599V": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 4.0
+   }
+  ]
+ },
+ "4HU6J11EL5": {
+  "pubmed": 4,
+  "trials": 39,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Rheumatic Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Osteoarthritis, Hip",
+    "phase": 3.0
+   },
+   {
+    "disease": "Osteoarthritis, Knee",
+    "phase": 3.0
+   },
+   {
+    "disease": "Osteoarthritis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Arthritis, Rheumatoid",
+    "phase": 2.0
+   },
+   {
+    "disease": "Gout",
+    "phase": 2.0
+   },
+   {
+    "disease": "Thrombocytopenia",
+    "phase": 2.0
+   },
+   {
+    "disease": "Diabetes Mellitus, Type 2",
+    "phase": 2.0
+   },
+   {
+    "disease": "Epidermolysis Bullosa Simplex",
+    "phase": 2.0
+   },
+   {
+    "disease": "Severe Acute Respiratory Syndrome",
+    "phase": 2.0
+   },
+   {
+    "disease": "Pemphigoid, Bullous",
+    "phase": 2.0
+   },
+   {
+    "disease": "Epidermolysis Bullosa",
+    "phase": 2.0
+   },
+   {
+    "disease": "Epidermolysis Bullosa Dystrophica",
+    "phase": 1.0
+   },
+   {
+    "disease": "Epidermolysis Bullosa, Junctional",
+    "phase": 1.0
+   }
+  ]
+ },
+ "269M3QL74S": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Eye Infections",
+    "phase": 2.0
+   }
+  ]
+ },
+ "VJB5FW9W9J": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 2.0
+   }
+  ]
+ },
+ "C5QA4GLR9M": {
+  "pubmed": 0,
+  "trials": 19,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "3T5NG4Q468": {
+  "pubmed": 0,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cholangitis, Sclerosing",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hypertension, Pulmonary",
+    "phase": 2.0
+   },
+   {
+    "disease": "Respiratory Tract Diseases",
+    "phase": 1.0
+   }
+  ]
+ },
+ "6T9949G4LZ": {
+  "pubmed": 0,
+  "trials": 14,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Thrombosis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Atrial Fibrillation",
+    "phase": 3.0
+   }
+  ]
+ },
+ "G5B860B0G1": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "C1LJO185Q9": {
+  "pubmed": 0,
+  "trials": 30,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Depressive Disorder",
+    "phase": 4.0
+   },
+   {
+    "disease": "Sleep Wake Disorders",
+    "phase": 3.0
+   },
+   {
+    "disease": "Spinal Cord Injuries",
+    "phase": 2.0
+   },
+   {
+    "disease": "Depressive Disorder, Major",
+    "phase": 2.0
+   },
+   {
+    "disease": "Obesity",
+    "phase": 2.0
+   }
+  ]
+ },
+ "2H52Z9F2Q5": {
+  "pubmed": 12,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Bacterial Infections",
+    "phase": 4.0
+   }
+  ]
+ },
+ "3405M6FD73": {
+  "pubmed": 1,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 4.0
+   }
+  ]
+ },
+ "GXM4PER6WZ": {
+  "pubmed": 0,
+  "trials": 10,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypospadias",
+    "phase": 3.0
+   }
+  ]
+ },
+ "5O6VWA87VA": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "RSA8KO39WH": {
+  "pubmed": 26,
+  "trials": 85,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Neoplasms",
+    "phase": 4.0
+   },
+   {
+    "disease": "Precursor Cell Lymphoblastic Leukemia-Lymphoma",
+    "phase": 3.0
+   },
+   {
+    "disease": "Lymphoma, Large B-Cell, Diffuse",
+    "phase": 3.0
+   },
+   {
+    "disease": "Leukemia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Lymphoma",
+    "phase": 3.0
+   },
+   {
+    "disease": "Neuroblastoma",
+    "phase": 3.0
+   },
+   {
+    "disease": "Uterine Cervical Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Lung Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Leukemia-Lymphoma, Adult T-Cell",
+    "phase": 3.0
+   },
+   {
+    "disease": "Precursor T-Cell Lymphoblastic Leukemia-Lymphoma",
+    "phase": 3.0
+   },
+   {
+    "disease": "Lymphoma, T-Cell, Peripheral",
+    "phase": 2.0
+   },
+   {
+    "disease": "Small Cell Lung Carcinoma",
+    "phase": 2.0
+   },
+   {
+    "disease": "Lymphoma, Follicular",
+    "phase": 2.0
+   },
+   {
+    "disease": "Lymphoma, Non-Hodgkin",
+    "phase": 1.0
+   }
+  ]
+ },
+ "BYK4592A3Q": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "Y6BHZ28O92": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Pruritus",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hypersensitivity",
+    "phase": 2.0
+   }
+  ]
+ },
+ "4POG0RL69O": {
+  "pubmed": 3,
+  "trials": 13,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Gout",
+    "phase": 4.0
+   },
+   {
+    "disease": "Hyperuricemia",
+    "phase": 2.0
+   },
+   {
+    "disease": "Familial Primary Pulmonary Hypertension",
+    "phase": 2.0
+   }
+  ]
+ },
+ "I0A84520Y9": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 4.0
+   }
+  ]
+ },
+ "Z05HCY0X1T": {
+  "pubmed": 1,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "48TCX9A1VT": {
+  "pubmed": 4,
+  "trials": 31,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "WH41D8433D": {
+  "pubmed": 3,
+  "trials": 27,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "WIX85M1A6R": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "X24X82MX4X": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   }
+  ]
+ },
+ "1326R5J1IA": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "FA517NS3N7": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "G9L6B3W684": {
+  "pubmed": 1,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Lung Diseases, Obstructive",
+    "phase": 2.0
+   }
+  ]
+ },
+ "6CL9Y5YZEQ": {
+  "pubmed": 1,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Acne Vulgaris",
+    "phase": 3.0
+   }
+  ]
+ },
+ "15B0523P5L": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   }
+  ]
+ },
+ "D23ZXO613C": {
+  "pubmed": 0,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Substance-Related Disorders",
+    "phase": 0.5
+   }
+  ]
+ },
+ "62XCK0G93T": {
+  "pubmed": 6,
+  "trials": 9,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Bacterial Infections",
+    "phase": 4.0
+   },
+   {
+    "disease": "Amebiasis",
+    "phase": 4.0
+   },
+   {
+    "disease": "Rectal Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Colonic Neoplasms",
+    "phase": 3.0
+   }
+  ]
+ },
+ "Q0XV76B96L": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Rheumatic Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "EEO29FZT86": {
+  "pubmed": 0,
+  "trials": 12,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Neoplasms",
+    "phase": 4.0
+   },
+   {
+    "disease": "Carcinoma, Non-Small-Cell Lung",
+    "phase": 2.0
+   },
+   {
+    "disease": "Cholangiocarcinoma",
+    "phase": 2.0
+   },
+   {
+    "disease": "Prostatic Neoplasms, Castration-Resistant",
+    "phase": 2.0
+   },
+   {
+    "disease": "Urinary Bladder Neoplasms",
+    "phase": 1.0
+   },
+   {
+    "disease": "Kidney Neoplasms",
+    "phase": 1.0
+   },
+   {
+    "disease": "Prostatic Neoplasms",
+    "phase": 1.0
+   }
+  ]
+ },
+ "G083B71P98": {
+  "pubmed": 7,
+  "trials": 15,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Neuroendocrine Tumors",
+    "phase": 2.0
+   }
+  ]
+ },
+ "4449F8I3LE": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Attention Deficit Disorder with Hyperactivity",
+    "phase": 2.0
+   }
+  ]
+ },
+ "J42298IESW": {
+  "pubmed": 1,
+  "trials": 8,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Bronchitis, Chronic",
+    "phase": 3.0
+   },
+   {
+    "disease": "Urinary Tract Infections",
+    "phase": 3.0
+   },
+   {
+    "disease": "Gastroenteritis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Bacterial Infections",
+    "phase": 3.0
+   },
+   {
+    "disease": "Prostatitis",
+    "phase": 2.0
+   }
+  ]
+ },
+ "1199LEX5N8": {
+  "pubmed": 3,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Tuberculosis, Multidrug-Resistant",
+    "phase": 2.0
+   },
+   {
+    "disease": "Tuberculosis",
+    "phase": 2.0
+   }
+  ]
+ },
+ "1LS1T6R34C": {
+  "pubmed": 1,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "ZX3KEK657Z": {
+  "pubmed": 5,
+  "trials": 0,
+  "us_orphan": "unknown"
+ },
+ "4S9EY0NUEC": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   }
+  ]
+ },
+ "40257685LM": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Eye Infections",
+    "phase": 2.0
+   }
+  ]
+ },
+ "6I97Z6S135": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "97O6X78C53": {
+  "pubmed": 2,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "9M363FGA7J": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Parkinson Disease",
+    "phase": 2.0
+   }
+  ]
+ },
+ "SDS4N642GG": {
+  "pubmed": 7,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "3UVD77BP8R": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Pruritus",
+    "phase": 4.0
+   },
+   {
+    "disease": "Hypersensitivity",
+    "phase": 4.0
+   }
+  ]
+ },
+ "D6VHC87LLS": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Amebiasis",
+    "phase": 4.0
+   }
+  ]
+ },
+ "60M22SGW66": {
+  "pubmed": 2,
+  "trials": 28,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Diabetes Mellitus, Type 2",
+    "phase": 3.0
+   },
+   {
+    "disease": "Cognitive Dysfunction",
+    "phase": 2.0
+   }
+  ]
+ },
+ "17S83WON0I": {
+  "pubmed": 1,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "F0R1QK73KB": {
+  "pubmed": 0,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anemia",
+    "phase": 2.0
+   },
+   {
+    "disease": "Dermatitis, Atopic",
+    "phase": 2.0
+   }
+  ]
+ },
+ "A2JGV5CNU4": {
+  "pubmed": 1,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 2.0
+   }
+  ]
+ },
+ "NH5000009I": {
+  "pubmed": 5,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "PCU411F5L6": {
+  "pubmed": 4,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypertension",
+    "phase": 3.0
+   },
+   {
+    "disease": "Aortic Valve Stenosis",
+    "phase": 3.0
+   }
+  ]
+ },
+ "L164909TBI": {
+  "pubmed": 1,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "94WNJ5U8L7": {
+  "pubmed": 1,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Myalgia",
+    "phase": 4.0
+   },
+   {
+    "disease": "Arthralgia",
+    "phase": 4.0
+   },
+   {
+    "disease": "Pain",
+    "phase": 3.0
+   },
+   {
+    "disease": "Thromboembolism",
+    "phase": 3.0
+   },
+   {
+    "disease": "Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Acute Kidney Injury",
+    "phase": 1.0
+   }
+  ]
+ },
+ "X3FZE77O60": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "R8M46911LR": {
+  "pubmed": 2,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Helminthiasis",
+    "phase": 2.0
+   }
+  ]
+ },
+ "EQ35YMS20Q": {
+  "pubmed": 3,
+  "trials": 14,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Thrombosis",
+    "phase": 4.0
+   }
+  ]
+ },
+ "A571S2B3JE": {
+  "pubmed": 1,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "0Z802HMY7H": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypertension",
+    "phase": 4.0
+   }
+  ]
+ },
+ "903A9K181P": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Migraine Disorders",
+    "phase": 2.0
+   }
+  ]
+ },
+ "OCA4JT7PAW": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Depressive Disorder",
+    "phase": 4.0
+   }
+  ]
+ },
+ "1501393LY5": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "S5969B6237": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 2.0
+   }
+  ]
+ },
+ "R133MWH7X1": {
+  "pubmed": 4,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Rheumatic Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "25TLU22Q8H": {
+  "pubmed": 4,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 2.0
+   }
+  ]
+ },
+ "EFA30X554H": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "LPP64AWZ7L": {
+  "pubmed": 2,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cough",
+    "phase": 4.0
+   }
+  ]
+ },
+ "362QBC4NL0": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Arthralgia",
+    "phase": 2.0
+   },
+   {
+    "disease": "Myalgia",
+    "phase": 2.0
+   }
+  ]
+ },
+ "27L0EP6IZK": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "S491HH391H": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "76YOO33643": {
+  "pubmed": 2,
+  "trials": 15,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Tuberculosis",
+    "phase": 4.0
+   },
+   {
+    "disease": "Tuberculosis, Pulmonary",
+    "phase": 3.0
+   }
+  ]
+ },
+ "AK5Q5FZH2R": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Attention Deficit Disorder with Hyperactivity",
+    "phase": 4.0
+   },
+   {
+    "disease": "Anxiety",
+    "phase": 3.0
+   },
+   {
+    "disease": "Dementia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Depressive Disorder",
+    "phase": 3.0
+   },
+   {
+    "disease": "Schizophrenia",
+    "phase": 3.0
+   }
+  ]
+ },
+ "W9A18RJ49B": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypersensitivity",
+    "phase": 2.0
+   }
+  ]
+ },
+ "9164VT6ANB": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "X81L78B3RB": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "Z7N0Y673NU": {
+  "pubmed": 2,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hemorrhoids",
+    "phase": 2.0
+   }
+  ]
+ },
+ "IN1233R0JO": {
+  "pubmed": 1,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "RUA6CWU76G": {
+  "pubmed": 9,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Epilepsy",
+    "phase": 2.0
+   }
+  ]
+ },
+ "G54D0HMY25": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "U29O83JAZW": {
+  "pubmed": 0,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Psychotic Disorders",
+    "phase": 4.0
+   }
+  ]
+ },
+ "3VQ38D63M7": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "568Z59H7ZJ": {
+  "pubmed": 1,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "OZQ8O62H53": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "TYR2U59WMA": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "08J2K08A3Y": {
+  "pubmed": 1,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "5L16LKN964": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Attention Deficit Disorder with Hyperactivity",
+    "phase": 2.0
+   }
+  ]
+ },
+ "U8CJK0JH5M": {
+  "pubmed": 4,
+  "trials": 6,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "VLL71EBS9Z": {
+  "pubmed": 42,
+  "trials": 241,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "3AA6IZ48YK": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cough",
+    "phase": 2.0
+   }
+  ]
+ },
+ "75473V2YZK": {
+  "pubmed": 1,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Dyspepsia",
+    "phase": 3.0
+   },
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 3.0
+   }
+  ]
+ },
+ "6PU1E16C9W": {
+  "pubmed": 2,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "6931E8LH07": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "81F061RQS4": {
+  "pubmed": 1,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hemorrhage",
+    "phase": 2.0
+   }
+  ]
+ },
+ "XJ73B0K6KB": {
+  "pubmed": 0,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "8P4W949T8K": {
+  "pubmed": 6,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Bacterial Infections",
+    "phase": 2.0
+   }
+  ]
+ },
+ "HM4YQM8WRC": {
+  "pubmed": 2,
+  "trials": 7,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Nausea",
+    "phase": 4.0
+   }
+  ]
+ },
+ "36W53O7109": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "CHG7QC509W": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypertension, Pulmonary",
+    "phase": 2.0
+   },
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "Z7489237QT": {
+  "pubmed": 3,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "704083NI0R": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Bacterial Infections",
+    "phase": 2.0
+   }
+  ]
+ },
+ "V7DXN0M42R": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "SYP56O3GJG": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "GYL649Z0HY": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 2.0
+   }
+  ]
+ },
+ "YM183K0H63": {
+  "pubmed": 2,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Pain",
+    "phase": 2.0
+   }
+  ]
+ },
+ "O91W32476G": {
+  "pubmed": 2,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "2N9HM3X95F": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "W656S9I00W": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "772EN3BH6I": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "MPM23GMO7Z": {
+  "pubmed": 4,
+  "trials": 7,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Lung Diseases, Obstructive",
+    "phase": 3.0
+   },
+   {
+    "disease": "Asthma",
+    "phase": 3.0
+   }
+  ]
+ },
+ "V7O1U41C9B": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "MH922908EB": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "A76XI0HL37": {
+  "pubmed": 1,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 2.0
+   }
+  ]
+ },
+ "60GCX7Y6BH": {
+  "pubmed": 3,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "M7522JYX1H": {
+  "pubmed": 35,
+  "trials": 39,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "GQ7JL9P5I2": {
+  "pubmed": 4,
+  "trials": 14,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Melanoma",
+    "phase": 3.0
+   },
+   {
+    "disease": "Uveal Melanoma",
+    "phase": 3.0
+   },
+   {
+    "disease": "Glioblastoma",
+    "phase": 2.0
+   }
+  ]
+ },
+ "4BOC774388": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Nasal Obstruction",
+    "phase": 3.0
+   },
+   {
+    "disease": "Eye Infections",
+    "phase": 3.0
+   },
+   {
+    "disease": "Osteomyelitis",
+    "phase": 0.5
+   }
+  ]
+ },
+ "7OW73204U1": {
+  "pubmed": 4,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Amebiasis",
+    "phase": 2.0
+   }
+  ]
+ },
+ "4V7M9137X9": {
+  "pubmed": 2,
+  "trials": 9,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Liver Diseases",
+    "phase": 3.0
+   }
+  ]
+ },
+ "3DQS188SY5": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "8ZCA2I2L11": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "D892HFI3XA": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Depressive Disorder",
+    "phase": 4.0
+   }
+  ]
+ },
+ "WVZ7K9P0JY": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Pruritus",
+    "phase": 2.0
+   },
+   {
+    "disease": "Hypersensitivity",
+    "phase": 2.0
+   }
+  ]
+ },
+ "HV13HFS217": {
+  "pubmed": 26,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Premature Birth",
+    "phase": 3.0
+   },
+   {
+    "disease": "Bacterial Infections",
+    "phase": 3.0
+   }
+  ]
+ },
+ "EK22QV7701": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "077DN93G5B": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "ZF3786Q2E8": {
+  "pubmed": 3,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Trypanosomiasis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Leishmaniasis",
+    "phase": 3.0
+   }
+  ]
+ },
+ "CZ87T54W8W": {
+  "pubmed": 0,
+  "trials": 18,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 2.0
+   }
+  ]
+ },
+ "M0T18YH28D": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "BR1SN1JS2W": {
+  "pubmed": 17,
+  "trials": 627,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Autistic Disorder",
+    "phase": 2.0
+   },
+   {
+    "disease": "Multiple Sclerosis",
+    "phase": 1.0
+   }
+  ]
+ },
+ "238S75V9AV": {
+  "pubmed": 4,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Nausea",
+    "phase": 2.0
+   }
+  ]
+ },
+ "PW8QYA7KI0": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   },
+   {
+    "disease": "Erectile Dysfunction",
+    "phase": 4.0
+   }
+  ]
+ },
+ "8U27U3RIN4": {
+  "pubmed": 13,
+  "trials": 7,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "368IVD6M32": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Respiratory Tract Diseases",
+    "phase": 4.0
+   }
+  ]
+ },
+ "469ULX0H4G": {
+  "pubmed": 0,
+  "trials": 10,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Amebiasis",
+    "phase": 4.0
+   },
+   {
+    "disease": "Carcinoma, Squamous Cell",
+    "phase": 3.0
+   }
+  ]
+ },
+ "S846B891OR": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Low Back Pain",
+    "phase": 3.0
+   }
+  ]
+ },
+ "67220MCM01": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 2.0
+   }
+  ]
+ },
+ "P7W01638W6": {
+  "pubmed": 2,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Leukemia, Myeloid, Acute",
+    "phase": 3.0
+   }
+  ]
+ },
+ "J31IL9Z2EE": {
+  "pubmed": 10,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Hypersensitivity",
+    "phase": 4.0
+   },
+   {
+    "disease": "Muscular Dystrophy, Duchenne",
+    "phase": 2.0
+   }
+  ]
+ },
+ "T3XOS33TIQ": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Migraine Disorders",
+    "phase": 2.0
+   }
+  ]
+ },
+ "T2M58D6LA8": {
+  "pubmed": 0,
+  "trials": 2,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "6QK969R2IF": {
+  "pubmed": 4,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Constipation",
+    "phase": 4.0
+   }
+  ]
+ },
+ "707484X33X": {
+  "pubmed": 2,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Ectoparasitic Infestations",
+    "phase": 4.0
+   }
+  ]
+ },
+ "4YC2PY3AEU": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Eye Infections",
+    "phase": 2.0
+   }
+  ]
+ },
+ "785363R681": {
+  "pubmed": 18,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Neoplasms",
+    "phase": 2.0
+   }
+  ]
+ },
+ "5286RBZ882": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Anxiety",
+    "phase": 2.0
+   }
+  ]
+ },
+ "LT12J5HVR8": {
+  "pubmed": 3,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "L903J9JPYV": {
+  "pubmed": 0,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "3G0285N20N": {
+  "pubmed": 7,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Peptic Ulcer",
+    "phase": 4.0
+   },
+   {
+    "disease": "Gastroesophageal Reflux",
+    "phase": 4.0
+   },
+   {
+    "disease": "Peripheral Nervous System Diseases",
+    "phase": 2.0
+   },
+   {
+    "disease": "Diabetic Neuropathies",
+    "phase": 2.0
+   },
+   {
+    "disease": "Stomach Ulcer",
+    "phase": 1.0
+   }
+  ]
+ },
+ "DQ6KK6GV93": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   }
+  ]
+ },
+ "V39YPH45FZ": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "7E8Q32N75N": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "2R7O1ET613": {
+  "pubmed": 1,
+  "trials": 8,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Eye Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "CY3RNB3K4T": {
+  "pubmed": 0,
+  "trials": 22,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Carcinoma, Squamous Cell",
+    "phase": 2.0
+   },
+   {
+    "disease": "Barrett Esophagus",
+    "phase": 2.0
+   },
+   {
+    "disease": "Uterine Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Genital Neoplasms, Female",
+    "phase": 0.5
+   },
+   {
+    "disease": "Mouth Neoplasms",
+    "phase": 0.5
+   }
+  ]
+ },
+ "11941YC6RN": {
+  "pubmed": 1,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Lung Diseases, Obstructive",
+    "phase": 4.0
+   },
+   {
+    "disease": "Asthma",
+    "phase": 2.0
+   }
+  ]
+ },
+ "VI08KS44V0": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "Y521XM2900": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Bacterial Infections",
+    "phase": 2.0
+   }
+  ]
+ },
+ "5G06TVY3R7": {
+  "pubmed": 3,
+  "trials": 55,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "CKS1YQ9W1J": {
+  "pubmed": 0,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Rheumatic Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "1W6L629B4K": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "55FE6NPG89": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "0D771IS0FH": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Ectoparasitic Infestations",
+    "phase": 2.0
+   }
+  ]
+ },
+ "H1187LU49Q": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Digestive System Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "1M2IB31DTS": {
+  "pubmed": 1,
+  "trials": 3,
+  "us_orphan": "unknown",
+  "chembl": []
+ },
+ "H64JRU6GJ0": {
+  "pubmed": 11,
+  "trials": 4,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Sarcoma",
+    "phase": 3.0
+   },
+   {
+    "disease": "Neoplasms",
+    "phase": 3.0
+   },
+   {
+    "disease": "Medulloblastoma",
+    "phase": 2.0
+   },
+   {
+    "disease": "Melanoma",
+    "phase": 1.0
+   }
+  ]
+ },
+ "H191JFG8WA": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Virus Diseases",
+    "phase": 2.0
+   }
+  ]
+ },
+ "C27HY5RFU5": {
+  "pubmed": 0,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Parkinson Disease",
+    "phase": 2.0
+   }
+  ]
+ },
+ "996XVD0JHT": {
+  "pubmed": 2,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Cardiovascular Diseases",
+    "phase": 4.0
+   }
+  ]
+ },
+ "RQ12GMY0FZ": {
+  "pubmed": 1,
+  "trials": 0,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Bacterial Infections",
+    "phase": 2.0
+   }
+  ]
+ }
+}

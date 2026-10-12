@@ -1,2 +1,3 @@
 raw/
-cache/
+# cache/ is committed on purpose: gsrs.json + enrich.json turn a 45-min cold CI
+# refresh into minutes and stop a GSRS outage from shrinking the published list.

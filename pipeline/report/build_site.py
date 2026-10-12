@@ -268,7 +268,12 @@ def llms_full_txt(bio):
         if eo: parts.append(f"- EU orphan designation: {eo.get('use') or ''} ({eo.get('status') or ''})")
         o = c.get("orpha")
         if o: parts.append(f"- Orphadata: {o.get('disease') or ''}; rarity {o.get('rarity') or '?'}; onset {o.get('onset') or '?'}")
-        if c.get("crl"): parts.append(f"- US complete response letter on file: {c['crl'] if isinstance(c['crl'], str) else 'yes'}")
+        if c.get("crl"):
+            cr = c["crl"]
+            if isinstance(cr, dict):
+                parts.append(f"- US prior filing: {cr.get('kind') or 'COMPLETE RESPONSE'} — {cr.get('application') or ''} · {cr.get('date') or ''}")
+            else:
+                parts.append(f"- US complete response letter on file: {cr}")
         el = c.get("elig")
         if el:
             parts.append(f"- \u00a7529 verdict: {el.get('verdict', '').replace('_', ' ')}")

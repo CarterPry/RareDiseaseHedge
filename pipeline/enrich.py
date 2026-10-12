@@ -193,6 +193,16 @@ def _norm_name(s):
 
 
 def enrich_eu_orphan(data):
+    """Attach EU orphan designations from ema_orph.xlsx.
+
+    A substance can hold several designations (idebenone: LHON expired + two
+    Friedreich's ataxia + DMD; govorestat: CMT + galactosaemia). Until 2026-10-11
+    only the FIRST row in file order was kept, so the detail panel showed an
+    arbitrary disease (leriglitazone -> Friedreich's ataxia, not X-ALD). Now every
+    designation is stored in `eu_orphan_designations` and the single
+    `eu_orphan_designation` field (kept for the UI/eligibility) is the one whose
+    intended-use text best overlaps the candidate's own indication/area/disease
+    terms, preferring a non-withdrawn status; ties fall back to file order."""
     try:
         import openpyxl
     except Exception:
@@ -216,17 +226,38 @@ def enrich_eu_orphan(data):
         sub = _norm_name(v[2])
         if not sub:
             continue
-        by_sub.setdefault(sub, {"use": v[4].strip(), "status": v[6].strip(),
-                                "number": v[5].strip()})
+        by_sub.setdefault(sub, []).append({"use": v[4].strip(), "status": v[6].strip(),
+                                           "number": v[5].strip()})
     wb.close()
+
+    import re
+    STOP = {"treatment", "of", "the", "and", "in", "for", "with", "disease", "patients",
+            "syndrome", "prevention", "a", "to", "or", "type", "deficiency", "disorder"}
+    def words(t):
+        # fold UK/US spellings (galactosaemia/galactosemia, anaemia/anemia)
+        t = (t or "").lower().replace("ae", "e").replace("oe", "e")
+        return {w for w in re.findall(r"[a-z0-9]+", t) if w not in STOP and len(w) > 2}
+
+    def best(desigs, c):
+        ctx = words(" ".join(str(c.get(k) or "") for k in ("indication", "area", "disease_terms")))
+        ctx |= words(((c.get("orpha") or {}).get("name")) or "")
+        for x in (c.get("chembl") or []):
+            ctx |= words(x.get("disease") if isinstance(x, dict) else str(x))
+        def score(i, d):
+            live = 0 if d["status"].lower().startswith(("withdrawn", "expired", "refused")) else 1
+            return (len(words(d["use"]) & ctx), live, -i)
+        return max(enumerate(desigs), key=lambda t: score(*t))[1]
+
     matched = 0
     for b in ("candidates", "dossier_only", "review", "unnamed"):
         for c in data.get(b, []):
-            hit = by_sub.get(_norm_name(c.get("moiety"))) or by_sub.get(_norm_name(c.get("name")))
-            if hit:
-                c["eu_orphan_designation"] = hit
+            hits = by_sub.get(_norm_name(c.get("moiety"))) or by_sub.get(_norm_name(c.get("name")))
+            if hits:
+                c["eu_orphan_designations"] = hits
+                c["eu_orphan_designation"] = best(hits, c)
                 matched += 1
-    print(f"  eu_orphan: {len(by_sub):,} EU designations, {matched} candidate rows flagged")
+    print(f"  eu_orphan: {sum(len(v) for v in by_sub.values()):,} EU designations on "
+          f"{len(by_sub):,} substances, {matched} candidate rows flagged")
 
 
 # ---------------------------------------------------------------- US Complete Response Letters
@@ -234,30 +265,115 @@ def enrich_eu_orphan(data):
 # already has a US CRL means a sponsor filed and FDA refused — the drug is not an
 # untouched opportunity (found: govorestat, tolebrutinib). Whole-word name match
 # against the letter text/company/application fields.
+#
+# Coverage limits (measured 2026-10-11): the openFDA set holds 458 letters dated
+# 2024-01 .. 2026-02 only, and a handful of recent letters carry no application
+# number or drug name at all (the 2026-02-27 Chiesi/idebenone letter is one).
+# Well-known older CRLs on never-approved moieties therefore can never be found
+# by this dataset, so a curated table carries them. Each entry is a public
+# sponsor/FDA disclosure; `kind` separates a true CRL from an older approvable /
+# not-approvable letter or a pre-action NDA withdrawal (no CRL was ever issued).
+US_PRIOR_FILINGS = {
+    "IDEBENONE":   {"application": "NDA (Chiesi, LHON)", "date": "02/27/2026", "kind": "COMPLETE RESPONSE",
+                    "company": "Chiesi Farmaceutici S.p.A",
+                    "source": "https://mitopatients.org/wp-content/uploads/2026/03/Chiesi-statement-FDA.pdf"},
+    "ROXADUSTAT":  {"application": "NDA (FibroGen/AstraZeneca, CKD anaemia)", "date": "08/11/2021", "kind": "COMPLETE RESPONSE",
+                    "company": "FibroGen", "source": "FibroGen press release 2021-08-11; AdCom 13-1 against 2021-07-15"},
+    "GEFAPIXANT":  {"application": "NDA (Merck, chronic cough)", "date": "12/20/2023", "kind": "COMPLETE RESPONSE",
+                    "company": "Merck", "source": "Merck press releases 2022-01-24 (first CRL) and 2023-12-20 (second CRL)"},
+    "FILGOTINIB":  {"application": "NDA (Gilead, rheumatoid arthritis)", "date": "08/18/2020", "kind": "COMPLETE RESPONSE",
+                    "company": "Gilead", "source": "Gilead press release 2020-08-18; US pursuit ended 2020-12"},
+    "VERNAKALANT": {"application": "NDA (Correvio, atrial fibrillation)", "date": "12/24/2019", "kind": "COMPLETE RESPONSE",
+                    "company": "Correvio", "source": "Correvio press release 2019-12-24; AdCom 11-2 against"},
+    "VILDAGLIPTIN": {"application": "NDA (Novartis, type 2 diabetes)", "date": "02/2007", "kind": "APPROVABLE LETTER",
+                    "company": "Novartis", "source": "Novartis approvable letters Feb 2007 and 2008; never resubmitted"},
+    "MIFAMURTIDE": {"application": "NDA (IDM Pharma, osteosarcoma)", "date": "08/27/2007", "kind": "NOT APPROVABLE",
+                    "company": "IDM Pharma", "source": "IDM Pharma press release 2007-08-27 (Junovan)"},
+    "LINZAGOLIX":  {"application": "NDA (ObsEva/Kissei, uterine fibroids)", "date": "08/22/2022", "kind": "NDA WITHDRAWN BEFORE ACTION",
+                    "company": "Kissei", "source": "Kissei announcement 2022-08-22; FDA had identified deficiencies"},
+}
+
+
 def enrich_crl(data):
     import re, zipfile
     path = os.path.join(HERE, "data", "raw", "openfda_crl.zip")
-    if not os.path.exists(path):
-        print("  [skip] crl: openfda_crl.zip not present")
-        return
-    with zipfile.ZipFile(path) as z:
-        recs = json.load(z.open([n for n in z.namelist() if n.endswith(".json")][0])).get("results") or []
-    blobs = [(json.dumps(r).lower(), r) for r in recs]
-    matched = 0
+    recs = []
+    if os.path.exists(path):
+        with zipfile.ZipFile(path) as z:
+            recs = json.load(z.open([n for n in z.namelist() if n.endswith(".json")][0])).get("results") or []
+    else:
+        print("  [skip] crl: openfda_crl.zip not present (curated table still applied)")
+    # only genuine complete-response letters count as "filed and refused";
+    # tentative approvals, rescissions and refusal-to-file are different facts
+    blobs = [(json.dumps(r).lower(), r) for r in recs
+             if (r.get("letter_type") or "COMPLETE RESPONSE") == "COMPLETE RESPONSE"]
+
+    def _mdy(d):
+        try:
+            m, dd, y = (d or "").split("/")
+            return (int(y), int(m), int(dd))
+        except Exception:
+            return (0, 0, 0)
+
+    matched = curated = 0
     for b in ("candidates", "dossier_only", "review"):
         for c in data.get(b, []):
             nm = (c.get("moiety") or c.get("name") or "").lower()
             if len(nm) < 5:
                 continue
             rx = re.compile(r"(^|[^a-z0-9])" + re.escape(nm) + r"([^a-z0-9]|$)")
-            for blob, r in blobs:
-                if rx.search(blob):
-                    appl = r.get("application_number")
-                    c["us_crl"] = {"application": appl[0] if isinstance(appl, list) else appl,
-                                   "date": r.get("letter_date") or r.get("action_date")}
-                    matched += 1
-                    break
-    print(f"  crl: {len(recs):,} letters, {matched} candidate rows flagged as already US-filed-and-refused")
+            hits = [r for blob, r in blobs if rx.search(blob)]
+            if hits:
+                r = max(hits, key=lambda r: _mdy(r.get("letter_date")))   # newest letter wins
+                appl = r.get("application_number")
+                c["us_crl"] = {"application": appl[0] if isinstance(appl, list) else appl,
+                               "date": r.get("letter_date") or r.get("action_date"),
+                               "kind": r.get("letter_type") or "COMPLETE RESPONSE",
+                               "approval_status": r.get("approval_status"),
+                               "company": r.get("company_name"),
+                               "letters": len(hits), "source": "openFDA CRL dataset"}
+                matched += 1
+            else:
+                cur = US_PRIOR_FILINGS.get((c.get("moiety") or c.get("name") or "").upper())
+                if cur:
+                    c["us_crl"] = dict(cur)
+                    curated += 1
+    print(f"  crl: {len(blobs):,} complete-response letters, {matched} candidate rows matched "
+          f"from openFDA, {curated} from the curated prior-filing table")
+
+
+# ---------------------------------------------------------------- hand-curated US competitor signals
+# FDA publishes no RPD-designation list and the OOPD orphan database sits behind
+# a JS challenge, so sponsor-stated US designations / active US programmes on a
+# candidate moiety are recorded here by hand (date, holder, source). None of
+# these is legally exclusive — a designation attaches to a sponsor+indication —
+# but each means the moiety is not an untouched opportunity.
+KNOWN_US_SIGNALS = {
+    "LERIGLITAZONE": "US_RPD_DESIGNATION_HELD: Minoryx holds FDA Rare Pediatric Disease + Fast Track + "
+                     "orphan designations for X-ALD (sponsor-stated); CALYX pivotal fully enrolled 2026-09, "
+                     "FDA-agreed NDA-enabling, topline early 2028 — a US NDA before the 2029-09-30 sunset is "
+                     "plausible but the originator's to file",
+    "ROXADUSTAT":    "US_ORPHAN_DESIGNATION_HELD: Kyntra Bio (fka FibroGen) granted FDA orphan designation "
+                     "for myelodysplastic syndromes 2025-12 (8-K 2026-01-07); Phase 3 in lower-risk MDS "
+                     "planned Q4 2026; CKD-anaemia NDA CRL 2021-08-11 never resubmitted",
+    "LEVOSIMENDAN":  "US_SPONSOR_ACTIVE: Tenax Therapeutics TNX-103 (oral levosimendan, adult PH-HFpEF); "
+                     "Phase 3 LEVEL missed its primary endpoint 2026-08-10, LEVEL-2 ongoing; no NDA. A "
+                     "Tenax approval would bar the moiety for any Funnel-A programme",
+    "GOVORESTAT":    "SPONSOR_CHANGED: Applied Therapeutics acquired by Cycle Group Holdings 2026-02-03 and "
+                     "deregistered (Form 15) — EDGAR monitoring will no longer see this sponsor; holds FDA "
+                     "orphan + RPD designations (galactosemia) and a 2024-11-27 CRL",
+}
+
+
+def enrich_known_signals(data):
+    n = 0
+    for b in ("candidates", "dossier_only", "review"):
+        for c in data.get(b, []):
+            msg = KNOWN_US_SIGNALS.get((c.get("moiety") or c.get("name") or "").upper())
+            if msg and msg not in (c.get("flags") or []):
+                c.setdefault("flags", []).append(msg)
+                n += 1
+    print(f"  known US signals: {n} candidate rows flagged (hand-curated, enrich.py::KNOWN_US_SIGNALS)")
 
 
 # ---------------------------------------------------------------- s.529 assessment
@@ -362,6 +478,7 @@ def main():
         enrich_orphadata(data)
         enrich_eu_orphan(data)
         enrich_crl(data)
+        enrich_known_signals(data)
         enrich_eligibility(data)     # after orphadata/pubmed so it sees them
         print("fetching global competitor monitor...")
         data["monitor"] = {"fedreg": fedreg_prv(), "edgar": edgar_competitors(),

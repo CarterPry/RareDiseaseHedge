@@ -73,23 +73,18 @@ const fmtCount = v =>
     ["Multi-regulator", h.multi_regulator, ""],
     ["EU orphan-flagged", h.orphan, ""],
     ["Dossier-only leads", h.dossier_only, ""],
-    ["Latest voucher", h.prv_high != null ? "$" + h.prv_high + "M" : "", ""],
+    ["Top recent voucher", h.prv_high != null ? "$" + h.prv_high + "M" : "", ""],
     ["Record sale", h.peak != null ? "$" + h.peak + "M" : "", ""],
     ["Vouchers sold", h.deals, ""],
     ["Months to sunset", h.months_to_sunset, ""],
     ["Foreign approvals scanned", h.foreign_rows != null ? fmtCount(h.foreign_rows) : "", ""],
   ].filter(it => it[1] !== undefined && it[1] !== "");
   const track = document.getElementById("tickerTrack");
-  const dot = (i) => {
-    const rnd = mulberry32(500 + i), pts = [];
-    let v = 12;
-    for (let k = 0; k < 16; k++) { v += (rnd() - 0.42) * 5; v = Math.max(2, Math.min(20, v)); pts.push(`${k * 2.6},${v}`); }
-    return `<svg width="42" height="22" viewBox="0 0 42 22"><polyline points="${pts.join(" ")}" fill="none" stroke="#101820" stroke-width="1.4"/></svg>`;
-  };
-  const html = items.map(([label, val], i) =>
+  // No sparklines / trend arrows: these are point-in-time metrics and a
+  // seeded random polyline next to a real number implies a trend no data supports.
+  const html = items.map(([label, val]) =>
     `<span class="tick">${label}
-      <span class="delta up">${val}</span>
-      ${dot(i)}</span>`).join("");
+      <span class="delta">${val}</span></span>`).join("");
   track.innerHTML = html + html;
 }
 
@@ -158,7 +153,7 @@ const SL_CHIPS = [
   ["multi", "Multi-regulator", c => (c.sources || []).length > 1],
   ["rare", "Rare (Orphanet)", c => c.orpha && c.orpha.rarity === "rare"],
   ["ped", "Pediatric onset", c => c.orpha && c.orpha.onset === "pediatric"],
-  ["nocrl", "Not yet US-filed", c => !c.crl],
+  ["nocrl", "No US CRL record", c => !c.crl],
   ["pulled", "Licence pulled", c => c.fs === "previously_authorised"],
 ];
 function slPredicate(key) { return SL_CHIPS.find(x => x[0] === key)[2]; }
@@ -240,7 +235,7 @@ function slPanel(c) {
     ["Regulatory standing", (c.fs || "—").replace(/_/g, " ")],
     ["Orphanet prevalence", c.orpha ? (c.orpha.rarity + (c.orpha.prev ? " · ~" + c.orpha.prev.toLocaleString() + " in US" : "")) : "no Orphanet match"],
     ["EU orphan designation", c.eu_orphan ? (c.eu_orphan.status + " — " + c.eu_orphan.use) : "—"],
-    ["US CRL (already filed)", c.crl ? (c.crl.application + " · " + c.crl.date) : "none found"],
+    ["US CRL / prior filing", c.crl ? ((c.crl.kind && c.crl.kind !== "COMPLETE RESPONSE" ? c.crl.kind + ": " : "") + (c.crl.application || "") + " · " + (c.crl.date || "")) : "no CRL record found (openFDA set covers 2024+ letters; older refusals are hand-curated)"],
     ["ChEMBL indications", (c.chembl || []).join("; ") || "—"],
     ["ATC", c.atc || "—"],
     ["Research", "PubMed " + (c.pubmed != null ? c.pubmed : "—") + " · trials " + (c.trials != null ? c.trials : "—")],
@@ -332,7 +327,7 @@ function syncEcoText() {
   document.getElementById("ecoTitle").textContent =
     v.key === "all" ? "PRV SALES BY YEAR" : v.tab.toUpperCase() + " VOUCHER SALES";
   document.getElementById("ecoBarMethod").innerHTML =
-    "<strong>Methodology:</strong> Each bar is the total disclosed sale value of Priority Review Vouchers sold that year, from SEC 8-K filings (2014–2026), stacked by voucher type. Undisclosed or non-SEC deals are excluded, so totals are a floor.";
+    "<strong>Methodology:</strong> Each bar is the total disclosed sale value of Priority Review Vouchers sold that year, from SEC 8-K filings or the seller's own disclosure (2014–2026), stacked by voucher type. 2026 includes signed agreements not yet confirmed closed (SEZABY, GENGLYCOS). Undisclosed deals are excluded, so totals are a floor.";
   document.getElementById("ecoMethod").innerHTML =
     "<strong>Methodology:</strong> Cumulative disclosed PRV sale value across all tracked deals; the same series as the bars above, summed forward.";
 }

@@ -19,7 +19,7 @@ Before constructing any formula, the real numbers must be fixed:
 
 | Parameter | Value | Source |
 |---|---|---|
-| PRV secondary market value (2026 verified) | $180–205M gross | sources/18-prv-transaction-market.md (Rocket $180M, Denali $195M, Cyprium $205M — all SEC-verified) |
+| PRV secondary market value (2026 verified) | $180–210M (top figure a signed, unclosed agreement) gross | sources/18-prv-transaction-market.md (Rocket $180M, Denali $195M, Cyprium $205M — all SEC-verified) |
 | PRV planning range (conservative / base / upside) | $150M / $190M / $225M | sources/18-prv-transaction-market.md §5.5 |
 | Per-program P(approval by 2029-09-30), generic program | 3–5% | sources/26-feasibility-timeline.md §8 reconciled |
 | Per-program P(approval by 2029-09-30), optimized program | 20–22% | sources/26-feasibility-timeline.md §8 reconciled |

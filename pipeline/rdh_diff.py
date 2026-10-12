@@ -173,7 +173,7 @@ def main():
             ("EU national (Art57)", sources.load_ema_art57, "ema_art57.xlsx"),
             ("Canada", sources.load_canada, "ingred_ap.zip"),
             ("Swissmedic", sources.load_swissmedic, "sm_stoff.xlsx"),
-            ("PMDA", sources.load_pmda, "pmda_fy2025.xlsx")]:
+            ("PMDA", sources.load_pmda, "pmda_fy*.xlsx")]:
         recs = fn(RAW)
         if not recs:
             missing.append(f"{name} ({fname})")
@@ -580,8 +580,10 @@ def _snapshot_label():
                       ("EMA", "ema_med.xlsx"),
                       ("Health Canada", "ingred_ap.zip"),
                       ("Swissmedic", "sm_stoff.xlsx"),
-                      ("PMDA", "pmda_fy2025.xlsx")]:
-        p = os.path.join(RAW, fn)
+                      ("PMDA", "pmda_fy*.xlsx")]:
+        import glob
+        hits = sorted(glob.glob(os.path.join(RAW, fn)))
+        p = hits[-1] if hits else os.path.join(RAW, fn)
         if os.path.exists(p):
             d = datetime.date.fromtimestamp(os.path.getmtime(p))
             parts.append(f"{label} {d:%d %b %Y}")
