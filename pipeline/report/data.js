@@ -84,8 +84,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -196,8 +196,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -316,7 +316,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -428,8 +428,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -542,8 +542,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -653,8 +653,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -764,8 +764,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -872,8 +872,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -982,8 +982,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -1096,8 +1096,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -1205,8 +1205,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -1315,8 +1315,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -1429,8 +1429,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -1549,8 +1549,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -1667,7 +1667,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -1785,7 +1785,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -1907,8 +1907,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -2015,8 +2015,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -2135,8 +2135,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -2252,7 +2252,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -2367,8 +2367,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -2479,7 +2479,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -2584,7 +2584,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -2697,8 +2697,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -2803,8 +2803,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -2913,8 +2913,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -3019,8 +3019,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -3129,8 +3129,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -3239,8 +3239,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -3347,8 +3347,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -3455,8 +3455,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -3568,8 +3568,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -3675,7 +3675,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -3792,8 +3792,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -3900,8 +3900,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -4010,8 +4010,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -4117,8 +4117,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -4226,8 +4226,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -4338,8 +4338,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -4454,7 +4454,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -4558,7 +4558,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -4669,8 +4669,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -4781,8 +4781,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -4894,8 +4894,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -4998,8 +4998,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -5109,7 +5109,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -5220,8 +5220,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -5333,8 +5333,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -5442,8 +5442,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -5548,8 +5548,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -5654,8 +5654,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -5765,8 +5765,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -5876,8 +5876,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -5980,7 +5980,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -6093,8 +6093,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -6200,8 +6200,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -6306,8 +6306,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -6412,7 +6412,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -6522,8 +6522,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -6633,8 +6633,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -6739,8 +6739,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -6848,8 +6848,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -6958,8 +6958,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -7065,8 +7065,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -7176,8 +7176,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -7282,7 +7282,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -7398,8 +7398,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -7506,8 +7506,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -7612,8 +7612,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -7731,8 +7731,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -7842,8 +7842,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -7951,8 +7951,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -8061,8 +8061,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -8168,8 +8168,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -8280,8 +8280,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -8393,8 +8393,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -8502,8 +8502,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -8612,7 +8612,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -8719,8 +8719,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -8825,8 +8825,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -8929,7 +8929,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -9038,8 +9038,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -9144,8 +9144,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -9248,7 +9248,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -9354,7 +9354,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -9460,7 +9460,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -9566,8 +9566,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -9678,7 +9678,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -9788,8 +9788,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -9897,8 +9897,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -10006,8 +10006,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -10112,8 +10112,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -10221,8 +10221,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -10327,7 +10327,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -10436,8 +10436,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -10544,8 +10544,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -10655,8 +10655,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -10761,8 +10761,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -10868,8 +10868,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -10978,7 +10978,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -11084,8 +11084,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -11195,8 +11195,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -11301,8 +11301,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -11412,8 +11412,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -11523,8 +11523,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -11633,8 +11633,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -11742,8 +11742,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -11853,8 +11853,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -11959,8 +11959,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -12067,8 +12067,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -12175,7 +12175,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -12279,8 +12279,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -12383,8 +12383,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -12489,7 +12489,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -12595,7 +12595,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -12699,8 +12699,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -12805,8 +12805,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -12918,8 +12918,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -13031,8 +13031,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -13135,7 +13135,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -13239,8 +13239,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -13352,8 +13352,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -13456,7 +13456,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -13562,8 +13562,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -13666,8 +13666,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -13770,8 +13770,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -13874,8 +13874,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -13978,7 +13978,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -14082,8 +14082,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -14186,7 +14186,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -14294,7 +14294,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -14404,8 +14404,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -14508,7 +14508,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -14612,8 +14612,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -14716,8 +14716,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -14822,7 +14822,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -14928,7 +14928,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -15034,8 +15034,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -15141,7 +15141,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -15254,7 +15254,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -15361,8 +15361,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -15467,8 +15467,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -15575,8 +15575,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -15681,8 +15681,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -15787,8 +15787,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -15898,8 +15898,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -16005,8 +16005,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -16111,7 +16111,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -16215,8 +16215,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -16322,8 +16322,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -16433,8 +16433,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -16546,7 +16546,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -16652,8 +16652,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -16758,8 +16758,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -16864,7 +16864,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -16968,7 +16968,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -17078,7 +17078,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -17185,8 +17185,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -17292,8 +17292,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -17398,8 +17398,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -17504,8 +17504,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -17610,7 +17610,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -17726,8 +17726,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -17832,7 +17832,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -17938,7 +17938,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -18049,8 +18049,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -18159,7 +18159,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -18265,8 +18265,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -18376,7 +18376,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -18483,7 +18483,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -18595,7 +18595,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -18701,8 +18701,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -18807,8 +18807,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -18913,7 +18913,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -19023,7 +19023,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -19135,8 +19135,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -19246,8 +19246,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -19350,7 +19350,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -19457,7 +19457,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -19565,8 +19565,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -19671,7 +19671,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -19777,7 +19777,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -19881,8 +19881,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -19987,8 +19987,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -20093,8 +20093,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -20199,7 +20199,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -20307,7 +20307,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -20411,7 +20411,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -20517,8 +20517,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -20623,7 +20623,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -20735,7 +20735,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -20846,8 +20846,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -20952,7 +20952,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -21063,7 +21063,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -21171,8 +21171,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -21277,7 +21277,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -21387,8 +21387,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -21494,8 +21494,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -21598,8 +21598,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -21704,7 +21704,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -21810,7 +21810,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -21920,8 +21920,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -22024,8 +22024,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -22131,7 +22131,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -22237,7 +22237,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -22346,8 +22346,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -22452,8 +22452,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -22556,7 +22556,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -22665,7 +22665,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -22771,8 +22771,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -22875,8 +22875,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -22982,8 +22982,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -23086,8 +23086,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -23197,8 +23197,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -23301,7 +23301,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -23409,8 +23409,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -23515,8 +23515,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -23619,8 +23619,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -23725,7 +23725,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -23831,7 +23831,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -23937,7 +23937,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -24041,7 +24041,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -24145,7 +24145,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -24251,7 +24251,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -24357,8 +24357,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -24463,8 +24463,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -24567,7 +24567,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -24673,8 +24673,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -24780,7 +24780,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -24884,7 +24884,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -24988,7 +24988,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -25100,8 +25100,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -25210,7 +25210,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -25316,7 +25316,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -25420,7 +25420,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -25524,7 +25524,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -25631,8 +25631,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -25735,8 +25735,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -25841,8 +25841,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -25947,7 +25947,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -26053,7 +26053,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -26159,7 +26159,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -26265,7 +26265,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -26369,8 +26369,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -26473,7 +26473,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -26577,7 +26577,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -26681,8 +26681,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -26787,7 +26787,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -26893,8 +26893,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -26997,8 +26997,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -27103,7 +27103,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -27210,8 +27210,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -27314,8 +27314,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -27418,7 +27418,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -27524,8 +27524,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -27630,7 +27630,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -27736,8 +27736,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -27844,8 +27844,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -27948,7 +27948,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -28057,7 +28057,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -28161,8 +28161,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -28267,7 +28267,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -28371,7 +28371,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -28475,7 +28475,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -28581,7 +28581,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -28687,8 +28687,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -28793,8 +28793,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -28897,7 +28897,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -29001,7 +29001,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -29105,7 +29105,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -29214,8 +29214,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -29318,7 +29318,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -29424,8 +29424,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -29528,8 +29528,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -29632,8 +29632,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -29741,8 +29741,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -29849,7 +29849,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -29958,8 +29958,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -30064,8 +30064,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -30168,7 +30168,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -30274,7 +30274,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -30380,7 +30380,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -30486,7 +30486,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -30593,7 +30593,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -30700,8 +30700,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -30804,7 +30804,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -30908,7 +30908,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -31018,8 +31018,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -31124,7 +31124,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -31228,7 +31228,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -31337,8 +31337,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -31445,8 +31445,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -31552,7 +31552,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -31658,8 +31658,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -31764,7 +31764,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -31874,7 +31874,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -31982,7 +31982,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -32088,7 +32088,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -32194,8 +32194,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -32301,8 +32301,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -32405,7 +32405,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -32513,8 +32513,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -32619,8 +32619,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -32725,7 +32725,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -32833,8 +32833,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -32939,7 +32939,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -33043,8 +33043,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -33147,7 +33147,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -33259,8 +33259,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -33365,7 +33365,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -33469,7 +33469,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -33573,7 +33573,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -33679,8 +33679,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -33789,7 +33789,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -33896,8 +33896,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -34002,7 +34002,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -34108,7 +34108,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -34214,8 +34214,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -34320,7 +34320,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -34426,7 +34426,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -34530,7 +34530,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -34636,7 +34636,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -34742,7 +34742,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -34846,8 +34846,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -34955,8 +34955,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -35061,7 +35061,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -35167,7 +35167,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -35273,8 +35273,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -35379,8 +35379,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -35500,8 +35500,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -35611,7 +35611,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -35719,7 +35719,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -35825,7 +35825,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -35929,7 +35929,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -36045,8 +36045,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -36156,8 +36156,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -36266,8 +36266,8 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "PASS",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
-      "note": "published evidence located"
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
      },
      {
       "key": "filed_as_505b1",
@@ -36377,7 +36377,7 @@ window.BIO = {
       "key": "human_evidence_exists",
       "status": "UNKNOWN",
       "decidability": "data",
-      "citation": "505(b)(2) reliance",
+      "citation": "evidence base for a 505(b)(1)",
       "note": "no published human evidence located"
      },
      {
@@ -36431,6 +36431,8 @@ window.BIO = {
   "months_to_sunset": 35,
   "prv_low": 180.0,
   "prv_high": 210.0,
+  "prv_high_status": "agreement",
+  "prv_high_drug": "GENGLYCOS",
   "deals": 36,
   "peak": 350.0
  },

@@ -233,7 +233,7 @@ Generated: {bio.get("generated", "")}
 - Multi-regulator candidates: {h.get("multi_regulator")}
 - Dossier-only (unnamed) rows: {h.get("dossier_only")}; rows queued for human review: {h.get("review")}
 - Foreign approval rows screened: {h.get("foreign_rows")}; of which already in the US record: {h.get("in_us")}
-- Disclosed PRV sales tracked (SEC 8-K): {h.get("deals")}; 2026 range US$ {h.get("prv_low")}M\u2013{h.get("prv_high")}M; record US$ {h.get("peak")}M (2015)
+- Disclosed PRV sales tracked (SEC 8-K): {h.get("deals")}; 2026 range US$ {h.get("prv_low")}M\u2013{h.get("prv_high")}M; record US$ {h.get("peak")}M (2015){" — top 2026 figure is a signed, unclosed agreement" if h.get("prv_high_status") == "agreement" else ""}
 - Months until the rare-pediatric PRV programme sunset: {h.get("months_to_sunset")}
 
 ## Pages

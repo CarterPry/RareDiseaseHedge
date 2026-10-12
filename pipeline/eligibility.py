@@ -278,13 +278,16 @@ def assess(cand: Candidate, today: date | None = None) -> Assessment:
         "Would the application qualify for priority review?",
         Decidability.JUDGMENT, st, note))
 
-    # ---- 6. human evidence to build a 505(b)(2) on
+    # ---- 6. human evidence to anchor the literature-supported 505(b)(1) on
+    #         (a 505(b)(2) is NOT voucher-eligible; see (B)(i)(II) below)
     crit.append(Criterion(
-        "human_evidence_exists", "505(b)(2) reliance",
+        "human_evidence_exists", "evidence base for a 505(b)(1)",
         "Is there published or referenceable human evidence in this indication?",
         Decidability.DATA,
         Status.PASS if cand.published_human_evidence else Status.UNKNOWN,
-        "published evidence located" if cand.published_human_evidence
+        ("published evidence located; usable inside a full 505(b)(1), "
+         "not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher")
+        if cand.published_human_evidence
         else "no published human evidence located"))
 
     # ---- 7-9. filing design. Not properties of the drug; choices the sponsor

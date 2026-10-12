@@ -127,6 +127,8 @@ def main():
     # headline PRV band from the most recent RPD deals
     recent = sorted([d for d in PRV_DEALS if d[2] == "RPD"], key=lambda x: -x[0])[:6]
     recent_prices = sorted(p for _, p, *_ in recent)
+    top_deal = max(recent, key=lambda x: x[1])
+    top_status = top_deal[5] if len(top_deal) > 5 else "closed"
 
     today = datetime.date.today()   # was hardcoded 2026-08-31; the countdown drifted
     sunset = datetime.date(2029, 9, 30)
@@ -171,6 +173,7 @@ def main():
             "in_us": f["in_us"],
             "months_to_sunset": months_to_sunset,
             "prv_low": recent_prices[0], "prv_high": recent_prices[-1],
+            "prv_high_status": top_status, "prv_high_drug": top_deal[3],
             "deals": len(PRV_DEALS),
             "peak": max(p for _, p, *_ in PRV_DEALS),
         },
