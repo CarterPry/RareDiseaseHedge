@@ -1163,7 +1163,29 @@
  "8O74K609HN": {
   "pubmed": 0,
   "trials": 20,
-  "us_orphan": "unknown"
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Atherosclerosis",
+    "phase": 3.0
+   },
+   {
+    "disease": "Lipid Metabolism Disorders",
+    "phase": 2.0
+   },
+   {
+    "disease": "Alzheimer Disease",
+    "phase": 2.0
+   },
+   {
+    "disease": "Liver Diseases",
+    "phase": 1.0
+   },
+   {
+    "disease": "Dyslipidemias",
+    "phase": 1.0
+   }
+  ]
  },
  "57370OZ3P1": {
   "pubmed": 0,
@@ -6057,5 +6079,11 @@
     "phase": 2.0
    }
   ]
+ },
+ "03J11K103C": {
+  "pubmed": 0,
+  "trials": 1,
+  "us_orphan": "unknown",
+  "chembl": []
  }
 }

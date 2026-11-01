@@ -76885,5 +76885,28 @@
    ]
   ],
   "name": "Sodium 4-aminophenolate"
+ },
+ "03J11K103C": {
+  "ok": true,
+  "forward": [
+   [
+    "ACTIVE MOIETY",
+    "5QB0T2IUN0",
+    "Aluminum hydroxide"
+   ],
+   [
+    "ANHYDROUS->SOLVATE",
+    "5QB0T2IUN0",
+    "Aluminum hydroxide"
+   ]
+  ],
+  "reverse": [
+   [
+    "SOLVATE->ANHYDROUS",
+    "5QB0T2IUN0",
+    "Aluminum hydroxide"
+   ]
+  ],
+  "name": "Algeldrate"
  }
 }
